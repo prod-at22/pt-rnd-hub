@@ -72,7 +72,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (10 Oct 2026) — v54 live · next: logins for every PO
+## HANDOFF (11 Oct 2026) — v54 live · PO logins done
 - Live: hub v54 (data.json version 54), pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - Done 9–10 Oct: v41 Info KB tidy · v42 Bangkok 4★/5★ removed · v43–v44 Bangkok Costing rate by rate (sheet COSTING BKK, no meals) ·
   v45 Bangkok Flags/History hidden (destinations[].hideTabs), Show calculation folds pax-only parts · v46 Beijing from the Tourdechina CR (RMB) ·
@@ -80,14 +80,19 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   v50–v51 Simple Calculator (R&D): every Sales price in the KB calculator with cost (Costing / formula on Costing rates / add-on / RM, kb.rnd)
   and margin; Pakej folded & read-only; Tokyo / Osaka / Tokyo-Osaka formulas · TO Contract Rate tab after Costing · v52–v53 new destination
   KMGDL Yunnan 3 Wilayah (Tourdechina RMB, PT KMGDL R&D as reference), catalog linked · v54 Maldives 4 Star (Kaani Palm Beach CR, USD), catalog linked.
-- **Login rights (10 Oct, code only, data stays v54)**: editor = only destinations where destinations[].po = username
-  (case-insensitive); admin = all + PO field + Account. Plan: admin account for the owner, 5 POs as editors
-  (acap, aiman, thania, fyka, amirul). Token + First-time setup + passwords are done by the admin, not Claude.
+- **Logins done (11 Oct 2026, data stays v54)** — repo renamed `pt-calculator-hub` → `pt-rnd-hub`
+  (live https://prod-at22.github.io/pt-rnd-hub/; old URLs 404; both mirror.yml check out prod-at22/pt-rnd-hub).
+  data/users.json: `ezie` admin + editors `acap`, `aiman`, `thania`, `fyka`, `amirul` (every destination's PO has an account).
+  Token (fine-grained, owner prod-at22, 1 year): Contents RW + Actions RW on pt-rnd-hub, pt-kb-house, catalog-pt-public —
+  created and entered by the admin; Claude never sees it. POs change their temp password via Account on first login.
+- **Rights**: editor = only destinations where destinations[].po = username (case-insensitive); admin = all + PO field + Account.
+  Save refuses other POs' destinations; Restore only restores the editor's own. Page guard only (one shared token).
+  Handover = admin changes the destination's PO. Forgotten password = admin Remove + Add (no reset button yet).
+- **Fix (11 Oct)**: GitHub API calls use `cache: "no-store"` (API max-age=60 gave a stale head → "Update is not a
+  fast forward" on a second save within a minute); users save retries. Tests start from an empty users.json.
 - **Live FX**: fx entry `"live": "<ISO>"` → today's ECB rate (one request MYR → currencies, inverted) on page open; `value` = fallback.
-- **Next task (new session): logins for every PO, each an admin who can change R&D Costing.** The login system already exists
-  (README "One-time setup (admin)" + "How the login works"): data/users.json is still empty. The PO list: Acap, Aiman, Thania, Fyka, Amirul.
-  Creating the GitHub token, First-time setup and passwords must be done by the PO/admin themselves — Claude must not create accounts,
-  enter passwords or handle the token. Claude can review/extend the login code (roles, per-PO rights, UI) and guide the setup.
+- Ideas not built (ask the PO first): stay logged in across destination pages (each page is separate now), admin "Reset password"
+  + must-change-on-first-login, change role editor ↔ admin.
 - Open for the PO: Maldives 4 Star CNB below cost (Kaani has no child rate) + estimates to confirm (lunch D3, 2nd excursion, green tax,
   tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N has no costing
   (needs a CR); Simple Calculator formulas for other destinations; Hokkaido / Seoul rates missing in Rate reference.
@@ -125,7 +130,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
    problems in 11 lines and Perhentian Shari-La under 10% / CWB below cost (both from Selling = Catalog − RM200),
    Seoul-Jeju 2 pax 6.8% and Jeju-Udo 3.8% margin, Korea 26–30 pax no cost, Qayyum FX 0.026 (HND) vs 0.0259 (KIX).
 7. No costing in the hub yet: Yunnan 3 Wilayah, Ho Chi Minh, Maldives Standard (4★). Codes SNZ, NNZ, SUBM, KMGDL not on the hub.
-8. Login: admin must create a fine-grained token (Contents RW on pt-rnd-hub + Actions RW on catalog-pt-public and pt-kb-house) and do First-time setup on the live page (cannot be done for them). Password ≥ 10 characters.
+8. Done (11 Oct): logins — admin ezie + 5 PO editors (see HANDOFF).
 9. Uploaded only files named PT from the Drive "Production Team" folder; unlabelled CRs (Perhentian resorts,
    Semporna Legend, Perth K&N, NZ price list, Pak Jamal, KK / Krabi / Maldives folders) were not uploaded.
 
