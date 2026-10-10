@@ -10,6 +10,7 @@ const PAGE_VIEW = window.PT_VIEW || null;   // "flags" on /flags/
 const PATHS = { data: "data/data.json", history: "data/history.json", users: "data/users.json", flags: "data/flags.json", catalogs: "data/catalogs/", kb: "data/kb/" };
 const KDF_ITER = 310000;
 const IDLE_LOGOUT_MS = 30 * 60 * 1000;
+const SESSION_KEY = "ptRndHub.session";   // sessionStorage: stay logged in across destination pages in this tab
 
 /* ============================================================ state */
 let DATA = null;      // working copy (may contain unsaved edits)
@@ -1368,6 +1369,23 @@ async function wrapVault(vaultRaw, pw) {
   const k = await pwKey(pw, salt, KDF_ITER);
   return { salt: b64(salt), iter: KDF_ITER, ...(await aesEnc(k, vaultRaw)) };
 }
+/* Login survives moving between destination pages in the same tab: sessionStorage keeps the username, the
+   vault key and the last activity — never the token (it is decrypted again from users.json on each page, so a
+   replaced token or a removed user takes effect at once). Gone when the tab closes, on Log out or 30 min idle. */
+function persistSession() {
+  try { if (SESSION) sessionStorage.setItem(SESSION_KEY, JSON.stringify({ u: SESSION.u, vk: b64(SESSION.vaultRaw), at: lastActivity })); else sessionStorage.removeItem(SESSION_KEY); } catch (_) { }
+}
+async function restoreSession() {
+  let s = null; try { s = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null"); } catch (_) { }
+  if (!s) return;
+  const rec = (USERS.users || []).find(x => x.u === s.u);
+  try {
+    if (!rec || !USERS.vault || !(Date.now() - s.at < IDLE_LOGOUT_MS)) throw new Error("expired");
+    const vaultRaw = unb64(s.vk), vk = await crypto.subtle.importKey("raw", vaultRaw, "AES-GCM", false, ["decrypt"]);
+    SESSION = { u: rec.u, role: rec.role, token: dec.decode(await aesDec(vk, USERS.vault)), vaultRaw };
+    lastActivity = Date.now(); persistSession();
+  } catch (_) { SESSION = null; persistSession(); }
+}
 async function unlock(user, pw) {
   const k = await pwKey(pw, unb64(user.salt), user.iter);
   const vaultRaw = await aesDec(k, user);           // throws on wrong password
@@ -1545,6 +1563,7 @@ async function load() {
     const [d, h, u, fl] = await Promise.all([fetchJson(PATHS.data), fetchJson(PATHS.history).catch(() => ({ entries: [] })), fetchJson(PATHS.users).catch(() => ({ users: [] })), fetchJson(PATHS.flags).catch(() => ({ flags: [] }))]);
     DATA = d; BASE = clone(d); HISTORY = h; USERS = u; FLAGS = fl;
     if (!SEL.dest) { SEL.dest = DATA.destinations[0].code; }
+    await restoreSession();
     loadLiveFx();
     window.__loadError = null;
   } catch (e) {
@@ -1580,7 +1599,7 @@ async function doLogin() {
     if (!rec) throw new Error("bad");
     const { vaultRaw, token } = await unlock(rec, p);
     SESSION = { u, role: rec.role, token, vaultRaw };
-    lastActivity = Date.now();
+    lastActivity = Date.now(); persistSession();
     closeModal(); render(); toast("Logged in as " + u);
     GH.head(token).catch(e => toast("Logged in, but GitHub rejected the token (" + e.message + "). Ask an admin to rotate it.", 6000));
   } catch (e) { mErr("Wrong username or password."); $("#doLogin").disabled = false; }
@@ -1608,7 +1627,7 @@ async function doSetup() {
     const next = { repo: REPO.owner + "/" + REPO.name, vault: await aesEnc(vk, enc.encode(tok)), users: [{ u, role: "admin", ...(await wrapVault(vaultRaw, p)), created: new Date().toISOString(), by: u }] };
     SESSION = { u, role: "admin", token: tok, vaultRaw };
     await saveUsers(next, `users: setup, admin ${u}`);
-    closeModal(); render(); toast("Admin " + u + " created");
+    persistSession(); closeModal(); render(); toast("Admin " + u + " created");
   } catch (e) { SESSION = null; mErr("Setup failed: " + e.message); }
 }
 function openAccount() {
@@ -1638,7 +1657,7 @@ async function acct(fn, okMsg) { mErr("Saving…"); try { await fn(); mErr(""); 
 
 /* ============================================================ events */
 document.addEventListener("click", async e => {
-  lastActivity = Date.now();
+  lastActivity = Date.now(); if (SESSION) persistSession();
   const t = e.target.closest("button, tr[data-pax], tr[data-href], [data-close], a");
   if (!t) return;
   // Hub footer links stand in for the (hidden) top-bar buttons.
@@ -1648,7 +1667,7 @@ document.addEventListener("click", async e => {
   if (t.id === "btnLogin") return openLogin();
   if (t.id === "doLogin") return doLogin();
   if (t.id === "doSetup") return doSetup();
-  if (t.id === "btnLogout") { if (pendingChanges().length && !confirm("Discard unsaved changes?")) return; SESSION = null; EDIT = false; DATA = clone(BASE); CAT.edit = {}; KB.edit = {}; return render(); }
+  if (t.id === "btnLogout") { if (pendingChanges().length && !confirm("Discard unsaved changes?")) return; SESSION = null; persistSession(); EDIT = false; DATA = clone(BASE); CAT.edit = {}; KB.edit = {}; return render(); }
   if (t.id === "btnEdit") { EDIT = !EDIT; VIEW = null; return render(); }
   if (t.id === "btnAcct") return openAccount();
   if ((t.id === "btnHistory" || t.dataset.act === "history") && PAGE_DEST && tabsFor(curDest()).some(x => x[0] === "history")) { SEL.tab = "history"; history.replaceState(null, "", "#history"); return render(); }
@@ -1795,7 +1814,7 @@ function openHistory() {
   modal(`All versions${PAGE_DEST ? " touching " + PAGE_DEST : ""} (${es.length})`, `<div class="hist" style="margin:-14px -16px">${es.map(histEntry).join("")}</div>`, `<button class="btn" data-close>Close</button>`, true);
 }
 document.addEventListener("keydown", e => {
-  lastActivity = Date.now();
+  lastActivity = Date.now(); if (SESSION) persistSession();
   if (e.key === "Escape") closeModal();
   if (e.key === "Enter" && $("#lp") && document.activeElement && ["lu", "lp"].includes(document.activeElement.id)) doLogin();
 });
@@ -1902,7 +1921,7 @@ document.addEventListener("change", e => {
   }
 });
 window.addEventListener("beforeunload", e => { if (pendingChanges().length) { e.preventDefault(); e.returnValue = ""; } });
-setInterval(() => { if (SESSION && Date.now() - lastActivity > IDLE_LOGOUT_MS) { SESSION = null; EDIT = false; render(); toast("Logged out after 30 minutes idle", 5000); } }, 60000);
+setInterval(() => { if (SESSION && Date.now() - lastActivity > IDLE_LOGOUT_MS) { SESSION = null; persistSession(); EDIT = false; render(); toast("Logged out after 30 minutes idle", 5000); } }, 60000);
 
 if (SEL.tab === "catalog") SEL.tab = "itinerary";
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1) === "catalog" ? "itinerary" : location.hash.slice(1); if (tabsFor(curDest()).some(t => t[0] === h) && h !== SEL.tab) { SEL.tab = h; render(); } });

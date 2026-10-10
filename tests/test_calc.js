@@ -44,7 +44,7 @@ function mockRepo(files, validTokens) {
 }
 
 // page = "" (hub) or "hnd/" etc. app.js / app.css are inlined because jsdom does not fetch them.
-async function boot(repo, page = "hnd/", query = "") {
+async function boot(repo, page = "hnd/", query = "", session = null) {   // session: sessionStorage carried over from another page in the same tab
   const html = fs.readFileSync(path.join(ROOT, page, "index.html"), "utf8")
     .replace(/<script src="[^"]*app\.js[^"]*"><\/script>/, () => "<script>" + fs.readFileSync(path.join(ROOT, "app.js"), "utf8") + "</script>")
     .replace(/<link rel="stylesheet"[^>]*>/, "");
@@ -54,6 +54,7 @@ async function boot(repo, page = "hnd/", query = "") {
     beforeParse(w) {
       Object.defineProperty(w, "crypto", { value: globalThis.crypto });
       w.TextEncoder = TextEncoder; w.TextDecoder = TextDecoder;
+      if (session) for (const [k, v] of Object.entries(session)) w.sessionStorage.setItem(k, v);
       w.confirm = () => true; w.scrollTo = () => { };
       w.fetch = async (url, opt = {}) => {
         const mk = (status, j) => ({ ok: status < 300, status, text: async () => JSON.stringify(j), json: async () => j });
@@ -287,6 +288,25 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     doc.querySelector("#lu").value = "thania"; doc.querySelector("#lp").value = "thania-pass-2026";
     click(w, doc.querySelector("#doLogin"));
     ok(await until(() => doc.querySelector("#btnEdit")), "editor logs in with own password");
+  }
+
+  console.log("5a. login stays when moving to another destination page (same tab)");
+  {
+    const key = "ptRndHub.session", raw = w.sessionStorage.getItem(key), st = raw && JSON.parse(raw);
+    ok(st && st.u === "thania" && st.vk && !raw.includes("tok-valid"), "sessionStorage keeps user + vault key, never the token");
+    const carry = { [key]: raw };
+    const sel = await boot(repo, "sel/", "", carry); await until(() => sel.doc.querySelector("#authArea .chip"));
+    ok(sel.doc.querySelector("#authArea .chip").textContent.includes("thania") && !sel.doc.querySelector("#btnLogin"), "SEL page opens logged in as thania (no login form)");
+    ok(!sel.doc.querySelector("#btnEdit") && sel.doc.querySelector("#authArea").textContent.includes("PO Aiman only"), "…and rights still apply on SEL");
+    const kix = await boot(repo, "kix/", "", carry); await until(() => kix.doc.querySelector("#btnEdit"));
+    ok(kix.doc.querySelector("#btnEdit") && kix.w.eval("SESSION.token") === "tok-valid", "KIX page: logged in, token decrypted again from users.json");
+    const old = await boot(repo, "kix/", "", { [key]: JSON.stringify({ ...st, at: Date.now() - 31 * 60 * 1000 }) }); await until(() => old.doc.querySelector("#btnLogin"));
+    ok(old.doc.querySelector("#btnLogin") && !old.w.sessionStorage.getItem(key), "older than 30 min idle → logged out, stored session cleared");
+    const gone = await boot(repo, "kix/", "", { [key]: JSON.stringify({ ...st, u: "nobody" }) }); await until(() => gone.doc.querySelector("#btnLogin"));
+    ok(gone.doc.querySelector("#btnLogin"), "user not in users.json (removed) → not logged in");
+    click(kix.w, kix.doc.querySelector("#btnLogout")); await tick(5);
+    ok(!kix.w.sessionStorage.getItem(key) && kix.doc.querySelector("#btnLogin"), "Log out clears the stored session");
+    ok([sel, kix, old, gone].every(p => !p.errors.length), "session errors: " + [sel, kix, old, gone].flatMap(p => p.errors).join("|"));
   }
 
   console.log("5b. editor rights: only the destinations where they are PO");

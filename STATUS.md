@@ -91,8 +91,9 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - **Fix (11 Oct)**: GitHub API calls use `cache: "no-store"` (API max-age=60 gave a stale head → "Update is not a
   fast forward" on a second save within a minute); users save retries. Tests start from an empty users.json.
 - **Live FX**: fx entry `"live": "<ISO>"` → today's ECB rate (one request MYR → currencies, inverted) on page open; `value` = fallback.
-- Ideas not built (ask the PO first): stay logged in across destination pages (each page is separate now), admin "Reset password"
-  + must-change-on-first-login, change role editor ↔ admin.
+- **Stay logged in (11 Oct)**: login carries over between destination pages in the same tab (sessionStorage `ptRndHub.session`:
+  user + vault key + last activity, no token; token re-decrypted from users.json per page; cleared on tab close / Log out / 30 min idle).
+- Ideas not built (ask the PO first): admin "Reset password" + must-change-on-first-login, change role editor ↔ admin.
 - Open for the PO: Maldives 4 Star CNB below cost (Kaani has no child rate) + estimates to confirm (lunch D3, 2nd excursion, green tax,
   tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N has no costing
   (needs a CR); Simple Calculator formulas for other destinations; Hokkaido / Seoul rates missing in Rate reference.

@@ -189,6 +189,9 @@ TO formulas (in `data.json`) use `R.id` (a rate, already converted to MYR at its
   their username, case-insensitive (PO "Aiman" = user `aiman`): other destination pages show
   "Edit costs (PO … only)", and Save refuses changes to another PO's destination. When a destination
   changes hands, an admin changes its PO. This is a guard in the page, not on GitHub (shared token).
+- **Staying logged in (11 Oct 2026):** the login carries over to other destination pages in the same browser tab
+  (sessionStorage holds the username, the vault key and the last activity — not the token, which each page decrypts
+  again from `users.json`). It ends when the tab is closed, on Log out, or after 30 minutes idle. A new tab needs a new login.
 - Removing a user stops them logging in. A removed user who already logged in could have
   copied the token, so if you don't trust them, also **Account → Replace GitHub token**
   (create a new token first, then delete the old one on GitHub).
