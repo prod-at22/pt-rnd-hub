@@ -34,6 +34,16 @@
    "ct": "jFSSbnXOyPrB9uX2gu7i/wg2lwIyY9E50tJMsw7hrAl4z8w3POiPQ4+LK9QPi4Wh",
    "created": "2026-10-10T16:23:50.057Z",
    "by": "ezie"
+  },
+  {
+   "u": "amirul",
+   "role": "editor",
+   "salt": "oAO9JSBaFjSXfF0DmDMN3A==",
+   "iter": 310000,
+   "iv": "9Klrht/875yMGsKx",
+   "ct": "YjkBDZGxBp+WmXe90Ng4KjJGLtwlL9bVDVi/BEY9RZmtSzbO6zRN7G3rTe948VnI",
+   "created": "2026-10-10T23:30:14.457Z",
+   "by": "ezie"
   }
  ]
 }
