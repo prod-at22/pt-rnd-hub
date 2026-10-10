@@ -1399,7 +1399,8 @@ const passwordOk = p => p.length >= 10;
 const GH = {
   api: "https://api.github.com",
   async req(method, path, body, token) {
-    const r = await fetch(this.api + path, { method, headers: { Accept: "application/vnd.github+json", ...(token ? { Authorization: "Bearer " + token } : {}), ...(body ? { "Content-Type": "application/json" } : {}) }, body: body ? JSON.stringify(body) : undefined });
+    // no-store: GitHub's API answers carry max-age=60, so a cached ref would be the commit before our last save ("Update is not a fast forward")
+    const r = await fetch(this.api + path, { method, cache: "no-store", headers: { Accept: "application/vnd.github+json", ...(token ? { Authorization: "Bearer " + token } : {}), ...(body ? { "Content-Type": "application/json" } : {}) }, body: body ? JSON.stringify(body) : undefined });
     const txt = await r.text(); let j = null; try { j = txt ? JSON.parse(txt) : null; } catch (_) { }
     if (!r.ok) { const e = new Error((j && j.message) || ("GitHub " + r.status)); e.status = r.status; throw e; }
     return j;
@@ -1526,8 +1527,10 @@ async function saveChanges(note) {
   throw new Error("Could not save after 3 attempts — reload the page.");
 }
 async function saveUsers(nextUsers, message) {
-  const head = await GH.head(SESSION.token);
-  await GH.commit([{ path: PATHS.users, content: pretty(nextUsers) }], message, head, SESSION.token);
+  for (let attempt = 0; ; attempt++) {
+    try { const head = await GH.head(SESSION.token); await GH.commit([{ path: PATHS.users, content: pretty(nextUsers) }], message, head, SESSION.token); break; }
+    catch (e) { if (attempt < 2 && (e.status === 422 || e.status === 409)) continue; throw e; }   // lost a race with another save → retry on the new head
+  }
   USERS = nextUsers;
 }
 

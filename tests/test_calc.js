@@ -58,6 +58,7 @@ async function boot(repo, page = "hnd/", query = "") {
       w.fetch = async (url, opt = {}) => {
         const mk = (status, j) => ({ ok: status < 300, status, text: async () => JSON.stringify(j), json: async () => j });
         if (String(url).startsWith("https://api.github.com")) {
+          if (opt.cache !== "no-store") (repo.cached = repo.cached || []).push((opt.method || "GET") + " " + url);
           const [s, j] = repo.handle(opt.method || "GET", url, opt.body ? JSON.parse(opt.body) : null, (opt.headers || {}).Authorization);
           return mk(s, j);
         }
@@ -85,6 +86,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
 (async () => {
   const files = {};
   for (const f of ["data.json", "history.json", "users.json", "flags.json"]) files["data/" + f] = fs.readFileSync(path.join(ROOT, "data", f), "utf8");
+  files["data/users.json"] = JSON.stringify({ repo: "", users: [] });   // start with no accounts (the live file has the real ones) → First-time setup
   for (const f of fs.readdirSync(path.join(ROOT, "data", "catalogs"))) files["data/catalogs/" + f] = fs.readFileSync(path.join(ROOT, "data", "catalogs", f), "utf8");
   for (const f of fs.readdirSync(path.join(ROOT, "data", "kb"))) files["data/kb/" + f] = fs.readFileSync(path.join(ROOT, "data", "kb", f), "utf8");
   const repo = mockRepo(files, ["tok-valid", "tok-new"]);
@@ -759,6 +761,9 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(H2().addons.some(a => a.id === keep.id), "Cancel keeps the item");
     ok(pg.errors.length === 0, "delete errors: " + pg.errors.join("|"));
   }
+
+  console.log("8z. GitHub API calls bypass the browser cache (API max-age=60 → stale head → 'not a fast forward')");
+  ok(!(repo.cached || []).length, "every api.github.com request uses cache: no-store: " + (repo.cached || []).slice(0, 2).join(" | "));
 
   console.log("9. no runtime errors");
   ok(errors.length === 0, "errors: " + errors.join(" | "));
