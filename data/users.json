@@ -54,6 +54,16 @@
    "ct": "4mf6WeaK77mZkVVWrEuEozA5yqFfXqRGh5DKRGSEOz0OUPvx2Xl2ZIU/hkx/bQAX",
    "created": "2026-10-10T23:31:07.715Z",
    "by": "ezie"
+  },
+  {
+   "u": "thania",
+   "role": "editor",
+   "salt": "TriPdus/DHg1f2w+/c18mA==",
+   "iter": 310000,
+   "iv": "faMU+sk8zb8+ZeNO",
+   "ct": "SIUKIkKo1DTjNM/8tSRQWqFwmbyeYTQFLtA1/CwkZbDmFrUrBQyGq4Jut73UHmBb",
+   "created": "2026-10-10T23:37:13.570Z",
+   "by": "ezie"
   }
  ]
 }
