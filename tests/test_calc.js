@@ -798,6 +798,21 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(pg.errors.length === 0, "flags page errors: " + pg.errors.join("|"));
   }
 
+  console.log("8x. cleared History / Flags (Aceh, PO 11 Oct 2026): tabs shown, empty");
+  {
+    const pg = await boot(repo, "aceh/", "", null); await until(() => pg.doc.querySelector("#controls h1"));
+    const d = pg.w.PTCALC.DATA.destinations.find(x => x.code === "ACEH");
+    ok(d.historyFrom > 0 && !(d.hideTabs || []).length, "ACEH: historyFrom set, no hidden tabs");
+    const tabBtn = id => pg.doc.querySelector(`[data-tabmain="${id}"]`);
+    ok(tabBtn("history") && tabBtn("flags"), "Flags and History tabs are shown");
+    click(pg.w, tabBtn("history")); await until(() => pg.doc.querySelector(".hist"));
+    ok(!pg.doc.querySelector(".hist .e") && pg.doc.querySelector(".hist").textContent.includes("history was cleared"), "History tab: no versions, 'cleared' note");
+    ok(pg.w.PTCALC.HISTORY.entries.some(e => e.v < d.historyFrom && (e.changes || []).some(c => c.path[1] === "ACEH")), "the global log still has the older ACEH versions");
+    click(pg.w, tabBtn("flags")); await tick(20);
+    ok(!pg.doc.querySelector("#grid .flags tr.sev-high, #grid .flags tr.sev-medium, #grid .flags tr.sev-low") && pg.doc.querySelector("#grid").textContent.includes("No flags"), "Flags tab: nothing listed for ACEH");
+    ok(pg.errors.length === 0, "aceh errors: " + pg.errors.join("|"));
+  }
+
   console.log("9. no runtime errors");
   ok(errors.length === 0, "errors: " + errors.join(" | "));
 

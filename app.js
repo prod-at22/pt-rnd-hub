@@ -441,7 +441,7 @@ function renderMain(d, pkg) {
   else if (T === "flags") $("#grid").innerHTML = flagList(flagsFor(d.code), false);
   else if (T === "history") {
     const es = [...HISTORY.entries].filter(touchesDest).sort((a, b) => b.v - a.v);
-    $("#grid").innerHTML = `<div class="card full"><h2>History · ${esc(d.name)} <span class="sub">${es.length} version${es.length === 1 ? "" : "s"}</span></h2><div class="hist">${es.map(histEntry).join("") || '<div class="empty">No changes yet.</div>'}</div></div>`;
+    $("#grid").innerHTML = `<div class="card full"><h2>History · ${esc(d.name)} <span class="sub">${es.length} version${es.length === 1 ? "" : "s"}</span></h2><div class="hist">${es.map(histEntry).join("") || `<div class="empty">${d.historyFrom ? `No changes since the history was cleared (before v${d.historyFrom}).` : "No changes yet."}</div>`}</div></div>`;
   }
 }
 // One line above the costing table: what a PO checks first.
@@ -1314,7 +1314,10 @@ async function saveContract(code, { file, to, note, removeId }) {
   throw new Error("Could not save after 3 attempts — reload the page.");
 }
 const touchesChange = c => c.path[1] === PAGE_DEST || (c.path[0] === "kb" && kbCodesOf(c.path[1]).includes(PAGE_DEST));
-const touchesDest = e => !PAGE_DEST || !(e.changes || []).length || e.changes.some(touchesChange);
+// A destination's History can be cleared (data.json destinations[].historyFrom = first version shown): the page lists
+// only later versions; the global log stays whole, so older versions can still be viewed / restored from the hub.
+const historyFrom = () => { const d = PAGE_DEST && DATA && DATA.destinations.find(x => x.code === PAGE_DEST); return (d && d.historyFrom) || 0; };
+const touchesDest = e => !PAGE_DEST || (e.v >= historyFrom() && (!(e.changes || []).length || e.changes.some(touchesChange)));
 function histEntry(e) {
   const src = DATA;
   if (PAGE_DEST && e.changes) e = { ...e, changes: e.changes.filter(touchesChange) };

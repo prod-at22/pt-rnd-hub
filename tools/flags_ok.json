@@ -1,4 +1,12 @@
 {
  "about": "Flags checked by a PO and found not to be an issue. tools/flags.py leaves out a flag whose code + title match an entry here (the title holds the counts, so a changed situation raises the flag again) and lists it under 'verified' in data/flags.json.",
- "ok": []
+ "ok": [
+  {
+   "code": "ACEHSBG",
+   "title": "Aceh - Sabang: margin problems in 2 package/TO lines",
+   "note": "Cleared on PO request (ezie, 11 Oct 2026) — still open: the published catalog PT ACEH SABANG 2026 v2 prints the Aceh 4D3N child prices (CWB 1037/1017/997/977, CNB 877/857/847/837), so CWB 2–10 pax and CNB 2 pax sell below the Asonanggroe cost (R&D series was CWB 1397/1357/1297/1257, CNB 1197/1157/1097/1057). Decide: correct the catalog or keep.",
+   "by": "ezie",
+   "at": "2026-10-11"
+  }
+ ]
 }

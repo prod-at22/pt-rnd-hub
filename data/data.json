@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 55,
- "updatedAt": "2026-10-11T02:54:38Z",
+ "version": 56,
+ "updatedAt": "2026-10-11T03:06:44Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -14533,10 +14533,7 @@
      "roomNote": "rollaway untuk triple"
     }
    ],
-   "hideTabs": [
-    "flags",
-    "history"
-   ]
+   "historyFrom": 57
   },
   {
    "code": "ACEHSBG",
@@ -16015,10 +16012,7 @@
      }
     }
    ],
-   "hideTabs": [
-    "flags",
-    "history"
-   ]
+   "historyFrom": 57
   },
   {
    "code": "LTOBA",

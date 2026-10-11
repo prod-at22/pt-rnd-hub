@@ -40808,6 +40808,56 @@
      "label": "Aceh - Sabang › hideTabs"
     }
    ]
+  },
+  {
+   "v": 56,
+   "at": "2026-10-11T03:06:44Z",
+   "by": "system",
+   "note": "Aceh + Aceh-Sabang (PO ezie 11 Oct 2026): v55 tab hiding reverted — Flags and History tabs shown again; History cleared on both pages (historyFrom v57; the full log is kept for View / Restore).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "ACEH",
+      "hideTabs"
+     ],
+     "from": [
+      "flags",
+      "history"
+     ],
+     "label": "Aceh › hideTabs"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEH",
+      "historyFrom"
+     ],
+     "to": 57,
+     "label": "Aceh › historyFrom"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "hideTabs"
+     ],
+     "from": [
+      "flags",
+      "history"
+     ],
+     "label": "Aceh - Sabang › hideTabs"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "historyFrom"
+     ],
+     "to": 57,
+     "label": "Aceh - Sabang › historyFrom"
+    }
+   ]
   }
  ]
 }
