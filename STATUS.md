@@ -1,4 +1,4 @@
-# Status & handoff (11 Oct 2026, data v54 — the hub is the source of truth)
+# Status & handoff (11 Oct 2026, data v62 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,18 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (11 Oct 2026) — v54 live · PO logins done
-- Live: hub v54 (data.json version 54), pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (11 Oct 2026) — v62 live · Aceh verified · next: Bali (PO's sheet ~/Downloads/rnd bali.xlsx as reference)
+- Live: hub v62, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+- **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
+  mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
+  **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
+  removed, their TO rates kept); Flags / History tabs shown but cleared (destinations[].historyFrom = 57); Kyriad = 5★ +RM90 everywhere
+  (PO); KB vehicles = catalog (Avanza 2–4 · Innova 5–6 · Hiace 7–12); Late Booking RM50 also in the Aceh-Sabang catalog; Aceh-Sabang
+  child cost: dolphin / glass boat / snorkelling free (rules.free) → CWB 19–30 %, CNB 31–41 %; Aceh-Sabang child prices 16–30 pax
+  = Aceh pattern (CWB −20, CNB −10 per band); catalog meals "Breakfast" (was "International Breakfast"); duplicate TripCare /
+  Blue Ribbon removed (kept the RM45 set); 4 additional activities one item each, cost RM0 until the TO rate is known; stale KB
+  notes fixed (also the marketing note in pt-kb-house aceh/index.html, outside kbdata — a rebuild keeps it).
+  Open with the TO (Asonanggroe): adult cost of dolphin RM150 / glass boat / snorkelling (not in the CR) and the 4 activities' cost.
 - Done 9–10 Oct: v41 Info KB tidy · v42 Bangkok 4★/5★ removed · v43–v44 Bangkok Costing rate by rate (sheet COSTING BKK, no meals) ·
   v45 Bangkok Flags/History hidden (destinations[].hideTabs), Show calculation folds pax-only parts · v46 Beijing from the Tourdechina CR (RMB) ·
   v47 KB Accommodation from the hub + roomNote · v48 Beijing Flags/History hidden · v49 live FX for every destination except Jepun ·
@@ -98,6 +108,17 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - **Display name (11 Oct)**: "PT R&D Costing Hub" → "PT R&D Hub" in the hub (titles, header), kb-build text (KB lines "dari PT R&D Hub",
   135× in 28 KBs — only change, checked against a snapshot; CI 28/28 KB OK), READMEs and mirror.yml comments. catalog-build docstrings
   changed too, so the catalog mirror rebuilt all 67 PDFs: identical except the PDF CreationDate/ModDate stamps; .hub-sha = a61cc64.
+- **New in the page (11 Oct)**: CWB / CNB tables show component columns per child when the package has a non-zero tipping
+  component (rule % in the header, "(free)", "Less" for adult − RM; they add up to Cost/Pax) · TO box shows one choice when the
+  package has one TO · **several TOs per package**: default (assign) vs alternatives (alsoVariants), Edit costs → Tour operators card
+  (Add TO copying an existing TO's components + rates, Make default, Remove), Banding TO table · `tools/flags_ok.json` = flags checked
+  and not an issue (left out, counted on /flags/) · destinations[].historyFrom clears a destination's History view.
+- **Fixes (11 Oct)**: catalog-pt-public mirror.yml failed whenever specific catalogs changed (the last `[ -z ] &&` test was the step's
+  exit code) → `if … fi`. Data edits made outside the page: build next data.json in Python (keeps the number format), changes from
+  the page's own diff/describe (scratch vdiff.js, reverse-checked, null = absent), history entry, catalog hub_version / updated stamps.
+  Git identity: the Mac's hostname changed — commit with `-c user.name="ezie ARBA" -c user.email="eziearba@ezies-MacBook-Air.local"`.
+- Observation (no change): most destinations apply the child % to the whole adult cost, tipping included (e.g. Lake Toba CWB 85 %);
+  ask the PO per destination whether tipping should be charged in full for children.
 - Ideas not built (ask the PO first): admin "Reset password" + must-change-on-first-login, change role editor ↔ admin.
 - Open for the PO: Maldives 4 Star CNB below cost (Kaani has no child rate) + estimates to confirm (lunch D3, 2nd excursion, green tax,
   tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N has no costing
