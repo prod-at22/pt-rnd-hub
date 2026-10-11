@@ -163,6 +163,11 @@ class Hub:
     def prices(self, slug):
         return hub_data.resolve(self.cat(slug), self.pkg(slug))
 
+    def max_pax(self, slug):
+        """Largest pax the catalog prints in its price table ("10 - 15" → 15); None when the rows carry no pax numbers."""
+        ns = [int(n) for r in self.cat(slug).get("prices", {}).get("rows", []) for n in re.findall(r"\d+", r.get("pax", ""))]
+        return max(ns) if ns else None
+
     def adult(self, slug):
         """{pax: adult catalog price} as printed (Costing Catalog Price, or the catalog's own amounts)."""
         pk = self.pkg(slug)
@@ -311,7 +316,9 @@ def fill_tokens(obj, hub, links, slug):
         A = hub.adult(ln["catalog"])
         if not A:
             raise SystemExit(f"{slug}: no price for {ln['catalog']}")
-        v = min(A.values()) if kind == "dari" else A.get(min(A)) if kind == "2pax" else 2 * A.get(min(A))
+        top = hub.max_pax(ln["catalog"])   # "dari" = lowest price the catalog prints (hub prices beyond its pax range don't count, PO 11 Oct 2026)
+        D = {p: a for p, a in A.items() if top is None or p <= top} or A
+        v = min(D.values()) if kind == "dari" else A.get(min(A)) if kind == "2pax" else 2 * A.get(min(A))
         return "RM" + (f"{v:,.0f}" if float(v).is_integer() else f"{v:,.2f}")
     if isinstance(obj, str):
         return TOKEN.sub(lambda m: val(m.group(1), int(m.group(2))), obj) if "{{" in obj else obj
