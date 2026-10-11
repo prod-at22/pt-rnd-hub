@@ -537,7 +537,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
   {
     const hub = await boot(repo, "");
     const links = [...hub.doc.querySelectorAll("#grid a")].map(a => a.getAttribute("href"));
-    ok(["sel/?pkg=atk-bsc", "sel/?pkg=atk-std", "seljju/?pkg=atk-std", "hnd/?pkg=basic", "hnd/?pkg=standard", "kbv/?pkg=honeymoon", "aceh/"].every(l => links.includes(l)), "hub links per catalog package: " + links.slice(0, 12).join(","));
+    ok(["sel/?pkg=atk-bsc", "sel/?pkg=atk-std", "seljju/?pkg=atk-std", "hnd/?pkg=basic", "hnd/?pkg=standard", "kbv/?pkg=honeymoon", "aceh/?pkg=asonanggroe-3-star"].every(l => links.includes(l)), "hub links per catalog package: " + links.slice(0, 12).join(","));
     const hubRows = [...hub.doc.querySelectorAll("#grid .row")];
     const nCat = P.DATA.destinations.reduce((s, d) => s + (d.catalogs || []).length, 0);
     ok(hubRows.length === nCat && nCat >= 60, `hub: one row per catalog package (${nCat}), got ${hubRows.length}`);

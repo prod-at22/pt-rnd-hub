@@ -1,19 +1,4 @@
 {
  "about": "Flags checked by a PO and found not to be an issue. tools/flags.py leaves out a flag whose code + title match an entry here (the title holds the counts, so a changed situation raises the flag again) and lists it under 'verified' in data/flags.json.",
- "ok": [
-  {
-   "code": "ACEH",
-   "title": "Aceh: 2 package(s) without their own catalog",
-   "note": "4★ / 5★ are the catalog's accommodation upgrade of the 3★ package (PT ACEH 4D3N 2026: Grand Arabiya / Kyriad +RM50 and Hermes Palace +RM90 per person per night × 3 nights = hub tierUpgrade RM150 / RM270). Costs = Asonanggroe CR 2026 (4★ / 5★ rows).",
-   "by": "ezie",
-   "at": "2026-10-11"
-  },
-  {
-   "code": "ACEHSBG",
-   "title": "Aceh - Sabang: 2 package(s) without their own catalog",
-   "note": "4★ / 5★ are the catalog's accommodation upgrade of the 3★ package (PT ACEH SABANG 2026 v2: +RM50 and +RM90 per person per night × 4 nights = hub tierUpgrade RM200 / RM360). Costs = Asonanggroe CR 2026 5D4N (4★ / 5★ rows).",
-   "by": "ezie",
-   "at": "2026-10-11"
-  }
- ]
+ "ok": []
 }

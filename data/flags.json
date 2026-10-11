@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-11T10:49:10+08:00",
- "dataVersion": 54,
+ "generatedAt": "2026-10-11T10:55:06+08:00",
+ "dataVersion": 55,
  "flags": [
   {
    "code": "ACEHSBG",
@@ -8,7 +8,7 @@
    "severity": "high",
    "area": "Margin",
    "title": "Aceh - Sabang: margin problems in 2 package/TO lines",
-   "detail": "Aceh - Sabang 5D4N · 3★ — CWB selling below cost Pax 2–10 · Aceh - Sabang 5D4N · 3★ — CNB selling below cost Pax 2.",
+   "detail": "Aceh - Sabang Standard 5D4N — CWB selling below cost Pax 2–10 · Aceh - Sabang Standard 5D4N — CNB selling below cost Pax 2.",
    "fix": "Check the CNB cost rule (% of adult) and the CNB catalog price. Check the CWB cost rule (% of adult) and the CWB catalog price.",
    "id": 1
   },
@@ -553,32 +553,5 @@
    "id": 55
   }
  ],
- "verified": [
-  {
-   "code": "ACEH",
-   "severity": "low",
-   "area": "Coverage",
-   "title": "Aceh: 2 package(s) without their own catalog",
-   "ok": {
-    "code": "ACEH",
-    "title": "Aceh: 2 package(s) without their own catalog",
-    "note": "4★ / 5★ are the catalog's accommodation upgrade of the 3★ package (PT ACEH 4D3N 2026: Grand Arabiya / Kyriad +RM50 and Hermes Palace +RM90 per person per night × 3 nights = hub tierUpgrade RM150 / RM270). Costs = Asonanggroe CR 2026 (4★ / 5★ rows).",
-    "by": "ezie",
-    "at": "2026-10-11"
-   }
-  },
-  {
-   "code": "ACEHSBG",
-   "severity": "low",
-   "area": "Coverage",
-   "title": "Aceh - Sabang: 2 package(s) without their own catalog",
-   "ok": {
-    "code": "ACEHSBG",
-    "title": "Aceh - Sabang: 2 package(s) without their own catalog",
-    "note": "4★ / 5★ are the catalog's accommodation upgrade of the 3★ package (PT ACEH SABANG 2026 v2: +RM50 and +RM90 per person per night × 4 nights = hub tierUpgrade RM200 / RM360). Costs = Asonanggroe CR 2026 5D4N (4★ / 5★ rows).",
-    "by": "ezie",
-    "at": "2026-10-11"
-   }
-  }
- ]
+ "verified": []
 }
