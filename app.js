@@ -192,8 +192,15 @@ function variantCost(d, v, pax, opts) {
 }
 const assignedVariantId = (pkg, pax) => (pkg.assign.find(a => pax >= a.from && pax <= a.to) || {}).variant;
 // rule.on = component keys the % applies to; the other components are charged in full
-// (Aceh, Beijing: CWB = 75% × Ground + tipping/activities).
+// (Aceh, Beijing: CWB = 75% × Ground + tipping/activities). rule.free = component keys not charged for a child
+// (Aceh-Sabang: dolphin, glass boat, snorkelling RM0, PO 11 Oct 2026).
 function applyRule(rule, base, cost) {
+  if (rule && rule.free && rule.free.length) {
+    if (!cost || !num(base)) return NaN;
+    const free = cost.comps.filter(c => rule.free.includes(c.key)).reduce((s, c) => s + c.perPax, 0);
+    const rest = { ...cost, comps: cost.comps.filter(c => !rule.free.includes(c.key)) };
+    return applyRule({ ...rule, free: undefined }, base - free, rest);
+  }
   if (rule && rule.type === "pct" && rule.on && rule.on.length) {
     if (!cost || !num(base)) return NaN;
     const on = cost.comps.filter(c => rule.on.includes(c.key)).reduce((s, c) => s + c.perPax, 0);
@@ -574,7 +581,8 @@ function costingByPax(d, pkg, pax) {
   const k = SEL.paxTab, DP = ["destinations", d.code];
   const paxList = Object.keys(pkg.pricing.adult).map(Number).sort((a, b) => a - b);
   const int = v => num(v) ? Math.round(v).toLocaleString("en-MY") : '<span class="missing">—</span>';
-  const ruleTxt = rule => rule.type === "pct" ? `${n2(rule.value * 100, 1)}% of ${rule.on && rule.on.length ? esc(onLabel(d, rule.on)) + " + rest in full" : "adult cost"}` : rule.type === "minus" ? `adult cost − RM${n2(rule.value)}` : `flat RM${n2(rule.value)}`;
+  const ruleTxt = rule => (rule.free && rule.free.length ? esc(onLabel(d, rule.free)) + " free · " : "") + ruleTxt0(rule);
+  const ruleTxt0 = rule => rule.type === "pct" ? `${n2(rule.value * 100, 1)}% of ${rule.on && rule.on.length ? esc(onLabel(d, rule.on)) + " + rest in full" : "adult cost"}` : rule.type === "minus" ? `adult cost − RM${n2(rule.value)}` : `flat RM${n2(rule.value)}`;
   const isAdult = k === "adult", canRef = hasCalc(d, pkg), canCalc = isAdult && canRef, calc = canCalc && SEL.showCalc, codes = calc ? rateCodes(d, pkg) : null;
   const up = (+pkg.rules.tierUpgrade || 0) + optionUpgrade(d, pkg, optsFor(d));
   // consecutive pax rows with the same TO form one block
@@ -593,8 +601,8 @@ function costingByPax(d, pkg, pax) {
   // what is charged — the % of the rule (only on rule.on components when set, the rest in full) or "adult − RM" as a Less column.
   const rule = !isAdult && pkg.rules[k + "Cost"];
   const childComps = rule && (rule.type === "pct" || rule.type === "minus") && nonZero.some(c => /tip/i.test(c.key + " " + c.label)) ? nonZero : [];
-  const factor = c => rule.type !== "pct" ? 1 : rule.on && rule.on.length ? (rule.on.includes(c.key) ? +rule.value : 1) : +rule.value;
-  const fLbl = c => factor(c) === 1 ? "" : ` (${n2(factor(c) * 100, 1)}%)`;
+  const factor = c => (rule.free || []).includes(c.key) ? 0 : rule.type !== "pct" ? 1 : rule.on && rule.on.length ? (rule.on.includes(c.key) ? +rule.value : 1) : +rule.value;
+  const fLbl = c => factor(c) === 1 ? "" : factor(c) === 0 ? " (free)" : ` (${n2(factor(c) * 100, 1)}%)`;
   const less = rule && rule.type === "minus" && childComps.length;
   const nCols = isAdult ? 1 + comps.length + 7 : 1 + 1 + childComps.length + (less ? 1 : 0) + 6;
   const body = blocks.map(bl => {

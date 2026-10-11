@@ -41236,6 +41236,48 @@
    "kb": [
     "KB aceh: 6 changes"
    ]
+  },
+  {
+   "v": 58,
+   "at": "2026-10-11T11:11:41Z",
+   "by": "system",
+   "note": "Aceh-Sabang (PO ezie 11 Oct 2026): child cost — Dolphin, Glass Boat and Snorkelling RM0 for CWB and CNB (rules.free); Ground Cost 75% / 50%, tipping in full. CWB margin 19–30%, CNB 31–41% (2–15 pax).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "rules",
+      "cwbCost",
+      "free"
+     ],
+     "to": [
+      "dolphin",
+      "glass-boat",
+      "snorkelling"
+     ],
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › Rule › CWB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "to": [
+      "dolphin",
+      "glass-boat",
+      "snorkelling"
+     ],
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › Rule › CNB cost › free"
+    }
+   ]
   }
  ]
 }

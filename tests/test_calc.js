@@ -816,7 +816,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
   }
 
   console.log("8w. CWB / CNB tables: component columns (per child) when the package has tipping; they add up to Cost/Pax");
-  for (const [page, expect] of [["aceh/", ["Ground Cost (75%)", "Tipping"]], ["acehsbg/", ["Ground Cost (75%)", "Dolphin", "Tipping"]], ["ltoba/", ["Tipping (85%)"]], ["pek/", ["Tipping"]]]) {
+  for (const [page, expect] of [["aceh/", ["Ground Cost (75%)", "Tipping"]], ["acehsbg/", ["Ground Cost (75%)", "Dolphin (free)", "Glass Boat (free)", "Snorkelling (free)", "Tipping"]], ["ltoba/", ["Tipping (85%)"]], ["pek/", ["Tipping"]]]) {
     const pg = await boot(repo, page); await until(() => pg.doc.querySelector("#costPax"));
     for (const t of ["cwb", "cnb"]) {
       click(pg.w, pg.doc.querySelector(`#costPax [data-tab="${t}"]`)); await until(() => pg.doc.querySelector(`#costPax [data-tab="${t}"].on`));
@@ -840,6 +840,11 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
       const head = [...pg.doc.querySelector("#costPax tr.blk-head").querySelectorAll("th")].map(th => th.textContent.trim());
       ok(head[1] === "Adult cost/pax" && head[2] === "Cost/Pax", page + " no (non-zero) tipping → CWB table unchanged: " + head.join("|"));
     }
+  }
+
+  {   // Aceh-Sabang child cost: Ground 75% / 50%, dolphin + glass boat + snorkelling free, tipping in full (rules.free, PO 11 Oct 2026)
+    const x = byCode(P.DATA, "ACEHSBG"), pk = x.packages[0], r = P.priceRow(x, pk, pk.assign[0].variant, 2);
+    ok(Math.round(r.cwb.cost) === 678 && Math.round(r.cnb.cost) === 465 && r.cwb.margin > 0 && r.cnb.margin > 0, `Aceh-Sabang 2 pax: CWB cost 850×75%+40 = 678, CNB 850×50%+40 = 465 (${Math.round(r.cwb.cost)} / ${Math.round(r.cnb.cost)})`);
   }
 
   console.log("8v. several TOs per package: Add TO (copy), pick it → costing follows, Banding TO, Make default, Remove, Save");
