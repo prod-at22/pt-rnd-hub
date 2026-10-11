@@ -586,21 +586,29 @@ function costingByPax(d, pkg, pax) {
   const nonZero = pkgComponents(d, pkg).filter(c => blocks.some(bl => bl.rows.some(pr => pr.cost && pr.cost.comps.some(o => o.key === c.key && nz(o.group)))));
   // a single cost line (e.g. Seoul: the TO contract rate) is Cost/Pax itself — no breakdown column
   const comps = nonZero.length === 1 ? [] : nonZero;
-  const nCols = isAdult ? 1 + comps.length + 7 : 1 + 1 + 6;
+  // CWB / CNB: when the package has a tipping component, show the child's cost per component (per pax) so the PO sees
+  // what is charged — the % of the rule (only on rule.on components when set, the rest in full) or "adult − RM" as a Less column.
+  const rule = !isAdult && pkg.rules[k + "Cost"];
+  const childComps = rule && (rule.type === "pct" || rule.type === "minus") && nonZero.some(c => /tip/i.test(c.key + " " + c.label)) ? nonZero : [];
+  const factor = c => rule.type !== "pct" ? 1 : rule.on && rule.on.length ? (rule.on.includes(c.key) ? +rule.value : 1) : +rule.value;
+  const fLbl = c => factor(c) === 1 ? "" : ` (${n2(factor(c) * 100, 1)}%)`;
+  const less = rule && rule.type === "minus" && childComps.length;
+  const nCols = isAdult ? 1 + comps.length + 7 : 1 + 1 + childComps.length + (less ? 1 : 0) + 6;
   const body = blocks.map(bl => {
     const has = new Set(bl.v ? bl.v.components.map(c => c.key) : []);
     const toLbl = bl.v ? bl.v.label : "no TO";
     const title = `<tr class="blk-title"><td colspan="${nCols}">${esc(pkg.label.toUpperCase())}${toLbl.toUpperCase() === pkg.label.toUpperCase() ? "" : " / " + esc(toLbl)}${isAdult ? "" : ` <span class="muted">· ${k.toUpperCase()} cost = ${esc(ruleTxt(pkg.rules[k + "Cost"]))}</span>`}</td></tr>`;
     const head = `<tr class="blk-head"><th>${isAdult ? "Adult" : k.toUpperCase() + " · pax"}</th>${isAdult
       ? comps.map(c => { const vc = bl.v && bl.v.components.find(o => o.key === c.key); return `<th>${vc ? esc(vc.label) : ""}</th>`; }).join("")
-      : `<th>Adult cost/pax</th>`}<th>Cost/Pax</th><th class="cp">Catalog Price</th><th class="sp">${esc(sellLabel(pkg))}</th><th class="mg">Margin</th><th class="mg">%</th>${isAdult ? `<th>Total Gross</th>` : ""}</tr>`;
+      : `<th>Adult cost/pax</th>${childComps.map(c => { const vc = bl.v && bl.v.components.find(o => o.key === c.key); return `<th>${vc ? esc(vc.label) + esc(fLbl(c)) : ""}</th>`; }).join("")}${less ? "<th>Less</th>" : ""}`}<th>Cost/Pax</th><th class="cp">Catalog Price</th><th class="sp">${esc(sellLabel(pkg))}</th><th class="mg">Margin</th><th class="mg">%</th>${isAdult ? `<th>Total Gross</th>` : ""}</tr>`;
     const rows = bl.rows.map((pr, i) => {
       const p = pr.pax, x = pr[k];
       const cells = isAdult
         ? comps.map(c => { if (!has.has(c.key)) return "<td></td>"; const cc = pr.cost && pr.cost.comps.find(o => o.key === c.key); if (cc && num(cc.group) && !nz(cc.group)) return "<td></td>";
           const vc = calc && bl.v.components.find(o => o.key === c.key), f = vc ? calcText(d, vc.expr, p, codes) : "";
           return `<td title="RM${cc ? n2(cc.group, 2) : "—"} group · RM${cc ? n2(cc.perPax, 2) : "—"} per pax">${f ? `<span class="calc">${esc(f)} = ${int(cc && cc.group)}</span>` : int(cc && cc.group)}</td>`; }).join("")
-        : `<td class="muted">${int(pr.adult.cost)}</td>`;
+        : `<td class="muted">${int(pr.adult.cost)}</td>` + childComps.map(c => { if (!has.has(c.key)) return "<td></td>"; const cc = pr.cost && pr.cost.comps.find(o => o.key === c.key); if (cc && num(cc.group) && !nz(cc.group)) return "<td></td>";
+            const v = cc ? cc.perPax * factor(c) : NaN; return `<td title="RM${num(v) ? n2(v, 2) : "—"} per ${k.toUpperCase()}${factor(c) === 1 ? " (in full)" : ""}">${int(v)}</td>`; }).join("") + (less ? `<td>−${int(+rule.value)}</td>` : "");
       return `<tr class="click${i % 2 ? " alt" : ""}${p === pax ? " cur" : ""}" data-pax="${p}"><td class="c"><b>${p}</b></td>${cells}
         <td><b>${int(x.cost)}</b></td>
         <td class="cp"${up ? ` title="Includes upgrade +RM${n2(up)}"` : ""}>${ed([...DP, "packages", pkg.id, "pricing", k, String(p)], pkg.pricing[k][String(p)], { display: int(x.catalog) + (up ? '<span class="muted small"> *</span>' : "") })}</td>
@@ -612,7 +620,7 @@ function costingByPax(d, pkg, pax) {
   return `<div class="card full" id="costPax"><h2>Costing by pax <span class="sub">${esc(pkg.label)} · RM</span>
     <span class="right tabs">${canRef ? `<button class="tab calcbtn${SEL.showRef ? " on" : ""}" data-ref="1" title="Rates and FX behind the codes A, B, …">${SEL.showRef ? "Hide" : "Show"} rate reference</button>` : ""}${canCalc ? `<button class="tab calcbtn${calc ? " on" : ""}" data-calc="1" title="Show how each component is calculated from the TO rates">Show calculation</button>` : ""}${["adult", "cwb", "cnb"].map(t => `<button class="tab${t === k ? " on" : ""}" data-tab="${t}">${t.toUpperCase()}</button>`).join("")}</span></h2>
     <div class="scroll" style="max-height:640px;overflow-y:auto"><table class="rd">${body}</table></div>
-    <div class="note">${isAdult ? "Component columns are for the whole group. Cost/Pax = sum of components ÷ pax. Margin = Selling − Cost/Pax. Total Gross = Margin × pax." : "Cost/Pax comes from the adult cost by the rule above. Margin = Selling − Cost/Pax."} Selling Price = Catalog Price − RM${n2(sellDisc())}.${up ? ` * Catalog includes the upgrade +RM${n2(up)}; when editing, the cell holds the base price.` : ""} ${canCalc ? (calc ? "Each component shows its formula at that pax; A, B, … are the codes in Rate reference. " : "Show calculation shows each component as rates × FX. ") : ""}Hover a component for exact RM. Click a row to highlight it.</div></div>`;
+    <div class="note">${isAdult ? "Component columns are for the whole group. Cost/Pax = sum of components ÷ pax. Margin = Selling − Cost/Pax. Total Gross = Margin × pax." : (childComps.length ? "Component columns are per child (RM/pax), after the rule above; Cost/Pax = their sum. " : "Cost/Pax comes from the adult cost by the rule above. ") + "Margin = Selling − Cost/Pax."} Selling Price = Catalog Price − RM${n2(sellDisc())}.${up ? ` * Catalog includes the upgrade +RM${n2(up)}; when editing, the cell holds the base price.` : ""} ${canCalc ? (calc ? "Each component shows its formula at that pax; A, B, … are the codes in Rate reference. " : "Show calculation shows each component as rates × FX. ") : ""}Hover a component for exact RM. Click a row to highlight it.</div></div>`;
 }
 function addonTotals(d) {
   let sell = 0, cost = 0, n = 0, missing = 0;

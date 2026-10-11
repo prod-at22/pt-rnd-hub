@@ -813,6 +813,33 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(pg.errors.length === 0, "aceh errors: " + pg.errors.join("|"));
   }
 
+  console.log("8w. CWB / CNB tables: component columns (per child) when the package has tipping; they add up to Cost/Pax");
+  for (const [page, expect] of [["aceh/", ["Ground Cost (75%)", "Tipping"]], ["acehsbg/", ["Ground Cost (75%)", "Dolphin", "Tipping"]], ["ltoba/", ["Tipping (85%)"]], ["pek/", ["Tipping"]]]) {
+    const pg = await boot(repo, page); await until(() => pg.doc.querySelector("#costPax"));
+    for (const t of ["cwb", "cnb"]) {
+      click(pg.w, pg.doc.querySelector(`#costPax [data-tab="${t}"]`)); await until(() => pg.doc.querySelector(`#costPax [data-tab="${t}"].on`));
+      const head = [...pg.doc.querySelector("#costPax tr.blk-head").querySelectorAll("th")].map(th => th.textContent.trim());
+      const iA = head.indexOf("Adult cost/pax"), iC = head.indexOf("Cost/Pax");
+      const nb = s => { const v = parseFloat(String(s).replace(/[^\d.−-]/g, "").replace("−", "-")); return isFinite(v) ? v : 0; };
+      let worst = 0, rows = 0;
+      for (const tr of pg.doc.querySelectorAll("#costPax tr[data-pax]")) {
+        const td = [...tr.querySelectorAll("td")].map(x => x.textContent.trim()); if (!/\d/.test(td[iC])) continue;
+        const sum = td.slice(iA + 1, iC).reduce((s2, x) => s2 + nb(x), 0); worst = Math.max(worst, Math.abs(sum - nb(td[iC]))); rows++;
+      }
+      if (t === "cwb") ok(expect.every(e => head.some(h => h.startsWith(e))), `${page} CWB columns ${expect.join(", ")}: ` + head.join("|"));
+      ok(iC - iA > 1 && rows > 0 && worst <= iC - iA, `${page} ${t.toUpperCase()}: components add up to Cost/Pax (±rounding, worst ${worst})`);
+    }
+    ok(pg.errors.length === 0, page + " errors: " + pg.errors.join("|"));
+  }
+  {
+    for (const page of ["hnd/", "kix/"]) {   // HND: no tipping component · KIX: tipping RM0 → no column
+      const pg = await boot(repo, page); await until(() => pg.doc.querySelector("#costPax"));
+      click(pg.w, pg.doc.querySelector('#costPax [data-tab="cwb"]')); await until(() => pg.doc.querySelector('#costPax [data-tab="cwb"].on'));
+      const head = [...pg.doc.querySelector("#costPax tr.blk-head").querySelectorAll("th")].map(th => th.textContent.trim());
+      ok(head[1] === "Adult cost/pax" && head[2] === "Cost/Pax", page + " no (non-zero) tipping → CWB table unchanged: " + head.join("|"));
+    }
+  }
+
   console.log("9. no runtime errors");
   ok(errors.length === 0, "errors: " + errors.join(" | "));
 
