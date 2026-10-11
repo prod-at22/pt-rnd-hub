@@ -480,7 +480,7 @@ function renderFlagsPage() {
         <select id="flagArea"><option value="">All areas</option>${areas.map(a => `<option${a === SEL.flagArea ? " selected" : ""}>${esc(a)}</option>`).join("")}</select>
         <select id="flagPO"><option value="">All POs</option>${pos.map(p => `<option${p === SEL.flagPO ? " selected" : ""}>${esc(p)}</option>`).join("")}</select>
         <input id="flagQ" type="search" placeholder="Search…" value="${esc(SEL.flagQ)}"></div>
-      <div class="small muted">${list.length} shown. High = a price or cost is wrong or missing · Medium = needs a decision or the catalog and hub disagree on coverage · Low = housekeeping.</div></div></div>` + flagList(list, true);
+      <div class="small muted">${list.length} shown${(FLAGS.verified || []).length ? ` · <span title="${esc(FLAGS.verified.map(v => v.code + ": " + v.title + " — " + v.ok.note + " (" + v.ok.by + ", " + v.ok.at + ")").join("\n"))}">${FLAGS.verified.length} checked by a PO, not an issue (tools/flags_ok.json)</span>` : ""}. High = a price or cost is wrong or missing · Medium = needs a decision or the catalog and hub disagree on coverage · Low = housekeeping.</div></div></div>` + flagList(list, true);
 }
 const onLabel = (d, keys) => keys.map(k => { for (const v of d.variants) { const c = v.components.find(x => x.key === k); if (c) return c.label; } return k; }).join(" + ");
 // Component columns for a package: union of components across the TOs it uses, in order.

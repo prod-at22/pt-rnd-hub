@@ -145,6 +145,10 @@ currency that has different rates in different destinations.
 numbers (prices, pax coverage, missing TO costs, margins, add-ons, FX), with a suggested fix; filter
 by severity, area and PO. Regenerate after changes:
 
+A flag checked by a PO and found **not to be an issue** goes in `tools/flags_ok.json` (code + exact title, note, by, date):
+flags.py leaves it out and lists it under `verified` in `flags.json` (the Flags page shows the count). The title holds the
+counts, so if the situation changes the flag comes back by itself.
+
 ```bash
 NODE_PATH=<dir with jsdom> python3 tools/flags.py      # runs tools/margins.js itself
 ```

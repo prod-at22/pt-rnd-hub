@@ -789,6 +789,15 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
   console.log("8z. GitHub API calls bypass the browser cache (API max-age=60 → stale head → 'not a fast forward')");
   ok(!(repo.cached || []).length, "every api.github.com request uses cache: no-store: " + (repo.cached || []).slice(0, 2).join(" | "));
 
+  console.log("8y. Flags page: flags checked by a PO (tools/flags_ok.json) are left out and counted");
+  {
+    const fl = JSON.parse(repo.files(repo.head)["data/flags.json"]), oks = JSON.parse(fs.readFileSync(path.join(ROOT, "tools", "flags_ok.json"), "utf8")).ok;
+    ok(oks.every(o => !fl.flags.some(f => f.code === o.code && f.title === o.title)), "no flag in flags.json matches an entry of flags_ok.json");
+    const pg = await boot(repo, "flags/"); await until(() => pg.doc.querySelector(".flagbar"));
+    ok(!(fl.verified || []).length || pg.doc.querySelector(".flagbar").textContent.includes(fl.verified.length + " checked by a PO, not an issue"), "Flags page shows how many flags were checked and found not an issue");
+    ok(pg.errors.length === 0, "flags page errors: " + pg.errors.join("|"));
+  }
+
   console.log("9. no runtime errors");
   ok(errors.length === 0, "errors: " + errors.join(" | "));
 

@@ -286,10 +286,22 @@ def main():
     flags.sort(key=lambda f: (order[f["severity"]], f["code"], f["area"]))
     for i, f in enumerate(flags, 1):
         f["id"] = i
-    out = {"generatedAt": datetime.datetime.now().astimezone().isoformat(timespec="seconds"), "dataVersion": data["version"], "flags": flags}
+    # flags a PO checked and found not to be an issue (tools/flags_ok.json): left out, listed under "verified"
+    oks = json.load(open(os.path.join(ROOT, "tools", "flags_ok.json")))["ok"]
+    key = lambda f: (f["code"], f["title"])
+    okmap = {key(o): o for o in oks}
+    verified = [dict(f, ok=okmap[key(f)]) for f in flags if key(f) in okmap]
+    flags[:] = [f for f in flags if key(f) not in okmap]
+    for o in oks:
+        if not any(key(v) == key(o) for v in verified):
+            print("flags_ok: no longer raised (can be removed from tools/flags_ok.json): %s · %s" % key(o))
+    for i, f in enumerate(flags, 1):
+        f["id"] = i
+    out = {"generatedAt": datetime.datetime.now().astimezone().isoformat(timespec="seconds"), "dataVersion": data["version"], "flags": flags,
+           "verified": [{k: v[k] for k in ("code", "severity", "area", "title", "ok")} for v in verified]}
     json.dump(out, open(os.path.join(ROOT, "data", "flags.json"), "w"), indent=1, ensure_ascii=False)
     from collections import Counter
-    print("flags:", len(flags), dict(Counter(f["severity"] for f in flags)), dict(Counter(f["area"] for f in flags)))
+    print("flags:", len(flags), dict(Counter(f["severity"] for f in flags)), dict(Counter(f["area"] for f in flags)), "· verified:", len(verified))
 
 
 if __name__ == "__main__":
