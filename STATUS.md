@@ -1,4 +1,4 @@
-# Status & handoff (11 Oct 2026, data v62 — the hub is the source of truth)
+# Status & handoff (11 Oct 2026, data v64 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (11 Oct 2026) — v62 live · Aceh verified · next: Bali (PO's sheet ~/Downloads/rnd bali.xlsx as reference)
-- Live: hub v62, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (11 Oct 2026) — v64 live · Aceh + Bali verified · next: Bangkok (BKK)
+- Live: hub v64, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -84,6 +84,19 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Blue Ribbon removed (kept the RM45 set); 4 additional activities one item each, cost RM0 until the TO rate is known; stale KB
   notes fixed (also the marketing note in pt-kb-house aceh/index.html, outside kbdata — a rebuild keeps it).
   Open with the TO (Asonanggroe): adult cost of dolphin RM150 / glass boat / snorkelling (not in the CR) and the 4 activities' cost.
+  **Bali done (v63–v64, reference: PO sheet ~/Downloads/rnd bali.xlsx, block "BALI NEW TESTING – FEB 2026", FX in B1):** cost tables
+  now in IDR (were MYR at the old fixed 0.0002224864, so live FX did nothing); Standard transport per pax = sheet (6 / 18 pax were
+  higher); Honeymoon Std / Premium transport = sheet honeymoon formula (IDR 1,925,000 per couple); Honeymoon selling = catalog − RM200
+  per couple (new per-package rules.sellingDiscount = 100/pax; others use settings RM200/pax); Premium costs: PO says hub values are
+  right (sheet has no Feb 2026 Premium block); Standard 16–20 pax 897 / 817 / 767; vehicles = honeymoon catalog + KB (Avanza 2–4 ·
+  Innova 5–6 · Hiace 7–12) also in the Standard catalog + KB; catalog add-ons: selling = catalog price, cost from the matching R&D
+  item (duplicate removed) or the sheet; standard / honeymoon dinner items stay separate (their catalog group titles differ).
+  kb-build {{dari:N}} = lowest adult within the catalog's printed pax range (Bali card "dari RM917"; Krabi cards now 1,297 / 1,497).
+  Catalog prices unchanged (checked live). Open Bali items are flags: Banana Boat below cost, Pocket Wifi prices swapped,
+  8 add-ons without cost, TripCare RM64 vs Aceh RM45 (tools/flags_open.json).
+- **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
+  convert each to its currency during its check (confirm the FX each table was made with first).
+- **Next: Bangkok (BKK)** — same method; ask the PO for a reference sheet / CR if there is one (Costing is rate by rate, sheet COSTING BKK).
 - Done 9–10 Oct: v41 Info KB tidy · v42 Bangkok 4★/5★ removed · v43–v44 Bangkok Costing rate by rate (sheet COSTING BKK, no meals) ·
   v45 Bangkok Flags/History hidden (destinations[].hideTabs), Show calculation folds pax-only parts · v46 Beijing from the Tourdechina CR (RMB) ·
   v47 KB Accommodation from the hub + roomNote · v48 Beijing Flags/History hidden · v49 live FX for every destination except Jepun ·
@@ -112,7 +125,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   component (rule % in the header, "(free)", "Less" for adult − RM; they add up to Cost/Pax) · TO box shows one choice when the
   package has one TO · **several TOs per package**: default (assign) vs alternatives (alsoVariants), Edit costs → Tour operators card
   (Add TO copying an existing TO's components + rates, Make default, Remove), Banding TO table · `tools/flags_ok.json` = flags checked
-  and not an issue (left out, counted on /flags/) · destinations[].historyFrom clears a destination's History view.
+  and not an issue (left out, counted on /flags/) · `tools/flags_open.json` = open items a PO noted (shown as flags until removed) ·
+  flags.py also flags add-ons sold below cost · destinations[].historyFrom clears a destination's History view.
 - **Fixes (11 Oct)**: catalog-pt-public mirror.yml failed whenever specific catalogs changed (the last `[ -z ] &&` test was the step's
   exit code) → `if … fi`. Data edits made outside the page: build next data.json in Python (keeps the number format), changes from
   the page's own diff/describe (scratch vdiff.js, reverse-checked, null = absent), history entry, catalog hub_version / updated stamps.
