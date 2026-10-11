@@ -1,0 +1,25 @@
+{
+ "about": "Open items a PO noted during a destination check, to settle later. tools/flags.py shows each as a flag until it is removed from this file.",
+ "open": [
+  {
+   "code": "DPS",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Bali: Pocket Wifi prices look swapped",
+   "detail": "Pocket Wifi 3GB 4D3N sells at RM120 (cost RM28) but 10GB at RM80 (cost RM48) — the larger plan is cheaper.",
+   "fix": "Confirm both selling prices on the Add On tab.",
+   "by": "ezie",
+   "at": "2026-10-11"
+  },
+  {
+   "code": "DPS",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Bali: TripCare 360 prices differ from Aceh",
+   "detail": "Bali has only the TripCare set at RM64 (Individual 1–5 days); Aceh and Aceh-Sabang keep the RM45 set (PO 11 Oct 2026).",
+   "fix": "Pick one TripCare price list and use it for Bali too.",
+   "by": "ezie",
+   "at": "2026-10-11"
+  }
+ ]
+}

@@ -245,6 +245,18 @@ def main():
                 flag(d["code"], "medium", "Add-ons", "%s: add-on \"%s\" cost and selling have opposite signs" % (d["name"], a_["label"]),
                      "Cost %s, selling %s → margin %s." % (rm(c), rm(s), rm(s - c)), "Use the same sign for a deduction (e.g. both negative).")
 
+    for d in data["destinations"]:   # sold below cost (same sign: deductions are checked above)
+        low = [a_ for a_ in d.get("addons", []) if isinstance(a_.get("cost"), (int, float)) and isinstance(a_.get("selling"), (int, float))
+               and a_["cost"] > 0 and a_["selling"] > 0 and a_["selling"] < a_["cost"]]
+        if low:
+            flag(d["code"], "medium", "Add-ons", "%s: %d add-on(s) sold below cost" % (d["name"], len(low)),
+                 "; ".join("%s: cost %s, selling %s" % (a_["label"], rm(a_["cost"]), rm(a_["selling"])) for a_ in low) + ".",
+                 "Raise the selling (catalog) price or check the cost on the Add On tab.")
+
+    # ---------- 4b. open items a PO noted for later (tools/flags_open.json) ----------
+    for o in json.load(open(os.path.join(ROOT, "tools", "flags_open.json")))["open"]:
+        flag(o["code"], o["severity"], o["area"], o["title"], o["detail"] + " (noted by %s, %s)" % (o["by"], o["at"]), o["fix"])
+
     # ---------- 5. FX: one rate per currency ----------
     same = {}
     for d in data["destinations"]:
