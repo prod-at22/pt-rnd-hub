@@ -111,7 +111,7 @@
         "Free & Easy"
       ],
       "transport": "Private Transport",
-      "meals": "International Breakfast, Lunch, Dinner",
+      "meals": "Breakfast, Lunch, Dinner",
       "hotel": "3-Star Hotel"
     },
     {
@@ -126,7 +126,7 @@
         "Free & Easy"
       ],
       "transport": "Private Transport",
-      "meals": "International Breakfast, Lunch, Dinner",
+      "meals": "Breakfast, Lunch, Dinner",
       "hotel": "3-Star Hotel"
     },
     {
@@ -139,7 +139,7 @@
         "Flight BTJ to KUL"
       ],
       "transport": "Private Transport",
-      "meals": "International Breakfast",
+      "meals": "Breakfast",
       "hotel": "-"
     }
   ],
@@ -212,5 +212,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 57
+  "hub_version": 62
 }
