@@ -1,6 +1,6 @@
-# Status & handoff (8 Oct 2026, data v28 — the hub is the source of truth)
+# Status & handoff (11 Oct 2026, data v54 — the hub is the source of truth)
 
-PT R&D Hub. Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
+PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
 
 ## Start of a new session
@@ -93,6 +93,11 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - **Live FX**: fx entry `"live": "<ISO>"` → today's ECB rate (one request MYR → currencies, inverted) on page open; `value` = fallback.
 - **Stay logged in (11 Oct)**: login carries over between destination pages in the same tab (sessionStorage `ptRndHub.session`:
   user + vault key + last activity, no token; token re-decrypted from users.json per page; cleared on tab close / Log out / 30 min idle).
+  Tested live (forged / unreadable stored session rejected) and on localhost with test-only accounts (navigation HND → KIX → SEL → hub,
+  rights, Account, idle, new tab, Log out). Fixes from that test: no Edit costs on the hub list / flags pages; unreadable session cleared.
+- **Display name (11 Oct)**: "PT R&D Costing Hub" → "PT R&D Hub" in the hub (titles, header), kb-build text (KB lines "dari PT R&D Hub",
+  135× in 28 KBs — only change, checked against a snapshot; CI 28/28 KB OK), READMEs and mirror.yml comments. catalog-build docstrings
+  changed too, so the catalog mirror rebuilt all 67 PDFs: identical except the PDF CreationDate/ModDate stamps; .hub-sha = a61cc64.
 - Ideas not built (ask the PO first): admin "Reset password" + must-change-on-first-login, change role editor ↔ admin.
 - Open for the PO: Maldives 4 Star CNB below cost (Kaani has no child rate) + estimates to confirm (lunch D3, 2nd excursion, green tax,
   tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N has no costing
