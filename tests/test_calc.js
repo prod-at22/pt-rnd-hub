@@ -803,6 +803,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const pg = await boot(repo, "aceh/", "", null); await until(() => pg.doc.querySelector("#controls h1"));
     const d = pg.w.PTCALC.DATA.destinations.find(x => x.code === "ACEH");
     ok(d.historyFrom > 0 && !(d.hideTabs || []).length, "ACEH: historyFrom set, no hidden tabs");
+    ok([...pg.doc.querySelector("#selVar").options].map(o => o.value + "=" + o.textContent).join() === "auto=Auto: Asonanggroe", "one TO → the TO box has one choice: " + [...pg.doc.querySelector("#selVar").options].map(o => o.textContent).join(" | "));
     const tabBtn = id => pg.doc.querySelector(`[data-tabmain="${id}"]`);
     ok(tabBtn("history") && tabBtn("flags"), "Flags and History tabs are shown");
     click(pg.w, tabBtn("history")); await until(() => pg.doc.querySelector(".hist"));

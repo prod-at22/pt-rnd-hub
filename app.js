@@ -408,6 +408,9 @@ const pkgVariants = (d, pkg) => { const ids = new Set([...pkg.assign.map(a => a.
 function renderControls(d, pkg) {
   $("#controls").style.display = "";
   const pax = bandPax(), autoId = assignedVariantId(pkg, pax);
+  // one TO for the package → one choice (Auto); with several TOs (by pax band or alternatives) each can be picked and the costing follows it
+  const multiTO = pkgVariants(d, pkg).length > 1;
+  if (!multiTO && SEL.variant !== "auto") SEL.variant = "auto";
   const e = lastUpdate(d, pkg.id);
   const fl = flagsFor(d.code), nh = fl.filter(f => f.severity === "high").length;
   $("#controls").innerHTML = `
@@ -421,8 +424,8 @@ function renderControls(d, pkg) {
       ${(d.options || []).map(op => { const O = optsFor(d), c = op.choices.find(x => x.id === O[op.id]), up = c && c.upgrade ? +(c.upgrade[pkg.id] || 0) : 0;
         return `<label>${esc(op.label)}${up ? ` <span class="pill warn">catalog +RM${up}</span>` : ""}<select id="opt_${esc(op.id)}">${op.choices.map(ch => `<option value="${esc(ch.id)}"${ch.id === O[op.id] ? " selected" : ""}>${esc(ch.label)}</option>`).join("")}</select></label>`; }).join("")}
       <label>Tour operator<select id="selVar">
-        <option value="auto"${SEL.variant === "auto" ? " selected" : ""}>Auto${autoId ? ": " + esc((d.variants.find(v => v.id === autoId) || {}).label || autoId) + " (" + pax + " pax)" : " by pax"}</option>
-        ${pkgVariants(d, pkg).map(v => `<option value="${v.id}"${SEL.variant === v.id ? " selected" : ""}>${esc(v.label)} (${v.paxMin}–${v.paxMax} pax)</option>`).join("")}
+        <option value="auto"${SEL.variant === "auto" ? " selected" : ""}>Auto${autoId ? ": " + esc((d.variants.find(v => v.id === autoId) || {}).label || autoId) + (multiTO ? " (" + pax + " pax)" : "") : " by pax"}</option>
+        ${multiTO ? pkgVariants(d, pkg).map(v => `<option value="${v.id}"${SEL.variant === v.id ? " selected" : ""}>${esc(v.label)} (${v.paxMin}–${v.paxMax} pax)</option>`).join("") : ""}
       </select></label>
     </div>
     <nav class="tabsbar">${tabsFor(d).map(([id, l]) => `<button class="tabm${SEL.tab === id ? " on" : ""}" data-tabmain="${id}">${l}${id === "flags" && fl.length ? ` <span class="pill ${nh ? "bad" : "warn"}">${fl.length}</span>` : ""}</button>`).join("")}</nav>`;
