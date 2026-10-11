@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 56,
- "updatedAt": "2026-10-11T03:06:44Z",
+ "version": 57,
+ "updatedAt": "2026-10-11T03:32:13Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -14494,13 +14494,13 @@
     },
     {
      "id": "aceh-h05",
-     "type": "4 Star Hotel",
+     "type": "5 Star Hotel",
      "name": "Kyriad Hotel",
      "catalogs": {
       "aceh": {
-       "sur": 5,
+       "sur": 6,
        "amounts": [
-        "Add RM50/person/night",
+        "Add RM90/person/night",
         "RM50/person/night"
        ]
       }
@@ -14512,7 +14512,7 @@
      "name": "Hermes Palace Hotel",
      "catalogs": {
       "aceh": {
-       "sur": 6,
+       "sur": 5,
        "amounts": [
         "Add RM90/person/night",
         "RM50/person/night"
@@ -15564,8 +15564,8 @@
      "id": "acehsbg-a04",
      "category": "Activity",
      "label": "Dolphin Watching (Exclude alt)",
-     "cost": 0.0,
-     "selling": 100.0,
+     "cost": -150.0,
+     "selling": -100.0,
      "per": "pax",
      "notes": "Standalone pricing"
     },
@@ -15573,8 +15573,8 @@
      "id": "acehsbg-a05",
      "category": "Activity",
      "label": "Glass Boat (Exclude alt)",
-     "cost": 0.0,
-     "selling": 30.0,
+     "cost": -50.0,
+     "selling": -30.0,
      "per": "pax",
      "notes": null
     },
@@ -15582,8 +15582,8 @@
      "id": "acehsbg-a06",
      "category": "Activity",
      "label": "Snorkelling (Exclude alt)",
-     "cost": 0.0,
-     "selling": 15.0,
+     "cost": -20.0,
+     "selling": -15.0,
      "per": "pax",
      "notes": null
     },
@@ -15591,7 +15591,7 @@
      "id": "acehsbg-a07",
      "category": "Transport",
      "label": "Airport Transfer (extra)",
-     "cost": 0.0,
+     "cost": 35.0,
      "selling": 100.0,
      "per": "way",
      "notes": null
@@ -15985,13 +15985,13 @@
     },
     {
      "id": "acehsbg-h05",
-     "type": "4 Star Hotel",
+     "type": "5 Star Hotel",
      "name": "Kyriad Hotel",
      "catalogs": {
       "aceh-sabang": {
-       "sur": 5,
+       "sur": 6,
        "amounts": [
-        "Add RM50/person/night",
+        "Add RM90/person/night",
         "RM50/person/night"
        ]
       }
@@ -16003,7 +16003,7 @@
      "name": "Hermes Palace Hotel",
      "catalogs": {
       "aceh-sabang": {
-       "sur": 6,
+       "sur": 5,
        "amounts": [
         "Add RM90/person/night",
         "RM50/person/night"

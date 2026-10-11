@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 January 2027",
   "version": "v1",
-  "updated": "2026-03-01",
+  "updated": "2026-10-11",
   "kb_url": "https://prod-at22.github.io/arba-aceh-kb/",
   "po": "Fyka",
   "ops": "ILY",
@@ -212,5 +212,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 57
 }

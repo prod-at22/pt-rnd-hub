@@ -807,7 +807,8 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const tabBtn = id => pg.doc.querySelector(`[data-tabmain="${id}"]`);
     ok(tabBtn("history") && tabBtn("flags"), "Flags and History tabs are shown");
     click(pg.w, tabBtn("history")); await until(() => pg.doc.querySelector(".hist"));
-    ok(!pg.doc.querySelector(".hist .e") && pg.doc.querySelector(".hist").textContent.includes("history was cleared"), "History tab: no versions, 'cleared' note");
+    const shownV = [...pg.doc.querySelectorAll(".hist .e .pill.nav")].map(x => +x.textContent.replace("v", ""));
+    ok(shownV.every(v => v >= d.historyFrom) && (shownV.length || pg.doc.querySelector(".hist").textContent.includes("history was cleared")), "History tab: only versions from v" + d.historyFrom + " (" + (shownV.join(",") || "none, 'cleared' note") + ")");
     ok(pg.w.PTCALC.HISTORY.entries.some(e => e.v < d.historyFrom && (e.changes || []).some(c => c.path[1] === "ACEH")), "the global log still has the older ACEH versions");
     click(pg.w, tabBtn("flags")); await tick(20);
     ok(!pg.doc.querySelector("#grid .flags tr.sev-high, #grid .flags tr.sev-medium, #grid .flags tr.sev-low") && pg.doc.querySelector("#grid").textContent.includes("No flags"), "Flags tab: nothing listed for ACEH");

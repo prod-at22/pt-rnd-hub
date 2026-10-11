@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 January 2027",
   "version": "v2",
-  "updated": "2026-03-01",
+  "updated": "2026-10-11",
   "kb_url": "https://prod-at22.github.io/arba-aceh-kb/",
   "po": "Fyka",
   "ops": "ILY",
@@ -197,6 +197,7 @@
         "All prices are valid for 24 hours after quotation submission.",
         "The price is for 2 to 3 persons per room.",
         "Single Supplement: additional RM250 per person.",
+        "Late Booking Surcharge of RM50/booking will apply for bookings made less than 45 days before the departure date.",
         "This package is valid until 31st January 2027 travel period.",
         "Private Driver & Guide is based on 12 hours basis. 150,000 IDR/hour will be charged for every extra hour usage. Payment must be made in cash.",
         "Itinerary, Price, and Flight are subject to change accordingly.",
@@ -243,5 +244,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 57
 }
