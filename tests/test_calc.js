@@ -304,6 +304,10 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(old.doc.querySelector("#btnLogin") && !old.w.sessionStorage.getItem(key), "older than 30 min idle → logged out, stored session cleared");
     const gone = await boot(repo, "kix/", "", { [key]: JSON.stringify({ ...st, u: "nobody" }) }); await until(() => gone.doc.querySelector("#btnLogin"));
     ok(gone.doc.querySelector("#btnLogin"), "user not in users.json (removed) → not logged in");
+    const bad = await boot(repo, "kix/", "", { [key]: "{not json" }); await until(() => bad.doc.querySelector("#btnLogin"));
+    ok(bad.doc.querySelector("#btnLogin") && !bad.w.sessionStorage.getItem(key), "unreadable stored session → logged out and cleared");
+    const hub = await boot(repo, "", "", carry); await until(() => hub.doc.querySelector("#authArea .chip"));
+    ok(hub.doc.querySelector("#authArea .chip").textContent.includes("thania") && !hub.doc.querySelector("#btnEdit"), "hub list page: still logged in, no Edit costs (nothing to edit there)");
     click(kix.w, kix.doc.querySelector("#btnLogout")); await tick(5);
     ok(!kix.w.sessionStorage.getItem(key) && kix.doc.querySelector("#btnLogin"), "Log out clears the stored session");
     ok([sel, kix, old, gone].every(p => !p.errors.length), "session errors: " + [sel, kix, old, gone].flatMap(p => p.errors).join("|"));

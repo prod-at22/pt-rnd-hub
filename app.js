@@ -371,7 +371,7 @@ function renderTop() {
   const n = pendingChanges().length;
   $("#authArea").innerHTML = SESSION
     ? `<span class="chip">● ${esc(SESSION.u)} (${esc(SESSION.role)})</span>
-       ${!PAGE_DEST || ownsDest(PAGE_DEST) ? `<button class="btn" id="btnEdit">${EDIT ? "Stop editing" : "Edit costs"}</button>`
+       ${!PAGE_DEST ? "" : ownsDest(PAGE_DEST) ? `<button class="btn" id="btnEdit">${EDIT ? "Stop editing" : "Edit costs"}</button>`
          : `<button class="btn" disabled title="Only PO ${esc(poOf(PAGE_DEST) || "—")} or an admin can edit ${esc(PAGE_DEST)}">Edit costs (PO ${esc(poOf(PAGE_DEST) || "—")} only)</button>`}
        ${n ? `<button class="btn save" id="btnSave">Save v${BASE.version + 1} (${n})</button>` : ""}
        <button class="btn" id="btnAcct">Account</button>
@@ -1376,7 +1376,7 @@ function persistSession() {
   try { if (SESSION) sessionStorage.setItem(SESSION_KEY, JSON.stringify({ u: SESSION.u, vk: b64(SESSION.vaultRaw), at: lastActivity })); else sessionStorage.removeItem(SESSION_KEY); } catch (_) { }
 }
 async function restoreSession() {
-  let s = null; try { s = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null"); } catch (_) { }
+  let s = null; try { s = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null"); } catch (_) { s = {}; }   // unreadable → cleared below
   if (!s) return;
   const rec = (USERS.users || []).find(x => x.u === s.u);
   try {
