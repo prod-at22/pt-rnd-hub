@@ -41300,6 +41300,437 @@
    "kb": [
     "KB aceh: 1 change"
    ]
+  },
+  {
+   "v": 60,
+   "at": "2026-10-11T11:32:45Z",
+   "by": "system",
+   "note": "Aceh-Sabang (PO ezie 11 Oct 2026): child prices 16–30 pax follow the Aceh pattern from the 11–15 band — CWB −RM20 per band (957 / 937 / 917), CNB −RM10 per band (827 / 817 / 807); before they were above the 11–15 prices (1237… / 1037…).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 1237,
+     "to": 957,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 1237,
+     "to": 957,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 1237,
+     "to": 957,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 1237,
+     "to": 957,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 1237,
+     "to": 957,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1217,
+     "to": 937,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1217,
+     "to": 937,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1217,
+     "to": 937,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1217,
+     "to": 937,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1217,
+     "to": 937,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1197,
+     "to": 917,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1197,
+     "to": 917,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1197,
+     "to": 917,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1197,
+     "to": 917,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1197,
+     "to": 917,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 1037,
+     "to": 827,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 1037,
+     "to": 827,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 1037,
+     "to": 827,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 1037,
+     "to": 827,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 1037,
+     "to": 827,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1017,
+     "to": 817,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1017,
+     "to": 817,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1017,
+     "to": 817,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1017,
+     "to": 817,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1017,
+     "to": 817,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 997,
+     "to": 807,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 997,
+     "to": 807,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 997,
+     "to": 807,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 997,
+     "to": 807,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "packages",
+      "asonanggroe-3-star",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 997,
+     "to": 807,
+     "label": "Aceh - Sabang › Aceh - Sabang Standard 5D4N › CNB catalog › @30 pax"
+    }
+   ],
+   "catalogs": [
+    "Catalog aceh-sabang: prices from v60"
+   ]
   }
  ]
 }
