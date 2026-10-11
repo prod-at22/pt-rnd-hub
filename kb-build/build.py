@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the PT KB House pages (prod-at22/pt-kb-house) from the PT R&D Costing Hub.
+"""Build the PT KB House pages (prod-at22/pt-kb-house) from the PT R&D Hub.
 
 The hub is the source of every KB's content and Simple Calculator numbers: data/kb/<slug>.json holds
   kind      "template" (26 KBs: content = the page's kbdata) or "bespoke" (aceh, korea: content = the
@@ -213,7 +213,7 @@ def pricing_html(hub, kb, calc, links, names):
             v = next((x for x in calc["variants"] if x["id"] == vid), None)
             if v:
                 parts.append(kbonly_table(names[i], v["tiers"]))
-    return ("<h2>Harga &amp; Pakej</h2><p class='ssub'>Harga katalog per pax dari PT R&amp;D Costing Hub — sama seperti katalog customer. "
+    return ("<h2>Harga &amp; Pakej</h2><p class='ssub'>Harga katalog per pax dari PT R&amp;D Hub — sama seperti katalog customer. "
             "Itinerary, termasuk &amp; tidak termasuk ikut tab Itinerary hub.</p>" + "".join(parts))
 
 
@@ -262,7 +262,7 @@ def surcharge_html(hub, links):
     blocks = _dedupe(parts)
     if not blocks:
         return ""
-    return ("<p class='ssub'>Surcaj ikut katalog customer — dari tab Surcharge &amp; Accommodation PT R&amp;D Costing Hub.</p>"
+    return ("<p class='ssub'>Surcaj ikut katalog customer — dari tab Surcharge &amp; Accommodation PT R&amp;D Hub.</p>"
             + "".join(f"<div class='custblk'><h3>{t}</h3>{b}</div>" for t, b in blocks))
 
 
@@ -280,7 +280,7 @@ def addons_html(hub, links):
     if not rows:
         return ""
     return ("<div class='custblk'><h3>Add-on katalog</h3><table class='ctbl'><thead><tr><th>Add-on</th><th>Harga</th><th>Nota</th></tr></thead><tbody>"
-            + "".join(rows) + "</tbody></table><p class='custnote'>Dari tab Add On PT R&amp;D Costing Hub (sama seperti katalog customer).</p></div>")
+            + "".join(rows) + "</tbody></table><p class='custnote'>Dari tab Add On PT R&amp;D Hub (sama seperti katalog customer).</p></div>")
 
 
 def policy_html(hub, links):
@@ -369,7 +369,7 @@ def stay_html(hub, links, images=None):
     blocks = _dedupe(parts)
     if not blocks:
         return ""
-    return ("<p class='ssub'>Hotel ikut katalog customer — dari tab Accommodation PT R&amp;D Costing Hub.</p>"
+    return ("<p class='ssub'>Hotel ikut katalog customer — dari tab Accommodation PT R&amp;D Hub.</p>"
             + "".join(f"<div class='custblk'><h3>{t}</h3>{b}</div>" for t, b in blocks))
 
 

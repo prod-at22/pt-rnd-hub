@@ -354,7 +354,7 @@ function renderHub() {
   })).sort((a, b) => a.sortKey.localeCompare(b.sortKey));
   const src = shown();
   $("#grid").innerHTML = `<div class="hub">
-    <header class="hubhead"><h1>PT R&amp;D Costing Hub</h1><img src="${ROOT}arba-logo.png" alt="ARBA Travel"></header>
+    <header class="hubhead"><h1>PT R&amp;D Hub</h1><img src="${ROOT}arba-logo.png" alt="ARBA Travel"></header>
     <input id="hubSearch" class="filter" type="search" placeholder="Filter by destination, tier, code or PO…" value="${esc(SEL.hubQ || "")}" autocomplete="off" aria-label="Filter packages">
     ${rows.map(r => r.html).join("")}
     <p class="empty" id="hubEmpty">No package matches.</p>
@@ -1086,7 +1086,7 @@ function kbCalcForm(sl, cal, links, E) {
 function calcMd(name, cal, links) {
   const V = cal.variants || [], t = x => calcTxt(x).replace(/\|/g, "/"), row = a => "| " + a.map(t).join(" | ") + " |\n";
   const tbl = (head, rows) => rows.length ? row(head) + "|" + head.map(() => "---").join("|") + "|\n" + rows.map(row).join("") + "\n" : "_tiada_\n\n";
-  let md = `# Simple Calculator — ${name}\n\nDari PT R&D Costing Hub (data/kb, \`calc\`). Harga pakej yang dipaut ke Costing ikut Catalog Price.\n\n## Asas\n\n`;
+  let md = `# Simple Calculator — ${name}\n\nDari PT R&D Hub (data/kb, \`calc\`). Harga pakej yang dipaut ke Costing ikut Catalog Price.\n\n## Asas\n\n`;
   md += tbl(["Perkara", "Nilai"], [["Deposit (RM/pax)", cal.deposit], ["Late booking", cal.lateBooking ? `kurang ${cal.lateBooking.lt} hari: RM${cal.lateBooking.amount}/booking` : "—"],
     ["Tambah / tolak meal", cal.mealDelta ? `+RM${cal.mealDelta.add} / -RM${cal.mealDelta.drop} per pax per hidangan` : "—"],
     ["Malam tambahan (biasa / peak)", cal.ext && cal.ext.night ? `RM${cal.ext.night.normal} / RM${cal.ext.night.peak}` : "—"]].filter(r => r[1] !== undefined));

@@ -1,4 +1,4 @@
-"""What a catalog reads from the PT R&D Costing Hub's data/data.json instead of its own file.
+"""What a catalog reads from the PT R&D Hub's data/data.json instead of its own file.
 
 Package prices come from the Costing tab (Catalog Price column). The catalog keeps only the table's shape:
 

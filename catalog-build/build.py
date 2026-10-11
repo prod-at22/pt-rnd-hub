@@ -18,7 +18,7 @@ render — which is the situation a TC is usually in.
     python3 catalog-build/build.py              # build everything into catalog-build/site/
     python3 catalog-build/build.py seoul-basic  # build one, plus the index
 
-Lives in the PT R&D Costing Hub repo and reads its data/catalogs/ directly — the hub is the source of
+Lives in the PT R&D Hub repo and reads its data/catalogs/ directly — the hub is the source of
 truth. CI (.github/workflows/catalogs.yml) runs this on every push that touches data/catalogs/ or
 catalog-build/ and pushes site/ to prod-at22/catalog-pt-public. PT_SITE overrides the output folder.
 """

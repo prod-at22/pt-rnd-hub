@@ -1,4 +1,4 @@
-# ARBA PT R&D Costing Hub
+# ARBA PT R&D Hub
 
 One page for every PT destination: pick **destination → package → tour operator**, enter
 see

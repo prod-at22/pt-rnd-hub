@@ -1,6 +1,6 @@
 # Status & handoff (8 Oct 2026, data v28 — the hub is the source of truth)
 
-PT R&D Costing Hub. Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
+PT R&D Hub. Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
 
 ## Start of a new session
