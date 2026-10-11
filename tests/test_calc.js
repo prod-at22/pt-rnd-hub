@@ -841,6 +841,39 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     }
   }
 
+  console.log("8v. several TOs per package: Add TO (copy), pick it → costing follows, Banding TO, Make default, Remove, Save");
+  {
+    const pg = await boot(repo, "aceh/"); await until(() => pg.doc.querySelector("#costPax"));
+    const P2 = pg.w.PTCALC, D2 = () => P2.DATA.destinations.find(x => x.code === "ACEH"), V = P2.BASE.version;
+    P2.SESSION = { u: "fyka", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => pg.doc.querySelector("#toList"));
+    ok(pg.doc.querySelectorAll("#toList tbody tr").length === 1 && !pg.doc.querySelector("#toCompare"), "one TO: TO list has 1 row, no Banding TO");
+    pg.doc.querySelector("#toName").value = "Pak Rahman"; pg.doc.querySelector("#toSup").value = "Pak Rahman CR 2027";
+    click(pg.w, pg.doc.querySelector('[data-act="toAdd"]')); await until(() => pg.doc.querySelector("#toCompare"));
+    const nv = D2().variants.find(v => v.label === "Pak Rahman"), pkg = D2().packages[0];
+    ok(nv && nv.id === "PAK-RAHMAN" && (pkg.alsoVariants || []).includes("PAK-RAHMAN") && nv.components.every(c => !/ASONANGGROE/.test(c.expr)), "new TO: own id, alternative of the package, own tables in its formulas");
+    ok(D2().tables.some(t => t.id === "PAK-RAHMAN__Ground-Cost") && pg.doc.querySelectorAll("#toList tbody tr").length === 2, "its per-pax tables copied (Ground Cost, …) and listed");
+    ok([...pg.doc.querySelector("#selVar").options].map(o => o.value).join() === "auto,ASONANGGROE-3-STAR,PAK-RAHMAN" && pg.doc.querySelector("#selVar").value === "PAK-RAHMAN", "Tour operator box: Auto + both TOs, new TO selected");
+    const gc = [...pg.doc.querySelectorAll("table.torates input.ed")].find(x => x.dataset.path === JSON.stringify(["destinations", "ACEH", "tables", "PAK-RAHMAN__Ground-Cost", "values", "2"]));
+    ok(gc, "TO rates: the new TO's Ground Cost is editable");
+    gc.value = "600"; fire(pg.w, gc, "change"); await tick(20);
+    const c2 = P2.priceRow(D2(), D2().packages[0], "PAK-RAHMAN", 2).adult.cost, c1 = P2.priceRow(D2(), D2().packages[0], "ASONANGGROE-3-STAR", 2).adult.cost;
+    ok(Math.round(c2) === 630 && Math.round(c1) === 705, "costing follows the TO: 2 pax Pak Rahman 600+30 = 630, Asonanggroe 705");
+    ok(pg.doc.querySelector("#costPax").textContent.includes("PAK RAHMAN") || pg.doc.querySelector("#costPax").textContent.includes("Pak Rahman"), "Costing table shows the picked TO");
+    ok(pg.doc.querySelector("#toCompare tbody tr td.m-ok"), "Banding TO marks the lowest cost");
+    click(pg.w, pg.doc.querySelector('[data-act="toDefault"][data-id="PAK-RAHMAN"]')); await tick(20);
+    ok(D2().packages[0].assign.length === 1 && D2().packages[0].assign[0].variant === "PAK-RAHMAN" && D2().packages[0].alsoVariants.includes("ASONANGGROE-3-STAR"), "Make default: Auto uses Pak Rahman, Asonanggroe becomes an alternative");
+    click(pg.w, pg.doc.querySelector('[data-act="toDefault"][data-id="ASONANGGROE-3-STAR"]')); await tick(20);
+    pg.w.confirm = () => true; click(pg.w, pg.doc.querySelector('[data-act="toRemove"][data-id="PAK-RAHMAN"]')); await tick(20);
+    ok(!D2().variants.some(v => v.id === "PAK-RAHMAN") && !D2().tables.some(t => t.id.startsWith("PAK-RAHMAN__")) && !("alsoVariants" in D2().packages[0]), "Remove: TO, its tables and the alternative link gone");
+    ok(P2.diff(P2.BASE, P2.DATA).filter(c => c.path[1] === "ACEH").length === 0, "after add + remove nothing is pending for ACEH");
+    pg.doc.querySelector("#toName").value = "Pak Rahman"; click(pg.w, pg.doc.querySelector('[data-act="toAdd"]')); await tick(20);
+    click(pg.w, pg.doc.querySelector("#btnSave")); await tick(5); pg.doc.querySelector("#saveNote").value = "Aceh TO kedua (ujian)";
+    click(pg.w, pg.doc.querySelector("#doSave")); ok(await until(() => P2.BASE.version === V + 1), "saved as one version");
+    const rem = JSON.parse(repo.files(repo.head)["data/data.json"]).destinations.find(x => x.code === "ACEH");
+    ok(rem.variants.some(v => v.id === "PAK-RAHMAN") && rem.packages[0].alsoVariants.includes("PAK-RAHMAN"), "data.json has the new TO");
+    ok(pg.errors.length === 0, "multi-TO errors: " + pg.errors.join("|"));
+  }
+
   console.log("9. no runtime errors");
   ok(errors.length === 0, "errors: " + errors.join(" | "));
 

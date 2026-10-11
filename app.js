@@ -434,7 +434,7 @@ function renderMain(d, pkg) {
   const pax = bandPax();
   $("#kpis").innerHTML = "";
   const T = SEL.tab;
-  if (T === "costing") $("#grid").innerHTML = costingSummary(d, pkg) + rateRef(d, pkg) + (EDIT && !VIEW ? toRatesCard(d, pkg) : "") + costingByPax(d, pkg, pax) + (EDIT && !VIEW ? catalogTab(d, pkg, "price") : "");
+  if (T === "costing") $("#grid").innerHTML = costingSummary(d, pkg) + rateRef(d, pkg) + (EDIT && !VIEW ? toListCard(d, pkg) + toRatesCard(d, pkg) : "") + costingByPax(d, pkg, pax) + toCompareCard(d, pkg) + (EDIT && !VIEW ? catalogTab(d, pkg, "price") : "");
   else if (CAT_TABS.includes(T)) $("#grid").innerHTML = catalogTab(d, pkg, T);
   else if (T === "accommodation") $("#grid").innerHTML = accommodationCard(d);
   else if (T === "kbinfo") { $("#grid").innerHTML = kbInfoTab(d); kbFilter(); }
@@ -665,6 +665,42 @@ function toRatesCard(d, pkg) {
   }
   return out.join("");
 }
+/* Several TOs per package (PO 11 Oct 2026): pkg.assign = the default TO(s) that Auto uses (by pax band); pkg.alsoVariants =
+   alternative TOs the PO / TC can pick in the Tour operator box — the costing then follows that TO. In Edit costs a PO adds a TO
+   (its components and per-pax rates copied from an existing TO, then edited in TO rates), makes one the default or removes an
+   alternative. Rate-by-rate components (R.…) keep pointing at the shared supplier rates. */
+const pkgPaxRange = pkg => { const ps = Object.keys(pkg.pricing.adult).map(Number); return [Math.min(...ps), Math.max(...ps)]; };
+const defaultTOs = pkg => [...new Set(pkg.assign.map(a => a.variant))];
+function toListCard(d, pkg) {
+  const vs = pkgVariants(d, pkg), def = defaultTOs(pkg), [lo, hi] = pkgPaxRange(pkg);
+  return `<div class="card full" id="toList"><h2>Tour operators · ${esc(pkg.label)} <span class="sub">Auto uses the default; an alternative can be picked in the Tour operator box and the costing follows it</span></h2>
+    <div class="scroll"><table class="rd"><thead><tr><th class="l">TO</th><th class="l">Supplier</th><th>Pax</th><th class="l">Role</th><th></th></tr></thead><tbody>
+    ${vs.map(v => { const isDef = def.includes(v.id), band = pkg.assign.filter(a => a.variant === v.id).map(a => a.from + "–" + a.to).join(", ");
+      return `<tr><td class="l"><b>${esc(v.label)}</b></td><td class="l muted small">${esc(v.supplier || "")}</td><td>${v.paxMin}–${v.paxMax}</td>
+        <td class="l">${isDef ? `<span class="pill nav">Default${def.length > 1 ? " · " + esc(band) + " pax" : ""}</span>` : '<span class="pill grey">Alternative</span>'}</td>
+        <td>${isDef ? "" : `<button class="btn" data-act="toDefault" data-id="${esc(v.id)}">Make default</button> <button class="btn danger" data-act="toRemove" data-id="${esc(v.id)}">Remove</button>`}</td></tr>`; }).join("")}
+    </tbody></table></div>
+    <div class="body ao-add"><b style="width:100%">Add TO <span class="muted small" style="font-weight:400">— copies the components and per-pax rates of an existing TO; change its rates in TO rates below. It becomes an alternative of this package.</span></b>
+      <label class="grow">TO name<input id="toName" placeholder="e.g. Pak Rahman"></label>
+      <label class="grow">Supplier / note<input id="toSup" placeholder="e.g. Pak Rahman 3★ CR 2027"></label>
+      <label>Pax from<input id="toFrom" type="number" value="${lo}"></label><label>to<input id="toTo" type="number" value="${hi}"></label>
+      <label>Copy from<select id="toCopy">${vs.map(v => `<option value="${esc(v.id)}">${esc(v.label)} (${v.paxMin}–${v.paxMax})</option>`).join("")}</select></label>
+      <button class="btn primary" data-act="toAdd">Add TO</button></div></div>`;
+}
+// Banding TO: cost and margin of every TO of the package at each pax (shown when there is more than one TO)
+function toCompareCard(d, pkg) {
+  const vs = pkgVariants(d, pkg); if (vs.length < 2) return "";
+  const def = defaultTOs(pkg), paxs = Object.keys(pkg.pricing.adult).map(Number).sort((a, b) => a - b);
+  const int = v => num(v) ? Math.round(v).toLocaleString("en-MY") : '<span class="missing">—</span>';
+  const rows = paxs.map((p, i) => {
+    const rs = vs.map(v => priceRow(d, pkg, v.id, p).adult), costs = rs.map(r => r.cost).filter(num), min = Math.min(...costs), low = costs.length > 1 && costs.filter(c => Math.abs(c - min) < 0.5).length === 1 ? min : NaN;   // only a single cheapest TO is marked
+    return `<tr class="${i % 2 ? "alt" : ""}"><td class="c"><b>${p}</b></td><td class="sp">${int(rs[0].selling)}</td>${rs.map(r => `<td${num(r.cost) && num(low) && Math.abs(r.cost - low) < 0.5 ? ' class="m-ok" title="Lowest cost"' : ""}>${int(r.cost)}</td><td class="mg ${marginClass(r.pct)}">${num(r.pct) ? Math.round(r.pct * 100) + "%" : "—"}</td>`).join("")}</tr>`;
+  }).join("");
+  return `<div class="card full" id="toCompare"><h2>Banding TO <span class="sub">${esc(pkg.label)} · adult cost / pax and margin for each TO · green = lowest cost</span></h2>
+    <div class="scroll" style="max-height:480px;overflow-y:auto"><table class="rd"><thead><tr><th rowspan="2">Pax</th><th rowspan="2" class="sp">Selling</th>${vs.map(v => `<th colspan="2">${esc(v.label)}${def.includes(v.id) ? " · default" : ""}</th>`).join("")}</tr>
+    <tr>${vs.map(() => "<th>Cost/Pax</th><th class=\"mg\">%</th>").join("")}</tr></thead><tbody>${rows}</tbody></table></div></div>`;
+}
+
 // Add On: the destination's add-ons (cost / selling / margin). The "In catalog" tick puts an add-on into the
 // selected package's customer catalog (a.catalogs = {slug: position}); the catalog prints its name, includes /
 // excludes / duration and price text (price_lines), grouped by category in the catalog's addon_groups order.
@@ -1722,6 +1758,43 @@ document.addEventListener("click", async e => {
       d.hotels = d.hotels.filter(x => x !== h);
     }
     return render();
+  }
+  if (t.dataset.act === "toAdd") {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), pkg = d.packages.find(p => p.id === SEL.pkg) || d.packages[0];
+    const name = $("#toName").value.trim(), sup = $("#toSup").value.trim(), from = +$("#toFrom").value, to = +$("#toTo").value, src = d.variants.find(v => v.id === $("#toCopy").value);
+    if (!name) return toast("TO name is required");
+    if (!(from >= 1 && to >= from)) return toast("Pax from / to: from ≥ 1 and to ≥ from");
+    if (!src) return toast("Pick a TO to copy from");
+    const base = name.toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-|-$/g, "") || "TO";
+    let id = base; for (let i = 2; d.variants.some(v => v.id === id); i++) id = base + "-" + i;
+    const tables = [];
+    const components = src.components.map(c => ({ ...c, expr: String(c.expr).replace(/T\['([^']+)'\]/g, (m, tid) => {
+      const old = d.tables.find(x => x.id === tid); if (!old) return m;
+      const nid = id + "__" + (tid.split("__")[1] || c.key);
+      if (!tables.some(x => x.id === nid) && !d.tables.some(x => x.id === nid)) tables.push({ ...clone(old), id: nid, label: name + " · " + c.label, group: name });
+      return "T['" + nid + "']";
+    }) }));
+    d.variants.push({ id, label: name, supplier: sup || name, paxMin: from, paxMax: to, hotel: src.hotel || "", notes: "Copied from " + src.label + " — update the rates", components });
+    d.tables.push(...tables);
+    pkg.alsoVariants = [...(pkg.alsoVariants || []), id];
+    SEL.variant = id; toast(`Added TO "${name}" (rates copied from ${src.label}) — change its rates, then Save`); return render();
+  }
+  if (t.dataset.act === "toDefault" || t.dataset.act === "toRemove") {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), pkg = d.packages.find(p => p.id === SEL.pkg) || d.packages[0], id = t.dataset.id;
+    const v = d.variants.find(x => x.id === id); if (!v) return;
+    if (t.dataset.act === "toDefault") {
+      const [lo, hi] = pkgPaxRange(pkg), old = defaultTOs(pkg);
+      pkg.assign = [{ from: Math.max(lo, v.paxMin), to: Math.min(hi, v.paxMax), variant: id }];
+      pkg.alsoVariants = [...new Set([...(pkg.alsoVariants || []), ...old])].filter(x => x !== id);
+      SEL.variant = "auto"; toast(`${v.label} is now the default TO — press Save to keep it`); return render();
+    }
+    if (!confirm(`Remove ${v.label} from ${pkg.label}? Nothing is saved until you press Save.`)) return;
+    pkg.alsoVariants = (pkg.alsoVariants || []).filter(x => x !== id); if (!pkg.alsoVariants.length) delete pkg.alsoVariants;
+    const used = d.packages.some(p => p.assign.some(a => a.variant === id) || (p.alsoVariants || []).includes(id));
+    if (!used) { const tids = new Set(v.components.flatMap(c => [...String(c.expr).matchAll(/T\['([^']+)'\]/g)].map(m => m[1])));
+      d.variants = d.variants.filter(x => x.id !== id);
+      d.tables = d.tables.filter(x => !tids.has(x.id) || d.variants.some(o => o.components.some(c => String(c.expr).includes("'" + x.id + "'")))); }
+    SEL.variant = "auto"; toast(`Removed ${v.label} — press Save to keep it`); return render();
   }
   if (t.dataset.act === "addAddon") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), v = id => $("#" + id).value.trim();

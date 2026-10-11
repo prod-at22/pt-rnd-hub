@@ -167,6 +167,12 @@ NODE_PATH=<dir with jsdom> python3 tools/flags.py      # runs tools/margins.js i
 4. If someone else saved first, your edits are applied on top of theirs automatically, unless you both
    changed the same cell. Then the save stops and asks you to reload.
 
+**Several TOs per package** (11 Oct 2026): the package's default TO(s) (`assign`, by pax band) is what **Auto** uses; other
+TOs are alternatives (`alsoVariants`) that can be picked in the Tour operator box — the costing then follows that TO, and a
+**Banding TO** table compares cost and margin of every TO per pax. With one TO the box shows a single choice. In Edit costs
+the Costing tab has **Tour operators**: *Add TO* (copies an existing TO's components and per-pax rates; edit them in TO
+rates), *Make default*, *Remove*. Rate-by-rate components (`R.…`) stay on the shared supplier rates.
+
 TO formulas (in `data.json`) use `R.id` (a rate, already converted to MYR at its FX), `T['id']`
 (per-pax table value at this pax), `N` (nights), `pax`, and `band(pax,[max,value],…)` for vehicle size bands.
 
