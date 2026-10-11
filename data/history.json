@@ -41731,6 +41731,1246 @@
    "catalogs": [
     "Catalog aceh-sabang: prices from v60"
    ]
+  },
+  {
+   "v": 61,
+   "at": "2026-10-11T11:44:30Z",
+   "by": "system",
+   "note": "Aceh + Aceh-Sabang (PO ezie 11 Oct 2026): duplicate TripCare 360 / Blue Ribbon add-ons removed — kept the set the KB uses (TripCare Individual 1–5 days RM45 …); removed the second set (RM64 …).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "ACEH",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "aceh-a01",
+       "category": "Optional Activity",
+       "label": "Ujung Kelindu (full transport)",
+       "cost": 277,
+       "selling": 277,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a02",
+       "category": "Optional Activity",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "cost": 277,
+       "selling": 277,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a03",
+       "category": "Optional Activity",
+       "label": "Pantai Lhok Seudu",
+       "cost": 257,
+       "selling": 257,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a04",
+       "category": "Optional Activity",
+       "label": "Masjid Keuchik Leumik",
+       "cost": 257,
+       "selling": 257,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a05",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 35,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "aceh-a06",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "aceh-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "aceh-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "aceh-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "aceh-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "aceh-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "aceh-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "aceh-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a16",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a17",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "aceh-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a28",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "aceh-a29",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "aceh-a30",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "aceh-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "aceh-k001",
+       "category": "Additional Activities",
+       "label": "Ujung Kelindu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport to Ujung Kelindu (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh": 1
+       }
+      },
+      {
+       "id": "aceh-k002",
+       "category": "Additional Activities",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh": 2
+       }
+      },
+      {
+       "id": "aceh-k003",
+       "category": "Additional Activities",
+       "label": "Pantai Lhok Seudu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh": 3
+       }
+      },
+      {
+       "id": "aceh-k004",
+       "category": "Additional Activities",
+       "label": "Masjid Keuchik Leumik",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh": 4
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "aceh-a01",
+       "category": "Optional Activity",
+       "label": "Ujung Kelindu (full transport)",
+       "cost": 277,
+       "selling": 277,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a02",
+       "category": "Optional Activity",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "cost": 277,
+       "selling": 277,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a03",
+       "category": "Optional Activity",
+       "label": "Pantai Lhok Seudu",
+       "cost": 257,
+       "selling": 257,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a04",
+       "category": "Optional Activity",
+       "label": "Masjid Keuchik Leumik",
+       "cost": 257,
+       "selling": 257,
+       "per": "transport",
+       "notes": "Optional add-on day 3 or day 4 (depends on flight timing)"
+      },
+      {
+       "id": "aceh-a05",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 35,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "aceh-a06",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "aceh-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "aceh-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "aceh-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "aceh-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "aceh-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "aceh-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "aceh-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "aceh-a16",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a17",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "aceh-k001",
+       "category": "Additional Activities",
+       "label": "Ujung Kelindu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport to Ujung Kelindu (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh": 1
+       }
+      },
+      {
+       "id": "aceh-k002",
+       "category": "Additional Activities",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh": 2
+       }
+      },
+      {
+       "id": "aceh-k003",
+       "category": "Additional Activities",
+       "label": "Pantai Lhok Seudu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh": 3
+       }
+      },
+      {
+       "id": "aceh-k004",
+       "category": "Additional Activities",
+       "label": "Masjid Keuchik Leumik",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh": 4
+       }
+      }
+     ],
+     "label": "Aceh › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "ACEHSBG",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "acehsbg-a01",
+       "category": "Activity",
+       "label": "Dolphin Watching (Add-on)",
+       "cost": 150,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Included in base if booked with Sabang"
+      },
+      {
+       "id": "acehsbg-a02",
+       "category": "Activity",
+       "label": "Glass Boat (Add-on)",
+       "cost": 50,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Tier: 2px RM50 · 3-4px RM40 · 5+px RM30 (lihat CR)"
+      },
+      {
+       "id": "acehsbg-a03",
+       "category": "Activity",
+       "label": "Snorkelling (Add-on)",
+       "cost": 20,
+       "selling": 20,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a04",
+       "category": "Activity",
+       "label": "Dolphin Watching (Exclude alt)",
+       "cost": -150,
+       "selling": -100,
+       "per": "pax",
+       "notes": "Standalone pricing"
+      },
+      {
+       "id": "acehsbg-a05",
+       "category": "Activity",
+       "label": "Glass Boat (Exclude alt)",
+       "cost": -50,
+       "selling": -30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a06",
+       "category": "Activity",
+       "label": "Snorkelling (Exclude alt)",
+       "cost": -20,
+       "selling": -15,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a07",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 35,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 100,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "acehsbg-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 5D4N",
+       "cost": 60,
+       "selling": 150,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "acehsbg-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "acehsbg-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "acehsbg-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a30",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-k001",
+       "category": "Additional Activities",
+       "label": "Ujung Kelindu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport to Ujung Kelindu (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 1
+       }
+      },
+      {
+       "id": "acehsbg-k002",
+       "category": "Additional Activities",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 2
+       }
+      },
+      {
+       "id": "acehsbg-k003",
+       "category": "Additional Activities",
+       "label": "Pantai Lhok Seudu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 3
+       }
+      },
+      {
+       "id": "acehsbg-k004",
+       "category": "Additional Activities",
+       "label": "Masjid Keuchik Leumik",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 4
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "acehsbg-a01",
+       "category": "Activity",
+       "label": "Dolphin Watching (Add-on)",
+       "cost": 150,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Included in base if booked with Sabang"
+      },
+      {
+       "id": "acehsbg-a02",
+       "category": "Activity",
+       "label": "Glass Boat (Add-on)",
+       "cost": 50,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Tier: 2px RM50 · 3-4px RM40 · 5+px RM30 (lihat CR)"
+      },
+      {
+       "id": "acehsbg-a03",
+       "category": "Activity",
+       "label": "Snorkelling (Add-on)",
+       "cost": 20,
+       "selling": 20,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a04",
+       "category": "Activity",
+       "label": "Dolphin Watching (Exclude alt)",
+       "cost": -150,
+       "selling": -100,
+       "per": "pax",
+       "notes": "Standalone pricing"
+      },
+      {
+       "id": "acehsbg-a05",
+       "category": "Activity",
+       "label": "Glass Boat (Exclude alt)",
+       "cost": -50,
+       "selling": -30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a06",
+       "category": "Activity",
+       "label": "Snorkelling (Exclude alt)",
+       "cost": -20,
+       "selling": -15,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a07",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 35,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 100,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "acehsbg-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 5D4N",
+       "cost": 60,
+       "selling": 150,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "acehsbg-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "acehsbg-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "acehsbg-k001",
+       "category": "Additional Activities",
+       "label": "Ujung Kelindu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport to Ujung Kelindu (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 1
+       }
+      },
+      {
+       "id": "acehsbg-k002",
+       "category": "Additional Activities",
+       "label": "Pantai Pasir Putih Lhok Mee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM277/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 2
+       }
+      },
+      {
+       "id": "acehsbg-k003",
+       "category": "Additional Activities",
+       "label": "Pantai Lhok Seudu",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 3
+       }
+      },
+      {
+       "id": "acehsbg-k004",
+       "category": "Additional Activities",
+       "label": "Masjid Keuchik Leumik",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Transfer (Max. 4 pax)",
+       "excludes": "Meals & Personal expenses",
+       "price_lines": [
+        "RM257/Transport"
+       ],
+       "catalogs": {
+        "aceh-sabang": 4
+       }
+      }
+     ],
+     "label": "Aceh - Sabang › addons"
+    }
+   ]
   }
  ]
 }
