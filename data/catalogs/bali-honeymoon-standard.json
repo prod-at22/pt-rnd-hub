@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-03-01",
+  "updated": "2026-10-11",
   "kb_url": "",
   "po": "Fyka",
   "ops": "CIK IWAN",
@@ -261,5 +261,5 @@
       "title": "Add on Dinner & Room Decoration"
     }
   ],
-  "hub_version": 30
+  "hub_version": 64
 }

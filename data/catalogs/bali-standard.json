@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-03-01",
+  "updated": "2026-10-11",
   "kb_url": "",
   "po": "Fyka",
   "ops": "CIK IWAN",
@@ -175,7 +175,7 @@
     {
       "icon": "bus",
       "title": "Transportation",
-      "body": "2 - 5 pax (Avanza), 6 - 7 pax (Innova), 8 - 12 pax (Hiace). Transport & Guide 12 hours Basis. Extra Hour 150,000 IDR/hour (pay cash to driver)."
+      "body": "2 - 4 pax (Avanza), 5 - 6 pax (Innova), 7 - 12 pax (Hiace). Transport & Guide 12 hours Basis. Extra Hour 150,000 IDR/hour (pay cash to driver)."
     },
     {
       "icon": "info",
@@ -278,5 +278,5 @@
       "title": "Additional Honeymoon Dinner & Room Decoration"
     }
   ],
-  "hub_version": 30
+  "hub_version": 64
 }

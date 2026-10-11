@@ -45142,6 +45142,2689 @@
      "label": "Bali › Bali Honeymoon Premium 4D3N › Rule › Selling discount (RM/pax)"
     }
    ]
+  },
+  {
+   "v": 64,
+   "at": "2026-10-11T13:24:06Z",
+   "by": "system",
+   "note": "Bali (PO ezie 11 Oct 2026): Standard 16–20 pax adult 897 / CWB 817 / CNB 767 (sheet); vehicles = honeymoon catalog + KB (Avanza 2–4 · Innova 5–6 · Hiace 7–12) in the Standard catalog and KB; catalog add-ons: selling = catalog price, cost from the matching R&D item (that duplicate removed) or the R&D sheet.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 917,
+     "to": 897,
+     "label": "Bali › Bali Standard 4D3N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 917,
+     "to": 897,
+     "label": "Bali › Bali Standard 4D3N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 917,
+     "to": 897,
+     "label": "Bali › Bali Standard 4D3N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 917,
+     "to": 897,
+     "label": "Bali › Bali Standard 4D3N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 917,
+     "to": 897,
+     "label": "Bali › Bali Standard 4D3N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 837,
+     "to": 817,
+     "label": "Bali › Bali Standard 4D3N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 837,
+     "to": 817,
+     "label": "Bali › Bali Standard 4D3N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 837,
+     "to": 817,
+     "label": "Bali › Bali Standard 4D3N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 837,
+     "to": 817,
+     "label": "Bali › Bali Standard 4D3N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 837,
+     "to": 817,
+     "label": "Bali › Bali Standard 4D3N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 777,
+     "to": 767,
+     "label": "Bali › Bali Standard 4D3N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 777,
+     "to": 767,
+     "label": "Bali › Bali Standard 4D3N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 777,
+     "to": 767,
+     "label": "Bali › Bali Standard 4D3N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 777,
+     "to": 767,
+     "label": "Bali › Bali Standard 4D3N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-std-3s",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 777,
+     "to": 767,
+     "label": "Bali › Bali Standard 4D3N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "dps-a01",
+       "category": "Transport",
+       "label": "Avanza (5 Seater)",
+       "cost": 120,
+       "selling": 250,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a02",
+       "category": "Transport",
+       "label": "Innova (5 Seater Bigger)",
+       "cost": 220,
+       "selling": 350,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a03",
+       "category": "Transport",
+       "label": "Hiace (14 Seater)",
+       "cost": 280,
+       "selling": 450,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a04",
+       "category": "Transport",
+       "label": "Bus/Coach (30 Seater)",
+       "cost": 500,
+       "selling": 650,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a05",
+       "category": "Activity",
+       "label": "Uluwatu Temple",
+       "cost": 20,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a06",
+       "category": "Activity",
+       "label": "Kecak Dance Uluwatu",
+       "cost": 50,
+       "selling": 67,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a07",
+       "category": "Activity",
+       "label": "Tanah Lot Temple",
+       "cost": 20,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a08",
+       "category": "Activity",
+       "label": "Bali Dolphin Lovina Tour",
+       "cost": 50,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a09",
+       "category": "Activity",
+       "label": "Bali Safari Jungle Hopper",
+       "cost": 180,
+       "selling": 200,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a10",
+       "category": "Activity",
+       "label": "Bali Safari Night Tour",
+       "cost": 250,
+       "selling": 280,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a11",
+       "category": "Activity",
+       "label": "Bali Zoo",
+       "cost": 140,
+       "selling": 160,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a12",
+       "category": "Activity",
+       "label": "Waterblow",
+       "cost": 10,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a13",
+       "category": "Activity",
+       "label": "Pandawa & Melasti Beach",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a14",
+       "category": "Activity",
+       "label": "Garuda Wishnu Kencana (GWK)",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a15",
+       "category": "Activity",
+       "label": "Banana Boat",
+       "cost": 87,
+       "selling": 107,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a16",
+       "category": "Activity",
+       "label": "Jet Ski",
+       "cost": 131,
+       "selling": 157,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a17",
+       "category": "Activity",
+       "label": "Parasailing Adventure",
+       "cost": 218,
+       "selling": 237,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a18",
+       "category": "Activity",
+       "label": "Tegallalang Rice Terrace",
+       "cost": 10,
+       "selling": 20,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a19",
+       "category": "Activity",
+       "label": "Alas Harum + Couple Swing",
+       "cost": 80,
+       "selling": 120,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a20",
+       "category": "Activity",
+       "label": "Uma Ceking + Swing",
+       "cost": 80,
+       "selling": 117,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a21",
+       "category": "Activity",
+       "label": "Water Rafting Ubud",
+       "cost": 100,
+       "selling": 150,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a22",
+       "category": "Activity",
+       "label": "Mt Batur Jeep Ride",
+       "cost": 200,
+       "selling": 250,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a23",
+       "category": "Activity",
+       "label": "Mt Batur Hiking",
+       "cost": 100,
+       "selling": 180,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a24",
+       "category": "Activity",
+       "label": "Nusa Penida Ferry Transfer",
+       "cost": 60,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a25",
+       "category": "Meals",
+       "label": "Jimbaran Dinner Lobster Set",
+       "cost": 190,
+       "selling": 200,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "dps-a26",
+       "category": "Meals",
+       "label": "Bale Udang Intimate Dinner",
+       "cost": 224,
+       "selling": 250,
+       "per": "couple",
+       "notes": "Dinner+Deco+Cake"
+      },
+      {
+       "id": "dps-a27",
+       "category": "Meals",
+       "label": "Floating Breakfast Private Villa",
+       "cost": 45,
+       "selling": 60,
+       "per": "tray",
+       "notes": "Couple"
+      },
+      {
+       "id": "dps-a28",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4D3N",
+       "cost": 28,
+       "selling": 120,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "dps-a29",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB 4D3N",
+       "cost": 48,
+       "selling": 80,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "dps-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "dps-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a32",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a33",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a34",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a35",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a36",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a37",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a38",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a39",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a40",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a41",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-k001",
+       "category": "Additional Activities",
+       "label": "Kecak Dance, Uluwatu Temple",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Performance ticket, transportation for pick-up & drop-off",
+       "excludes": "Meals, personal expenses",
+       "duration": "1 hour performance",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 1,
+        "bali-honeymoon-standard": 1,
+        "bali-standard": 1
+       }
+      },
+      {
+       "id": "dps-k002",
+       "category": "Additional Activities",
+       "label": "Barong Dance, Ubud",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Performance ticket, transportation for pick-up & drop-off",
+       "excludes": "Meals, personal expenses",
+       "duration": "1 hour performance (depart 7am from hotel)",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 2,
+        "bali-honeymoon-standard": 2,
+        "bali-standard": 2
+       }
+      },
+      {
+       "id": "dps-k003",
+       "category": "Additional Activities",
+       "label": "Uma Ceking Rice Terrace + Bali Swing",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Entrance ticket, swing ticket, transportation",
+       "excludes": "Meals, other activities, personal expenses",
+       "duration": "1-2 hours",
+       "price_lines": [
+        "RM117/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 3,
+        "bali-honeymoon-standard": 3,
+        "bali-standard": 3
+       }
+      },
+      {
+       "id": "dps-k004",
+       "category": "Additional Activities",
+       "label": "Garuda Wisnu Kencana Cultural Park",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Entrance ticket & Transportation",
+       "excludes": "Meals, Other Activities, Personal Expenses",
+       "duration": "1-2 hours (Available during Nusa Dua Tour Only)",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 4,
+        "bali-honeymoon-standard": 4,
+        "bali-standard": 4
+       }
+      },
+      {
+       "id": "dps-k005",
+       "category": "Additional Activities",
+       "label": "Banana Boat at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Watersport Activity Insurance + 1 Time Ride",
+       "excludes": "Meals, Other Activities, Personal Expenses",
+       "duration": "1 hour",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 5,
+        "bali-honeymoon-standard": 5,
+        "bali-standard": 5
+       }
+      },
+      {
+       "id": "dps-k006",
+       "category": "Additional Activities",
+       "label": "Jet Ski Ride at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Watersport Activity Insurance + 1 Time Ride",
+       "excludes": "Other Activities or Personal Expenses",
+       "duration": "1-2 hours",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 6,
+        "bali-honeymoon-standard": 6,
+        "bali-standard": 6
+       }
+      },
+      {
+       "id": "dps-k007",
+       "category": "Additional Activities",
+       "label": "Fly Fish at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 2 Time Fly",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1-2 hours Activity",
+       "price_lines": [
+        "RM177/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 7,
+        "bali-honeymoon-standard": 7,
+        "bali-standard": 7
+       }
+      },
+      {
+       "id": "dps-k008",
+       "category": "Additional Activities",
+       "label": "Tubing Ride at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 1 Time Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM127/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 8,
+        "bali-honeymoon-standard": 8,
+        "bali-standard": 8
+       }
+      },
+      {
+       "id": "dps-k009",
+       "category": "Additional Activities",
+       "label": "Parasailing Adventure at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 1 Time Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM237/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 9,
+        "bali-honeymoon-standard": 9,
+        "bali-standard": 9
+       }
+      },
+      {
+       "id": "dps-k010",
+       "category": "Additional Activities",
+       "label": "Fly Board at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 15 Minutes Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "15 minutes Ride",
+       "price_lines": [
+        "RM327/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 10,
+        "bali-honeymoon-standard": 10,
+        "bali-standard": 10
+       }
+      },
+      {
+       "id": "dps-k011",
+       "category": "Additional Activities",
+       "label": "Glass Bottom Boat + Turtle Island at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 1 hour Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM197/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 11,
+        "bali-honeymoon-standard": 11,
+        "bali-standard": 11
+       }
+      },
+      {
+       "id": "dps-k012",
+       "category": "Additional Activities",
+       "label": "Snorkeling at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 1 hour Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 12,
+        "bali-honeymoon-standard": 12,
+        "bali-standard": 12
+       }
+      },
+      {
+       "id": "dps-k013",
+       "category": "Additional Activities",
+       "label": "Sea Walking at Nusa Dua",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Activity Insurance + 40 Minutes Sea Walking",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "40 Minutes",
+       "price_lines": [
+        "RM347/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 13,
+        "bali-honeymoon-standard": 13,
+        "bali-standard": 13
+       }
+      },
+      {
+       "id": "dps-k014",
+       "category": "Additional Activities",
+       "label": "Snorkeling Nusa Penida (Sharing Boat)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Life Jacket + Snorkelling Gear + Sharing Boat Transfer; 3 Snorkelling Points (Greenbowl Bay, Gamat Bay, Crystal Bay)",
+       "excludes": "Other activities & Personal expenses",
+       "price_lines": [
+        "RM107/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 14,
+        "bali-honeymoon-standard": 14,
+        "bali-standard": 14
+       }
+      },
+      {
+       "id": "dps-k015",
+       "category": "Additional Activities",
+       "label": "Snorkeling Nusa Penida (Private Boat)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Life Jacket + Snorkelling Gear + Private Boat Transfer; 4 Snorkelling Points (Manta Bay, Greenbowl Bay, Gamat Bay, Crystal Bay)",
+       "excludes": "Other activities & Personal expenses",
+       "price_lines": [
+        "RM297/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 15,
+        "bali-honeymoon-standard": 15,
+        "bali-standard": 15
+       }
+      },
+      {
+       "id": "dps-k016",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Romantic Dinner at Bale Udang",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Simple table decoration at Main Dining Area for couple; 3 course Menu includes Appetizer, 2x Main Course, Cake & 2 Drinks",
+       "price_lines": [
+        "Included"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 16
+       }
+      },
+      {
+       "id": "dps-k017",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Intimate Dinner at Bale Udang",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Table Decoration at Floating Deck area with flower petals decoration; 3 Course Meals includes Appetizer, 2x Main Course, Cake & 2 Drinks; 1 Flower Bouquet",
+       "price_lines": [
+        "RM250/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 17
+       }
+      },
+      {
+       "id": "dps-k018",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Floating Breakfast at Water Villa",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Additional Floating Basket for Floating Breakfast at Private Pool Villa",
+       "price_lines": [
+        "RM50/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 18
+       }
+      },
+      {
+       "id": "dps-k019",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Honeymoon Sunset Dinner at Jimbaran",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Table Decoration at Jimbaran Beach with Flower Petals Deco; Welcome Drinks, Main Course (Includes Lobster 300g) and Fruits; Honeymoon/birthday Cake + Singing",
+       "price_lines": [
+        "RM450/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 19
+       }
+      },
+      {
+       "id": "dps-k020",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Honeymoon Bedroom Decoration for Standard Villa",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Bedroom Flower Petals Decoration; Hand bouquet upon arrival at Standard Villa Only",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 20
+       }
+      },
+      {
+       "id": "dps-k021",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Romantic Dinner at Bale Udang",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Simple table decoration at Main Dining Area for couple; 3 course Menu includes Appetizer, 2x Main Course, Cake & 2 Drinks",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 16
+       }
+      },
+      {
+       "id": "dps-k022",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Intimate Dinner at Bale Udang",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Table Decoration at Floating Deck area with flower petals decoration; 3 Course Meals includes Appetizer, 2x Main Course, Cake & 2 Drinks; 1 Flower Bouquet",
+       "price_lines": [
+        "RM250/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 17
+       }
+      },
+      {
+       "id": "dps-k023",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Floating Breakfast at Water Villa",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Additional Floating Basket for Floating Breakfast at Private Pool Villa",
+       "price_lines": [
+        "RM50/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 18
+       }
+      },
+      {
+       "id": "dps-k024",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Honeymoon Sunset Dinner at Jimbaran",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Table Decoration at Jimbaran Beach with Flower Petals Deco; Welcome Drinks, Main Course (Includes Lobster 300g) and Fruits; Honeymoon/birthday Cake + Singing",
+       "price_lines": [
+        "RM450/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 19
+       }
+      },
+      {
+       "id": "dps-k025",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Honeymoon Bedroom Decoration for Asa Bali Villa",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Bedroom Flower Petals Decoration; Hand bouquet upon arrival at Asa Bali Villa",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 20
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "dps-a01",
+       "category": "Transport",
+       "label": "Avanza (5 Seater)",
+       "cost": 120,
+       "selling": 250,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a02",
+       "category": "Transport",
+       "label": "Innova (5 Seater Bigger)",
+       "cost": 220,
+       "selling": 350,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a03",
+       "category": "Transport",
+       "label": "Hiace (14 Seater)",
+       "cost": 280,
+       "selling": 450,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a04",
+       "category": "Transport",
+       "label": "Bus/Coach (30 Seater)",
+       "cost": 500,
+       "selling": 650,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "dps-a05",
+       "category": "Activity",
+       "label": "Uluwatu Temple",
+       "cost": 20,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a07",
+       "category": "Activity",
+       "label": "Tanah Lot Temple",
+       "cost": 20,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a08",
+       "category": "Activity",
+       "label": "Bali Dolphin Lovina Tour",
+       "cost": 50,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a09",
+       "category": "Activity",
+       "label": "Bali Safari Jungle Hopper",
+       "cost": 180,
+       "selling": 200,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a10",
+       "category": "Activity",
+       "label": "Bali Safari Night Tour",
+       "cost": 250,
+       "selling": 280,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a11",
+       "category": "Activity",
+       "label": "Bali Zoo",
+       "cost": 140,
+       "selling": 160,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a12",
+       "category": "Activity",
+       "label": "Waterblow",
+       "cost": 10,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a13",
+       "category": "Activity",
+       "label": "Pandawa & Melasti Beach",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a18",
+       "category": "Activity",
+       "label": "Tegallalang Rice Terrace",
+       "cost": 10,
+       "selling": 20,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a19",
+       "category": "Activity",
+       "label": "Alas Harum + Couple Swing",
+       "cost": 80,
+       "selling": 120,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a21",
+       "category": "Activity",
+       "label": "Water Rafting Ubud",
+       "cost": 100,
+       "selling": 150,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a22",
+       "category": "Activity",
+       "label": "Mt Batur Jeep Ride",
+       "cost": 200,
+       "selling": 250,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a23",
+       "category": "Activity",
+       "label": "Mt Batur Hiking",
+       "cost": 100,
+       "selling": 180,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a24",
+       "category": "Activity",
+       "label": "Nusa Penida Ferry Transfer",
+       "cost": 60,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a25",
+       "category": "Meals",
+       "label": "Jimbaran Dinner Lobster Set",
+       "cost": 190,
+       "selling": 200,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "dps-a28",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4D3N",
+       "cost": 28,
+       "selling": 120,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "dps-a29",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB 4D3N",
+       "cost": 48,
+       "selling": 80,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "dps-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "dps-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a32",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a33",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a34",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a35",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a36",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a37",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "dps-a38",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a39",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a40",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-a41",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "dps-k001",
+       "category": "Additional Activities",
+       "label": "Kecak Dance, Uluwatu Temple",
+       "per": "pax",
+       "cost": 50,
+       "selling": 67,
+       "notes": null,
+       "includes": "Performance ticket, transportation for pick-up & drop-off",
+       "excludes": "Meals, personal expenses",
+       "duration": "1 hour performance",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 1,
+        "bali-honeymoon-standard": 1,
+        "bali-standard": 1
+       }
+      },
+      {
+       "id": "dps-k002",
+       "category": "Additional Activities",
+       "label": "Barong Dance, Ubud",
+       "per": "pax",
+       "cost": null,
+       "selling": 67,
+       "notes": null,
+       "includes": "Performance ticket, transportation for pick-up & drop-off",
+       "excludes": "Meals, personal expenses",
+       "duration": "1 hour performance (depart 7am from hotel)",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 2,
+        "bali-honeymoon-standard": 2,
+        "bali-standard": 2
+       }
+      },
+      {
+       "id": "dps-k003",
+       "category": "Additional Activities",
+       "label": "Uma Ceking Rice Terrace + Bali Swing",
+       "per": "pax",
+       "cost": 80,
+       "selling": 117,
+       "notes": null,
+       "includes": "Entrance ticket, swing ticket, transportation",
+       "excludes": "Meals, other activities, personal expenses",
+       "duration": "1-2 hours",
+       "price_lines": [
+        "RM117/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 3,
+        "bali-honeymoon-standard": 3,
+        "bali-standard": 3
+       }
+      },
+      {
+       "id": "dps-k004",
+       "category": "Additional Activities",
+       "label": "Garuda Wisnu Kencana Cultural Park",
+       "per": "pax",
+       "cost": 30,
+       "selling": 67,
+       "notes": null,
+       "includes": "Entrance ticket & Transportation",
+       "excludes": "Meals, Other Activities, Personal Expenses",
+       "duration": "1-2 hours (Available during Nusa Dua Tour Only)",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 4,
+        "bali-honeymoon-standard": 4,
+        "bali-standard": 4
+       }
+      },
+      {
+       "id": "dps-k005",
+       "category": "Additional Activities",
+       "label": "Banana Boat at Nusa Dua",
+       "per": "pax",
+       "cost": 87,
+       "selling": 67,
+       "notes": null,
+       "includes": "Watersport Activity Insurance + 1 Time Ride",
+       "excludes": "Meals, Other Activities, Personal Expenses",
+       "duration": "1 hour",
+       "price_lines": [
+        "RM67/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 5,
+        "bali-honeymoon-standard": 5,
+        "bali-standard": 5
+       }
+      },
+      {
+       "id": "dps-k006",
+       "category": "Additional Activities",
+       "label": "Jet Ski Ride at Nusa Dua",
+       "per": "pax",
+       "cost": 131,
+       "selling": 157,
+       "notes": null,
+       "includes": "Watersport Activity Insurance + 1 Time Ride",
+       "excludes": "Other Activities or Personal Expenses",
+       "duration": "1-2 hours",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 6,
+        "bali-honeymoon-standard": 6,
+        "bali-standard": 6
+       }
+      },
+      {
+       "id": "dps-k007",
+       "category": "Additional Activities",
+       "label": "Fly Fish at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 177,
+       "notes": null,
+       "includes": "Activity Insurance + 2 Time Fly",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1-2 hours Activity",
+       "price_lines": [
+        "RM177/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 7,
+        "bali-honeymoon-standard": 7,
+        "bali-standard": 7
+       }
+      },
+      {
+       "id": "dps-k008",
+       "category": "Additional Activities",
+       "label": "Tubing Ride at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 127,
+       "notes": null,
+       "includes": "Activity Insurance + 1 Time Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM127/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 8,
+        "bali-honeymoon-standard": 8,
+        "bali-standard": 8
+       }
+      },
+      {
+       "id": "dps-k009",
+       "category": "Additional Activities",
+       "label": "Parasailing Adventure at Nusa Dua",
+       "per": "pax",
+       "cost": 218,
+       "selling": 237,
+       "notes": null,
+       "includes": "Activity Insurance + 1 Time Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM237/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 9,
+        "bali-honeymoon-standard": 9,
+        "bali-standard": 9
+       }
+      },
+      {
+       "id": "dps-k010",
+       "category": "Additional Activities",
+       "label": "Fly Board at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 327,
+       "notes": null,
+       "includes": "Activity Insurance + 15 Minutes Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "15 minutes Ride",
+       "price_lines": [
+        "RM327/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 10,
+        "bali-honeymoon-standard": 10,
+        "bali-standard": 10
+       }
+      },
+      {
+       "id": "dps-k011",
+       "category": "Additional Activities",
+       "label": "Glass Bottom Boat + Turtle Island at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 197,
+       "notes": null,
+       "includes": "Activity Insurance + 1 hour Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM197/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 11,
+        "bali-honeymoon-standard": 11,
+        "bali-standard": 11
+       }
+      },
+      {
+       "id": "dps-k012",
+       "category": "Additional Activities",
+       "label": "Snorkeling at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 157,
+       "notes": null,
+       "includes": "Activity Insurance + 1 hour Ride",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "1 hour Activity",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 12,
+        "bali-honeymoon-standard": 12,
+        "bali-standard": 12
+       }
+      },
+      {
+       "id": "dps-k013",
+       "category": "Additional Activities",
+       "label": "Sea Walking at Nusa Dua",
+       "per": "pax",
+       "cost": null,
+       "selling": 347,
+       "notes": null,
+       "includes": "Activity Insurance + 40 Minutes Sea Walking",
+       "excludes": "Other activities & Personal expenses",
+       "duration": "40 Minutes",
+       "price_lines": [
+        "RM347/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 13,
+        "bali-honeymoon-standard": 13,
+        "bali-standard": 13
+       }
+      },
+      {
+       "id": "dps-k014",
+       "category": "Additional Activities",
+       "label": "Snorkeling Nusa Penida (Sharing Boat)",
+       "per": "pax",
+       "cost": 45.7,
+       "selling": 107,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Life Jacket + Snorkelling Gear + Sharing Boat Transfer; 3 Snorkelling Points (Greenbowl Bay, Gamat Bay, Crystal Bay)",
+       "excludes": "Other activities & Personal expenses",
+       "price_lines": [
+        "RM107/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 14,
+        "bali-honeymoon-standard": 14,
+        "bali-standard": 14
+       }
+      },
+      {
+       "id": "dps-k015",
+       "category": "Additional Activities",
+       "label": "Snorkeling Nusa Penida (Private Boat)",
+       "per": "pax",
+       "cost": null,
+       "selling": 297,
+       "notes": null,
+       "includes": "Life Jacket + Snorkelling Gear + Private Boat Transfer; 4 Snorkelling Points (Manta Bay, Greenbowl Bay, Gamat Bay, Crystal Bay)",
+       "excludes": "Other activities & Personal expenses",
+       "price_lines": [
+        "RM297/pax"
+       ],
+       "catalogs": {
+        "bali-honeymoon-premium": 15,
+        "bali-honeymoon-standard": 15,
+        "bali-standard": 15
+       }
+      },
+      {
+       "id": "dps-k016",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Romantic Dinner at Bale Udang",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Simple table decoration at Main Dining Area for couple; 3 course Menu includes Appetizer, 2x Main Course, Cake & 2 Drinks",
+       "price_lines": [
+        "Included"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 16
+       }
+      },
+      {
+       "id": "dps-k017",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Intimate Dinner at Bale Udang",
+       "per": "couple",
+       "cost": 224,
+       "selling": 250,
+       "notes": null,
+       "includes": "Table Decoration at Floating Deck area with flower petals decoration; 3 Course Meals includes Appetizer, 2x Main Course, Cake & 2 Drinks; 1 Flower Bouquet",
+       "price_lines": [
+        "RM250/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 17
+       }
+      },
+      {
+       "id": "dps-k018",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Floating Breakfast at Water Villa",
+       "per": "couple",
+       "cost": 45,
+       "selling": 50,
+       "notes": null,
+       "includes": "Additional Floating Basket for Floating Breakfast at Private Pool Villa",
+       "price_lines": [
+        "RM50/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 18
+       }
+      },
+      {
+       "id": "dps-k019",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Honeymoon Sunset Dinner at Jimbaran",
+       "per": "couple",
+       "cost": 411.29,
+       "selling": 450,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Table Decoration at Jimbaran Beach with Flower Petals Deco; Welcome Drinks, Main Course (Includes Lobster 300g) and Fruits; Honeymoon/birthday Cake + Singing",
+       "price_lines": [
+        "RM450/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 19
+       }
+      },
+      {
+       "id": "dps-k020",
+       "category": "Add on Dinner & Room Decoration",
+       "label": "Honeymoon Bedroom Decoration for Standard Villa",
+       "per": "couple",
+       "cost": 114.25,
+       "selling": 150,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Bedroom Flower Petals Decoration; Hand bouquet upon arrival at Standard Villa Only",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-honeymoon-standard": 20
+       }
+      },
+      {
+       "id": "dps-k021",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Romantic Dinner at Bale Udang",
+       "per": "couple",
+       "cost": 102.82,
+       "selling": 150,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Simple table decoration at Main Dining Area for couple; 3 course Menu includes Appetizer, 2x Main Course, Cake & 2 Drinks",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 16
+       }
+      },
+      {
+       "id": "dps-k022",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Intimate Dinner at Bale Udang",
+       "per": "couple",
+       "cost": 224,
+       "selling": 250,
+       "notes": null,
+       "includes": "Table Decoration at Floating Deck area with flower petals decoration; 3 Course Meals includes Appetizer, 2x Main Course, Cake & 2 Drinks; 1 Flower Bouquet",
+       "price_lines": [
+        "RM250/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 17
+       }
+      },
+      {
+       "id": "dps-k023",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Floating Breakfast at Water Villa",
+       "per": "couple",
+       "cost": 45,
+       "selling": 50,
+       "notes": null,
+       "includes": "Additional Floating Basket for Floating Breakfast at Private Pool Villa",
+       "price_lines": [
+        "RM50/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 18
+       }
+      },
+      {
+       "id": "dps-k024",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Honeymoon Sunset Dinner at Jimbaran",
+       "per": "couple",
+       "cost": 411.29,
+       "selling": 450,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Table Decoration at Jimbaran Beach with Flower Petals Deco; Welcome Drinks, Main Course (Includes Lobster 300g) and Fruits; Honeymoon/birthday Cake + Singing",
+       "price_lines": [
+        "RM450/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 19
+       }
+      },
+      {
+       "id": "dps-k025",
+       "category": "Additional Honeymoon Dinner & Room Decoration",
+       "label": "Honeymoon Bedroom Decoration for Asa Bali Villa",
+       "per": "couple",
+       "cost": 114.25,
+       "selling": 150,
+       "notes": "Cost from the R&D sheet (IDR × 0.0002285)",
+       "includes": "Bedroom Flower Petals Decoration; Hand bouquet upon arrival at Asa Bali Villa",
+       "price_lines": [
+        "RM150/couple"
+       ],
+       "catalogs": {
+        "bali-standard": 20
+       }
+      }
+     ],
+     "label": "Bali › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k001",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k001 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k001",
+      "cost"
+     ],
+     "from": null,
+     "to": 50,
+     "label": "Bali › addons › dps-k001 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k001",
+      "selling"
+     ],
+     "from": null,
+     "to": 67,
+     "label": "Bali › addons › dps-k001 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k002",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k002 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k002",
+      "selling"
+     ],
+     "from": null,
+     "to": 67,
+     "label": "Bali › addons › dps-k002 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k003",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k003 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k003",
+      "cost"
+     ],
+     "from": null,
+     "to": 80,
+     "label": "Bali › addons › dps-k003 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k003",
+      "selling"
+     ],
+     "from": null,
+     "to": 117,
+     "label": "Bali › addons › dps-k003 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k004",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k004 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k004",
+      "cost"
+     ],
+     "from": null,
+     "to": 30,
+     "label": "Bali › addons › dps-k004 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k004",
+      "selling"
+     ],
+     "from": null,
+     "to": 67,
+     "label": "Bali › addons › dps-k004 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k005",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k005 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k005",
+      "cost"
+     ],
+     "from": null,
+     "to": 87,
+     "label": "Bali › addons › dps-k005 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k005",
+      "selling"
+     ],
+     "from": null,
+     "to": 67,
+     "label": "Bali › addons › dps-k005 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k006",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k006 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k006",
+      "cost"
+     ],
+     "from": null,
+     "to": 131,
+     "label": "Bali › addons › dps-k006 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k006",
+      "selling"
+     ],
+     "from": null,
+     "to": 157,
+     "label": "Bali › addons › dps-k006 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k007",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k007 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k007",
+      "selling"
+     ],
+     "from": null,
+     "to": 177,
+     "label": "Bali › addons › dps-k007 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k008",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k008 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k008",
+      "selling"
+     ],
+     "from": null,
+     "to": 127,
+     "label": "Bali › addons › dps-k008 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k009",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k009 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k009",
+      "cost"
+     ],
+     "from": null,
+     "to": 218,
+     "label": "Bali › addons › dps-k009 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k009",
+      "selling"
+     ],
+     "from": null,
+     "to": 237,
+     "label": "Bali › addons › dps-k009 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k010",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k010 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k010",
+      "selling"
+     ],
+     "from": null,
+     "to": 327,
+     "label": "Bali › addons › dps-k010 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k011",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k011 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k011",
+      "selling"
+     ],
+     "from": null,
+     "to": 197,
+     "label": "Bali › addons › dps-k011 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k012",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k012 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k012",
+      "selling"
+     ],
+     "from": null,
+     "to": 157,
+     "label": "Bali › addons › dps-k012 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k013",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k013 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k013",
+      "selling"
+     ],
+     "from": null,
+     "to": 347,
+     "label": "Bali › addons › dps-k013 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k014",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k014 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k014",
+      "cost"
+     ],
+     "from": null,
+     "to": 45.7,
+     "label": "Bali › addons › dps-k014 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k014",
+      "selling"
+     ],
+     "from": null,
+     "to": 107,
+     "label": "Bali › addons › dps-k014 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k014",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k014 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k015",
+      "per"
+     ],
+     "from": "",
+     "to": "pax",
+     "label": "Bali › addons › dps-k015 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k015",
+      "selling"
+     ],
+     "from": null,
+     "to": 297,
+     "label": "Bali › addons › dps-k015 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k017",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k017 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k017",
+      "cost"
+     ],
+     "from": null,
+     "to": 224,
+     "label": "Bali › addons › dps-k017 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k017",
+      "selling"
+     ],
+     "from": null,
+     "to": 250,
+     "label": "Bali › addons › dps-k017 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k018",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k018 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k018",
+      "cost"
+     ],
+     "from": null,
+     "to": 45,
+     "label": "Bali › addons › dps-k018 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k018",
+      "selling"
+     ],
+     "from": null,
+     "to": 50,
+     "label": "Bali › addons › dps-k018 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k019",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k019 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k019",
+      "cost"
+     ],
+     "from": null,
+     "to": 411.29,
+     "label": "Bali › addons › dps-k019 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k019",
+      "selling"
+     ],
+     "from": null,
+     "to": 450,
+     "label": "Bali › addons › dps-k019 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k019",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k019 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k020",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k020 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k020",
+      "cost"
+     ],
+     "from": null,
+     "to": 114.25,
+     "label": "Bali › addons › dps-k020 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k020",
+      "selling"
+     ],
+     "from": null,
+     "to": 150,
+     "label": "Bali › addons › dps-k020 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k020",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k020 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k021",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k021 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k021",
+      "cost"
+     ],
+     "from": null,
+     "to": 102.82,
+     "label": "Bali › addons › dps-k021 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k021",
+      "selling"
+     ],
+     "from": null,
+     "to": 150,
+     "label": "Bali › addons › dps-k021 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k021",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k021 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k022",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k022 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k022",
+      "cost"
+     ],
+     "from": null,
+     "to": 224,
+     "label": "Bali › addons › dps-k022 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k022",
+      "selling"
+     ],
+     "from": null,
+     "to": 250,
+     "label": "Bali › addons › dps-k022 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k023",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k023 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k023",
+      "cost"
+     ],
+     "from": null,
+     "to": 45,
+     "label": "Bali › addons › dps-k023 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k023",
+      "selling"
+     ],
+     "from": null,
+     "to": 50,
+     "label": "Bali › addons › dps-k023 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k024",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k024 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k024",
+      "cost"
+     ],
+     "from": null,
+     "to": 411.29,
+     "label": "Bali › addons › dps-k024 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k024",
+      "selling"
+     ],
+     "from": null,
+     "to": 450,
+     "label": "Bali › addons › dps-k024 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k024",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k024 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k025",
+      "per"
+     ],
+     "from": "",
+     "to": "couple",
+     "label": "Bali › addons › dps-k025 › per"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k025",
+      "cost"
+     ],
+     "from": null,
+     "to": 114.25,
+     "label": "Bali › addons › dps-k025 › cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k025",
+      "selling"
+     ],
+     "from": null,
+     "to": 150,
+     "label": "Bali › addons › dps-k025 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "addons",
+      "dps-k025",
+      "notes"
+     ],
+     "from": null,
+     "to": "Cost from the R&D sheet (IDR × 0.0002285)",
+     "label": "Bali › addons › dps-k025 › notes"
+    },
+    {
+     "path": [
+      "catalogs",
+      "bali-standard",
+      "expect",
+      3,
+      "body"
+     ],
+     "from": "2 - 5 pax (Avanza), 6 - 7 pax (Innova), 8 - 12 pax (Hiace). Transport & Guide 12 hours Basis. Extra Hour 150,000 IDR/hour (pay cash to driver).",
+     "to": "2 - 4 pax (Avanza), 5 - 6 pax (Innova), 7 - 12 pax (Hiace). Transport & Guide 12 hours Basis. Extra Hour 150,000 IDR/hour (pay cash to driver).",
+     "label": "Catalog bali-standard › expect › #4 › body"
+    },
+    {
+     "path": [
+      "kb",
+      "bali",
+      "content",
+      "blocks",
+      "transport"
+     ],
+     "from": "<h2>Transportation &amp; Guide</h2>\n<p class='ssub'>Private transportation dengan driving guide (English/Indonesian), asas 12 jam sehari. Extra hour 150,000 IDR/jam dibayar tunai terus kepada driver.</p>\n<div class='custblk'><h3>Kenderaan ikut bilangan pax (katalog V3)</h3><table class='ctbl'><thead><tr><th>Bilangan pax</th><th>Kenderaan</th></tr></thead><tbody>\n<tr><td class='it'>2 - 5 pax</td><td>Avanza</td></tr>\n<tr><td class='it'>6 - 7 pax</td><td>Innova</td></tr>\n<tr><td class='it'>8 - 12 pax</td><td>Hiace</td></tr>\n</tbody></table><p class='custnote'>Airport transfer maksimum 1 bagasi setiap pax kerana kapasiti kenderaan. Untuk group lebih besar (van 14-seater atau bas 30-seater), quote diberi mengikut keperluan (sumber: rate card ARBA &mdash; tiada dalam katalog).</p></div>\n<div class='custblk'><h3>Nota operasi</h3><table class='ctbl'><thead><tr><th>Perkara</th><th>Butiran</th></tr></thead><tbody>\n<tr><td class='it'>Driving guide</td><td>Guide tempatan Indonesia, mengiringi customer sepanjang tour dan menguruskan tiket masuk</td></tr>\n<tr><td class='it'>Halal &amp; solat</td><td>Driving guide mengatur perhentian restoran halal dan waktu solat sepanjang laluan</td></tr>\n<tr><td class='it'>Nusa Penida</td><td>Transport di pulau menggunakan kenderaan tempatan; penyeberangan guna ferry sharing dari Sanur Jetty</td></tr>\n<tr><td class='it'>Trafik</td><td>Trafik Bali kerap sesak terutama ke Ubud &mdash; jangkakan sedikit kelewatan</td></tr>\n</tbody></table></div>",
+     "to": "<h2>Transportation &amp; Guide</h2>\n<p class='ssub'>Private transportation dengan driving guide (English/Indonesian), asas 12 jam sehari. Extra hour 150,000 IDR/jam dibayar tunai terus kepada driver.</p>\n<div class='custblk'><h3>Kenderaan ikut bilangan pax (katalog V3)</h3><table class='ctbl'><thead><tr><th>Bilangan pax</th><th>Kenderaan</th></tr></thead><tbody>\n<tr><td class='it'>2 - 4 pax</td><td>Avanza</td></tr>\n<tr><td class='it'>5 - 6 pax</td><td>Innova</td></tr>\n<tr><td class='it'>7 - 12 pax</td><td>Hiace</td></tr>\n</tbody></table><p class='custnote'>Airport transfer maksimum 1 bagasi setiap pax kerana kapasiti kenderaan. Untuk group lebih besar (van 14-seater atau bas 30-seater), quote diberi mengikut keperluan (sumber: rate card ARBA &mdash; tiada dalam katalog).</p></div>\n<div class='custblk'><h3>Nota operasi</h3><table class='ctbl'><thead><tr><th>Perkara</th><th>Butiran</th></tr></thead><tbody>\n<tr><td class='it'>Driving guide</td><td>Guide tempatan Indonesia, mengiringi customer sepanjang tour dan menguruskan tiket masuk</td></tr>\n<tr><td class='it'>Halal &amp; solat</td><td>Driving guide mengatur perhentian restoran halal dan waktu solat sepanjang laluan</td></tr>\n<tr><td class='it'>Nusa Penida</td><td>Transport di pulau menggunakan kenderaan tempatan; penyeberangan guna ferry sharing dari Sanur Jetty</td></tr>\n<tr><td class='it'>Trafik</td><td>Trafik Bali kerap sesak terutama ke Ubud &mdash; jangkakan sedikit kelewatan</td></tr>\n</tbody></table></div>",
+     "label": "KB bali › content › blocks › transport"
+    }
+   ],
+   "catalogs": [
+    "Catalog bali-standard content: 1 change",
+    "Catalogs bali-*: add-ons from v64"
+   ],
+   "kb": [
+    "KB bali: 1 change"
+   ]
   }
  ]
 }
