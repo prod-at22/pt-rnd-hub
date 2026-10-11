@@ -114,7 +114,7 @@ function describe(snap, path) {
   const LBL = { value: "", rates: "Rate", fx: "FX", tables: "Table", packages: "", variants: "TO", pricing: "", rules: "Rule",
     adult: "Adult catalog", cwb: "CWB catalog", cnb: "CNB catalog", infant: "Infant price", discountTier2: "Discount tier 2",
     tierUpgrade: "Tier upgrade", cwbCost: "CWB cost", cnbCost: "CNB cost", infantCost: "Infant cost", type: "type",
-    components: "Component", expr: "formula", values: "", settings: "Settings", marginWarnPct: "Margin warn %", marginDangerPct: "Margin danger %", sellingDiscount: "Selling discount (RM)",
+    components: "Component", expr: "formula", values: "", settings: "Settings", marginWarnPct: "Margin warn %", marginDangerPct: "Margin danger %", sellingDiscount: "Selling discount (RM/pax)",
     destinations: "", nights: "Nights", po: "PO", assign: "TO assignment", contracts: "TO Contract Rate" };
   for (let i = 0; i < path.length; i++) {
     const seg = path[i], prev = path[i - 1];
@@ -212,7 +212,10 @@ function applyRule(rule, base, cost) {
 }
 const priceAt = (pkg, k, pax) => { const v = pkg.pricing[k]?.[String(pax)]; return v === undefined || v === null || v === "" ? NaN : +v; };
 // One row of the Costing tab: cost / catalog / selling / margin for each pax type.
-const sellDisc = () => { const v = (shown().settings || {}).sellingDiscount; return v === undefined || v === null || v === "" ? 200 : +v; };
+// RM off the catalog price per pax: the package's own rules.sellingDiscount when set (Bali Honeymoon: RM100/pax = RM200 per couple,
+// PO 11 Oct 2026), else settings.sellingDiscount (RM200).
+const sellDisc = pkg => { const own = pkg && pkg.rules && pkg.rules.sellingDiscount; if (own !== undefined && own !== null && own !== "") return +own;
+  const v = (shown().settings || {}).sellingDiscount; return v === undefined || v === null || v === "" ? 200 : +v; };
 function priceRow(d, pkg, variantId, pax, opts) {
   const v = d.variants.find(x => x.id === variantId);
   const O = optsFor(d, opts);
@@ -220,7 +223,7 @@ function priceRow(d, pkg, variantId, pax, opts) {
   const adultCost = cost ? cost.total : NaN, r = pkg.rules;
   // Selling = Catalog Price (+ tier / option upgrade) − RM200 for every package (settings.sellingDiscount);
   // the infant flat price has no upgrade and no discount. rules.discountTier2 (from the old import) is not used.
-  const up = (+r.tierUpgrade || 0) + optionUpgrade(d, pkg, O), disc = sellDisc();
+  const up = (+r.tierUpgrade || 0) + optionUpgrade(d, pkg, O), disc = sellDisc(pkg);
   const mk = (costV, catV, infant) => {
     const catalog = num(catV) ? catV + (infant ? 0 : up) : NaN;
     const selling = num(catalog) ? catalog - (infant ? 0 : disc) : NaN;
@@ -631,7 +634,7 @@ function costingByPax(d, pkg, pax) {
   return `<div class="card full" id="costPax"><h2>Costing by pax <span class="sub">${esc(pkg.label)} · RM</span>
     <span class="right tabs">${canRef ? `<button class="tab calcbtn${SEL.showRef ? " on" : ""}" data-ref="1" title="Rates and FX behind the codes A, B, …">${SEL.showRef ? "Hide" : "Show"} rate reference</button>` : ""}${canCalc ? `<button class="tab calcbtn${calc ? " on" : ""}" data-calc="1" title="Show how each component is calculated from the TO rates">Show calculation</button>` : ""}${["adult", "cwb", "cnb"].map(t => `<button class="tab${t === k ? " on" : ""}" data-tab="${t}">${t.toUpperCase()}</button>`).join("")}</span></h2>
     <div class="scroll" style="max-height:640px;overflow-y:auto"><table class="rd">${body}</table></div>
-    <div class="note">${isAdult ? "Component columns are for the whole group. Cost/Pax = sum of components ÷ pax. Margin = Selling − Cost/Pax. Total Gross = Margin × pax." : (childComps.length ? "Component columns are per child (RM/pax), after the rule above; Cost/Pax = their sum. " : "Cost/Pax comes from the adult cost by the rule above. ") + "Margin = Selling − Cost/Pax."} Selling Price = Catalog Price − RM${n2(sellDisc())}.${up ? ` * Catalog includes the upgrade +RM${n2(up)}; when editing, the cell holds the base price.` : ""} ${canCalc ? (calc ? "Each component shows its formula at that pax; A, B, … are the codes in Rate reference. " : "Show calculation shows each component as rates × FX. ") : ""}Hover a component for exact RM. Click a row to highlight it.</div></div>`;
+    <div class="note">${isAdult ? "Component columns are for the whole group. Cost/Pax = sum of components ÷ pax. Margin = Selling − Cost/Pax. Total Gross = Margin × pax." : (childComps.length ? "Component columns are per child (RM/pax), after the rule above; Cost/Pax = their sum. " : "Cost/Pax comes from the adult cost by the rule above. ") + "Margin = Selling − Cost/Pax."} Selling Price = Catalog Price − RM${n2(sellDisc(pkg))}${pkg.rules && pkg.rules.sellingDiscount != null ? " per pax (this package)" : ""}.${up ? ` * Catalog includes the upgrade +RM${n2(up)}; when editing, the cell holds the base price.` : ""} ${canCalc ? (calc ? "Each component shows its formula at that pax; A, B, … are the codes in Rate reference. " : "Show calculation shows each component as rates × FX. ") : ""}Hover a component for exact RM. Click a row to highlight it.</div></div>`;
 }
 function addonTotals(d) {
   let sell = 0, cost = 0, n = 0, missing = 0;

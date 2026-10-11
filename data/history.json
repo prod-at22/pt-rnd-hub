@@ -43905,6 +43905,1243 @@
     "Catalog aceh content: 3 changes",
     "Catalog aceh-sabang content: 4 changes"
    ]
+  },
+  {
+   "v": 63,
+   "at": "2026-10-11T13:10:50Z",
+   "by": "system",
+   "note": "Bali (PO ezie 11 Oct 2026, sheet 'rnd bali.xlsx' block BALI NEW TESTING – FEB 2026 as reference): cost tables in IDR (were MYR at the old fixed 0.0002224864) so the live IDR FX applies; Standard transport per pax = sheet (6 and 18 pax were higher); Honeymoon Standard / Premium transport = sheet honeymoon formula (IDR 1,925,000 per couple); Honeymoon selling = catalog − RM200 per couple (rules.sellingDiscount RM100/pax).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "2"
+     ],
+     "from": 239.1729,
+     "to": 1075000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "3"
+     ],
+     "from": 159.4486,
+     "to": 716666.67,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @3 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "4"
+     ],
+     "from": 152.9594,
+     "to": 687500,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @4 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "5"
+     ],
+     "from": 164.6399,
+     "to": 740000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @5 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "6"
+     ],
+     "from": 181.6972,
+     "to": 733333.33,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @6 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "7"
+     ],
+     "from": 155.7405,
+     "to": 700000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @7 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "8"
+     ],
+     "from": 136.2729,
+     "to": 612500,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @8 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "9"
+     ],
+     "from": 134.7279,
+     "to": 605555.56,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @9 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "10"
+     ],
+     "from": 121.2551,
+     "to": 545000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @10 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "11"
+     ],
+     "from": 110.2319,
+     "to": 495454.55,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "12"
+     ],
+     "from": 101.0459,
+     "to": 454166.67,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "13"
+     ],
+     "from": 130.069,
+     "to": 584615.38,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "14"
+     ],
+     "from": 120.7783,
+     "to": 542857.14,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "15"
+     ],
+     "from": 112.7264,
+     "to": 506666.67,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "16"
+     ],
+     "from": 114.0243,
+     "to": 512500,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "17"
+     ],
+     "from": 119.75,
+     "to": 538235.29,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "18"
+     ],
+     "from": 127.9297,
+     "to": 547222.22,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "19"
+     ],
+     "from": 121.1965,
+     "to": 544736.84,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Transport",
+      "values",
+      "20"
+     ],
+     "from": 115.1367,
+     "to": 517500,
+     "label": "Bali › Table › Table Alfian-STD-3S · Transport › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "2"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "3"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @3 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "4"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @4 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "5"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @5 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "6"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @6 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "7"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @7 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "8"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @8 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "9"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @9 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "10"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @10 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "11"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "12"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "13"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "14"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "15"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "16"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "17"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "18"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "19"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Hotel",
+      "values",
+      "20"
+     ],
+     "from": 150.18,
+     "to": 675000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Hotel › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Meals",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-STD-3S · Meals › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Meals",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-STD-3S · Meals › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "2"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "3"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @3 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "4"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @4 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "5"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @5 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "6"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @6 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "7"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @7 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "8"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @8 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "9"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @9 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "10"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @10 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "11"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "12"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "13"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "14"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "15"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "16"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "17"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "18"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "19"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Entrance",
+      "values",
+      "20"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-STD-3S · Entrance › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Tipping-MYR",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-STD-3S · Tipping › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-STD-3S__Tipping-MYR",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-STD-3S · Tipping › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Transport",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Transport › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Transport",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Transport › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Transport",
+      "values",
+      "2"
+     ],
+     "from": 239.1729,
+     "to": 962500,
+     "label": "Bali › Table › Table Alfian-HNY-STD · Transport › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Hotel",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Hotel › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Hotel",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Hotel › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Hotel",
+      "values",
+      "2"
+     ],
+     "from": 278.11,
+     "to": 1250000,
+     "label": "Bali › Table › Table Alfian-HNY-STD · Hotel › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Meals",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Meals › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Meals",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Meals › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Meals",
+      "values",
+      "2"
+     ],
+     "from": 50.0594,
+     "to": 225000,
+     "label": "Bali › Table › Table Alfian-HNY-STD · Meals › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Entrance",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Entrance › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Entrance",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Entrance › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Entrance",
+      "values",
+      "2"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-HNY-STD · Entrance › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Tipping-MYR",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Tipping › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-STD__Tipping-MYR",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-STD · Tipping › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Transport",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Transport › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Transport",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Transport › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Transport",
+      "values",
+      "2"
+     ],
+     "from": 239.1729,
+     "to": 962500,
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Transport › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Hotel",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Hotel › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Hotel",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Hotel › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Hotel",
+      "values",
+      "2"
+     ],
+     "from": 467.225,
+     "to": 2100000,
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Hotel › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Meals",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Meals › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Meals",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Meals › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Meals",
+      "values",
+      "2"
+     ],
+     "from": 404.9252,
+     "to": 1820000,
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Meals › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Entrance",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Entrance › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Entrance",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Entrance › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Entrance",
+      "values",
+      "2"
+     ],
+     "from": 122.3675,
+     "to": 550000,
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Entrance › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Tipping-MYR",
+      "unit"
+     ],
+     "from": "MYR/pax",
+     "to": "IDR/pax",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Tipping › unit"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "tables",
+      "Alfian-HNY-PREM__Tipping-MYR",
+      "fx"
+     ],
+     "from": "MYR",
+     "to": "IDR",
+     "label": "Bali › Table › Table Alfian-HNY-PREM · Tipping › FX"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-hny-std",
+      "rules",
+      "sellingDiscount"
+     ],
+     "to": 100,
+     "label": "Bali › Bali Honeymoon Standard 4D3N › Rule › Selling discount (RM/pax)"
+    },
+    {
+     "path": [
+      "destinations",
+      "DPS",
+      "packages",
+      "alfian-hny-prem",
+      "rules",
+      "sellingDiscount"
+     ],
+     "to": 100,
+     "label": "Bali › Bali Honeymoon Premium 4D3N › Rule › Selling discount (RM/pax)"
+    }
+   ]
   }
  ]
 }

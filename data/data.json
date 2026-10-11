@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 62,
- "updatedAt": "2026-10-11T11:59:31Z",
+ "version": 63,
+ "updatedAt": "2026-10-11T13:10:50Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -10567,64 +10567,64 @@
     {
      "id": "Alfian-STD-3S__Transport",
      "label": "Alfian-STD-3S · Transport",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-STD-3S",
      "values": {
-      "2": 239.1729,
-      "3": 159.4486,
-      "4": 152.9594,
-      "5": 164.6399,
-      "6": 181.6972,
-      "7": 155.7405,
-      "8": 136.2729,
-      "9": 134.7279,
-      "10": 121.2551,
-      "11": 110.2319,
-      "12": 101.0459,
-      "13": 130.069,
-      "14": 120.7783,
-      "15": 112.7264,
-      "16": 114.0243,
-      "17": 119.75,
-      "18": 127.9297,
-      "19": 121.1965,
-      "20": 115.1367
+      "2": 1075000.0,
+      "3": 716666.67,
+      "4": 687500.0,
+      "5": 740000.0,
+      "6": 733333.33,
+      "7": 700000.0,
+      "8": 612500.0,
+      "9": 605555.56,
+      "10": 545000.0,
+      "11": 495454.55,
+      "12": 454166.67,
+      "13": 584615.38,
+      "14": 542857.14,
+      "15": 506666.67,
+      "16": 512500.0,
+      "17": 538235.29,
+      "18": 547222.22,
+      "19": 544736.84,
+      "20": 517500.0
      }
     },
     {
      "id": "Alfian-STD-3S__Hotel",
      "label": "Alfian-STD-3S · Hotel",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-STD-3S",
      "values": {
-      "2": 150.18,
-      "3": 150.18,
-      "4": 150.18,
-      "5": 150.18,
-      "6": 150.18,
-      "7": 150.18,
-      "8": 150.18,
-      "9": 150.18,
-      "10": 150.18,
-      "11": 150.18,
-      "12": 150.18,
-      "13": 150.18,
-      "14": 150.18,
-      "15": 150.18,
-      "16": 150.18,
-      "17": 150.18,
-      "18": 150.18,
-      "19": 150.18,
-      "20": 150.18
+      "2": 675000.0,
+      "3": 675000.0,
+      "4": 675000.0,
+      "5": 675000.0,
+      "6": 675000.0,
+      "7": 675000.0,
+      "8": 675000.0,
+      "9": 675000.0,
+      "10": 675000.0,
+      "11": 675000.0,
+      "12": 675000.0,
+      "13": 675000.0,
+      "14": 675000.0,
+      "15": 675000.0,
+      "16": 675000.0,
+      "17": 675000.0,
+      "18": 675000.0,
+      "19": 675000.0,
+      "20": 675000.0
      }
     },
     {
      "id": "Alfian-STD-3S__Meals",
      "label": "Alfian-STD-3S · Meals",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-STD-3S",
      "values": {
       "2": 0.0,
@@ -10651,157 +10651,157 @@
     {
      "id": "Alfian-STD-3S__Entrance",
      "label": "Alfian-STD-3S · Entrance",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-STD-3S",
      "values": {
-      "2": 122.3675,
-      "3": 122.3675,
-      "4": 122.3675,
-      "5": 122.3675,
-      "6": 122.3675,
-      "7": 122.3675,
-      "8": 122.3675,
-      "9": 122.3675,
-      "10": 122.3675,
-      "11": 122.3675,
-      "12": 122.3675,
-      "13": 122.3675,
-      "14": 122.3675,
-      "15": 122.3675,
-      "16": 122.3675,
-      "17": 122.3675,
-      "18": 122.3675,
-      "19": 122.3675,
-      "20": 122.3675
+      "2": 550000.0,
+      "3": 550000.0,
+      "4": 550000.0,
+      "5": 550000.0,
+      "6": 550000.0,
+      "7": 550000.0,
+      "8": 550000.0,
+      "9": 550000.0,
+      "10": 550000.0,
+      "11": 550000.0,
+      "12": 550000.0,
+      "13": 550000.0,
+      "14": 550000.0,
+      "15": 550000.0,
+      "16": 550000.0,
+      "17": 550000.0,
+      "18": 550000.0,
+      "19": 550000.0,
+      "20": 550000.0
      }
     },
     {
      "id": "Alfian-STD-3S__Tipping-MYR",
      "label": "Alfian-STD-3S · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-STD-3S",
      "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0
      }
     },
     {
      "id": "Alfian-HNY-STD__Transport",
      "label": "Alfian-HNY-STD · Transport",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-STD",
      "values": {
-      "2": 239.1729
+      "2": 962500.0
      }
     },
     {
      "id": "Alfian-HNY-STD__Hotel",
      "label": "Alfian-HNY-STD · Hotel",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-STD",
      "values": {
-      "2": 278.11
+      "2": 1250000.0
      }
     },
     {
      "id": "Alfian-HNY-STD__Meals",
      "label": "Alfian-HNY-STD · Meals",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-STD",
      "values": {
-      "2": 50.0594
+      "2": 225000.0
      }
     },
     {
      "id": "Alfian-HNY-STD__Entrance",
      "label": "Alfian-HNY-STD · Entrance",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-STD",
      "values": {
-      "2": 122.3675
+      "2": 550000.0
      }
     },
     {
      "id": "Alfian-HNY-STD__Tipping-MYR",
      "label": "Alfian-HNY-STD · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-STD",
      "values": {
-      "2": 0
+      "2": 0.0
      }
     },
     {
      "id": "Alfian-HNY-PREM__Transport",
      "label": "Alfian-HNY-PREM · Transport",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-PREM",
      "values": {
-      "2": 239.1729
+      "2": 962500.0
      }
     },
     {
      "id": "Alfian-HNY-PREM__Hotel",
      "label": "Alfian-HNY-PREM · Hotel",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-PREM",
      "values": {
-      "2": 467.225
+      "2": 2100000.0
      }
     },
     {
      "id": "Alfian-HNY-PREM__Meals",
      "label": "Alfian-HNY-PREM · Meals",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-PREM",
      "values": {
-      "2": 404.9252
+      "2": 1820000.0
      }
     },
     {
      "id": "Alfian-HNY-PREM__Entrance",
      "label": "Alfian-HNY-PREM · Entrance",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-PREM",
      "values": {
-      "2": 122.3675
+      "2": 550000.0
      }
     },
     {
      "id": "Alfian-HNY-PREM__Tipping-MYR",
      "label": "Alfian-HNY-PREM · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
+     "unit": "IDR/pax",
+     "fx": "IDR",
      "group": "Alfian-HNY-PREM",
      "values": {
-      "2": 0
+      "2": 0.0
      }
     }
    ],
@@ -11058,7 +11058,8 @@
       "infantCost": {
        "type": "flat",
        "value": 0
-      }
+      },
+      "sellingDiscount": 100
      }
     },
     {
@@ -11094,7 +11095,8 @@
       "infantCost": {
        "type": "flat",
        "value": 0
-      }
+      },
+      "sellingDiscount": 100
      }
     }
    ],

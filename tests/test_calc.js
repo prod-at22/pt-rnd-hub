@@ -847,6 +847,13 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(Math.round(r.cwb.cost) === 678 && Math.round(r.cnb.cost) === 465 && r.cwb.margin > 0 && r.cnb.margin > 0, `Aceh-Sabang 2 pax: CWB cost 850×75%+40 = 678, CNB 850×50%+40 = 465 (${Math.round(r.cwb.cost)} / ${Math.round(r.cnb.cost)})`);
   }
 
+  {   // Bali (PO 11 Oct 2026): costs in IDR (live FX), honeymoon selling = catalog − RM200 per couple (rules.sellingDiscount 100/pax)
+    const x = byCode(P.DATA, "DPS"), std = x.packages.find(p => p.id === "alfian-std-3s"), hny = x.packages.find(p => p.id === "alfian-hny-std");
+    ok(x.tables.every(t => t.fx === "IDR") && x.tables.find(t => t.id === "Alfian-STD-3S__Transport").values["2"] === 1075000, "Bali cost tables in IDR (Standard transport 2 pax IDR 1,075,000)");
+    const rs = P.priceRow(x, std, std.assign[0].variant, 2).adult, rh = P.priceRow(x, hny, hny.assign[0].variant, 2).adult;
+    ok(rs.selling === 857 && rh.selling === 998.5, `selling: Standard 1057 − 200 = 857, Honeymoon 1098.5 − 100 = 998.5 (${rs.selling} / ${rh.selling})`);
+  }
+
   console.log("8v. several TOs per package: Add TO (copy), pick it → costing follows, Banding TO, Make default, Remove, Save");
   {
     const pg = await boot(repo, "aceh/"); await until(() => pg.doc.querySelector("#costPax"));
