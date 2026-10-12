@@ -1,4 +1,4 @@
-# Status & handoff (11 Oct 2026, data v64 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v65 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (11 Oct 2026) — v64 live · Aceh + Bali verified · next: Bangkok (BKK)
-- Live: hub v64, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v65 live · Aceh + Bali + Bangkok verified · next: ask the PO
+- Live: hub v65, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -94,9 +94,19 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   kb-build {{dari:N}} = lowest adult within the catalog's printed pax range (Bali card "dari RM917"; Krabi cards now 1,297 / 1,497).
   Catalog prices unchanged (checked live). Open Bali items are flags: Banana Boat below cost, Pocket Wifi prices swapped,
   8 add-ons without cost, TripCare RM64 vs Aceh RM45 (tools/flags_open.json).
+  **Bangkok done (v65, PO ezie 12 Oct; references: contracts/bkk Chiwanon CR 2026–2027 + Almas / Al-Meroz / Nouvo contracts, and Drive
+  "PT BANGKOK R&D 2026.xlsx" (owner hakiimaffendy, shared) sheet COSTING BKK — 1–10 pax only, same costs as the hub):** vehicles = CR
+  (SUV max 3, minivan max 9): SUV 1–3 · minivan 4–9 · 10+ minivan + SUV / minivan in Costing, catalog What to Expect and KB (transport tab, rate card,
+  calculator bands, ext.paxPerVehicle 9); Almas FIT 1,250 THB (1–7 rooms) / group 1,100 (8+ rooms = 16+ pax); "Chaiyo Praya" RM18 =
+  Chao Phraya boat (sheet; not the dinner cruise, not in the CR); add-ons: R&D Day 3 duplicates removed, catalog items selling = catalog,
+  cost from the CR (Pattaya 30, Kanchanaburi 116, Safari World 121), Long Tail 244 / boat (max 6), Giraffe 122, new Chao Phraya Halal
+  Dinner Cruise 121 / 150; KB Simple Calculator add-ons linked (kb.rnd.cost); package "Bangkok Standard 4D3N"; catalog text Driver (not
+  Tour Guide), wet season June–October ("International Breakfast" kept, PO); KB long tail max 6, FAQ flight RM620–1,600; hideTabs → historyFrom 65.
+  Catalog prices unchanged. Open (tools/flags_open.json): tipping not costed (ask Chiwanon), hotel contracts end 31 Oct 2026,
+  Giraffe margin 9.6 %, 4★ upgrade ~9 %. Open with the PO: 11–30 pax prices (hub only; 11–15 = 1,397 > 6–10 = 1,197; CNB −300 vs −200).
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next: Bangkok (BKK)** — same method; ask the PO for a reference sheet / CR if there is one (Costing is rate by rate, sheet COSTING BKK).
+- **Next:** ask the PO which destination to verify next (same method: R&D hub × catalog × KB × CR, mirrors, live-text diff, "ok push").
 - Done 9–10 Oct: v41 Info KB tidy · v42 Bangkok 4★/5★ removed · v43–v44 Bangkok Costing rate by rate (sheet COSTING BKK, no meals) ·
   v45 Bangkok Flags/History hidden (destinations[].hideTabs), Show calculation folds pax-only parts · v46 Beijing from the Tourdechina CR (RMB) ·
   v47 KB Accommodation from the hub + roomNote · v48 Beijing Flags/History hidden · v49 live FX for every destination except Jepun ·

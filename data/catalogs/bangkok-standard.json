@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 March 2027",
   "version": "v3",
-  "updated": "2026-07-01",
+  "updated": "2026-10-12",
   "kb_url": "https://prod-at22.github.io/bangkok-kb/",
   "po": "Fyka",
   "ops": "CIK IWAN",
@@ -71,7 +71,7 @@
         "Tipping"
       ],
       "excludes": [
-        "Private Driver & Guide is based on 12 hours basis; additional fees apply for every extra hour",
+        "Private Driver is based on 12 hours basis; additional fees apply for every extra hour",
         "Flight Ticket",
         "Personal Insurance",
         "Personal Expenses",
@@ -155,7 +155,7 @@
     {
       "icon": "bus",
       "title": "Driver & Transport",
-      "body": "Transport is on 12 hours basis. Extra hours will be charged 500THB/Hour."
+      "body": "2 - 3 pax (SUV), 4 - 9 pax (Minivan), 10 pax and above (Minivan + SUV or 2 Minivans). Transport is on 12 hours basis. Extra hours will be charged 500THB/Hour (pay cash to driver)."
     },
     {
       "icon": "footprints",
@@ -165,7 +165,7 @@
     {
       "icon": "umbrella",
       "title": "Wet Season",
-      "body": "November - Feb are wet season in Bangkok. Prepare suitable attire for possible rains."
+      "body": "June - October are wet season in Bangkok. Prepare suitable attire for possible rains."
     },
     {
       "icon": "bed",
@@ -192,7 +192,7 @@
         "Price is not applicable during peak seasons; please refer to the peak season surcharge.",
         "Late Booking Surcharge of RM50/booking will apply for bookings made less than 45 days before the departure date.",
         "This package is valid until 31st March 2027 travel period.",
-        "Private Transportation & Tour Guide is based on 12 hours basis. Additional fees will be charged for every extra hour usage. Payment must be made in cash.",
+        "Private Transportation & Driver is based on 12 hours basis. Additional fees will be charged for every extra hour usage. Payment must be made in cash.",
         "Quotation, consequence of itinerary and price are subject to change accordingly.",
         "Final itinerary and hotel arrangements will be confirmed at least 15 days before trip.",
         "Please check with our staff on the trip validity or before booking any connecting domestic flights."
@@ -226,5 +226,5 @@
       "title": "Add On Tour"
     }
   ],
-  "hub_version": 30
+  "hub_version": 65
 }

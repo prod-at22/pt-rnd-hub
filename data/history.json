@@ -47825,6 +47825,4303 @@
    "kb": [
     "KB bali: 1 change"
    ]
+  },
+  {
+   "v": 65,
+   "at": "2026-10-12T03:01:37Z",
+   "by": "system",
+   "note": "Bangkok cross-check (PO ezie 12 Oct 2026; CR Chiwanon 2026–2027 + hotel contracts, PT BANGKOK R&D 2026 sheet COSTING BKK as reference): vehicles = CR Chiwanon (SUV 1–3 · minivan 4–9 · 10+ minivan + SUV / minivan) in the Costing, catalog What to Expect and KB (calculator bands, transport tab, rate card); Almas FIT 1,250 THB (1–7 rooms) / group 1,100 THB (8+ rooms, 16+ pax); Chaiyo Praya = Chao Phraya boat (label); add-ons: R&D Day 3 duplicates removed, catalog items selling = catalog with CR cost (Pattaya 30, Kanchanaburi 116, Safari World 121), Long Tail Boat cost 244, Giraffe cost 122 (category fixed), new Chao Phraya Halal Dinner Cruise (121 / 150); package name 'Bangkok Standard 4D3N'; catalog text: Driver (not Tour Guide), wet season June–October (International Breakfast kept, PO); KB long tail max 6 pax, FAQ flight price; Flags / History tabs shown, history from v65. Catalog prices unchanged; 11–30 pax prices unchanged (PO to decide).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "rates"
+     ],
+     "from": [
+      {
+       "id": "suvAir",
+       "label": "Airport pick-up / drop-off (SUV max 3 pax)",
+       "value": 800,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvAirHalf",
+       "label": "Airport + half day tour (SUV max 3 pax)",
+       "value": 3000,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvDay",
+       "label": "Bangkok City full day 12 jam (SUV max 3 pax)",
+       "value": 3500,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvFloat",
+       "label": "Floating Market full day 12 jam (SUV max 3 pax)",
+       "value": 4000,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanAir",
+       "label": "Airport pick-up / drop-off (Van max 9 pax)",
+       "value": 1200,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanAirHalf",
+       "label": "Airport + half day tour (Van max 9 pax)",
+       "value": 3500,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanDay",
+       "label": "Bangkok City full day 12 jam (Van max 9 pax)",
+       "value": 3800,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanFloat",
+       "label": "Floating Market full day 12 jam (Van max 9 pax)",
+       "value": 4300,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "almasStd",
+       "label": "Standard Room, breakfast (Almas Hotel 3★)",
+       "value": 1200,
+       "fx": "THB",
+       "unit": "THB/room/night",
+       "group": "2. Hotel"
+      },
+      {
+       "id": "choc",
+       "label": "Chocolate Village (Entrance)",
+       "value": 200,
+       "fx": "THB",
+       "unit": "THB/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "gp",
+       "label": "Grand Palace (Entrance)",
+       "value": 500,
+       "fx": "THB",
+       "unit": "THB/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "chaophraya",
+       "label": "Chaiyo Praya (Entrance)",
+       "value": 18,
+       "fx": "MYR",
+       "unit": "MYR/pax",
+       "group": "3. Entrance"
+      }
+     ],
+     "to": [
+      {
+       "id": "suvAir",
+       "label": "Airport pick-up / drop-off (SUV max 3 pax)",
+       "value": 800,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvAirHalf",
+       "label": "Airport + half day tour (SUV max 3 pax)",
+       "value": 3000,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvDay",
+       "label": "Bangkok City full day 12 jam (SUV max 3 pax)",
+       "value": 3500,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "suvFloat",
+       "label": "Floating Market full day 12 jam (SUV max 3 pax)",
+       "value": 4000,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanAir",
+       "label": "Airport pick-up / drop-off (Van max 9 pax)",
+       "value": 1200,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanAirHalf",
+       "label": "Airport + half day tour (Van max 9 pax)",
+       "value": 3500,
+       "fx": "THB",
+       "unit": "THB/way",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanDay",
+       "label": "Bangkok City full day 12 jam (Van max 9 pax)",
+       "value": 3800,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "vanFloat",
+       "label": "Floating Market full day 12 jam (Van max 9 pax)",
+       "value": 4300,
+       "fx": "THB",
+       "unit": "THB/day",
+       "group": "1. Transport (kumpulan)"
+      },
+      {
+       "id": "almasStd",
+       "label": "Standard Room, breakfast (Almas Hotel 3★) — FIT 1–7 bilik",
+       "value": 1250,
+       "fx": "THB",
+       "unit": "THB/room/night",
+       "group": "2. Hotel"
+      },
+      {
+       "id": "almasGrp",
+       "label": "Standard Room, breakfast (Almas Hotel 3★) — group min 8 bilik",
+       "value": 1100,
+       "fx": "THB",
+       "unit": "THB/room/night",
+       "group": "2. Hotel"
+      },
+      {
+       "id": "choc",
+       "label": "Chocolate Village (Entrance)",
+       "value": 200,
+       "fx": "THB",
+       "unit": "THB/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "gp",
+       "label": "Grand Palace (Entrance)",
+       "value": 500,
+       "fx": "THB",
+       "unit": "THB/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "chaophraya",
+       "label": "Chao Phraya boat — Chaiyo Praya (Entrance)",
+       "value": 18,
+       "fx": "MYR",
+       "unit": "MYR/pax",
+       "group": "3. Entrance"
+      }
+     ],
+     "label": "Bangkok › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "notes"
+     ],
+     "from": "Kos ikut PT BANGKOK R&D 2026 (sheet COSTING BKK: 4D3N Bangkok STD, no meals, breakfast only) — rujukan sahaja, hub ialah sumber. SUV 1–3 pax, van 4–8 pax, van + SUV 9–10 pax; 11+ pax: 1 van setiap 8 pax + baki 1–3 SUV / 4–7 van. Hotel = separuh bilik twin setiap pax.",
+     "to": "Kos ikut CR Chiwanon 2026–2027 (transport, entrance) dan kontrak Almas (FIT 1,250 THB 1–7 bilik, group 1,100 THB 8+ bilik); PT BANGKOK R&D 2026 sheet COSTING BKK rujukan sahaja — hub ialah sumber. SUV 1–3 pax, minivan 4–9 pax (CR Chiwanon: minivan 9 tempat, SUV 3); 10+ pax: 1 minivan setiap 9 pax + baki 1–3 SUV / 4–8 minivan. Hotel = separuh bilik twin setiap pax. Tipping belum ada dalam kos (tanya TO).",
+     "label": "Bangkok › TO › TO Chiwanon › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "airport",
+      "label"
+     ],
+     "from": "Airport transfer (SUV 1–3 pax · van 4–8 · van + SUV 9–10)",
+     "to": "Airport transfer (SUV 1–3 pax · minivan 4–9 · 10+ minivan + SUV / minivan)",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Airport transfer (SUV 1–3 pax · van 4–8 · van + SUV 9–10) › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "airport",
+      "expr"
+     ],
+     "from": "(pax<=3?1:pax<=8?0:(pax%8>=1&&pax%8<=3?1:0))*(R.suvAir+R.suvAirHalf)+(pax<=3?0:pax<=8?1:floor(pax/8)+(pax%8>=4?1:0))*(R.vanAir+R.vanAirHalf)",
+     "to": "((pax%9>=1&&pax%9<=3)?1:0)*(R.suvAir+R.suvAirHalf)+(floor(pax/9)+(pax%9>=4?1:0))*(R.vanAir+R.vanAirHalf)",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Airport transfer (SUV 1–3 pax · van 4–8 · van + SUV 9–10) › formula"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "daytour",
+      "expr"
+     ],
+     "from": "(pax<=3?1:pax<=8?0:(pax%8>=1&&pax%8<=3?1:0))*(R.suvDay+R.suvFloat)+(pax<=3?0:pax<=8?1:floor(pax/8)+(pax%8>=4?1:0))*(R.vanDay+R.vanFloat)",
+     "to": "((pax%9>=1&&pax%9<=3)?1:0)*(R.suvDay+R.suvFloat)+(floor(pax/9)+(pax%9>=4?1:0))*(R.vanDay+R.vanFloat)",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Day tour: Bangkok City + Floating Market › formula"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "hotel",
+      "label"
+     ],
+     "from": "Hotel Almas 3★ × 3 malam (½ bilik / pax)",
+     "to": "Hotel Almas 3★ × 3 malam (½ bilik / pax; group rate 16+ pax)",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Hotel Almas 3★ × 3 malam (½ bilik / pax) › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "hotel",
+      "expr"
+     ],
+     "from": "R.almasStd*N*pax/2",
+     "to": "(pax>=16?R.almasGrp:R.almasStd)*N*pax/2",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Hotel Almas 3★ × 3 malam (½ bilik / pax) › formula"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "variants",
+      "Chiwanon-Almas-3-Star",
+      "components",
+      "entrance",
+      "label"
+     ],
+     "from": "Entrance: Chaiyo Praya + Chocolate Village + Grand Palace",
+     "to": "Entrance: Chao Phraya boat (Chaiyo Praya) + Chocolate Village + Grand Palace",
+     "label": "Bangkok › TO › TO Chiwanon › Component › Component Entrance: Chaiyo Praya + Chocolate Village + Grand Palace › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "packages",
+      "chiwanon-almas-3-star",
+      "label"
+     ],
+     "from": "Bangkok Standard 4D3N · 3★ Almas",
+     "to": "Bangkok Standard 4D3N",
+     "label": "Bangkok › Bangkok Standard 4D3N · 3★ Almas › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "bkk-a01",
+       "category": "Day 3 Choice",
+       "label": "Pattaya Full Day Tour",
+       "cost": 0,
+       "selling": 80,
+       "per": "pax",
+       "notes": "3 hrs each way. Pattaya Town + Hard Rock Cafe Pattaya"
+      },
+      {
+       "id": "bkk-a02",
+       "category": "Day 3 Choice",
+       "label": "Kanchanaburi + Safari Park Full Day",
+       "cost": 0,
+       "selling": 160,
+       "per": "pax",
+       "notes": "3 hrs each way. Includes Safari Kanchanaburi admission, River Kwai, Sunflower Field (Dec-Feb)"
+      },
+      {
+       "id": "bkk-a03",
+       "category": "Day 3 Choice",
+       "label": "Safari World Bangkok Half Day",
+       "cost": 0,
+       "selling": 150,
+       "per": "pax",
+       "notes": "45 min from BKK. Safari Park + Marine Park admission"
+      },
+      {
+       "id": "bkk-a04",
+       "category": "Day 2 Add-on",
+       "label": "Long Tail Boat (Damnoen Floating Mkt)",
+       "cost": 0,
+       "selling": 280,
+       "per": "boat",
+       "notes": "RM 280/boat max 6 pax = ~RM 47/pax"
+      },
+      {
+       "id": "bkk-a05",
+       "category": "Cappadocia Add",
+       "label": "Giraffe Encounter (Kanchanaburi Safari)",
+       "cost": 0,
+       "selling": 135,
+       "per": "pax",
+       "notes": "Optional add to Safari Kanchanaburi"
+      },
+      {
+       "id": "bkk-a06",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4G 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan or similar"
+      },
+      {
+       "id": "bkk-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB 5G 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan or similar"
+      },
+      {
+       "id": "bkk-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (Thailand)"
+      },
+      {
+       "id": "bkk-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a12",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "Etiqa"
+      },
+      {
+       "id": "bkk-a13",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": "Etiqa"
+      },
+      {
+       "id": "bkk-k001",
+       "category": "Add On Tour",
+       "label": "Pattaya Beach Tour",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Pattaya Town, Hard Rock Cafe Pattaya",
+       "duration": "2-3 Hours Journey from Bangkok",
+       "price_lines": [
+        "RM80/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 1
+       }
+      },
+      {
+       "id": "bkk-k002",
+       "category": "Add On Tour",
+       "label": "Kanchanaburi + Safari Park Kanchanaburi (Including Ticket)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Safari World Kanchanaburi Admission, River Kwai, Sunflower Field (December - February only, entrance fee not included)",
+       "excludes": "Giraffe Encounter (add RM135/pax)",
+       "duration": "2-3 Hours Journey from Bangkok",
+       "price_lines": [
+        "RM160/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 2
+       }
+      },
+      {
+       "id": "bkk-k003",
+       "category": "Add On Tour",
+       "label": "Safari World Bangkok (Including ticket)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Safari Park Admission, Marine Park Admission, Shopping in Bangkok after finishing Safari World tour",
+       "duration": "45 minutes Journey from Bangkok",
+       "price_lines": [
+        "RM150/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 3
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "bkk-a04",
+       "category": "Day 2 Add-on",
+       "label": "Long Tail Boat (Damnoen Floating Mkt)",
+       "cost": 244,
+       "selling": 280,
+       "per": "boat",
+       "notes": "CR Chiwanon 2,000 THB/bot, maks 6 pax (~RM47/pax)"
+      },
+      {
+       "id": "bkk-a05",
+       "category": "Add On Tour",
+       "label": "Giraffe Encounter (Kanchanaburi Safari)",
+       "cost": 122,
+       "selling": 135,
+       "per": "pax",
+       "notes": "Optional add to Safari Kanchanaburi · CR Chiwanon 1,000 THB/pax"
+      },
+      {
+       "id": "bkk-a14",
+       "category": "Day 2 Add-on",
+       "label": "Chao Phraya Halal Dinner Cruise",
+       "cost": 121,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Royal Princess 7.30–9.30pm · CR Chiwanon 990 THB dewasa / 790 THB kanak-kanak"
+      },
+      {
+       "id": "bkk-a06",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4G 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan or similar"
+      },
+      {
+       "id": "bkk-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB 5G 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan or similar"
+      },
+      {
+       "id": "bkk-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (Thailand)"
+      },
+      {
+       "id": "bkk-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "bkk-a12",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "Etiqa"
+      },
+      {
+       "id": "bkk-a13",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": "Etiqa"
+      },
+      {
+       "id": "bkk-k001",
+       "category": "Add On Tour",
+       "label": "Pattaya Beach Tour",
+       "per": "pax",
+       "cost": 30,
+       "selling": 80,
+       "notes": "Kos: beza kenderaan Pattaya vs Bangkok City 1 hari (CR Chiwanon SUV 4,000 − 3,500 THB) ÷ 2 pax",
+       "includes": "Pattaya Town, Hard Rock Cafe Pattaya",
+       "duration": "2-3 Hours Journey from Bangkok",
+       "price_lines": [
+        "RM80/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 1
+       }
+      },
+      {
+       "id": "bkk-k002",
+       "category": "Add On Tour",
+       "label": "Kanchanaburi + Safari Park Kanchanaburi (Including Ticket)",
+       "per": "pax",
+       "cost": 116,
+       "selling": 160,
+       "notes": "Kos: tiket Safari Park Kanchanaburi 550 THB + beza kenderaan (SUV 4,300 − 3,500 THB) ÷ 2 pax; Giraffe asing",
+       "includes": "Safari World Kanchanaburi Admission, River Kwai, Sunflower Field (December - February only, entrance fee not included)",
+       "excludes": "Giraffe Encounter (add RM135/pax)",
+       "duration": "2-3 Hours Journey from Bangkok",
+       "price_lines": [
+        "RM160/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 2
+       }
+      },
+      {
+       "id": "bkk-k003",
+       "category": "Add On Tour",
+       "label": "Safari World Bangkok (Including ticket)",
+       "per": "pax",
+       "cost": 121,
+       "selling": 150,
+       "notes": "Kos: tiket Safari Park + Marine Park 990 THB dewasa (kanak-kanak 790 THB), CR Chiwanon",
+       "includes": "Safari Park Admission, Marine Park Admission, Shopping in Bangkok after finishing Safari World tour",
+       "duration": "45 minutes Journey from Bangkok",
+       "price_lines": [
+        "RM150/pax"
+       ],
+       "catalogs": {
+        "bangkok-standard": 3
+       }
+      }
+     ],
+     "label": "Bangkok › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "hideTabs"
+     ],
+     "from": [
+      "flags",
+      "history"
+     ],
+     "to": null,
+     "label": "Bangkok › hideTabs"
+    },
+    {
+     "path": [
+      "destinations",
+      "BKK",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 65,
+     "label": "Bangkok › historyFrom"
+    },
+    {
+     "path": [
+      "catalogs",
+      "bangkok-standard",
+      "price_blocks",
+      0,
+      "excludes",
+      0
+     ],
+     "from": "Private Driver & Guide is based on 12 hours basis; additional fees apply for every extra hour",
+     "to": "Private Driver is based on 12 hours basis; additional fees apply for every extra hour",
+     "label": "Catalog bangkok-standard › price_blocks › #1 › excludes › #1"
+    },
+    {
+     "path": [
+      "catalogs",
+      "bangkok-standard",
+      "expect",
+      2,
+      "body"
+     ],
+     "from": "Transport is on 12 hours basis. Extra hours will be charged 500THB/Hour.",
+     "to": "2 - 3 pax (SUV), 4 - 9 pax (Minivan), 10 pax and above (Minivan + SUV or 2 Minivans). Transport is on 12 hours basis. Extra hours will be charged 500THB/Hour (pay cash to driver).",
+     "label": "Catalog bangkok-standard › expect › #3 › body"
+    },
+    {
+     "path": [
+      "catalogs",
+      "bangkok-standard",
+      "expect",
+      4,
+      "body"
+     ],
+     "from": "November - Feb are wet season in Bangkok. Prepare suitable attire for possible rains.",
+     "to": "June - October are wet season in Bangkok. Prepare suitable attire for possible rains.",
+     "label": "Catalog bangkok-standard › expect › #5 › body"
+    },
+    {
+     "path": [
+      "catalogs",
+      "bangkok-standard",
+      "notes",
+      0,
+      "entries",
+      5
+     ],
+     "from": "Private Transportation & Tour Guide is based on 12 hours basis. Additional fees will be charged for every extra hour usage. Payment must be made in cash.",
+     "to": "Private Transportation & Driver is based on 12 hours basis. Additional fees will be charged for every extra hour usage. Payment must be made in cash.",
+     "label": "Catalog bangkok-standard › notes › #1 › entries › #6"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "content",
+      "blocks",
+      "custom"
+     ],
+     "from": "<h2>Simple Customisation &amp; Add-On</h2><div class='custblk'><h3>Pilihan Day 3 &mdash; pilih SATU</h3><table class='ctbl'><thead><tr><th>Pilihan</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bangkok City Tour</td><td class='ded'>Default (included)</td><td>Grand Palace atau Wat Arun + Chatuchak + Siam Paragon + Lumpini Park + Pratunam</td></tr><tr><td class='it'>Pattaya Full Day</td><td class='add'>+RM 80/pax</td><td>Pattaya Beach + Pattaya Town + Hard Rock Cafe &middot; 2&ndash;3 jam sehala</td></tr><tr><td class='it'>Kanchanaburi + Safari Park</td><td class='add'>+RM 160/pax</td><td>Safari Kanchanaburi (tiket included) + River Kwai &middot; Giraffe Encounter +RM135/pax &middot; Sunflower Field Dis&ndash;Feb sahaja, entrance tidak included &middot; 2&ndash;3 jam sehala</td></tr><tr><td class='it'>Safari World Bangkok</td><td class='add'>+RM 150/pax</td><td>Safari Park + Marine Park (tiket included) &middot; 45 minit sehala &middot; terbaik untuk kanak-kanak</td></tr></tbody></table><p class='custnote'>Pilih satu sahaja, tidak boleh gabung. Sahkan sekurang-kurangnya 15 hari sebelum trip.</p></div><div class='custblk'><h3>Add-on lain</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Long Tail Boat (Damnoen Saduak)</td><td class='add'>RM 280/bot</td><td>Day 2 &middot; lebih kurang 5 pax sebot &middot; percuma bawah campaign free gift FBKK2 (rujuk tab Free Gift)</td></tr><tr><td class='it'>Chao Phraya Halal Dinner Cruise</td><td class='add'>RM 150/pax</td><td>Day 2 malam &middot; Royal Princess, buffet halal, 1&ndash;1.5 jam atas sungai</td></tr><tr><td class='it'>Giraffe Encounter (Safari Kanchanaburi)</td><td class='add'>+RM 135/pax</td><td>Hanya bersama Kanchanaburi + Safari Park &middot; tidak termasuk dalam tiket asas</td></tr><tr><td class='it'>Upgrade hotel 4&#9733;</td><td class='add'>+RM 50/pax/malam</td><td>Nouvo City atau seumpama &middot; RM150/pax untuk 3 malam</td></tr><tr><td class='it'>Upgrade hotel 5&#9733; Al-Meroz</td><td class='add'>+RM 60/pax/malam</td><td>Halal-certified &middot; RM180/pax untuk 3 malam</td></tr><tr><td class='it'>Pocket WiFi</td><td class='add'>RM 80&ndash;110/trip</td><td>3GB atau 10GB 4G/5G &middot; Sumber: rate card ARBA &mdash; tiada dalam katalog</td></tr><tr><td class='it'>Takaful TripCare 360</td><td class='add'>dari RM 45/pax</td><td>Etiqa Area 1 (Thailand) &middot; Sumber: rate card ARBA &mdash; tiada dalam katalog</td></tr></tbody></table></div><h2 style='margin-top:30px'>Rate Card Operasi</h2><p class='ssub'>Kadar operasi PT Bangkok (rate card PO, 3 September 2026). Inilah sumber kadar untuk tab <b>Simple Calculator</b>. Kadar transport ialah <b>per kenderaan (per transport)</b>, bukan per pax &mdash; kalkulator pilih kelas kenderaan ikut bilangan pax dan buat pembahagian ini automatik.</p><div class='custblk'><h3>Transport + Driver</h3><table class='ctbl'><thead><tr><th>Tour</th><th>SUV 1&ndash;4 pax<br>tambah</th><th>SUV<br>tolak</th><th>Minivan 1&ndash;8 pax<br>tambah</th><th>Minivan<br>tolak</th></tr></thead><tbody><tr><td class='it'>Bangkok 1 Day</td><td class='add'>RM 450</td><td class='ded'>&minus;RM 300</td><td class='add'>RM 475</td><td class='ded'>&minus;RM 350</td></tr><tr><td class='it'>Damnoen Saduak Floating Market 1 day</td><td class='add'>RM 500</td><td class='ded'>&minus;RM 350</td><td class='add'>RM 550</td><td class='ded'>&minus;RM 400</td></tr><tr><td class='it'>Kanchanaburi 1 day</td><td class='add'>RM 550</td><td class='ded'>&minus;RM 400</td><td class='add'>RM 630</td><td class='ded'>&minus;RM 480</td></tr><tr><td class='it'>Erawan Waterfall</td><td class='add'>RM 600</td><td class='ded'>&minus;RM 450</td><td class='add'>RM 700</td><td class='ded'>&minus;RM 550</td></tr><tr><td class='it'>Ayutthaya 1 day</td><td class='add'>RM 500</td><td class='ded'>&minus;RM 350</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td></tr><tr><td class='it'>Khao Yai 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Pattaya 1 day</td><td class='add'>RM 525</td><td class='ded'>&minus;RM 375</td><td class='add'>RM 610</td><td class='ded'>&minus;RM 460</td></tr><tr><td class='it'>Hua Hin 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Rayong Sea 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Koh Chang Island 1 way</td><td class='add'>RM 700</td><td class='ded'>&minus;RM 550</td><td class='add'>RM 850</td><td class='ded'>&minus;RM 700</td></tr><tr><td class='it'>Airport pick up / drop off 1 way</td><td class='add'>RM 125</td><td class='ded'>&minus;RM 75</td><td class='add'>RM 175</td><td class='ded'>&minus;RM 125</td></tr><tr><td class='it'>Airport pick up + Half day tour</td><td class='add'>RM 400</td><td class='ded'>&minus;RM 250</td><td class='add'>RM 440</td><td class='ded'>&minus;RM 390</td></tr><tr><td class='it'>Pattaya 1 way</td><td class='add'>RM 275</td><td class='ded'>&minus;RM 125</td><td class='add'>RM 350</td><td class='ded'>&minus;RM 200</td></tr><tr><td class='it'>Hua Hin 1 way</td><td class='add'>RM 350</td><td class='ded'>&minus;RM 200</td><td class='add'>RM 450</td><td class='ded'>&minus;RM 300</td></tr><tr><td class='it'>Khao Kor 4 days</td><td class='add'>RM 2,150</td><td class='ded'>&minus;RM 1,800</td><td class='add'>RM 2,500</td><td class='ded'>&minus;RM 2,150</td></tr><tr><td class='it'>Khao Yai 3 days</td><td class='add'>RM 1,550</td><td class='ded'>&minus;RM 1,300</td><td class='add'>RM 1,700</td><td class='ded'>&minus;RM 1,450</td></tr><tr><td class='it'>Kanchanaburi 2 days</td><td class='add'>RM 1,110</td><td class='ded'>&minus;RM 960</td><td class='add'>RM 1,300</td><td class='ded'>&minus;RM 1,150</td></tr><tr><td class='it'>Hua Hin 2 days</td><td class='add'>RM 1,110</td><td class='ded'>&minus;RM 960</td><td class='add'>RM 1,300</td><td class='ded'>&minus;RM 1,150</td></tr></tbody></table><p class='custnote'>Semua kadar <b>RM per transport</b>, bukan per pax. Asas <b>10 jam</b> setiap tour; melebihi 10 jam dicaj <b>500 THB/jam</b> dibayar tunai kepada driver. (Katalog PT Bangkok Standard 4D3N tulis asas <b>12 jam</b> untuk hari pakej &mdash; rate card 10 jam ini untuk hari tambahan / tour di luar pakej.) 9&ndash;10 pax perlu <b>2 kenderaan</b>; kalkulator kira 2 &times; kadar Minivan.</p></div><div class='custblk'><h3>Accommodation</h3><table class='ctbl'><thead><tr><th>Tier</th><th>Tambah 1 malam (normal)</th><th>Tambah 1 malam (peak)</th><th>Tolak 1 malam (normal)</th><th>Tolak 1 malam (peak)</th></tr></thead><tbody><tr><td class='it'>3&#9733; Almas Hotel</td><td class='add'>RM 160 / bilik / malam</td><td class='add'>RM 210 / bilik / malam<br><span class='custnote'>(160 + 50 peak)</span></td><td class='ded'>&minus;RM 50 / pax / malam</td><td>&ndash;</td></tr><tr><td class='it'>4&#9733; Nouvo City Hotel</td><td class='add'>RM 240 / bilik / malam</td><td class='add'>RM 320 / bilik / malam<br><span class='custnote'>(240 + 80 peak)</span></td><td class='ded'>&minus;RM 100 / pax / malam</td><td>&ndash;</td></tr><tr><td class='it'>5&#9733; Al-Meroz Hotel</td><td class='add'>RM 300 / bilik / malam</td><td class='add'>RM 380 / bilik / malam<br><span class='custnote'>(300 + 80 peak)</span></td><td class='ded'>&minus;RM 150 / pax / malam</td><td>&ndash;</td></tr></tbody></table><p class='custnote'>Malam tambahan dikira <b>per bilik</b>; tolak malam dikira <b>per pax</b> &mdash; disahkan oleh PO 3 September 2026 (rate card asal tulis <i>person</i> pada baris 4&#9733;/5&#9733;, dibetulkan kepada <i>room</i>). Dalam kalkulator, malam tambahan dipilih sebagai add-on <i>per bilik</i> dan TC isi bilangan bilik. Upgrade tier pada malam <b>pakej</b> kekal ikut katalog: 4&#9733; +RM50/pax/malam, 5&#9733; +RM60/pax/malam.</p></div><div class='custblk'><h3>Meals</h3><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambah 1 hidangan</th><th>Tolak 1 hidangan</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>Sudah termasuk &mdash; makan di hotel sahaja</td><td>&ndash;</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM 20 / pax</td><td>&ndash;</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM 20 / pax</td><td>&ndash;</td></tr></tbody></table><p class='custnote'>Pakej Bangkok Standard 4D3N ialah <b>breakfast sahaja</b> &mdash; lunch dan dinner tidak termasuk, jadi tiada apa yang boleh ditolak. RM 20 ialah harga <b>tambah</b> satu hidangan (disahkan PO 3 September 2026; rate card asal meletakkan RM 20 di kolum <i>Tolak</i>). Nota rate card &ldquo;Meal provided (Fullboard)&rdquo; tidak terpakai untuk pakej ini.</p></div><div class='custblk'><h3>Attraction / Entrance</h3><table class='ctbl'><thead><tr><th>Attraction</th><th>Add-on dewasa</th><th>Add-on kanak-kanak</th><th>Nak buang (tolak)</th></tr></thead><tbody><tr><td class='it'>Safari Park Kanchanaburi</td><td class='add'>RM 75 / pax</td><td>RM 75 / pax</td><td class='ded'>&minus;RM 60 / pax</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Take photo with Giraffe</td><td class='add'>RM 125 / pax</td><td>RM 125 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Safari Park / Marine Park (Safari World Bangkok)</td><td class='add'>RM 135 / pax</td><td>RM 110 / pax</td><td class='ded'>&minus;RM 100 / pax</td></tr><tr><td class='it'>Grand Palace</td><td class='add'>RM 70 / pax</td><td>RM 55 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Chocolate Ville</td><td class='add'>RM 30 / pax</td><td>RM 30 / pax</td><td class='ded'>&minus;RM 20 / pax</td></tr><tr><td class='it'>Wat Arun</td><td class='add'>RM 30 / pax</td><td>RM 30 / pax</td><td class='ded'>&minus;RM 20 / pax</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Change to Thai attire</td><td class='add'>RM 45 / pax</td><td>RM 45 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Put on makeup</td><td class='add'>RM 45 / pax</td><td>RM 45 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Sanctuary of Truth Pattaya</td><td class='add'>RM 70 / pax</td><td>RM 70 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Khao Kheow Open Zoo</td><td class='add'>RM 50 / pax</td><td>RM 30 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Chokchai Farm</td><td class='add'>RM 20 / pax</td><td>RM 15 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Dream World Pathum Thani</td><td class='add'>RM 110 / pax</td><td>RM 70 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Jim Thompson Museum</td><td class='add'>RM 40 / pax</td><td>RM 25 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Manohkan Skywalk</td><td class='add'>RM 180 / pax</td><td>RM 95 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Hokkaido Flower Park</td><td class='add'>RM 20 / pax</td><td>RM 15 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Wat Pho</td><td class='add'>RM 42 / pax</td><td>RM 42 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Ancient City</td><td class='add'>RM 120 / pax</td><td>RM 60 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Hire photographer (Wat Arun)</td><td class='add' colspan='2'>RM 195 / group</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Damnoen Saduak Long Tail Boat</td><td class='add' colspan='2'>RM 260 / bot (maks 6 pax) &middot; rate card operasi</td><td class='ded'>&ndash;</td></tr></tbody></table><p class='custnote'>Dua item bercanggah dengan katalog dan <b>katalog yang menang</b> untuk harga jual (keputusan PO 3 September 2026): <b>Long Tail Boat</b> rate card RM 260/bot vs katalog <b>RM 280/bot</b>; <b>Giraffe Encounter</b> rate card RM 125/pax vs katalog <b>RM 135/pax</b>. Kalkulator guna nombor katalog. Kadar rate card di atas dikekalkan sebagai rujukan kos operasi.</p></div>",
+     "to": "<h2>Simple Customisation &amp; Add-On</h2><div class='custblk'><h3>Pilihan Day 3 &mdash; pilih SATU</h3><table class='ctbl'><thead><tr><th>Pilihan</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bangkok City Tour</td><td class='ded'>Default (included)</td><td>Grand Palace atau Wat Arun + Chatuchak + Siam Paragon + Lumpini Park + Pratunam</td></tr><tr><td class='it'>Pattaya Full Day</td><td class='add'>+RM 80/pax</td><td>Pattaya Beach + Pattaya Town + Hard Rock Cafe &middot; 2&ndash;3 jam sehala</td></tr><tr><td class='it'>Kanchanaburi + Safari Park</td><td class='add'>+RM 160/pax</td><td>Safari Kanchanaburi (tiket included) + River Kwai &middot; Giraffe Encounter +RM135/pax &middot; Sunflower Field Dis&ndash;Feb sahaja, entrance tidak included &middot; 2&ndash;3 jam sehala</td></tr><tr><td class='it'>Safari World Bangkok</td><td class='add'>+RM 150/pax</td><td>Safari Park + Marine Park (tiket included) &middot; 45 minit sehala &middot; terbaik untuk kanak-kanak</td></tr></tbody></table><p class='custnote'>Pilih satu sahaja, tidak boleh gabung. Sahkan sekurang-kurangnya 15 hari sebelum trip.</p></div><div class='custblk'><h3>Add-on lain</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Long Tail Boat (Damnoen Saduak)</td><td class='add'>RM 280/bot</td><td>Day 2 &middot; maks 6 pax sebot &middot; percuma bawah campaign free gift FBKK2 (rujuk tab Free Gift)</td></tr><tr><td class='it'>Chao Phraya Halal Dinner Cruise</td><td class='add'>RM 150/pax</td><td>Day 2 malam &middot; Royal Princess, buffet halal, 1&ndash;1.5 jam atas sungai</td></tr><tr><td class='it'>Giraffe Encounter (Safari Kanchanaburi)</td><td class='add'>+RM 135/pax</td><td>Hanya bersama Kanchanaburi + Safari Park &middot; tidak termasuk dalam tiket asas</td></tr><tr><td class='it'>Upgrade hotel 4&#9733;</td><td class='add'>+RM 50/pax/malam</td><td>Nouvo City atau seumpama &middot; RM150/pax untuk 3 malam</td></tr><tr><td class='it'>Upgrade hotel 5&#9733; Al-Meroz</td><td class='add'>+RM 60/pax/malam</td><td>Halal-certified &middot; RM180/pax untuk 3 malam</td></tr><tr><td class='it'>Pocket WiFi</td><td class='add'>RM 80&ndash;110/trip</td><td>3GB atau 10GB 4G/5G &middot; Sumber: rate card ARBA &mdash; tiada dalam katalog</td></tr><tr><td class='it'>Takaful TripCare 360</td><td class='add'>dari RM 45/pax</td><td>Etiqa Area 1 (Thailand) &middot; Sumber: rate card ARBA &mdash; tiada dalam katalog</td></tr></tbody></table></div><h2 style='margin-top:30px'>Rate Card Operasi</h2><p class='ssub'>Kadar operasi PT Bangkok (rate card PO, 3 September 2026). Inilah sumber kadar untuk tab <b>Simple Calculator</b>. Kadar transport ialah <b>per kenderaan (per transport)</b>, bukan per pax &mdash; kalkulator pilih kelas kenderaan ikut bilangan pax dan buat pembahagian ini automatik.</p><div class='custblk'><h3>Transport + Driver</h3><table class='ctbl'><thead><tr><th>Tour</th><th>SUV 1&ndash;3 pax<br>tambah</th><th>SUV<br>tolak</th><th>Minivan 1&ndash;9 pax<br>tambah</th><th>Minivan<br>tolak</th></tr></thead><tbody><tr><td class='it'>Bangkok 1 Day</td><td class='add'>RM 450</td><td class='ded'>&minus;RM 300</td><td class='add'>RM 475</td><td class='ded'>&minus;RM 350</td></tr><tr><td class='it'>Damnoen Saduak Floating Market 1 day</td><td class='add'>RM 500</td><td class='ded'>&minus;RM 350</td><td class='add'>RM 550</td><td class='ded'>&minus;RM 400</td></tr><tr><td class='it'>Kanchanaburi 1 day</td><td class='add'>RM 550</td><td class='ded'>&minus;RM 400</td><td class='add'>RM 630</td><td class='ded'>&minus;RM 480</td></tr><tr><td class='it'>Erawan Waterfall</td><td class='add'>RM 600</td><td class='ded'>&minus;RM 450</td><td class='add'>RM 700</td><td class='ded'>&minus;RM 550</td></tr><tr><td class='it'>Ayutthaya 1 day</td><td class='add'>RM 500</td><td class='ded'>&minus;RM 350</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td></tr><tr><td class='it'>Khao Yai 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Pattaya 1 day</td><td class='add'>RM 525</td><td class='ded'>&minus;RM 375</td><td class='add'>RM 610</td><td class='ded'>&minus;RM 460</td></tr><tr><td class='it'>Hua Hin 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Rayong Sea 1 day</td><td class='add'>RM 575</td><td class='ded'>&minus;RM 425</td><td class='add'>RM 650</td><td class='ded'>&minus;RM 500</td></tr><tr><td class='it'>Koh Chang Island 1 way</td><td class='add'>RM 700</td><td class='ded'>&minus;RM 550</td><td class='add'>RM 850</td><td class='ded'>&minus;RM 700</td></tr><tr><td class='it'>Airport pick up / drop off 1 way</td><td class='add'>RM 125</td><td class='ded'>&minus;RM 75</td><td class='add'>RM 175</td><td class='ded'>&minus;RM 125</td></tr><tr><td class='it'>Airport pick up + Half day tour</td><td class='add'>RM 400</td><td class='ded'>&minus;RM 250</td><td class='add'>RM 440</td><td class='ded'>&minus;RM 390</td></tr><tr><td class='it'>Pattaya 1 way</td><td class='add'>RM 275</td><td class='ded'>&minus;RM 125</td><td class='add'>RM 350</td><td class='ded'>&minus;RM 200</td></tr><tr><td class='it'>Hua Hin 1 way</td><td class='add'>RM 350</td><td class='ded'>&minus;RM 200</td><td class='add'>RM 450</td><td class='ded'>&minus;RM 300</td></tr><tr><td class='it'>Khao Kor 4 days</td><td class='add'>RM 2,150</td><td class='ded'>&minus;RM 1,800</td><td class='add'>RM 2,500</td><td class='ded'>&minus;RM 2,150</td></tr><tr><td class='it'>Khao Yai 3 days</td><td class='add'>RM 1,550</td><td class='ded'>&minus;RM 1,300</td><td class='add'>RM 1,700</td><td class='ded'>&minus;RM 1,450</td></tr><tr><td class='it'>Kanchanaburi 2 days</td><td class='add'>RM 1,110</td><td class='ded'>&minus;RM 960</td><td class='add'>RM 1,300</td><td class='ded'>&minus;RM 1,150</td></tr><tr><td class='it'>Hua Hin 2 days</td><td class='add'>RM 1,110</td><td class='ded'>&minus;RM 960</td><td class='add'>RM 1,300</td><td class='ded'>&minus;RM 1,150</td></tr></tbody></table><p class='custnote'>Semua kadar <b>RM per transport</b>, bukan per pax. Asas <b>10 jam</b> setiap tour; melebihi 10 jam dicaj <b>500 THB/jam</b> dibayar tunai kepada driver. (Katalog PT Bangkok Standard 4D3N tulis asas <b>12 jam</b> untuk hari pakej &mdash; rate card 10 jam ini untuk hari tambahan / tour di luar pakej.) 10 pax ke atas perlu <b>2 kenderaan</b> (minivan + SUV atau 2 minivan); kalkulator kira 2 &times; kadar Minivan.</p></div><div class='custblk'><h3>Accommodation</h3><table class='ctbl'><thead><tr><th>Tier</th><th>Tambah 1 malam (normal)</th><th>Tambah 1 malam (peak)</th><th>Tolak 1 malam (normal)</th><th>Tolak 1 malam (peak)</th></tr></thead><tbody><tr><td class='it'>3&#9733; Almas Hotel</td><td class='add'>RM 160 / bilik / malam</td><td class='add'>RM 210 / bilik / malam<br><span class='custnote'>(160 + 50 peak)</span></td><td class='ded'>&minus;RM 50 / pax / malam</td><td>&ndash;</td></tr><tr><td class='it'>4&#9733; Nouvo City Hotel</td><td class='add'>RM 240 / bilik / malam</td><td class='add'>RM 320 / bilik / malam<br><span class='custnote'>(240 + 80 peak)</span></td><td class='ded'>&minus;RM 100 / pax / malam</td><td>&ndash;</td></tr><tr><td class='it'>5&#9733; Al-Meroz Hotel</td><td class='add'>RM 300 / bilik / malam</td><td class='add'>RM 380 / bilik / malam<br><span class='custnote'>(300 + 80 peak)</span></td><td class='ded'>&minus;RM 150 / pax / malam</td><td>&ndash;</td></tr></tbody></table><p class='custnote'>Malam tambahan dikira <b>per bilik</b>; tolak malam dikira <b>per pax</b> &mdash; disahkan oleh PO 3 September 2026 (rate card asal tulis <i>person</i> pada baris 4&#9733;/5&#9733;, dibetulkan kepada <i>room</i>). Dalam kalkulator, malam tambahan dipilih sebagai add-on <i>per bilik</i> dan TC isi bilangan bilik. Upgrade tier pada malam <b>pakej</b> kekal ikut katalog: 4&#9733; +RM50/pax/malam, 5&#9733; +RM60/pax/malam.</p></div><div class='custblk'><h3>Meals</h3><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambah 1 hidangan</th><th>Tolak 1 hidangan</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>Sudah termasuk &mdash; makan di hotel sahaja</td><td>&ndash;</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM 20 / pax</td><td>&ndash;</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM 20 / pax</td><td>&ndash;</td></tr></tbody></table><p class='custnote'>Pakej Bangkok Standard 4D3N ialah <b>breakfast sahaja</b> &mdash; lunch dan dinner tidak termasuk, jadi tiada apa yang boleh ditolak. RM 20 ialah harga <b>tambah</b> satu hidangan (disahkan PO 3 September 2026; rate card asal meletakkan RM 20 di kolum <i>Tolak</i>). Nota rate card &ldquo;Meal provided (Fullboard)&rdquo; tidak terpakai untuk pakej ini.</p></div><div class='custblk'><h3>Attraction / Entrance</h3><table class='ctbl'><thead><tr><th>Attraction</th><th>Add-on dewasa</th><th>Add-on kanak-kanak</th><th>Nak buang (tolak)</th></tr></thead><tbody><tr><td class='it'>Safari Park Kanchanaburi</td><td class='add'>RM 75 / pax</td><td>RM 75 / pax</td><td class='ded'>&minus;RM 60 / pax</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Take photo with Giraffe</td><td class='add'>RM 125 / pax</td><td>RM 125 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Safari Park / Marine Park (Safari World Bangkok)</td><td class='add'>RM 135 / pax</td><td>RM 110 / pax</td><td class='ded'>&minus;RM 100 / pax</td></tr><tr><td class='it'>Grand Palace</td><td class='add'>RM 70 / pax</td><td>RM 55 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Chocolate Ville</td><td class='add'>RM 30 / pax</td><td>RM 30 / pax</td><td class='ded'>&minus;RM 20 / pax</td></tr><tr><td class='it'>Wat Arun</td><td class='add'>RM 30 / pax</td><td>RM 30 / pax</td><td class='ded'>&minus;RM 20 / pax</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Change to Thai attire</td><td class='add'>RM 45 / pax</td><td>RM 45 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Put on makeup</td><td class='add'>RM 45 / pax</td><td>RM 45 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Sanctuary of Truth Pattaya</td><td class='add'>RM 70 / pax</td><td>RM 70 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Khao Kheow Open Zoo</td><td class='add'>RM 50 / pax</td><td>RM 30 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Chokchai Farm</td><td class='add'>RM 20 / pax</td><td>RM 15 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Dream World Pathum Thani</td><td class='add'>RM 110 / pax</td><td>RM 70 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Jim Thompson Museum</td><td class='add'>RM 40 / pax</td><td>RM 25 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Manohkan Skywalk</td><td class='add'>RM 180 / pax</td><td>RM 95 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Hokkaido Flower Park</td><td class='add'>RM 20 / pax</td><td>RM 15 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Wat Pho</td><td class='add'>RM 42 / pax</td><td>RM 42 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Ancient City</td><td class='add'>RM 120 / pax</td><td>RM 60 / pax</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>&nbsp;&nbsp;&ndash; Hire photographer (Wat Arun)</td><td class='add' colspan='2'>RM 195 / group</td><td class='ded'>&ndash;</td></tr><tr><td class='it'>Damnoen Saduak Long Tail Boat</td><td class='add' colspan='2'>RM 260 / bot (maks 6 pax) &middot; rate card operasi</td><td class='ded'>&ndash;</td></tr></tbody></table><p class='custnote'>Dua item bercanggah dengan katalog dan <b>katalog yang menang</b> untuk harga jual (keputusan PO 3 September 2026): <b>Long Tail Boat</b> rate card RM 260/bot vs katalog <b>RM 280/bot</b>; <b>Giraffe Encounter</b> rate card RM 125/pax vs katalog <b>RM 135/pax</b>. Kalkulator guna nombor katalog. Kadar rate card di atas dikekalkan sebagai rujukan kos operasi.</p></div>",
+     "label": "KB bangkok › content › blocks › custom"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season RM 80/pax/malam dan late booking RM 50 dikira sendiri. Transport ikut kelas kenderaan: 1&ndash;4 pax SUV, 5&ndash;8 pax Minivan; hari tambahan asas 10 jam, lebih masa 500 THB/jam dibayar tunai kepada driver. Pilih blok itinerary supaya kos hari tambahan ikut kawasan. Malam tambahan hotel dikira <b>per bilik</b> &mdash; pilih add-on <i>Malam tambahan hotel &hellip; per bilik</i> dan isi bilangan bilik.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>+RM 450 setiap satu</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season RM 80/pax/malam dan late booking RM 50 dikira sendiri. Transport ikut kelas kenderaan: 1&ndash;3 pax SUV, 4&ndash;9 pax Minivan, 10 pax ke atas 2 kenderaan; hari tambahan asas 10 jam, lebih masa 500 THB/jam dibayar tunai kepada driver. Pilih blok itinerary supaya kos hari tambahan ikut kawasan. Malam tambahan hotel dikira <b>per bilik</b> &mdash; pilih add-on <i>Malam tambahan hotel &hellip; per bilik</i> dan isi bilangan bilik.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>+RM 450 setiap satu</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB bangkok › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "content",
+      "blocks",
+      "transport"
+     ],
+     "from": "<h2>Transportation & Guide</h2><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Kenderaan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>2–4 pax</td><td>Sedan (maks 4 pax)</td><td>Private car + driver</td></tr><tr><td class='it'>5–9 pax</td><td>Hiace (maks 9 pax)</td><td>Private van + driver</td></tr><tr><td class='it'>10 pax ke atas</td><td>2 van atau lebih</td><td>Satu van bagi setiap 9 pax</td></tr></tbody></table><p class='custnote'><b>Driver sahaja — tiada tour guide.</b> Driver memandu, escort transit dan hantar ke restoran halal serta tempat menarik, tetapi tidak menerangkan sejarah. Asas 12 jam sehari; lebih masa 500 THB/jam dibayar cash. Untuk group 20–30 pax boleh tambah satu tour guide lebih kurang RM500 sehari atas permintaan (Sumber: rate card ARBA — tiada dalam katalog). Tipping driver sudah included dalam pakej.</p></div>",
+     "to": "<h2>Transportation & Guide</h2><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Kenderaan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>2–3 pax</td><td>SUV (maks 3 pax)</td><td>Private car + driver</td></tr><tr><td class='it'>4–9 pax</td><td>Minivan (maks 9 pax)</td><td>Private minivan + driver</td></tr><tr><td class='it'>10 pax ke atas</td><td>Minivan + SUV atau 2 minivan</td><td>Satu minivan bagi setiap 9 pax; baki 1–3 pax naik SUV</td></tr></tbody></table><p class='custnote'><b>Driver sahaja — tiada tour guide.</b> Driver memandu, escort transit dan hantar ke restoran halal serta tempat menarik, tetapi tidak menerangkan sejarah. Asas 12 jam sehari; lebih masa 500 THB/jam dibayar cash. Untuk group 20–30 pax boleh tambah satu tour guide lebih kurang RM500 sehari atas permintaan (Sumber: rate card ARBA — tiada dalam katalog). Tipping driver sudah included dalam pakej.</p></div>",
+     "label": "KB bangkok › content › blocks › transport"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Bangkok — Knowledge Base (Important Notes & FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*PT Bangkok Standard 4D3N — Ground + Tipping, breakfast sahaja, driver only (tiada guide). Sah untuk travel sehingga 31 Mac 2027.*\n\n- **Breakfast sahaja** included; lunch & dinner atas belanja sendiri (driver hantar ke restoran halal).\n- **Driver sahaja, tiada tour guide.** Transport asas 12 jam/hari; extra 500 THB/jam (cash).\n- **Day 3** ada pilihan: default City Tour, atau ganti Pattaya (+RM80) / Kanchanaburi (+RM160) / Safari World (+RM150). Pilih SATU, sahkan 15 hari sebelum trip.\n- **Chatuchak** buka Sabtu & Ahad sahaja; weekday ganti MBK / Terminal 21.\n- **Final itinerari & hotel** disahkan sekurang-kurangnya 15 hari sebelum trip.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa beza \"driver only\" vs \"driver + guide\"?**\nPakej ini sediakan PRIVATE DRIVER sahaja — pandu van, escort transit & recommend restoran halal. TIADA tour guide untuk explain sejarah/tempat. Customer self-guide (Google Maps / audio guide app) atau hire local guide berasingan. Untuk group besar (20–30 pax) boleh tambah 1 Tour Guide (~RM500/hari) atas permintaan.\n\n**Day 3 ada pilihan apa?**\nDefault: Bangkok City Tour (Grand Palace/Wat Arun + Chatuchak + Siam Paragon + Pratunam). Ganti: Pattaya (+RM80), Kanchanaburi Safari (+RM160), Safari World Bangkok (+RM150). Pilih SATU sahaja, tak boleh gabung.\n\n**Boleh tukar Grand Palace ke Wat Arun?**\nBoleh — Day 3 pilih Grand Palace ATAU Wat Arun. Grand Palace lebih ikonik (entrance ~500 THB), Wat Arun view sungai/sunset (~200 THB).\n\n**Long Tail Boat di Damnoen ada add-on?**\nYa, RM280/bot (maks ~5 pax). Sangat disyorkan untuk pengalaman penuh floating market & foto.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat di Bangkok?**\nYa. Pakej atur restoran halal sepanjang trip. Cadangan itinerari: Day 1 dinner **Abu Husni**, Day 2 lunch **Armeen Halal Restaurant** + gerai halal Melayu di Damnoen, Day 3 lunch **Ayeeshah Roddee** & dinner **Shabu Ox**. Pilihan lain: **Yana @ MBK, Karim Roti Mataba, Busaba, Usman Thai Food, Sophia**. Zon halal popular: Sukhumvit Soi 3 (Arab Quarter), Phra Ram 9, Ramkhamhaeng.\n\n**Berapa kali makan disediakan?**\nBreakfast sahaja (buffet hotel, 3x). Lunch & dinner atas belanja sendiri — driver hantar ke restoran halal. Chao Phraya Halal Dinner Cruise adalah optional (Day 2).\n\n**Ada masjid/surau untuk solat?**\nYa. Masjid Ton Son (tertua di Bangkok) dilawati Day 2. Mall besar ada surau — Siam Paragon (surau + Wrap-It halal) & CentralWorld (surau tingkat 1). Banyak masjid berhampiran Grand Palace (Bangkok Mosque, Haroon, Chakrabongse). Bawa sejadah & telekung; di market/attraction tiada surau formal.\n\n**Dinner Cruise tu halal?**\nYa — Chao Phraya Halal Dinner Cruise (Royal Princess) menyajikan menu halal. Ia optional (Day 2 malam), request semasa booking.\n\n### C. Visa & Passport\n\n**Rakyat Malaysia perlu visa ke Thailand?**\nTidak — Malaysia dapat kemasukan visa-free. Ambil perhatian: mulai 2026 Thailand kurangkan tempoh visa-free dari 60 hari kepada **30 hari** (kemasukan udara). Trip 4D3N ini jauh dalam had.\n\n**Ada apa-apa registrasi baru sebelum masuk Thailand?**\nYa — semua pengunjung asing WAJIB daftar **TDAC (Thailand Digital Arrival Card)** secara online sebelum ketibaan. Isikan lebih awal (dalam 3 hari sebelum sampai).\n\n**Passport kena sah berapa lama?**\nMinimum 6 bulan dari tarikh perjalanan.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Customer book sendiri. Anggaran AirAsia/Batik Air ~RM300–500 return KUL–BKK (Ground sahaja).\n\n**Berapa lama flight KUL–BKK?**\nDirect ~2 jam 10 minit. Airlines: AirAsia, Batik Air, Malaysia Airlines, Thai Airways.\n\n**Airport mana untuk pickup?**\nSuvarnabhumi (BKK) atau Don Mueang (DMK) — sama harga. Driver ARBA sambut di Arrival Hall dengan papan tanda ARBA + nama peserta.\n\n### E. Hotel & Bilik\n\n**Bilik macam mana?**\n2–3 orang sebilik. Triple = 3 katil single ikut availability atau extra bed ditambah.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik ke Bangkok?**\nNov–Feb (cool season) — paling selesa & kering, terbaik untuk city + temple + market. Mac–Mei panas (32–37°C); April ada Songkran. Jun–Okt musim hujan.\n\n**Cuaca Bangkok macam mana?**\nTropika sepanjang tahun (28–35°C). Musim hujan bawa payung/poncho; cool season Dec–Jan paling ideal tapi peak (surcharge).\n\n### G. Shopping & Duit\n\n**Duit poket berapa perlu bawa?**\nCadangan RM1,500–RM3,000/pax untuk shopping, makan tambahan & optional activity. Tukar duit di Malaysia (rate lebih baik).\n\n**Currency & cashless?**\nThai Baht (THB); 1 RM ≈ 7–8 THB. Mall & restoran tourist terima kad; **Chatuchak, Pratunam & Asiatique street stall = CASH sahaja**. Aktifkan overseas withdrawal jika guna kad.\n\n**Beli apa di Bangkok?**\nFesyen borong (Platinum/Pratunam), barang unik (Chatuchak), skincare (Tofu), coklat & snek. Iconsiam & Siam Paragon untuk premium.\n\n### I. Add-ons & Customization\n\n**Boleh upgrade hotel?**\nYa. 4★ Nouvo City +RM150/pax (3 malam); 5★ Al-Meroz +RM180/pax (halal-certified).\n\n### J. Kesihatan & Keselamatan\n\n**Ada banyak walking?**\nYa — mall, temple & market banyak berjalan. Pakai kasut selesa. Senior boleh request bilik dekat lift & pertimbangkan stamina.\n\n**Perlu insurance?**\nDisyorkan. Boleh tambah Takaful TripCare 360 (Etiqa Area 1) melalui add-on.\n\n### K. Praktikal (SIM/socket/tandas)\n\n**Internet & SIM?**\nPocket WiFi (RM80–110) atau eSIM AIS/TrueMove. Coverage 4G/5G excellent; WiFi percuma di kebanyakan hotel & kafe.\n\n**Socket plug jenis apa?**\nThailand guna 3-pin. Bawa universal travel adaptor; disyorkan extension plug jika banyak alatan. Simpan powerbank & charger dalam hand-carry.\n\n### L. Packing\n\n**Apa perlu bawa?**\nPassport (sah 6 bulan+), pakaian ikut hari & aktiviti, keperluan ibadah (sejadah, telekung), peralatan mandi & solek, barangan elektronik + adaptor, duit poket RM1,500–RM3,000, kasut selesa, dan ubat peribadi jika ada. Payung/poncho jika musim hujan.\n",
+     "to": "# PT Bangkok — Knowledge Base (Important Notes & FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*PT Bangkok Standard 4D3N — Ground + Tipping, breakfast sahaja, driver only (tiada guide). Sah untuk travel sehingga 31 Mac 2027.*\n\n- **Breakfast sahaja** included; lunch & dinner atas belanja sendiri (driver hantar ke restoran halal).\n- **Driver sahaja, tiada tour guide.** Transport asas 12 jam/hari; extra 500 THB/jam (cash).\n- **Day 3** ada pilihan: default City Tour, atau ganti Pattaya (+RM80) / Kanchanaburi (+RM160) / Safari World (+RM150). Pilih SATU, sahkan 15 hari sebelum trip.\n- **Chatuchak** buka Sabtu & Ahad sahaja; weekday ganti MBK / Terminal 21.\n- **Final itinerari & hotel** disahkan sekurang-kurangnya 15 hari sebelum trip.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa beza \"driver only\" vs \"driver + guide\"?**\nPakej ini sediakan PRIVATE DRIVER sahaja — pandu van, escort transit & recommend restoran halal. TIADA tour guide untuk explain sejarah/tempat. Customer self-guide (Google Maps / audio guide app) atau hire local guide berasingan. Untuk group besar (20–30 pax) boleh tambah 1 Tour Guide (~RM500/hari) atas permintaan.\n\n**Day 3 ada pilihan apa?**\nDefault: Bangkok City Tour (Grand Palace/Wat Arun + Chatuchak + Siam Paragon + Pratunam). Ganti: Pattaya (+RM80), Kanchanaburi Safari (+RM160), Safari World Bangkok (+RM150). Pilih SATU sahaja, tak boleh gabung.\n\n**Boleh tukar Grand Palace ke Wat Arun?**\nBoleh — Day 3 pilih Grand Palace ATAU Wat Arun. Grand Palace lebih ikonik (entrance ~500 THB), Wat Arun view sungai/sunset (~200 THB).\n\n**Long Tail Boat di Damnoen ada add-on?**\nYa, RM280/bot (maks 6 pax). Sangat disyorkan untuk pengalaman penuh floating market & foto.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat di Bangkok?**\nYa. Pakej atur restoran halal sepanjang trip. Cadangan itinerari: Day 1 dinner **Abu Husni**, Day 2 lunch **Armeen Halal Restaurant** + gerai halal Melayu di Damnoen, Day 3 lunch **Ayeeshah Roddee** & dinner **Shabu Ox**. Pilihan lain: **Yana @ MBK, Karim Roti Mataba, Busaba, Usman Thai Food, Sophia**. Zon halal popular: Sukhumvit Soi 3 (Arab Quarter), Phra Ram 9, Ramkhamhaeng.\n\n**Berapa kali makan disediakan?**\nBreakfast sahaja (buffet hotel, 3x). Lunch & dinner atas belanja sendiri — driver hantar ke restoran halal. Chao Phraya Halal Dinner Cruise adalah optional (Day 2).\n\n**Ada masjid/surau untuk solat?**\nYa. Masjid Ton Son (tertua di Bangkok) dilawati Day 2. Mall besar ada surau — Siam Paragon (surau + Wrap-It halal) & CentralWorld (surau tingkat 1). Banyak masjid berhampiran Grand Palace (Bangkok Mosque, Haroon, Chakrabongse). Bawa sejadah & telekung; di market/attraction tiada surau formal.\n\n**Dinner Cruise tu halal?**\nYa — Chao Phraya Halal Dinner Cruise (Royal Princess) menyajikan menu halal. Ia optional (Day 2 malam), request semasa booking.\n\n### C. Visa & Passport\n\n**Rakyat Malaysia perlu visa ke Thailand?**\nTidak — Malaysia dapat kemasukan visa-free. Ambil perhatian: mulai 2026 Thailand kurangkan tempoh visa-free dari 60 hari kepada **30 hari** (kemasukan udara). Trip 4D3N ini jauh dalam had.\n\n**Ada apa-apa registrasi baru sebelum masuk Thailand?**\nYa — semua pengunjung asing WAJIB daftar **TDAC (Thailand Digital Arrival Card)** secara online sebelum ketibaan. Isikan lebih awal (dalam 3 hari sebelum sampai).\n\n**Passport kena sah berapa lama?**\nMinimum 6 bulan dari tarikh perjalanan.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Customer book sendiri. Anggaran return KUL–BKK RM620–RM1,600 bergantung airline (rujuk tab Flight & Airport). Pakej ground sahaja.\n\n**Berapa lama flight KUL–BKK?**\nDirect ~2 jam 10 minit. Airlines: AirAsia, Batik Air, Malaysia Airlines, Thai Airways.\n\n**Airport mana untuk pickup?**\nSuvarnabhumi (BKK) atau Don Mueang (DMK) — sama harga. Driver ARBA sambut di Arrival Hall dengan papan tanda ARBA + nama peserta.\n\n### E. Hotel & Bilik\n\n**Bilik macam mana?**\n2–3 orang sebilik. Triple = 3 katil single ikut availability atau extra bed ditambah.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik ke Bangkok?**\nNov–Feb (cool season) — paling selesa & kering, terbaik untuk city + temple + market. Mac–Mei panas (32–37°C); April ada Songkran. Jun–Okt musim hujan.\n\n**Cuaca Bangkok macam mana?**\nTropika sepanjang tahun (28–35°C). Musim hujan bawa payung/poncho; cool season Dec–Jan paling ideal tapi peak (surcharge).\n\n### G. Shopping & Duit\n\n**Duit poket berapa perlu bawa?**\nCadangan RM1,500–RM3,000/pax untuk shopping, makan tambahan & optional activity. Tukar duit di Malaysia (rate lebih baik).\n\n**Currency & cashless?**\nThai Baht (THB); 1 RM ≈ 7–8 THB. Mall & restoran tourist terima kad; **Chatuchak, Pratunam & Asiatique street stall = CASH sahaja**. Aktifkan overseas withdrawal jika guna kad.\n\n**Beli apa di Bangkok?**\nFesyen borong (Platinum/Pratunam), barang unik (Chatuchak), skincare (Tofu), coklat & snek. Iconsiam & Siam Paragon untuk premium.\n\n### I. Add-ons & Customization\n\n**Boleh upgrade hotel?**\nYa. 4★ Nouvo City +RM150/pax (3 malam); 5★ Al-Meroz +RM180/pax (halal-certified).\n\n### J. Kesihatan & Keselamatan\n\n**Ada banyak walking?**\nYa — mall, temple & market banyak berjalan. Pakai kasut selesa. Senior boleh request bilik dekat lift & pertimbangkan stamina.\n\n**Perlu insurance?**\nDisyorkan. Boleh tambah Takaful TripCare 360 (Etiqa Area 1) melalui add-on.\n\n### K. Praktikal (SIM/socket/tandas)\n\n**Internet & SIM?**\nPocket WiFi (RM80–110) atau eSIM AIS/TrueMove. Coverage 4G/5G excellent; WiFi percuma di kebanyakan hotel & kafe.\n\n**Socket plug jenis apa?**\nThailand guna 3-pin. Bawa universal travel adaptor; disyorkan extension plug jika banyak alatan. Simpan powerbank & charger dalam hand-carry.\n\n### L. Packing\n\n**Apa perlu bawa?**\nPassport (sah 6 bulan+), pakaian ikut hari & aktiviti, keperluan ibadah (sejadah, telekung), peralatan mandi & solek, barangan elektronik + adaptor, duit poket RM1,500–RM3,000, kasut selesa, dan ubat peribadi jika ada. Payung/poncho jika musim hujan.\n",
+     "label": "KB bangkok › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "intro"
+     ],
+     "from": "Isi pax dan tarikh &mdash; peak season RM 80/pax/malam dan late booking RM 50 dikira sendiri. Transport ikut kelas kenderaan: 1&ndash;4 pax SUV, 5&ndash;8 pax Minivan; hari tambahan asas 10 jam, lebih masa 500 THB/jam dibayar tunai kepada driver. Pilih blok itinerary supaya kos hari tambahan ikut kawasan. Malam tambahan hotel dikira <b>per bilik</b> &mdash; pilih add-on <i>Malam tambahan hotel &hellip; per bilik</i> dan isi bilangan bilik.",
+     "to": "Isi pax dan tarikh &mdash; peak season RM 80/pax/malam dan late booking RM 50 dikira sendiri. Transport ikut kelas kenderaan: 1&ndash;3 pax SUV, 4&ndash;9 pax Minivan, 10 pax ke atas 2 kenderaan; hari tambahan asas 10 jam, lebih masa 500 THB/jam dibayar tunai kepada driver. Pilih blok itinerary supaya kos hari tambahan ikut kawasan. Malam tambahan hotel dikira <b>per bilik</b> &mdash; pilih add-on <i>Malam tambahan hotel &hellip; per bilik</i> dan isi bilangan bilik.",
+     "label": "KB bangkok › calc › intro"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › paxNotes › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      0,
+      "text"
+     ],
+     "from": "1&ndash;4 pax: SUV &mdash; kadar transport band SUV rate card.",
+     "to": "1&ndash;3 pax: SUV &mdash; kadar transport band SUV rate card.",
+     "label": "KB bangkok › calc › paxNotes › #1 › text"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › paxNotes › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › paxNotes › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      1,
+      "text"
+     ],
+     "from": "5&ndash;8 pax: Minivan &mdash; kadar transport band Minivan rate card.",
+     "to": "4&ndash;9 pax: Minivan (maks 9 pax) &mdash; kadar transport band Minivan rate card.",
+     "label": "KB bangkok › calc › paxNotes › #2 › text"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › paxNotes › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "paxNotes",
+      2,
+      "text"
+     ],
+     "from": "9&ndash;10 pax: perlu <b>2 kenderaan</b>. Rate card tiada band khusus, jadi kalkulator kira <b>2 &times; kadar Minivan</b> &mdash; sahkan dengan operasi sebelum quote.",
+     "to": "10 pax: perlu <b>2 kenderaan</b> (minivan + SUV). Kalkulator kira <b>2 &times; kadar Minivan</b> &mdash; sahkan dengan operasi sebelum quote.",
+     "label": "KB bangkok › calc › paxNotes › #3 › text"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "paxPerVehicle"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › paxPerVehicle"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Bangkok]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Bangkok] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Bangkok]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Bangkok] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Bangkok]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Bangkok] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Bangkok]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Bangkok] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Bangkok]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Bangkok] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Damnoen Saduak]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Damnoen Saduak] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Damnoen Saduak]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Damnoen Saduak] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Damnoen Saduak]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Damnoen Saduak] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Damnoen Saduak]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Damnoen Saduak] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Damnoen Saduak]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Damnoen Saduak] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Erawan]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Erawan] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Erawan]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Erawan] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Erawan]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Erawan] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Erawan]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Erawan] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Erawan]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Erawan] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Ayutthaya]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Ayutthaya] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Ayutthaya]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Ayutthaya] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Ayutthaya]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Ayutthaya] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Ayutthaya]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Ayutthaya] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Ayutthaya]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Ayutthaya] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Rayong]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Rayong] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Rayong]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Rayong] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Rayong]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Rayong] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Rayong]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Rayong] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Rayong]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Rayong] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Koh Chang 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Koh Chang 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Koh Chang 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Koh Chang 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Koh Chang 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Koh Chang 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Koh Chang 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Koh Chang 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Koh Chang 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Koh Chang 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport + Half Day]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport + Half Day] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport + Half Day]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport + Half Day] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport + Half Day]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport + Half Day] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport + Half Day]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport + Half Day] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Airport + Half Day]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Airport + Half Day] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Pattaya 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Pattaya 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Kor 4D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Kor 4D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Kor 4D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Kor 4D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Kor 4D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Kor 4D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Kor 4D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Kor 4D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Kor 4D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Kor 4D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai 3D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai 3D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai 3D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai 3D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai 3D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai 3D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai 3D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai 3D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Khao Yai 3D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Khao Yai 3D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi 2D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi 2D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi 2D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi 2D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi 2D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi 2D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi 2D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi 2D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Kanchanaburi 2D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Kanchanaburi 2D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 2D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 2D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 2D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 2D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 2D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 2D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 2D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 2D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "day",
+      "[Hua Hin 2D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › day › [Hua Hin 2D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Bangkok]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Bangkok] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Bangkok]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Bangkok] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Bangkok]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Bangkok] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Bangkok]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Bangkok] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Bangkok]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Bangkok] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Damnoen Saduak]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Damnoen Saduak] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Damnoen Saduak]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Damnoen Saduak] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Damnoen Saduak]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Damnoen Saduak] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Damnoen Saduak]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Damnoen Saduak] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Damnoen Saduak]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Damnoen Saduak] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Erawan]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Erawan] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Erawan]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Erawan] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Erawan]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Erawan] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Erawan]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Erawan] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Erawan]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Erawan] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Ayutthaya]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Ayutthaya] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Ayutthaya]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Ayutthaya] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Ayutthaya]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Ayutthaya] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Ayutthaya]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Ayutthaya] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Ayutthaya]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Ayutthaya] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Rayong]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Rayong] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Rayong]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Rayong] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Rayong]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Rayong] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Rayong]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Rayong] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Rayong]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Rayong] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Koh Chang 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Koh Chang 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Koh Chang 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Koh Chang 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Koh Chang 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Koh Chang 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Koh Chang 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Koh Chang 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Koh Chang 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Koh Chang 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport + Half Day]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport + Half Day] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport + Half Day]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport + Half Day] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport + Half Day]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport + Half Day] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport + Half Day]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport + Half Day] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Airport + Half Day]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Airport + Half Day] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Pattaya 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Pattaya 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 1 way]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 1 way] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 1 way]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 1 way] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 1 way]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 1 way] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 1 way]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 1 way] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 1 way]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 1 way] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Kor 4D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Kor 4D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Kor 4D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Kor 4D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Kor 4D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Kor 4D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Kor 4D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Kor 4D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Kor 4D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Kor 4D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai 3D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai 3D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai 3D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai 3D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai 3D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai 3D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai 3D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai 3D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Khao Yai 3D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Khao Yai 3D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi 2D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi 2D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi 2D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi 2D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi 2D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi 2D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi 2D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi 2D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Kanchanaburi 2D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Kanchanaburi 2D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 2D]",
+      0,
+      "to"
+     ],
+     "from": 4,
+     "to": 3,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 2D] › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 2D]",
+      1,
+      "from"
+     ],
+     "from": 5,
+     "to": 4,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 2D] › #2 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 2D]",
+      1,
+      "to"
+     ],
+     "from": 8,
+     "to": 9,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 2D] › #2 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 2D]",
+      2,
+      "from"
+     ],
+     "from": 9,
+     "to": 10,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 2D] › #3 › from"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "dayDed",
+      "[Hua Hin 2D]",
+      2,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › dayDed › [Hua Hin 2D] › #3 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "up4",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › up4 › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "up5",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › up5 › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "nightShort",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › nightShort › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "nightShort4",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › nightShort4 › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "calc",
+      "variants",
+      "std",
+      "ext",
+      "rates",
+      "nightShort5",
+      "_default",
+      0,
+      "to"
+     ],
+     "from": 16,
+     "to": 18,
+     "label": "KB bangkok › calc › variants › std › ext › rates › nightShort5 › _default › #1 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "bangkok",
+      "rnd"
+     ],
+     "from": null,
+     "to": {
+      "cost": {
+       "addon:tukar day 3 pattaya full day tour": {
+        "addon": "bkk-k001"
+       },
+       "addon:tukar day 3 kanchanaburi safari park full day": {
+        "addon": "bkk-k002"
+       },
+       "addon:tukar day 3 safari world bangkok half day": {
+        "addon": "bkk-k003"
+       },
+       "addon:giraffe encounter safari park kanchanaburi": {
+        "addon": "bkk-a05"
+       },
+       "addon:long tail boat damnoen saduak per bot": {
+        "addon": "bkk-a04"
+       }
+      }
+     },
+     "label": "KB bangkok › rnd"
+    }
+   ],
+   "catalogs": [
+    "Catalog bangkok-standard content: 4 changes",
+    "Catalog bangkok-standard: add-ons from v65"
+   ],
+   "kb": [
+    "KB bangkok: 201 changes"
+   ]
   }
  ]
 }

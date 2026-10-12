@@ -20,6 +20,46 @@
    "fix": "Pick one TripCare price list and use it for Bali too.",
    "by": "ezie",
    "at": "2026-10-11"
+  },
+  {
+   "code": "BKK",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Bangkok: tipping not in the costing",
+   "detail": "The catalog includes Tipping (basis Ground & Tipping) but neither the Chiwanon CR nor the R&D sheet has a tipping cost.",
+   "fix": "Ask Chiwanon whether driver tipping is inside the rate; if not, add a tipping component.",
+   "by": "ezie",
+   "at": "2026-10-12"
+  },
+  {
+   "code": "BKK",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Bangkok: hotel contracts end 31 Oct 2026",
+   "detail": "Almas, Al-Meroz and Nouvo City contracts are valid to 31 Oct 2026; the catalog is sold to 31 Mar 2027.",
+   "fix": "Get the 2026–27 hotel contracts and update the Almas rates (FIT / group).",
+   "by": "ezie",
+   "at": "2026-10-12"
+  },
+  {
+   "code": "BKK",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Bangkok: Giraffe Encounter margin under 10%",
+   "detail": "Cost RM122 (CR 1,000 THB), selling RM135 (catalog) — 9.6%.",
+   "fix": "Keep or raise the catalog price.",
+   "by": "ezie",
+   "at": "2026-10-12"
+  },
+  {
+   "code": "BKK",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Bangkok: 4★ upgrade margin thin",
+   "detail": "Nouvo City Superior Classic 2,000 THB vs Almas 1,250 THB = ~RM46/pax/night against the RM50 upgrade (~9%).",
+   "fix": "Keep or raise the 4★ upgrade surcharge.",
+   "by": "ezie",
+   "at": "2026-10-12"
   }
  ]
 }

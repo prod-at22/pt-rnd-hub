@@ -54,7 +54,7 @@
  "KMGDLS": {"packages": {"tourdechina": "Yunnan 4 Wilayah 7D6N"}, "variants": {"TOURDECHINA": "Tourdechina"}},
  "KMGDL": {"packages": {"tourdechina": "Yunnan 3 Wilayah 6D5N"}, "variants": {"TOURDECHINA": "Tourdechina"}},
  "PEK": {"packages": {"tourdechina": "Beijing Standard 5D4N"}, "variants": {"TOURDECHINA": "Tourdechina"}},
- "BKK": {"packages": {"chiwanon-almas-3-star": "Bangkok Standard 4D3N · 3★ Almas"},
+ "BKK": {"packages": {"chiwanon-almas-3-star": "Bangkok Standard 4D3N"},
          "variants": {"Chiwanon-Almas-3-Star": "Chiwanon"}},
  "PHU": {"packages": {"ktt-ibis-standard-lowseason": "Phuket Standard 4D3N · Ibis 3★ · Low Season", "ktt-marina-standard-lowseason": "Phuket Standard 4D3N · Marina 4★ · Low Season",
                       "ktt-ibis-standard-highseason-janapr": "Phuket Standard 4D3N · Ibis 3★ · High Season Jan–Apr", "ktt-marina-standard-highseason-janapr": "Phuket Standard 4D3N · Marina 4★ · High Season Jan–Apr",

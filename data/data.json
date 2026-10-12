@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 64,
- "updatedAt": "2026-10-11T13:24:06Z",
+ "version": 65,
+ "updatedAt": "2026-10-12T03:01:37Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -33770,8 +33770,16 @@
     },
     {
      "id": "almasStd",
-     "label": "Standard Room, breakfast (Almas Hotel 3★)",
-     "value": 1200,
+     "label": "Standard Room, breakfast (Almas Hotel 3★) — FIT 1–7 bilik",
+     "value": 1250,
+     "fx": "THB",
+     "unit": "THB/room/night",
+     "group": "2. Hotel"
+    },
+    {
+     "id": "almasGrp",
+     "label": "Standard Room, breakfast (Almas Hotel 3★) — group min 8 bilik",
+     "value": 1100,
      "fx": "THB",
      "unit": "THB/room/night",
      "group": "2. Hotel"
@@ -33794,7 +33802,7 @@
     },
     {
      "id": "chaophraya",
-     "label": "Chaiyo Praya (Entrance)",
+     "label": "Chao Phraya boat — Chaiyo Praya (Entrance)",
      "value": 18,
      "fx": "MYR",
      "unit": "MYR/pax",
@@ -33810,29 +33818,29 @@
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "Almas Hotel Standard Room",
-     "notes": "Kos ikut PT BANGKOK R&D 2026 (sheet COSTING BKK: 4D3N Bangkok STD, no meals, breakfast only) — rujukan sahaja, hub ialah sumber. SUV 1–3 pax, van 4–8 pax, van + SUV 9–10 pax; 11+ pax: 1 van setiap 8 pax + baki 1–3 SUV / 4–7 van. Hotel = separuh bilik twin setiap pax.",
+     "notes": "Kos ikut CR Chiwanon 2026–2027 (transport, entrance) dan kontrak Almas (FIT 1,250 THB 1–7 bilik, group 1,100 THB 8+ bilik); PT BANGKOK R&D 2026 sheet COSTING BKK rujukan sahaja — hub ialah sumber. SUV 1–3 pax, minivan 4–9 pax (CR Chiwanon: minivan 9 tempat, SUV 3); 10+ pax: 1 minivan setiap 9 pax + baki 1–3 SUV / 4–8 minivan. Hotel = separuh bilik twin setiap pax. Tipping belum ada dalam kos (tanya TO).",
      "components": [
       {
        "key": "airport",
-       "label": "Airport transfer (SUV 1–3 pax · van 4–8 · van + SUV 9–10)",
+       "label": "Airport transfer (SUV 1–3 pax · minivan 4–9 · 10+ minivan + SUV / minivan)",
        "per": "group",
-       "expr": "(pax<=3?1:pax<=8?0:(pax%8>=1&&pax%8<=3?1:0))*(R.suvAir+R.suvAirHalf)+(pax<=3?0:pax<=8?1:floor(pax/8)+(pax%8>=4?1:0))*(R.vanAir+R.vanAirHalf)"
+       "expr": "((pax%9>=1&&pax%9<=3)?1:0)*(R.suvAir+R.suvAirHalf)+(floor(pax/9)+(pax%9>=4?1:0))*(R.vanAir+R.vanAirHalf)"
       },
       {
        "key": "daytour",
        "label": "Day tour: Bangkok City + Floating Market",
        "per": "group",
-       "expr": "(pax<=3?1:pax<=8?0:(pax%8>=1&&pax%8<=3?1:0))*(R.suvDay+R.suvFloat)+(pax<=3?0:pax<=8?1:floor(pax/8)+(pax%8>=4?1:0))*(R.vanDay+R.vanFloat)"
+       "expr": "((pax%9>=1&&pax%9<=3)?1:0)*(R.suvDay+R.suvFloat)+(floor(pax/9)+(pax%9>=4?1:0))*(R.vanDay+R.vanFloat)"
       },
       {
        "key": "hotel",
-       "label": "Hotel Almas 3★ × 3 malam (½ bilik / pax)",
+       "label": "Hotel Almas 3★ × 3 malam (½ bilik / pax; group rate 16+ pax)",
        "per": "group",
-       "expr": "R.almasStd*N*pax/2"
+       "expr": "(pax>=16?R.almasGrp:R.almasStd)*N*pax/2"
       },
       {
        "key": "entrance",
-       "label": "Entrance: Chaiyo Praya + Chocolate Village + Grand Palace",
+       "label": "Entrance: Chao Phraya boat (Chaiyo Praya) + Chocolate Village + Grand Palace",
        "per": "group",
        "expr": "(R.chaophraya+R.choc+R.gp)*pax"
       }
@@ -33842,7 +33850,7 @@
    "packages": [
     {
      "id": "chiwanon-almas-3-star",
-     "label": "Bangkok Standard 4D3N · 3★ Almas",
+     "label": "Bangkok Standard 4D3N",
      "catalog": null,
      "assign": [
       {
@@ -33967,49 +33975,31 @@
    ],
    "addons": [
     {
-     "id": "bkk-a01",
-     "category": "Day 3 Choice",
-     "label": "Pattaya Full Day Tour",
-     "cost": 0.0,
-     "selling": 80.0,
-     "per": "pax",
-     "notes": "3 hrs each way. Pattaya Town + Hard Rock Cafe Pattaya"
-    },
-    {
-     "id": "bkk-a02",
-     "category": "Day 3 Choice",
-     "label": "Kanchanaburi + Safari Park Full Day",
-     "cost": 0.0,
-     "selling": 160.0,
-     "per": "pax",
-     "notes": "3 hrs each way. Includes Safari Kanchanaburi admission, River Kwai, Sunflower Field (Dec-Feb)"
-    },
-    {
-     "id": "bkk-a03",
-     "category": "Day 3 Choice",
-     "label": "Safari World Bangkok Half Day",
-     "cost": 0.0,
-     "selling": 150.0,
-     "per": "pax",
-     "notes": "45 min from BKK. Safari Park + Marine Park admission"
-    },
-    {
      "id": "bkk-a04",
      "category": "Day 2 Add-on",
      "label": "Long Tail Boat (Damnoen Floating Mkt)",
-     "cost": 0.0,
+     "cost": 244.0,
      "selling": 280.0,
      "per": "boat",
-     "notes": "RM 280/boat max 6 pax = ~RM 47/pax"
+     "notes": "CR Chiwanon 2,000 THB/bot, maks 6 pax (~RM47/pax)"
     },
     {
      "id": "bkk-a05",
-     "category": "Cappadocia Add",
+     "category": "Add On Tour",
      "label": "Giraffe Encounter (Kanchanaburi Safari)",
-     "cost": 0.0,
+     "cost": 122.0,
      "selling": 135.0,
      "per": "pax",
-     "notes": "Optional add to Safari Kanchanaburi"
+     "notes": "Optional add to Safari Kanchanaburi · CR Chiwanon 1,000 THB/pax"
+    },
+    {
+     "id": "bkk-a14",
+     "category": "Day 2 Add-on",
+     "label": "Chao Phraya Halal Dinner Cruise",
+     "cost": 121.0,
+     "selling": 150.0,
+     "per": "pax",
+     "notes": "Royal Princess 7.30–9.30pm · CR Chiwanon 990 THB dewasa / 790 THB kanak-kanak"
     },
     {
      "id": "bkk-a06",
@@ -34087,10 +34077,10 @@
      "id": "bkk-k001",
      "category": "Add On Tour",
      "label": "Pattaya Beach Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 30.0,
+     "selling": 80.0,
+     "notes": "Kos: beza kenderaan Pattaya vs Bangkok City 1 hari (CR Chiwanon SUV 4,000 − 3,500 THB) ÷ 2 pax",
      "includes": "Pattaya Town, Hard Rock Cafe Pattaya",
      "duration": "2-3 Hours Journey from Bangkok",
      "price_lines": [
@@ -34104,10 +34094,10 @@
      "id": "bkk-k002",
      "category": "Add On Tour",
      "label": "Kanchanaburi + Safari Park Kanchanaburi (Including Ticket)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 116.0,
+     "selling": 160.0,
+     "notes": "Kos: tiket Safari Park Kanchanaburi 550 THB + beza kenderaan (SUV 4,300 − 3,500 THB) ÷ 2 pax; Giraffe asing",
      "includes": "Safari World Kanchanaburi Admission, River Kwai, Sunflower Field (December - February only, entrance fee not included)",
      "excludes": "Giraffe Encounter (add RM135/pax)",
      "duration": "2-3 Hours Journey from Bangkok",
@@ -34122,10 +34112,10 @@
      "id": "bkk-k003",
      "category": "Add On Tour",
      "label": "Safari World Bangkok (Including ticket)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 121.0,
+     "selling": 150.0,
+     "notes": "Kos: tiket Safari Park + Marine Park 990 THB dewasa (kanak-kanak 790 THB), CR Chiwanon",
      "includes": "Safari Park Admission, Marine Park Admission, Shopping in Bangkok after finishing Safari World tour",
      "duration": "45 minutes Journey from Bangkok",
      "price_lines": [
@@ -34232,10 +34222,7 @@
      }
     }
    ],
-   "hideTabs": [
-    "flags",
-    "history"
-   ]
+   "historyFrom": 65
   },
   {
    "code": "PHU",
