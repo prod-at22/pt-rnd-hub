@@ -1,4 +1,4 @@
-# Status & handoff (12 Oct 2026, data v65 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v66 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v65 live · Aceh + Bali + Bangkok verified · next: ask the PO
-- Live: hub v65, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v66 live · Aceh + Bali + Bangkok verified · next: ask the PO
+- Live: hub v66, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -103,7 +103,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Dinner Cruise 121 / 150; KB Simple Calculator add-ons linked (kb.rnd.cost); package "Bangkok Standard 4D3N"; catalog text Driver (not
   Tour Guide), wet season June–October ("International Breakfast" kept, PO); KB long tail max 6, FAQ flight RM620–1,600; hideTabs → historyFrom 65.
   Catalog prices unchanged. Open (tools/flags_open.json): tipping not costed (ask Chiwanon), hotel contracts end 31 Oct 2026,
-  Giraffe margin 9.6 %, 4★ upgrade ~9 %. Open with the PO: 11–30 pax prices (hub only; 11–15 = 1,397 > 6–10 = 1,197; CNB −300 vs −200).
+  Giraffe margin 9.6 %, 4★ upgrade ~9 %. v66: 11–30 pax prices = the 6–10 band (1,197 / 1,097 / 997; PO).
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (same method: R&D hub × catalog × KB × CR, mirrors, live-text diff, "ok push").
