@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v73, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v77 live · Aceh + Bali + Bangkok + Beijing + Hokkaido verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v77, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -135,6 +135,19 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   package, PO); duplicate add-ons removed; catalogs: single supplement RM240 (4D3N) / RM320 (5D4N) instead of "quoted on request" (PO);
   KB: single texts = catalog, 2027 travel surcharge removed (not in the catalogs). Margins 2027: adult 17–33 %, CWB 55–63 %.
   All Ibrahim destinations are now on the 2027 CR (contracts/<code>/…IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf).
+  **Hokkaido (v74–v77, PO ezie 12 Oct; reference: contracts/cts WIF CR Jan–Dec 2026 only — R&D files not used):** cost tables now in JPY at the
+  fixed FX 0.029 (were MYR, so FX did nothing); hotel in Costing (CR ¥12,000/pax/night × 4; catalog v3 includes accommodation — margins were
+  33–55 % without it); airport transfer = CR one-way to city ¥30k / ¥35k (was the Noboribetsu rate); Charge WIF = CR Group Management Fee ¥6,000;
+  guide 4 days × ¥27,500 (no guide Day 5); entrance ¥8,850 (Asahiyama ¥1,000 + Bibai Snowland pass ¥7,850, winter = highest; public prices,
+  not in the CR); tipping RM0 (WIF charges none; "Tipping Fee" texts kept, PO); CWB 100 %, CNB = adult without hotel (rules.free hotel);
+  vehicles 7-seater 2–4 · 10-seater 5–8 · 7 + 10-seater 9–10 (Costing + KB); Costing 2–10 pax (= catalog; 11+ quote manual). Margins adult
+  17–19 %, CWB 12.5–16 %. Catalog: highlight "Driver + Tour Guide", single supplement RM1,200 (no range); prices unchanged. Add-ons (v75): hotel
+  options / 4★ removed, "Hotel — Tolak 1 malam" −RM250, extra night RM400 and breakfast RM50 (Hokkaido only; Tokyo / Osaka keep RM300 / RM40),
+  lunch / dinner cost RM58 sell RM65, car seat cost RM145, wifi 4G cost RM58, TripCare Couple / Family per pair / family. KB jepun: 2027 travel
+  surcharge (+RM200) scoped to Tokyo / Osaka / Tokyo-Osaka (extraSurcharge.variants), Hokkaido peak Jun–Sep 2027 removed, single RM1,200 flat,
+  surcharge heading = Hokkaido-Sapporo, room note 2–3 per room; calculator (v76) extra day RM2,800 / 3,000 / 4,800, free & easy −RM1,800 / −1,900
+  / −3,000, airport removed −RM700 / −800 / −1,500 (2–4 / 5–8 / 9–10 pax; costs in rnd.cost) — tested live. Open: CR ends Dec 2026 while the
+  catalog is valid to 31 Jan 2027 (PO: no new CR needed now); entrance / Bibai price to confirm with WIF.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
