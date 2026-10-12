@@ -80,6 +80,16 @@
    "fix": "Ask Bismillah for the 2027 rates before extending the catalogs into 2027.",
    "by": "ezie",
    "at": "2026-10-12"
+  },
+  {
+   "code": "HNSH",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Hanoi - Sapa: Pocket Wifi prices look swapped",
+   "detail": "Pocket Wifi 3GB (4G) 5D4N sells at RM175 (cost RM35) but 10GB (5G) 5D4N at RM150 (cost RM60) — the larger plan is cheaper.",
+   "fix": "Confirm both selling prices on the Add On tab.",
+   "by": "ezie",
+   "at": "2026-10-12"
   }
  ]
 }

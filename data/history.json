@@ -59464,6 +59464,2038 @@
     "Catalog danang-hoi-an-4d3n: prices from v69",
     "Catalog danang-hoi-an-5d4n: prices from v69"
    ]
+  },
+  {
+   "v": 70,
+   "at": "2026-10-12T07:33:13Z",
+   "by": "system",
+   "note": "Hanoi - Sapa (PO ezie 12 Oct 2026): Ibrahim costs = CR 2027 (in force now until Dec 2027): Hanoi-Sapa 4D3N = p.7 (cable car & train), Hanoi-Sapa-Halong Bay 5D4N = p.6 overnight cruise; Costing 2–20 pax only (CR has no 21–25 pax rate); reference packages Hanoi-Halong Bay 4D3N / Hanoi-Sapa 5D4N removed (no catalog); Halong Bay Day Cruise add-on = deduction −RM100 (as KB); duplicate TripCare (Area 2) / Blue Ribbon add-ons removed; CR 2027 PDF in TO Contract Rate; KB: single supplement = catalog (RM300 4D3N / RM700 5D4N), 2027 travel surcharge (+RM100 Jan–Jun) removed. Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "note"
+     ],
+     "from": "",
+     "to": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
+     "label": "Hanoi - Sapa - Halong Bay › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "IBRAHIM-5D4N__Ground-Cost",
+       "label": "IBRAHIM-5D4N · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-5D4N",
+       "values": {
+        "2": 2800,
+        "3": 2590,
+        "4": 2270,
+        "5": 2270,
+        "6": 2070,
+        "7": 2070,
+        "8": 1940,
+        "9": 1940,
+        "10": 1810,
+        "11": 1680,
+        "12": 1680,
+        "13": 1580,
+        "14": 1580,
+        "15": 1580,
+        "16": 1510,
+        "17": 1510,
+        "18": 1510,
+        "19": 1510,
+        "20": 1510,
+        "21": 1460,
+        "22": 1460,
+        "23": 1460,
+        "24": 1460,
+        "25": 1460,
+        "26": 1460,
+        "27": 1460,
+        "28": 1460,
+        "29": 1460,
+        "30": 1460
+       }
+      },
+      {
+       "id": "IBRAHIM-5D4N__Tipping",
+       "label": "IBRAHIM-5D4N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-5D4N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "IBRAHIM-4D3N__Ground-Cost",
+       "label": "IBRAHIM-4D3N · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-4D3N",
+       "values": {
+        "2": 2000,
+        "3": 1790,
+        "4": 1790,
+        "5": 1520,
+        "6": 1520,
+        "7": 1460,
+        "8": 1460,
+        "9": 1460,
+        "10": 1240,
+        "11": 1240,
+        "12": 1240,
+        "13": 1180,
+        "14": 1180,
+        "15": 1180,
+        "16": 1090,
+        "17": 1090,
+        "18": 1090,
+        "19": 1090,
+        "20": 1090,
+        "21": 1040,
+        "22": 1040,
+        "23": 1040,
+        "24": 1040,
+        "25": 1040,
+        "26": 1040,
+        "27": 1040,
+        "28": 1040,
+        "29": 1040,
+        "30": 1040
+       }
+      },
+      {
+       "id": "IBRAHIM-4D3N__Tipping",
+       "label": "IBRAHIM-4D3N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-4D3N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "IBRAHIM-HALONGBAY-4D3N__Ground-Cost",
+       "label": "IBRAHIM-HALONGBAY-4D3N · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-HALONGBAY-4D3N",
+       "values": {
+        "2": 2100,
+        "3": 1890,
+        "4": 1890,
+        "5": 1620,
+        "6": 1620,
+        "7": 1560,
+        "8": 1560,
+        "9": 1560,
+        "10": 1340,
+        "11": 1340,
+        "12": 1340,
+        "13": 1280,
+        "14": 1280,
+        "15": 1280,
+        "16": 1190,
+        "17": 1190,
+        "18": 1190,
+        "19": 1190,
+        "20": 1190
+       }
+      },
+      {
+       "id": "IBRAHIM-HALONGBAY-4D3N__Tipping",
+       "label": "IBRAHIM-HALONGBAY-4D3N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-HALONGBAY-4D3N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      },
+      {
+       "id": "IBRAHIM-SAPA-5D4N__Ground-Cost",
+       "label": "IBRAHIM-SAPA-5D4N · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-SAPA-5D4N",
+       "values": {
+        "2": 2700,
+        "3": 2490,
+        "4": 2170,
+        "5": 2170,
+        "6": 1970,
+        "7": 1840,
+        "8": 1840,
+        "9": 1710,
+        "10": 1710,
+        "11": 1580,
+        "12": 1580,
+        "13": 1580,
+        "14": 1480,
+        "15": 1480,
+        "16": 1480,
+        "17": 1410,
+        "18": 1410,
+        "19": 1410,
+        "20": 1410
+       }
+      },
+      {
+       "id": "IBRAHIM-SAPA-5D4N__Tipping",
+       "label": "IBRAHIM-SAPA-5D4N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-SAPA-5D4N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "IBRAHIM-5D4N__Ground-Cost",
+       "label": "IBRAHIM-5D4N · Ground Cost (CR hingga Dis 2027)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-5D4N",
+       "values": {
+        "2": 2640,
+        "3": 2430,
+        "4": 2110,
+        "5": 2110,
+        "6": 1910,
+        "7": 1780,
+        "8": 1780,
+        "9": 1550,
+        "10": 1550,
+        "11": 1480,
+        "12": 1480,
+        "13": 1480,
+        "14": 1400,
+        "15": 1400,
+        "16": 1400,
+        "17": 1350,
+        "18": 1350,
+        "19": 1350,
+        "20": 1350
+       }
+      },
+      {
+       "id": "IBRAHIM-5D4N__Tipping",
+       "label": "IBRAHIM-5D4N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-5D4N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      },
+      {
+       "id": "IBRAHIM-4D3N__Ground-Cost",
+       "label": "IBRAHIM-4D3N · Ground Cost (CR hingga Dis 2027)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-4D3N",
+       "values": {
+        "2": 2000,
+        "3": 1790,
+        "4": 1480,
+        "5": 1480,
+        "6": 1450,
+        "7": 1380,
+        "8": 1380,
+        "9": 1230,
+        "10": 1230,
+        "11": 1120,
+        "12": 1120,
+        "13": 1120,
+        "14": 1060,
+        "15": 1060,
+        "16": 1060,
+        "17": 1020,
+        "18": 1020,
+        "19": 1020,
+        "20": 1020
+       }
+      },
+      {
+       "id": "IBRAHIM-4D3N__Tipping",
+       "label": "IBRAHIM-4D3N · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "IBRAHIM-4D3N",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      }
+     ],
+     "label": "Hanoi - Sapa - Halong Bay › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "IBRAHIM-5D4N",
+       "label": "Ibrahim",
+       "supplier": "TO IBRAHIM-5D4N — Hanoi-Sapa-Halong Bay 5D4N (3-Star · Cable Car Included · Halo",
+       "paxMin": 2,
+       "paxMax": 30,
+       "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi) + Victory Star Cruise (Halong)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-5D4N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-5D4N__Tipping']"
+        }
+       ]
+      },
+      {
+       "id": "IBRAHIM-4D3N",
+       "label": "Ibrahim",
+       "supplier": "TO IBRAHIM-4D3N — Hanoi-Sapa 4D3N (3-Star · Cable Car Included)",
+       "paxMin": 2,
+       "paxMax": 30,
+       "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-4D3N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-4D3N__Tipping']"
+        }
+       ]
+      },
+      {
+       "id": "IBRAHIM-HALONGBAY-4D3N",
+       "label": "Ibrahim",
+       "supplier": "REFERENCE — IBRAHIM Hanoi-Halongbay 4D3N (tiada dalam catalog, custom quote saha",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "3-Star Hanoi (CWD/The Charm) — Halong Cruise (Victory Star)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-HALONGBAY-4D3N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-HALONGBAY-4D3N__Tipping']"
+        }
+       ]
+      },
+      {
+       "id": "IBRAHIM-SAPA-5D4N",
+       "label": "Ibrahim",
+       "supplier": "REFERENCE — IBRAHIM Hanoi-Sapa 5D4N (tiada Halong Bay, tiada dalam catalog)",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "3-Star: Saparis (Sapa) + CWD/Charm (Hanoi). NO Halong Bay.",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-SAPA-5D4N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-SAPA-5D4N__Tipping']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "IBRAHIM-5D4N",
+       "label": "Ibrahim",
+       "supplier": "TO IBRAHIM-5D4N — Hanoi-Sapa-Halong Bay 5D4N overnight cruise (CR hingga Dis 2027)",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi) + Victory Star Cruise (Halong)",
+       "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car & train). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1. CR tiada harga 21–25 pax; Costing 2–20 pax.",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-5D4N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-5D4N__Tipping']"
+        }
+       ]
+      },
+      {
+       "id": "IBRAHIM-4D3N",
+       "label": "Ibrahim",
+       "supplier": "TO IBRAHIM-4D3N — Hanoi-Sapa 4D3N (CR hingga Dis 2027)",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi)",
+       "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car & train). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1. CR tiada harga 21–25 pax; Costing 2–20 pax.",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['IBRAHIM-4D3N__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['IBRAHIM-4D3N__Tipping']"
+        }
+       ]
+      }
+     ],
+     "label": "Hanoi - Sapa - Halong Bay › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "packages"
+     ],
+     "from": [
+      {
+       "id": "ibrahim-5d4n",
+       "label": "Hanoi - Sapa - Halong Bay 5D4N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "IBRAHIM-5D4N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3477,
+         "3": 3277,
+         "4": 2877,
+         "5": 2877,
+         "6": 2677,
+         "7": 2677,
+         "8": 2577,
+         "9": 2577,
+         "10": 2397,
+         "11": 2297,
+         "12": 2297,
+         "13": 2097,
+         "14": 2097,
+         "15": 2097,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997,
+         "21": 1897,
+         "22": 1897,
+         "23": 1897,
+         "24": 1897,
+         "25": 1897,
+         "26": 1897,
+         "27": 1897,
+         "28": 1897,
+         "29": 1897,
+         "30": 1897
+        },
+        "cwb": {
+         "2": 3277,
+         "3": 3077,
+         "4": 2677,
+         "5": 2677,
+         "6": 2477,
+         "7": 2477,
+         "8": 2377,
+         "9": 2377,
+         "10": 2197,
+         "11": 2097,
+         "12": 2097,
+         "13": 1897,
+         "14": 1897,
+         "15": 1897,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797,
+         "21": 1697,
+         "22": 1697,
+         "23": 1697,
+         "24": 1697,
+         "25": 1697,
+         "26": 1697,
+         "27": 1697,
+         "28": 1697,
+         "29": 1697,
+         "30": 1697
+        },
+        "cnb": {
+         "2": 3077,
+         "3": 2877,
+         "4": 2477,
+         "5": 2477,
+         "6": 2277,
+         "7": 2277,
+         "8": 2177,
+         "9": 2177,
+         "10": 1997,
+         "11": 1897,
+         "12": 1897,
+         "13": 1697,
+         "14": 1697,
+         "15": 1697,
+         "16": 1597,
+         "17": 1597,
+         "18": 1597,
+         "19": 1597,
+         "20": 1597,
+         "21": 1497,
+         "22": 1497,
+         "23": 1497,
+         "24": 1497,
+         "25": 1497,
+         "26": 1497,
+         "27": 1497,
+         "28": 1497,
+         "29": 1497,
+         "30": 1497
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "ibrahim-4d3n",
+       "label": "Hanoi - Sapa 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "IBRAHIM-4D3N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2537,
+         "3": 2337,
+         "4": 2337,
+         "5": 2077,
+         "6": 2077,
+         "7": 2077,
+         "8": 2077,
+         "9": 2077,
+         "10": 1777,
+         "11": 1777,
+         "12": 1777,
+         "13": 1777,
+         "14": 1777,
+         "15": 1777,
+         "16": 1677,
+         "17": 1677,
+         "18": 1677,
+         "19": 1677,
+         "20": 1677,
+         "21": 1577,
+         "22": 1577,
+         "23": 1577,
+         "24": 1577,
+         "25": 1577,
+         "26": 1577,
+         "27": 1577,
+         "28": 1577,
+         "29": 1577,
+         "30": 1577
+        },
+        "cwb": {
+         "2": 2337,
+         "3": 2137,
+         "4": 2137,
+         "5": 1877,
+         "6": 1877,
+         "7": 1877,
+         "8": 1877,
+         "9": 1877,
+         "10": 1577,
+         "11": 1577,
+         "12": 1577,
+         "13": 1577,
+         "14": 1577,
+         "15": 1577,
+         "16": 1477,
+         "17": 1477,
+         "18": 1477,
+         "19": 1477,
+         "20": 1477,
+         "21": 1377,
+         "22": 1377,
+         "23": 1377,
+         "24": 1377,
+         "25": 1377,
+         "26": 1377,
+         "27": 1377,
+         "28": 1377,
+         "29": 1377,
+         "30": 1377
+        },
+        "cnb": {
+         "2": 2137,
+         "3": 1937,
+         "4": 1937,
+         "5": 1677,
+         "6": 1677,
+         "7": 1677,
+         "8": 1677,
+         "9": 1677,
+         "10": 1377,
+         "11": 1377,
+         "12": 1377,
+         "13": 1377,
+         "14": 1377,
+         "15": 1377,
+         "16": 1277,
+         "17": 1277,
+         "18": 1277,
+         "19": 1277,
+         "20": 1277,
+         "21": 1177,
+         "22": 1177,
+         "23": 1177,
+         "24": 1177,
+         "25": 1177,
+         "26": 1177,
+         "27": 1177,
+         "28": 1177,
+         "29": 1177,
+         "30": 1177
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "ibrahim-halongbay-4d3n",
+       "label": "Hanoi - Halong Bay 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "IBRAHIM-HALONGBAY-4D3N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3477,
+         "3": 3277,
+         "4": 2877,
+         "5": 2877,
+         "6": 2677,
+         "7": 2677,
+         "8": 2577,
+         "9": 2577,
+         "10": 2397,
+         "11": 2297,
+         "12": 2297,
+         "13": 2097,
+         "14": 2097,
+         "15": 2097,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997,
+         "21": 1897,
+         "22": 1897,
+         "23": 1897,
+         "24": 1897,
+         "25": 1897,
+         "26": 1897,
+         "27": 1897,
+         "28": 1897,
+         "29": 1897,
+         "30": 1897
+        },
+        "cwb": {
+         "2": 3277,
+         "3": 3077,
+         "4": 2677,
+         "5": 2677,
+         "6": 2477,
+         "7": 2477,
+         "8": 2377,
+         "9": 2377,
+         "10": 2197,
+         "11": 2097,
+         "12": 2097,
+         "13": 1897,
+         "14": 1897,
+         "15": 1897,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797,
+         "21": 1697,
+         "22": 1697,
+         "23": 1697,
+         "24": 1697,
+         "25": 1697,
+         "26": 1697,
+         "27": 1697,
+         "28": 1697,
+         "29": 1697,
+         "30": 1697
+        },
+        "cnb": {
+         "2": 3077,
+         "3": 2877,
+         "4": 2477,
+         "5": 2477,
+         "6": 2277,
+         "7": 2277,
+         "8": 2177,
+         "9": 2177,
+         "10": 1997,
+         "11": 1897,
+         "12": 1897,
+         "13": 1697,
+         "14": 1697,
+         "15": 1697,
+         "16": 1597,
+         "17": 1597,
+         "18": 1597,
+         "19": 1597,
+         "20": 1597,
+         "21": 1497,
+         "22": 1497,
+         "23": 1497,
+         "24": 1497,
+         "25": 1497,
+         "26": 1497,
+         "27": 1497,
+         "28": 1497,
+         "29": 1497,
+         "30": 1497
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "ibrahim-sapa-5d4n",
+       "label": "Hanoi - Sapa 5D4N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "IBRAHIM-SAPA-5D4N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3477,
+         "3": 3277,
+         "4": 2877,
+         "5": 2877,
+         "6": 2677,
+         "7": 2677,
+         "8": 2577,
+         "9": 2577,
+         "10": 2397,
+         "11": 2297,
+         "12": 2297,
+         "13": 2097,
+         "14": 2097,
+         "15": 2097,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997,
+         "21": 1897,
+         "22": 1897,
+         "23": 1897,
+         "24": 1897,
+         "25": 1897,
+         "26": 1897,
+         "27": 1897,
+         "28": 1897,
+         "29": 1897,
+         "30": 1897
+        },
+        "cwb": {
+         "2": 3277,
+         "3": 3077,
+         "4": 2677,
+         "5": 2677,
+         "6": 2477,
+         "7": 2477,
+         "8": 2377,
+         "9": 2377,
+         "10": 2197,
+         "11": 2097,
+         "12": 2097,
+         "13": 1897,
+         "14": 1897,
+         "15": 1897,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797,
+         "21": 1697,
+         "22": 1697,
+         "23": 1697,
+         "24": 1697,
+         "25": 1697,
+         "26": 1697,
+         "27": 1697,
+         "28": 1697,
+         "29": 1697,
+         "30": 1697
+        },
+        "cnb": {
+         "2": 3077,
+         "3": 2877,
+         "4": 2477,
+         "5": 2477,
+         "6": 2277,
+         "7": 2277,
+         "8": 2177,
+         "9": 2177,
+         "10": 1997,
+         "11": 1897,
+         "12": 1897,
+         "13": 1697,
+         "14": 1697,
+         "15": 1697,
+         "16": 1597,
+         "17": 1597,
+         "18": 1597,
+         "19": 1597,
+         "20": 1597,
+         "21": 1497,
+         "22": 1497,
+         "23": 1497,
+         "24": 1497,
+         "25": 1497,
+         "26": 1497,
+         "27": 1497,
+         "28": 1497,
+         "29": 1497,
+         "30": 1497
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "ibrahim-5d4n",
+       "label": "Hanoi - Sapa - Halong Bay 5D4N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 20,
+         "variant": "IBRAHIM-5D4N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3477,
+         "3": 3277,
+         "4": 2877,
+         "5": 2877,
+         "6": 2677,
+         "7": 2677,
+         "8": 2577,
+         "9": 2577,
+         "10": 2397,
+         "11": 2297,
+         "12": 2297,
+         "13": 2097,
+         "14": 2097,
+         "15": 2097,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997
+        },
+        "cwb": {
+         "2": 3277,
+         "3": 3077,
+         "4": 2677,
+         "5": 2677,
+         "6": 2477,
+         "7": 2477,
+         "8": 2377,
+         "9": 2377,
+         "10": 2197,
+         "11": 2097,
+         "12": 2097,
+         "13": 1897,
+         "14": 1897,
+         "15": 1897,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797
+        },
+        "cnb": {
+         "2": 3077,
+         "3": 2877,
+         "4": 2477,
+         "5": 2477,
+         "6": 2277,
+         "7": 2277,
+         "8": 2177,
+         "9": 2177,
+         "10": 1997,
+         "11": 1897,
+         "12": 1897,
+         "13": 1697,
+         "14": 1697,
+         "15": 1697,
+         "16": 1597,
+         "17": 1597,
+         "18": 1597,
+         "19": 1597,
+         "20": 1597
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "ibrahim-4d3n",
+       "label": "Hanoi - Sapa 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 20,
+         "variant": "IBRAHIM-4D3N"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2537,
+         "3": 2337,
+         "4": 2337,
+         "5": 2077,
+         "6": 2077,
+         "7": 2077,
+         "8": 2077,
+         "9": 2077,
+         "10": 1777,
+         "11": 1777,
+         "12": 1777,
+         "13": 1777,
+         "14": 1777,
+         "15": 1777,
+         "16": 1677,
+         "17": 1677,
+         "18": 1677,
+         "19": 1677,
+         "20": 1677
+        },
+        "cwb": {
+         "2": 2337,
+         "3": 2137,
+         "4": 2137,
+         "5": 1877,
+         "6": 1877,
+         "7": 1877,
+         "8": 1877,
+         "9": 1877,
+         "10": 1577,
+         "11": 1577,
+         "12": 1577,
+         "13": 1577,
+         "14": 1577,
+         "15": 1577,
+         "16": 1477,
+         "17": 1477,
+         "18": 1477,
+         "19": 1477,
+         "20": 1477
+        },
+        "cnb": {
+         "2": 2137,
+         "3": 1937,
+         "4": 1937,
+         "5": 1677,
+         "6": 1677,
+         "7": 1677,
+         "8": 1677,
+         "9": 1677,
+         "10": 1377,
+         "11": 1377,
+         "12": 1377,
+         "13": 1377,
+         "14": 1377,
+         "15": 1377,
+         "16": 1277,
+         "17": 1277,
+         "18": 1277,
+         "19": 1277,
+         "20": 1277
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "label": "Hanoi - Sapa - Halong Bay"
+    },
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "hnsh-a01",
+       "category": "Activity",
+       "label": "Bang Mon Alpine Coaster",
+       "cost": 50,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a02",
+       "category": "Activity",
+       "label": "Halong Bay Day Cruise (no overnight)",
+       "cost": 0,
+       "selling": 100,
+       "per": "pax",
+       "notes": "Already in pakej 5D4N"
+      },
+      {
+       "id": "hnsh-a03",
+       "category": "Transport",
+       "label": "Sleeper Train/Bus Regular",
+       "cost": 0,
+       "selling": 180,
+       "per": "pax/way",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a04",
+       "category": "Transport",
+       "label": "Sleeper Train/Bus VVIP",
+       "cost": 0,
+       "selling": 200,
+       "per": "pax/way",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a05",
+       "category": "Day Tour",
+       "label": "Day trip to Ninh Binh (B+L+D+Transfer+Paddle Boat)",
+       "cost": 0,
+       "selling": 380,
+       "per": "pax/day",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a06",
+       "category": "Meals",
+       "label": "Extra Breakfast",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a07",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a08",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 175,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a10",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 10GB (5G) 5D4N",
+       "cost": 60,
+       "selling": 150,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a11",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN)"
+      },
+      {
+       "id": "hnsh-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 79,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 112,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 107,
+       "selling": 141,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "hnsh-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a35",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "to": [
+      {
+       "id": "hnsh-a01",
+       "category": "Activity",
+       "label": "Bang Mon Alpine Coaster",
+       "cost": 50,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a02",
+       "category": "Activity",
+       "label": "Halong Bay Day Cruise (no overnight) — Tolak",
+       "cost": -100,
+       "selling": -100,
+       "per": "pax",
+       "notes": "Ganti overnight cruise dengan day cruise (5D4N sahaja). Kos penjimatan sebenar: sahkan dengan Ibrahim."
+      },
+      {
+       "id": "hnsh-a03",
+       "category": "Transport",
+       "label": "Sleeper Train/Bus Regular",
+       "cost": 0,
+       "selling": 180,
+       "per": "pax/way",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a04",
+       "category": "Transport",
+       "label": "Sleeper Train/Bus VVIP",
+       "cost": 0,
+       "selling": 200,
+       "per": "pax/way",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a05",
+       "category": "Day Tour",
+       "label": "Day trip to Ninh Binh (B+L+D+Transfer+Paddle Boat)",
+       "cost": 0,
+       "selling": 380,
+       "per": "pax/day",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a06",
+       "category": "Meals",
+       "label": "Extra Breakfast",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a07",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a08",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 175,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a10",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 10GB (5G) 5D4N",
+       "cost": 60,
+       "selling": 150,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a11",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "hnsh-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN)"
+      },
+      {
+       "id": "hnsh-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 79,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 112,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 107,
+       "selling": 141,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "hnsh-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      }
+     ],
+     "label": "Hanoi - Sapa - Halong Bay › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "HNSH",
+      "contracts"
+     ],
+     "from": [
+      {
+       "id": "1a1075462ec",
+       "name": "PT HNSH Ibrahim Hanoi Sapa 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ec-PT_HNSH_Ibrahim_Hanoi_Sapa_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 171599,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1HayuQXUBxiDaLZ-ujywf3mgDlHV6DjhJ"
+      },
+      {
+       "id": "1a1075462ed",
+       "name": "PT HNSH Ibrahim Hanoi Sapa 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ed-PT_HNSH_Ibrahim_Hanoi_Sapa_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 174062,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1Zu9cm_Ff_z34r_YaXjQ50T6-lAqeKtgc"
+      },
+      {
+       "id": "1a1075462ee",
+       "name": "PT HNSH Ibrahim Hanoi Sapa Halongbay 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ee-PT_HNSH_Ibrahim_Hanoi_Sapa_Halongbay_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 165176,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "18HdnGIKXlKI7HEifGlTDBpmrRhYdRYSx"
+      },
+      {
+       "id": "1a1075462ef",
+       "name": "PT HNSH Ibrahim Hanoi Halongbay 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ef-PT_HNSH_Ibrahim_Hanoi_Halongbay_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 181668,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1WE2FFrJJ4JgH0xFRBIRMX95qd0HbucnY"
+      }
+     ],
+     "to": [
+      {
+       "id": "1a1075462ec",
+       "name": "PT HNSH Ibrahim Hanoi Sapa 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ec-PT_HNSH_Ibrahim_Hanoi_Sapa_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, diganti)",
+       "note": "From Drive · Production Team",
+       "size": 171599,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1HayuQXUBxiDaLZ-ujywf3mgDlHV6DjhJ"
+      },
+      {
+       "id": "1a1075462ed",
+       "name": "PT HNSH Ibrahim Hanoi Sapa 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ed-PT_HNSH_Ibrahim_Hanoi_Sapa_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, rujukan)",
+       "note": "From Drive · Production Team",
+       "size": 174062,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1Zu9cm_Ff_z34r_YaXjQ50T6-lAqeKtgc"
+      },
+      {
+       "id": "1a1075462ee",
+       "name": "PT HNSH Ibrahim Hanoi Sapa Halongbay 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ee-PT_HNSH_Ibrahim_Hanoi_Sapa_Halongbay_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, diganti)",
+       "note": "From Drive · Production Team",
+       "size": 165176,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "18HdnGIKXlKI7HEifGlTDBpmrRhYdRYSx"
+      },
+      {
+       "id": "1a1075462ef",
+       "name": "PT HNSH Ibrahim Hanoi Halongbay 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/hnsh/1a1075462ef-PT_HNSH_Ibrahim_Hanoi_Halongbay_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, rujukan)",
+       "note": "From Drive · Production Team",
+       "size": 181668,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1WE2FFrJJ4JgH0xFRBIRMX95qd0HbucnY"
+      },
+      {
+       "id": "1a12f073fb6",
+       "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+       "file": "contracts/hnsh/1a12f073fb6-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+       "to": "Ibrahim",
+       "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Hanoi Sapa 4D3N (hlm 7), Hanoi Sapa Halong Bay 5D4N overnight cruise (hlm 6)",
+       "size": 4812024,
+       "at": "2026-10-12T07:32:46Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Hanoi - Sapa - Halong Bay › TO Contract Rate"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "content",
+      "packages",
+      0,
+      "note"
+     ],
+     "from": "Harga per pax, 2–3 orang sebilik. Single supplement quoted upon request. Blackout: CNY 2027 (17–18 Feb 2027). Valid travel sehingga 31 Dis 2026.",
+     "to": "Harga per pax, 2–3 orang sebilik. Single supplement RM700/pax. Blackout: CNY 2027 (17–18 Feb 2027). Valid travel sehingga 31 Dis 2026.",
+     "label": "KB hanoi-sapa › content › packages › #1 › note"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "content",
+      "packages",
+      1,
+      "note"
+     ],
+     "from": "Harga per pax, 2–3 orang sebilik. Single supplement quoted upon request. Blackout: CNY 2027 (17–18 Feb 2027). Valid travel sehingga 31 Dis 2026.",
+     "to": "Harga per pax, 2–3 orang sebilik. Single supplement RM300/pax. Blackout: CNY 2027 (17–18 Feb 2027). Valid travel sehingga 31 Dis 2026.",
+     "label": "KB hanoi-sapa › content › packages › #2 › note"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "content",
+      "blocks",
+      "custom"
+     ],
+     "from": "<h2>Simple Customisation &amp; Add-ons</h2><p class='ssub'>Harga <b>jual</b> customer (MYR), dari Rate Card Operasi KB. <span class='add'>Hijau = tambah</span> atas harga pakej &middot; <span class='ded'>merah = tolak</span> dari harga pakej.</p><div class='custblk'><h3>Accommodation &mdash; tambah / tolak malam</h3><table class='ctbl'><thead><tr><th>Kelas hotel</th><th>Tambah 1 malam</th><th>Tolak 1 malam</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Upgrade 3&#9733; &rarr; 4&#9733;</td><td class='add'>RM 140 / pax / malam</td><td>&mdash;</td><td>Sapa: Delasol / Aliana Boutique &middot; Hanoi: Lake Residence / Lake Side. Kadar ini juga tersiar dalam katalog.</td></tr><tr><td class='it'>3&#9733; (atau setara)</td><td class='add'>RM 100 / pax / malam</td><td class='ded'>RM 50 / pax / malam</td><td>Kelas hotel pakej. Sapa: Saparis / Beautiful Sapa &middot; Hanoi: CWD / The Charm</td></tr><tr><td class='it'>4&#9733; (atau setara)</td><td class='add'>RM 240 / pax / malam</td><td class='ded'>RM 120 / pax / malam</td><td>Malam tambahan 4&#9733; guna kadar sendiri &mdash; <b>bukan</b> RM 100 + RM 140</td></tr><tr><td class='it'>5&#9733; (atau setara)</td><td class='add'>RM 320 / pax / malam</td><td>&mdash;</td><td>Tiada 5&#9733; dalam katalog. Tiada kadar tolak tersiar &mdash; tanya operator</td></tr><tr><td class='it'>Rock Garden Homestay</td><td class='add'>RM 80 / pax / malam</td><td>&mdash;</td><td>Pilihan penginapan alternatif</td></tr></tbody></table><p class='custnote'>Tiada kadar peak untuk mana-mana kelas hotel &mdash; kadar sama sepanjang tahun. Harga pakej ialah 2&ndash;3 pax sebilik; single supplement <b>quoted upon request</b>.</p></div><div class='custblk'><h3>Meals &mdash; tambah / tolak hidangan</h3><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambah 1 hidangan</th><th>Tolak 1 hidangan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>Makan di hotel</td><td>&mdash;</td><td>Sudah termasuk dalam kadar bilik &mdash; tiada kadar tambah atau tolak</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM 30 / pax</td><td class='ded'>RM 20 / pax</td><td>Halal</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM 30 / pax</td><td class='ded'>RM 20 / pax</td><td>Halal</td></tr></tbody></table><p class='custnote'>Pakej fullboard &mdash; meals sudah termasuk dan tiada refund jika customer pilih untuk tidak makan. Kolum Tolak hanya dipakai bila hidangan dibuang dari itinerari <b>semasa quote</b>, bukan selepas trip bermula.</p></div><div class='custblk'><h3>Add-on activities &mdash; tambah</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga jual</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bang Mon Alpine Coaster</td><td class='add'>RM 50 / pax</td><td>Aktiviti di Sapa</td></tr><tr><td class='it'>Day Trip ke Ninh Binh</td><td class='add'>RM 380 / pax / hari</td><td>Breakfast &middot; transfer ke Trang An, Ninh Binh (2 jam) &middot; paddle boat cruise &middot; lunch &middot; transfer balik Hanoi &middot; Dong Xuan Market &middot; dinner</td></tr><tr><td class='it'>Sleeper Train / Bus (Regular)</td><td class='add'>RM 180 / pax / way</td><td>Standard sleeper &mdash; alternatif transfer Hanoi&ndash;Sapa</td></tr><tr><td class='it'>Sleeper Bus (VVIP)</td><td class='add'>RM 200 / pax / way</td><td>Kabin VVIP</td></tr><tr><td class='it'>Extra Meal (B / L / D)</td><td class='add'>RM 30 / pax / hidangan</td><td>Makan tambahan di luar pakej</td></tr></tbody></table><p class='custnote'>Aktiviti yang tiada dalam itinerari dan tiada kadar tersiar kena bayar sendiri oleh customer di lokasi.</p></div><div class='custblk'><h3>Tukar itinerari &mdash; tolak dari pakej</h3><table class='ctbl'><thead><tr><th>Item</th><th>Tolak</th><th>Itinerari diselaraskan</th></tr></thead><tbody><tr><td class='it'>Halong Bay Cruise tanpa bermalam</td><td class='ded'>RM 100 / pax</td><td>Ganti overnight cruise (Victory Star) dengan day cruise (Diamond Cruise) &mdash; customer balik bermalam di hotel Hanoi. Varian 5D4N sahaja.</td></tr><tr><td class='it'>Sapa 2 malam</td><td class='ded'>RM 50 / pax</td><td><b>D2:</b> train ke Cable Car Fansipan Mountain &middot; cable car (termasuk) &middot; Cat Cat Village &middot; Muong Hua Valley &middot; bermalam di Sapa. <b>D3:</b> transfer ke Hanoi.</td></tr></tbody></table><p class='custnote'>Kedua-duanya <b>mengurangkan</b> harga pakej &mdash; bukan surcaj. Jumlah malam trip kekal sama; hanya penginapan dan itinerari yang berubah.</p></div><div class='custblk'><h3>Travel essentials (jualan after-sales)</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga jual</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Pocket WiFi 3GB 4G (5D4N)</td><td class='add'>RM 175 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Pocket WiFi 10GB 5G (5D4N)</td><td class='add'>RM 150 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Pocket WiFi 3GB 4G (4D3N)</td><td class='add'>RM 80 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Takaful TripCare 360 (Individu)</td><td class='add'>RM 45 &ndash; 62 / pax</td><td>Etiqa Area 1 (ASEAN), 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Couple)</td><td class='add'>RM 79 &ndash; 112 / pasangan</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Family)</td><td class='add'>RM 100 &ndash; 141 / family</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Senior)</td><td class='add'>RM 130 &ndash; 186 / pax</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Luggage Tracker (Blue Ribbon)</td><td class='add'>RM 20 / 40 / 55 / 70</td><td>Silver &rarr; Gold &rarr; Platinum &rarr; Diamond</td></tr></tbody></table><p class='custnote'>Travel essentials dijual oleh after-sales &mdash; tidak masuk dalam Simple Calculator.</p></div>",
+     "to": "<h2>Simple Customisation &amp; Add-ons</h2><p class='ssub'>Harga <b>jual</b> customer (MYR), dari Rate Card Operasi KB. <span class='add'>Hijau = tambah</span> atas harga pakej &middot; <span class='ded'>merah = tolak</span> dari harga pakej.</p><div class='custblk'><h3>Accommodation &mdash; tambah / tolak malam</h3><table class='ctbl'><thead><tr><th>Kelas hotel</th><th>Tambah 1 malam</th><th>Tolak 1 malam</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Upgrade 3&#9733; &rarr; 4&#9733;</td><td class='add'>RM 140 / pax / malam</td><td>&mdash;</td><td>Sapa: Delasol / Aliana Boutique &middot; Hanoi: Lake Residence / Lake Side. Kadar ini juga tersiar dalam katalog.</td></tr><tr><td class='it'>3&#9733; (atau setara)</td><td class='add'>RM 100 / pax / malam</td><td class='ded'>RM 50 / pax / malam</td><td>Kelas hotel pakej. Sapa: Saparis / Beautiful Sapa &middot; Hanoi: CWD / The Charm</td></tr><tr><td class='it'>4&#9733; (atau setara)</td><td class='add'>RM 240 / pax / malam</td><td class='ded'>RM 120 / pax / malam</td><td>Malam tambahan 4&#9733; guna kadar sendiri &mdash; <b>bukan</b> RM 100 + RM 140</td></tr><tr><td class='it'>5&#9733; (atau setara)</td><td class='add'>RM 320 / pax / malam</td><td>&mdash;</td><td>Tiada 5&#9733; dalam katalog. Tiada kadar tolak tersiar &mdash; tanya operator</td></tr><tr><td class='it'>Rock Garden Homestay</td><td class='add'>RM 80 / pax / malam</td><td>&mdash;</td><td>Pilihan penginapan alternatif</td></tr></tbody></table><p class='custnote'>Tiada kadar peak untuk mana-mana kelas hotel &mdash; kadar sama sepanjang tahun. Harga pakej ialah 2&ndash;3 pax sebilik; single supplement <b>RM 300/pax</b> (4D3N) &middot; <b>RM 700/pax</b> (5D4N, termasuk cruise).</p></div><div class='custblk'><h3>Meals &mdash; tambah / tolak hidangan</h3><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambah 1 hidangan</th><th>Tolak 1 hidangan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>Makan di hotel</td><td>&mdash;</td><td>Sudah termasuk dalam kadar bilik &mdash; tiada kadar tambah atau tolak</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM 30 / pax</td><td class='ded'>RM 20 / pax</td><td>Halal</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM 30 / pax</td><td class='ded'>RM 20 / pax</td><td>Halal</td></tr></tbody></table><p class='custnote'>Pakej fullboard &mdash; meals sudah termasuk dan tiada refund jika customer pilih untuk tidak makan. Kolum Tolak hanya dipakai bila hidangan dibuang dari itinerari <b>semasa quote</b>, bukan selepas trip bermula.</p></div><div class='custblk'><h3>Add-on activities &mdash; tambah</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga jual</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bang Mon Alpine Coaster</td><td class='add'>RM 50 / pax</td><td>Aktiviti di Sapa</td></tr><tr><td class='it'>Day Trip ke Ninh Binh</td><td class='add'>RM 380 / pax / hari</td><td>Breakfast &middot; transfer ke Trang An, Ninh Binh (2 jam) &middot; paddle boat cruise &middot; lunch &middot; transfer balik Hanoi &middot; Dong Xuan Market &middot; dinner</td></tr><tr><td class='it'>Sleeper Train / Bus (Regular)</td><td class='add'>RM 180 / pax / way</td><td>Standard sleeper &mdash; alternatif transfer Hanoi&ndash;Sapa</td></tr><tr><td class='it'>Sleeper Bus (VVIP)</td><td class='add'>RM 200 / pax / way</td><td>Kabin VVIP</td></tr><tr><td class='it'>Extra Meal (B / L / D)</td><td class='add'>RM 30 / pax / hidangan</td><td>Makan tambahan di luar pakej</td></tr></tbody></table><p class='custnote'>Aktiviti yang tiada dalam itinerari dan tiada kadar tersiar kena bayar sendiri oleh customer di lokasi.</p></div><div class='custblk'><h3>Tukar itinerari &mdash; tolak dari pakej</h3><table class='ctbl'><thead><tr><th>Item</th><th>Tolak</th><th>Itinerari diselaraskan</th></tr></thead><tbody><tr><td class='it'>Halong Bay Cruise tanpa bermalam</td><td class='ded'>RM 100 / pax</td><td>Ganti overnight cruise (Victory Star) dengan day cruise (Diamond Cruise) &mdash; customer balik bermalam di hotel Hanoi. Varian 5D4N sahaja.</td></tr><tr><td class='it'>Sapa 2 malam</td><td class='ded'>RM 50 / pax</td><td><b>D2:</b> train ke Cable Car Fansipan Mountain &middot; cable car (termasuk) &middot; Cat Cat Village &middot; Muong Hua Valley &middot; bermalam di Sapa. <b>D3:</b> transfer ke Hanoi.</td></tr></tbody></table><p class='custnote'>Kedua-duanya <b>mengurangkan</b> harga pakej &mdash; bukan surcaj. Jumlah malam trip kekal sama; hanya penginapan dan itinerari yang berubah.</p></div><div class='custblk'><h3>Travel essentials (jualan after-sales)</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga jual</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Pocket WiFi 3GB 4G (5D4N)</td><td class='add'>RM 175 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Pocket WiFi 10GB 5G (5D4N)</td><td class='add'>RM 150 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Pocket WiFi 3GB 4G (4D3N)</td><td class='add'>RM 80 / trip</td><td>RoamingMan</td></tr><tr><td class='it'>Takaful TripCare 360 (Individu)</td><td class='add'>RM 45 &ndash; 62 / pax</td><td>Etiqa Area 1 (ASEAN), 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Couple)</td><td class='add'>RM 79 &ndash; 112 / pasangan</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Family)</td><td class='add'>RM 100 &ndash; 141 / family</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Takaful TripCare 360 (Senior)</td><td class='add'>RM 130 &ndash; 186 / pax</td><td>Etiqa Area 1, 1&ndash;5 / 6&ndash;10 hari</td></tr><tr><td class='it'>Luggage Tracker (Blue Ribbon)</td><td class='add'>RM 20 / 40 / 55 / 70</td><td>Silver &rarr; Gold &rarr; Platinum &rarr; Diamond</td></tr></tbody></table><p class='custnote'>Travel essentials dijual oleh after-sales &mdash; tidak masuk dalam Simple Calculator.</p></div>",
+     "label": "KB hanoi-sapa › content › blocks › custom"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip dan semua surcharge dikira sendiri dan terus masuk dalam harga per pax. <b>Blackout:</b> Chinese New Year 2027 (17&ndash;18 Feb 2027) &mdash; tiada operasi. <b>Check availability</b> dengan operator untuk Chinese New Year, Raya Aidilfitri, Raya Haji, New Year dan Christmas.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Hanoi - Sapa - Halong Bay 5D4N (3-Star Fullboard)</option><option value='1'>PT Hanoi - Sapa 4D3N (3-Star Fullboard)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-8)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog kedua-dua varian)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>Katalog dan rate card kedua-duanya tulis <b>quoted upon request</b> &mdash; minta kadar daripada operator sebelum quote solo. Tiada kadar tersiar, jadi kalkulator tidak caj apa-apa untuk bilik single.</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip dan semua surcharge dikira sendiri dan terus masuk dalam harga per pax. <b>Blackout:</b> Chinese New Year 2027 (17&ndash;18 Feb 2027) &mdash; tiada operasi. <b>Check availability</b> dengan operator untuk Chinese New Year, Raya Aidilfitri, Raya Haji, New Year dan Christmas.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Hanoi - Sapa - Halong Bay 5D4N (3-Star Fullboard)</option><option value='1'>PT Hanoi - Sapa 4D3N (3-Star Fullboard)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-8)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog kedua-dua varian)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>Single supplement ikut katalog: <b>RM 300</b> (4D3N) &middot; <b>RM 700</b> (5D4N, termasuk cruise) setiap bilik single.</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB hanoi-sapa › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Hanoi–Sapa–Halong Bay — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Hanoi–Sapa–Halong Bay 5H4M & PT Hanoi–Sapa 4H3M — hotel 3★ fullboard halal, ground & tipping, sah untuk travel hingga 31 Dis 2026. Katalog V4 (12 Mac 2026).*\n\n- **Blackout:** Chinese New Year 2027 — **17–18 Feb 2027** (satu-satunya blackout dalam katalog V4).\n- Semak availability dahulu untuk: Chinese New Year · Raya Aidilfitri & Raya Haji · New Year · Christmas Holiday.\n- Itinerari, flight & harga tertakluk perubahan (cuaca, trafik, keselamatan). Itinerari & hotel muktamad **14 hari** sebelum trip.\n- **Perjalanan Hanoi → Sapa 6–8 jam sehala** (ikut katalog, bergantung trafik). Ini hari paling panjang.\n- **Bawa maksimum 1 luggage per pax** — kapasiti kenderaan private dan kabin cruise terhad. Banyak check-in/check-out termasuk masuk bot cruise, jadi pack efisien.\n- Meals sudah termasuk — **tiada refund** jika customer pilih untuk tidak makan.\n- Aktiviti/entrance yang tidak disertai **tidak boleh** ditukar dengan aktiviti lain, voucher atau tunai.\n- **Tiket flight pergi-balik TIDAK termasuk** — customer beli sendiri. Cadangan katalog: tiba HAN tengah hari ke atas (Day 1), berlepas tengah hari (hari akhir).\n- Requirement muslim-friendly (halal, solat) adalah **baseline** setiap pakej — driving guide Muslim tempatan, semua makan di restoran halal.\n- Sila semak validity trip dengan staff sebelum booking connecting flight domestik.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa yang pakej ini cover?**\n**5H4M:** Fansipan (tren Muong Hoa + cable car), Cat Cat Village, Moana Sapa, Muong Hoa Valley, Halong Bay overnight cruise (Stone Dog Island, Fighting Cocks, Gua Sung Sot, Titop Island), Gua Luon by kayak, Mega Grand World Hanoi, Hanoi Train Street Coffee. **4H3M:** Fansipan, Cat Cat Village, Muong Hoa Valley, Masjid Al Noor, HCM Museum, Dong Xuan Market, Hanoi Old City, Hoan Kiem Lake.\n\n**Apa beza 4H3M dan 5H4M?**\n5H4M tambah **Halong Bay** — satu malam atas cruise Victory Star + island tour + kayak Gua Luon, plus Mega Grand World & Train Street Coffee di Hanoi. 4H3M pula ada **city tour Hanoi penuh** (HCM Museum, Dong Xuan, Old City, Hoan Kiem) dan Masjid Al Noor dalam itinerari rasmi. Rujuk tab Perbezaan Pakej.\n\n**Ada travel map untuk trip ini?**\nAda — rujuk tab **Travel Map**. Ada dua map berasingan, satu untuk 4H3M dan satu untuk 5H4M.\n\n**Ini private tour atau group?**\nPrivate tour sepenuhnya — kenderaan, driver-guide dan itinerari untuk group customer sahaja, tidak bergabung dengan group lain.\n\n**Berapa panjang perjalanan Hanoi ke Sapa?**\n**6–8 jam sehala** ikut katalog, bergantung kepada trafik (highway Lao Cai). Ini sebab katalog syorkan tiba HAN tengah hari ke atas supaya sampai Sapa tidak terlalu lewat. Toilet break disediakan sepanjang jalan.\n\n**Sesuai untuk warga emas?**\nBoleh, tetapi set expectation awal: perjalanan darat panjang (6–8 jam), **banyak tangga** di kompleks pagoda Fansipan, dek pandang Titop Island dan laluan berbatu di Cat Cat Village. Warga emas boleh tunggu di platform bawah semasa yang lain naik tangga — maklum guide awal.\n\n**Sesuai untuk anak kecil?**\nSesuai — cable car Fansipan kabin tertutup, cruise Halong selamat dengan jaket keselamatan, dan Mega Grand World ada banyak aktiviti keluarga. Perjalanan darat panjang jadi bawa hiburan & snack untuk anak.\n\n**Ada pakej Hanoi–Sapa–Ninh Binh?**\nAda — 6 hari 5 malam, dengan lawatan ke **Pulau Tam Coc** di Ninh Binh. Untuk pakej 4H3M/5H4M, Ninh Binh boleh ditambah sebagai day trip (RM380/pax) — rujuk tab Simple Customisation.\n\n**Boleh customize itinerari?**\nBoleh — ini private tour. Boleh tambah spot, upgrade hotel, tukar transfer Hanoi–Sapa kepada sleeper train/bus, atau tambah day trip Ninh Binh. Maklum consultant awal; itinerari muktamad 14 hari sebelum trip.\n\n**Kenapa banyak check-in/check-out?**\nIkut katalog: 5H4M ada hotel Sapa → hotel Hanoi → cruise Halong → hotel Hanoi. Nasihatkan customer pack satu bag kecil untuk malam atas cruise supaya tidak perlu angkat luggage besar naik bot.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nYa. Operator Muslim tempatan — driver-guide pastikan semua makan di restoran halal, bukan sekadar tiada arak. Fullboard ikut katalog: **5H4M 4B/3L/4D · 4H3M 3B/2L/3D**.\n\n**Makan apa dalam pakej?**\nSet menu Vietnam dihidang secara berkongsi di meja: nasi putih, sup panas, telur dadar, ayam masak berkuah, sayur dan buah segar. Atas cruise Halong ada hidangan bufet/BBQ di dek. Rujuk dropdown gambar dalam tab Halal & Makanan.\n\n**Makanan halal di Sapa & atas cruise macam mana?**\nGuide atur restoran halal di Sapa (restoran berdinding buluh, set menu Vietnam). Di atas cruise Halong, makanan halal disediakan oleh operator. Bawa snack halal sendiri untuk lawatan luar (Cat Cat Village, puncak Fansipan) kerana pilihan halal di lokasi itu tiada.\n\n**Boleh bawa makanan sendiri dari Malaysia?**\nBoleh — mi segera, biskut, roti, coklat dan pek ready-to-eat dibenarkan, tetapi biasanya tidak perlu kerana fullboard sudah cukup. Elak daging, ayam, buah dan sayur segar (halangan kastam). Letak semua makanan & ubat dalam satu beg berlabel jelas.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam **pek asal beserta label** (jangan buka atau salin pek). Air panas untuk bancuh susu boleh diminta dari kru penerbangan.\n\n**Ada masjid/surau untuk solat?**\n**Masjid Al Noor** di Hanoi Old Quarter — satu-satunya masjid di Vietnam Utara, dengan restoran halal di sebelahnya. Dalam itinerari **4H3M** ia adalah stopover rasmi (Day 3). Di **Sapa, Fansipan dan cruise Halong tiada surau** — solat jamak/qasar di hotel atau kabin cruise.\n\n**Boleh solat Jumaat?**\nBoleh jika berada di Hanoi (Masjid Al Noor). Jika di Sapa atau Halong pada hari Jumaat, ganti dengan Zohor — maklum guide awal supaya jadual disesuaikan.\n\n**Perlu bawa apa untuk solat?**\nTelekung, sejadah kecil dan **botol kecil/spray untuk wudhu** — tandas di Vietnam biasanya tiada getah paip. Guna app kiblat kerana tiada penanda arah kiblat di hotel/cruise.\n\n**Ada arak di sekitar?**\nRestoran halal yang digunakan tidak ada arak. Tetapi arak dijual bebas di Sapa town, Hanoi Old Quarter dan atas cruise untuk penumpang lain — bukan isu untuk makanan pakej, cuma perlu tahu suasana.\n\n### C. Visa & Passport\n\n**Perlu visa ke Vietnam?**\n**Tidak** — pemegang passport Malaysia bebas visa untuk lawatan sehingga **30 hari**.\n\n**Syarat passport?**\nSah **sekurang-kurangnya 6 bulan** dari tarikh perjalanan, dengan sekurang-kurangnya 2 muka surat kosong.\n\n**Perlu isi arrival card?**\n**Tidak — Vietnam tiada arrival card.** Tiada borang online yang perlu diisi sebelum berlepas.\n\n**Kanak-kanak bawah 18 tahun perlu dokumen tambahan?**\nJika bersama parents, passport sahaja sudah cukup. Boleh bawa photocopy surat beranak sebagai standby.\n\n**Dokumen apa perlu disediakan?**\n**Tour Voucher** (softcopy memadai, 1 per family) dan **Covernote Insurance**. Bawa versi printed jika risau tiada internet.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej ini **Ground & Tipping** sahaja. Rujuk jadual return flight di bahagian atas tab ini.\n\n**Flight rekemen pergi-balik dari KUL ke Hanoi?**\nRujuk jadual di bahagian atas tab ini — empat airline dengan kedua-dua leg (KUL→HAN dan HAN→KUL). Harga anggaran adalah **round-trip** per pax.\n\n**Flight ke Hanoi berapa lama?**\nDirect KUL → Hanoi (HAN) sekitar **3 jam 10 minit – 3 jam 20 minit** setiap hala.\n\n**Airport mana?**\n**Hanoi Noi Bai International Airport (HAN)**. Driver akan menunggu di Arrival Hall; terus transfer ke Sapa (6–8 jam).\n\n**Waktu flight mana yang sesuai?**\nKatalog syorkan **tiba HAN tengah hari ke atas** hari pertama dan **berlepas tengah hari** hari akhir. Flight pagi/tengah hari (OD 571, AK 512, VJ 906) paling sesuai untuk ketibaan. Untuk pulangan, OD 572 dan VN 681 berlepas awal petang — paling hampir dengan syor katalog.\n\n**Bagasi macam mana untuk penerbangan low cost?**\nAirAsia: check-in **20kg** (maksimum 2 luggage/pax, satu beg tidak melebihi 30kg), hand carry 7kg (1 handbag/sling + 1 cabin bag). Backpack besar dikira sebagai luggage. Tetapi ingat **katalog minta maksimum 1 luggage per pax** untuk kapasiti kenderaan.\n\n**Boleh share luggage allowance dengan keluarga?**\nBoleh dalam booking yang sama — contoh 3 pax × 20kg = 60kg. Tiada limit kuantiti beg jika combine, tetapi setiap beg tidak melebihi 30kg dan had 2 beg per pax kekal.\n\n**Apa boleh dan tak boleh dalam hand carry?**\nCecair **tidak melebihi 100ml** sahaja, dibungkus dalam plastik yang diikat ketat. Cecair >100ml (lotion, gel) mesti check-in. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) mesti check-in.\n\n**Powerbank & bateri macam mana?**\n**Semua bateri & powerbank WAJIB hand carry** — tidak boleh dalam check-in luggage. Had **100Wh (±20,000mAh)**.\n\n**Barang bayi & stroller dikira sebagai bagasi?**\nInfant bawah 2 tahun tiada baggage allowance; **stroller FOC**. Stroller tidak perlu check-in — maklum staf di kaunter, dapat tag, dan boleh bawa sampai pintu pesawat. Barang bayi (botol susu, pampers, wet tissue, milk powder) dikira dalam 7kg hand carry penjaga.\n\n**Stroller sesuai untuk trip ini?**\nBoleh dibawa, tetapi beberapa lokasi **tidak stroller-friendly** — Cat Cat Village berbatu-tangga, kompleks pagoda Fansipan banyak tangga, dan dek cruise sempit. Sarankan stroller travel-friendly yang mudah dilipat.\n\n**Boleh pilih seat dalam flight?**\nUntuk PT, customer beli tiket sendiri — seat selection diuruskan sendiri melalui airline. Sarankan pilih seat awal jika mahu duduk bersama keluarga, terutama yang ada anak kecil atau warga emas.\n\n**Perlu wrap bag?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Wrap boleh dibuat di KLIA/KLIA2 sebelum check-in, dan plastik yang sama boleh diguna semula untuk perjalanan balik.\n\n**Bila perlu sampai airport?**\nTiba KLIA/KLIA2 **3 jam** sebelum berlepas (lebih awal pada musim puncak). Berada di boarding gate sekurang-kurangnya 1 jam sebelum berlepas.\n\n### E. Hotel & Bilik\n\n**Hotel di area mana?**\nIkut katalog 4H3M: hotel biasanya **di luar pusat bandar**, tetapi driving guide sanggup bawa berpusing ke pusat bandar jika diminta. Untuk 5H4M, hotel Hanoi biasanya berdekatan kawasan Old Quarter.\n\n**Customer nak book hotel sendiri — apa yang perlu diingatkan?**\nBoleh, tetapi **wajib** maklumkan nama & alamat penuh hotel kepada consultant sebelum booking. Hotel mesti dalam kawasan yang sama dengan hotel rasmi pakej (Sapa town / Hanoi bandar) kerana jadual pickup dan susunan itinerari dikira dari lokasi hotel rasmi — dan pakej ini ada long drive 6–8 jam yang tidak boleh dilewatkan. Hotel yang jauh menyebabkan **operational hiccup**: pickup lewat dan itinerari terpaksa dipendekkan. Untuk 5H4M, malam atas cruise tidak boleh diganti.\n\n**Boleh upgrade 4★?**\nBoleh — **+RM140/pax/malam** untuk Sapa dan Hanoi. Contoh 4H3M (1 malam Sapa + 2 malam Hanoi) = +RM420/pax. Kabin cruise kekal 3★.\n\n**Bilik untuk berapa orang?**\n2–3 orang sebilik (triple = tambah katil). Single occupancy: single supplement *quoted upon request*.\n\n**Ada iron atau laundry dalam hotel?**\nHotel di Vietnam biasanya ada **laundry service** (berbayar) tetapi **tiada self-service**. Sarankan customer bawa baju secukupnya. Sterika biasanya perlu request di kaunter; towel, sabun & syampu disediakan.\n\n**Bila hotel disahkan?**\nSusunan hotel & itinerari muktamad **14 hari** sebelum trip.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\nIkut katalog: **Nov–Apr musim kering (sunny)**, **May–Okt musim hujan (rainy)**. Sep–Nov paling cantik — sawah padi teres keemasan dan Halong Bay tenang.\n\n**Berapa suhu Sapa?**\nSapa tanah tinggi, jauh lebih sejuk dari Hanoi. Dis–Feb boleh turun 0–12°C (kadang salji). Suhu di **puncak Fansipan turun 10–15°C** dari kawasan base — wajib bawa jaket tebal.\n\n**View Fansipan dijamin cantik?**\nTidak dijamin. Fansipan kerap **berkabus tebal** — kadang pagoda dan tangga batu di depan pun tidak kelihatan. Set expectation customer awal: cable car tetap jalan, tetapi pemandangan bergantung cuaca hari itu.\n\n**Boleh nampak salji?**\nKadang-kadang pada Dis–Feb di Sapa/Fansipan, tetapi tidak boleh dijanjikan.\n\n**Perlu bawa baju sejuk?**\nYa untuk Sapa & Fansipan — jaket tebal, sweater, stokin lebih. Bawa juga payung/raincoat kecil (kabus & hujan renyai biasa di Sapa) dan kasut yang tidak licin.\n\n### G. Shopping & Duit\n\n**Guna mata wang apa?**\n**Vietnam Dong (VND)**. Tukar di Malaysia lebih senang. Sediakan tunai untuk pasar & gerai kecil.\n\n**Bawa duit belanja berapa?**\nCadangan **tunai RM200–RM500/pax** untuk belanja kecil, plus baki dalam kad/e-wallet untuk shopping. Dong Xuan Market & Hanoi Old Quarter kebanyakannya terima tunai sahaja.\n\n**Boleh guna kad?**\nDiterima di hotel & mall besar. Aktifkan kad untuk kegunaan luar negara. Gerai kecil dan pasar borong hanya terima tunai VND.\n\n**Beli apa untuk souvenir?**\nDong Xuan Market (pasar fesyen terbesar), Hanoi Old City (souvenir), kraftangan sulaman etnik H'mong di Cat Cat Village, kopi Vietnam dan barang kulit.\n\n**Peniaga di Cat Cat Village mendesak?**\nWanita etnik H'mong akan menawarkan topi, beg bersulam dan kraftangan. Tidak agresif, tetapi nasihatkan customer sedia untuk menolak dengan baik jika tidak berminat, dan tanya harga dahulu sebelum bergambar bersama.\n\n### H. Payment & Refund\n\n**Ada surcharge yang perlu diberitahu awal?**\nLate Booking RM50/booking (<45 hari) dan Last Minute (<3 minggu) ikut varian: **5H4M** 2 pax +RM400/pax · 3+ pax +RM300/pax; **4H3M** 2 pax +RM300/pax · 3+ pax +RM200/pax. Travel 2027 (Jan–Jun): +RM100/pax.\n\n### I. Add-ons & Customization\n\n**Boleh tukar transfer Hanoi–Sapa kepada sleeper train?**\nBoleh — Sleeper Train/Bus **Regular RM180/pax/hala** atau **VVIP RM200/pax/hala**. Sesuai untuk customer yang tidak tahan perjalanan darat 6–8 jam pada siang hari.\n\n**Boleh tambah insurans/takaful?**\nBoleh — Etiqa TripCare 360 (Vietnam = Area 1 ASEAN): Individu RM45 (1–5 hari) / RM62 (6–10 hari); Family RM100 / RM141.\n\n**Ada luggage tracker?**\nAda — Blue Ribbon RM20–RM70 (Silver / Gold / Platinum / Diamond).\n\n**Pocket WiFi macam mana?**\nRoamingMan: 4H3M 3GB 4G RM80/trip; 5H4M 3GB 4G RM175/trip atau 10GB 5G RM150/trip. Satu pocket WiFi boleh dikongsi untuk 3 telefon.\n\n### J. Kesihatan & Keselamatan\n\n**Perlu vaksin khas?**\nTiada keperluan vaksin wajib untuk Vietnam bagi pelawat Malaysia.\n\n**Selamat untuk keluarga?**\nYa secara umum. Jaga barang peribadi di kawasan sesak (Dong Xuan Market, Hanoi Old Quarter, puncak Fansipan). Simpan salinan passport berasingan.\n\n**Boleh bawa ubat preskripsi?**\nBoleh. Ubat berpreskripsi (darah tinggi, kencing manis) perlu dibawa **bersama surat doktor** — boleh didapatkan dari mana-mana klinik jika hilang. Ubat OTC (panadol, selsema) tidak perlu preskripsi dan tidak wajib label.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh dibawa **on board** (hand carry). Sertakan surat doktor jika ada.\n\n**Apa perlu diingat untuk long drive & cruise?**\nPerjalanan Hanoi–Sapa 6–8 jam berbukit — sarankan ubat loya untuk yang mudah pening. Atas bot pemindahan dan kayak Halong, **jaket keselamatan wajib** dipakai. Bot pemindahan agak sempit dan jeti Halong sibuk — jangkakan masa menunggu.\n\n**Ada isu ketinggian di Fansipan?**\nPuncak Fansipan 3,143m. Kebanyakan orang tiada masalah kerana naik dengan cable car (bukan mendaki), tetapi angin kuat dan udara nipis di puncak — jangan berlari naik tangga, dan warga emas boleh rehat di platform bawah.\n\n### K. Praktikal (SIM / Internet / Socket / Tandas)\n\n**Internet macam mana?**\nVietnam **tiada sekatan** app seperti China — WhatsApp, Google, Instagram semua berfungsi. Pilihan: roaming telco Malaysia, pocket WiFi, atau SIM tempatan. WiFi hotel biasanya ada tetapi perlahan di Sapa.\n\n**Ada internet atas cruise Halong?**\nTerhad — signal lemah di tengah teluk. Set expectation customer bahawa mereka mungkin offline sepanjang malam atas cruise.\n\n**Socket/plug jenis apa?**\nVietnam guna socket **Type A, C & F**. Bawa **universal travel adapter** + extension plug. Letak power bank/adapter dalam hand carry.\n\n**Ada port charger dalam kenderaan?**\nBergantung kepada kenderaan yang trip dapat — tidak dijamin. Sarankan customer bawa power bank sendiri (hand carry, ≤100Wh).\n\n**Tandas macam mana?**\nKebanyakan tandas **tiada getah paip/bidet** — bawa botol spray + tisu. Tandas di lokasi tour (Fansipan, Cat Cat, cruise) bersih tetapi mungkin beratur pada waktu puncak.\n\n**Waktu tempatan sama dengan Malaysia?**\nTidak — Vietnam **GMT+7**, satu jam lewat dari Malaysia. Ingatkan customer laraskan jam & alarm untuk pickup pagi.\n\n### L. Packing\n\n**Apa perlu bawa?**\nPassport; jaket tebal + sweater untuk Sapa/Fansipan; kasut sport yang tidak licin + stokin lebih; **telekung & sejadah**; **botol spray** (wudhu); tisu/wet wipes; payung/raincoat kecil; ubat peribadi + surat doktor (jika preskripsi); **universal adapter** + power bank; ubat loya untuk long drive; dan duit tunai VND.\n\n**Ada barang khas untuk malam atas cruise?**\nYa — pack **satu bag kecil** untuk satu malam (baju tukar, telekung, ubat, charger) supaya tidak perlu angkat luggage besar naik bot pemindahan. Luggage besar boleh ditinggal dalam kenderaan atau hotel Hanoi.\n\n**Kasut apa sesuai?**\nSport shoes atau kasut selesa yang **tidak licin** — laluan Cat Cat Village berbatu-tangga, dalam Gua Sung Sot lembap, dan dek cruise berlantai kayu. Elak heels dan selipar licin.\n",
+     "to": "# PT Hanoi–Sapa–Halong Bay — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Hanoi–Sapa–Halong Bay 5H4M & PT Hanoi–Sapa 4H3M — hotel 3★ fullboard halal, ground & tipping, sah untuk travel hingga 31 Dis 2026. Katalog V4 (12 Mac 2026).*\n\n- **Blackout:** Chinese New Year 2027 — **17–18 Feb 2027** (satu-satunya blackout dalam katalog V4).\n- Semak availability dahulu untuk: Chinese New Year · Raya Aidilfitri & Raya Haji · New Year · Christmas Holiday.\n- Itinerari, flight & harga tertakluk perubahan (cuaca, trafik, keselamatan). Itinerari & hotel muktamad **14 hari** sebelum trip.\n- **Perjalanan Hanoi → Sapa 6–8 jam sehala** (ikut katalog, bergantung trafik). Ini hari paling panjang.\n- **Bawa maksimum 1 luggage per pax** — kapasiti kenderaan private dan kabin cruise terhad. Banyak check-in/check-out termasuk masuk bot cruise, jadi pack efisien.\n- Meals sudah termasuk — **tiada refund** jika customer pilih untuk tidak makan.\n- Aktiviti/entrance yang tidak disertai **tidak boleh** ditukar dengan aktiviti lain, voucher atau tunai.\n- **Tiket flight pergi-balik TIDAK termasuk** — customer beli sendiri. Cadangan katalog: tiba HAN tengah hari ke atas (Day 1), berlepas tengah hari (hari akhir).\n- Requirement muslim-friendly (halal, solat) adalah **baseline** setiap pakej — driving guide Muslim tempatan, semua makan di restoran halal.\n- Sila semak validity trip dengan staff sebelum booking connecting flight domestik.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa yang pakej ini cover?**\n**5H4M:** Fansipan (tren Muong Hoa + cable car), Cat Cat Village, Moana Sapa, Muong Hoa Valley, Halong Bay overnight cruise (Stone Dog Island, Fighting Cocks, Gua Sung Sot, Titop Island), Gua Luon by kayak, Mega Grand World Hanoi, Hanoi Train Street Coffee. **4H3M:** Fansipan, Cat Cat Village, Muong Hoa Valley, Masjid Al Noor, HCM Museum, Dong Xuan Market, Hanoi Old City, Hoan Kiem Lake.\n\n**Apa beza 4H3M dan 5H4M?**\n5H4M tambah **Halong Bay** — satu malam atas cruise Victory Star + island tour + kayak Gua Luon, plus Mega Grand World & Train Street Coffee di Hanoi. 4H3M pula ada **city tour Hanoi penuh** (HCM Museum, Dong Xuan, Old City, Hoan Kiem) dan Masjid Al Noor dalam itinerari rasmi. Rujuk tab Perbezaan Pakej.\n\n**Ada travel map untuk trip ini?**\nAda — rujuk tab **Travel Map**. Ada dua map berasingan, satu untuk 4H3M dan satu untuk 5H4M.\n\n**Ini private tour atau group?**\nPrivate tour sepenuhnya — kenderaan, driver-guide dan itinerari untuk group customer sahaja, tidak bergabung dengan group lain.\n\n**Berapa panjang perjalanan Hanoi ke Sapa?**\n**6–8 jam sehala** ikut katalog, bergantung kepada trafik (highway Lao Cai). Ini sebab katalog syorkan tiba HAN tengah hari ke atas supaya sampai Sapa tidak terlalu lewat. Toilet break disediakan sepanjang jalan.\n\n**Sesuai untuk warga emas?**\nBoleh, tetapi set expectation awal: perjalanan darat panjang (6–8 jam), **banyak tangga** di kompleks pagoda Fansipan, dek pandang Titop Island dan laluan berbatu di Cat Cat Village. Warga emas boleh tunggu di platform bawah semasa yang lain naik tangga — maklum guide awal.\n\n**Sesuai untuk anak kecil?**\nSesuai — cable car Fansipan kabin tertutup, cruise Halong selamat dengan jaket keselamatan, dan Mega Grand World ada banyak aktiviti keluarga. Perjalanan darat panjang jadi bawa hiburan & snack untuk anak.\n\n**Ada pakej Hanoi–Sapa–Ninh Binh?**\nAda — 6 hari 5 malam, dengan lawatan ke **Pulau Tam Coc** di Ninh Binh. Untuk pakej 4H3M/5H4M, Ninh Binh boleh ditambah sebagai day trip (RM380/pax) — rujuk tab Simple Customisation.\n\n**Boleh customize itinerari?**\nBoleh — ini private tour. Boleh tambah spot, upgrade hotel, tukar transfer Hanoi–Sapa kepada sleeper train/bus, atau tambah day trip Ninh Binh. Maklum consultant awal; itinerari muktamad 14 hari sebelum trip.\n\n**Kenapa banyak check-in/check-out?**\nIkut katalog: 5H4M ada hotel Sapa → hotel Hanoi → cruise Halong → hotel Hanoi. Nasihatkan customer pack satu bag kecil untuk malam atas cruise supaya tidak perlu angkat luggage besar naik bot.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nYa. Operator Muslim tempatan — driver-guide pastikan semua makan di restoran halal, bukan sekadar tiada arak. Fullboard ikut katalog: **5H4M 4B/3L/4D · 4H3M 3B/2L/3D**.\n\n**Makan apa dalam pakej?**\nSet menu Vietnam dihidang secara berkongsi di meja: nasi putih, sup panas, telur dadar, ayam masak berkuah, sayur dan buah segar. Atas cruise Halong ada hidangan bufet/BBQ di dek. Rujuk dropdown gambar dalam tab Halal & Makanan.\n\n**Makanan halal di Sapa & atas cruise macam mana?**\nGuide atur restoran halal di Sapa (restoran berdinding buluh, set menu Vietnam). Di atas cruise Halong, makanan halal disediakan oleh operator. Bawa snack halal sendiri untuk lawatan luar (Cat Cat Village, puncak Fansipan) kerana pilihan halal di lokasi itu tiada.\n\n**Boleh bawa makanan sendiri dari Malaysia?**\nBoleh — mi segera, biskut, roti, coklat dan pek ready-to-eat dibenarkan, tetapi biasanya tidak perlu kerana fullboard sudah cukup. Elak daging, ayam, buah dan sayur segar (halangan kastam). Letak semua makanan & ubat dalam satu beg berlabel jelas.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam **pek asal beserta label** (jangan buka atau salin pek). Air panas untuk bancuh susu boleh diminta dari kru penerbangan.\n\n**Ada masjid/surau untuk solat?**\n**Masjid Al Noor** di Hanoi Old Quarter — satu-satunya masjid di Vietnam Utara, dengan restoran halal di sebelahnya. Dalam itinerari **4H3M** ia adalah stopover rasmi (Day 3). Di **Sapa, Fansipan dan cruise Halong tiada surau** — solat jamak/qasar di hotel atau kabin cruise.\n\n**Boleh solat Jumaat?**\nBoleh jika berada di Hanoi (Masjid Al Noor). Jika di Sapa atau Halong pada hari Jumaat, ganti dengan Zohor — maklum guide awal supaya jadual disesuaikan.\n\n**Perlu bawa apa untuk solat?**\nTelekung, sejadah kecil dan **botol kecil/spray untuk wudhu** — tandas di Vietnam biasanya tiada getah paip. Guna app kiblat kerana tiada penanda arah kiblat di hotel/cruise.\n\n**Ada arak di sekitar?**\nRestoran halal yang digunakan tidak ada arak. Tetapi arak dijual bebas di Sapa town, Hanoi Old Quarter dan atas cruise untuk penumpang lain — bukan isu untuk makanan pakej, cuma perlu tahu suasana.\n\n### C. Visa & Passport\n\n**Perlu visa ke Vietnam?**\n**Tidak** — pemegang passport Malaysia bebas visa untuk lawatan sehingga **30 hari**.\n\n**Syarat passport?**\nSah **sekurang-kurangnya 6 bulan** dari tarikh perjalanan, dengan sekurang-kurangnya 2 muka surat kosong.\n\n**Perlu isi arrival card?**\n**Tidak — Vietnam tiada arrival card.** Tiada borang online yang perlu diisi sebelum berlepas.\n\n**Kanak-kanak bawah 18 tahun perlu dokumen tambahan?**\nJika bersama parents, passport sahaja sudah cukup. Boleh bawa photocopy surat beranak sebagai standby.\n\n**Dokumen apa perlu disediakan?**\n**Tour Voucher** (softcopy memadai, 1 per family) dan **Covernote Insurance**. Bawa versi printed jika risau tiada internet.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej ini **Ground & Tipping** sahaja. Rujuk jadual return flight di bahagian atas tab ini.\n\n**Flight rekemen pergi-balik dari KUL ke Hanoi?**\nRujuk jadual di bahagian atas tab ini — empat airline dengan kedua-dua leg (KUL→HAN dan HAN→KUL). Harga anggaran adalah **round-trip** per pax.\n\n**Flight ke Hanoi berapa lama?**\nDirect KUL → Hanoi (HAN) sekitar **3 jam 10 minit – 3 jam 20 minit** setiap hala.\n\n**Airport mana?**\n**Hanoi Noi Bai International Airport (HAN)**. Driver akan menunggu di Arrival Hall; terus transfer ke Sapa (6–8 jam).\n\n**Waktu flight mana yang sesuai?**\nKatalog syorkan **tiba HAN tengah hari ke atas** hari pertama dan **berlepas tengah hari** hari akhir. Flight pagi/tengah hari (OD 571, AK 512, VJ 906) paling sesuai untuk ketibaan. Untuk pulangan, OD 572 dan VN 681 berlepas awal petang — paling hampir dengan syor katalog.\n\n**Bagasi macam mana untuk penerbangan low cost?**\nAirAsia: check-in **20kg** (maksimum 2 luggage/pax, satu beg tidak melebihi 30kg), hand carry 7kg (1 handbag/sling + 1 cabin bag). Backpack besar dikira sebagai luggage. Tetapi ingat **katalog minta maksimum 1 luggage per pax** untuk kapasiti kenderaan.\n\n**Boleh share luggage allowance dengan keluarga?**\nBoleh dalam booking yang sama — contoh 3 pax × 20kg = 60kg. Tiada limit kuantiti beg jika combine, tetapi setiap beg tidak melebihi 30kg dan had 2 beg per pax kekal.\n\n**Apa boleh dan tak boleh dalam hand carry?**\nCecair **tidak melebihi 100ml** sahaja, dibungkus dalam plastik yang diikat ketat. Cecair >100ml (lotion, gel) mesti check-in. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) mesti check-in.\n\n**Powerbank & bateri macam mana?**\n**Semua bateri & powerbank WAJIB hand carry** — tidak boleh dalam check-in luggage. Had **100Wh (±20,000mAh)**.\n\n**Barang bayi & stroller dikira sebagai bagasi?**\nInfant bawah 2 tahun tiada baggage allowance; **stroller FOC**. Stroller tidak perlu check-in — maklum staf di kaunter, dapat tag, dan boleh bawa sampai pintu pesawat. Barang bayi (botol susu, pampers, wet tissue, milk powder) dikira dalam 7kg hand carry penjaga.\n\n**Stroller sesuai untuk trip ini?**\nBoleh dibawa, tetapi beberapa lokasi **tidak stroller-friendly** — Cat Cat Village berbatu-tangga, kompleks pagoda Fansipan banyak tangga, dan dek cruise sempit. Sarankan stroller travel-friendly yang mudah dilipat.\n\n**Boleh pilih seat dalam flight?**\nUntuk PT, customer beli tiket sendiri — seat selection diuruskan sendiri melalui airline. Sarankan pilih seat awal jika mahu duduk bersama keluarga, terutama yang ada anak kecil atau warga emas.\n\n**Perlu wrap bag?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Wrap boleh dibuat di KLIA/KLIA2 sebelum check-in, dan plastik yang sama boleh diguna semula untuk perjalanan balik.\n\n**Bila perlu sampai airport?**\nTiba KLIA/KLIA2 **3 jam** sebelum berlepas (lebih awal pada musim puncak). Berada di boarding gate sekurang-kurangnya 1 jam sebelum berlepas.\n\n### E. Hotel & Bilik\n\n**Hotel di area mana?**\nIkut katalog 4H3M: hotel biasanya **di luar pusat bandar**, tetapi driving guide sanggup bawa berpusing ke pusat bandar jika diminta. Untuk 5H4M, hotel Hanoi biasanya berdekatan kawasan Old Quarter.\n\n**Customer nak book hotel sendiri — apa yang perlu diingatkan?**\nBoleh, tetapi **wajib** maklumkan nama & alamat penuh hotel kepada consultant sebelum booking. Hotel mesti dalam kawasan yang sama dengan hotel rasmi pakej (Sapa town / Hanoi bandar) kerana jadual pickup dan susunan itinerari dikira dari lokasi hotel rasmi — dan pakej ini ada long drive 6–8 jam yang tidak boleh dilewatkan. Hotel yang jauh menyebabkan **operational hiccup**: pickup lewat dan itinerari terpaksa dipendekkan. Untuk 5H4M, malam atas cruise tidak boleh diganti.\n\n**Boleh upgrade 4★?**\nBoleh — **+RM140/pax/malam** untuk Sapa dan Hanoi. Contoh 4H3M (1 malam Sapa + 2 malam Hanoi) = +RM420/pax. Kabin cruise kekal 3★.\n\n**Bilik untuk berapa orang?**\n2–3 orang sebilik (triple = tambah katil). Single occupancy: single supplement RM300/pax (4H3M) · RM700/pax (5H4M).\n\n**Ada iron atau laundry dalam hotel?**\nHotel di Vietnam biasanya ada **laundry service** (berbayar) tetapi **tiada self-service**. Sarankan customer bawa baju secukupnya. Sterika biasanya perlu request di kaunter; towel, sabun & syampu disediakan.\n\n**Bila hotel disahkan?**\nSusunan hotel & itinerari muktamad **14 hari** sebelum trip.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\nIkut katalog: **Nov–Apr musim kering (sunny)**, **May–Okt musim hujan (rainy)**. Sep–Nov paling cantik — sawah padi teres keemasan dan Halong Bay tenang.\n\n**Berapa suhu Sapa?**\nSapa tanah tinggi, jauh lebih sejuk dari Hanoi. Dis–Feb boleh turun 0–12°C (kadang salji). Suhu di **puncak Fansipan turun 10–15°C** dari kawasan base — wajib bawa jaket tebal.\n\n**View Fansipan dijamin cantik?**\nTidak dijamin. Fansipan kerap **berkabus tebal** — kadang pagoda dan tangga batu di depan pun tidak kelihatan. Set expectation customer awal: cable car tetap jalan, tetapi pemandangan bergantung cuaca hari itu.\n\n**Boleh nampak salji?**\nKadang-kadang pada Dis–Feb di Sapa/Fansipan, tetapi tidak boleh dijanjikan.\n\n**Perlu bawa baju sejuk?**\nYa untuk Sapa & Fansipan — jaket tebal, sweater, stokin lebih. Bawa juga payung/raincoat kecil (kabus & hujan renyai biasa di Sapa) dan kasut yang tidak licin.\n\n### G. Shopping & Duit\n\n**Guna mata wang apa?**\n**Vietnam Dong (VND)**. Tukar di Malaysia lebih senang. Sediakan tunai untuk pasar & gerai kecil.\n\n**Bawa duit belanja berapa?**\nCadangan **tunai RM200–RM500/pax** untuk belanja kecil, plus baki dalam kad/e-wallet untuk shopping. Dong Xuan Market & Hanoi Old Quarter kebanyakannya terima tunai sahaja.\n\n**Boleh guna kad?**\nDiterima di hotel & mall besar. Aktifkan kad untuk kegunaan luar negara. Gerai kecil dan pasar borong hanya terima tunai VND.\n\n**Beli apa untuk souvenir?**\nDong Xuan Market (pasar fesyen terbesar), Hanoi Old City (souvenir), kraftangan sulaman etnik H'mong di Cat Cat Village, kopi Vietnam dan barang kulit.\n\n**Peniaga di Cat Cat Village mendesak?**\nWanita etnik H'mong akan menawarkan topi, beg bersulam dan kraftangan. Tidak agresif, tetapi nasihatkan customer sedia untuk menolak dengan baik jika tidak berminat, dan tanya harga dahulu sebelum bergambar bersama.\n\n### H. Payment & Refund\n\n**Ada surcharge yang perlu diberitahu awal?**\nLate Booking RM50/booking (<45 hari) dan Last Minute (<3 minggu) ikut varian: **5H4M** 2 pax +RM400/pax · 3+ pax +RM300/pax; **4H3M** 2 pax +RM300/pax · 3+ pax +RM200/pax.\n\n### I. Add-ons & Customization\n\n**Boleh tukar transfer Hanoi–Sapa kepada sleeper train?**\nBoleh — Sleeper Train/Bus **Regular RM180/pax/hala** atau **VVIP RM200/pax/hala**. Sesuai untuk customer yang tidak tahan perjalanan darat 6–8 jam pada siang hari.\n\n**Boleh tambah insurans/takaful?**\nBoleh — Etiqa TripCare 360 (Vietnam = Area 1 ASEAN): Individu RM45 (1–5 hari) / RM62 (6–10 hari); Family RM100 / RM141.\n\n**Ada luggage tracker?**\nAda — Blue Ribbon RM20–RM70 (Silver / Gold / Platinum / Diamond).\n\n**Pocket WiFi macam mana?**\nRoamingMan: 4H3M 3GB 4G RM80/trip; 5H4M 3GB 4G RM175/trip atau 10GB 5G RM150/trip. Satu pocket WiFi boleh dikongsi untuk 3 telefon.\n\n### J. Kesihatan & Keselamatan\n\n**Perlu vaksin khas?**\nTiada keperluan vaksin wajib untuk Vietnam bagi pelawat Malaysia.\n\n**Selamat untuk keluarga?**\nYa secara umum. Jaga barang peribadi di kawasan sesak (Dong Xuan Market, Hanoi Old Quarter, puncak Fansipan). Simpan salinan passport berasingan.\n\n**Boleh bawa ubat preskripsi?**\nBoleh. Ubat berpreskripsi (darah tinggi, kencing manis) perlu dibawa **bersama surat doktor** — boleh didapatkan dari mana-mana klinik jika hilang. Ubat OTC (panadol, selsema) tidak perlu preskripsi dan tidak wajib label.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh dibawa **on board** (hand carry). Sertakan surat doktor jika ada.\n\n**Apa perlu diingat untuk long drive & cruise?**\nPerjalanan Hanoi–Sapa 6–8 jam berbukit — sarankan ubat loya untuk yang mudah pening. Atas bot pemindahan dan kayak Halong, **jaket keselamatan wajib** dipakai. Bot pemindahan agak sempit dan jeti Halong sibuk — jangkakan masa menunggu.\n\n**Ada isu ketinggian di Fansipan?**\nPuncak Fansipan 3,143m. Kebanyakan orang tiada masalah kerana naik dengan cable car (bukan mendaki), tetapi angin kuat dan udara nipis di puncak — jangan berlari naik tangga, dan warga emas boleh rehat di platform bawah.\n\n### K. Praktikal (SIM / Internet / Socket / Tandas)\n\n**Internet macam mana?**\nVietnam **tiada sekatan** app seperti China — WhatsApp, Google, Instagram semua berfungsi. Pilihan: roaming telco Malaysia, pocket WiFi, atau SIM tempatan. WiFi hotel biasanya ada tetapi perlahan di Sapa.\n\n**Ada internet atas cruise Halong?**\nTerhad — signal lemah di tengah teluk. Set expectation customer bahawa mereka mungkin offline sepanjang malam atas cruise.\n\n**Socket/plug jenis apa?**\nVietnam guna socket **Type A, C & F**. Bawa **universal travel adapter** + extension plug. Letak power bank/adapter dalam hand carry.\n\n**Ada port charger dalam kenderaan?**\nBergantung kepada kenderaan yang trip dapat — tidak dijamin. Sarankan customer bawa power bank sendiri (hand carry, ≤100Wh).\n\n**Tandas macam mana?**\nKebanyakan tandas **tiada getah paip/bidet** — bawa botol spray + tisu. Tandas di lokasi tour (Fansipan, Cat Cat, cruise) bersih tetapi mungkin beratur pada waktu puncak.\n\n**Waktu tempatan sama dengan Malaysia?**\nTidak — Vietnam **GMT+7**, satu jam lewat dari Malaysia. Ingatkan customer laraskan jam & alarm untuk pickup pagi.\n\n### L. Packing\n\n**Apa perlu bawa?**\nPassport; jaket tebal + sweater untuk Sapa/Fansipan; kasut sport yang tidak licin + stokin lebih; **telekung & sejadah**; **botol spray** (wudhu); tisu/wet wipes; payung/raincoat kecil; ubat peribadi + surat doktor (jika preskripsi); **universal adapter** + power bank; ubat loya untuk long drive; dan duit tunai VND.\n\n**Ada barang khas untuk malam atas cruise?**\nYa — pack **satu bag kecil** untuk satu malam (baju tukar, telekung, ubat, charger) supaya tidak perlu angkat luggage besar naik bot pemindahan. Luggage besar boleh ditinggal dalam kenderaan atau hotel Hanoi.\n\n**Kasut apa sesuai?**\nSport shoes atau kasut selesa yang **tidak licin** — laluan Cat Cat Village berbatu-tangga, dalam Gua Sung Sot lembap, dan dek cruise berlantai kayu. Elak heels dan selipar licin.\n",
+     "label": "KB hanoi-sapa › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "calc",
+      "singleNote"
+     ],
+     "from": "Katalog dan rate card kedua-duanya tulis <b>quoted upon request</b> &mdash; minta kadar daripada operator sebelum quote solo. Tiada kadar tersiar, jadi kalkulator tidak caj apa-apa untuk bilik single.",
+     "to": "Single supplement ikut katalog: <b>RM 300</b> (4D3N) &middot; <b>RM 700</b> (5D4N, termasuk cruise) setiap bilik single.",
+     "label": "KB hanoi-sapa › calc › singleNote"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Travel date surcharge 2027",
+       "dateIn": [
+        "2027-01-01",
+        "2027-06-30"
+       ],
+       "perPax": 100
+      }
+     ],
+     "to": [],
+     "label": "KB hanoi-sapa › calc › extraSurcharge"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "calc",
+      "validity"
+     ],
+     "from": "Prices follow the PT Hanoi - Sapa - Halong Bay 5D4N 2026 v4 and PT Hanoi - Sapa 4D3N 2026 v4 catalogues dated 12 March 2026, valid for travel until 31 December 2026. Departures from 1 January to 30 June 2027 carry the 2027 travel date surcharge. This quotation is valid for 24 hours after submission. Itinerary, flight, price and quotation are subject to change. Final itinerary and hotel arrangements are confirmed 14 days before the trip. Free activities are not exchangeable for other activities, vouchers or cash. Blockout date: 17 - 18 February 2027 (Chinese New Year).",
+     "to": "Prices follow the PT Hanoi - Sapa - Halong Bay 5D4N 2026 v4 and PT Hanoi - Sapa 4D3N 2026 v4 catalogues dated 12 March 2026, valid for travel until 31 December 2026. This quotation is valid for 24 hours after submission. Itinerary, flight, price and quotation are subject to change. Final itinerary and hotel arrangements are confirmed 14 days before the trip. Free activities are not exchangeable for other activities, vouchers or cash. Blockout date: 17 - 18 February 2027 (Chinese New Year).",
+     "label": "KB hanoi-sapa › calc › validity"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "calc",
+      "variants",
+      "v5d4n",
+      "single"
+     ],
+     "from": 0,
+     "to": 700,
+     "label": "KB hanoi-sapa › calc › variants › v5d4n › single"
+    },
+    {
+     "path": [
+      "kb",
+      "hanoi-sapa",
+      "calc",
+      "variants",
+      "v4d3n",
+      "single"
+     ],
+     "from": 0,
+     "to": 300,
+     "label": "KB hanoi-sapa › calc › variants › v4d3n › single"
+    }
+   ],
+   "catalogs": [
+    "Catalog hanoi-sapa: prices + add-ons from v70",
+    "Catalog hanoi-sapa-halong: prices + add-ons from v70"
+   ],
+   "kb": [
+    "KB hanoi-sapa: 10 changes"
+   ]
   }
  ]
 }

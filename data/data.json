@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 69,
- "updatedAt": "2026-10-12T05:18:42Z",
+ "version": 70,
+ "updatedAt": "2026-10-12T07:33:13Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -20701,7 +20701,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "hub",
-   "note": "",
+   "note": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
    "fx": [
     {
      "id": "MYR",
@@ -20714,40 +20714,30 @@
    "tables": [
     {
      "id": "IBRAHIM-5D4N__Ground-Cost",
-     "label": "IBRAHIM-5D4N · Ground Cost",
+     "label": "IBRAHIM-5D4N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM-5D4N",
      "values": {
-      "2": 2800,
-      "3": 2590,
-      "4": 2270,
-      "5": 2270,
-      "6": 2070,
-      "7": 2070,
-      "8": 1940,
-      "9": 1940,
-      "10": 1810,
-      "11": 1680,
-      "12": 1680,
-      "13": 1580,
-      "14": 1580,
-      "15": 1580,
-      "16": 1510,
-      "17": 1510,
-      "18": 1510,
-      "19": 1510,
-      "20": 1510,
-      "21": 1460,
-      "22": 1460,
-      "23": 1460,
-      "24": 1460,
-      "25": 1460,
-      "26": 1460,
-      "27": 1460,
-      "28": 1460,
-      "29": 1460,
-      "30": 1460
+      "2": 2640,
+      "3": 2430,
+      "4": 2110,
+      "5": 2110,
+      "6": 1910,
+      "7": 1780,
+      "8": 1780,
+      "9": 1550,
+      "10": 1550,
+      "11": 1480,
+      "12": 1480,
+      "13": 1480,
+      "14": 1400,
+      "15": 1400,
+      "16": 1400,
+      "17": 1350,
+      "18": 1350,
+      "19": 1350,
+      "20": 1350
      }
     },
     {
@@ -20775,55 +20765,35 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0
+      "20": 0
      }
     },
     {
      "id": "IBRAHIM-4D3N__Ground-Cost",
-     "label": "IBRAHIM-4D3N · Ground Cost",
+     "label": "IBRAHIM-4D3N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM-4D3N",
      "values": {
       "2": 2000,
       "3": 1790,
-      "4": 1790,
-      "5": 1520,
-      "6": 1520,
-      "7": 1460,
-      "8": 1460,
-      "9": 1460,
-      "10": 1240,
-      "11": 1240,
-      "12": 1240,
-      "13": 1180,
-      "14": 1180,
-      "15": 1180,
-      "16": 1090,
-      "17": 1090,
-      "18": 1090,
-      "19": 1090,
-      "20": 1090,
-      "21": 1040,
-      "22": 1040,
-      "23": 1040,
-      "24": 1040,
-      "25": 1040,
-      "26": 1040,
-      "27": 1040,
-      "28": 1040,
-      "29": 1040,
-      "30": 1040
+      "4": 1480,
+      "5": 1480,
+      "6": 1450,
+      "7": 1380,
+      "8": 1380,
+      "9": 1230,
+      "10": 1230,
+      "11": 1120,
+      "12": 1120,
+      "13": 1120,
+      "14": 1060,
+      "15": 1060,
+      "16": 1060,
+      "17": 1020,
+      "18": 1020,
+      "19": 1020,
+      "20": 1020
      }
     },
     {
@@ -20851,128 +20821,6 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0
-     }
-    },
-    {
-     "id": "IBRAHIM-HALONGBAY-4D3N__Ground-Cost",
-     "label": "IBRAHIM-HALONGBAY-4D3N · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "IBRAHIM-HALONGBAY-4D3N",
-     "values": {
-      "2": 2100,
-      "3": 1890,
-      "4": 1890,
-      "5": 1620,
-      "6": 1620,
-      "7": 1560,
-      "8": 1560,
-      "9": 1560,
-      "10": 1340,
-      "11": 1340,
-      "12": 1340,
-      "13": 1280,
-      "14": 1280,
-      "15": 1280,
-      "16": 1190,
-      "17": 1190,
-      "18": 1190,
-      "19": 1190,
-      "20": 1190
-     }
-    },
-    {
-     "id": "IBRAHIM-HALONGBAY-4D3N__Tipping",
-     "label": "IBRAHIM-HALONGBAY-4D3N · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "IBRAHIM-HALONGBAY-4D3N",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0
-     }
-    },
-    {
-     "id": "IBRAHIM-SAPA-5D4N__Ground-Cost",
-     "label": "IBRAHIM-SAPA-5D4N · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "IBRAHIM-SAPA-5D4N",
-     "values": {
-      "2": 2700,
-      "3": 2490,
-      "4": 2170,
-      "5": 2170,
-      "6": 1970,
-      "7": 1840,
-      "8": 1840,
-      "9": 1710,
-      "10": 1710,
-      "11": 1580,
-      "12": 1580,
-      "13": 1580,
-      "14": 1480,
-      "15": 1480,
-      "16": 1480,
-      "17": 1410,
-      "18": 1410,
-      "19": 1410,
-      "20": 1410
-     }
-    },
-    {
-     "id": "IBRAHIM-SAPA-5D4N__Tipping",
-     "label": "IBRAHIM-SAPA-5D4N · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "IBRAHIM-SAPA-5D4N",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
       "20": 0
      }
     }
@@ -20981,11 +20829,11 @@
     {
      "id": "IBRAHIM-5D4N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM-5D4N — Hanoi-Sapa-Halong Bay 5D4N (3-Star · Cable Car Included · Halo",
+     "supplier": "TO IBRAHIM-5D4N — Hanoi-Sapa-Halong Bay 5D4N overnight cruise (CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 20,
      "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi) + Victory Star Cruise (Halong)",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car & train). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1. CR tiada harga 21–25 pax; Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -21004,11 +20852,11 @@
     {
      "id": "IBRAHIM-4D3N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM-4D3N — Hanoi-Sapa 4D3N (3-Star · Cable Car Included)",
+     "supplier": "TO IBRAHIM-4D3N — Hanoi-Sapa 4D3N (CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 20,
      "hotel": "3-Star: Saparis (Sapa)/CWD (Hanoi)",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car & train). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1. CR tiada harga 21–25 pax; Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -21023,52 +20871,6 @@
        "expr": "T['IBRAHIM-4D3N__Tipping']"
       }
      ]
-    },
-    {
-     "id": "IBRAHIM-HALONGBAY-4D3N",
-     "label": "Ibrahim",
-     "supplier": "REFERENCE — IBRAHIM Hanoi-Halongbay 4D3N (tiada dalam catalog, custom quote saha",
-     "paxMin": 2,
-     "paxMax": 20,
-     "hotel": "3-Star Hanoi (CWD/The Charm) — Halong Cruise (Victory Star)",
-     "notes": "",
-     "components": [
-      {
-       "key": "ground-cost",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['IBRAHIM-HALONGBAY-4D3N__Ground-Cost']"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['IBRAHIM-HALONGBAY-4D3N__Tipping']"
-      }
-     ]
-    },
-    {
-     "id": "IBRAHIM-SAPA-5D4N",
-     "label": "Ibrahim",
-     "supplier": "REFERENCE — IBRAHIM Hanoi-Sapa 5D4N (tiada Halong Bay, tiada dalam catalog)",
-     "paxMin": 2,
-     "paxMax": 20,
-     "hotel": "3-Star: Saparis (Sapa) + CWD/Charm (Hanoi). NO Halong Bay.",
-     "notes": "",
-     "components": [
-      {
-       "key": "ground-cost",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['IBRAHIM-SAPA-5D4N__Ground-Cost']"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['IBRAHIM-SAPA-5D4N__Tipping']"
-      }
-     ]
     }
    ],
    "packages": [
@@ -21079,7 +20881,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-5D4N"
       }
      ],
@@ -21103,17 +20905,7 @@
        "17": 1997,
        "18": 1997,
        "19": 1997,
-       "20": 1997,
-       "21": 1897,
-       "22": 1897,
-       "23": 1897,
-       "24": 1897,
-       "25": 1897,
-       "26": 1897,
-       "27": 1897,
-       "28": 1897,
-       "29": 1897,
-       "30": 1897
+       "20": 1997
       },
       "cwb": {
        "2": 3277,
@@ -21134,17 +20926,7 @@
        "17": 1797,
        "18": 1797,
        "19": 1797,
-       "20": 1797,
-       "21": 1697,
-       "22": 1697,
-       "23": 1697,
-       "24": 1697,
-       "25": 1697,
-       "26": 1697,
-       "27": 1697,
-       "28": 1697,
-       "29": 1697,
-       "30": 1697
+       "20": 1797
       },
       "cnb": {
        "2": 3077,
@@ -21165,17 +20947,7 @@
        "17": 1597,
        "18": 1597,
        "19": 1597,
-       "20": 1597,
-       "21": 1497,
-       "22": 1497,
-       "23": 1497,
-       "24": 1497,
-       "25": 1497,
-       "26": 1497,
-       "27": 1497,
-       "28": 1497,
-       "29": 1497,
-       "30": 1497
+       "20": 1597
       },
       "infant": 0
      },
@@ -21203,7 +20975,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-4D3N"
       }
      ],
@@ -21227,17 +20999,7 @@
        "17": 1677,
        "18": 1677,
        "19": 1677,
-       "20": 1677,
-       "21": 1577,
-       "22": 1577,
-       "23": 1577,
-       "24": 1577,
-       "25": 1577,
-       "26": 1577,
-       "27": 1577,
-       "28": 1577,
-       "29": 1577,
-       "30": 1577
+       "20": 1677
       },
       "cwb": {
        "2": 2337,
@@ -21258,17 +21020,7 @@
        "17": 1477,
        "18": 1477,
        "19": 1477,
-       "20": 1477,
-       "21": 1377,
-       "22": 1377,
-       "23": 1377,
-       "24": 1377,
-       "25": 1377,
-       "26": 1377,
-       "27": 1377,
-       "28": 1377,
-       "29": 1377,
-       "30": 1377
+       "20": 1477
       },
       "cnb": {
        "2": 2137,
@@ -21289,265 +21041,7 @@
        "17": 1277,
        "18": 1277,
        "19": 1277,
-       "20": 1277,
-       "21": 1177,
-       "22": 1177,
-       "23": 1177,
-       "24": 1177,
-       "25": 1177,
-       "26": 1177,
-       "27": 1177,
-       "28": 1177,
-       "29": 1177,
-       "30": 1177
-      },
-      "infant": 0
-     },
-     "rules": {
-      "discountTier2": 200,
-      "tierUpgrade": 0,
-      "cwbCost": {
-       "type": "pct",
-       "value": 0.5
-      },
-      "cnbCost": {
-       "type": "pct",
-       "value": 0.0
-      },
-      "infantCost": {
-       "type": "flat",
-       "value": 0
-      }
-     }
-    },
-    {
-     "id": "ibrahim-halongbay-4d3n",
-     "label": "Hanoi - Halong Bay 4D3N",
-     "catalog": null,
-     "assign": [
-      {
-       "from": 2,
-       "to": 30,
-       "variant": "IBRAHIM-HALONGBAY-4D3N"
-      }
-     ],
-     "pricing": {
-      "adult": {
-       "2": 3477,
-       "3": 3277,
-       "4": 2877,
-       "5": 2877,
-       "6": 2677,
-       "7": 2677,
-       "8": 2577,
-       "9": 2577,
-       "10": 2397,
-       "11": 2297,
-       "12": 2297,
-       "13": 2097,
-       "14": 2097,
-       "15": 2097,
-       "16": 1997,
-       "17": 1997,
-       "18": 1997,
-       "19": 1997,
-       "20": 1997,
-       "21": 1897,
-       "22": 1897,
-       "23": 1897,
-       "24": 1897,
-       "25": 1897,
-       "26": 1897,
-       "27": 1897,
-       "28": 1897,
-       "29": 1897,
-       "30": 1897
-      },
-      "cwb": {
-       "2": 3277,
-       "3": 3077,
-       "4": 2677,
-       "5": 2677,
-       "6": 2477,
-       "7": 2477,
-       "8": 2377,
-       "9": 2377,
-       "10": 2197,
-       "11": 2097,
-       "12": 2097,
-       "13": 1897,
-       "14": 1897,
-       "15": 1897,
-       "16": 1797,
-       "17": 1797,
-       "18": 1797,
-       "19": 1797,
-       "20": 1797,
-       "21": 1697,
-       "22": 1697,
-       "23": 1697,
-       "24": 1697,
-       "25": 1697,
-       "26": 1697,
-       "27": 1697,
-       "28": 1697,
-       "29": 1697,
-       "30": 1697
-      },
-      "cnb": {
-       "2": 3077,
-       "3": 2877,
-       "4": 2477,
-       "5": 2477,
-       "6": 2277,
-       "7": 2277,
-       "8": 2177,
-       "9": 2177,
-       "10": 1997,
-       "11": 1897,
-       "12": 1897,
-       "13": 1697,
-       "14": 1697,
-       "15": 1697,
-       "16": 1597,
-       "17": 1597,
-       "18": 1597,
-       "19": 1597,
-       "20": 1597,
-       "21": 1497,
-       "22": 1497,
-       "23": 1497,
-       "24": 1497,
-       "25": 1497,
-       "26": 1497,
-       "27": 1497,
-       "28": 1497,
-       "29": 1497,
-       "30": 1497
-      },
-      "infant": 0
-     },
-     "rules": {
-      "discountTier2": 200,
-      "tierUpgrade": 0,
-      "cwbCost": {
-       "type": "pct",
-       "value": 0.5
-      },
-      "cnbCost": {
-       "type": "pct",
-       "value": 0.0
-      },
-      "infantCost": {
-       "type": "flat",
-       "value": 0
-      }
-     }
-    },
-    {
-     "id": "ibrahim-sapa-5d4n",
-     "label": "Hanoi - Sapa 5D4N",
-     "catalog": null,
-     "assign": [
-      {
-       "from": 2,
-       "to": 30,
-       "variant": "IBRAHIM-SAPA-5D4N"
-      }
-     ],
-     "pricing": {
-      "adult": {
-       "2": 3477,
-       "3": 3277,
-       "4": 2877,
-       "5": 2877,
-       "6": 2677,
-       "7": 2677,
-       "8": 2577,
-       "9": 2577,
-       "10": 2397,
-       "11": 2297,
-       "12": 2297,
-       "13": 2097,
-       "14": 2097,
-       "15": 2097,
-       "16": 1997,
-       "17": 1997,
-       "18": 1997,
-       "19": 1997,
-       "20": 1997,
-       "21": 1897,
-       "22": 1897,
-       "23": 1897,
-       "24": 1897,
-       "25": 1897,
-       "26": 1897,
-       "27": 1897,
-       "28": 1897,
-       "29": 1897,
-       "30": 1897
-      },
-      "cwb": {
-       "2": 3277,
-       "3": 3077,
-       "4": 2677,
-       "5": 2677,
-       "6": 2477,
-       "7": 2477,
-       "8": 2377,
-       "9": 2377,
-       "10": 2197,
-       "11": 2097,
-       "12": 2097,
-       "13": 1897,
-       "14": 1897,
-       "15": 1897,
-       "16": 1797,
-       "17": 1797,
-       "18": 1797,
-       "19": 1797,
-       "20": 1797,
-       "21": 1697,
-       "22": 1697,
-       "23": 1697,
-       "24": 1697,
-       "25": 1697,
-       "26": 1697,
-       "27": 1697,
-       "28": 1697,
-       "29": 1697,
-       "30": 1697
-      },
-      "cnb": {
-       "2": 3077,
-       "3": 2877,
-       "4": 2477,
-       "5": 2477,
-       "6": 2277,
-       "7": 2277,
-       "8": 2177,
-       "9": 2177,
-       "10": 1997,
-       "11": 1897,
-       "12": 1897,
-       "13": 1697,
-       "14": 1697,
-       "15": 1697,
-       "16": 1597,
-       "17": 1597,
-       "18": 1597,
-       "19": 1597,
-       "20": 1597,
-       "21": 1497,
-       "22": 1497,
-       "23": 1497,
-       "24": 1497,
-       "25": 1497,
-       "26": 1497,
-       "27": 1497,
-       "28": 1497,
-       "29": 1497,
-       "30": 1497
+       "20": 1277
       },
       "infant": 0
      },
@@ -21582,11 +21076,11 @@
     {
      "id": "hnsh-a02",
      "category": "Activity",
-     "label": "Halong Bay Day Cruise (no overnight)",
-     "cost": 0.0,
-     "selling": 100.0,
+     "label": "Halong Bay Day Cruise (no overnight) — Tolak",
+     "cost": -100.0,
+     "selling": -100.0,
      "per": "pax",
-     "notes": "Already in pakej 5D4N"
+     "notes": "Ganti overnight cruise dengan day cruise (5D4N sahaja). Kos penjimatan sebenar: sahkan dengan Ibrahim."
     },
     {
      "id": "hnsh-a03",
@@ -21776,114 +21270,6 @@
      "selling": 70.0,
      "per": "pcs",
      "notes": null
-    },
-    {
-     "id": "hnsh-a24",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "hnsh-a25",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a26",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a29",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a30",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a31",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a32",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a33",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a34",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "hnsh-a35",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
     }
    ],
    "catalogs": [
@@ -21895,7 +21281,7 @@
      "id": "1a1075462ec",
      "name": "PT HNSH Ibrahim Hanoi Sapa 4D3N Jan-Dec 2026.jpeg",
      "file": "contracts/hnsh/1a1075462ec-PT_HNSH_Ibrahim_Hanoi_Sapa_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 171599,
      "at": "2026-10-04T14:32:13Z",
@@ -21906,7 +21292,7 @@
      "id": "1a1075462ed",
      "name": "PT HNSH Ibrahim Hanoi Sapa 5D4N Jan-Dec 2026.jpeg",
      "file": "contracts/hnsh/1a1075462ed-PT_HNSH_Ibrahim_Hanoi_Sapa_5D4N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, rujukan)",
      "note": "From Drive · Production Team",
      "size": 174062,
      "at": "2026-10-04T14:32:13Z",
@@ -21917,7 +21303,7 @@
      "id": "1a1075462ee",
      "name": "PT HNSH Ibrahim Hanoi Sapa Halongbay 5D4N Jan-Dec 2026.jpeg",
      "file": "contracts/hnsh/1a1075462ee-PT_HNSH_Ibrahim_Hanoi_Sapa_Halongbay_5D4N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 165176,
      "at": "2026-10-04T14:32:13Z",
@@ -21928,12 +21314,22 @@
      "id": "1a1075462ef",
      "name": "PT HNSH Ibrahim Hanoi Halongbay 4D3N Jan-Dec 2026.jpeg",
      "file": "contracts/hnsh/1a1075462ef-PT_HNSH_Ibrahim_Hanoi_Halongbay_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, rujukan)",
      "note": "From Drive · Production Team",
      "size": 181668,
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1WE2FFrJJ4JgH0xFRBIRMX95qd0HbucnY"
+    },
+    {
+     "id": "1a12f073fb6",
+     "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+     "file": "contracts/hnsh/1a12f073fb6-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+     "to": "Ibrahim",
+     "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Hanoi Sapa 4D3N (hlm 7), Hanoi Sapa Halong Bay 5D4N overnight cruise (hlm 6)",
+     "size": 4812024,
+     "at": "2026-10-12T07:32:46Z",
+     "by": "ezie"
     }
    ],
    "hotels": [
