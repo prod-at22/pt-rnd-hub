@@ -73456,6 +73456,608 @@
    "kb": [
     "KB jepun: 10 changes"
    ]
+  },
+  {
+   "v": 75,
+   "at": "2026-10-12T13:45:11Z",
+   "by": "system",
+   "note": "Hokkaido add-ons (PO ezie 12 Oct 2026; CR WIF 2026 × 0.029): hotel options Apartment / 3★ Mystays / 4★ Best Western and 4★ extra night removed (hotel is in the package, no 4★ in the catalog); new deduction 'Hotel — Tolak 1 malam' −RM250/pax/night (= KB, cost −RM348); extra night 3★ / apartment cost RM348 (¥12,000), selling RM400 (Hokkaido only, Tokyo / Osaka stay RM300); breakfast cost RM43.5 (¥1,500), selling RM50 (Hokkaido only, Tokyo / Osaka stay RM40); lunch / dinner cost RM58 (¥2,000), selling RM65 (= KB); infant car seat cost RM145 (¥5,000); pocket wifi 4G cost RM58 (¥2,000); TripCare Couple per pair, Family per family. KB jepun: Hokkaido rows RM400 night / RM50 breakfast (custom, stay, pax note, calculator), Simple Calculator Hokkaido night linked to the add-on.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "CTS",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "cts-a01",
+       "category": "Hotel",
+       "label": "Apartment Sapporo Town (4N)",
+       "cost": 800,
+       "selling": 1200,
+       "per": "pax",
+       "notes": "Base option, RM800 cost estimate"
+      },
+      {
+       "id": "cts-a02",
+       "category": "Hotel",
+       "label": "3-Star Mystays Hotel (4N)",
+       "cost": 800,
+       "selling": 1200,
+       "per": "pax",
+       "notes": "Same selling sebagai Apartment"
+      },
+      {
+       "id": "cts-a03",
+       "category": "Hotel",
+       "label": "4-Star Best Western (4N)",
+       "cost": 1400,
+       "selling": 2000,
+       "per": "pax",
+       "notes": "Premium tier"
+      },
+      {
+       "id": "cts-a04",
+       "category": "Hotel",
+       "label": "Extra Night Apt/3* — Tambah",
+       "cost": 50,
+       "selling": 70,
+       "per": "pax/night",
+       "notes": "Extend beyond 4N"
+      },
+      {
+       "id": "cts-a05",
+       "category": "Hotel",
+       "label": "Extra Night 4* — Tambah",
+       "cost": 70,
+       "selling": 100,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "cts-a06",
+       "category": "Meals",
+       "label": "Breakfast — Tambah",
+       "cost": 87,
+       "selling": 116,
+       "per": "meal/pax",
+       "notes": "¥1500/breakfast × FX"
+      },
+      {
+       "id": "cts-a07",
+       "category": "Meals",
+       "label": "Lunch — Tambah",
+       "cost": 87,
+       "selling": 130,
+       "per": "meal/pax",
+       "notes": "¥2000/lunch × FX (halal restaurant)"
+      },
+      {
+       "id": "cts-a08",
+       "category": "Meals",
+       "label": "Dinner — Tambah",
+       "cost": 87,
+       "selling": 130,
+       "per": "meal/pax",
+       "notes": "¥2000/dinner × FX"
+      },
+      {
+       "id": "cts-a09",
+       "category": "Activity",
+       "label": "Niseko Ski (winter)",
+       "cost": 350,
+       "selling": 550,
+       "per": "pax",
+       "notes": "Add-on for ski experience"
+      },
+      {
+       "id": "cts-a10",
+       "category": "Activity",
+       "label": "Furano Lavender Farm (summer)",
+       "cost": 100,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Jul-Aug only"
+      },
+      {
+       "id": "cts-a11",
+       "category": "Activity",
+       "label": "Shiroi Koibito Park Factory Tour",
+       "cost": 50,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Sapporo white chocolate factory"
+      },
+      {
+       "id": "cts-a12",
+       "category": "Activity",
+       "label": "Wagyu Experience",
+       "cost": 174,
+       "selling": 250,
+       "per": "pax",
+       "notes": "¥6,000 × FX"
+      },
+      {
+       "id": "cts-a13",
+       "category": "Transport",
+       "label": "Infant Car Seat (compulsory)",
+       "cost": 197,
+       "selling": 197,
+       "per": "day",
+       "notes": "PDF: RM197/day for infant <2yr"
+      },
+      {
+       "id": "cts-a14",
+       "category": "Wifi",
+       "label": "Pocket Wifi 4G — daily",
+       "cost": 40,
+       "selling": 70,
+       "per": "day",
+       "notes": "WIF B2B ¥2,000/day"
+      },
+      {
+       "id": "cts-a15",
+       "category": "Wifi",
+       "label": "Pocket Wifi 5G — daily",
+       "cost": 60,
+       "selling": 100,
+       "per": "day",
+       "notes": "Premium speed"
+      },
+      {
+       "id": "cts-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5d)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "cts-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10d)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5d)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10d)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5d)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10d)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5d)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10d)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a24",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": "Luggage tracker"
+      },
+      {
+       "id": "cts-a25",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "cts-a26",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "cts-a27",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "to": [
+      {
+       "id": "cts-a04",
+       "category": "Hotel",
+       "label": "Malam tambahan Hotel 3★ / Apartment",
+       "cost": 348,
+       "selling": 400,
+       "per": "pax/night",
+       "notes": "Kos CR ¥12,000/pax/malam × 0.029; jual RM400 Hokkaido sahaja (PO 12 Oct 2026; Tokyo / Osaka RM300)"
+      },
+      {
+       "id": "cts-a28",
+       "category": "Hotel",
+       "label": "Hotel — Tolak 1 malam (sudah termasuk dalam pakej)",
+       "cost": -348,
+       "selling": -250,
+       "per": "pax/night",
+       "notes": "Hotel termasuk dalam pakej; guna hanya kalau customer tak perlu hotel (tolak RM250/pax/malam, sama dengan KB). Kos CR ¥12,000 × 0.029."
+      },
+      {
+       "id": "cts-a06",
+       "category": "Meals",
+       "label": "Breakfast — Tambah",
+       "cost": 43.5,
+       "selling": 50,
+       "per": "meal/pax",
+       "notes": "CR ¥1,500/breakfast × 0.029; jual RM50 Hokkaido sahaja (PO 12 Oct 2026; Tokyo / Osaka RM40)"
+      },
+      {
+       "id": "cts-a07",
+       "category": "Meals",
+       "label": "Lunch — Tambah",
+       "cost": 58,
+       "selling": 65,
+       "per": "meal/pax",
+       "notes": "CR ¥2,000 × 0.029; jual = KB RM65"
+      },
+      {
+       "id": "cts-a08",
+       "category": "Meals",
+       "label": "Dinner — Tambah",
+       "cost": 58,
+       "selling": 65,
+       "per": "meal/pax",
+       "notes": "CR ¥2,000 × 0.029; jual = KB RM65"
+      },
+      {
+       "id": "cts-a09",
+       "category": "Activity",
+       "label": "Niseko Ski (winter)",
+       "cost": 350,
+       "selling": 550,
+       "per": "pax",
+       "notes": "Add-on for ski experience"
+      },
+      {
+       "id": "cts-a10",
+       "category": "Activity",
+       "label": "Furano Lavender Farm (summer)",
+       "cost": 100,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Jul-Aug only"
+      },
+      {
+       "id": "cts-a11",
+       "category": "Activity",
+       "label": "Shiroi Koibito Park Factory Tour",
+       "cost": 50,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Sapporo white chocolate factory"
+      },
+      {
+       "id": "cts-a12",
+       "category": "Activity",
+       "label": "Wagyu Experience",
+       "cost": 174,
+       "selling": 250,
+       "per": "pax",
+       "notes": "¥6,000 × FX"
+      },
+      {
+       "id": "cts-a13",
+       "category": "Transport",
+       "label": "Infant Car Seat (compulsory)",
+       "cost": 145,
+       "selling": 197,
+       "per": "day",
+       "notes": "CR ¥5,000 per seat × 0.029; jual = katalog RM197/hari"
+      },
+      {
+       "id": "cts-a14",
+       "category": "Wifi",
+       "label": "Pocket Wifi 4G — daily",
+       "cost": 58,
+       "selling": 70,
+       "per": "day",
+       "notes": "CR ¥2,000/day × 0.029"
+      },
+      {
+       "id": "cts-a15",
+       "category": "Wifi",
+       "label": "Pocket Wifi 5G — daily",
+       "cost": 60,
+       "selling": 100,
+       "per": "day",
+       "notes": "Premium speed"
+      },
+      {
+       "id": "cts-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5d)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "cts-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10d)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5d)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "cts-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10d)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "cts-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5d)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "cts-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10d)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "cts-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5d)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10d)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "cts-a24",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": "Luggage tracker"
+      },
+      {
+       "id": "cts-a25",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "cts-a26",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "cts-a27",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "label": "Hokkaido › addons"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "content",
+      "blocks",
+      "custom"
+     ],
+     "from": "<h2>Simple Customisation</h2><p class='ssub'>Harga jual customer (MYR), tambah atas harga pakej asas. Semua add-on tertakluk availability &mdash; sahkan dengan consultant semasa quote.</p><h3 style='margin:14px 0 6px'>Add-on umum</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Pakej / Nota</th></tr></thead><tbody><tr><td class='it'>Disneyland / DisneySea</td><td class='add'>RM&nbsp;300 / pax</td><td>Tokyo &amp; Tokyo&ndash;Osaka (Day 4, ganti Odaiba/Akihabara)</td></tr><tr><td class='it'>Universal Studio Japan</td><td class='add'>RM&nbsp;250 / pax</td><td>Osaka (Day 4, ganti Osaka Bay/Shinsekai)</td></tr><tr><td class='it'>Infant car seat</td><td class='add'>RM&nbsp;197 / hari</td><td>Hokkaido &mdash; <b>wajib</b> untuk infant</td></tr><tr><td class='it'>Jam lebih (&gt;10 jam)</td><td class='add'>5,000 &ndash; 10,000 yen / jam</td><td>Bayar tunai terus kepada driver / guide</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add on Accommodation</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Accommodation</th><th>Tambahan 1 malam</th><th>Tolak 1 malam</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>3 Star Hotel atau Airbnb</td><td class='add'>RM&nbsp;300 / pax / malam</td><td class='ded'>RM&nbsp;250 / pax / malam</td><td>Semua pakej Tokyo, Osaka, Tokyo&ndash;Osaka &amp; Hokkaido</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add on Meal</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambahan 1 meal</th><th>Tolak 1 meal</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td class='add'>RM&nbsp;40 / pax</td><td class='ded'>RM&nbsp;40 / pax</td><td><b>Hotel sahaja</b> &mdash; penginapan Airbnb tidak termasuk breakfast</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM&nbsp;65 / pax</td><td class='ded'>RM&nbsp;65 / pax</td><td>Pakej asas tidak termasuk lunch</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM&nbsp;65 / pax</td><td class='ded'>RM&nbsp;65 / pax</td><td>Pakej asas tidak termasuk dinner</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Upgrade ke Private Transport &mdash; Tokyo (per pax)</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Tokyo City Tour</th><th>Fuji Day Tour</th></tr></thead><tbody><tr><td class='it'>2</td><td class='add'>RM&nbsp;1,097</td><td>RM&nbsp;1,197</td></tr><tr><td class='it'>3</td><td class='add'>RM&nbsp;797</td><td>RM&nbsp;797</td></tr><tr><td class='it'>4</td><td class='add'>RM&nbsp;597</td><td>RM&nbsp;697</td></tr><tr><td class='it'>5&ndash;7</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;597</td></tr><tr><td class='it'>8&ndash;9</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;497</td></tr><tr><td class='it'>10</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;497</td></tr><tr><td class='it'>11&ndash;12</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;397</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Upgrade ke Private Transport &mdash; Osaka (per pax)</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Osaka City Tour</th><th>Nara Day Tour</th><th>Kyoto Day Tour</th></tr></thead><tbody><tr><td class='it'>2</td><td class='add'>RM&nbsp;897</td><td>RM&nbsp;897</td><td>RM&nbsp;697</td></tr><tr><td class='it'>3</td><td class='add'>RM&nbsp;597</td><td>RM&nbsp;697</td><td>RM&nbsp;397</td></tr><tr><td class='it'>4</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;497</td><td>RM&nbsp;297</td></tr><tr><td class='it'>5</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;497</td><td>RM&nbsp;297</td></tr><tr><td class='it'>6&ndash;12</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;397</td><td>RM&nbsp;297</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add-on Public Transport &mdash; tour tambahan (per pax)</h3>",
+     "to": "<h2>Simple Customisation</h2><p class='ssub'>Harga jual customer (MYR), tambah atas harga pakej asas. Semua add-on tertakluk availability &mdash; sahkan dengan consultant semasa quote.</p><h3 style='margin:14px 0 6px'>Add-on umum</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Pakej / Nota</th></tr></thead><tbody><tr><td class='it'>Disneyland / DisneySea</td><td class='add'>RM&nbsp;300 / pax</td><td>Tokyo &amp; Tokyo&ndash;Osaka (Day 4, ganti Odaiba/Akihabara)</td></tr><tr><td class='it'>Universal Studio Japan</td><td class='add'>RM&nbsp;250 / pax</td><td>Osaka (Day 4, ganti Osaka Bay/Shinsekai)</td></tr><tr><td class='it'>Infant car seat</td><td class='add'>RM&nbsp;197 / hari</td><td>Hokkaido &mdash; <b>wajib</b> untuk infant</td></tr><tr><td class='it'>Jam lebih (&gt;10 jam)</td><td class='add'>5,000 &ndash; 10,000 yen / jam</td><td>Bayar tunai terus kepada driver / guide</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add on Accommodation</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Accommodation</th><th>Tambahan 1 malam</th><th>Tolak 1 malam</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>3 Star Hotel atau Airbnb</td><td class='add'>RM&nbsp;300 / pax / malam</td><td class='ded'>RM&nbsp;250 / pax / malam</td><td>Pakej Tokyo, Osaka &amp; Tokyo&ndash;Osaka</td></tr><tr><td class='it'>3 Star Hotel atau Apartment (Hokkaido-Sapporo)</td><td class='add'>RM&nbsp;400 / pax / malam</td><td class='ded'>RM&nbsp;250 / pax / malam</td><td>Hokkaido-Sapporo</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add on Meal</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Hidangan</th><th>Tambahan 1 meal</th><th>Tolak 1 meal</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td class='add'>RM&nbsp;40 / pax</td><td class='ded'>RM&nbsp;40 / pax</td><td><b>Hotel sahaja</b> &mdash; penginapan Airbnb tidak termasuk breakfast</td></tr><tr><td class='it'>Breakfast (Hokkaido-Sapporo)</td><td class='add'>RM&nbsp;50 / pax</td><td class='ded'>&ndash;</td><td><b>Hotel sahaja</b> &mdash; pakej Hokkaido tidak termasuk breakfast</td></tr><tr><td class='it'>Lunch</td><td class='add'>RM&nbsp;65 / pax</td><td class='ded'>RM&nbsp;65 / pax</td><td>Pakej asas tidak termasuk lunch</td></tr><tr><td class='it'>Dinner</td><td class='add'>RM&nbsp;65 / pax</td><td class='ded'>RM&nbsp;65 / pax</td><td>Pakej asas tidak termasuk dinner</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Upgrade ke Private Transport &mdash; Tokyo (per pax)</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Tokyo City Tour</th><th>Fuji Day Tour</th></tr></thead><tbody><tr><td class='it'>2</td><td class='add'>RM&nbsp;1,097</td><td>RM&nbsp;1,197</td></tr><tr><td class='it'>3</td><td class='add'>RM&nbsp;797</td><td>RM&nbsp;797</td></tr><tr><td class='it'>4</td><td class='add'>RM&nbsp;597</td><td>RM&nbsp;697</td></tr><tr><td class='it'>5&ndash;7</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;597</td></tr><tr><td class='it'>8&ndash;9</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;497</td></tr><tr><td class='it'>10</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;497</td></tr><tr><td class='it'>11&ndash;12</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;397</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Upgrade ke Private Transport &mdash; Osaka (per pax)</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Osaka City Tour</th><th>Nara Day Tour</th><th>Kyoto Day Tour</th></tr></thead><tbody><tr><td class='it'>2</td><td class='add'>RM&nbsp;897</td><td>RM&nbsp;897</td><td>RM&nbsp;697</td></tr><tr><td class='it'>3</td><td class='add'>RM&nbsp;597</td><td>RM&nbsp;697</td><td>RM&nbsp;397</td></tr><tr><td class='it'>4</td><td class='add'>RM&nbsp;497</td><td>RM&nbsp;497</td><td>RM&nbsp;297</td></tr><tr><td class='it'>5</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;497</td><td>RM&nbsp;297</td></tr><tr><td class='it'>6&ndash;12</td><td class='add'>RM&nbsp;397</td><td>RM&nbsp;397</td><td>RM&nbsp;297</td></tr></tbody></table></div><h3 style='margin:16px 0 6px'>Add-on Public Transport &mdash; tour tambahan (per pax)</h3>",
+     "label": "KB jepun › content › blocks › custom"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "content",
+      "blocks",
+      "stay"
+     ],
+     "from": "<h2>Accommodation</h2><p class='ssub'>Accommodation <b>termasuk</b> dalam semua pakej (Tokyo, Osaka, Tokyo&ndash;Osaka dan Hokkaido-Sapporo). Harga untuk 2&ndash;3 orang sebilik. Bilik hotel Jepun kecil (12&ndash;16 sqf standard) &mdash; bilik triple lagi sempit; maklum customer awal. Upgrade Apartment / Hotel 3&#9733; RM&nbsp;300 per malam per pax. Hotel muktamad disahkan 14 hari sebelum berlepas.</p>",
+     "to": "<h2>Accommodation</h2><p class='ssub'>Accommodation <b>termasuk</b> dalam semua pakej (Tokyo, Osaka, Tokyo&ndash;Osaka dan Hokkaido-Sapporo). Harga untuk 2&ndash;3 orang sebilik. Bilik hotel Jepun kecil (12&ndash;16 sqf standard) &mdash; bilik triple lagi sempit; maklum customer awal. Upgrade Apartment / Hotel 3&#9733; RM&nbsp;300 per malam per pax (Hokkaido-Sapporo RM&nbsp;400). Hotel muktamad disahkan 14 hari sebelum berlepas.</p>",
+     "label": "KB jepun › content › blocks › stay"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "hokkaido",
+      "ext",
+      "night",
+      "normal"
+     ],
+     "from": 300,
+     "to": 400,
+     "label": "KB jepun › calc › variants › hokkaido › ext › night › normal"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "hokkaido",
+      "ext",
+      "night",
+      "peak"
+     ],
+     "from": 300,
+     "to": 400,
+     "label": "KB jepun › calc › variants › hokkaido › ext › night › peak"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "hokkaido",
+      "ext",
+      "rates",
+      "bf",
+      "_default",
+      0,
+      "normal"
+     ],
+     "from": 40,
+     "to": 50,
+     "label": "KB jepun › calc › variants › hokkaido › ext › rates › bf › _default › #1 › normal"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "hokkaido",
+      "ext",
+      "rates",
+      "bf",
+      "_default",
+      0,
+      "peak"
+     ],
+     "from": 40,
+     "to": 50,
+     "label": "KB jepun › calc › variants › hokkaido › ext › rates › bf › _default › #1 › peak"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "paxNotes",
+      6,
+      "text"
+     ],
+     "from": "Breakfast RM 40/pax hanya untuk <b>hotel</b> &mdash; penginapan <b>Airbnb / apartment tidak termasuk breakfast</b>. Malam tambahan RM 300/pax, tolak malam RM 250/pax (3 Star Hotel or Airbnb). Lunch &amp; dinner RM 65/pax sehidangan.",
+     "to": "Breakfast RM 40/pax hanya untuk <b>hotel</b> &mdash; penginapan <b>Airbnb / apartment tidak termasuk breakfast</b>. Malam tambahan RM 300/pax, tolak malam RM 250/pax (3 Star Hotel or Airbnb). Lunch &amp; dinner RM 65/pax sehidangan. Hokkaido-Sapporo: malam tambahan RM 400/pax, breakfast RM 50/pax.",
+     "label": "KB jepun › calc › paxNotes › #7 › text"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "rnd",
+      "cost",
+      "vnight:hokkaido"
+     ],
+     "from": null,
+     "to": {
+      "addon": "cts-a04"
+     },
+     "label": "KB jepun › rnd › cost › vnight:hokkaido"
+    }
+   ],
+   "catalogs": [
+    "Catalog hokkaido-sapporo: add-ons from v75"
+   ],
+   "kb": [
+    "KB jepun: 8 changes"
+   ]
   }
  ]
 }

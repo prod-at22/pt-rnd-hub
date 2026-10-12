@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 74,
- "updatedAt": "2026-10-12T13:14:36Z",
+ "version": 75,
+ "updatedAt": "2026-10-12T13:45:11Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -10041,76 +10041,49 @@
    ],
    "addons": [
     {
-     "id": "cts-a01",
-     "category": "Hotel",
-     "label": "Apartment Sapporo Town (4N)",
-     "cost": 800.0,
-     "selling": 1200.0,
-     "per": "pax",
-     "notes": "Base option, RM800 cost estimate"
-    },
-    {
-     "id": "cts-a02",
-     "category": "Hotel",
-     "label": "3-Star Mystays Hotel (4N)",
-     "cost": 800.0,
-     "selling": 1200.0,
-     "per": "pax",
-     "notes": "Same selling sebagai Apartment"
-    },
-    {
-     "id": "cts-a03",
-     "category": "Hotel",
-     "label": "4-Star Best Western (4N)",
-     "cost": 1400.0,
-     "selling": 2000.0,
-     "per": "pax",
-     "notes": "Premium tier"
-    },
-    {
      "id": "cts-a04",
      "category": "Hotel",
-     "label": "Extra Night Apt/3* — Tambah",
-     "cost": 50.0,
-     "selling": 70.0,
+     "label": "Malam tambahan Hotel 3★ / Apartment",
+     "cost": 348.0,
+     "selling": 400.0,
      "per": "pax/night",
-     "notes": "Extend beyond 4N"
+     "notes": "Kos CR ¥12,000/pax/malam × 0.029; jual RM400 Hokkaido sahaja (PO 12 Oct 2026; Tokyo / Osaka RM300)"
     },
     {
-     "id": "cts-a05",
+     "id": "cts-a28",
      "category": "Hotel",
-     "label": "Extra Night 4* — Tambah",
-     "cost": 70.0,
-     "selling": 100.0,
+     "label": "Hotel — Tolak 1 malam (sudah termasuk dalam pakej)",
+     "cost": -348.0,
+     "selling": -250.0,
      "per": "pax/night",
-     "notes": null
+     "notes": "Hotel termasuk dalam pakej; guna hanya kalau customer tak perlu hotel (tolak RM250/pax/malam, sama dengan KB). Kos CR ¥12,000 × 0.029."
     },
     {
      "id": "cts-a06",
      "category": "Meals",
      "label": "Breakfast — Tambah",
-     "cost": 87.0,
-     "selling": 116.0,
+     "cost": 43.5,
+     "selling": 50.0,
      "per": "meal/pax",
-     "notes": "¥1500/breakfast × FX"
+     "notes": "CR ¥1,500/breakfast × 0.029; jual RM50 Hokkaido sahaja (PO 12 Oct 2026; Tokyo / Osaka RM40)"
     },
     {
      "id": "cts-a07",
      "category": "Meals",
      "label": "Lunch — Tambah",
-     "cost": 87.0,
-     "selling": 130.0,
+     "cost": 58.0,
+     "selling": 65.0,
      "per": "meal/pax",
-     "notes": "¥2000/lunch × FX (halal restaurant)"
+     "notes": "CR ¥2,000 × 0.029; jual = KB RM65"
     },
     {
      "id": "cts-a08",
      "category": "Meals",
      "label": "Dinner — Tambah",
-     "cost": 87.0,
-     "selling": 130.0,
+     "cost": 58.0,
+     "selling": 65.0,
      "per": "meal/pax",
-     "notes": "¥2000/dinner × FX"
+     "notes": "CR ¥2,000 × 0.029; jual = KB RM65"
     },
     {
      "id": "cts-a09",
@@ -10152,19 +10125,19 @@
      "id": "cts-a13",
      "category": "Transport",
      "label": "Infant Car Seat (compulsory)",
-     "cost": 197.0,
+     "cost": 145.0,
      "selling": 197.0,
      "per": "day",
-     "notes": "PDF: RM197/day for infant <2yr"
+     "notes": "CR ¥5,000 per seat × 0.029; jual = katalog RM197/hari"
     },
     {
      "id": "cts-a14",
      "category": "Wifi",
      "label": "Pocket Wifi 4G — daily",
-     "cost": 40.0,
+     "cost": 58.0,
      "selling": 70.0,
      "per": "day",
-     "notes": "WIF B2B ¥2,000/day"
+     "notes": "CR ¥2,000/day × 0.029"
     },
     {
      "id": "cts-a15",
@@ -10199,7 +10172,7 @@
      "label": "TripCare 360 — Couple (1-5d)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -10208,7 +10181,7 @@
      "label": "TripCare 360 — Couple (6-10d)",
      "cost": 122.87,
      "selling": 160.5,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -10217,7 +10190,7 @@
      "label": "TripCare 360 — Family (1-5d)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -10226,7 +10199,7 @@
      "label": "TripCare 360 — Family (6-10d)",
      "cost": 153.62,
      "selling": 201.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
