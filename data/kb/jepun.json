@@ -4067,6 +4067,24 @@
        "[Hokkaido]": [
         {
          "from": 1,
+         "to": 4,
+         "normal": 2800,
+         "peak": 2800
+        },
+        {
+         "from": 5,
+         "to": 8,
+         "normal": 3000,
+         "peak": 3000
+        },
+        {
+         "from": 9,
+         "to": 10,
+         "normal": 4800,
+         "peak": 4800
+        },
+        {
+         "from": 11,
          "to": 99,
          "normal": 0,
          "peak": 0
@@ -4107,6 +4125,24 @@
        "_default": [
         {
          "from": 1,
+         "to": 4,
+         "normal": -1800,
+         "peak": -1800
+        },
+        {
+         "from": 5,
+         "to": 8,
+         "normal": -1900,
+         "peak": -1900
+        },
+        {
+         "from": 9,
+         "to": 10,
+         "normal": -3000,
+         "peak": -3000
+        },
+        {
+         "from": 11,
          "to": 99,
          "normal": 0,
          "peak": 0
@@ -4127,6 +4163,24 @@
        "_default": [
         {
          "from": 1,
+         "to": 4,
+         "normal": -700,
+         "peak": -700
+        },
+        {
+         "from": 5,
+         "to": 8,
+         "normal": -800,
+         "peak": -800
+        },
+        {
+         "from": 9,
+         "to": 10,
+         "normal": -1500,
+         "peak": -1500
+        },
+        {
+         "from": 11,
          "to": 99,
          "normal": 0,
          "peak": 0
@@ -5711,6 +5765,33 @@
    },
    "vnight:hokkaido": {
     "addon": "cts-a04"
+   },
+   "rate:day:[Hokkaido]:1-4": {
+    "rm": 2247.5
+   },
+   "rate:dayDed:_default:1-4": {
+    "rm": -2247.5
+   },
+   "rate:airportDed:_default:1-4": {
+    "rm": -870.0
+   },
+   "rate:day:[Hokkaido]:5-8": {
+    "rm": 2392.5
+   },
+   "rate:dayDed:_default:5-8": {
+    "rm": -2392.5
+   },
+   "rate:airportDed:_default:5-8": {
+    "rm": -1015.0
+   },
+   "rate:day:[Hokkaido]:9-10": {
+    "rm": 3842.5
+   },
+   "rate:dayDed:_default:9-10": {
+    "rm": -3842.5
+   },
+   "rate:airportDed:_default:9-10": {
+    "rm": -1885.0
    }
   }
  }
