@@ -1,4 +1,4 @@
-# Status & handoff (12 Oct 2026, data v72 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v73 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Danang + Hanoi-Sapa + HCM-Dalat Ibrahim CR 2027 · next: ask the PO
-- Live: hub v72, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v73, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -130,7 +130,11 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Note: the Danang catalogs carry "Travel Date 2027 Jan–Feb +RM150/pax"; Hanoi catalogs carry none.
   v72: HCM 4D3N (Shopping Tour) removed — not sold any more (PO): catalog ho-chi-minh deleted (mirror removes the page / PDF), KB dalat card +
   calculator variant removed (texts now = the two Dalat variants), pt-kb-house catalogs.json nav link removed, HCM-only CR images removed.
-  The same Ibrahim 2027 CR also prices Phu Quoc — next.
+  **Phu Quoc (v73, PO ezie 12 Oct):** Ibrahim costs = CR 2027 (now – Dec 2027; 4D3N p.10, 5D4N p.11); child cost per CR (CWB 50 % / CNB free,
+  was 100 % / 75 % — that caused the "CWB below cost" flags); Costing 2–20 pax; Teddy Bear Museum = deduction −RM20 only (included in the
+  package, PO); duplicate add-ons removed; catalogs: single supplement RM240 (4D3N) / RM320 (5D4N) instead of "quoted on request" (PO);
+  KB: single texts = catalog, 2027 travel surcharge removed (not in the catalogs). Margins 2027: adult 17–33 %, CWB 55–63 %.
+  All Ibrahim destinations are now on the 2027 CR (contracts/<code>/…IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).

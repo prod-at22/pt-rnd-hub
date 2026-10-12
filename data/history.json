@@ -68499,6 +68499,3261 @@
    "kb": [
     "KB dalat: 19 changes"
    ]
+  },
+  {
+   "v": 73,
+   "at": "2026-10-12T11:38:12Z",
+   "by": "system",
+   "note": "Phu Quoc (PO ezie 12 Oct 2026): Ibrahim costs = CR 2027 (in force now until Dec 2027; 4D3N p.10, 5D4N p.11, cable car included); child cost per CR (CWB 50% / CNB free, was 100% / 75%); Costing 2–20 pax (CR has no 21–25 rate); Teddy Bear Museum add-on = deduction −RM20 only (included in CR / package); duplicate TripCare (Area 2) / Blue Ribbon add-ons removed; CR 2027 PDF in TO Contract Rate; catalogs: single supplement RM240 (4D3N) / RM320 (5D4N) instead of 'quoted on request' (PO: as the KB rate card); KB: single-supplement texts = catalog, 2027 travel surcharge removed (not in the catalogs). Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "note"
+     ],
+     "from": "",
+     "to": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
+     "label": "Phu Quoc › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "label"
+     ],
+     "from": "IBRAHIM 4D3N · Ground Cost",
+     "to": "IBRAHIM 4D3N · Ground Cost (CR hingga Dis 2027)",
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "2"
+     ],
+     "from": 2310,
+     "to": 1950,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "3"
+     ],
+     "from": 2080,
+     "to": 1750,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @3 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "4"
+     ],
+     "from": 2020,
+     "to": 1630,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @4 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "5"
+     ],
+     "from": 2020,
+     "to": 1630,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @5 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "6"
+     ],
+     "from": 1710,
+     "to": 1420,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @6 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "7"
+     ],
+     "from": 1550,
+     "to": 1350,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @7 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "8"
+     ],
+     "from": 1550,
+     "to": 1350,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @8 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "9"
+     ],
+     "from": 1500,
+     "to": 1180,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @9 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "10"
+     ],
+     "from": 1500,
+     "to": 1180,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @10 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "11"
+     ],
+     "from": 1390,
+     "to": 1150,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "12"
+     ],
+     "from": 1390,
+     "to": 1150,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "13"
+     ],
+     "from": 1390,
+     "to": 1150,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "14"
+     ],
+     "from": 1310,
+     "to": 1130,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "15"
+     ],
+     "from": 1310,
+     "to": 1130,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "16"
+     ],
+     "from": 1310,
+     "to": 1130,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "17"
+     ],
+     "from": 1280,
+     "to": 1080,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "18"
+     ],
+     "from": 1280,
+     "to": 1080,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "19"
+     ],
+     "from": 1280,
+     "to": 1080,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "20"
+     ],
+     "from": 1280,
+     "to": 1080,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "21"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "22"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "23"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "24"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "25"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "26"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "27"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "28"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "29"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "30"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "31"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @31 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "32"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @32 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "33"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @33 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "34"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @34 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "35"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @35 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "36"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @36 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "37"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @37 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "38"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @38 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "39"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @39 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Ground-Cost",
+      "values",
+      "40"
+     ],
+     "from": 1250,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Ground Cost › @40 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "21"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "22"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "23"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "24"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "25"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "26"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "27"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "28"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "29"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "30"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "31"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @31 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "32"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @32 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "33"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @33 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "34"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @34 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "35"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @35 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "36"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @36 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "37"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @37 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "38"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @38 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "39"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @39 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-4D3N__Tipping",
+      "values",
+      "40"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 4D3N · Tipping › @40 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "label"
+     ],
+     "from": "IBRAHIM 5D4N · Ground Cost",
+     "to": "IBRAHIM 5D4N · Ground Cost (CR hingga Dis 2027)",
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "2"
+     ],
+     "from": 2520,
+     "to": 2380,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @2 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "3"
+     ],
+     "from": 2260,
+     "to": 2150,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @3 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "4"
+     ],
+     "from": 2110,
+     "to": 2020,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @4 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "5"
+     ],
+     "from": 2110,
+     "to": 2020,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @5 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "6"
+     ],
+     "from": 1860,
+     "to": 1680,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @6 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "7"
+     ],
+     "from": 1710,
+     "to": 1650,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @7 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "8"
+     ],
+     "from": 1710,
+     "to": 1650,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @8 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "9"
+     ],
+     "from": 1660,
+     "to": 1480,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @9 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "10"
+     ],
+     "from": 1660,
+     "to": 1480,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @10 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "11"
+     ],
+     "from": 1630,
+     "to": 1450,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "12"
+     ],
+     "from": 1630,
+     "to": 1450,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "13"
+     ],
+     "from": 1630,
+     "to": 1450,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "14"
+     ],
+     "from": 1580,
+     "to": 1410,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "15"
+     ],
+     "from": 1580,
+     "to": 1410,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "16"
+     ],
+     "from": 1580,
+     "to": 1410,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "17"
+     ],
+     "from": 1510,
+     "to": 1380,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "18"
+     ],
+     "from": 1510,
+     "to": 1380,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "19"
+     ],
+     "from": 1510,
+     "to": 1380,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "20"
+     ],
+     "from": 1510,
+     "to": 1380,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "21"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "22"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "23"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "24"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "25"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "26"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "27"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "28"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "29"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "30"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "31"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @31 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "32"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @32 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "33"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @33 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "34"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @34 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "35"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @35 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "36"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @36 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "37"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @37 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "38"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @38 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "39"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @39 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Ground-Cost",
+      "values",
+      "40"
+     ],
+     "from": 1470,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Ground Cost › @40 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "21"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "22"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "23"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "24"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "25"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "26"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "27"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "28"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "29"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "30"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "31"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @31 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "32"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @32 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "33"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @33 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "34"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @34 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "35"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @35 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "36"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @36 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "37"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @37 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "38"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @38 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "39"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @39 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "tables",
+      "IBRAHIM-5D4N__Tipping",
+      "values",
+      "40"
+     ],
+     "from": 0,
+     "to": null,
+     "label": "Phu Quoc › Table › Table IBRAHIM 5D4N · Tipping › @40 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-4D3N",
+      "supplier"
+     ],
+     "from": "TO IBRAHIM 4D3N — Phu Quoc 4D3N (3-Star, Fullboard, includes cable car)",
+     "to": "TO IBRAHIM 4D3N — Phu Quoc 4D3N (3-Star, Fullboard, includes cable car, CR hingga Dis 2027)",
+     "label": "Phu Quoc › TO › TO Ibrahim › supplier"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-4D3N",
+      "paxMax"
+     ],
+     "from": 40,
+     "to": 20,
+     "label": "Phu Quoc › TO › TO Ibrahim › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-4D3N",
+      "notes"
+     ],
+     "from": "",
+     "to": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. CR tiada harga 21–25 pax; Costing 2–20 pax.",
+     "label": "Phu Quoc › TO › TO Ibrahim › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-5D4N",
+      "supplier"
+     ],
+     "from": "TO IBRAHIM 5D4N — Phu Quoc 5D4N (3-Star, Fullboard, includes cable car)",
+     "to": "TO IBRAHIM 5D4N — Phu Quoc 5D4N (3-Star, Fullboard, includes cable car, CR hingga Dis 2027)",
+     "label": "Phu Quoc › TO › TO Ibrahim › supplier"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-5D4N",
+      "paxMax"
+     ],
+     "from": 40,
+     "to": 20,
+     "label": "Phu Quoc › TO › TO Ibrahim › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "variants",
+      "IBRAHIM-5D4N",
+      "notes"
+     ],
+     "from": "",
+     "to": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. CR tiada harga 21–25 pax; Costing 2–20 pax.",
+     "label": "Phu Quoc › TO › TO Ibrahim › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 20,
+     "label": "Phu Quoc › Phu Quoc 4D3N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 1637,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 1637,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 1637,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 1637,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 1637,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 1537,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 1537,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 1537,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 1537,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 1537,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1437,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1437,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1437,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1437,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1437,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1337,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1337,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1337,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1337,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1337,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1237,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1237,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1237,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1237,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1237,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 1137,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 1137,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 1137,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 1137,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 1137,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 4D3N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 1,
+     "to": 0.5,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-4d3n",
+      "rules",
+      "cnbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 0,
+     "label": "Phu Quoc › Phu Quoc 4D3N › Rule › CNB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 20,
+     "label": "Phu Quoc › Phu Quoc 5D4N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Phu Quoc › Phu Quoc 5D4N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 1,
+     "to": 0.5,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "packages",
+      "ibrahim-5d4n",
+      "rules",
+      "cnbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 0,
+     "label": "Phu Quoc › Phu Quoc 5D4N › Rule › CNB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "pqc-a01",
+       "category": "Activity",
+       "label": "Water Taxi Grand World",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax/ride",
+       "notes": "Venice-style gondola"
+      },
+      {
+       "id": "pqc-a02",
+       "category": "Activity",
+       "label": "Teddy Bear Museum (entrance only)",
+       "cost": 0,
+       "selling": 20,
+       "per": "pax",
+       "notes": "Included in pakej"
+      },
+      {
+       "id": "pqc-a03",
+       "category": "Activity",
+       "label": "Honeymoon Bedroom Decoration",
+       "cost": 200,
+       "selling": 250,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "pqc-a04",
+       "category": "Activity",
+       "label": "Honeymoon Candle Light Dinner",
+       "cost": 200,
+       "selling": 250,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "pqc-a05",
+       "category": "Meals",
+       "label": "Extra Breakfast",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a06",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a07",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pqc-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 175,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pqc-a10",
+       "category": "Wifi",
+       "label": "Local SIM Card Unlimited",
+       "cost": 30,
+       "selling": 30,
+       "per": "card",
+       "notes": "Boleh order awal — RM30 vs RM60-80 di airport"
+      },
+      {
+       "id": "pqc-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN)"
+      },
+      {
+       "id": "pqc-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 79,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pqc-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 112,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pqc-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pqc-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 107,
+       "selling": 141,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pqc-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "pqc-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pqc-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pqc-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pqc-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "to": [
+      {
+       "id": "pqc-a01",
+       "category": "Activity",
+       "label": "Water Taxi Grand World",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax/ride",
+       "notes": "Venice-style gondola"
+      },
+      {
+       "id": "pqc-a02",
+       "category": "Activity",
+       "label": "Teddy Bear Museum — Tolak (sudah termasuk dalam pakej)",
+       "cost": -20,
+       "selling": -20,
+       "per": "pax",
+       "notes": "Teddy Bear Museum termasuk dalam CR & pakej; guna hanya kalau customer tak mahu (tolak RM20/pax, sama dengan KB)."
+      },
+      {
+       "id": "pqc-a03",
+       "category": "Activity",
+       "label": "Honeymoon Bedroom Decoration",
+       "cost": 200,
+       "selling": 250,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "pqc-a04",
+       "category": "Activity",
+       "label": "Honeymoon Candle Light Dinner",
+       "cost": 200,
+       "selling": 250,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "pqc-a05",
+       "category": "Meals",
+       "label": "Extra Breakfast",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a06",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a07",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 20,
+       "selling": 30,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "pqc-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pqc-a09",
+       "category": "Wifi",
+       "label": "Pocket Wifi Vietnam 3GB (4G) 5D4N",
+       "cost": 35,
+       "selling": 175,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pqc-a10",
+       "category": "Wifi",
+       "label": "Local SIM Card Unlimited",
+       "cost": 30,
+       "selling": 30,
+       "per": "card",
+       "notes": "Boleh order awal — RM30 vs RM60-80 di airport"
+      },
+      {
+       "id": "pqc-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN)"
+      },
+      {
+       "id": "pqc-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 79,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pqc-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 112,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pqc-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pqc-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 107,
+       "selling": 141,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pqc-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pqc-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pqc-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      }
+     ],
+     "label": "Phu Quoc › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "PQC",
+      "contracts"
+     ],
+     "from": [
+      {
+       "id": "1a1075462d8",
+       "name": "PT PQC Ibrahim Phu Quoc 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/pqc/1a1075462d8-PT_PQC_Ibrahim_Phu_Quoc_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 154952,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "10hMW48oG2xm5rfuhL_p2NQf-dF0sVLLd"
+      },
+      {
+       "id": "1a1075462d9",
+       "name": "PT PQC Ibrahim Phu Quoc 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/pqc/1a1075462d9-PT_PQC_Ibrahim_Phu_Quoc_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim",
+       "note": "From Drive · Production Team",
+       "size": 153149,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1fu2wZPQYuPYnMXIxc1-5I4cYUJZTrOvI"
+      }
+     ],
+     "to": [
+      {
+       "id": "1a1075462d8",
+       "name": "PT PQC Ibrahim Phu Quoc 5D4N Jan-Dec 2026.jpeg",
+       "file": "contracts/pqc/1a1075462d8-PT_PQC_Ibrahim_Phu_Quoc_5D4N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, diganti)",
+       "note": "From Drive · Production Team",
+       "size": 154952,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "10hMW48oG2xm5rfuhL_p2NQf-dF0sVLLd"
+      },
+      {
+       "id": "1a1075462d9",
+       "name": "PT PQC Ibrahim Phu Quoc 4D3N Jan-Dec 2026.jpeg",
+       "file": "contracts/pqc/1a1075462d9-PT_PQC_Ibrahim_Phu_Quoc_4D3N_Jan-Dec_2026.jpeg",
+       "to": "Ibrahim (2026, diganti)",
+       "note": "From Drive · Production Team",
+       "size": 153149,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1fu2wZPQYuPYnMXIxc1-5I4cYUJZTrOvI"
+      },
+      {
+       "id": "1a12fe7e5ba",
+       "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+       "file": "contracts/pqc/1a12fe7e5ba-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+       "to": "Ibrahim",
+       "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Phu Quoc 4D3N (hlm 10), 5D4N (hlm 11), termasuk cable car",
+       "size": 4812024,
+       "at": "2026-10-12T11:38:09Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Phu Quoc › TO Contract Rate"
+    },
+    {
+     "path": [
+      "catalogs",
+      "phu-quoc-4d3n",
+      "notes",
+      0,
+      "entries",
+      2
+     ],
+     "from": "Price for Single Supplement will be quoted upon request.",
+     "to": "Price for Single Supplement: RM240/pax.",
+     "label": "Catalog phu-quoc-4d3n › notes › #1 › entries › #3"
+    },
+    {
+     "path": [
+      "kb",
+      "phu-quoc",
+      "content",
+      "blocks",
+      "pricing"
+     ],
+     "from": "<div class='custblk'><h3>Yang perlu TC ingat</h3><ul class='klist'><li><b>Minimum 2 pax</b> &mdash; jadual katalog bermula pada tier 2&#8211;3 pax.</li><li><b>Tiada peak season surcharge</b> untuk Phu Quoc &mdash; boleh travel sepanjang tahun, termasuk cuti sekolah &amp; musim raya.</li><li>Harga termasuk semua entrance fee (Hon Thom Cable Car, Vinpearl Safari, Grand World, VinWonders, Teddy Bear Museum) + tipping + fullboard.</li><li>Umur dikira ikut <b>tarikh perjalanan</b>. Harga sah 24 jam selepas quotation dihantar.</li><li><b>Single supplement:</b> katalog nyatakan <i>quoted upon request</i> &mdash; minta quote dari consultant, jangan guna angka destinasi lain.</li></ul></div>",
+     "to": "<div class='custblk'><h3>Yang perlu TC ingat</h3><ul class='klist'><li><b>Minimum 2 pax</b> &mdash; jadual katalog bermula pada tier 2&#8211;3 pax.</li><li><b>Tiada peak season surcharge</b> untuk Phu Quoc &mdash; boleh travel sepanjang tahun, termasuk cuti sekolah &amp; musim raya.</li><li>Harga termasuk semua entrance fee (Hon Thom Cable Car, Vinpearl Safari, Grand World, VinWonders, Teddy Bear Museum) + tipping + fullboard.</li><li>Umur dikira ikut <b>tarikh perjalanan</b>. Harga sah 24 jam selepas quotation dihantar.</li><li><b>Single supplement:</b> +RM240/pax (4D3N) &middot; +RM320/pax (5D4N), ikut katalog.</li></ul></div>",
+     "label": "KB phu-quoc › content › blocks › pricing"
+    },
+    {
+     "path": [
+      "kb",
+      "phu-quoc",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip dan semua surcharge dikira sendiri dan terus masuk dalam harga per pax. Kadar accommodation, meal dan aktiviti mengikut <b>Rate Card Simple Customisation Phu Quoc</b>. <b>Tiada peak season surcharge</b> untuk Phu Quoc &mdash; boleh travel sepanjang tahun. <b>Blackout:</b> Chinese New Year 2027 (17&ndash;18 Feb 2027). CNY 2026 (16&ndash;22 Feb 2026) masih boleh booking, tetapi kedai souvenir banyak tutup &mdash; set expectation customer. <b>Perhatian:</b> rate card tiada kadar transport untuk hari tambahan, jadi hari tambahan akan bertanda <i>kadar belum diisi</i> &mdash; minta harga operator.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Phu Quoc 4D3N (3-Star Fullboard)</option><option value='1'>PT Phu Quoc 5D4N (3-Star Fullboard)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-8)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog kedua-dua varian)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>4D3N RM 240/pax &middot; 5D4N RM 320/pax (rate card ARBA &mdash; katalog tulis quoted upon request)</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip dan semua surcharge dikira sendiri dan terus masuk dalam harga per pax. Kadar accommodation, meal dan aktiviti mengikut <b>Rate Card Simple Customisation Phu Quoc</b>. <b>Tiada peak season surcharge</b> untuk Phu Quoc &mdash; boleh travel sepanjang tahun. <b>Blackout:</b> Chinese New Year 2027 (17&ndash;18 Feb 2027). CNY 2026 (16&ndash;22 Feb 2026) masih boleh booking, tetapi kedai souvenir banyak tutup &mdash; set expectation customer. <b>Perhatian:</b> rate card tiada kadar transport untuk hari tambahan, jadi hari tambahan akan bertanda <i>kadar belum diisi</i> &mdash; minta harga operator.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Phu Quoc 4D3N (3-Star Fullboard)</option><option value='1'>PT Phu Quoc 5D4N (3-Star Fullboard)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-8)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog kedua-dua varian)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>4D3N RM 240/pax &middot; 5D4N RM 320/pax (ikut katalog)</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB phu-quoc › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "phu-quoc",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Phu Quoc — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Phu Quoc 4D3N & 5D4N — hotel 3★ fullboard, ground + tipping, sah untuk travel hingga 31 Dis 2026. Katalog V3 (kemas kini 11 Mac 2026).*\n\n- **Travel 2027 (1 Jan – 30 Jun 2027): +RM100/pax** di atas harga katalog.\n- Itinerari, flight & harga tertakluk perubahan (cuaca, laut, trafik, keselamatan). Susunan hotel & itinerari muktamad **14 hari** sebelum trip.\n- Passport mesti sah minimum **6 bulan** dari tarikh berlepas, dengan sekurang-kurangnya 2 muka surat kosong.\n- **Tiket flight pergi-balik TIDAK termasuk** — customer beli sendiri. Cadangan: tiba PQC sebelum 2pm; berlepas 2pm ke atas pada hari akhir.\n- Operational caveat: susunan default boleh berubah tanpa notis ikut keadaan **cuaca & laut**. Hon Thom Cable Car (merentas laut 7.9km) boleh ditutup masa angin kuat/taufan (jarang).\n- Aktiviti/entrance yang tidak disertai **tidak boleh** ditukar dengan aktiviti lain, voucher atau tunai (cth: tiket Aquatopia non-refundable).\n- Requirement muslim-friendly (halal, solat, kemudahan wanita) adalah **baseline** setiap pakej. **Perhatian: tiada masjid awam di pulau Phu Quoc** — rujuk tab Solat.\n- Sila semak validity trip dengan staff sebelum booking connecting domestic flight.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Ada berapa varian pakej Phu Quoc?**\nDua: **PT Phu Quoc 4D3N** (3 malam) dan **PT Phu Quoc 5D4N** (4 malam). Kedua-duanya 3★ fullboard, private transport, Muslim driving guide, semua entrance fee + tipping termasuk.\n\n**Apa beza pakej 4D3N dan 5D4N?**\n5D4N menambah satu hari: VinPearl Safari + **Tranh Stream** diasingkan ke hari sendiri, plus lebih masa di Sanato Beach & Grand World. 4D3N menggabungkan Safari + VinWonders dalam Day 2 (lebih padat). Rujuk tab **Perbezaan Pakej** untuk perbandingan penuh.\n\n**Apa tarikan utama pakej ini?**\nHon Thom Cable Car (7,899.9 m — terpanjang di dunia merentas laut), VinWonders + VinPearl Safari (termasuk buggy), Grand World (Venice of Vietnam), Aquatopia, Sanato Beach, Kiss Bridge & Teddy Bear Museum. Semua entrance sudah termasuk.\n\n**Pakej ini fullboard?**\nYa — 4D3N: 3B/3L/3D · 5D4N: 4B/4L/4D. Breakfast di hotel, lunch & dinner di restoran halal yang diuruskan guide.\n\n**Tipping kena bayar lagi?**\nTidak. Tipping sudah termasuk dalam pakej — ini antara USP utama kami berbanding pesaing.\n\n**Boleh customize itinerari?**\nBoleh untuk perkara kecil (susunan hari, tambah add-on). Day 1 & hari akhir terikat pada waktu flight. Hari Utara (Grand World/VinWonders/Safari) dan hari Selatan (cable car/Aquatopia) boleh ditukar tempat kerana dalam pulau yang sama. Perubahan besar perlu quote semula.\n\n**Berapa lama tour setiap hari?**\nTiada had jam rasmi didokumenkan untuk Phu Quoc (berbeza dengan pakej China yang ada asas 10 jam/hari) — driver & guide fleksibel. Biasanya mula selepas breakfast dan balik selepas dinner/night market.\n\n**Berapa lama di Sanato Beach dan night market?**\nSanato Beach lebih kurang 30 minit–1 jam (lebih lama jika tunggu night market buka); night market lebih kurang 1 jam.\n\n**Day 2 sempat ke night market selepas show VinWonders?**\nSempat. Show dijangka mula 6:00 petang dan habis dalam sejam, kemudian dinner dan terus ke night market.\n\n**Kalau tak nak masuk water park boleh skip?**\nBoleh — tetapi tiket entrance Aquatopia **non-refundable**. Customer boleh bersiar-siar di kawasan sekitar sementara yang lain bermain air.\n\n**VinWonders untuk anak bawah 100cm boleh?**\nBoleh dan **masuk percuma** — Fairy Land (mini carousel, mini train, bouncy castle), Animal Farm & petting zoo, Mini Ferris Wheel, Giant Sandbox, Soft Play Area, Carousel of Sea Creatures & Aquarium. Permainan besar (roller coaster) ada had ketinggian.\n\n**Banyak berjalan tak?**\nYa, terutama VinWonders & VinPearl Safari. Buggy termasuk untuk Safari. Pakai kasut sport yang selesa; stroller boleh dibawa tetapi tidak semua tempat stroller-friendly.\n\n**Ada travel map untuk trip ini?**\nAda — rujuk tab **Travel Map** (route map rasmi 4H3M + 5H4M). Susunan default boleh berubah ikut cuaca, laut & trafik tanpa notis.\n\n**Kiss of the Sea Show termasuk dalam pakej?**\n**Tidak** — optional, bayar sendiri di lokasi. Show ~30 minit di Sunset Town, biasanya sekitar 9:00 malam, harga pintu ~950,000 VND/pax. Tiada harga jualan ARBA untuk show ini.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat di Phu Quoc?**\nTidak — pilihan halal **terhad**. Operator guna restoran halal/Muslim yang sama sepanjang trip dengan hidangan berbeza setiap hari. Ini perlu dinyatakan awal kepada customer supaya tiada kejutan.\n\n**Makan apa dalam pakej?**\nBreakfast di hotel: nasi lemak, mee goreng mamak, bihun goreng, nasi goreng, kuetiau goreng, sup daging Vietnam, roti canai. Lunch & dinner: set menu — nasi putih, sup, ayam, sayur, telur goreng, ikan & buah.\n\n**Ada makanan halal dalam theme park?**\nSangat terhad. Guide susun set halal atau makan di luar park. Jangan janji ada gerai halal dalam VinWonders/Safari/Grand World.\n\n**Boleh makan di night market?**\nTidak disarankan untuk makanan — banyak gerai bukan halal dan arak dijual. Makan set dinner halal dahulu, kemudian beli cenderahati/barang bukan makanan di pasar malam.\n\n**Boleh bawa makanan sendiri dari Malaysia?**\nBoleh, tetapi elakkan terlalu banyak pek makanan ready-to-eat (isu kastam). Letak semua makanan & ubat dalam satu beg khas dengan label jelas untuk mudah diperiksa.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam pek asal beserta label (jangan buka atau salin pek). Air panas untuk bancuh susu boleh minta dari kru penerbangan.\n\n**Ada masjid di Phu Quoc?**\n**Tiada masjid awam di pulau Phu Quoc.** Masjid terdekat di Rach Gia (tanah besar), kira-kira 1 jam dengan feri. Ini fakta penting untuk set expectation customer.\n\n**Jadi solat di mana?**\nZohor + Asar dan Maghrib + Isyak boleh **dijamak di hotel**. Semasa tour, guide akan aturkan ruang solat di restoran halal yang digunakan. Tour Leader kongsi waktu solat dalam group WhatsApp; guna app Muslim untuk arah kiblat.\n\n**Ada surau di theme park & attraction?**\nTiada surau awam yang didokumenkan di kompleks Vinpearl, Grand World, Sunset Town atau Hon Thom. Guide (Muslim) akan aturkan ruang solat di restoran halal yang digunakan, dan Zohor+Asar / Maghrib+Isyak boleh dijamak di hotel. **Jangan janji \"ada surau\"** kepada customer.\n\n**Perlu bawa apa untuk solat?**\nTelekung, sejadah kecil dan **botol kecil/spray untuk wudhu** — tandas di Phu Quoc tiada getah paip.\n\n**Ada arak dalam makanan?**\nTidak dalam restoran halal yang digunakan. Tetapi arak dijual bebas di night market, kafe & Grand World — bukan isu untuk makanan pakej, cuma perlu tahu suasana.\n\n### C. Visa & Passport\n\n**Perlu visa ke Phu Quoc?**\nTidak. Dua lapisan pengecualian: (1) warga Malaysia bebas visa ke Vietnam **30 hari**; (2) Phu Quoc ada pengecualian visa **30 hari untuk semua warganegara** asalkan tiba terus ke Phu Quoc melalui udara/laut.\n\n**Kalau transit di Ho Chi Minh atau Hanoi macam mana?**\nJika kekal dalam kawasan transit antarabangsa (tidak melalui imigresen), pengecualian Phu Quoc masih terpakai. Untuk warga Malaysia ini tidak jadi isu kerana bebas visa 30 hari ke seluruh Vietnam.\n\n**Boleh sambung ke tanah besar Vietnam?**\nUntuk warga Malaysia — boleh (bebas visa 30 hari). Untuk pelancong bukan Malaysia yang guna pengecualian khas Phu Quoc — **tidak boleh** keluar dari pulau tanpa visa.\n\n**Passport perlu sah berapa lama?**\nMinimum **6 bulan** dari tarikh berlepas, dengan sekurang-kurangnya 2 muka surat kosong. Tanggungjawab customer untuk semak awal.\n\n**Dokumen apa perlu disediakan?**\nTour Voucher (softcopy memadai; satu family satu voucher) + Covernote insurance. Untuk anak bawah 18 tahun, cukup passport jika bersama parents — salinan surat beranak sebagai standby.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Customer beli sendiri. Rujuk tab **Flight & Airport** untuk cadangan.\n\n**Berapa lama flight KL–Phu Quoc?**\nKira-kira **1 jam 50 minit** direct. AirAsia satu-satunya airline direct KUL–PQC.\n\n**Flight apa yang disyorkan?**\n**AK 545** (KUL 12:50 → PQC 13:35) pergi dan **AK 546** (PQC 14:05 → KUL 16:33) balik — harian, anggaran return RM660–1,000. Pasangan ini padan dengan syor katalog: tiba sebelum 2pm hari pertama, berlepas 2pm ke atas hari akhir. Rujuk jadual di bahagian atas tab Flight & Airport.\n\n**Airport apa di Phu Quoc?**\nPhu Quoc International Airport (PQC), ~10 minit dari kawasan Long Beach/Duong Dong. Cadangan tiba sebelum 2pm untuk mula tour; hari akhir berlepas 2pm ke atas.\n\n**Perlu isi arrival card?**\n**Tidak** — Vietnam tiada arrival card.\n\n**Flow selepas turun plane?**\nGuide/Tour Leader akan brief secara detail selepas touch down. Airport pick-up sudah termasuk dalam pakej.\n\n**Bagasi AirAsia macam mana?**\nCheck-in **20kg** (maksimum 2 beg/pax; satu beg tidak melebihi 30kg kerana had pengendalian). Hand carry **7kg** — 1 handbag/sling bag + 1 cabin luggage.\n\n**Boleh share luggage allowance dengan keluarga?**\nBoleh — 3 pax = 60kg dikongsi. Tiada had kuantiti beg jika combine, tetapi total tidak melebihi allowance dan satu beg tidak melebihi 30kg. Had 2 beg per pax kekal.\n\n**Apa boleh dan tak boleh dalam hand carry?**\nCecair maksimum 100ml (dalam plastik ketat); lebih 100ml kena check-in. Barang tajam (gunting, mata pisau, pemotong kuku, pembuka botol) kena check-in.\n\n**Powerbank macam mana?**\nMaksimum **100Wh (~20,000mAh)**, **hand carry sahaja** — tiada bateri/powerbank dalam check-in luggage. Charger, cable & adapter pun letak hand carry.\n\n**Beg susu anak dikira hand carry?**\nYa. Infant bawah 2 tahun tiada baggage allowance; hanya stroller free of charge. Barang lain dikira dalam allowance cabin 7kg penjaga.\n\n**Stroller perlu check in?**\nTidak. Inform staf kaunter semasa check-in untuk dapatkan tag; stroller boleh dibawa hingga pintu pesawat. Disyorkan stroller travel-friendly/mudah dilipat kerana ada tempat yang tidak stroller-friendly.\n\n**Perlu wrap bag?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Servis wrap ada di KLIA2 (belakang Starbucks); plastik sama boleh guna semula untuk balik.\n\n**Boleh pilih seat dalam flight?**\nTiket group booking — seat ditetapkan random oleh airline. Airport conductor / Tour Leader akan susun supaya keluarga duduk berdekatan, keutamaan kepada keluarga dengan anak kecil & warga emas.\n\n**Meeting point di KLIA2 di mana?**\nDepan Restoran **Din Tai Fung, Level 3**, **4 jam sebelum** waktu berlepas untuk briefing bersama airport conductor. Sebarang perubahan diumumkan dalam group WhatsApp. Berada di boarding gate sekurang-kurangnya 1 jam 15 minit sebelum berlepas.\n\n### E. Hotel & Bilik\n\n**Boleh upgrade hotel?**\nBoleh — 4★ (Muong Thanh Luxury / Marina Seaside Boutique) **+RM140/pax/malam** (4D3N +RM420 · 5D4N +RM560). Katalog hanya ada tier 3★ dan 4★. Rate card ada kadar **malam tambahan** 5★ (RM320/pax/malam) tetapi **tiada kadar upgrade 3★ → 5★**, jadi pakej penuh 5★ belum boleh diquote — rujuk PO.\n\n**Boleh pilih hotel di kawasan Utara?**\nBoleh — kawasan Grand World (Utara) **+RM50/pax** atas permintaan. Sesuai jika customer nak dekat Grand World/VinWonders, tetapi jauh dari Sunset Town/cable car.\n\n**Bilik untuk 3 orang macam mana?**\nHarga berdasarkan 2@3 orang sebilik; bilik triple biasanya extra bed. Bilik single = single supplement.\n\n**Ada bilik family / connecting?**\nIkut availability. Susunan bilik keluarga berdekatan diuruskan — minta awal semasa booking.\n\n**Bila hotel muktamad disahkan?**\n**14 hari** sebelum trip (itinerari & susunan hotel muktamad).\n\n**Ada laundry & barang mandian?**\nLaundry service hotel ada (tiada self-service) — bawa baju secukupnya. Sabun mandi & syampu disediakan.\n\n### F. Cuaca & Musim\n\n**Bila waktu terbaik ke Phu Quoc?**\nMusim kering **Nov–April** — laut tenang, view cable car & sunset terbaik. Tetapi boleh travel sepanjang tahun kerana tiada peak season surcharge.\n\n**Musim hujan bila?**\nPaling kerap **Jun–September** (musim hujan luas Mei–Okt). Baju hujan disediakan. Bulan paling panas & kering: **Mac**.\n\n**Cuaca sama macam Malaysia?**\nYa, hampir sama (tropika, GMT+7). Musim hujan lebih ketara pertengahan tahun.\n\n**Hujan teruk cable car buka tak?**\nBeroperasi seperti biasa dalam hujan biasa; hanya ditutup masa **angin kuat/taufan** (jarang). Ada juga rehat teknikal berkala sepanjang hari — guide susun masa naik. Jika ditutup, itinerari disusun semula.\n\n### G. Shopping & Duit\n\n**Guna duit apa?**\nVietnamese Dong (VND). Kad debit/kredit, BigPay/Wise, online transfer & tunai diterima di kebanyakan tempat besar; gerai kecil & night market utamakan tunai.\n\n**Bawa duit belanja berapa?**\nTripdoc: anggaran **RM1,000–RM1,500/pax**; untuk yang tidak banyak membeli-belah **RM300–RM600** sudah memadai (≈2–4 juta Dong). Tukar wang lebih awal di Malaysia; guide boleh bantu.\n\n**Perlu aktifkan kad untuk overseas withdrawal?**\nYa — bagi yang nak guna kad debit/kredit untuk keluarkan tunai, aktifkan fungsi overseas withdrawal sebelum berlepas.\n\n**Phu Quoc sesuai untuk shopping?**\nBukan destinasi shopping seperti Ho Chi Minh. Cenderahati popular: **lada hitam Phu Quoc**, mutiara Phu Quoc (Ngoc Hien Pearl Farm) & kraf tangan tempatan.\n\n**Ada apa-apa yang perlu bayar sendiri dalam itinerari?**\nYa — perkara yang tidak tersenarai, contohnya water taxi di Grand World (RM50/pax) dan Kiss of the Sea Show. Nyatakan awal supaya customer tidak terkejut.\n\n### H. Payment & Refund\n\n**Ada surcharge peak season?**\nTiada untuk Phu Quoc — boleh travel sepanjang tahun tanpa tambahan. Untuk travel 1 Jan–30 Jun 2027: **+RM100/pax**.\n\n**Boleh travel waktu CNY?**\nBoleh. Satu-satunya blackout dalam katalog V3 ialah **CNY 2027 (17–18 Feb 2027)**. CNY 2026 (16–22 Feb 2026) **boleh booking** — attraction utama buka, cuma kedai souvenir & banyak gerai tutup.\n\n### I. Add-ons & Customization\n\n**Ada add-on apa?**\nWater taxi Grand World, honeymoon decoration & candle light dinner, extra meal, pocket wifi, local SIM, takaful Etiqa & luggage tracker. Rujuk tab **Simple Customisation**.\n\n**Water taxi Grand World berapa?**\n**RM50/pax/ride** (optional, harga jualan). Katalog senaraikan water taxi sebagai contoh aktiviti optional yang dibayar sendiri oleh customer.\n\n**Ada pakej honeymoon?**\nAda — bedroom decoration RM250/pasangan & candle light dinner RM250/pasangan.\n\n**Boleh tambah insurans & wifi?**\nYa — Takaful Etiqa TripCare 360 dari RM45 (individu, 1–5 hari, Area 1); pocket wifi RoamingMan RM80 (4D3N) / RM175 (5D4N); atau local SIM unlimited RM30 (order awal dengan guide — di airport RM60–80).\n\n**Bila pocket WiFi diserahkan?**\nBiasanya semasa briefing di KLIA2 sebelum berlepas (bersama airport conductor).\n\n**Boleh tambah meal?**\nYa — tambah **RM30/pax/meal**, dan rate card juga ada kadar **potong RM20/pax/meal** untuk lunch atau dinner. Breakfast tidak boleh dipotong (ia datang bersama bilik). Jangan campur dua perkara: potong RM20 ialah membuang hidangan itu daripada pakej semasa quote — kalau hidangan sudah termasuk dalam harga dan customer pilih untuk tidak makan semasa trip, katalog nyatakan **tiada refund**.\n\n**Ada free gift?**\nAda — Phu Quoc: **Water Taxi Experience in Grand World** (kod FPQC2), plus bullet BRB Luggage Tag / Pocket Wifi 4G per booking. Bullet wajib tanya PO/Leader dahulu.\n\n### J. Kesihatan & Keselamatan\n\n**Perlu travel insurance?**\nSangat disyorkan — cable car merentas laut 7.9km & aktiviti adventure (water park, roller coaster). Pastikan polisi meliputi aktiviti ketinggian.\n\n**Selamat ke Phu Quoc?**\nSecara umum selamat. Jaga barang peribadi terutama di kawasan sesak & tempat awam (night market, theme park) untuk elak kecurian/seluk saku.\n\n**Boleh bawa ubat preskripsi?**\nBoleh — ubat preskripsi (darah tinggi, kencing manis) perlu disertakan surat doktor/salinan preskripsi. Ubat OTC seperti panadol & selsema tidak perlu preskripsi.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh, dibawa on board. Sertakan surat doktor jika ada.\n\n**Ada sekatan kastam yang perlu tahu?**\nTidak dibenarkan: dadah, steroid, senjata api, bahan letupan, produk haiwan terancam, dan produk segar (buah, daging, tenusu). Elakkan bawa terlalu banyak pek makanan ready-to-eat.\n\n**Air paip boleh diminum?**\nTidak — guna air botol. Hotel biasanya sediakan air botol harian.\n\n### K. Praktikal (Internet, Socket, Masa, Tandas)\n\n**Pilihan internet?**\nLocal SIM unlimited RM30 (order awal dengan guide; RM60–80 di airport), pocket wifi RoamingMan melalui portal pelanggan ARBA, atau roaming telco sendiri. Tiada sekatan aplikasi di Vietnam — WhatsApp, Google & media sosial berfungsi seperti biasa (tidak perlu VPN).\n\n**Beza masa dengan Malaysia?**\nPhu Quoc GMT+7 — **1 jam lewat** dari Malaysia.\n\n**Plug socket jenis apa?**\n2-pin: Type A (pipih) & Type C (bulat). Bawa universal adapter; extension plug berguna jika banyak peralatan.\n\n**Tandas macam mana?**\nBersih di hotel & theme park, tetapi **tiada getah paip** — bawa botol kecil/spray untuk istinjak & wudhu.\n\n**Boleh guna e-hailing sendiri?**\nGrab ada di Phu Quoc, tetapi pakej ini private transport sepanjang trip jadi biasanya tidak perlu. Untuk free & easy, guide boleh bantu aturkan.\n\n**Bahasa apa digunakan?**\nVietnamese. Guide bertutur Melayu/English, jadi tiada isu komunikasi sepanjang tour.\n\n### L. Packing\n\n**Kasut apa sesuai?**\nKasut sport/selesa — banyak berjalan di theme park & safari. Selipar untuk pantai/water park.\n\n**Apa perlu bawa?**\nDuit poket, passport (sah 6 bulan), pakaian secukupnya, pakaian ibadah (telekung/sejadah), botol kecil untuk wudhu, peralatan mandi & solek, powerbank + charger + universal adapter (hand carry), kasut selesa, ubat peribadi, sunblock & topi.\n\n**Perlu bawa apa untuk water park?**\nPakaian renang (muslimah/bertutup) — **swimsuit wajib** untuk water slides; tuala, pakaian ganti & beg plastik untuk baju basah.\n\n**Perlu kipas atau baju sejuk?**\nKipas elektronik kecil berguna untuk musim panas (Mac). Baju sejuk nipis untuk hawa dingin kenderaan/kabin cable car & flight.\n",
+     "to": "# PT Phu Quoc — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Phu Quoc 4D3N & 5D4N — hotel 3★ fullboard, ground + tipping, sah untuk travel hingga 31 Dis 2026. Katalog V3 (kemas kini 11 Mac 2026).*\n\n- Itinerari, flight & harga tertakluk perubahan (cuaca, laut, trafik, keselamatan). Susunan hotel & itinerari muktamad **14 hari** sebelum trip.\n- Passport mesti sah minimum **6 bulan** dari tarikh berlepas, dengan sekurang-kurangnya 2 muka surat kosong.\n- **Tiket flight pergi-balik TIDAK termasuk** — customer beli sendiri. Cadangan: tiba PQC sebelum 2pm; berlepas 2pm ke atas pada hari akhir.\n- Operational caveat: susunan default boleh berubah tanpa notis ikut keadaan **cuaca & laut**. Hon Thom Cable Car (merentas laut 7.9km) boleh ditutup masa angin kuat/taufan (jarang).\n- Aktiviti/entrance yang tidak disertai **tidak boleh** ditukar dengan aktiviti lain, voucher atau tunai (cth: tiket Aquatopia non-refundable).\n- Requirement muslim-friendly (halal, solat, kemudahan wanita) adalah **baseline** setiap pakej. **Perhatian: tiada masjid awam di pulau Phu Quoc** — rujuk tab Solat.\n- Sila semak validity trip dengan staff sebelum booking connecting domestic flight.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Ada berapa varian pakej Phu Quoc?**\nDua: **PT Phu Quoc 4D3N** (3 malam) dan **PT Phu Quoc 5D4N** (4 malam). Kedua-duanya 3★ fullboard, private transport, Muslim driving guide, semua entrance fee + tipping termasuk.\n\n**Apa beza pakej 4D3N dan 5D4N?**\n5D4N menambah satu hari: VinPearl Safari + **Tranh Stream** diasingkan ke hari sendiri, plus lebih masa di Sanato Beach & Grand World. 4D3N menggabungkan Safari + VinWonders dalam Day 2 (lebih padat). Rujuk tab **Perbezaan Pakej** untuk perbandingan penuh.\n\n**Apa tarikan utama pakej ini?**\nHon Thom Cable Car (7,899.9 m — terpanjang di dunia merentas laut), VinWonders + VinPearl Safari (termasuk buggy), Grand World (Venice of Vietnam), Aquatopia, Sanato Beach, Kiss Bridge & Teddy Bear Museum. Semua entrance sudah termasuk.\n\n**Pakej ini fullboard?**\nYa — 4D3N: 3B/3L/3D · 5D4N: 4B/4L/4D. Breakfast di hotel, lunch & dinner di restoran halal yang diuruskan guide.\n\n**Tipping kena bayar lagi?**\nTidak. Tipping sudah termasuk dalam pakej — ini antara USP utama kami berbanding pesaing.\n\n**Boleh customize itinerari?**\nBoleh untuk perkara kecil (susunan hari, tambah add-on). Day 1 & hari akhir terikat pada waktu flight. Hari Utara (Grand World/VinWonders/Safari) dan hari Selatan (cable car/Aquatopia) boleh ditukar tempat kerana dalam pulau yang sama. Perubahan besar perlu quote semula.\n\n**Berapa lama tour setiap hari?**\nTiada had jam rasmi didokumenkan untuk Phu Quoc (berbeza dengan pakej China yang ada asas 10 jam/hari) — driver & guide fleksibel. Biasanya mula selepas breakfast dan balik selepas dinner/night market.\n\n**Berapa lama di Sanato Beach dan night market?**\nSanato Beach lebih kurang 30 minit–1 jam (lebih lama jika tunggu night market buka); night market lebih kurang 1 jam.\n\n**Day 2 sempat ke night market selepas show VinWonders?**\nSempat. Show dijangka mula 6:00 petang dan habis dalam sejam, kemudian dinner dan terus ke night market.\n\n**Kalau tak nak masuk water park boleh skip?**\nBoleh — tetapi tiket entrance Aquatopia **non-refundable**. Customer boleh bersiar-siar di kawasan sekitar sementara yang lain bermain air.\n\n**VinWonders untuk anak bawah 100cm boleh?**\nBoleh dan **masuk percuma** — Fairy Land (mini carousel, mini train, bouncy castle), Animal Farm & petting zoo, Mini Ferris Wheel, Giant Sandbox, Soft Play Area, Carousel of Sea Creatures & Aquarium. Permainan besar (roller coaster) ada had ketinggian.\n\n**Banyak berjalan tak?**\nYa, terutama VinWonders & VinPearl Safari. Buggy termasuk untuk Safari. Pakai kasut sport yang selesa; stroller boleh dibawa tetapi tidak semua tempat stroller-friendly.\n\n**Ada travel map untuk trip ini?**\nAda — rujuk tab **Travel Map** (route map rasmi 4H3M + 5H4M). Susunan default boleh berubah ikut cuaca, laut & trafik tanpa notis.\n\n**Kiss of the Sea Show termasuk dalam pakej?**\n**Tidak** — optional, bayar sendiri di lokasi. Show ~30 minit di Sunset Town, biasanya sekitar 9:00 malam, harga pintu ~950,000 VND/pax. Tiada harga jualan ARBA untuk show ini.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat di Phu Quoc?**\nTidak — pilihan halal **terhad**. Operator guna restoran halal/Muslim yang sama sepanjang trip dengan hidangan berbeza setiap hari. Ini perlu dinyatakan awal kepada customer supaya tiada kejutan.\n\n**Makan apa dalam pakej?**\nBreakfast di hotel: nasi lemak, mee goreng mamak, bihun goreng, nasi goreng, kuetiau goreng, sup daging Vietnam, roti canai. Lunch & dinner: set menu — nasi putih, sup, ayam, sayur, telur goreng, ikan & buah.\n\n**Ada makanan halal dalam theme park?**\nSangat terhad. Guide susun set halal atau makan di luar park. Jangan janji ada gerai halal dalam VinWonders/Safari/Grand World.\n\n**Boleh makan di night market?**\nTidak disarankan untuk makanan — banyak gerai bukan halal dan arak dijual. Makan set dinner halal dahulu, kemudian beli cenderahati/barang bukan makanan di pasar malam.\n\n**Boleh bawa makanan sendiri dari Malaysia?**\nBoleh, tetapi elakkan terlalu banyak pek makanan ready-to-eat (isu kastam). Letak semua makanan & ubat dalam satu beg khas dengan label jelas untuk mudah diperiksa.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam pek asal beserta label (jangan buka atau salin pek). Air panas untuk bancuh susu boleh minta dari kru penerbangan.\n\n**Ada masjid di Phu Quoc?**\n**Tiada masjid awam di pulau Phu Quoc.** Masjid terdekat di Rach Gia (tanah besar), kira-kira 1 jam dengan feri. Ini fakta penting untuk set expectation customer.\n\n**Jadi solat di mana?**\nZohor + Asar dan Maghrib + Isyak boleh **dijamak di hotel**. Semasa tour, guide akan aturkan ruang solat di restoran halal yang digunakan. Tour Leader kongsi waktu solat dalam group WhatsApp; guna app Muslim untuk arah kiblat.\n\n**Ada surau di theme park & attraction?**\nTiada surau awam yang didokumenkan di kompleks Vinpearl, Grand World, Sunset Town atau Hon Thom. Guide (Muslim) akan aturkan ruang solat di restoran halal yang digunakan, dan Zohor+Asar / Maghrib+Isyak boleh dijamak di hotel. **Jangan janji \"ada surau\"** kepada customer.\n\n**Perlu bawa apa untuk solat?**\nTelekung, sejadah kecil dan **botol kecil/spray untuk wudhu** — tandas di Phu Quoc tiada getah paip.\n\n**Ada arak dalam makanan?**\nTidak dalam restoran halal yang digunakan. Tetapi arak dijual bebas di night market, kafe & Grand World — bukan isu untuk makanan pakej, cuma perlu tahu suasana.\n\n### C. Visa & Passport\n\n**Perlu visa ke Phu Quoc?**\nTidak. Dua lapisan pengecualian: (1) warga Malaysia bebas visa ke Vietnam **30 hari**; (2) Phu Quoc ada pengecualian visa **30 hari untuk semua warganegara** asalkan tiba terus ke Phu Quoc melalui udara/laut.\n\n**Kalau transit di Ho Chi Minh atau Hanoi macam mana?**\nJika kekal dalam kawasan transit antarabangsa (tidak melalui imigresen), pengecualian Phu Quoc masih terpakai. Untuk warga Malaysia ini tidak jadi isu kerana bebas visa 30 hari ke seluruh Vietnam.\n\n**Boleh sambung ke tanah besar Vietnam?**\nUntuk warga Malaysia — boleh (bebas visa 30 hari). Untuk pelancong bukan Malaysia yang guna pengecualian khas Phu Quoc — **tidak boleh** keluar dari pulau tanpa visa.\n\n**Passport perlu sah berapa lama?**\nMinimum **6 bulan** dari tarikh berlepas, dengan sekurang-kurangnya 2 muka surat kosong. Tanggungjawab customer untuk semak awal.\n\n**Dokumen apa perlu disediakan?**\nTour Voucher (softcopy memadai; satu family satu voucher) + Covernote insurance. Untuk anak bawah 18 tahun, cukup passport jika bersama parents — salinan surat beranak sebagai standby.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Customer beli sendiri. Rujuk tab **Flight & Airport** untuk cadangan.\n\n**Berapa lama flight KL–Phu Quoc?**\nKira-kira **1 jam 50 minit** direct. AirAsia satu-satunya airline direct KUL–PQC.\n\n**Flight apa yang disyorkan?**\n**AK 545** (KUL 12:50 → PQC 13:35) pergi dan **AK 546** (PQC 14:05 → KUL 16:33) balik — harian, anggaran return RM660–1,000. Pasangan ini padan dengan syor katalog: tiba sebelum 2pm hari pertama, berlepas 2pm ke atas hari akhir. Rujuk jadual di bahagian atas tab Flight & Airport.\n\n**Airport apa di Phu Quoc?**\nPhu Quoc International Airport (PQC), ~10 minit dari kawasan Long Beach/Duong Dong. Cadangan tiba sebelum 2pm untuk mula tour; hari akhir berlepas 2pm ke atas.\n\n**Perlu isi arrival card?**\n**Tidak** — Vietnam tiada arrival card.\n\n**Flow selepas turun plane?**\nGuide/Tour Leader akan brief secara detail selepas touch down. Airport pick-up sudah termasuk dalam pakej.\n\n**Bagasi AirAsia macam mana?**\nCheck-in **20kg** (maksimum 2 beg/pax; satu beg tidak melebihi 30kg kerana had pengendalian). Hand carry **7kg** — 1 handbag/sling bag + 1 cabin luggage.\n\n**Boleh share luggage allowance dengan keluarga?**\nBoleh — 3 pax = 60kg dikongsi. Tiada had kuantiti beg jika combine, tetapi total tidak melebihi allowance dan satu beg tidak melebihi 30kg. Had 2 beg per pax kekal.\n\n**Apa boleh dan tak boleh dalam hand carry?**\nCecair maksimum 100ml (dalam plastik ketat); lebih 100ml kena check-in. Barang tajam (gunting, mata pisau, pemotong kuku, pembuka botol) kena check-in.\n\n**Powerbank macam mana?**\nMaksimum **100Wh (~20,000mAh)**, **hand carry sahaja** — tiada bateri/powerbank dalam check-in luggage. Charger, cable & adapter pun letak hand carry.\n\n**Beg susu anak dikira hand carry?**\nYa. Infant bawah 2 tahun tiada baggage allowance; hanya stroller free of charge. Barang lain dikira dalam allowance cabin 7kg penjaga.\n\n**Stroller perlu check in?**\nTidak. Inform staf kaunter semasa check-in untuk dapatkan tag; stroller boleh dibawa hingga pintu pesawat. Disyorkan stroller travel-friendly/mudah dilipat kerana ada tempat yang tidak stroller-friendly.\n\n**Perlu wrap bag?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Servis wrap ada di KLIA2 (belakang Starbucks); plastik sama boleh guna semula untuk balik.\n\n**Boleh pilih seat dalam flight?**\nTiket group booking — seat ditetapkan random oleh airline. Airport conductor / Tour Leader akan susun supaya keluarga duduk berdekatan, keutamaan kepada keluarga dengan anak kecil & warga emas.\n\n**Meeting point di KLIA2 di mana?**\nDepan Restoran **Din Tai Fung, Level 3**, **4 jam sebelum** waktu berlepas untuk briefing bersama airport conductor. Sebarang perubahan diumumkan dalam group WhatsApp. Berada di boarding gate sekurang-kurangnya 1 jam 15 minit sebelum berlepas.\n\n### E. Hotel & Bilik\n\n**Boleh upgrade hotel?**\nBoleh — 4★ (Muong Thanh Luxury / Marina Seaside Boutique) **+RM140/pax/malam** (4D3N +RM420 · 5D4N +RM560). Katalog hanya ada tier 3★ dan 4★. Rate card ada kadar **malam tambahan** 5★ (RM320/pax/malam) tetapi **tiada kadar upgrade 3★ → 5★**, jadi pakej penuh 5★ belum boleh diquote — rujuk PO.\n\n**Boleh pilih hotel di kawasan Utara?**\nBoleh — kawasan Grand World (Utara) **+RM50/pax** atas permintaan. Sesuai jika customer nak dekat Grand World/VinWonders, tetapi jauh dari Sunset Town/cable car.\n\n**Bilik untuk 3 orang macam mana?**\nHarga berdasarkan 2@3 orang sebilik; bilik triple biasanya extra bed. Bilik single = single supplement.\n\n**Ada bilik family / connecting?**\nIkut availability. Susunan bilik keluarga berdekatan diuruskan — minta awal semasa booking.\n\n**Bila hotel muktamad disahkan?**\n**14 hari** sebelum trip (itinerari & susunan hotel muktamad).\n\n**Ada laundry & barang mandian?**\nLaundry service hotel ada (tiada self-service) — bawa baju secukupnya. Sabun mandi & syampu disediakan.\n\n### F. Cuaca & Musim\n\n**Bila waktu terbaik ke Phu Quoc?**\nMusim kering **Nov–April** — laut tenang, view cable car & sunset terbaik. Tetapi boleh travel sepanjang tahun kerana tiada peak season surcharge.\n\n**Musim hujan bila?**\nPaling kerap **Jun–September** (musim hujan luas Mei–Okt). Baju hujan disediakan. Bulan paling panas & kering: **Mac**.\n\n**Cuaca sama macam Malaysia?**\nYa, hampir sama (tropika, GMT+7). Musim hujan lebih ketara pertengahan tahun.\n\n**Hujan teruk cable car buka tak?**\nBeroperasi seperti biasa dalam hujan biasa; hanya ditutup masa **angin kuat/taufan** (jarang). Ada juga rehat teknikal berkala sepanjang hari — guide susun masa naik. Jika ditutup, itinerari disusun semula.\n\n### G. Shopping & Duit\n\n**Guna duit apa?**\nVietnamese Dong (VND). Kad debit/kredit, BigPay/Wise, online transfer & tunai diterima di kebanyakan tempat besar; gerai kecil & night market utamakan tunai.\n\n**Bawa duit belanja berapa?**\nTripdoc: anggaran **RM1,000–RM1,500/pax**; untuk yang tidak banyak membeli-belah **RM300–RM600** sudah memadai (≈2–4 juta Dong). Tukar wang lebih awal di Malaysia; guide boleh bantu.\n\n**Perlu aktifkan kad untuk overseas withdrawal?**\nYa — bagi yang nak guna kad debit/kredit untuk keluarkan tunai, aktifkan fungsi overseas withdrawal sebelum berlepas.\n\n**Phu Quoc sesuai untuk shopping?**\nBukan destinasi shopping seperti Ho Chi Minh. Cenderahati popular: **lada hitam Phu Quoc**, mutiara Phu Quoc (Ngoc Hien Pearl Farm) & kraf tangan tempatan.\n\n**Ada apa-apa yang perlu bayar sendiri dalam itinerari?**\nYa — perkara yang tidak tersenarai, contohnya water taxi di Grand World (RM50/pax) dan Kiss of the Sea Show. Nyatakan awal supaya customer tidak terkejut.\n\n### H. Payment & Refund\n\n**Ada surcharge peak season?**\nTiada untuk Phu Quoc — boleh travel sepanjang tahun tanpa tambahan.\n\n**Boleh travel waktu CNY?**\nBoleh. Satu-satunya blackout dalam katalog V3 ialah **CNY 2027 (17–18 Feb 2027)**. CNY 2026 (16–22 Feb 2026) **boleh booking** — attraction utama buka, cuma kedai souvenir & banyak gerai tutup.\n\n### I. Add-ons & Customization\n\n**Ada add-on apa?**\nWater taxi Grand World, honeymoon decoration & candle light dinner, extra meal, pocket wifi, local SIM, takaful Etiqa & luggage tracker. Rujuk tab **Simple Customisation**.\n\n**Water taxi Grand World berapa?**\n**RM50/pax/ride** (optional, harga jualan). Katalog senaraikan water taxi sebagai contoh aktiviti optional yang dibayar sendiri oleh customer.\n\n**Ada pakej honeymoon?**\nAda — bedroom decoration RM250/pasangan & candle light dinner RM250/pasangan.\n\n**Boleh tambah insurans & wifi?**\nYa — Takaful Etiqa TripCare 360 dari RM45 (individu, 1–5 hari, Area 1); pocket wifi RoamingMan RM80 (4D3N) / RM175 (5D4N); atau local SIM unlimited RM30 (order awal dengan guide — di airport RM60–80).\n\n**Bila pocket WiFi diserahkan?**\nBiasanya semasa briefing di KLIA2 sebelum berlepas (bersama airport conductor).\n\n**Boleh tambah meal?**\nYa — tambah **RM30/pax/meal**, dan rate card juga ada kadar **potong RM20/pax/meal** untuk lunch atau dinner. Breakfast tidak boleh dipotong (ia datang bersama bilik). Jangan campur dua perkara: potong RM20 ialah membuang hidangan itu daripada pakej semasa quote — kalau hidangan sudah termasuk dalam harga dan customer pilih untuk tidak makan semasa trip, katalog nyatakan **tiada refund**.\n\n**Ada free gift?**\nAda — Phu Quoc: **Water Taxi Experience in Grand World** (kod FPQC2), plus bullet BRB Luggage Tag / Pocket Wifi 4G per booking. Bullet wajib tanya PO/Leader dahulu.\n\n### J. Kesihatan & Keselamatan\n\n**Perlu travel insurance?**\nSangat disyorkan — cable car merentas laut 7.9km & aktiviti adventure (water park, roller coaster). Pastikan polisi meliputi aktiviti ketinggian.\n\n**Selamat ke Phu Quoc?**\nSecara umum selamat. Jaga barang peribadi terutama di kawasan sesak & tempat awam (night market, theme park) untuk elak kecurian/seluk saku.\n\n**Boleh bawa ubat preskripsi?**\nBoleh — ubat preskripsi (darah tinggi, kencing manis) perlu disertakan surat doktor/salinan preskripsi. Ubat OTC seperti panadol & selsema tidak perlu preskripsi.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh, dibawa on board. Sertakan surat doktor jika ada.\n\n**Ada sekatan kastam yang perlu tahu?**\nTidak dibenarkan: dadah, steroid, senjata api, bahan letupan, produk haiwan terancam, dan produk segar (buah, daging, tenusu). Elakkan bawa terlalu banyak pek makanan ready-to-eat.\n\n**Air paip boleh diminum?**\nTidak — guna air botol. Hotel biasanya sediakan air botol harian.\n\n### K. Praktikal (Internet, Socket, Masa, Tandas)\n\n**Pilihan internet?**\nLocal SIM unlimited RM30 (order awal dengan guide; RM60–80 di airport), pocket wifi RoamingMan melalui portal pelanggan ARBA, atau roaming telco sendiri. Tiada sekatan aplikasi di Vietnam — WhatsApp, Google & media sosial berfungsi seperti biasa (tidak perlu VPN).\n\n**Beza masa dengan Malaysia?**\nPhu Quoc GMT+7 — **1 jam lewat** dari Malaysia.\n\n**Plug socket jenis apa?**\n2-pin: Type A (pipih) & Type C (bulat). Bawa universal adapter; extension plug berguna jika banyak peralatan.\n\n**Tandas macam mana?**\nBersih di hotel & theme park, tetapi **tiada getah paip** — bawa botol kecil/spray untuk istinjak & wudhu.\n\n**Boleh guna e-hailing sendiri?**\nGrab ada di Phu Quoc, tetapi pakej ini private transport sepanjang trip jadi biasanya tidak perlu. Untuk free & easy, guide boleh bantu aturkan.\n\n**Bahasa apa digunakan?**\nVietnamese. Guide bertutur Melayu/English, jadi tiada isu komunikasi sepanjang tour.\n\n### L. Packing\n\n**Kasut apa sesuai?**\nKasut sport/selesa — banyak berjalan di theme park & safari. Selipar untuk pantai/water park.\n\n**Apa perlu bawa?**\nDuit poket, passport (sah 6 bulan), pakaian secukupnya, pakaian ibadah (telekung/sejadah), botol kecil untuk wudhu, peralatan mandi & solek, powerbank + charger + universal adapter (hand carry), kasut selesa, ubat peribadi, sunblock & topi.\n\n**Perlu bawa apa untuk water park?**\nPakaian renang (muslimah/bertutup) — **swimsuit wajib** untuk water slides; tuala, pakaian ganti & beg plastik untuk baju basah.\n\n**Perlu kipas atau baju sejuk?**\nKipas elektronik kecil berguna untuk musim panas (Mac). Baju sejuk nipis untuk hawa dingin kenderaan/kabin cable car & flight.\n",
+     "label": "KB phu-quoc › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "phu-quoc",
+      "calc",
+      "singleNote"
+     ],
+     "from": "4D3N RM 240/pax &middot; 5D4N RM 320/pax (rate card ARBA &mdash; katalog tulis quoted upon request)",
+     "to": "4D3N RM 240/pax &middot; 5D4N RM 320/pax (ikut katalog)",
+     "label": "KB phu-quoc › calc › singleNote"
+    },
+    {
+     "path": [
+      "kb",
+      "phu-quoc",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Travel date surcharge 2027 (January - February)",
+       "dateIn": [
+        "2027-01-01",
+        "2027-02-28"
+       ],
+       "perPax": 120
+      }
+     ],
+     "to": [],
+     "label": "KB phu-quoc › calc › extraSurcharge"
+    },
+    {
+     "path": [
+      "catalogs",
+      "phu-quoc-5d4n",
+      "notes",
+      0,
+      "entries",
+      2
+     ],
+     "from": "Single supplement: quoted on request.",
+     "to": "Single supplement: RM320/pax.",
+     "label": "Catalog phu-quoc-5d4n › notes › #1 › entries › #3"
+    }
+   ],
+   "catalogs": [
+    "Catalog phu-quoc-4d3n content: 1 change",
+    "Catalog phu-quoc-4d3n: prices + add-ons from v73",
+    "Catalog phu-quoc-5d4n content: 1 change",
+    "Catalog phu-quoc-5d4n: prices + add-ons from v73"
+   ],
+   "kb": [
+    "KB phu-quoc: 5 changes"
+   ]
   }
  ]
 }

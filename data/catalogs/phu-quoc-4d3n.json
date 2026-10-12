@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-03-11",
+  "updated": "2026-10-12",
   "kb_url": "https://prod-at22.github.io/arba-phu-quoc-kb/",
   "po": "Ezie",
   "ops": "ILY",
@@ -241,7 +241,7 @@
       "entries": [
         "All prices are valid for 24 hours after quotation submission.",
         "The price is for 2@3 person per room.",
-        "Price for Single Supplement will be quoted upon request.",
+        "Price for Single Supplement: RM240/pax.",
         "All Itinerary, flight, price or quotation is subject to changes.",
         "Late Booking Surcharge of RM50/booking will be charged if booking made less than 45 days of departure.",
         "Last Minute Surcharge will be charged if booking made less than 3 weeks of departure (refer to the Last Minute Surcharges in the Surcharge table).",
@@ -263,5 +263,5 @@
     }
   ],
   "addon_groups": [],
-  "hub_version": 30
+  "hub_version": 73
 }

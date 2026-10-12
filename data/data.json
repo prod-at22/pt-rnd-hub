@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 72,
- "updatedAt": "2026-10-12T10:19:50Z",
+ "version": 73,
+ "updatedAt": "2026-10-12T11:38:12Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -19529,7 +19529,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "hub",
-   "note": "",
+   "note": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
    "fx": [
     {
      "id": "MYR",
@@ -19542,50 +19542,30 @@
    "tables": [
     {
      "id": "IBRAHIM-4D3N__Ground-Cost",
-     "label": "IBRAHIM 4D3N · Ground Cost",
+     "label": "IBRAHIM 4D3N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 4D3N",
      "values": {
-      "2": 2310,
-      "3": 2080,
-      "4": 2020,
-      "5": 2020,
-      "6": 1710,
-      "7": 1550,
-      "8": 1550,
-      "9": 1500,
-      "10": 1500,
-      "11": 1390,
-      "12": 1390,
-      "13": 1390,
-      "14": 1310,
-      "15": 1310,
-      "16": 1310,
-      "17": 1280,
-      "18": 1280,
-      "19": 1280,
-      "20": 1280,
-      "21": 1250,
-      "22": 1250,
-      "23": 1250,
-      "24": 1250,
-      "25": 1250,
-      "26": 1250,
-      "27": 1250,
-      "28": 1250,
-      "29": 1250,
-      "30": 1250,
-      "31": 1250,
-      "32": 1250,
-      "33": 1250,
-      "34": 1250,
-      "35": 1250,
-      "36": 1250,
-      "37": 1250,
-      "38": 1250,
-      "39": 1250,
-      "40": 1250
+      "2": 1950,
+      "3": 1750,
+      "4": 1630,
+      "5": 1630,
+      "6": 1420,
+      "7": 1350,
+      "8": 1350,
+      "9": 1180,
+      "10": 1180,
+      "11": 1150,
+      "12": 1150,
+      "13": 1150,
+      "14": 1130,
+      "15": 1130,
+      "16": 1130,
+      "17": 1080,
+      "18": 1080,
+      "19": 1080,
+      "20": 1080
      }
     },
     {
@@ -19613,75 +19593,35 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     },
     {
      "id": "IBRAHIM-5D4N__Ground-Cost",
-     "label": "IBRAHIM 5D4N · Ground Cost",
+     "label": "IBRAHIM 5D4N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 5D4N",
      "values": {
-      "2": 2520,
-      "3": 2260,
-      "4": 2110,
-      "5": 2110,
-      "6": 1860,
-      "7": 1710,
-      "8": 1710,
-      "9": 1660,
-      "10": 1660,
-      "11": 1630,
-      "12": 1630,
-      "13": 1630,
-      "14": 1580,
-      "15": 1580,
-      "16": 1580,
-      "17": 1510,
-      "18": 1510,
-      "19": 1510,
-      "20": 1510,
-      "21": 1470,
-      "22": 1470,
-      "23": 1470,
-      "24": 1470,
-      "25": 1470,
-      "26": 1470,
-      "27": 1470,
-      "28": 1470,
-      "29": 1470,
-      "30": 1470,
-      "31": 1470,
-      "32": 1470,
-      "33": 1470,
-      "34": 1470,
-      "35": 1470,
-      "36": 1470,
-      "37": 1470,
-      "38": 1470,
-      "39": 1470,
-      "40": 1470
+      "2": 2380,
+      "3": 2150,
+      "4": 2020,
+      "5": 2020,
+      "6": 1680,
+      "7": 1650,
+      "8": 1650,
+      "9": 1480,
+      "10": 1480,
+      "11": 1450,
+      "12": 1450,
+      "13": 1450,
+      "14": 1410,
+      "15": 1410,
+      "16": 1410,
+      "17": 1380,
+      "18": 1380,
+      "19": 1380,
+      "20": 1380
      }
     },
     {
@@ -19709,27 +19649,7 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     }
    ],
@@ -19737,11 +19657,11 @@
     {
      "id": "IBRAHIM-4D3N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 4D3N — Phu Quoc 4D3N (3-Star, Fullboard, includes cable car)",
+     "supplier": "TO IBRAHIM 4D3N — Phu Quoc 4D3N (3-Star, Fullboard, includes cable car, CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Phu Quoc) — Rova Hotel / Phung Hung Hotel or similar",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. CR tiada harga 21–25 pax; Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -19760,11 +19680,11 @@
     {
      "id": "IBRAHIM-5D4N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 5D4N — Phu Quoc 5D4N (3-Star, Fullboard, includes cable car)",
+     "supplier": "TO IBRAHIM 5D4N — Phu Quoc 5D4N (3-Star, Fullboard, includes cable car, CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Phu Quoc) — Rova Hotel / Phung Hung Hotel or similar",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk cable car). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. CR tiada harga 21–25 pax; Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -19789,7 +19709,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-4D3N"
       }
      ],
@@ -19813,17 +19733,7 @@
        "17": 1737,
        "18": 1737,
        "19": 1737,
-       "20": 1737,
-       "21": 1637,
-       "22": 1637,
-       "23": 1637,
-       "24": 1637,
-       "25": 1637,
-       "26": 1537,
-       "27": 1537,
-       "28": 1537,
-       "29": 1537,
-       "30": 1537
+       "20": 1737
       },
       "cwb": {
        "2": 2397,
@@ -19844,17 +19754,7 @@
        "17": 1537,
        "18": 1537,
        "19": 1537,
-       "20": 1537,
-       "21": 1437,
-       "22": 1437,
-       "23": 1437,
-       "24": 1437,
-       "25": 1437,
-       "26": 1337,
-       "27": 1337,
-       "28": 1337,
-       "29": 1337,
-       "30": 1337
+       "20": 1537
       },
       "cnb": {
        "2": 2197,
@@ -19875,17 +19775,7 @@
        "17": 1337,
        "18": 1337,
        "19": 1337,
-       "20": 1337,
-       "21": 1237,
-       "22": 1237,
-       "23": 1237,
-       "24": 1237,
-       "25": 1237,
-       "26": 1137,
-       "27": 1137,
-       "28": 1137,
-       "29": 1137,
-       "30": 1137
+       "20": 1337
       },
       "infant": 0
      },
@@ -19894,11 +19784,11 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 1.0
+       "value": 0.5
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 0.0
       },
       "infantCost": {
        "type": "flat",
@@ -19913,7 +19803,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-5D4N"
       }
      ],
@@ -19937,17 +19827,7 @@
        "17": 2047,
        "18": 2047,
        "19": 2047,
-       "20": 2047,
-       "21": 1947,
-       "22": 1947,
-       "23": 1947,
-       "24": 1947,
-       "25": 1947,
-       "26": 1847,
-       "27": 1847,
-       "28": 1847,
-       "29": 1847,
-       "30": 1847
+       "20": 2047
       },
       "cwb": {
        "2": 2877,
@@ -19968,17 +19848,7 @@
        "17": 1847,
        "18": 1847,
        "19": 1847,
-       "20": 1847,
-       "21": 1747,
-       "22": 1747,
-       "23": 1747,
-       "24": 1747,
-       "25": 1747,
-       "26": 1647,
-       "27": 1647,
-       "28": 1647,
-       "29": 1647,
-       "30": 1647
+       "20": 1847
       },
       "cnb": {
        "2": 2677,
@@ -19999,17 +19869,7 @@
        "17": 1647,
        "18": 1647,
        "19": 1647,
-       "20": 1647,
-       "21": 1547,
-       "22": 1547,
-       "23": 1547,
-       "24": 1547,
-       "25": 1547,
-       "26": 1447,
-       "27": 1447,
-       "28": 1447,
-       "29": 1447,
-       "30": 1447
+       "20": 1647
       },
       "infant": 0
      },
@@ -20018,11 +19878,11 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 1.0
+       "value": 0.5
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 0.0
       },
       "infantCost": {
        "type": "flat",
@@ -20044,11 +19904,11 @@
     {
      "id": "pqc-a02",
      "category": "Activity",
-     "label": "Teddy Bear Museum (entrance only)",
-     "cost": 0.0,
-     "selling": 20.0,
+     "label": "Teddy Bear Museum — Tolak (sudah termasuk dalam pakej)",
+     "cost": -20.0,
+     "selling": -20.0,
      "per": "pax",
-     "notes": "Included in pakej"
+     "notes": "Teddy Bear Museum termasuk dalam CR & pakej; guna hanya kalau customer tak mahu (tolak RM20/pax, sama dengan KB)."
     },
     {
      "id": "pqc-a03",
@@ -20229,114 +20089,6 @@
      "selling": 70.0,
      "per": "pcs",
      "notes": null
-    },
-    {
-     "id": "pqc-a23",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "pqc-a24",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a25",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a26",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a29",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a30",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pqc-a31",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pqc-a32",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pqc-a33",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pqc-a34",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
     }
    ],
    "catalogs": [
@@ -20348,7 +20100,7 @@
      "id": "1a1075462d8",
      "name": "PT PQC Ibrahim Phu Quoc 5D4N Jan-Dec 2026.jpeg",
      "file": "contracts/pqc/1a1075462d8-PT_PQC_Ibrahim_Phu_Quoc_5D4N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 154952,
      "at": "2026-10-04T14:32:13Z",
@@ -20359,12 +20111,22 @@
      "id": "1a1075462d9",
      "name": "PT PQC Ibrahim Phu Quoc 4D3N Jan-Dec 2026.jpeg",
      "file": "contracts/pqc/1a1075462d9-PT_PQC_Ibrahim_Phu_Quoc_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 153149,
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1fu2wZPQYuPYnMXIxc1-5I4cYUJZTrOvI"
+    },
+    {
+     "id": "1a12fe7e5ba",
+     "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+     "file": "contracts/pqc/1a12fe7e5ba-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+     "to": "Ibrahim",
+     "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Phu Quoc 4D3N (hlm 10), 5D4N (hlm 11), termasuk cable car",
+     "size": 4812024,
+     "at": "2026-10-12T11:38:09Z",
+     "by": "ezie"
     }
    ],
    "hotels": [
