@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 70,
- "updatedAt": "2026-10-12T07:33:13Z",
+ "version": 71,
+ "updatedAt": "2026-10-12T07:55:25Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -18783,7 +18783,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "hub",
-   "note": "",
+   "note": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
    "fx": [
     {
      "id": "MYR",
@@ -18796,7 +18796,7 @@
    "tables": [
     {
      "id": "IBRAHIM-4D3N__Ground-Cost",
-     "label": "IBRAHIM 4D3N · Ground Cost",
+     "label": "IBRAHIM 4D3N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 4D3N",
@@ -18812,34 +18812,14 @@
       "10": 760,
       "11": 730,
       "12": 730,
-      "13": 690,
-      "14": 690,
-      "15": 670,
-      "16": 670,
-      "17": 670,
-      "18": 670,
-      "19": 670,
-      "20": 670,
-      "21": 660,
-      "22": 660,
-      "23": 660,
-      "24": 660,
-      "25": 660,
-      "26": 660,
-      "27": 660,
-      "28": 660,
-      "29": 660,
-      "30": 650,
-      "31": 650,
-      "32": 650,
-      "33": 650,
-      "34": 650,
-      "35": 650,
-      "36": 650,
-      "37": 650,
-      "38": 650,
-      "39": 650,
-      "40": 650
+      "13": 670,
+      "14": 670,
+      "15": 640,
+      "16": 640,
+      "17": 640,
+      "18": 640,
+      "19": 640,
+      "20": 640
      }
     },
     {
@@ -18867,32 +18847,12 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     },
     {
      "id": "IBRAHIM-5D4N__Ground-Cost",
-     "label": "IBRAHIM 5D4N · Ground Cost",
+     "label": "IBRAHIM 5D4N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 5D4N",
@@ -18908,34 +18868,14 @@
       "10": 870,
       "11": 850,
       "12": 850,
-      "13": 840,
-      "14": 840,
-      "15": 830,
-      "16": 830,
-      "17": 820,
-      "18": 820,
-      "19": 820,
-      "20": 800,
-      "21": 800,
-      "22": 800,
-      "23": 800,
-      "24": 800,
-      "25": 800,
-      "26": 800,
-      "27": 800,
-      "28": 800,
-      "29": 800,
-      "30": 790,
-      "31": 790,
-      "32": 790,
-      "33": 790,
-      "34": 790,
-      "35": 790,
-      "36": 790,
-      "37": 790,
-      "38": 790,
-      "39": 790,
-      "40": 790
+      "13": 830,
+      "14": 830,
+      "15": 810,
+      "16": 810,
+      "17": 810,
+      "18": 810,
+      "19": 810,
+      "20": 810
      }
     },
     {
@@ -18963,27 +18903,7 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     }
    ],
@@ -18991,11 +18911,11 @@
     {
      "id": "IBRAHIM-4D3N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 4D3N — HCM-Dalat-Muine 4D3N (3-Star, Fullboard)",
+     "supplier": "TO IBRAHIM 4D3N — HCM-Dalat-Muine 4D3N (3-Star, Fullboard, CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Dalat + HCM) — SaiGon's Book/Peach Valley + Nicecy Boutique/Queen Central",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk Alpine Coaster). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -19014,11 +18934,11 @@
     {
      "id": "IBRAHIM-5D4N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 5D4N — HCM-Dalat-Muine 5D4N (3-Star, Fullboard)",
+     "supplier": "TO IBRAHIM 5D4N — HCM-Dalat-Muine 5D4N (3-Star, Fullboard, CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Dalat + HCM) — SaiGon's Book/Peach Valley + Nicecy Boutique/Queen Central",
-     "notes": "",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (termasuk Alpine Coaster). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. Costing 2–20 pax.",
      "components": [
       {
        "key": "ground-cost",
@@ -19043,7 +18963,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-4D3N"
       }
      ],
@@ -19067,17 +18987,7 @@
        "17": 1127,
        "18": 1127,
        "19": 1127,
-       "20": 1127,
-       "21": 1097,
-       "22": 1097,
-       "23": 1097,
-       "24": 1097,
-       "25": 1097,
-       "26": 1067,
-       "27": 1067,
-       "28": 1067,
-       "29": 1067,
-       "30": 1067
+       "20": 1127
       },
       "cwb": {
        "2": 1677,
@@ -19098,17 +19008,7 @@
        "17": 927,
        "18": 927,
        "19": 927,
-       "20": 927,
-       "21": 897,
-       "22": 897,
-       "23": 897,
-       "24": 897,
-       "25": 897,
-       "26": 867,
-       "27": 867,
-       "28": 867,
-       "29": 867,
-       "30": 867
+       "20": 927
       },
       "cnb": {
        "2": 1477,
@@ -19129,17 +19029,7 @@
        "17": 727,
        "18": 727,
        "19": 727,
-       "20": 727,
-       "21": 697,
-       "22": 697,
-       "23": 697,
-       "24": 697,
-       "25": 697,
-       "26": 667,
-       "27": 667,
-       "28": 667,
-       "29": 667,
-       "30": 667
+       "20": 727
       },
       "infant": 0
      },
@@ -19167,7 +19057,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "IBRAHIM-5D4N"
       }
      ],
@@ -19191,17 +19081,7 @@
        "17": 1327,
        "18": 1327,
        "19": 1327,
-       "20": 1327,
-       "21": 1297,
-       "22": 1297,
-       "23": 1297,
-       "24": 1297,
-       "25": 1297,
-       "26": 1267,
-       "27": 1267,
-       "28": 1267,
-       "29": 1267,
-       "30": 1267
+       "20": 1327
       },
       "cwb": {
        "2": 1877,
@@ -19222,17 +19102,7 @@
        "17": 1127,
        "18": 1127,
        "19": 1127,
-       "20": 1127,
-       "21": 1097,
-       "22": 1097,
-       "23": 1097,
-       "24": 1097,
-       "25": 1097,
-       "26": 1067,
-       "27": 1067,
-       "28": 1067,
-       "29": 1067,
-       "30": 1067
+       "20": 1127
       },
       "cnb": {
        "2": 1677,
@@ -19253,17 +19123,7 @@
        "17": 927,
        "18": 927,
        "19": 927,
-       "20": 927,
-       "21": 897,
-       "22": 897,
-       "23": 897,
-       "24": 897,
-       "25": 897,
-       "26": 867,
-       "27": 867,
-       "28": 867,
-       "29": 867,
-       "30": 867
+       "20": 927
       },
       "infant": 0
      },
@@ -19320,15 +19180,6 @@
      "cost": 180.0,
      "selling": 197.0,
      "per": "max 2 pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a05",
-     "category": "Activity",
-     "label": "Dalat Alpine Coaster",
-     "cost": 50.0,
-     "selling": 50.0,
-     "per": "pax",
      "notes": null
     },
     {
@@ -19546,114 +19397,6 @@
      "selling": 70.0,
      "per": "pcs",
      "notes": null
-    },
-    {
-     "id": "dlmnhcm-a30",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "dlmnhcm-a31",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a32",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a33",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a34",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a35",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a36",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a37",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a38",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a39",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a40",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dlmnhcm-a41",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
     }
    ],
    "catalogs": [
@@ -19665,7 +19408,7 @@
      "id": "1a1075462f9",
      "name": "PT DLMHCM Ibrahim Dalat HCM Muine 4D3N Jan-Dec 2026.jpeg",
      "file": "contracts/dlmnhcm/1a1075462f9-PT_DLMHCM_Ibrahim_Dalat_HCM_Muine_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 203065,
      "at": "2026-10-04T14:32:13Z",
@@ -19676,7 +19419,7 @@
      "id": "1a1075462fa",
      "name": "PT DLMHCM Ibrahim Dalat HCM Muine 5D4N Jan-Dec 2026.pdf",
      "file": "contracts/dlmnhcm/1a1075462fa-PT_DLMHCM_Ibrahim_Dalat_HCM_Muine_5D4N_Jan-Dec_2026.pdf",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 14471449,
      "at": "2026-10-04T14:32:13Z",
@@ -19687,7 +19430,7 @@
      "id": "1a1075462fb",
      "name": "PT DLMHCM Ibraim HCM 4D3N Jan-Dec 2026.jpeg",
      "file": "contracts/dlmnhcm/1a1075462fb-PT_DLMHCM_Ibraim_HCM_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, HCM rujukan)",
      "note": "From Drive · Production Team",
      "size": 134842,
      "at": "2026-10-04T14:32:13Z",
@@ -19698,12 +19441,22 @@
      "id": "1a1075462fc",
      "name": "PT DLMHCM Ibrahim HCM 5D4N Jan-Dec 2026.jpeg",
      "file": "contracts/dlmnhcm/1a1075462fc-PT_DLMHCM_Ibrahim_HCM_5D4N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026, HCM rujukan)",
      "note": "From Drive · Production Team",
      "size": 172526,
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "11f0knGA5612GTlPgKbt4mseeVBdtYDqs"
+    },
+    {
+     "id": "1a12f1bf526",
+     "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+     "file": "contracts/dlmnhcm/1a12f1bf526-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+     "to": "Ibrahim",
+     "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Dalat Muine HCM 4D3N (hlm 2), 5D4N (hlm 3), termasuk Alpine Coaster",
+     "size": 4812024,
+     "at": "2026-10-12T07:55:23Z",
+     "by": "ezie"
     }
    ],
    "hotels": [

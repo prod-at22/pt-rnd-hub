@@ -1,4 +1,4 @@
-# Status & handoff (12 Oct 2026, data v70 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v71 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Danang + Hanoi-Sapa Ibrahim CR 2027 · next: ask the PO
-- Live: hub v70, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Danang + Hanoi-Sapa + HCM-Dalat Ibrahim CR 2027 · next: ask the PO
+- Live: hub v71, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -123,7 +123,12 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Hanoi-Sapa-Halong 5D4N = p.6 overnight cruise; Costing 2–20 pax (CR has no 21–25 rate); reference packages Halong Bay 4D3N / Sapa 5D4N
   removed; Halong Day Cruise add-on = −RM100 (as KB); duplicate add-ons removed; KB single supplement = catalog (RM300 / RM700), 2027 travel
   surcharge removed from KB (PO). Margins 2027: 4D3N 14–35 %, 5D4N 19–35 %. Not in hub: CR p.8 "Hanoi Sapa Halongbay Day Trip 5D4N" (no cable car).
-  The same Ibrahim 2027 CR also prices Dalat–Muine–HCM, Phu Quoc and HCM (hub still on Ibrahim 2026) — to do one by one.
+  **HCM – Dalat – Muine (v71, PO ezie 12 Oct):** Ibrahim costs = CR 2027 (now – Dec 2027; 4D3N p.2, 5D4N p.3, Alpine Coaster now included);
+  Costing 2–20 pax; coaster add-on removed (hub + KB); duplicate add-ons removed; KB: new Dalat 4D3N (package card + calculator variant
+  vdl4d3n, map → ibrahim-4d3n / catalog hcm-dalat-muine-4d3n), Jeep / ATV RM197 (= hub), group-FOC text removed (PO: FOC is for ARBA's tour
+  leader, never quote it to customers), FAQ 2027 surcharge = catalog (Jan–Feb 2027 +RM120; calculator already matched). Margins 2027 18–35 %.
+  Note: the Danang catalogs carry "Travel Date 2027 Jan–Feb +RM150/pax"; Hanoi catalogs carry none.
+  The same Ibrahim 2027 CR also prices Phu Quoc and HCM (HCM has no Costing yet) — to do one by one.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
