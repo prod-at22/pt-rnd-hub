@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v1",
-  "updated": "2026-03-04",
+  "updated": "2026-10-12",
   "kb_url": "https://prod-at22.github.io/arba-beijing-kb/",
   "po": "Fyka",
   "ops": "ILY",
@@ -74,7 +74,7 @@
         "English Speaking Guide Service"
       ],
       "excludes": [
-        "Private Driver & Guide is base on 10 hours basis. Additional fees will be charged for every extra hour usage",
+        "Private Driver & Guide is based on 10 hours basis. Additional fees will be charged for every extra hour usage",
         "Return Flight Tickets",
         "Luggage, In Flight Meal & Airport Tax",
         "Additional Fees or Optional Tour",
@@ -92,7 +92,7 @@
         "Arrive in Beijing Daxing Intl' Airport (PKX)",
         "Check in Hotel",
         "Nandouya Mosque",
-        "Visit Nanluogoxiang (Historic alley famous for its hutongs and traditional heritage houses)",
+        "Visit Nanluoguxiang (Historic alley famous for its hutongs and traditional heritage houses)",
         "Sanlitun Shopping District (Shopping)",
         "Dinner and back to hotel"
       ],
@@ -102,12 +102,12 @@
     },
     {
       "day": 2,
-      "title": "Great Wall Of China + City Tour",
+      "title": "Beijing City + Shopping Tour",
       "activities": [
         "Tiananmen Square (UNESCO Historic Square of Beijing)",
         "Forbidden City (September to June) (Residence of the Chinese Emperor)",
         "Visit Jingshan Park (July-August) (Man-made hill with Forbidden City panoramic view)",
-        "Wanfujing Street (Shopping)",
+        "Wangfujing Street (Shopping)",
         "Dinner and back to hotel"
       ],
       "transport": "Private Transport",
@@ -116,7 +116,7 @@
     },
     {
       "day": 3,
-      "title": "Beijing City + Shopping Tour",
+      "title": "Great Wall Of China + City Tour",
       "activities": [
         "Mutianyu Great Wall of China (Incl 2 way Cable Car or Toboggan)",
         "Summer Palace (Chinese palace with Qing Dynasty architecture)",
@@ -264,7 +264,7 @@
             "Arrive in Beijing Daxing Intl' Airport (PKX)",
             "Check in Hotel",
             "Nandouya Mosque",
-            "Visit Nanluogoxiang (Historic alley famous for its hutongs and traditional heritage houses)",
+            "Visit Nanluoguxiang (Historic alley famous for its hutongs and traditional heritage houses)",
             "Sanlitun Shopping District (Shopping)",
             "Dinner and back to hotel"
           ],
@@ -274,12 +274,12 @@
         },
         {
           "day": 2,
-          "title": "Great Wall Of China + City Tour",
+          "title": "Beijing City + Shopping Tour",
           "activities": [
             "Tiananmen Square (UNESCO Historic Square of Beijing)",
             "Forbidden City (September to June) (Residence of the Chinese Emperor)",
             "Visit Jingshan Park (July-August) (Man-made hill with Forbidden City panoramic view)",
-            "Wanfujing Street (Shopping)",
+            "Wangfujing Street (Shopping)",
             "Dinner and back to hotel"
           ],
           "transport": "Private Transport",
@@ -288,7 +288,7 @@
         },
         {
           "day": 3,
-          "title": "Beijing City + Shopping Tour",
+          "title": "Great Wall Of China + City Tour",
           "activities": [
             "Mutianyu Great Wall of China (Incl 2 way Cable Car or Toboggan)",
             "Summer Palace (Chinese palace with Qing Dynasty architecture)",
@@ -343,7 +343,7 @@
             "Check in hotel"
           ],
           "transport": "Airport Transfer, Private Transport",
-          "meals": "Lunch, Dinner",
+          "meals": "-",
           "hotel": "4-Star Hotel (Beijing)"
         },
         {
@@ -353,7 +353,7 @@
             "Tiananmen Square (Historic Square of Beijing)",
             "Forbidden City (September to June) (Residence of the Chinese Emperor)",
             "Visit Jingshan Park (July-August) (Man-made hill with Forbidden City panoramic view)",
-            "Wanfujing Street (Shopping)",
+            "Wangfujing Street (Shopping)",
             "Dinner and back to hotel"
           ],
           "transport": "Private Transport",
@@ -379,7 +379,7 @@
           "title": "Muslim Street Tour",
           "activities": [
             "Nandouya Mosque",
-            "Visit Nanluogoxiang (Historic alley famous for its hutongs and traditional heritage houses)",
+            "Visit Nanluoguxiang (Historic alley famous for its hutongs and traditional heritage houses)",
             "Sanlitun Shopping District (Shopping)",
             "Dinner and back to hotel"
           ],
@@ -402,11 +402,11 @@
           ],
           "transport": "Private Airport Transfer",
           "meals": "International Breakfast, Lunch, Dinner",
-          "hotel": "4-Star Hotel (Beijing)"
+          "hotel": "-"
         }
       ]
     }
   ],
   "addon_groups": [],
-  "hub_version": 30
+  "hub_version": 67
 }

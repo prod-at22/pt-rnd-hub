@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 66,
- "updatedAt": "2026-10-12T03:09:18Z",
+ "version": 67,
+ "updatedAt": "2026-10-12T03:26:30Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -33332,7 +33332,7 @@
      "category": "Activity",
      "label": "Universal Studio Beijing (Peak Jul-Oct)",
      "cost": 0.0,
-     "selling": 815.0,
+     "selling": 850.0,
      "per": "pax",
      "notes": "Tak recommend, ramai sangat"
     },
@@ -33348,7 +33348,7 @@
     {
      "id": "pek-a03",
      "category": "Transport",
-     "label": "Airport Transfer MPV (2-4 pax) — Tambah",
+     "label": "Airport Transfer MPV 7-seat (2-4 pax) — Tambah",
      "cost": 0.0,
      "selling": 300.0,
      "per": "way",
@@ -33357,34 +33357,16 @@
     {
      "id": "pek-a04",
      "category": "Transport",
-     "label": "Airport Transfer MPV (2-4 pax) — Tolak",
+     "label": "Airport Transfer MPV 7-seat (2-4 pax) — Tolak",
      "cost": 0.0,
      "selling": -200.0,
      "per": "way",
      "notes": "Customer arrange sendiri"
     },
     {
-     "id": "pek-a05",
-     "category": "Transport",
-     "label": "Airport Transfer Small Bus (5-6 pax) — Tambah",
-     "cost": 0.0,
-     "selling": 500.0,
-     "per": "way",
-     "notes": null
-    },
-    {
-     "id": "pek-a06",
-     "category": "Transport",
-     "label": "Airport Transfer Small Bus (5-6 pax) — Tolak",
-     "cost": 0.0,
-     "selling": -300.0,
-     "per": "way",
-     "notes": "Customer arrange sendiri"
-    },
-    {
      "id": "pek-a07",
      "category": "Transport",
-     "label": "Airport Transfer Big Bus (7-12 pax) — Tambah",
+     "label": "Airport Transfer Coach 14-17 seat (5-9 pax) — Tambah",
      "cost": 0.0,
      "selling": 650.0,
      "per": "way",
@@ -33393,7 +33375,7 @@
     {
      "id": "pek-a08",
      "category": "Transport",
-     "label": "Airport Transfer Big Bus (7-12 pax) — Tolak",
+     "label": "Airport Transfer Coach 14-17 seat (5-9 pax) — Tolak",
      "cost": 0.0,
      "selling": -400.0,
      "per": "way",
@@ -33402,7 +33384,7 @@
     {
      "id": "pek-a09",
      "category": "Tour Transport",
-     "label": "MPV Day Tour (2-4 pax) — Tambah",
+     "label": "MPV 7-seat Day Tour (2-4 pax) — Tambah",
      "cost": 0.0,
      "selling": 1000.0,
      "per": "day",
@@ -33411,25 +33393,7 @@
     {
      "id": "pek-a10",
      "category": "Tour Transport",
-     "label": "MPV Day Tour (2-4 pax) — Tolak",
-     "cost": 0.0,
-     "selling": -800.0,
-     "per": "day",
-     "notes": "Customer arrange sendiri"
-    },
-    {
-     "id": "pek-a11",
-     "category": "Tour Transport",
-     "label": "Van Day Tour (5-6 pax) — Tambah",
-     "cost": 0.0,
-     "selling": 1500.0,
-     "per": "day",
-     "notes": null
-    },
-    {
-     "id": "pek-a12",
-     "category": "Tour Transport",
-     "label": "Van Day Tour (5-6 pax) — Tolak",
+     "label": "MPV 7-seat Day Tour (2-4 pax) — Tolak",
      "cost": 0.0,
      "selling": -800.0,
      "per": "day",
@@ -33438,7 +33402,7 @@
     {
      "id": "pek-a13",
      "category": "Tour Transport",
-     "label": "Bus Day Tour (7-12 pax) — Tambah",
+     "label": "Coach 14-17 seat Day Tour (5-9 pax) — Tambah",
      "cost": 0.0,
      "selling": 1700.0,
      "per": "day",
@@ -33447,7 +33411,7 @@
     {
      "id": "pek-a14",
      "category": "Tour Transport",
-     "label": "Bus Day Tour (7-12 pax) — Tolak",
+     "label": "Coach 14-17 seat Day Tour (5-9 pax) — Tolak",
      "cost": 0.0,
      "selling": -800.0,
      "per": "day",
@@ -33457,37 +33421,37 @@
      "id": "pek-a15",
      "category": "Meals",
      "label": "Extra Lunch — Tambah",
-     "cost": 0.0,
+     "cost": 61.0,
      "selling": 60.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–5 pax; 6–9 RMB80, 10+ RMB60)"
     },
     {
      "id": "pek-a16",
      "category": "Meals",
      "label": "Tolak Lunch",
-     "cost": 0.0,
+     "cost": -37.0,
      "selling": -30.0,
      "per": "pax/meal",
-     "notes": "Customer skip lunch"
+     "notes": "Customer skip lunch · Jimat kos: bajet meal CR RMB60 (10+ pax; 2–5 pax RMB100)"
     },
     {
      "id": "pek-a17",
      "category": "Meals",
      "label": "Extra Dinner — Tambah",
-     "cost": 0.0,
+     "cost": 61.0,
      "selling": 60.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–5 pax; 6–9 RMB80, 10+ RMB60)"
     },
     {
      "id": "pek-a18",
      "category": "Meals",
      "label": "Tolak Dinner",
-     "cost": 0.0,
+     "cost": -37.0,
      "selling": -30.0,
      "per": "pax/meal",
-     "notes": "Customer skip dinner"
+     "notes": "Customer skip dinner · Jimat kos: bajet meal CR RMB60 (10+ pax; 2–5 pax RMB100)"
     },
     {
      "id": "pek-a19",
@@ -33673,10 +33637,7 @@
      }
     }
    ],
-   "hideTabs": [
-    "flags",
-    "history"
-   ]
+   "historyFrom": 67
   },
   {
    "code": "BKK",

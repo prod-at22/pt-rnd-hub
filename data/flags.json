@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-12T11:09:20+08:00",
- "dataVersion": 66,
+ "generatedAt": "2026-10-12T11:26:31+08:00",
+ "dataVersion": 67,
  "flags": [
   {
    "code": "DADH",
@@ -286,10 +286,10 @@
    "code": "PEK",
    "package": null,
    "severity": "medium",
-   "area": "Margin",
-   "title": "Beijing: margin problems in 1 package/TO line",
-   "detail": "Beijing Standard 5D4N — adult margin under 10% Pax 2–3 (lowest 7.4%).",
-   "fix": "Review the price for these pax or the TO rate.",
+   "area": "Add-ons",
+   "title": "Beijing: 2 add-on(s) sold below cost",
+   "detail": "Extra Lunch — Tambah: cost RM61, selling RM60; Extra Dinner — Tambah: cost RM61, selling RM60.",
+   "fix": "Raise the selling (catalog) price or check the cost on the Add On tab.",
    "id": 29
   },
   {
@@ -643,5 +643,19 @@
    "id": 64
   }
  ],
- "verified": []
+ "verified": [
+  {
+   "code": "PEK",
+   "severity": "medium",
+   "area": "Margin",
+   "title": "Beijing: margin problems in 1 package/TO line",
+   "ok": {
+    "code": "PEK",
+    "title": "Beijing: margin problems in 1 package/TO line",
+    "note": "2–3 pax adult 7.4% / CWB 5.1% accepted; catalog price kept (PO 12 Oct 2026).",
+    "by": "ezie",
+    "at": "2026-10-12"
+   }
+  }
+ ]
 }

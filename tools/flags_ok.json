@@ -1,4 +1,12 @@
 {
  "about": "Flags checked by a PO and found not to be an issue. tools/flags.py leaves out a flag whose code + title match an entry here (the title holds the counts, so a changed situation raises the flag again) and lists it under 'verified' in data/flags.json.",
- "ok": []
+ "ok": [
+  {
+   "code": "PEK",
+   "title": "Beijing: margin problems in 1 package/TO line",
+   "note": "2–3 pax adult 7.4% / CWB 5.1% accepted; catalog price kept (PO 12 Oct 2026).",
+   "by": "ezie",
+   "at": "2026-10-12"
+  }
+ ]
 }
