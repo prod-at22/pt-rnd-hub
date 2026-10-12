@@ -173,7 +173,7 @@ NODE_PATH=<dir with jsdom> python3 tools/flags.py      # runs tools/margins.js i
 
 **Several TOs per package** (11 Oct 2026): the package's default TO(s) (`assign`, by pax band) is what **Auto** uses; other
 TOs are alternatives (`alsoVariants`) that can be picked in the Tour operator box — the costing then follows that TO, and a
-**Banding TO** table compares cost and margin of every TO per pax. With one TO the box shows a single choice. In Edit costs
+**TO Comparison** table compares the adult margin (RM and %) of every TO per pax (highest margin highlighted, cost/pax on hover). With one TO the box shows a single choice. In Edit costs
 the Costing tab has **Tour operators**: *Add TO* (copies an existing TO's components and per-pax rates; edit them in TO
 rates), *Make default*, *Remove*. Rate-by-rate components (`R.…`) stay on the shared supplier rates.
 

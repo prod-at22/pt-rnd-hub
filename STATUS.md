@@ -1,4 +1,4 @@
-# Status & handoff (12 Oct 2026, data v68 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v69 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v68 live · Aceh + Bali + Bangkok + Beijing verified, Danang Ibrahim CR 2027 · next: ask the PO
-- Live: hub v68, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v69 live · Aceh + Bali + Bangkok + Beijing verified, Danang Ibrahim CR 2027 · next: ask the PO
+- Live: hub v69, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -114,11 +114,11 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   "Upgrade to 4★ Premium +RM240/pax" (source PDF, R&D sheet, KB) stays out of the hub catalog (PO 12 Oct).
   **Danang – Hoi An (v68, PO ezie 12 Oct; Ibrahim CR 2027 = Downloads "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027…pdf", now in contracts/dadh):**
   Bismillah = default TO, Ibrahim = alternative in both packages (4D3N + 5D4N); separate "Ibrahim 5D4N · 3★" package removed; Ibrahim costs
-  = CR 2027 (from Jan 2027; bands 2 / 3–4 / 5–6 / 7–8 / 9–10 / 11–12 / 13–14 / 15–20 / 21–30 / 31+), new Ibrahim 4D3N; child cost per TO CR via the
+  = CR 2027 (in force now until Dec 2027 — PO; bands 2 / 3–4 / 5–6 / 7–8 / 9–10 / 11–12 / 13–14 / 15–20 / 21–30 / 31+), new Ibrahim 4D3N; child cost per TO CR via the
   new `variants[].childRules` (app.js childRule; Ibrahim CWB 50 % / CNB free; Bismillah package rules CWB 75 % / CNB 50 %) — catalog age labels
   unchanged (PO); catalog content (Ibrahim-style itinerary, 3★ hotels) kept (PO, H(i)); package names without ★; duplicate TripCare (Area 2) /
-  Blue Ribbon add-ons removed. Catalog prices and validity (31 Dec 2026) unchanged. Open (flags): Ibrahim 2027 margins thin / negative
-  (5D4N 2 pax −9.3 %, 4D3N 26–30 −10.6 %), Bismillah CR ends Dec 2026, Bismillah 4D3N CNB 26–30 below cost (existing).
+  Blue Ribbon add-ons removed. Catalog prices and validity (31 Dec 2026) unchanged. v69: Danang Costing 2–20 pax only (21+ = quote manual); "Banding TO" → "TO Comparison" (margin per TO, all destinations). Open (flags): Ibrahim 2027 margins thin / negative
+  (5D4N 2 pax −9.3 %, 4D3N 2/4/6 pax 6–8 %), Bismillah CR ends Dec 2026.
   The same Ibrahim 2027 CR also prices Dalat–Muine–HCM, Hanoi–Sapa(–Halong), Phu Quoc and HCM (hub still on Ibrahim 2026) — to do one by one.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
@@ -151,7 +151,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - **New in the page (11 Oct)**: CWB / CNB tables show component columns per child when the package has a non-zero tipping
   component (rule % in the header, "(free)", "Less" for adult − RM; they add up to Cost/Pax) · TO box shows one choice when the
   package has one TO · **several TOs per package**: default (assign) vs alternatives (alsoVariants), Edit costs → Tour operators card
-  (Add TO copying an existing TO's components + rates, Make default, Remove), Banding TO table · `tools/flags_ok.json` = flags checked
+  (Add TO copying an existing TO's components + rates, Make default, Remove), TO Comparison table (margin per TO) · `tools/flags_ok.json` = flags checked
   and not an issue (left out, counted on /flags/) · `tools/flags_open.json` = open items a PO noted (shown as flags until removed) ·
   flags.py also flags add-ons sold below cost · destinations[].historyFrom clears a destination's History view.
 - **Fixes (11 Oct)**: catalog-pt-public mirror.yml failed whenever specific catalogs changed (the last `[ -z ] &&` test was the step's

@@ -860,12 +860,12 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(rs.selling === 857 && rh.selling === 998.5, `selling: Standard 1057 − 200 = 857, Honeymoon 1098.5 − 100 = 998.5 (${rs.selling} / ${rh.selling})`);
   }
 
-  console.log("8v. several TOs per package: Add TO (copy), pick it → costing follows, Banding TO, Make default, Remove, Save");
+  console.log("8v. several TOs per package: Add TO (copy), pick it → costing follows, Banding TO, Make default, Remove, Save (TO Comparison = margin)");
   {
     const pg = await boot(repo, "aceh/"); await until(() => pg.doc.querySelector("#costPax"));
     const P2 = pg.w.PTCALC, D2 = () => P2.DATA.destinations.find(x => x.code === "ACEH"), V = P2.BASE.version;
     P2.SESSION = { u: "fyka", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => pg.doc.querySelector("#toList"));
-    ok(pg.doc.querySelectorAll("#toList tbody tr").length === 1 && !pg.doc.querySelector("#toCompare"), "one TO: TO list has 1 row, no Banding TO");
+    ok(pg.doc.querySelectorAll("#toList tbody tr").length === 1 && !pg.doc.querySelector("#toCompare"), "one TO: TO list has 1 row, no TO Comparison");
     pg.doc.querySelector("#toName").value = "Pak Rahman"; pg.doc.querySelector("#toSup").value = "Pak Rahman CR 2027";
     click(pg.w, pg.doc.querySelector('[data-act="toAdd"]')); await until(() => pg.doc.querySelector("#toCompare"));
     const nv = D2().variants.find(v => v.label === "Pak Rahman"), pkg = D2().packages[0];
@@ -878,7 +878,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const c2 = P2.priceRow(D2(), D2().packages[0], "PAK-RAHMAN", 2).adult.cost, c1 = P2.priceRow(D2(), D2().packages[0], "ASONANGGROE-3-STAR", 2).adult.cost;
     ok(Math.round(c2) === 630 && Math.round(c1) === 705, "costing follows the TO: 2 pax Pak Rahman 600+30 = 630, Asonanggroe 705");
     ok(pg.doc.querySelector("#costPax").textContent.includes("PAK RAHMAN") || pg.doc.querySelector("#costPax").textContent.includes("Pak Rahman"), "Costing table shows the picked TO");
-    ok(pg.doc.querySelector("#toCompare tbody tr td.m-ok"), "Banding TO marks the lowest cost");
+    ok(/TO Comparison/.test(pg.doc.querySelector("#toCompare h2").textContent) && /Margin RM/.test(pg.doc.querySelector("#toCompare thead").textContent) && !/Cost\/Pax/.test(pg.doc.querySelector("#toCompare thead").textContent), "TO Comparison shows margin RM / % per TO (no cost column)");
     click(pg.w, pg.doc.querySelector('[data-act="toDefault"][data-id="PAK-RAHMAN"]')); await tick(20);
     ok(D2().packages[0].assign.length === 1 && D2().packages[0].assign[0].variant === "PAK-RAHMAN" && D2().packages[0].alsoVariants.includes("ASONANGGROE-3-STAR"), "Make default: Auto uses Pak Rahman, Asonanggroe becomes an alternative");
     click(pg.w, pg.doc.querySelector('[data-act="toDefault"][data-id="ASONANGGROE-3-STAR"]')); await tick(20);

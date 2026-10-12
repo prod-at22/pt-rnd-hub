@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 68,
- "updatedAt": "2026-10-12T05:08:36Z",
+ "version": 69,
+ "updatedAt": "2026-10-12T05:18:42Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -22053,7 +22053,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "hub",
-   "note": "",
+   "note": "Costing 2–20 pax sahaja (PO 12 Oct 2026); 21+ pax = quote manual.",
    "fx": [
     {
      "id": "MYR",
@@ -22089,27 +22089,7 @@
       "17": 770,
       "18": 770,
       "19": 770,
-      "20": 770,
-      "21": 770,
-      "22": 770,
-      "23": 770,
-      "24": 770,
-      "25": 770,
-      "26": 770,
-      "27": 770,
-      "28": 770,
-      "29": 770,
-      "30": 770,
-      "31": 770,
-      "32": 770,
-      "33": 770,
-      "34": 770,
-      "35": 770,
-      "36": 770,
-      "37": 770,
-      "38": 770,
-      "39": 770,
-      "40": 770
+      "20": 770
      }
     },
     {
@@ -22137,27 +22117,7 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     },
     {
@@ -22185,27 +22145,7 @@
       "17": 980,
       "18": 980,
       "19": 980,
-      "20": 980,
-      "21": 980,
-      "22": 980,
-      "23": 980,
-      "24": 980,
-      "25": 980,
-      "26": 980,
-      "27": 980,
-      "28": 980,
-      "29": 980,
-      "30": 980,
-      "31": 980,
-      "32": 980,
-      "33": 980,
-      "34": 980,
-      "35": 980,
-      "36": 980,
-      "37": 980,
-      "38": 980,
-      "39": 980,
-      "40": 980
+      "20": 980
      }
     },
     {
@@ -22233,32 +22173,12 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     },
     {
      "id": "IBRAHIM-5D4N__Ground-Cost",
-     "label": "IBRAHIM 5D4N · Ground Cost (CR 2027)",
+     "label": "IBRAHIM 5D4N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 5D4N",
@@ -22281,27 +22201,7 @@
       "17": 1320,
       "18": 1320,
       "19": 1320,
-      "20": 1320,
-      "21": 1280,
-      "22": 1280,
-      "23": 1280,
-      "24": 1280,
-      "25": 1280,
-      "26": 1280,
-      "27": 1280,
-      "28": 1280,
-      "29": 1280,
-      "30": 1280,
-      "31": 1250,
-      "32": 1250,
-      "33": 1250,
-      "34": 1250,
-      "35": 1250,
-      "36": 1250,
-      "37": 1250,
-      "38": 1250,
-      "39": 1250,
-      "40": 1250
+      "20": 1320
      }
     },
     {
@@ -22329,32 +22229,12 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     },
     {
      "id": "IBRAHIM-4D3N__Ground-Cost",
-     "label": "IBRAHIM 4D3N · Ground Cost (CR 2027)",
+     "label": "IBRAHIM 4D3N · Ground Cost (CR hingga Dis 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 4D3N",
@@ -22377,27 +22257,7 @@
       "17": 990,
       "18": 990,
       "19": 990,
-      "20": 990,
-      "21": 970,
-      "22": 970,
-      "23": 970,
-      "24": 970,
-      "25": 970,
-      "26": 970,
-      "27": 970,
-      "28": 970,
-      "29": 970,
-      "30": 970,
-      "31": 920,
-      "32": 920,
-      "33": 920,
-      "34": 920,
-      "35": 920,
-      "36": 920,
-      "37": 920,
-      "38": 920,
-      "39": 920,
-      "40": 920
+      "20": 990
      }
     },
     {
@@ -22425,27 +22285,7 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "20": 0
      }
     }
    ],
@@ -22455,7 +22295,7 @@
      "label": "Bismillah",
      "supplier": "TO BISMILLAH 4D3N — Danang Hoi An 4D3N (4-Star Hotel)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "4-Star (Danang) — LA Beach / Golden Rose / RHM (Bismillah uses HOTEL 4* default)",
      "notes": "CR Bismillah Jan–Dis 2026 (hotel 4★, Malay & English guide). Anak: dewasa 10 tahun ke atas; 5–9 tahun CWB 75% / CNB 50%; bawah 5 tahun percuma.",
      "components": [
@@ -22478,7 +22318,7 @@
      "label": "Bismillah",
      "supplier": "TO BISMILLAH 5D4N — Danang Hoi An 5D4N (4-Star Hotel)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "4-Star (Danang) — LA Beach / Golden Rose / RHM (Bismillah uses HOTEL 4* default)",
      "notes": "CR Bismillah Jan–Dis 2026 (hotel 4★, Malay & English guide). Anak: dewasa 10 tahun ke atas; 5–9 tahun CWB 75% / CNB 50%; bawah 5 tahun percuma.",
      "components": [
@@ -22499,11 +22339,11 @@
     {
      "id": "IBRAHIM-4D3N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 4D3N — Danang Hoi An 4D3N (CR 2027)",
+     "supplier": "TO IBRAHIM 4D3N — Danang Hoi An 4D3N (CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Danang) — Standard inventory (Ibrahim)",
-     "notes": "CR Ibrahim 2027 (mulai Jan 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
+     "notes": "CR Ibrahim 2027 (berkuat kuasa sekarang hingga Dis 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
      "components": [
       {
        "key": "ground-cost",
@@ -22536,11 +22376,11 @@
     {
      "id": "IBRAHIM-5D4N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 5D4N — Danang Hoi An 5D4N (CR 2027)",
+     "supplier": "TO IBRAHIM 5D4N — Danang Hoi An 5D4N (CR hingga Dis 2027)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 20,
      "hotel": "3-Star (Danang) — Standard inventory (Ibrahim)",
-     "notes": "CR Ibrahim 2027 (mulai Jan 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
+     "notes": "CR Ibrahim 2027 (berkuat kuasa sekarang hingga Dis 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
      "components": [
       {
        "key": "ground-cost",
@@ -22579,7 +22419,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "BISMILLAH-4D3N"
       }
      ],
@@ -22603,17 +22443,7 @@
        "17": 1277,
        "18": 1277,
        "19": 1277,
-       "20": 1277,
-       "21": 1177,
-       "22": 1177,
-       "23": 1177,
-       "24": 1177,
-       "25": 1177,
-       "26": 1077,
-       "27": 1077,
-       "28": 1077,
-       "29": 1077,
-       "30": 1077
+       "20": 1277
       },
       "cwb": {
        "2": 2017,
@@ -22634,17 +22464,7 @@
        "17": 1077,
        "18": 1077,
        "19": 1077,
-       "20": 1077,
-       "21": 977,
-       "22": 977,
-       "23": 977,
-       "24": 977,
-       "25": 977,
-       "26": 877,
-       "27": 877,
-       "28": 877,
-       "29": 877,
-       "30": 877
+       "20": 1077
       },
       "cnb": {
        "2": 1817,
@@ -22665,17 +22485,7 @@
        "17": 637,
        "18": 637,
        "19": 637,
-       "20": 637,
-       "21": 587,
-       "22": 587,
-       "23": 587,
-       "24": 587,
-       "25": 587,
-       "26": 537,
-       "27": 537,
-       "28": 537,
-       "29": 537,
-       "30": 537
+       "20": 637
       },
       "infant": 0
      },
@@ -22706,7 +22516,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 20,
        "variant": "BISMILLAH-5D4N"
       }
      ],
@@ -22730,17 +22540,7 @@
        "17": 1877,
        "18": 1877,
        "19": 1877,
-       "20": 1877,
-       "21": 1777,
-       "22": 1777,
-       "23": 1777,
-       "24": 1777,
-       "25": 1777,
-       "26": 1677,
-       "27": 1677,
-       "28": 1677,
-       "29": 1677,
-       "30": 1677
+       "20": 1877
       },
       "cwb": {
        "2": 2177,
@@ -22761,17 +22561,7 @@
        "17": 1677,
        "18": 1677,
        "19": 1677,
-       "20": 1677,
-       "21": 1577,
-       "22": 1577,
-       "23": 1577,
-       "24": 1577,
-       "25": 1577,
-       "26": 1477,
-       "27": 1477,
-       "28": 1477,
-       "29": 1477,
-       "30": 1477
+       "20": 1677
       },
       "cnb": {
        "2": 1977,
@@ -22792,17 +22582,7 @@
        "17": 1477,
        "18": 1477,
        "19": 1477,
-       "20": 1477,
-       "21": 1377,
-       "22": 1377,
-       "23": 1377,
-       "24": 1377,
-       "25": 1377,
-       "26": 1277,
-       "27": 1277,
-       "28": 1277,
-       "29": 1277,
-       "30": 1277
+       "20": 1477
       },
       "infant": 0
      },
@@ -23029,7 +22809,7 @@
      "id": "1a1075462e3",
      "name": "PT DADH Ibrahim Danang Hoi An 4D3N Jan-Dec 2026.pdf",
      "file": "contracts/dadh/1a1075462e3-PT_DADH_Ibrahim_Danang_Hoi_An_4D3N_Jan-Dec_2026.pdf",
-     "to": "Ibrahim (2026)",
+     "to": "Ibrahim (2026, diganti)",
      "note": "From Drive · Production Team",
      "size": 322784,
      "at": "2026-10-04T14:32:13Z",
@@ -23041,7 +22821,7 @@
      "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
      "file": "contracts/dadh/1a12e82a961-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
      "to": "Ibrahim",
-     "note": "CR 2027 (mulai Jan 2027) · Danang Hoi An 4D3N / 5D4N + destinasi Vietnam lain",
+     "note": "CR berkuat kuasa sekarang hingga Dis 2027 · Danang Hoi An 4D3N / 5D4N + destinasi Vietnam lain",
      "size": 4812024,
      "at": "2026-10-12T05:07:57Z",
      "by": "ezie"

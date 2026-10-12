@@ -66,7 +66,7 @@
    "severity": "medium",
    "area": "Margin",
    "title": "Danang: Ibrahim CR 2027 (alternative TO) margins thin or negative",
-   "detail": "Against catalog − RM200: 5D4N 2 pax −9.3%, 3–4 pax 9.0%; 4D3N 2 pax 8.3%, 4 pax 7.1%, 6 pax 6.2%, 16–20 pax 8.1%, 21–25 pax 0.7%, 26–30 pax −10.6%. Bismillah (default) 12–50%.",
+   "detail": "Against catalog − RM200: 5D4N 2 pax −9.3%, 3–4 pax 9.0%; 4D3N 2 pax 8.3%, 4 pax 7.1%, 6 pax 6.2%, 16–20 pax 8.1%. Bismillah (default) 21–50%. Costing 2–20 pax only.",
    "fix": "Use Ibrahim only where the margin holds, or review the 2027 catalog prices.",
    "by": "ezie",
    "at": "2026-10-12"
