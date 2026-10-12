@@ -1,4 +1,4 @@
-# Status & handoff (12 Oct 2026, data v71 — the hub is the source of truth)
+# Status & handoff (12 Oct 2026, data v72 — the hub is the source of truth)
 
 PT R&D Hub (display name since 11 Oct 2026; was "PT R&D Costing Hub"). Repo renamed 10–11 Oct 2026 `pt-calculator-hub` → `pt-rnd-hub` (old Pages URL no longer works). Live: https://prod-at22.github.io/pt-rnd-hub/ · repo `prod-at22/pt-rnd-hub` (gh CLI is logged in as prod-at22).
 How everything works: README.md. This file = where we stopped. Reply to the PO in Bahasa Melayu.
@@ -34,7 +34,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - data/catalogs/<slug>.json = every catalog (67), same schema as Catalog PT. Imported once (8 Oct) byte for
   byte from Drive "Catalog PT (new)/catalogs" (`tools/import_catalogs.py --from-drive` — do NOT run again,
   it would overwrite hub edits). data/catalogs/index.json links slug → package (MAP in tools/flags.py);
-  rebuild it with `python3 tools/import_catalogs.py` after editing a catalog. Not linked: ho-chi-minh,
+  rebuild it with `python3 tools/import_catalogs.py` after editing a catalog. Not linked:
   maldives-standard, yunnan-3-wilayah-6d5n (no calculator package).
 - Destination page tabs show the selected package's catalog section by section (see README "Catalogs"); every
   field editable in Edit costs; each card links the public page / PDF.
@@ -73,7 +73,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   render the new files — do not use it.
 
 ## HANDOFF (12 Oct 2026) — v70 live · Aceh + Bali + Bangkok + Beijing verified, Danang + Hanoi-Sapa + HCM-Dalat Ibrahim CR 2027 · next: ask the PO
-- Live: hub v71, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+- Live: hub v72, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -128,7 +128,9 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   vdl4d3n, map → ibrahim-4d3n / catalog hcm-dalat-muine-4d3n), Jeep / ATV RM197 (= hub), group-FOC text removed (PO: FOC is for ARBA's tour
   leader, never quote it to customers), FAQ 2027 surcharge = catalog (Jan–Feb 2027 +RM120; calculator already matched). Margins 2027 18–35 %.
   Note: the Danang catalogs carry "Travel Date 2027 Jan–Feb +RM150/pax"; Hanoi catalogs carry none.
-  The same Ibrahim 2027 CR also prices Phu Quoc and HCM (HCM has no Costing yet) — to do one by one.
+  v72: HCM 4D3N (Shopping Tour) removed — not sold any more (PO): catalog ho-chi-minh deleted (mirror removes the page / PDF), KB dalat card +
+  calculator variant removed (texts now = the two Dalat variants), pt-kb-house catalogs.json nav link removed, HCM-only CR images removed.
+  The same Ibrahim 2027 CR also prices Phu Quoc — next.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
@@ -171,7 +173,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   ask the PO per destination whether tipping should be charged in full for children.
 - Ideas not built (ask the PO first): admin "Reset password" + must-change-on-first-login, change role editor ↔ admin.
 - Open for the PO: Maldives 4 Star CNB below cost (Kaani has no child rate) + estimates to confirm (lunch D3, 2nd excursion, green tax,
-  tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N has no costing
+  tipping) + Peak 21 Dec–10 Jan not sold by Kaani; Beijing Jul–Aug +RMB400 / single supplement / FOC; Ho Chi Minh 4D3N removed (not sold, PO 12 Oct)
   (needs a CR); Simple Calculator formulas for other destinations; Hokkaido / Seoul rates missing in Rate reference.
 
 ## KB House from the hub (9 Oct 2026, v32) — Phase 2 in progress
@@ -206,7 +208,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
    /flags/ regenerated 7 Oct on data v25 (95 flags: 29 high · 37 medium · 29 low). New since v6: KK margin
    problems in 11 lines and Perhentian Shari-La under 10% / CWB below cost (both from Selling = Catalog − RM200),
    Seoul-Jeju 2 pax 6.8% and Jeju-Udo 3.8% margin, Korea 26–30 pax no cost, Qayyum FX 0.026 (HND) vs 0.0259 (KIX).
-7. No costing in the hub yet: Yunnan 3 Wilayah, Ho Chi Minh, Maldives Standard (4★). Codes SNZ, NNZ, SUBM, KMGDL not on the hub.
+7. No costing in the hub yet: Yunnan 3 Wilayah, Maldives Standard (4★). Codes SNZ, NNZ, SUBM, KMGDL not on the hub.
 8. Done (11 Oct): logins — admin ezie + 5 PO editors (see HANDOFF).
 9. Uploaded only files named PT from the Drive "Production Team" folder; unlabelled CRs (Perhentian resorts,
    Semporna Legend, Perth K&N, NZ price list, Pak Jamal, KK / Krabi / Maldives folders) were not uploaded.

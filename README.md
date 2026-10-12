@@ -107,8 +107,7 @@ it runs `catalog-build/changed.py <last mirrored hub commit> <now>`, which resol
 `catalog-build/` changed). The cron schedule in that workflow is only a fallback — GitHub runs it rarely.
 The admin's token therefore needs **Contents: Read and write on pt-rnd-hub** and **Actions: Read and write
 on catalog-pt-public and pt-kb-house**; without the second the save still works and the page says the catalogs wait for the schedule. Catalogs without a Costing package /
-hub destination (Ho Chi Minh, Maldives 4 Star, Yunnan 3 Wilayah) keep printed amounts (and, for Ho Chi Minh and
-Yunnan 3 Wilayah, their own add-on list). Keep every pax in a band at the same Costing price — Flags warns.
+hub destination (Maldives 4 Star, Yunnan 3 Wilayah) keep printed amounts (and, for Yunnan 3 Wilayah, its own add-on list). Keep every pax in a band at the same Costing price — Flags warns.
 
 ## KB House → pt-kb-house (since 9 Oct 2026, v32)
 

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 71,
- "updatedAt": "2026-10-12T07:55:25Z",
+ "version": 72,
+ "updatedAt": "2026-10-12T10:19:50Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -19425,28 +19425,6 @@
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1DFmWCCBmhyEsbBnlGmg2UHDxyZhV2hYq"
-    },
-    {
-     "id": "1a1075462fb",
-     "name": "PT DLMHCM Ibraim HCM 4D3N Jan-Dec 2026.jpeg",
-     "file": "contracts/dlmnhcm/1a1075462fb-PT_DLMHCM_Ibraim_HCM_4D3N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim (2026, HCM rujukan)",
-     "note": "From Drive · Production Team",
-     "size": 134842,
-     "at": "2026-10-04T14:32:13Z",
-     "by": "product",
-     "drive": "1n2MhKBr_HNzbiF1VTt83vdgPaYG6G3zK"
-    },
-    {
-     "id": "1a1075462fc",
-     "name": "PT DLMHCM Ibrahim HCM 5D4N Jan-Dec 2026.jpeg",
-     "file": "contracts/dlmnhcm/1a1075462fc-PT_DLMHCM_Ibrahim_HCM_5D4N_Jan-Dec_2026.jpeg",
-     "to": "Ibrahim (2026, HCM rujukan)",
-     "note": "From Drive · Production Team",
-     "size": 172526,
-     "at": "2026-10-04T14:32:13Z",
-     "by": "product",
-     "drive": "11f0knGA5612GTlPgKbt4mseeVBdtYDqs"
     },
     {
      "id": "1a12f1bf526",

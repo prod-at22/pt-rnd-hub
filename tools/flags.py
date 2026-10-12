@@ -25,7 +25,7 @@ MAP = {
     "beijing": ("PEK", "tourdechina"), "danang-hoi-an-4d3n": ("DADH", "bismillah-4d3n"),
     "danang-hoi-an-5d4n": ("DADH", "bismillah-5d4n"), "hanoi-sapa": ("HNSH", "ibrahim-4d3n"),
     "hanoi-sapa-halong": ("HNSH", "ibrahim-5d4n"), "hcm-dalat-muine-4d3n": ("DLMNHCM", "ibrahim-4d3n"),
-    "hcm-dalat-muine": ("DLMNHCM", "ibrahim-5d4n"), "ho-chi-minh": ("HCM", None),
+    "hcm-dalat-muine": ("DLMNHCM", "ibrahim-5d4n"),
     "hokkaido-sapporo": ("CTS", "wif-cts"), "istanbul-bursa": ("ISTBUR", "mytrip-3s"),
     "istanbul-cappadocia": ("ISTCAP", "mytrip-pt-3star"), "jakarta-bandung": ("JBDO", "ctrans"),
     "jeju": ("JJU", "atk-pt"), "jeju-udo": ("JJUO", "atk-std"), "jogjakarta": ("JOG", "pak-jamal-3-star"),

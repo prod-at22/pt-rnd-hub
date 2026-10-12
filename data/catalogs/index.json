@@ -116,15 +116,6 @@
   "updated": "2026-10-12",
   "url": "https://prod-at22.github.io/catalog-pt-public/hcm-dalat-muine-4d3n.html"
  },
- "ho-chi-minh": {
-  "code": "HCM",
-  "package": null,
-  "title": "PRIVATE TOUR HO CHI MINH",
-  "duration": "4D3N",
-  "version": "v1",
-  "updated": "2025-12-08",
-  "url": "https://prod-at22.github.io/catalog-pt-public/ho-chi-minh.html"
- },
  "hokkaido-sapporo": {
   "code": "CTS",
   "package": "wif-cts",
