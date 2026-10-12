@@ -707,11 +707,10 @@ function toCompareCard(d, pkg) {
   const def = defaultTOs(pkg), paxs = Object.keys(pkg.pricing.adult).map(Number).sort((a, b) => a - b);
   const int = v => num(v) ? (v < 0 ? "−" : "") + Math.round(Math.abs(v)).toLocaleString("en-MY") : '<span class="missing">—</span>';
   const rows = paxs.map((p, i) => {
-    const rs = vs.map(v => priceRow(d, pkg, v.id, p).adult), ms = rs.map(r => r.margin).filter(num), max = Math.max(...ms), best = ms.length > 1 && ms.filter(m => Math.abs(m - max) < 0.5).length === 1 ? max : NaN;   // only a single best TO is marked
-    return `<tr class="${i % 2 ? "alt" : ""}"><td class="c"><b>${p}</b></td><td class="sp">${int(rs[0].selling)}</td>${rs.map(r => { const b = num(r.margin) && num(best) && Math.abs(r.margin - best) < 0.5;
-      return `<td class="mg ${marginClass(r.pct)}${b ? " best" : ""}" title="${b ? "Highest margin · " : ""}Cost/pax ${num(r.cost) ? Math.round(r.cost).toLocaleString("en-MY") : "—"}">${int(r.margin)}</td><td class="mg ${marginClass(r.pct)}${b ? " best" : ""}">${num(r.pct) ? (r.pct * 100).toFixed(1) + "%" : "—"}</td>`; }).join("")}</tr>`;
+    const rs = vs.map(v => priceRow(d, pkg, v.id, p).adult);
+    return `<tr class="${i % 2 ? "alt" : ""}"><td class="c"><b>${p}</b></td><td class="sp">${int(rs[0].selling)}</td>${rs.map(r => `<td class="mg ${marginClass(r.pct)}" title="Cost/pax ${num(r.cost) ? Math.round(r.cost).toLocaleString("en-MY") : "—"}">${int(r.margin)}</td><td class="mg ${marginClass(r.pct)}">${num(r.pct) ? (r.pct * 100).toFixed(1) + "%" : "—"}</td>`).join("")}</tr>`;
   }).join("");
-  return `<div class="card full" id="toCompare"><h2>TO Comparison <span class="sub">${esc(pkg.label)} · adult margin per pax (Selling − cost) for each TO · highlighted = highest margin · hover for cost/pax</span></h2>
+  return `<div class="card full" id="toCompare"><h2>TO Comparison <span class="sub">${esc(pkg.label)} · adult margin per pax (Selling − cost) for each TO · hover for cost/pax</span></h2>
     <div class="scroll" style="max-height:480px;overflow-y:auto"><table class="rd"><thead><tr><th rowspan="2">Pax</th><th rowspan="2" class="sp">Selling</th>${vs.map(v => `<th colspan="2">${esc(v.label)}${def.includes(v.id) ? " · default" : ""}</th>`).join("")}</tr>
     <tr>${vs.map(() => "<th class=\"mg\">Margin RM</th><th class=\"mg\">%</th>").join("")}</tr></thead><tbody>${rows}</tbody></table></div></div>`;
 }
