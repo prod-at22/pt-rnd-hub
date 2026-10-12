@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 January 2027",
   "version": "v3",
-  "updated": "2026-08-08",
+  "updated": "2026-10-12",
   "kb_url": "https://prod-at22.github.io/japan-kb/",
   "po": "Ezie",
   "ops": "ATIQAH",
@@ -27,7 +27,7 @@
     },
     {
       "icon": "guide",
-      "label": "Driving Guide"
+      "label": "Driver + Tour Guide"
     }
   ],
   "prices": {
@@ -210,7 +210,7 @@
       "entries": [
         "All prices are valid for 24 hours after quotation submission.",
         "The price is for 2 to 3 persons per room.",
-        "Single supplement: additional RM1,200 - RM2,000/person.",
+        "Single supplement: additional RM1,200/person.",
         "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
         "Last minute surcharge will be charged if the booking is made less than 3 weeks before departure (refer to the Last Minute Surcharge table).",
         "Private driver & guide is based on 10 hours basis. 5,000 - 10,000 yen will be charged for every extra hour usage. Payment must be made in cash.",
@@ -258,5 +258,5 @@
     ]
   },
   "addon_groups": [],
-  "hub_version": 30
+  "hub_version": 74
 }
