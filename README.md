@@ -57,7 +57,8 @@ The R&D files are no longer read, compared or kept in sync — do not update the
   infant price has no discount.
 - A package with a catalog price but no TO cost shows the cost as missing (and a Flag), never RM0.
 - Child rules: % of adult cost, adult cost − RM, or (Aceh, Aceh-Sabang, Beijing) % of Ground
-  only with tipping/activities charged in full.
+  only with tipping/activities charged in full. A TO can carry its own child rules (`variants[].childRules`:
+  cwbCost / cnbCost / infantCost) that win over the package's rules for that TO — Danang: Ibrahim CR (CWB 50%, CNB free).
 
 Older versions: imports were logged with `rebase: true`; versions before the last one cannot be
 rebuilt cell by cell (History shows them as "before import").

@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-10-12T11:26:31+08:00",
- "dataVersion": 67,
+ "generatedAt": "2026-10-12T13:08:38+08:00",
+ "dataVersion": 68,
  "flags": [
   {
    "code": "DADH",
    "package": null,
    "severity": "high",
    "area": "Margin",
-   "title": "Danang - Hoi An: margin problems in 1 package/TO line",
-   "detail": "Danang - Hoi An 4D3N · 4★ — CNB selling below cost Pax 26–30.",
-   "fix": "Check the CNB cost rule (% of adult) and the CNB catalog price.",
+   "title": "Danang - Hoi An: margin problems in 2 package/TO lines",
+   "detail": "Danang - Hoi An 4D3N — CNB selling below cost Pax 26–30 · None — Ibrahim CR 2027 (alternative TO) margins thin or negative Against catalog − RM200: 5D4N 2 pax −9.3%, 3–4 pax 9.0%; 4D3N 2 pax 8.3%, 4 pax 7.1%, 6 pax 6.2%, 16–20 pax 8.1%, 21–25 pax 0.7%, 26–30 pax −10.6%. Bismillah (default) 12–50%. (noted by ezie, 2026-10-12).",
+   "fix": "Check the CNB cost rule (% of adult) and the CNB catalog price. Use Ibrahim only where the margin holds, or review the 2027 catalog prices.",
    "id": 1
   },
   {
@@ -193,6 +193,16 @@
    "id": 19
   },
   {
+   "code": "DADH",
+   "package": null,
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Danang: Bismillah CR ends Dec 2026",
+   "detail": "Bismillah (default TO) CR is Jan–Dec 2026; the catalogs are valid to 31 Dec 2026. Ibrahim has a 2027 CR. (noted by ezie, 2026-10-12)",
+   "fix": "Ask Bismillah for the 2027 rates before extending the catalogs into 2027.",
+   "id": 20
+  },
+  {
    "code": "DPS",
    "package": null,
    "severity": "medium",
@@ -200,7 +210,7 @@
    "title": "Bali: 1 add-on(s) sold below cost",
    "detail": "Banana Boat at Nusa Dua: cost RM87, selling RM67.",
    "fix": "Raise the selling (catalog) price or check the cost on the Add On tab.",
-   "id": 20
+   "id": 21
   },
   {
    "code": "DPS",
@@ -210,7 +220,7 @@
    "title": "Bali: Pocket Wifi prices look swapped",
    "detail": "Pocket Wifi 3GB 4D3N sells at RM120 (cost RM28) but 10GB at RM80 (cost RM48) — the larger plan is cheaper. (noted by ezie, 2026-10-11)",
    "fix": "Confirm both selling prices on the Add On tab.",
-   "id": 21
+   "id": 22
   },
   {
    "code": "HND",
@@ -220,7 +230,7 @@
    "title": "Tokyo: margin problems in 1 package/TO line",
    "detail": "Tokyo Standard 5D4N — adult margin under 10% Pax 2 (lowest 6.6%).",
    "fix": "Review the price for these pax or the TO rate.",
-   "id": 22
+   "id": 23
   },
   {
    "code": "HNSH",
@@ -230,7 +240,7 @@
    "title": "Hanoi - Sapa - Halong Bay · Hanoi - Halong Bay 4D3N: price but no cost",
    "detail": "Pax 21–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 23
+   "id": 24
   },
   {
    "code": "HNSH",
@@ -240,7 +250,7 @@
    "title": "Hanoi - Sapa - Halong Bay · Hanoi - Sapa 5D4N: price but no cost",
    "detail": "Pax 21–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 24
+   "id": 25
   },
   {
    "code": "JJU",
@@ -250,7 +260,7 @@
    "title": "Jeju · Jeju Standard 4D3N: price but no cost",
    "detail": "Pax 26–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 25
+   "id": 26
   },
   {
    "code": "JJUO",
@@ -260,7 +270,7 @@
    "title": "Jeju - Udo · Jeju - Udo Standard 5D4N: price but no cost",
    "detail": "Pax 26–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 26
+   "id": 27
   },
   {
    "code": "JJUO",
@@ -270,7 +280,7 @@
    "title": "Jeju - Udo: margin problems in 1 package/TO line",
    "detail": "Jeju - Udo Standard 5D4N — adult margin under 10% Pax 2–3, 10 (lowest 2.3%).",
    "fix": "Review the price for these pax or the TO rate.",
-   "id": 27
+   "id": 28
   },
   {
    "code": "MEL",
@@ -280,7 +290,7 @@
    "title": "Melbourne: margin problems in 2 package/TO lines",
    "detail": "Melbourne Basic 5D4N — adult margin under 10% Pax 11–12 (lowest 5.3%) · Melbourne Standard 5D4N — adult margin under 10% Pax 11–12 (lowest 5.3%).",
    "fix": "Review the price for these pax or the TO rate.",
-   "id": 28
+   "id": 29
   },
   {
    "code": "PEK",
@@ -290,7 +300,7 @@
    "title": "Beijing: 2 add-on(s) sold below cost",
    "detail": "Extra Lunch — Tambah: cost RM61, selling RM60; Extra Dinner — Tambah: cost RM61, selling RM60.",
    "fix": "Raise the selling (catalog) price or check the cost on the Add On tab.",
-   "id": 29
+   "id": 30
   },
   {
    "code": "PER",
@@ -300,7 +310,7 @@
    "title": "Perth: margin problems in 2 package/TO lines",
    "detail": "Perth Standard 5D4N — adult margin under 10% Pax 2 (lowest 10.0%) · Perth Premium 6D5N — adult margin under 10% Pax 2 (lowest 8.9%).",
    "fix": "Review the price for these pax or the TO rate.",
-   "id": 30
+   "id": 31
   },
   {
    "code": "PHT",
@@ -310,7 +320,7 @@
    "title": "Perhentian: 1 add-on(s) sold below cost",
    "detail": "Scuba Diving (Fun Dive): cost RM177, selling RM120.",
    "fix": "Raise the selling (catalog) price or check the cost on the Add On tab.",
-   "id": 31
+   "id": 32
   },
   {
    "code": "SEL",
@@ -320,7 +330,7 @@
    "title": "Seoul: 2 add-on(s) sold below cost",
    "detail": "Domestic flight Seoul↔Jeju: cost RM330, selling RM300; Add 1 night 3★ (normal): cost RM270, selling RM250.",
    "fix": "Raise the selling (catalog) price or check the cost on the Add On tab.",
-   "id": 32
+   "id": 33
   },
   {
    "code": "SEL",
@@ -330,7 +340,7 @@
    "title": "Seoul · Seoul Basic 5D4N: price but no cost",
    "detail": "Pax 26–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 33
+   "id": 34
   },
   {
    "code": "SELJJU",
@@ -340,7 +350,7 @@
    "title": "Seoul - Jeju: add-on \"Tolak 1 malam 3★ dari pakej\" cost and selling have opposite signs",
    "detail": "Cost RM150, selling RM-150 → margin RM-300.",
    "fix": "Use the same sign for a deduction (e.g. both negative).",
-   "id": 34
+   "id": 35
   },
   {
    "code": "SELJJU",
@@ -350,7 +360,7 @@
    "title": "Seoul - Jeju · Seoul - Jeju Standard 6D5N: price but no cost",
    "detail": "Pax 26–30 have a selling price but no TO cost.",
    "fix": "Add the TO rate for those pax in the hub (Edit costs), or stop quoting those pax counts.",
-   "id": 35
+   "id": 36
   },
   {
    "code": "SWS",
@@ -360,7 +370,7 @@
    "title": "Switzerland: margin problems in 1 package/TO line",
    "detail": "Switzerland Self Tour 7D6N — adult margin under 10% Pax 2–14 (lowest 9.9%).",
    "fix": "Review the price for these pax or the TO rate.",
-   "id": 36
+   "id": 37
   },
   {
    "code": "BKK",
@@ -370,7 +380,7 @@
    "title": "Bangkok: Giraffe Encounter margin under 10%",
    "detail": "Cost RM122 (CR 1,000 THB), selling RM135 (catalog) — 9.6%. (noted by ezie, 2026-10-12)",
    "fix": "Keep or raise the catalog price.",
-   "id": 37
+   "id": 38
   },
   {
    "code": "BKK",
@@ -380,7 +390,7 @@
    "title": "Bangkok: 4★ upgrade margin thin",
    "detail": "Nouvo City Superior Classic 2,000 THB vs Almas 1,250 THB = ~RM46/pax/night against the RM50 upgrade (~9%). (noted by ezie, 2026-10-12)",
    "fix": "Keep or raise the 4★ upgrade surcharge.",
-   "id": 38
+   "id": 39
   },
   {
    "code": "BKK",
@@ -390,16 +400,6 @@
    "title": "Bangkok: New PO is blank in the Project PT sheet",
    "detail": "The hub shows PO Fyka.",
    "fix": "Fill New PO in the Project PT sheet (and change it on the page).",
-   "id": 39
-  },
-  {
-   "code": "DADH",
-   "package": null,
-   "severity": "low",
-   "area": "Coverage",
-   "title": "Danang - Hoi An: 1 package(s) without their own catalog",
-   "detail": "Danang - Hoi An 5D4N · 3★. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
-   "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
    "id": 40
   },
   {

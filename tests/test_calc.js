@@ -208,6 +208,12 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(near(r6.cwb.cost, r6.adult.cost), "Tokyo CWB cost = 100% adult");
     ok(r6.infant.selling === 200, "Tokyo infant RM200 with no tier-2 discount");
     ok(P.priceRow(hnd, s, "QAYYUM-STD", 8).cost === null, "Qayyum does not cover 8 pax");
+    // a TO's own child rules (variants[].childRules) win over the package's rules
+    const tv = hnd.variants.find(v => v.id === "QAYYUM-STD");
+    tv.childRules = { cwbCost: { type: "pct", value: 0.5 }, cnbCost: { type: "pct", value: 0 } };
+    const rc = P.priceRow(hnd, s, "QAYYUM-STD", 6), rw = P.priceRow(hnd, s, "WIF-STD", 8);
+    ok(near(rc.cwb.cost, rc.adult.cost * 0.5) && rc.cnb.cost === 0 && near(rw.cnb.cost, rw.adult.cost - 1200), "TO childRules: Qayyum CWB 50% / CNB 0, WIF keeps the package rule (adult − 1200)");
+    delete tv.childRules;
   }
 
   console.log("3. UI: destination / package / auto TO by pax");

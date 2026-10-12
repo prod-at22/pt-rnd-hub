@@ -210,6 +210,9 @@ function applyRule(rule, base, cost) {
   const v = +rule.value;
   return rule.type === "pct" ? base * v : rule.type === "minus" ? base - v : v;
 }
+// Child cost rule (k = "cwb" / "cnb" / "infant"): the TO's own variants[].childRules when set (Danang: Ibrahim CR, PO 12 Oct 2026),
+// else the package's rules.
+const childRule = (pkg, v, k) => (v && v.childRules && v.childRules[k + "Cost"]) || pkg.rules[k + "Cost"];
 const priceAt = (pkg, k, pax) => { const v = pkg.pricing[k]?.[String(pax)]; return v === undefined || v === null || v === "" ? NaN : +v; };
 // One row of the Costing tab: cost / catalog / selling / margin for each pax type.
 // RM off the catalog price per pax: the package's own rules.sellingDiscount when set (Bali Honeymoon: RM100/pax = RM200 per couple,
@@ -233,9 +236,9 @@ function priceRow(d, pkg, variantId, pax, opts) {
   return {
     pax, variant: v, cost,
     adult: mk(adultCost, priceAt(pkg, "adult", pax)),
-    cwb: mk(applyRule(r.cwbCost, adultCost, cost), priceAt(pkg, "cwb", pax)),
-    cnb: mk(applyRule(r.cnbCost, adultCost, cost), priceAt(pkg, "cnb", pax)),
-    infant: mk(applyRule(r.infantCost, adultCost, cost), +pkg.pricing.infant, true),
+    cwb: mk(applyRule(childRule(pkg, v, "cwb"), adultCost, cost), priceAt(pkg, "cwb", pax)),
+    cnb: mk(applyRule(childRule(pkg, v, "cnb"), adultCost, cost), priceAt(pkg, "cnb", pax)),
+    infant: mk(applyRule(childRule(pkg, v, "infant"), adultCost, cost), +pkg.pricing.infant, true),
   };
 }
 // Margin colour: green when positive, red when negative.
@@ -611,7 +614,7 @@ function costingByPax(d, pkg, pax) {
   const body = blocks.map(bl => {
     const has = new Set(bl.v ? bl.v.components.map(c => c.key) : []);
     const toLbl = bl.v ? bl.v.label : "no TO";
-    const title = `<tr class="blk-title"><td colspan="${nCols}">${esc(pkg.label.toUpperCase())}${toLbl.toUpperCase() === pkg.label.toUpperCase() ? "" : " / " + esc(toLbl)}${isAdult ? "" : ` <span class="muted">· ${k.toUpperCase()} cost = ${esc(ruleTxt(pkg.rules[k + "Cost"]))}</span>`}</td></tr>`;
+    const title = `<tr class="blk-title"><td colspan="${nCols}">${esc(pkg.label.toUpperCase())}${toLbl.toUpperCase() === pkg.label.toUpperCase() ? "" : " / " + esc(toLbl)}${isAdult ? "" : ` <span class="muted">· ${k.toUpperCase()} cost = ${esc(ruleTxt(childRule(pkg, bl.v, k)))}</span>`}</td></tr>`;
     const head = `<tr class="blk-head"><th>${isAdult ? "Adult" : k.toUpperCase() + " · pax"}</th>${isAdult
       ? comps.map(c => { const vc = bl.v && bl.v.components.find(o => o.key === c.key); return `<th>${vc ? esc(vc.label) : ""}</th>`; }).join("")
       : `<th>Adult cost/pax</th>${childComps.map(c => { const vc = bl.v && bl.v.components.find(o => o.key === c.key); return `<th>${vc ? esc(vc.label) + esc(fLbl(c)) : ""}</th>`; }).join("")}${less ? "<th>Less</th>" : ""}`}<th>Cost/Pax</th><th class="cp">Catalog Price</th><th class="sp">${esc(sellLabel(pkg))}</th><th class="mg">Margin</th><th class="mg">%</th>${isAdult ? `<th>Total Gross</th>` : ""}</tr>`;

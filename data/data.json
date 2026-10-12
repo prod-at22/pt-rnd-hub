@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 67,
- "updatedAt": "2026-10-12T03:26:30Z",
+ "version": 68,
+ "updatedAt": "2026-10-12T05:08:36Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -22258,50 +22258,50 @@
     },
     {
      "id": "IBRAHIM-5D4N__Ground-Cost",
-     "label": "IBRAHIM 5D4N · Ground Cost",
+     "label": "IBRAHIM 5D4N · Ground Cost (CR 2027)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 5D4N",
      "values": {
-      "2": 1740,
-      "3": 1740,
-      "4": 1740,
-      "5": 1630,
-      "6": 1630,
-      "7": 1630,
-      "8": 1520,
-      "9": 1520,
-      "10": 1520,
-      "11": 1380,
-      "12": 1380,
-      "13": 1380,
-      "14": 1380,
-      "15": 1380,
-      "16": 1340,
-      "17": 1340,
-      "18": 1340,
-      "19": 1340,
-      "20": 1230,
-      "21": 1230,
-      "22": 1230,
-      "23": 1230,
-      "24": 1230,
-      "25": 1230,
-      "26": 1230,
-      "27": 1230,
-      "28": 1230,
-      "29": 1230,
-      "30": 1230,
-      "31": 1230,
-      "32": 1230,
-      "33": 1230,
-      "34": 1230,
-      "35": 1230,
-      "36": 1230,
-      "37": 1230,
-      "38": 1230,
-      "39": 1230,
-      "40": 1230
+      "2": 2380,
+      "3": 1980,
+      "4": 1980,
+      "5": 1710,
+      "6": 1710,
+      "7": 1620,
+      "8": 1620,
+      "9": 1530,
+      "10": 1530,
+      "11": 1420,
+      "12": 1420,
+      "13": 1350,
+      "14": 1350,
+      "15": 1320,
+      "16": 1320,
+      "17": 1320,
+      "18": 1320,
+      "19": 1320,
+      "20": 1320,
+      "21": 1280,
+      "22": 1280,
+      "23": 1280,
+      "24": 1280,
+      "25": 1280,
+      "26": 1280,
+      "27": 1280,
+      "28": 1280,
+      "29": 1280,
+      "30": 1280,
+      "31": 1250,
+      "32": 1250,
+      "33": 1250,
+      "34": 1250,
+      "35": 1250,
+      "36": 1250,
+      "37": 1250,
+      "38": 1250,
+      "39": 1250,
+      "40": 1250
      }
     },
     {
@@ -22310,6 +22310,102 @@
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "IBRAHIM 5D4N",
+     "values": {
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0
+     }
+    },
+    {
+     "id": "IBRAHIM-4D3N__Ground-Cost",
+     "label": "IBRAHIM 4D3N · Ground Cost (CR 2027)",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "IBRAHIM 4D3N",
+     "values": {
+      "2": 1850,
+      "3": 1650,
+      "4": 1650,
+      "5": 1480,
+      "6": 1480,
+      "7": 1270,
+      "8": 1270,
+      "9": 1120,
+      "10": 1120,
+      "11": 1050,
+      "12": 1050,
+      "13": 1020,
+      "14": 1020,
+      "15": 990,
+      "16": 990,
+      "17": 990,
+      "18": 990,
+      "19": 990,
+      "20": 990,
+      "21": 970,
+      "22": 970,
+      "23": 970,
+      "24": 970,
+      "25": 970,
+      "26": 970,
+      "27": 970,
+      "28": 970,
+      "29": 970,
+      "30": 970,
+      "31": 920,
+      "32": 920,
+      "33": 920,
+      "34": 920,
+      "35": 920,
+      "36": 920,
+      "37": 920,
+      "38": 920,
+      "39": 920,
+      "40": 920
+     }
+    },
+    {
+     "id": "IBRAHIM-4D3N__Tipping",
+     "label": "IBRAHIM 4D3N · Tipping",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "IBRAHIM 4D3N",
      "values": {
       "2": 0,
       "3": 0,
@@ -22361,7 +22457,7 @@
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "4-Star (Danang) — LA Beach / Golden Rose / RHM (Bismillah uses HOTEL 4* default)",
-     "notes": "",
+     "notes": "CR Bismillah Jan–Dis 2026 (hotel 4★, Malay & English guide). Anak: dewasa 10 tahun ke atas; 5–9 tahun CWB 75% / CNB 50%; bawah 5 tahun percuma.",
      "components": [
       {
        "key": "ground-cost",
@@ -22384,7 +22480,7 @@
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "4-Star (Danang) — LA Beach / Golden Rose / RHM (Bismillah uses HOTEL 4* default)",
-     "notes": "",
+     "notes": "CR Bismillah Jan–Dis 2026 (hotel 4★, Malay & English guide). Anak: dewasa 10 tahun ke atas; 5–9 tahun CWB 75% / CNB 50%; bawah 5 tahun percuma.",
      "components": [
       {
        "key": "ground-cost",
@@ -22401,13 +22497,50 @@
      ]
     },
     {
-     "id": "IBRAHIM-5D4N",
+     "id": "IBRAHIM-4D3N",
      "label": "Ibrahim",
-     "supplier": "TO IBRAHIM 5D4N — Danang Hoi An 5D4N (Muslim Tour)",
+     "supplier": "TO IBRAHIM 4D3N — Danang Hoi An 4D3N (CR 2027)",
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "3-Star (Danang) — Standard inventory (Ibrahim)",
-     "notes": "",
+     "notes": "CR Ibrahim 2027 (mulai Jan 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
+     "components": [
+      {
+       "key": "ground-cost",
+       "label": "Ground Cost",
+       "per": "pax",
+       "expr": "T['IBRAHIM-4D3N__Ground-Cost']"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "pax",
+       "expr": "T['IBRAHIM-4D3N__Tipping']"
+      }
+     ],
+     "childRules": {
+      "cwbCost": {
+       "type": "pct",
+       "value": 0.5
+      },
+      "cnbCost": {
+       "type": "pct",
+       "value": 0.0
+      },
+      "infantCost": {
+       "type": "flat",
+       "value": 0
+      }
+     }
+    },
+    {
+     "id": "IBRAHIM-5D4N",
+     "label": "Ibrahim",
+     "supplier": "TO IBRAHIM 5D4N — Danang Hoi An 5D4N (CR 2027)",
+     "paxMin": 2,
+     "paxMax": 40,
+     "hotel": "3-Star (Danang) — Standard inventory (Ibrahim)",
+     "notes": "CR Ibrahim 2027 (mulai Jan 2027, termasuk tiket Bana Hill & halal buffet atas Bana Hill). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga dewasa (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. FOC 15+1.",
      "components": [
       {
        "key": "ground-cost",
@@ -22421,13 +22554,27 @@
        "per": "pax",
        "expr": "T['IBRAHIM-5D4N__Tipping']"
       }
-     ]
+     ],
+     "childRules": {
+      "cwbCost": {
+       "type": "pct",
+       "value": 0.5
+      },
+      "cnbCost": {
+       "type": "pct",
+       "value": 0.0
+      },
+      "infantCost": {
+       "type": "flat",
+       "value": 0
+      }
+     }
     }
    ],
    "packages": [
     {
      "id": "bismillah-4d3n",
-     "label": "Danang - Hoi An 4D3N · 4★",
+     "label": "Danang - Hoi An 4D3N",
      "catalog": null,
      "assign": [
       {
@@ -22547,11 +22694,14 @@
        "type": "flat",
        "value": 0
       }
-     }
+     },
+     "alsoVariants": [
+      "IBRAHIM-4D3N"
+     ]
     },
     {
      "id": "bismillah-5d4n",
-     "label": "Danang - Hoi An 5D4N · 4★",
+     "label": "Danang - Hoi An 5D4N",
      "catalog": null,
      "assign": [
       {
@@ -22671,131 +22821,10 @@
        "type": "flat",
        "value": 0
       }
-     }
-    },
-    {
-     "id": "ibrahim-5d4n",
-     "label": "Danang - Hoi An 5D4N · 3★",
-     "catalog": null,
-     "assign": [
-      {
-       "from": 2,
-       "to": 30,
-       "variant": "IBRAHIM-5D4N"
-      }
-     ],
-     "pricing": {
-      "adult": {
-       "2": 2377,
-       "3": 2377,
-       "4": 2377,
-       "5": 2277,
-       "6": 2277,
-       "7": 2277,
-       "8": 2177,
-       "9": 2177,
-       "10": 2177,
-       "11": 1977,
-       "12": 1977,
-       "13": 1977,
-       "14": 1977,
-       "15": 1977,
-       "16": 1877,
-       "17": 1877,
-       "18": 1877,
-       "19": 1877,
-       "20": 1877,
-       "21": 1777,
-       "22": 1777,
-       "23": 1777,
-       "24": 1777,
-       "25": 1777,
-       "26": 1677,
-       "27": 1677,
-       "28": 1677,
-       "29": 1677,
-       "30": 1677
-      },
-      "cwb": {
-       "2": 2177,
-       "3": 2177,
-       "4": 2177,
-       "5": 2077,
-       "6": 2077,
-       "7": 2077,
-       "8": 1977,
-       "9": 1977,
-       "10": 1977,
-       "11": 1777,
-       "12": 1777,
-       "13": 1777,
-       "14": 1777,
-       "15": 1777,
-       "16": 1677,
-       "17": 1677,
-       "18": 1677,
-       "19": 1677,
-       "20": 1677,
-       "21": 1577,
-       "22": 1577,
-       "23": 1577,
-       "24": 1577,
-       "25": 1577,
-       "26": 1477,
-       "27": 1477,
-       "28": 1477,
-       "29": 1477,
-       "30": 1477
-      },
-      "cnb": {
-       "2": 1977,
-       "3": 1977,
-       "4": 1977,
-       "5": 1877,
-       "6": 1877,
-       "7": 1877,
-       "8": 1777,
-       "9": 1777,
-       "10": 1777,
-       "11": 1577,
-       "12": 1577,
-       "13": 1577,
-       "14": 1577,
-       "15": 1577,
-       "16": 1477,
-       "17": 1477,
-       "18": 1477,
-       "19": 1477,
-       "20": 1477,
-       "21": 1377,
-       "22": 1377,
-       "23": 1377,
-       "24": 1377,
-       "25": 1377,
-       "26": 1277,
-       "27": 1277,
-       "28": 1277,
-       "29": 1277,
-       "30": 1277
-      },
-      "infant": 0
      },
-     "rules": {
-      "discountTier2": 200,
-      "tierUpgrade": 0,
-      "cwbCost": {
-       "type": "pct",
-       "value": 0.5
-      },
-      "cnbCost": {
-       "type": "pct",
-       "value": 0.0
-      },
-      "infantCost": {
-       "type": "flat",
-       "value": 0
-      }
-     }
+     "alsoVariants": [
+      "IBRAHIM-5D4N"
+     ]
     }
    ],
    "addons": [
@@ -22978,114 +23007,6 @@
      "selling": 70.0,
      "per": "pcs",
      "notes": null
-    },
-    {
-     "id": "dadh-a21",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "dadh-a22",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a23",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a24",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a25",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a26",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "dadh-a29",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dadh-a30",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dadh-a31",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "dadh-a32",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
     }
    ],
    "catalogs": [
@@ -23108,12 +23029,22 @@
      "id": "1a1075462e3",
      "name": "PT DADH Ibrahim Danang Hoi An 4D3N Jan-Dec 2026.pdf",
      "file": "contracts/dadh/1a1075462e3-PT_DADH_Ibrahim_Danang_Hoi_An_4D3N_Jan-Dec_2026.pdf",
-     "to": "Ibrahim",
+     "to": "Ibrahim (2026)",
      "note": "From Drive · Production Team",
      "size": 322784,
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "16A_CrisjK73cFuOUzbbiUbM7kg2nlhxt"
+    },
+    {
+     "id": "1a12e82a961",
+     "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+     "file": "contracts/dadh/1a12e82a961-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+     "to": "Ibrahim",
+     "note": "CR 2027 (mulai Jan 2027) · Danang Hoi An 4D3N / 5D4N + destinasi Vietnam lain",
+     "size": 4812024,
+     "at": "2026-10-12T05:07:57Z",
+     "by": "ezie"
     }
    ],
    "hotels": [
