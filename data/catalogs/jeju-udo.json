@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v1",
-  "updated": "2026-03-12",
+  "updated": "2026-10-13",
   "kb_url": "https://prod-at22.github.io/korea-kb/",
   "po": "Ezie",
   "ops": "ATIQAH",
@@ -244,8 +244,8 @@
         "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
         "This package is valid until the 31st December 2026 travel period.",
         "Private transportation & driving guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
-        "A driving guide will be provided for groups of 2 to 9 pax.",
-        "A private driver and a professional tour guide will be provided for groups of 10 pax and above.",
+        "A driving guide will be provided for groups of 2 to 8 pax.",
+        "A private driver and a professional tour guide will be provided for groups of 9 pax and above.",
         "Itinerary, price and flight are subject to change accordingly.",
         "Final itinerary and hotel arrangements 14 days before the trip.",
         "Please check with our staff on the trip validity before booking any connecting domestic flights."
@@ -270,5 +270,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 81
 }

@@ -79042,6 +79042,907 @@
    "kb": [
     "KB korea: 3 changes"
    ]
+  },
+  {
+   "v": 81,
+   "at": "2026-10-13T03:35:54Z",
+   "by": "system",
+   "note": "Jeju - Udo 5D4N cross-check (PO ezie 13 Oct 2026; ATK CR 2026 Korea, KRW × live FX): cost = CR 'PT&GT-BSC, STD JEJU UDO 5D4N' (checked) — the CR row is Full board while the catalog is breakfast only; kept (PO), so adult margin stays thin at 2–3 / 10 pax (2.3–8.1%); Costing 2–25 pax (= CR); add-ons: duplicates removed, catalog items with cost (airport 290 / 360 per way, 7–9 pax 580 / 700; flight 250 / 300; Hanbok 60 / 80; Udo activities 30 / 50, paid on site), K-ETA Re-Application RM70 (= catalog), TripCare per pair / family; catalog: driving guide 2–8 pax, driver + guide 9+; KB korea: 2027 travel surcharge (+RM100) and Apr / May / Oct 2027 peak windows not for Jeju - Udo (not in the catalog). Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "note"
+     ],
+     "from": "Package cost = ATK CR 2026 per pax in KRW × 0.0030, 2–25 pax. CR seasonal discount/upcharge is not applied here.",
+     "to": "Package cost = ATK CR 2026 per pax in KRW × live FX (row 'JEJU UDO 5D4N Full board'; catalog is breakfast only — kept, PO 13 Oct 2026). Costing 2–25 pax (= CR); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here.",
+     "label": "Jeju - Udo › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 25,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 2197,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 2197,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 2197,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 2197,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 2197,
+     "to": null,
+     "label": "Jeju - Udo › Jeju - Udo Standard 5D4N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJUO",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "jjuo-a01",
+       "category": "Activity",
+       "label": "Hanbok Rental @ Seongeup",
+       "cost": 60,
+       "selling": 80,
+       "per": "pax",
+       "notes": "4 jam"
+      },
+      {
+       "id": "jjuo-a02",
+       "category": "Activity",
+       "label": "Udo bike/scooter/electric car",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax",
+       "notes": "10-50K KRW, bayar di sana"
+      },
+      {
+       "id": "jjuo-a03",
+       "category": "Activity",
+       "label": "Tangerine Picking (Summer)",
+       "cost": 30,
+       "selling": 40,
+       "per": "pax",
+       "notes": "10K KRW"
+      },
+      {
+       "id": "jjuo-a04",
+       "category": "Transport",
+       "label": "Domestic Flight Seoul-Jeju (sehala)",
+       "cost": 250,
+       "selling": 300,
+       "per": "pax",
+       "notes": "15kg+7kg"
+      },
+      {
+       "id": "jjuo-a05",
+       "category": "Transport",
+       "label": "Airport Transfer 1-6 pax",
+       "cost": 290,
+       "selling": 360,
+       "per": "way",
+       "notes": "ICN↔Gimpo"
+      },
+      {
+       "id": "jjuo-a06",
+       "category": "Transport",
+       "label": "Airport Transfer 7-9 pax",
+       "cost": 580,
+       "selling": 700,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a07",
+       "category": "Tour",
+       "label": "Driving Guide Jeju 1-9 pax",
+       "cost": 1000,
+       "selling": 1200,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a08",
+       "category": "Tour",
+       "label": "Malay Student Tour Guide",
+       "cost": 650,
+       "selling": 797,
+       "per": "hari",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a09",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 40,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a10",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a11",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a12",
+       "category": "Visa",
+       "label": "K-ETA",
+       "cost": 27,
+       "selling": 35,
+       "per": "pax",
+       "notes": "Included 1x"
+      },
+      {
+       "id": "jjuo-a13",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB Daily",
+       "cost": 40,
+       "selling": 70,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jjuo-a14",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB Daily",
+       "cost": 65,
+       "selling": 120,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jjuo-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "jjuo-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a20",
+       "category": "Luggage",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a21",
+       "category": "Luggage",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a22",
+       "category": "Luggage",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a23",
+       "category": "Luggage",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-k001",
+       "category": "Add-on Private Transport",
+       "label": "Airport Transfer — Incheon Airport ↔ Gimpo Airport",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Airport Transfer, Driver Only",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "1-6 pax: RM360/way",
+        "7-9 pax: RM700/way"
+       ],
+       "catalogs": {
+        "jeju-udo": 1
+       }
+      },
+      {
+       "id": "jjuo-k002",
+       "category": "Add-on Private Transport",
+       "label": "Domestic Flight — Seoul to Jeju",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 way Domestic Flight Ticket, 15kg Checked-in Luggage, 7kg Hand Carry",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "RM300",
+        "Per Way/Pax"
+       ],
+       "catalogs": {
+        "jeju-udo": 2
+       }
+      },
+      {
+       "id": "jjuo-k003",
+       "category": "Additional Activities",
+       "label": "Hanbok Rental at Songeup Folk Village",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Basic Hanbok Attire",
+       "excludes": "Extra equipment for rental",
+       "duration": "4 Hours",
+       "price_lines": [
+        "Adult & Child:",
+        "RM80/person"
+       ],
+       "catalogs": {
+        "jeju-udo": 3
+       }
+      },
+      {
+       "id": "jjuo-k004",
+       "category": "Additional Activities",
+       "label": "Additional Activity at Udo Island",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Electric bicycle, bicycle, motorcycle or tri-electric car rental",
+       "price_lines": [
+        "10,000 - 50,000 KRW/person,",
+        "by hours used and type"
+       ],
+       "catalogs": {
+        "jeju-udo": 4
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "jjuo-a03",
+       "category": "Activity",
+       "label": "Tangerine Picking (Summer)",
+       "cost": 30,
+       "selling": 40,
+       "per": "pax",
+       "notes": "10K KRW"
+      },
+      {
+       "id": "jjuo-a07",
+       "category": "Tour",
+       "label": "Driving Guide Jeju 1-9 pax",
+       "cost": 1000,
+       "selling": 1200,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a08",
+       "category": "Tour",
+       "label": "Malay Student Tour Guide",
+       "cost": 650,
+       "selling": 797,
+       "per": "hari",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a09",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 40,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a10",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a11",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a12",
+       "category": "Visa",
+       "label": "K-ETA Re-Application",
+       "cost": 27,
+       "selling": 70,
+       "per": "pax",
+       "notes": "K-ETA pertama termasuk (1x); jual = katalog RM70"
+      },
+      {
+       "id": "jjuo-a13",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB Daily",
+       "cost": 40,
+       "selling": 70,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jjuo-a14",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB Daily",
+       "cost": 65,
+       "selling": 120,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jjuo-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "jjuo-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a20",
+       "category": "Luggage",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a21",
+       "category": "Luggage",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a22",
+       "category": "Luggage",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-a23",
+       "category": "Luggage",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jjuo-k001",
+       "category": "Add-on Private Transport",
+       "label": "Airport Transfer — Incheon Airport ↔ Gimpo Airport",
+       "per": "way",
+       "cost": 290,
+       "selling": 360,
+       "notes": "1–6 pax: kos RM290 / jual RM360; 7–9 pax: kos RM580 / jual RM700 (per way)",
+       "includes": "Private Airport Transfer, Driver Only",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "1-6 pax: RM360/way",
+        "7-9 pax: RM700/way"
+       ],
+       "catalogs": {
+        "jeju-udo": 1
+       }
+      },
+      {
+       "id": "jjuo-k002",
+       "category": "Add-on Private Transport",
+       "label": "Domestic Flight — Seoul to Jeju",
+       "per": "pax",
+       "cost": 250,
+       "selling": 300,
+       "notes": "Sehala, 15kg + 7kg",
+       "includes": "1 way Domestic Flight Ticket, 15kg Checked-in Luggage, 7kg Hand Carry",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "RM300",
+        "Per Way/Pax"
+       ],
+       "catalogs": {
+        "jeju-udo": 2
+       }
+      },
+      {
+       "id": "jjuo-k003",
+       "category": "Additional Activities",
+       "label": "Hanbok Rental at Songeup Folk Village",
+       "per": "pax",
+       "cost": 60,
+       "selling": 80,
+       "notes": "4 jam",
+       "includes": "Basic Hanbok Attire",
+       "excludes": "Extra equipment for rental",
+       "duration": "4 Hours",
+       "price_lines": [
+        "Adult & Child:",
+        "RM80/person"
+       ],
+       "catalogs": {
+        "jeju-udo": 3
+       }
+      },
+      {
+       "id": "jjuo-k004",
+       "category": "Additional Activities",
+       "label": "Additional Activity at Udo Island",
+       "per": "pax",
+       "cost": 30,
+       "selling": 50,
+       "notes": "Basikal / skuter / kereta elektrik, bayar di lokasi (10,000–50,000 KRW)",
+       "includes": "Electric bicycle, bicycle, motorcycle or tri-electric car rental",
+       "price_lines": [
+        "10,000 - 50,000 KRW/person,",
+        "by hours used and type"
+       ],
+       "catalogs": {
+        "jeju-udo": 4
+       }
+      }
+     ],
+     "label": "Jeju - Udo › addons"
+    },
+    {
+     "path": [
+      "catalogs",
+      "jeju-udo",
+      "notes",
+      0,
+      "entries",
+      6
+     ],
+     "from": "A driving guide will be provided for groups of 2 to 9 pax.",
+     "to": "A driving guide will be provided for groups of 2 to 8 pax.",
+     "label": "Catalog jeju-udo › notes › #1 › entries › #7"
+    },
+    {
+     "path": [
+      "catalogs",
+      "jeju-udo",
+      "notes",
+      0,
+      "entries",
+      7
+     ],
+     "from": "A private driver and a professional tour guide will be provided for groups of 10 pax and above.",
+     "to": "A private driver and a professional tour guide will be provided for groups of 9 pax and above.",
+     "label": "Catalog jeju-udo › notes › #1 › entries › #8"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "content",
+      "SURCHARGE_HTML"
+     ],
+     "from": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Travel Date 2027 (1 Jan &#8211; 30 Jun 2027)</td><td class=\"add\">+RM 100 / pax</td><td>Di atas surcharge peak season. Tiada untuk Jeju 4D3N. Sumber: rate card 2026/2027 Date Surcharge &#8212; tiada dalam katalog.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "to": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Travel Date 2027 (1 Jan &#8211; 30 Jun 2027)</td><td class=\"add\">+RM 100 / pax</td><td>Di atas surcharge peak season. Tiada untuk Jeju 4D3N dan Jeju&#8211;Udo 5D4N. Sumber: rate card 2026/2027 Date Surcharge &#8212; tiada dalam katalog.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "label": "KB korea › content › SURCHARGE_HTML"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "variants",
+      "jejuudo",
+      "peak",
+      "windows"
+     ],
+     "from": [
+      [
+       "2026-04-01",
+       "2026-04-30"
+      ],
+      [
+       "2026-05-01",
+       "2026-05-31"
+      ],
+      [
+       "2026-10-01",
+       "2026-10-31"
+      ],
+      [
+       "2027-04-01",
+       "2027-04-30"
+      ],
+      [
+       "2027-05-01",
+       "2027-05-31"
+      ],
+      [
+       "2027-10-01",
+       "2027-10-31"
+      ],
+      [
+       "2026-12-16",
+       "2027-01-01",
+       null,
+       100,
+       "Super Peak Season"
+      ]
+     ],
+     "to": [
+      [
+       "2026-04-01",
+       "2026-04-30"
+      ],
+      [
+       "2026-05-01",
+       "2026-05-31"
+      ],
+      [
+       "2026-10-01",
+       "2026-10-31"
+      ],
+      [
+       "2026-12-16",
+       "2027-01-01",
+       null,
+       100,
+       "Super Peak Season"
+      ]
+     ],
+     "label": "KB korea › calc › variants › jejuudo › peak › windows"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "extraSurcharge",
+      0,
+      "variants"
+     ],
+     "from": [
+      "sbasic",
+      "sstd",
+      "seljju",
+      "jejuudo",
+      "custom"
+     ],
+     "to": [
+      "sbasic",
+      "sstd",
+      "seljju",
+      "custom"
+     ],
+     "label": "KB korea › calc › extraSurcharge › #1 › variants"
+    }
+   ],
+   "catalogs": [
+    "Catalog jeju-udo content: 2 changes",
+    "Catalog jeju-udo: prices + add-ons from v81"
+   ],
+   "kb": [
+    "KB korea: 3 changes"
+   ]
   }
  ]
 }

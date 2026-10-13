@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 80,
- "updatedAt": "2026-10-13T03:20:02Z",
+ "version": 81,
+ "updatedAt": "2026-10-13T03:35:54Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -2601,7 +2601,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "ATK CR 2026 Korea",
-   "note": "Package cost = ATK CR 2026 per pax in KRW × 0.0030, 2–25 pax. CR seasonal discount/upcharge is not applied here.",
+   "note": "Package cost = ATK CR 2026 per pax in KRW × live FX (row 'JEJU UDO 5D4N Full board'; catalog is breakfast only — kept, PO 13 Oct 2026). Costing 2–25 pax (= CR); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here.",
    "fx": [
     {
      "id": "MYR",
@@ -2680,7 +2680,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 25,
        "variant": "ATK-STD"
       }
      ],
@@ -2709,12 +2709,7 @@
        "22": 2647,
        "23": 2647,
        "24": 2647,
-       "25": 2647,
-       "26": 2597,
-       "27": 2597,
-       "28": 2597,
-       "29": 2597,
-       "30": 2597
+       "25": 2647
       },
       "cwb": {
        "2": 4497,
@@ -2740,12 +2735,7 @@
        "22": 2447,
        "23": 2447,
        "24": 2447,
-       "25": 2447,
-       "26": 2397,
-       "27": 2397,
-       "28": 2397,
-       "29": 2397,
-       "30": 2397
+       "25": 2447
       },
       "cnb": {
        "2": 4297,
@@ -2771,12 +2761,7 @@
        "22": 2247,
        "23": 2247,
        "24": 2247,
-       "25": 2247,
-       "26": 2197,
-       "27": 2197,
-       "28": 2197,
-       "29": 2197,
-       "30": 2197
+       "25": 2247
       },
       "infant": 200
      },
@@ -2800,24 +2785,6 @@
    ],
    "addons": [
     {
-     "id": "jjuo-a01",
-     "category": "Activity",
-     "label": "Hanbok Rental @ Seongeup",
-     "cost": 60.0,
-     "selling": 80.0,
-     "per": "pax",
-     "notes": "4 jam"
-    },
-    {
-     "id": "jjuo-a02",
-     "category": "Activity",
-     "label": "Udo bike/scooter/electric car",
-     "cost": 30.0,
-     "selling": 50.0,
-     "per": "pax",
-     "notes": "10-50K KRW, bayar di sana"
-    },
-    {
      "id": "jjuo-a03",
      "category": "Activity",
      "label": "Tangerine Picking (Summer)",
@@ -2825,33 +2792,6 @@
      "selling": 40.0,
      "per": "pax",
      "notes": "10K KRW"
-    },
-    {
-     "id": "jjuo-a04",
-     "category": "Transport",
-     "label": "Domestic Flight Seoul-Jeju (sehala)",
-     "cost": 250.0,
-     "selling": 300.0,
-     "per": "pax",
-     "notes": "15kg+7kg"
-    },
-    {
-     "id": "jjuo-a05",
-     "category": "Transport",
-     "label": "Airport Transfer 1-6 pax",
-     "cost": 290.0,
-     "selling": 360.0,
-     "per": "way",
-     "notes": "ICN↔Gimpo"
-    },
-    {
-     "id": "jjuo-a06",
-     "category": "Transport",
-     "label": "Airport Transfer 7-9 pax",
-     "cost": 580.0,
-     "selling": 700.0,
-     "per": "way",
-     "notes": null
     },
     {
      "id": "jjuo-a07",
@@ -2901,11 +2841,11 @@
     {
      "id": "jjuo-a12",
      "category": "Visa",
-     "label": "K-ETA",
+     "label": "K-ETA Re-Application",
      "cost": 27.0,
-     "selling": 35.0,
+     "selling": 70.0,
      "per": "pax",
-     "notes": "Included 1x"
+     "notes": "K-ETA pertama termasuk (1x); jual = katalog RM70"
     },
     {
      "id": "jjuo-a13",
@@ -2949,7 +2889,7 @@
      "label": "TripCare 360 Couple (1-5 hari)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -2958,7 +2898,7 @@
      "label": "TripCare 360 Family (1-5 hari)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -3010,10 +2950,10 @@
      "id": "jjuo-k001",
      "category": "Add-on Private Transport",
      "label": "Airport Transfer — Incheon Airport ↔ Gimpo Airport",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "way",
+     "cost": 290.0,
+     "selling": 360.0,
+     "notes": "1–6 pax: kos RM290 / jual RM360; 7–9 pax: kos RM580 / jual RM700 (per way)",
      "includes": "Private Airport Transfer, Driver Only",
      "excludes": "Entrance Ticket, Meals",
      "price_lines": [
@@ -3028,10 +2968,10 @@
      "id": "jjuo-k002",
      "category": "Add-on Private Transport",
      "label": "Domestic Flight — Seoul to Jeju",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 250.0,
+     "selling": 300.0,
+     "notes": "Sehala, 15kg + 7kg",
      "includes": "1 way Domestic Flight Ticket, 15kg Checked-in Luggage, 7kg Hand Carry",
      "excludes": "Entrance Ticket, Meals",
      "price_lines": [
@@ -3046,10 +2986,10 @@
      "id": "jjuo-k003",
      "category": "Additional Activities",
      "label": "Hanbok Rental at Songeup Folk Village",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 60.0,
+     "selling": 80.0,
+     "notes": "4 jam",
      "includes": "Basic Hanbok Attire",
      "excludes": "Extra equipment for rental",
      "duration": "4 Hours",
@@ -3065,10 +3005,10 @@
      "id": "jjuo-k004",
      "category": "Additional Activities",
      "label": "Additional Activity at Udo Island",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 30.0,
+     "selling": 50.0,
+     "notes": "Basikal / skuter / kereta elektrik, bayar di lokasi (10,000–50,000 KRW)",
      "includes": "Electric bicycle, bicycle, motorcycle or tri-electric car rental",
      "price_lines": [
       "10,000 - 50,000 KRW/person,",
