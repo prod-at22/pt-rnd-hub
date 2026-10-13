@@ -149,7 +149,8 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(chk("SELJJU", "ATK-STD", { 2: 1769500 * KRW, 9: 1138111 * KRW, 25: 865000 * KRW }), "SELJJU = CR KRW × live KRW FX, none at 26");
     ok(chk("JJU", "ATK-PT", { 2: 943000 * KRW, 9: 521889 * KRW, 25: 353000 * KRW }), "JJU = CR KRW × live KRW FX");
     ok(chk("JJUO", "ATK-STD", { 2: 1442257 * KRW, 10: 783357 * KRW, 25: 571827 * KRW }), "JJUO = CR KRW × live KRW FX");
-    ok(byCode(D, "JJU").variants.find(v => v.id === "ATK-ST").components.length > 1, "Jeju Self Tour keeps its component breakdown");
+    ok(!byCode(D, "JJU").variants.some(v => v.id === "ATK-ST") && byCode(D, "JJU").packages.length === 1, "Jeju Self Tour removed (PO 13 Oct 2026)");
+    ok(byCode(D, "JJU").packages[0].assign[0].to === 25 && !("26" in byCode(D, "JJU").packages[0].pricing.adult), "Jeju Costing 2–25 pax (= CR)");
   }
 
   console.log("1f. Turkey / Istanbul: no 4★ (not in the MyTrip CR or catalog)");

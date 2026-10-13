@@ -77506,6 +77506,1542 @@
    "kb": [
     "KB jakarta-bandung: 6 changes"
    ]
+  },
+  {
+   "v": 80,
+   "at": "2026-10-13T03:20:02Z",
+   "by": "system",
+   "note": "Jeju 4D3N cross-check (PO ezie 13 Oct 2026; ATK CR 2026 Korea, KRW × live FX): cost = CR 'PT&GT JEJU 4D3N No Meal' (checked); Costing 2–25 pax (= CR; 26–30 had no cost); Jeju Self Tour 4D3N (no catalog, not a CR row) removed; add-ons: duplicates removed, catalog items with cost (airport transfer 290 / 360 per way, 7–9 pax 580 / 700; domestic flight 250 / 300; Hanbok 60 / 80; Udo ferry RM50, cost unknown), K-ETA Re-Application RM70 (= catalog), TripCare Couple / Family per pair / family; catalog: driving guide 2–8 pax, driver + guide 9+ (= CR vehicles); KB korea: 2027 travel surcharge (+RM100) not for Jeju 4D3N (not in the catalog), Jeju peak windows Apr / May / Oct 2027 removed (catalog valid to 31 Dec 2026). Catalog prices unchanged. Jeju - Udo next.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "JJU",
+      "note"
+     ],
+     "from": "Package cost = ATK CR 2026 per pax in KRW × 0.0030, 2–25 pax. CR seasonal discount/upcharge is not applied here.",
+     "to": "Package cost = ATK CR 2026 per pax in KRW × live FX. Costing 2–25 pax (= CR, PO 13 Oct 2026); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here.",
+     "label": "Jeju › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJU",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "ATK-ST__Hotel",
+       "label": "ATK-ST · Hotel",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 296.6625,
+        "3": 296.6625,
+        "4": 296.6625,
+        "5": 296.6625,
+        "6": 296.6625,
+        "7": 296.6625,
+        "8": 296.6625,
+        "9": 296.6625,
+        "10": 296.6625,
+        "11": 296.6625,
+        "12": 296.6625,
+        "13": 296.6625,
+        "14": 296.6625,
+        "15": 296.6625,
+        "16": 296.6625,
+        "17": 296.6625,
+        "18": 296.6625,
+        "19": 296.6625,
+        "20": 296.6625,
+        "21": 296.6625,
+        "22": 296.6625,
+        "23": 296.6625,
+        "24": 296.6625,
+        "25": 296.6625,
+        "26": 296.6625,
+        "27": 296.6625,
+        "28": 296.6625,
+        "29": 296.6625,
+        "30": 296.6625
+       }
+      },
+      {
+       "id": "ATK-ST__Airport",
+       "label": "ATK-ST · Airport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__Guide",
+       "label": "ATK-ST · Guide",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__Entrance",
+       "label": "ATK-ST · Entrance",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__Meals",
+       "label": "ATK-ST · Meals",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__ATK-Profit",
+       "label": "ATK-ST · ATK Profit",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__ATK-Buffer",
+       "label": "ATK-ST · ATK Buffer",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 1073.3375,
+        "3": 1073.3375,
+        "4": 1073.3375,
+        "5": 1073.3375,
+        "6": 933.3375,
+        "7": 933.3375,
+        "8": 933.3375,
+        "9": 933.3375,
+        "10": 933.3375,
+        "11": 933.3375,
+        "12": 933.3375,
+        "13": 933.3375,
+        "14": 933.3375,
+        "15": 933.3375,
+        "16": 933.3375,
+        "17": 933.3375,
+        "18": 933.3375,
+        "19": 933.3375,
+        "20": 933.3375,
+        "21": 933.3375,
+        "22": 933.3375,
+        "23": 933.3375,
+        "24": 933.3375,
+        "25": 933.3375,
+        "26": 933.3375,
+        "27": 933.3375,
+        "28": 933.3375,
+        "29": 933.3375,
+        "30": 933.3375
+       }
+      },
+      {
+       "id": "ATK-ST__Tipping",
+       "label": "ATK-ST · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "ATK-ST__K-ETA",
+       "label": "ATK-ST · K-ETA",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "ATK-ST",
+       "values": {
+        "2": 27,
+        "3": 27,
+        "4": 27,
+        "5": 27,
+        "6": 27,
+        "7": 27,
+        "8": 27,
+        "9": 27,
+        "10": 27,
+        "11": 27,
+        "12": 27,
+        "13": 27,
+        "14": 27,
+        "15": 27,
+        "16": 27,
+        "17": 27,
+        "18": 27,
+        "19": 27,
+        "20": 27,
+        "21": 27,
+        "22": 27,
+        "23": 27,
+        "24": 27,
+        "25": 27,
+        "26": 27,
+        "27": 27,
+        "28": 27,
+        "29": 27,
+        "30": 27
+       }
+      },
+      {
+       "id": "CR-JJU",
+       "label": "ATK CR 2026 · JJU (KRW)",
+       "group": "ATK contract rate",
+       "fx": "KRW",
+       "values": {
+        "2": 943000,
+        "3": 709667,
+        "4": 593000,
+        "5": 523000,
+        "6": 476333,
+        "7": 474429,
+        "8": 445500,
+        "9": 521889,
+        "10": 494000,
+        "11": 471182,
+        "12": 452167,
+        "13": 453000,
+        "14": 438000,
+        "15": 425000,
+        "16": 413625,
+        "17": 404765,
+        "18": 395778,
+        "19": 387737,
+        "20": 380500,
+        "21": 373952,
+        "22": 368000,
+        "23": 362565,
+        "24": 357583,
+        "25": 353000
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "CR-JJU",
+       "label": "ATK CR 2026 · JJU (KRW)",
+       "group": "ATK contract rate",
+       "fx": "KRW",
+       "values": {
+        "2": 943000,
+        "3": 709667,
+        "4": 593000,
+        "5": 523000,
+        "6": 476333,
+        "7": 474429,
+        "8": 445500,
+        "9": 521889,
+        "10": 494000,
+        "11": 471182,
+        "12": 452167,
+        "13": 453000,
+        "14": 438000,
+        "15": 425000,
+        "16": 413625,
+        "17": 404765,
+        "18": 395778,
+        "19": 387737,
+        "20": 380500,
+        "21": 373952,
+        "22": 368000,
+        "23": 362565,
+        "24": 357583,
+        "25": 353000
+       }
+      }
+     ],
+     "label": "Jeju › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJU",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "ATK-PT",
+       "label": "ATK",
+       "supplier": "ATK",
+       "paxMin": 2,
+       "paxMax": 25,
+       "hotel": "296.6625",
+       "notes": "ATK CR 2026 row: PT&GT JEJU 4D3N · NO Meal · 3★ Parkside (50,000 KRW/pax/N) · KRW × 0.003 · SGL sppl 200,000 KRW · contracts/jju/1a10c5cdc93-ATK_CR_2026_Korea_KRW.xlsx",
+       "components": [
+        {
+         "key": "cr",
+         "label": "ATK contract rate",
+         "per": "pax",
+         "expr": "T['CR-JJU']"
+        }
+       ]
+      },
+      {
+       "id": "ATK-ST",
+       "label": "ATK",
+       "supplier": "ATK-ST — Jeju Self-Drive 4D3N · sewa kereta + hotel (no guide/entrance) · ⚠ angg",
+       "paxMin": 2,
+       "paxMax": 30,
+       "hotel": "296.6625",
+       "notes": "",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel",
+         "per": "pax",
+         "expr": "T['ATK-ST__Hotel']"
+        },
+        {
+         "key": "airport",
+         "label": "Airport",
+         "per": "pax",
+         "expr": "T['ATK-ST__Airport']"
+        },
+        {
+         "key": "guide",
+         "label": "Guide",
+         "per": "pax",
+         "expr": "T['ATK-ST__Guide']"
+        },
+        {
+         "key": "entrance",
+         "label": "Entrance",
+         "per": "pax",
+         "expr": "T['ATK-ST__Entrance']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "pax",
+         "expr": "T['ATK-ST__Meals']"
+        },
+        {
+         "key": "atk-profit",
+         "label": "ATK Profit",
+         "per": "pax",
+         "expr": "T['ATK-ST__ATK-Profit']"
+        },
+        {
+         "key": "atk-buffer",
+         "label": "ATK Buffer",
+         "per": "pax",
+         "expr": "T['ATK-ST__ATK-Buffer']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['ATK-ST__Tipping']"
+        },
+        {
+         "key": "k-eta",
+         "label": "K-ETA",
+         "per": "pax",
+         "expr": "T['ATK-ST__K-ETA']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "ATK-PT",
+       "label": "ATK",
+       "supplier": "ATK",
+       "paxMin": 2,
+       "paxMax": 25,
+       "hotel": "296.6625",
+       "notes": "ATK CR 2026 row: PT&GT JEJU 4D3N · NO Meal · 3★ Parkside (50,000 KRW/pax/N) · KRW × 0.003 · SGL sppl 200,000 KRW · contracts/jju/1a10c5cdc93-ATK_CR_2026_Korea_KRW.xlsx",
+       "components": [
+        {
+         "key": "cr",
+         "label": "ATK contract rate",
+         "per": "pax",
+         "expr": "T['CR-JJU']"
+        }
+       ]
+      }
+     ],
+     "label": "Jeju › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJU",
+      "packages"
+     ],
+     "from": [
+      {
+       "id": "atk-pt",
+       "label": "Jeju Standard 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "ATK-PT"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3897,
+         "3": 3197,
+         "4": 2797,
+         "5": 2597,
+         "6": 2497,
+         "7": 2497,
+         "8": 2397,
+         "9": 2397,
+         "10": 2297,
+         "11": 2247,
+         "12": 2247,
+         "13": 2247,
+         "14": 2247,
+         "15": 2247,
+         "16": 2197,
+         "17": 2197,
+         "18": 2197,
+         "19": 2197,
+         "20": 2197,
+         "21": 2147,
+         "22": 2147,
+         "23": 2147,
+         "24": 2147,
+         "25": 2147,
+         "26": 2097,
+         "27": 2097,
+         "28": 2097,
+         "29": 2097,
+         "30": 2097
+        },
+        "cwb": {
+         "2": 3697,
+         "3": 2997,
+         "4": 2597,
+         "5": 2397,
+         "6": 2297,
+         "7": 2297,
+         "8": 2197,
+         "9": 2197,
+         "10": 2097,
+         "11": 2047,
+         "12": 2047,
+         "13": 2047,
+         "14": 2047,
+         "15": 2047,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997,
+         "21": 1947,
+         "22": 1947,
+         "23": 1947,
+         "24": 1947,
+         "25": 1947,
+         "26": 1897,
+         "27": 1897,
+         "28": 1897,
+         "29": 1897,
+         "30": 1897
+        },
+        "cnb": {
+         "2": 3497,
+         "3": 2797,
+         "4": 2397,
+         "5": 2197,
+         "6": 2097,
+         "7": 2097,
+         "8": 1997,
+         "9": 1997,
+         "10": 1897,
+         "11": 1847,
+         "12": 1847,
+         "13": 1847,
+         "14": 1847,
+         "15": 1847,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797,
+         "21": 1747,
+         "22": 1747,
+         "23": 1747,
+         "24": 1747,
+         "25": 1747,
+         "26": 1697,
+         "27": 1697,
+         "28": 1697,
+         "29": 1697,
+         "30": 1697
+        },
+        "infant": 200
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.75
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "atk-st",
+       "label": "Jeju Self Tour 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "ATK-ST"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1897,
+         "3": 1897,
+         "4": 1897,
+         "5": 1897,
+         "6": 1697,
+         "7": 1697,
+         "8": 1697,
+         "9": 1697,
+         "10": 1697,
+         "11": 1697,
+         "12": 1697,
+         "13": 1697,
+         "14": 1697,
+         "15": 1697,
+         "16": 1697,
+         "17": 1697,
+         "18": 1697,
+         "19": 1697,
+         "20": 1697,
+         "21": 1697,
+         "22": 1697,
+         "23": 1697,
+         "24": 1697,
+         "25": 1697,
+         "26": 1697,
+         "27": 1697,
+         "28": 1697,
+         "29": 1697,
+         "30": 1697
+        },
+        "cwb": {
+         "2": 1697,
+         "3": 1697,
+         "4": 1697,
+         "5": 1697,
+         "6": 1497,
+         "7": 1497,
+         "8": 1497,
+         "9": 1497,
+         "10": 1497,
+         "11": 1497,
+         "12": 1497,
+         "13": 1497,
+         "14": 1497,
+         "15": 1497,
+         "16": 1497,
+         "17": 1497,
+         "18": 1497,
+         "19": 1497,
+         "20": 1497,
+         "21": 1497,
+         "22": 1497,
+         "23": 1497,
+         "24": 1497,
+         "25": 1497,
+         "26": 1497,
+         "27": 1497,
+         "28": 1497,
+         "29": 1497,
+         "30": 1497
+        },
+        "cnb": {
+         "2": 1497,
+         "3": 1497,
+         "4": 1497,
+         "5": 1497,
+         "6": 1297,
+         "7": 1297,
+         "8": 1297,
+         "9": 1297,
+         "10": 1297,
+         "11": 1297,
+         "12": 1297,
+         "13": 1297,
+         "14": 1297,
+         "15": 1297,
+         "16": 1297,
+         "17": 1297,
+         "18": 1297,
+         "19": 1297,
+         "20": 1297,
+         "21": 1297,
+         "22": 1297,
+         "23": 1297,
+         "24": 1297,
+         "25": 1297,
+         "26": 1297,
+         "27": 1297,
+         "28": 1297,
+         "29": 1297,
+         "30": 1297
+        },
+        "infant": 200
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.75
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "atk-pt",
+       "label": "Jeju Standard 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 25,
+         "variant": "ATK-PT"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 3897,
+         "3": 3197,
+         "4": 2797,
+         "5": 2597,
+         "6": 2497,
+         "7": 2497,
+         "8": 2397,
+         "9": 2397,
+         "10": 2297,
+         "11": 2247,
+         "12": 2247,
+         "13": 2247,
+         "14": 2247,
+         "15": 2247,
+         "16": 2197,
+         "17": 2197,
+         "18": 2197,
+         "19": 2197,
+         "20": 2197,
+         "21": 2147,
+         "22": 2147,
+         "23": 2147,
+         "24": 2147,
+         "25": 2147
+        },
+        "cwb": {
+         "2": 3697,
+         "3": 2997,
+         "4": 2597,
+         "5": 2397,
+         "6": 2297,
+         "7": 2297,
+         "8": 2197,
+         "9": 2197,
+         "10": 2097,
+         "11": 2047,
+         "12": 2047,
+         "13": 2047,
+         "14": 2047,
+         "15": 2047,
+         "16": 1997,
+         "17": 1997,
+         "18": 1997,
+         "19": 1997,
+         "20": 1997,
+         "21": 1947,
+         "22": 1947,
+         "23": 1947,
+         "24": 1947,
+         "25": 1947
+        },
+        "cnb": {
+         "2": 3497,
+         "3": 2797,
+         "4": 2397,
+         "5": 2197,
+         "6": 2097,
+         "7": 2097,
+         "8": 1997,
+         "9": 1997,
+         "10": 1897,
+         "11": 1847,
+         "12": 1847,
+         "13": 1847,
+         "14": 1847,
+         "15": 1847,
+         "16": 1797,
+         "17": 1797,
+         "18": 1797,
+         "19": 1797,
+         "20": 1797,
+         "21": 1747,
+         "22": 1747,
+         "23": 1747,
+         "24": 1747,
+         "25": 1747
+        },
+        "infant": 200
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.75
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.5
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "label": "Jeju"
+    },
+    {
+     "path": [
+      "destinations",
+      "JJU",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "jju-a01",
+       "category": "Activity",
+       "label": "Hanbok Rental @ Seongeup",
+       "cost": 0,
+       "selling": 80,
+       "per": "pax",
+       "notes": "4 jam"
+      },
+      {
+       "id": "jju-a02",
+       "category": "Activity",
+       "label": "Udo Island Ferry (2-way)",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a03",
+       "category": "Transport",
+       "label": "Domestic Flight Seoul-Jeju (sehala)",
+       "cost": 250,
+       "selling": 300,
+       "per": "pax",
+       "notes": "15kg+7kg"
+      },
+      {
+       "id": "jju-a04",
+       "category": "Transport",
+       "label": "Airport Transfer 1-6 pax",
+       "cost": 290,
+       "selling": 360,
+       "per": "way",
+       "notes": "ICN↔Gimpo"
+      },
+      {
+       "id": "jju-a05",
+       "category": "Transport",
+       "label": "Airport Transfer 7-9 pax",
+       "cost": 580,
+       "selling": 700,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "jju-a06",
+       "category": "Tour",
+       "label": "Driving Guide Jeju 1-9 pax",
+       "cost": 1000,
+       "selling": 1200,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jju-a07",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 40,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a08",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a09",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a10",
+       "category": "Visa",
+       "label": "K-ETA",
+       "cost": 27,
+       "selling": 35,
+       "per": "pax",
+       "notes": "Included 1x"
+      },
+      {
+       "id": "jju-a11",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB Daily",
+       "cost": 40,
+       "selling": 70,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jju-a12",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB Daily",
+       "cost": 65,
+       "selling": 120,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jju-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "jju-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a18",
+       "category": "Luggage",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a19",
+       "category": "Luggage",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a20",
+       "category": "Luggage",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a21",
+       "category": "Luggage",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-k001",
+       "category": "Add-on Private Transport",
+       "label": "Airport Transfer — Incheon Airport ↔ Gimpo Airport",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private Airport Transfer, Driver Only",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "1-6 pax: RM360/way",
+        "7-9 pax: RM700/way"
+       ],
+       "catalogs": {
+        "jeju": 1
+       }
+      },
+      {
+       "id": "jju-k002",
+       "category": "Add-on Private Transport",
+       "label": "Domestic Flight — Seoul to Jeju",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 way Domestic Flight Ticket, 15kg Checked-in Luggage, 7kg Hand Carry",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "RM300",
+        "Per Way/Pax"
+       ],
+       "catalogs": {
+        "jeju": 2
+       }
+      },
+      {
+       "id": "jju-k003",
+       "category": "Additional Activities",
+       "label": "Udo Island Ferry Ticket",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "2-way Udo Island Ferry Ticket",
+       "excludes": "Activities",
+       "price_lines": [
+        "Adult & Child:",
+        "RM50/person"
+       ],
+       "catalogs": {
+        "jeju": 3
+       }
+      },
+      {
+       "id": "jju-k004",
+       "category": "Additional Activities",
+       "label": "Hanbok Rental at Songeup Folk Village",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Basic Hanbok Attire",
+       "excludes": "Extra equipment for rental",
+       "duration": "4 Hours",
+       "price_lines": [
+        "Adult & Child:",
+        "RM80/person"
+       ],
+       "catalogs": {
+        "jeju": 4
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "jju-a06",
+       "category": "Tour",
+       "label": "Driving Guide Jeju 1-9 pax",
+       "cost": 1000,
+       "selling": 1200,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jju-a07",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 40,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a08",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a09",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 40,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "jju-a10",
+       "category": "Visa",
+       "label": "K-ETA Re-Application",
+       "cost": 27,
+       "selling": 70,
+       "per": "pax",
+       "notes": "K-ETA pertama termasuk (1x); jual = katalog RM70"
+      },
+      {
+       "id": "jju-a11",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB Daily",
+       "cost": 40,
+       "selling": 70,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jju-a12",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB Daily",
+       "cost": 65,
+       "selling": 120,
+       "per": "hari",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "jju-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "jju-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "jju-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "jju-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jju-a18",
+       "category": "Luggage",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a19",
+       "category": "Luggage",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a20",
+       "category": "Luggage",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-a21",
+       "category": "Luggage",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jju-k001",
+       "category": "Add-on Private Transport",
+       "label": "Airport Transfer — Incheon Airport ↔ Gimpo Airport",
+       "per": "way",
+       "cost": 290,
+       "selling": 360,
+       "notes": "1–6 pax: kos RM290 / jual RM360; 7–9 pax: kos RM580 / jual RM700 (per way)",
+       "includes": "Private Airport Transfer, Driver Only",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "1-6 pax: RM360/way",
+        "7-9 pax: RM700/way"
+       ],
+       "catalogs": {
+        "jeju": 1
+       }
+      },
+      {
+       "id": "jju-k002",
+       "category": "Add-on Private Transport",
+       "label": "Domestic Flight — Seoul to Jeju",
+       "per": "pax",
+       "cost": 250,
+       "selling": 300,
+       "notes": "Sehala, 15kg + 7kg",
+       "includes": "1 way Domestic Flight Ticket, 15kg Checked-in Luggage, 7kg Hand Carry",
+       "excludes": "Entrance Ticket, Meals",
+       "price_lines": [
+        "RM300",
+        "Per Way/Pax"
+       ],
+       "catalogs": {
+        "jeju": 2
+       }
+      },
+      {
+       "id": "jju-k003",
+       "category": "Additional Activities",
+       "label": "Udo Island Ferry Ticket",
+       "per": "pax",
+       "cost": null,
+       "selling": 50,
+       "notes": "Kos ATK belum diketahui",
+       "includes": "2-way Udo Island Ferry Ticket",
+       "excludes": "Activities",
+       "price_lines": [
+        "Adult & Child:",
+        "RM50/person"
+       ],
+       "catalogs": {
+        "jeju": 3
+       }
+      },
+      {
+       "id": "jju-k004",
+       "category": "Additional Activities",
+       "label": "Hanbok Rental at Songeup Folk Village",
+       "per": "pax",
+       "cost": 60,
+       "selling": 80,
+       "notes": "4 jam; kos ikut item Jeju-Udo",
+       "includes": "Basic Hanbok Attire",
+       "excludes": "Extra equipment for rental",
+       "duration": "4 Hours",
+       "price_lines": [
+        "Adult & Child:",
+        "RM80/person"
+       ],
+       "catalogs": {
+        "jeju": 4
+       }
+      }
+     ],
+     "label": "Jeju › addons"
+    },
+    {
+     "path": [
+      "catalogs",
+      "jeju",
+      "notes",
+      0,
+      "entries",
+      6
+     ],
+     "from": "A driving guide will be provided for groups of 2 to 9 pax.",
+     "to": "A driving guide will be provided for groups of 2 to 8 pax.",
+     "label": "Catalog jeju › notes › #1 › entries › #7"
+    },
+    {
+     "path": [
+      "catalogs",
+      "jeju",
+      "notes",
+      0,
+      "entries",
+      7
+     ],
+     "from": "A private driver and a professional tour guide will be provided for groups of 10 pax and above.",
+     "to": "A private driver and a professional tour guide will be provided for groups of 9 pax and above.",
+     "label": "Catalog jeju › notes › #1 › entries › #8"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "content",
+      "SURCHARGE_HTML"
+     ],
+     "from": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Travel Date 2027 (1 Jan &#8211; 30 Jun 2027)</td><td class=\"add\">+RM 100 / pax</td><td>Di atas surcharge peak season. Sumber: rate card 2026/2027 Date Surcharge &#8212; tiada dalam katalog.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "to": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Travel Date 2027 (1 Jan &#8211; 30 Jun 2027)</td><td class=\"add\">+RM 100 / pax</td><td>Di atas surcharge peak season. Tiada untuk Jeju 4D3N. Sumber: rate card 2026/2027 Date Surcharge &#8212; tiada dalam katalog.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "label": "KB korea › content › SURCHARGE_HTML"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "variants",
+      "jeju",
+      "peak",
+      "windows"
+     ],
+     "from": [
+      [
+       "2026-04-01",
+       "2026-04-30"
+      ],
+      [
+       "2026-05-01",
+       "2026-05-31"
+      ],
+      [
+       "2026-10-01",
+       "2026-10-31"
+      ],
+      [
+       "2027-04-01",
+       "2027-04-30"
+      ],
+      [
+       "2027-05-01",
+       "2027-05-31"
+      ],
+      [
+       "2027-10-01",
+       "2027-10-31"
+      ],
+      [
+       "2026-12-16",
+       "2027-01-01",
+       null,
+       100,
+       "Super Peak Season"
+      ]
+     ],
+     "to": [
+      [
+       "2026-04-01",
+       "2026-04-30"
+      ],
+      [
+       "2026-05-01",
+       "2026-05-31"
+      ],
+      [
+       "2026-10-01",
+       "2026-10-31"
+      ],
+      [
+       "2026-12-16",
+       "2027-01-01",
+       null,
+       100,
+       "Super Peak Season"
+      ]
+     ],
+     "label": "KB korea › calc › variants › jeju › peak › windows"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "extraSurcharge",
+      0,
+      "variants"
+     ],
+     "from": null,
+     "to": [
+      "sbasic",
+      "sstd",
+      "seljju",
+      "jejuudo",
+      "custom"
+     ],
+     "label": "KB korea › calc › extraSurcharge › #1 › variants"
+    }
+   ],
+   "catalogs": [
+    "Catalog jeju content: 2 changes",
+    "Catalog jeju: prices + add-ons from v80"
+   ],
+   "kb": [
+    "KB korea: 3 changes"
+   ]
   }
  ]
 }
