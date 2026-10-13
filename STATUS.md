@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v79 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v79, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v81 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v81, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -165,6 +165,13 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Add-ons: Whoosh duplicates removed (catalog item RM157, cost RM154), TripCare = Etiqa Area 1 (= Aceh), Argo Executive RM220 (= KB). KB: 2027 travel
   surcharge (+RM50) removed, quotation meals = catalog, transport block Hiace 7–12. Costing 2–19 pax kept. Open: KB Jakarta Full Day Tour (Avanza)
   RM320 / transport is below the hub cost RM333.
+  **Jeju + Jeju - Udo (v80–v81, PO ezie 13 Oct; ATK CR 2026 Korea xlsx + terms, KRW × live FX):** costs = CR rows "PT&GT JEJU 4D3N No Meal" and
+  "PT&GT-BSC, STD JEJU UDO 5D4N" (checked); the Udo row is Full board while the catalog is breakfast only — kept (PO), so Udo adult margin stays thin
+  at 2–3 / 10 pax (2.3–8.1 %, flag left open, PO); Jeju adult 22–45 %. CR terms: child under 7 twin 100 % / extra bed 75 % / no bed 50 % (= hub CWB 75 % /
+  CNB 50 %), tipping $5/day included, 2–8 Carnival · 9–16 Solati, note says "valid until Dec 2025". Costing 2–25 pax (= CR) both; Jeju Self Tour 4D3N
+  removed (tests/test_calc.js updated); add-ons: duplicates removed, catalog items with costs (Udo ferry cost unknown), K-ETA Re-Application RM70 (= catalog),
+  TripCare per pair / family; catalogs: driving guide 2–8 pax, driver + guide 9+ (= CR vehicles); KB korea: 2027 travel surcharge (+RM100) now Seoul /
+  Seoul-Jeju only (extraSurcharge.variants), Apr / May / Oct 2027 peak windows removed for Jeju / Udo. Open: ATK Udo "No Meal" rate; Udo ferry cost.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
