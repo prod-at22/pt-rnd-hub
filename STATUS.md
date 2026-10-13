@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v81 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v81, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v82 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v82, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -172,6 +172,12 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   removed (tests/test_calc.js updated); add-ons: duplicates removed, catalog items with costs (Udo ferry cost unknown), K-ETA Re-Application RM70 (= catalog),
   TripCare per pair / family; catalogs: driving guide 2–8 pax, driver + guide 9+ (= CR vehicles); KB korea: 2027 travel surcharge (+RM100) now Seoul /
   Seoul-Jeju only (extraSurcharge.variants), Apr / May / Oct 2027 peak windows removed for Jeju / Udo. Open: ATK Udo "No Meal" rate; Udo ferry cost.
+  **Jogjakarta (v82, PO ezie 13 Oct; Pak Jamal CR = PDF from Downloads, now in TO Contract Rate — Jogja 3D2N/4D3N/5D4N Luxury 3★ + transport and The 101
+  Malioboro 4★, plus Surabaya rates):** Cost TO = CR 4D3N (545 / 490 / 460 / 415 / 385; 16–20 = 11–15, PO); Jeep Timang / entrance / L&D stay separate components (from the
+  R&D, CR is hotel + transport only); Costing 2–20 pax; child cost kept CWB 50 % / CNB 0 % (PO). Adult margin 29–37 %. Add-ons: catalog prices kept, cost from PT JOG R&D
+  asal (Jeep Gumuk Pasir 200, ATV 100, Gondola 65, Borobudur 135, Horse Carriage 16) — 3 sell below that cost (flag, PO); the latest R&D Add-On sheet is copied from
+  Lombok (not reliable). KB jogja: add-on prices = catalog (child 60 %), quotation without travel insurance / with meals, Hiace 7–12 · Bus 13+. Open: Goa Pindul /
+  Gamplong cost; CR 4★ (The 101 Malioboro) vs catalog The 101 Tugu, upgrade RM100–120 vs CR difference RM88–110 per night.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
