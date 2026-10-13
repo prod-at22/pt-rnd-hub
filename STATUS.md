@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v77 live · Aceh + Bali + Bangkok + Beijing + Hokkaido verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v77, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v78 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v78, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -148,6 +148,16 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   surcharge heading = Hokkaido-Sapporo, room note 2–3 per room; calculator (v76) extra day RM2,800 / 3,000 / 4,800, free & easy −RM1,800 / −1,900
   / −3,000, airport removed −RM700 / −800 / −1,500 (2–4 / 5–8 / 9–10 pax; costs in rnd.cost) — tested live. Open: CR ends Dec 2026 while the
   catalog is valid to 31 Jan 2027 (PO: no new CR needed now); entrance / Bibai price to confirm with WIF.
+  **Istanbul (v78, PO ezie 13 Oct; reference: contracts/istbur + istcap = the same MyTrip CR, USD per pax, no validity date, tip not included from 7 pax
+  = $5/day/pax):** cost tables now in USD with live FX (were MYR at 3.97 Bursa / 4.0295 Cappadocia); Cappadocia = CR row 6D5N 3N IST + 2N CAP (checked);
+  Cappadocia Self Tour 6D5N (ARBATO, no catalog, CNB below cost) removed; Cappadocia infant cost RM0; Bursa unticked hotels Erboy / Zultanite removed;
+  add-ons: duplicates removed, catalog items keep the catalog price, cost from the MyTrip items, TripCare per pair / family, TripCare / Blue Ribbon / wifi
+  also for Bursa; KB turki Travel Map hotel "My Cave Hotel / Suhan Cappadocia" (PO: both). Kept (PO): Costing 2–24 pax (CR goes to 24), catalog meals
+  text, KB 2027 surcharge +RM300 for Cappadocia, KB 4★ upgrade +RM716 text. Margins (USD 4.085): Bursa adult 16.5–22.5 %, Cappadocia 18.9–26.4 %.
+  On hold (PO): Bursa CR row (catalog 1N Bursa + 3N Istanbul; hub uses "5D4N 4N Istanbul" $980, CR has no such row — ask MyTrip; "6D5N 4N IST + 1N BUR"
+  $1,030 would give ~12 % at 2 pax); KB quotation inclusions "{nights} breakfasts" vs catalog fullboard; child cost 100 % (Bursa CNB 6–10 %).
+  Open: Uludag Snow Park cost (MyTrip); Etiqa TripCare zone for Turkey ("Area 2"?); catalog Bursa includes say 5x lunch but the itinerary has 3;
+  KB Travel Map "Hotel Day 1" for Cappadocia lists the Cappadocia hotels although night 1 is in Istanbul (Viva Deluxe).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
