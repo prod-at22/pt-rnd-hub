@@ -90,6 +90,86 @@
    "fix": "Confirm both selling prices on the Add On tab.",
    "by": "ezie",
    "at": "2026-10-12"
+  },
+  {
+   "code": "ISTBUR",
+   "severity": "high",
+   "area": "Cost",
+   "title": "Istanbul - Bursa: cost not on the itinerary's CR row",
+   "detail": "The catalog has 1N Bursa + 3N Istanbul, but the cost uses the MyTrip CR row '5D4N 4N Istanbul' ($980 at 2 pax). The CR has no 3N Istanbul + 1N Bursa row; '6D5N 4N IST + 1N BUR' is $1,030 (2 pax margin ~12% instead of 16.5%).",
+   "fix": "Ask MyTrip for a 5D4N 3N Istanbul + 1N Bursa rate, then update the Ground Cost table (PO hold 13 Oct).",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTBUR",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Istanbul - Bursa: CNB margin 6–10%",
+   "detail": "Child cost is 100% of the adult cost (CR has no child rate), so Child No Bed sells only RM200 below CWB at ~6–10% margin.",
+   "fix": "Decide the child cost rule or ask MyTrip for child rates (PO hold 13 Oct).",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTCAP",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Istanbul - Cappadocia: child cost 100% of adult",
+   "detail": "CR has no child rate; CWB / CNB cost = adult cost (CNB 13–17%).",
+   "fix": "Decide the child cost rule or ask MyTrip for child rates (PO hold 13 Oct).",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTBUR",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Istanbul - Bursa: Uludag Snow Park has no cost",
+   "detail": "Catalog sells 2 pax RM800 · 3 pax RM600 · 4+ pax RM500 per pax; MyTrip cost unknown.",
+   "fix": "Get the MyTrip cost and enter it on the Add On tab.",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTBUR",
+   "severity": "low",
+   "area": "Sheet",
+   "title": "Istanbul - Bursa catalog: 5x lunch in includes, 3 in the itinerary",
+   "detail": "Includes say '4x International Breakfast, 5x Lunch, 4x Dinner'; the itinerary has lunch on Day 2–4 only (KB food block also says 5 lunch). PO 13 Oct: keep the catalog text for now.",
+   "fix": "Confirm the lunch count with MyTrip and align includes / itinerary / KB.",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTCAP",
+   "severity": "low",
+   "area": "Sheet",
+   "title": "KB turki: meal inclusions in the quotation say breakfast only",
+   "detail": "KB calculator inclusions for Istanbul - Bursa / Cappadocia print '{nights} breakfasts'; the catalogs are fullboard (Bursa 4B/5L/4D, Cappadocia 5B/4L/5D).",
+   "fix": "Set the KB inclusions to the catalog meals (PO hold 13 Oct).",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTCAP",
+   "severity": "low",
+   "area": "Sheet",
+   "title": "KB turki: 'Hotel Day 1' for Cappadocia lists the Cappadocia hotels",
+   "detail": "Travel Map table 'Hotel Day 1' (immigration form) shows My Cave / Suhan Cappadocia, but night 1 of Istanbul - Cappadocia is in Istanbul (Viva Deluxe).",
+   "fix": "Confirm with the PO and set the Day 1 hotel to the Istanbul hotel.",
+   "by": "ezie",
+   "at": "2026-10-13"
+  },
+  {
+   "code": "ISTCAP",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Istanbul: TripCare zone for Turkey",
+   "detail": "TripCare 360 add-ons (Cappadocia and Bursa) use the Etiqa 'Area 2' rates; Turkey may be in another zone.",
+   "fix": "Check the Etiqa zone for Turkey and update the TripCare costs / selling.",
+   "by": "ezie",
+   "at": "2026-10-13"
   }
  ]
 }
