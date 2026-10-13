@@ -81971,6 +81971,2914 @@
    "kb": [
     "KB jogja: 23 changes"
    ]
+  },
+  {
+   "v": 83,
+   "at": "2026-10-13T14:14:35Z",
+   "by": "system",
+   "note": "KK - Kundasang cross-check (PO ezie 13 Oct 2026; source of truth = PT KK-KUNDASANG R&D 2026.xlsx, tabs KKK COSTING + RAW DATA): Basic 3D2N / Standard 4D3N cost = KKK COSTING in components (transport per group ÷ pax: 3D2N RM750 / 1,000 / 1,400, 4D3N RM950 / 1,200 / 1,800 for 1–4 / 5–8 / 9–16 pax; Ming Garden 220 and KPR 225 per room ÷ 2; meals 34 / 69; entrance 51 / 119) — the old hub costs were RM93–180 too high for 2–10 pax, so the thin-margin flags were false; Costing 1–10 pax (= catalog, 1 pax now has a cost); Honeymoon 4D3N = sheet (couple RM1,165.5, selling − RM100/pax); Guesthouse 3D2N / 4D3N and Honeymoon 3D2N removed (PO), with the guesthouse hotels; add-ons: catalog items cost from RAW DATA, selling = catalog (Poring + Canopy RM20 / 15 and Mari-Mari swap RM150 / 120 below cost), duplicates removed (TripCare Area 2, second Blue Ribbon set, header row); KB: guesthouse texts removed, single 4D3N RM450 (= catalog), last-minute surcharge text removed (not in the catalog), hotel upgrade 3.5★ +RM80 / 4★ +RM150, transport Van 8-seater 5–8. Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "note"
+     ],
+     "from": "",
+     "to": "Costs = PT KK-KUNDASANG R&D 2026 (KKK COSTING + RAW DATA), PO 13 Oct 2026: transport per group ÷ pax (Avanza/Innova 1–4 · Van 5–8 · Van 9–16), hotels per room ÷ 2, meals, entrance. Costing 1–10 pax (= catalog); Honeymoon 4D3N = couple (2 pax), selling − RM100/pax.",
+     "label": "KK Kundasang › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "Bahrun-3D-Hotel__Ground-Cost-MYR",
+       "label": "Bahrun-3D-Hotel · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 1187,
+        "2": 781,
+        "3": 669,
+        "4": 669,
+        "5": 634,
+        "6": 634,
+        "7": 613,
+        "8": 613,
+        "9": 599,
+        "10": 599,
+        "11": 567,
+        "12": 567,
+        "13": 567,
+        "14": 567,
+        "15": 567,
+        "16": 539,
+        "17": 539,
+        "18": 539,
+        "19": 539,
+        "20": 539,
+        "21": 510,
+        "22": 510,
+        "23": 510,
+        "24": 510,
+        "25": 510,
+        "26": 510,
+        "27": 510,
+        "28": 510,
+        "29": 510,
+        "30": 510
+       }
+      },
+      {
+       "id": "Bahrun-3D-Hotel__Tipping-MYR",
+       "label": "Bahrun-3D-Hotel · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Bahrun-3D-GH__Ground-Cost-MYR",
+       "label": "Bahrun-3D-GH · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-GH",
+       "values": {
+        "1": 1453,
+        "2": 907,
+        "3": 739,
+        "4": 669,
+        "5": 669,
+        "6": 627,
+        "7": 627,
+        "8": 599,
+        "9": 599,
+        "10": 599,
+        "11": 567,
+        "12": 567,
+        "13": 567,
+        "14": 567,
+        "15": 567,
+        "16": 539,
+        "17": 539,
+        "18": 539,
+        "19": 539,
+        "20": 539,
+        "21": 510,
+        "22": 510,
+        "23": 510,
+        "24": 510,
+        "25": 510,
+        "26": 510,
+        "27": 510,
+        "28": 510,
+        "29": 510,
+        "30": 510
+       }
+      },
+      {
+       "id": "Bahrun-3D-GH__Tipping-MYR",
+       "label": "Bahrun-3D-GH · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-GH",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Ground-Cost-MYR",
+       "label": "Bahrun-4D-Hotel · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 1509,
+        "2": 1019,
+        "3": 949,
+        "4": 837,
+        "5": 837,
+        "6": 809,
+        "7": 809,
+        "8": 767,
+        "9": 767,
+        "10": 753,
+        "11": 718,
+        "12": 718,
+        "13": 718,
+        "14": 718,
+        "15": 718,
+        "16": 683,
+        "17": 683,
+        "18": 683,
+        "19": 683,
+        "20": 683,
+        "21": 648,
+        "22": 648,
+        "23": 648,
+        "24": 648,
+        "25": 648,
+        "26": 648,
+        "27": 648,
+        "28": 648,
+        "29": 648,
+        "30": 648
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Tipping-MYR",
+       "label": "Bahrun-4D-Hotel · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Bahrun-4D-GH__Ground-Cost-MYR",
+       "label": "Bahrun-4D-GH · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-GH",
+       "values": {
+        "1": 1929,
+        "2": 1159,
+        "3": 977,
+        "4": 837,
+        "5": 837,
+        "6": 739,
+        "7": 739,
+        "8": 669,
+        "9": 669,
+        "10": 669,
+        "11": 634,
+        "12": 634,
+        "13": 634,
+        "14": 634,
+        "15": 634,
+        "16": 599,
+        "17": 599,
+        "18": 599,
+        "19": 599,
+        "20": 599,
+        "21": 564,
+        "22": 564,
+        "23": 564,
+        "24": 564,
+        "25": 564,
+        "26": 564,
+        "27": 564,
+        "28": 564,
+        "29": 564,
+        "30": 564
+       }
+      },
+      {
+       "id": "Bahrun-4D-GH__Tipping-MYR",
+       "label": "Bahrun-4D-GH · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-GH",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Bahrun-HNY-3D__Ground-Cost-MYR",
+       "label": "Bahrun-HNY-3D · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-3D",
+       "values": {
+        "1": 901,
+        "2": 901,
+        "3": 901,
+        "4": 901,
+        "5": 901,
+        "6": 901,
+        "7": 901,
+        "8": 901,
+        "9": 901,
+        "10": 901,
+        "11": 901,
+        "12": 901,
+        "13": 901,
+        "14": 901,
+        "15": 901,
+        "16": 901,
+        "17": 901,
+        "18": 901,
+        "19": 901,
+        "20": 901,
+        "21": 901,
+        "22": 901,
+        "23": 901,
+        "24": 901,
+        "25": 901,
+        "26": 901,
+        "27": 901,
+        "28": 901,
+        "29": 901,
+        "30": 901
+       }
+      },
+      {
+       "id": "Bahrun-HNY-3D__Tipping-MYR",
+       "label": "Bahrun-HNY-3D · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-3D",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Ground-Cost-MYR",
+       "label": "Bahrun-HNY-4D · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "1": 1111,
+        "2": 1111,
+        "3": 1111,
+        "4": 1111,
+        "5": 1111,
+        "6": 1111,
+        "7": 1111,
+        "8": 1111,
+        "9": 1111,
+        "10": 1111,
+        "11": 1111,
+        "12": 1111,
+        "13": 1111,
+        "14": 1111,
+        "15": 1111,
+        "16": 1111,
+        "17": 1111,
+        "18": 1111,
+        "19": 1111,
+        "20": 1111,
+        "21": 1111,
+        "22": 1111,
+        "23": 1111,
+        "24": 1111,
+        "25": 1111,
+        "26": 1111,
+        "27": 1111,
+        "28": 1111,
+        "29": 1111,
+        "30": 1111
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Tipping-MYR",
+       "label": "Bahrun-HNY-4D · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "Bahrun-3D-Hotel__Transport",
+       "label": "Bahrun-3D-Hotel · Transport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 750,
+        "2": 375,
+        "3": 250,
+        "4": 187.5,
+        "5": 200,
+        "6": 166.6667,
+        "7": 142.8571,
+        "8": 125,
+        "9": 155.5556,
+        "10": 140
+       }
+      },
+      {
+       "id": "Bahrun-3D-Hotel__Hotel-KK",
+       "label": "Bahrun-3D-Hotel · Hotel KK (Ming Garden)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 220,
+        "2": 110,
+        "3": 110,
+        "4": 110,
+        "5": 110,
+        "6": 110,
+        "7": 110,
+        "8": 110,
+        "9": 110,
+        "10": 110
+       }
+      },
+      {
+       "id": "Bahrun-3D-Hotel__Hotel-Kundasang",
+       "label": "Bahrun-3D-Hotel · Hotel Kundasang (KPR)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 225,
+        "2": 112.5,
+        "3": 112.5,
+        "4": 112.5,
+        "5": 112.5,
+        "6": 112.5,
+        "7": 112.5,
+        "8": 112.5,
+        "9": 112.5,
+        "10": 112.5
+       }
+      },
+      {
+       "id": "Bahrun-3D-Hotel__Meals",
+       "label": "Bahrun-3D-Hotel · Meals",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 34,
+        "2": 34,
+        "3": 34,
+        "4": 34,
+        "5": 34,
+        "6": 34,
+        "7": 34,
+        "8": 34,
+        "9": 34,
+        "10": 34
+       }
+      },
+      {
+       "id": "Bahrun-3D-Hotel__Entrance",
+       "label": "Bahrun-3D-Hotel · Entrance",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-3D-Hotel",
+       "values": {
+        "1": 51,
+        "2": 51,
+        "3": 51,
+        "4": 51,
+        "5": 51,
+        "6": 51,
+        "7": 51,
+        "8": 51,
+        "9": 51,
+        "10": 51
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Transport",
+       "label": "Bahrun-4D-Hotel · Transport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 950,
+        "2": 475,
+        "3": 316.6667,
+        "4": 237.5,
+        "5": 240,
+        "6": 200,
+        "7": 171.4286,
+        "8": 150,
+        "9": 200,
+        "10": 180
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Hotel-KK",
+       "label": "Bahrun-4D-Hotel · Hotel KK 2 malam (Ming Garden)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 440,
+        "2": 220,
+        "3": 220,
+        "4": 220,
+        "5": 220,
+        "6": 220,
+        "7": 220,
+        "8": 220,
+        "9": 220,
+        "10": 220
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Hotel-Kundasang",
+       "label": "Bahrun-4D-Hotel · Hotel Kundasang (KPR)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 225,
+        "2": 112.5,
+        "3": 112.5,
+        "4": 112.5,
+        "5": 112.5,
+        "6": 112.5,
+        "7": 112.5,
+        "8": 112.5,
+        "9": 112.5,
+        "10": 112.5
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Meals",
+       "label": "Bahrun-4D-Hotel · Meals",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 69,
+        "2": 69,
+        "3": 69,
+        "4": 69,
+        "5": 69,
+        "6": 69,
+        "7": 69,
+        "8": 69,
+        "9": 69,
+        "10": 69
+       }
+      },
+      {
+       "id": "Bahrun-4D-Hotel__Entrance",
+       "label": "Bahrun-4D-Hotel · Entrance + Island",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-4D-Hotel",
+       "values": {
+        "1": 119,
+        "2": 119,
+        "3": 119,
+        "4": 119,
+        "5": 119,
+        "6": 119,
+        "7": 119,
+        "8": 119,
+        "9": 119,
+        "10": 119
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Transport",
+       "label": "Bahrun-HNY-4D · Transport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "2": 475
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Hotel-KK",
+       "label": "Bahrun-HNY-4D · Hotel KK 2 malam",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "2": 220
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Hotel-Kundasang",
+       "label": "Bahrun-HNY-4D · Hotel Kundasang (KPR) + deco",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "2": 137.5
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Meals",
+       "label": "Bahrun-HNY-4D · Meals",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "2": 214
+       }
+      },
+      {
+       "id": "Bahrun-HNY-4D__Entrance",
+       "label": "Bahrun-HNY-4D · Entrance + Island",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Bahrun-HNY-4D",
+       "values": {
+        "2": 119
+       }
+      }
+     ],
+     "label": "KK Kundasang › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "Bahrun-3D-Hotel",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 3D2N — 3-Star Hotel [DEFAULT]",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Kinabalu Pine + Ming Garden",
+       "notes": "Standard 3-Star tier",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-3D-GH",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 3D2N — Guesthouse",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "D'Manis Homestay + Marina Court",
+       "notes": "Budget tier",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-GH__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-GH__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-4D-Hotel",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 4D3N — 3-Star Hotel",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Kinabalu Pine + Ming Garden",
+       "notes": "+1 night, +Manukan Island",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-4D-GH",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 4D3N — Guesthouse",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "D'Manis Homestay + Marina Court",
+       "notes": "Budget tier",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-GH__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-GH__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-HNY-3D",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang HNY 3D2N (3-Star)",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Kinabalu Pine + Ming Garden + Deco",
+       "notes": "Couple RM 2,577",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-3D__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-3D__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-HNY-4D",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang HNY 4D3N (3-Star)",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Kinabalu Pine + Ming Garden + Deco",
+       "notes": "Couple RM 3,177",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Tipping-MYR']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "Bahrun-3D-Hotel",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 3D2N — 3-Star Hotel [DEFAULT]",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "Kinabalu Pine + Ming Garden",
+       "notes": "Standard 3-Star tier",
+       "components": [
+        {
+         "key": "transport",
+         "label": "Transport",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Transport']"
+        },
+        {
+         "key": "hotel-kk",
+         "label": "Hotel KK (Ming Garden)",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Hotel-KK']"
+        },
+        {
+         "key": "hotel-kundasang",
+         "label": "Hotel Kundasang (KPR)",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Hotel-Kundasang']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Meals']"
+        },
+        {
+         "key": "entrance",
+         "label": "Entrance",
+         "per": "pax",
+         "expr": "T['Bahrun-3D-Hotel__Entrance']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-4D-Hotel",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang 4D3N — 3-Star Hotel",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "Kinabalu Pine + Ming Garden",
+       "notes": "+1 night, +Manukan Island",
+       "components": [
+        {
+         "key": "transport",
+         "label": "Transport",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Transport']"
+        },
+        {
+         "key": "hotel-kk",
+         "label": "Hotel KK 2 malam (Ming Garden)",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Hotel-KK']"
+        },
+        {
+         "key": "hotel-kundasang",
+         "label": "Hotel Kundasang (KPR)",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Hotel-Kundasang']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Meals']"
+        },
+        {
+         "key": "entrance",
+         "label": "Entrance + Island",
+         "per": "pax",
+         "expr": "T['Bahrun-4D-Hotel__Entrance']"
+        }
+       ]
+      },
+      {
+       "id": "Bahrun-HNY-4D",
+       "label": "Bahrun",
+       "supplier": "KK Kundasang HNY 4D3N (3-Star)",
+       "paxMin": 2,
+       "paxMax": 2,
+       "hotel": "Kinabalu Pine + Ming Garden + Deco",
+       "notes": "Couple RM 3,177",
+       "components": [
+        {
+         "key": "transport",
+         "label": "Transport",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Transport']"
+        },
+        {
+         "key": "hotel-kk",
+         "label": "Hotel KK 2 malam",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Hotel-KK']"
+        },
+        {
+         "key": "hotel-kundasang",
+         "label": "Hotel Kundasang (KPR) + deco",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Hotel-Kundasang']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Meals']"
+        },
+        {
+         "key": "entrance",
+         "label": "Entrance + Island",
+         "per": "pax",
+         "expr": "T['Bahrun-HNY-4D__Entrance']"
+        }
+       ]
+      }
+     ],
+     "label": "KK Kundasang › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "packages"
+     ],
+     "from": [
+      {
+       "id": "bahrun-3d-hotel",
+       "label": "KK Kundasang Basic 3D2N · Hotel",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-3D-Hotel"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 1697,
+         "2": 1117,
+         "3": 957,
+         "4": 957,
+         "5": 907,
+         "6": 907,
+         "7": 877,
+         "8": 877,
+         "9": 857,
+         "10": 857,
+         "11": 810,
+         "12": 810,
+         "13": 810,
+         "14": 810,
+         "15": 810,
+         "16": 770,
+         "17": 770,
+         "18": 770,
+         "19": 770,
+         "20": 770,
+         "21": 730,
+         "22": 730,
+         "23": 730,
+         "24": 730,
+         "25": 730,
+         "26": 730,
+         "27": 730,
+         "28": 730,
+         "29": 730,
+         "30": 730
+        },
+        "cwb": {
+         "1": 1597,
+         "2": 1017,
+         "3": 857,
+         "4": 857,
+         "5": 807,
+         "6": 807,
+         "7": 777,
+         "8": 777,
+         "9": 757,
+         "10": 757,
+         "11": 807,
+         "12": 807,
+         "13": 807,
+         "14": 807,
+         "15": 807,
+         "16": 807,
+         "17": 807,
+         "18": 807,
+         "19": 807,
+         "20": 807,
+         "21": 807,
+         "22": 807,
+         "23": 807,
+         "24": 807,
+         "25": 807,
+         "26": 807,
+         "27": 807,
+         "28": 807,
+         "29": 807,
+         "30": 807
+        },
+        "cnb": {
+         "1": 1497,
+         "2": 917,
+         "3": 757,
+         "4": 757,
+         "5": 707,
+         "6": 707,
+         "7": 677,
+         "8": 677,
+         "9": 657,
+         "10": 657,
+         "11": 557,
+         "12": 557,
+         "13": 557,
+         "14": 557,
+         "15": 557,
+         "16": 557,
+         "17": 557,
+         "18": 557,
+         "19": 557,
+         "20": 557,
+         "21": 557,
+         "22": 557,
+         "23": 557,
+         "24": 557,
+         "25": 557,
+         "26": 557,
+         "27": 557,
+         "28": 557,
+         "29": 557,
+         "30": 557
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-3d-gh",
+       "label": "KK Kundasang Basic 3D2N · Guesthouse",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-3D-GH"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1297,
+         "3": 1057,
+         "4": 957,
+         "5": 957,
+         "6": 897,
+         "7": 897,
+         "8": 857,
+         "9": 857,
+         "10": 857,
+         "11": 810,
+         "12": 810,
+         "13": 810,
+         "14": 810,
+         "15": 810,
+         "16": 770,
+         "17": 770,
+         "18": 770,
+         "19": 770,
+         "20": 770,
+         "21": 730,
+         "22": 730,
+         "23": 730,
+         "24": 730,
+         "25": 730,
+         "26": 730,
+         "27": 730,
+         "28": 730,
+         "29": 730,
+         "30": 730
+        },
+        "cwb": {
+         "2": 727,
+         "3": 727,
+         "4": 727,
+         "5": 727,
+         "6": 727,
+         "7": 727,
+         "8": 727,
+         "9": 727,
+         "10": 727,
+         "11": 727,
+         "12": 727,
+         "13": 727,
+         "14": 727,
+         "15": 727,
+         "16": 727,
+         "17": 727,
+         "18": 727,
+         "19": 727,
+         "20": 727,
+         "21": 727,
+         "22": 727,
+         "23": 727,
+         "24": 727,
+         "25": 727,
+         "26": 727,
+         "27": 727,
+         "28": 727,
+         "29": 727,
+         "30": 727
+        },
+        "cnb": {
+         "2": 627,
+         "3": 627,
+         "4": 627,
+         "5": 627,
+         "6": 627,
+         "7": 627,
+         "8": 627,
+         "9": 627,
+         "10": 627,
+         "11": 627,
+         "12": 627,
+         "13": 627,
+         "14": 627,
+         "15": 627,
+         "16": 627,
+         "17": 627,
+         "18": 627,
+         "19": 627,
+         "20": 627,
+         "21": 627,
+         "22": 627,
+         "23": 627,
+         "24": 627,
+         "25": 627,
+         "26": 627,
+         "27": 627,
+         "28": 627,
+         "29": 627,
+         "30": 627
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-4d-hotel",
+       "label": "KK Kundasang Standard 4D3N · Hotel",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-4D-Hotel"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 2157,
+         "2": 1457,
+         "3": 1357,
+         "4": 1197,
+         "5": 1197,
+         "6": 1157,
+         "7": 1157,
+         "8": 1097,
+         "9": 1097,
+         "10": 1097,
+         "11": 1027,
+         "12": 1027,
+         "13": 1027,
+         "14": 1027,
+         "15": 1027,
+         "16": 977,
+         "17": 977,
+         "18": 977,
+         "19": 977,
+         "20": 977,
+         "21": 927,
+         "22": 927,
+         "23": 927,
+         "24": 927,
+         "25": 927,
+         "26": 927,
+         "27": 927,
+         "28": 927,
+         "29": 927,
+         "30": 927
+        },
+        "cwb": {
+         "1": 2057,
+         "2": 1357,
+         "3": 1257,
+         "4": 1097,
+         "5": 1097,
+         "6": 1057,
+         "7": 1057,
+         "8": 997,
+         "9": 997,
+         "10": 997,
+         "11": 857,
+         "12": 857,
+         "13": 857,
+         "14": 857,
+         "15": 857,
+         "16": 857,
+         "17": 857,
+         "18": 857,
+         "19": 857,
+         "20": 857,
+         "21": 857,
+         "22": 857,
+         "23": 857,
+         "24": 857,
+         "25": 857,
+         "26": 857,
+         "27": 857,
+         "28": 857,
+         "29": 857,
+         "30": 857
+        },
+        "cnb": {
+         "1": 1957,
+         "2": 1257,
+         "3": 1157,
+         "4": 997,
+         "5": 997,
+         "6": 957,
+         "7": 957,
+         "8": 897,
+         "9": 897,
+         "10": 897,
+         "11": 757,
+         "12": 757,
+         "13": 757,
+         "14": 757,
+         "15": 757,
+         "16": 757,
+         "17": 757,
+         "18": 757,
+         "19": 757,
+         "20": 757,
+         "21": 757,
+         "22": 757,
+         "23": 757,
+         "24": 757,
+         "25": 757,
+         "26": 757,
+         "27": 757,
+         "28": 757,
+         "29": 757,
+         "30": 757
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-4d-gh",
+       "label": "KK Kundasang Standard 4D3N · Guesthouse",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-4D-GH"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1657,
+         "3": 1397,
+         "4": 1197,
+         "5": 1197,
+         "6": 1057,
+         "7": 1057,
+         "8": 957,
+         "9": 957,
+         "10": 957,
+         "11": 907,
+         "12": 907,
+         "13": 907,
+         "14": 907,
+         "15": 907,
+         "16": 857,
+         "17": 857,
+         "18": 857,
+         "19": 857,
+         "20": 857,
+         "21": 807,
+         "22": 807,
+         "23": 807,
+         "24": 807,
+         "25": 807,
+         "26": 807,
+         "27": 807,
+         "28": 807,
+         "29": 807,
+         "30": 807
+        },
+        "cwb": {
+         "2": 857,
+         "3": 857,
+         "4": 857,
+         "5": 857,
+         "6": 857,
+         "7": 857,
+         "8": 857,
+         "9": 857,
+         "10": 857,
+         "11": 857,
+         "12": 857,
+         "13": 857,
+         "14": 857,
+         "15": 857,
+         "16": 857,
+         "17": 857,
+         "18": 857,
+         "19": 857,
+         "20": 857,
+         "21": 857,
+         "22": 857,
+         "23": 857,
+         "24": 857,
+         "25": 857,
+         "26": 857,
+         "27": 857,
+         "28": 857,
+         "29": 857,
+         "30": 857
+        },
+        "cnb": {
+         "2": 757,
+         "3": 757,
+         "4": 757,
+         "5": 757,
+         "6": 757,
+         "7": 757,
+         "8": 757,
+         "9": 757,
+         "10": 757,
+         "11": 757,
+         "12": 757,
+         "13": 757,
+         "14": 757,
+         "15": 757,
+         "16": 757,
+         "17": 757,
+         "18": 757,
+         "19": 757,
+         "20": 757,
+         "21": 757,
+         "22": 757,
+         "23": 757,
+         "24": 757,
+         "25": 757,
+         "26": 757,
+         "27": 757,
+         "28": 757,
+         "29": 757,
+         "30": 757
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-hny-3d",
+       "label": "KK Kundasang Honeymoon 3D2N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-HNY-3D"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1288.5,
+         "3": 1288.5,
+         "4": 1288.5,
+         "5": 1288.5,
+         "6": 1288.5,
+         "7": 1288.5,
+         "8": 1288.5,
+         "9": 1288.5,
+         "10": 1288.5,
+         "11": 1288.5,
+         "12": 1288.5,
+         "13": 1288.5,
+         "14": 1288.5,
+         "15": 1288.5,
+         "16": 1288.5,
+         "17": 1288.5,
+         "18": 1288.5,
+         "19": 1288.5,
+         "20": 1288.5,
+         "21": 1288.5,
+         "22": 1288.5,
+         "23": 1288.5,
+         "24": 1288.5,
+         "25": 1288.5,
+         "26": 1288.5,
+         "27": 1288.5,
+         "28": 1288.5,
+         "29": 1288.5,
+         "30": 1288.5
+        },
+        "cwb": {},
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-hny-4d",
+       "label": "KK Kundasang Honeymoon 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Bahrun-HNY-4D"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1588.5,
+         "3": 1588.5,
+         "4": 1588.5,
+         "5": 1588.5,
+         "6": 1588.5,
+         "7": 1588.5,
+         "8": 1588.5,
+         "9": 1588.5,
+         "10": 1588.5,
+         "11": 1588.5,
+         "12": 1588.5,
+         "13": 1588.5,
+         "14": 1588.5,
+         "15": 1588.5,
+         "16": 1588.5,
+         "17": 1588.5,
+         "18": 1588.5,
+         "19": 1588.5,
+         "20": 1588.5,
+         "21": 1588.5,
+         "22": 1588.5,
+         "23": 1588.5,
+         "24": 1588.5,
+         "25": 1588.5,
+         "26": 1588.5,
+         "27": 1588.5,
+         "28": 1588.5,
+         "29": 1588.5,
+         "30": 1588.5
+        },
+        "cwb": {},
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "bahrun-3d-hotel",
+       "label": "KK Kundasang Basic 3D2N · Hotel",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 1,
+         "to": 10,
+         "variant": "Bahrun-3D-Hotel"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 1697,
+         "2": 1117,
+         "3": 957,
+         "4": 957,
+         "5": 907,
+         "6": 907,
+         "7": 877,
+         "8": 877,
+         "9": 857,
+         "10": 857
+        },
+        "cwb": {
+         "1": 1597,
+         "2": 1017,
+         "3": 857,
+         "4": 857,
+         "5": 807,
+         "6": 807,
+         "7": 777,
+         "8": 777,
+         "9": 757,
+         "10": 757
+        },
+        "cnb": {
+         "1": 1497,
+         "2": 917,
+         "3": 757,
+         "4": 757,
+         "5": 707,
+         "6": 707,
+         "7": 677,
+         "8": 677,
+         "9": 657,
+         "10": 657
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-4d-hotel",
+       "label": "KK Kundasang Standard 4D3N · Hotel",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 1,
+         "to": 10,
+         "variant": "Bahrun-4D-Hotel"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 2157,
+         "2": 1457,
+         "3": 1357,
+         "4": 1197,
+         "5": 1197,
+         "6": 1157,
+         "7": 1157,
+         "8": 1097,
+         "9": 1097,
+         "10": 1097
+        },
+        "cwb": {
+         "1": 2057,
+         "2": 1357,
+         "3": 1257,
+         "4": 1097,
+         "5": 1097,
+         "6": 1057,
+         "7": 1057,
+         "8": 997,
+         "9": 997,
+         "10": 997
+        },
+        "cnb": {
+         "1": 1957,
+         "2": 1257,
+         "3": 1157,
+         "4": 997,
+         "5": 997,
+         "6": 957,
+         "7": 957,
+         "8": 897,
+         "9": 897,
+         "10": 897
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "bahrun-hny-4d",
+       "label": "KK Kundasang Honeymoon 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 2,
+         "variant": "Bahrun-HNY-4D"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1588.5
+        },
+        "cwb": {},
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 0,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        },
+        "sellingDiscount": 100
+       }
+      }
+     ],
+     "label": "KK Kundasang"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "kkk-a02",
+       "category": "Category",
+       "label": "Item",
+       "cost": null,
+       "selling": null,
+       "per": "Per",
+       "notes": "Notes"
+      },
+      {
+       "id": "kkk-a03",
+       "category": "Activity",
+       "label": "Island Trip Sapi+Manukan (Local)",
+       "cost": 55,
+       "selling": 68,
+       "per": "pax",
+       "notes": "Boat + jetty fee"
+      },
+      {
+       "id": "kkk-a04",
+       "category": "Activity",
+       "label": "Island Trip Sapi+Manukan (Foreigner)",
+       "cost": 68,
+       "selling": 83,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a05",
+       "category": "Activity",
+       "label": "Parasailing",
+       "cost": 55,
+       "selling": 70,
+       "per": "pax",
+       "notes": "Min 1"
+      },
+      {
+       "id": "kkk-a06",
+       "category": "Activity",
+       "label": "Seawalking",
+       "cost": 130,
+       "selling": 150,
+       "per": "pax",
+       "notes": "Min 1"
+      },
+      {
+       "id": "kkk-a07",
+       "category": "Activity",
+       "label": "Banana Boat",
+       "cost": 27,
+       "selling": 35,
+       "per": "pax",
+       "notes": "Min 3"
+      },
+      {
+       "id": "kkk-a08",
+       "category": "Activity",
+       "label": "Jetski",
+       "cost": 130,
+       "selling": 155,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a09",
+       "category": "Activity",
+       "label": "Poring Hot Spring + Canopy Walk",
+       "cost": 12,
+       "selling": 15,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a10",
+       "category": "Activity",
+       "label": "Mari-Mari Cultural Village (Add-on)",
+       "cost": 130,
+       "selling": 160,
+       "per": "Adult",
+       "notes": "Includes lunch/tea"
+      },
+      {
+       "id": "kkk-a11",
+       "category": "Activity",
+       "label": "Mari-Mari Cultural Village (Children)",
+       "cost": 60,
+       "selling": 75,
+       "per": "Child",
+       "notes": null
+      },
+      {
+       "id": "kkk-a12",
+       "category": "Activity",
+       "label": "Mari-Mari (Swap with Island)",
+       "cost": 100,
+       "selling": 120,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "kkk-a13",
+       "category": "Meal Add-On",
+       "label": "Dinner Kampung Nelayan",
+       "cost": 55,
+       "selling": 70,
+       "per": "Adult",
+       "notes": "Seafood Halal"
+      },
+      {
+       "id": "kkk-a14",
+       "category": "Meal Add-On",
+       "label": "Dinner Dream World",
+       "cost": 35,
+       "selling": 45,
+       "per": "Adult",
+       "notes": "Buffet"
+      },
+      {
+       "id": "kkk-a15",
+       "category": "Meal Add-On",
+       "label": "Lunch KPR (Kinabalu Pine Resort)",
+       "cost": 32,
+       "selling": 40,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a16",
+       "category": "Meal Add-On",
+       "label": "Lunch Adult",
+       "cost": 28,
+       "selling": 35,
+       "per": "Adult",
+       "notes": null
+      },
+      {
+       "id": "kkk-a17",
+       "category": "Transport",
+       "label": "Avanza/Innova Airport Transfer (KK Town)",
+       "cost": 40,
+       "selling": 50,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a18",
+       "category": "Transport",
+       "label": "Avanza Airport-Kundasang",
+       "cost": 250,
+       "selling": 300,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a19",
+       "category": "Transport",
+       "label": "Innova Airport-Kundasang",
+       "cost": 350,
+       "selling": 400,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a20",
+       "category": "Car Rental",
+       "label": "Myvi 1.5 (4-seater)",
+       "cost": 120,
+       "selling": 150,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a21",
+       "category": "Car Rental",
+       "label": "Avanza (6-seater)",
+       "cost": 165,
+       "selling": 200,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a22",
+       "category": "Car Rental",
+       "label": "Van Hiace (10-seater)",
+       "cost": 290,
+       "selling": 350,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 38,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Etiqa Area 1 — Domestic Malaysia"
+      },
+      {
+       "id": "kkk-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 55,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 72,
+       "selling": 95,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kkk-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 112,
+       "selling": 145,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kkk-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 100,
+       "selling": 130,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kkk-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 140,
+       "selling": 185,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kkk-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 130,
+       "selling": 170,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 186,
+       "selling": 245,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a31",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a32",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a33",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a34",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a35",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kkk-a36",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a37",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a38",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a39",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a40",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a41",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a42",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a43",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kkk-a44",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kkk-a45",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kkk-a46",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kkk-k001",
+       "category": "Add-on",
+       "label": "Poring Hot Spring + Canopy Walk (Ranau)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM15/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 1,
+        "sabah-kk-kundasang-4d3n": 1
+       }
+      },
+      {
+       "id": "kkk-k002",
+       "category": "Add-on",
+       "label": "Parasailing",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM90/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 2,
+        "sabah-kk-kundasang-4d3n": 2
+       }
+      },
+      {
+       "id": "kkk-k003",
+       "category": "Add-on",
+       "label": "Seawalking",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM180/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 3,
+        "sabah-kk-kundasang-4d3n": 3
+       }
+      },
+      {
+       "id": "kkk-k004",
+       "category": "Add-on",
+       "label": "Banana Boat",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM50/pax",
+        "Minimum 3 persons to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 4,
+        "sabah-kk-kundasang-4d3n": 4
+       }
+      },
+      {
+       "id": "kkk-k005",
+       "category": "Add-on",
+       "label": "Mari-mari Cultural Village (add-on)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport & Lunch/Tea",
+       "price_lines": [
+        "RM160/pax adult",
+        "RM150/pax child"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 5,
+        "sabah-kk-kundasang-4d3n": 6
+       }
+      },
+      {
+       "id": "kkk-k006",
+       "category": "Add-on",
+       "label": "Mari-mari Cultural Village (swap with island trip)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport & Lunch/Tea",
+       "price_lines": [
+        "RM120/transport"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-4d3n": 5
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "kkk-a03",
+       "category": "Activity",
+       "label": "Island Trip Sapi+Manukan (Local)",
+       "cost": 55,
+       "selling": 68,
+       "per": "pax",
+       "notes": "Boat + jetty fee"
+      },
+      {
+       "id": "kkk-a04",
+       "category": "Activity",
+       "label": "Island Trip Sapi+Manukan (Foreigner)",
+       "cost": 68,
+       "selling": 83,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a08",
+       "category": "Activity",
+       "label": "Jetski",
+       "cost": 130,
+       "selling": 155,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a13",
+       "category": "Meal Add-On",
+       "label": "Dinner Kampung Nelayan",
+       "cost": 55,
+       "selling": 70,
+       "per": "Adult",
+       "notes": "Seafood Halal"
+      },
+      {
+       "id": "kkk-a14",
+       "category": "Meal Add-On",
+       "label": "Dinner Dream World",
+       "cost": 35,
+       "selling": 45,
+       "per": "Adult",
+       "notes": "Buffet"
+      },
+      {
+       "id": "kkk-a15",
+       "category": "Meal Add-On",
+       "label": "Lunch KPR (Kinabalu Pine Resort)",
+       "cost": 32,
+       "selling": 40,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a16",
+       "category": "Meal Add-On",
+       "label": "Lunch Adult",
+       "cost": 28,
+       "selling": 35,
+       "per": "Adult",
+       "notes": null
+      },
+      {
+       "id": "kkk-a17",
+       "category": "Transport",
+       "label": "Avanza/Innova Airport Transfer (KK Town)",
+       "cost": 40,
+       "selling": 50,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a18",
+       "category": "Transport",
+       "label": "Avanza Airport-Kundasang",
+       "cost": 250,
+       "selling": 300,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a19",
+       "category": "Transport",
+       "label": "Innova Airport-Kundasang",
+       "cost": 350,
+       "selling": 400,
+       "per": "trip",
+       "notes": null
+      },
+      {
+       "id": "kkk-a20",
+       "category": "Car Rental",
+       "label": "Myvi 1.5 (4-seater)",
+       "cost": 120,
+       "selling": 150,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a21",
+       "category": "Car Rental",
+       "label": "Avanza (6-seater)",
+       "cost": 165,
+       "selling": 200,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a22",
+       "category": "Car Rental",
+       "label": "Van Hiace (10-seater)",
+       "cost": 290,
+       "selling": 350,
+       "per": "day",
+       "notes": null
+      },
+      {
+       "id": "kkk-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 38,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Etiqa Area 1 — Domestic Malaysia"
+      },
+      {
+       "id": "kkk-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 55,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 72,
+       "selling": 95,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kkk-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 112,
+       "selling": 145,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kkk-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 100,
+       "selling": 130,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kkk-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 140,
+       "selling": 185,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kkk-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 130,
+       "selling": 170,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 186,
+       "selling": 245,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kkk-a31",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a32",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a33",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-a34",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kkk-k001",
+       "category": "Add-on",
+       "label": "Poring Hot Spring + Canopy Walk (Ranau)",
+       "per": "pax",
+       "cost": 20,
+       "selling": 15,
+       "notes": "Kos: Poring RM15 + Canopy RM5 (RAW DATA); jual = katalog",
+       "price_lines": [
+        "RM15/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 1,
+        "sabah-kk-kundasang-4d3n": 1
+       }
+      },
+      {
+       "id": "kkk-k002",
+       "category": "Add-on",
+       "label": "Parasailing",
+       "per": "pax",
+       "cost": 70,
+       "selling": 90,
+       "notes": "Kos: RAW DATA (PT KK-KUNDASANG R&D 2026); jual = katalog",
+       "price_lines": [
+        "RM90/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 2,
+        "sabah-kk-kundasang-4d3n": 2
+       }
+      },
+      {
+       "id": "kkk-k003",
+       "category": "Add-on",
+       "label": "Seawalking",
+       "per": "pax",
+       "cost": 150,
+       "selling": 180,
+       "notes": "Kos: RAW DATA (PT KK-KUNDASANG R&D 2026); jual = katalog",
+       "price_lines": [
+        "RM180/pax",
+        "Minimum 1 person to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 3,
+        "sabah-kk-kundasang-4d3n": 3
+       }
+      },
+      {
+       "id": "kkk-k004",
+       "category": "Add-on",
+       "label": "Banana Boat",
+       "per": "pax",
+       "cost": 35,
+       "selling": 50,
+       "notes": "Kos: RAW DATA (PT KK-KUNDASANG R&D 2026); jual = katalog; minimum 3 pax",
+       "price_lines": [
+        "RM50/pax",
+        "Minimum 3 persons to book"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 4,
+        "sabah-kk-kundasang-4d3n": 4
+       }
+      },
+      {
+       "id": "kkk-k005",
+       "category": "Add-on",
+       "label": "Mari-mari Cultural Village (add-on)",
+       "per": "adult",
+       "cost": 108,
+       "selling": 160,
+       "notes": "Kos dewasa RM108, anak RM75 (RAW DATA); jual katalog RM160 dewasa / RM150 anak",
+       "includes": "Transport & Lunch/Tea",
+       "price_lines": [
+        "RM160/pax adult",
+        "RM150/pax child"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": 5,
+        "sabah-kk-kundasang-4d3n": 6
+       }
+      },
+      {
+       "id": "kkk-k006",
+       "category": "Add-on",
+       "label": "Mari-mari Cultural Village (swap with island trip)",
+       "per": "transport",
+       "cost": 150,
+       "selling": 120,
+       "notes": "Kos transport Avanza / Innova RM150, Van RM200 (RAW DATA); jual = katalog",
+       "includes": "Transport & Lunch/Tea",
+       "price_lines": [
+        "RM120/transport"
+       ],
+       "catalogs": {
+        "sabah-kk-kundasang-4d3n": 5
+       }
+      }
+     ],
+     "label": "KK Kundasang › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "hotels"
+     ],
+     "from": [
+      {
+       "id": "kkk-h01",
+       "type": "3 Star Hotel",
+       "name": "Kundasang: Kinabalu Pine Resort, Celyn, HBenjamin or similar · Kota Kinabalu: Ming Garden Hotel, Dreamtel Hotel",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM40/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM40/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "kkk-h02",
+       "type": "3.5 Star Hotel",
+       "name": "Kundasang: Perkasa, Dreamworld",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 2,
+         "amounts": [
+          "Add RM80/pax/night",
+          "RM60/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 2,
+         "amounts": [
+          "Add RM80/pax/night",
+          "RM60/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "kkk-h03",
+       "type": "4 Star Hotel",
+       "name": "Kota Kinabalu: Promenade, Palace Hotel",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 3,
+         "amounts": [
+          "Add RM150/pax/night",
+          "RM90/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 3,
+         "amounts": [
+          "Add RM150/pax/night",
+          "RM90/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "kkk-h04",
+       "name": "D'Manis",
+       "catalogs": {}
+      },
+      {
+       "id": "kkk-h05",
+       "name": "Lamin Kopio",
+       "catalogs": {}
+      },
+      {
+       "id": "kkk-h06",
+       "name": "White Valley",
+       "catalogs": {}
+      },
+      {
+       "id": "kkk-h07",
+       "name": "Kiram Village",
+       "catalogs": {}
+      },
+      {
+       "id": "kkk-h08",
+       "name": "Marina Court",
+       "catalogs": {}
+      }
+     ],
+     "to": [
+      {
+       "id": "kkk-h01",
+       "type": "3 Star Hotel",
+       "name": "Kundasang: Kinabalu Pine Resort, Celyn, HBenjamin or similar · Kota Kinabalu: Ming Garden Hotel, Dreamtel Hotel",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM40/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM40/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "kkk-h02",
+       "type": "3.5 Star Hotel",
+       "name": "Kundasang: Perkasa, Dreamworld",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 2,
+         "amounts": [
+          "Add RM80/pax/night",
+          "RM60/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 2,
+         "amounts": [
+          "Add RM80/pax/night",
+          "RM60/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "kkk-h03",
+       "type": "4 Star Hotel",
+       "name": "Kota Kinabalu: Promenade, Palace Hotel",
+       "similar": true,
+       "catalogs": {
+        "sabah-kk-kundasang-3d2n": {
+         "sur": 3,
+         "amounts": [
+          "Add RM150/pax/night",
+          "RM90/pax/night"
+         ]
+        },
+        "sabah-kk-kundasang-4d3n": {
+         "sur": 3,
+         "amounts": [
+          "Add RM150/pax/night",
+          "RM90/pax/night"
+         ]
+        }
+       }
+      }
+     ],
+     "label": "KK Kundasang › hotels"
+    },
+    {
+     "path": [
+      "kb",
+      "kk-kundasang",
+      "content",
+      "meta",
+      "marketing",
+      "usp"
+     ],
+     "from": "USP: Muslim-friendly — makan halal (2–3 breakfast + lunch/dinner), entrance fee & tipping included, driver-guide cakap Melayu fleksibel hingga tengah malam. 4 varian: 3D2N/4D3N × Hotel/Guesthouse.",
+     "to": "USP: Muslim-friendly — makan halal (2–3 breakfast + lunch/dinner), entrance fee & tipping included, driver-guide cakap Melayu fleksibel hingga tengah malam. 2 pakej: 3D2N / 4D3N, Hotel 3-Star.",
+     "label": "KB kk-kundasang › content › meta › marketing › usp"
+    },
+    {
+     "path": [
+      "kb",
+      "kk-kundasang",
+      "content",
+      "packages",
+      0,
+      "note"
+     ],
+     "from": "Varian: Hotel 3-Star (default, breakfast included) atau Guesthouse (D'Manis + Marina Court, tiada breakfast, −RM100/pax). Single supplement +RM300/pax.",
+     "to": "Hotel 3-Star (breakfast included). Single supplement +RM300/pax.",
+     "label": "KB kk-kundasang › content › packages › #1 › note"
+    },
+    {
+     "path": [
+      "kb",
+      "kk-kundasang",
+      "content",
+      "packages",
+      1,
+      "note"
+     ],
+     "from": "Varian: Hotel 3-Star (default) atau Guesthouse (−RM100/pax). Single supplement +RM420/pax. Island trip tertakluk cuaca — boleh swap dengan Mari-Mari Cultural Village.",
+     "to": "Hotel 3-Star. Single supplement +RM450/pax. Island trip tertakluk cuaca — boleh swap dengan Mari-Mari Cultural Village.",
+     "label": "KB kk-kundasang › content › packages › #2 › note"
+    },
+    {
+     "path": [
+      "kb",
+      "kk-kundasang",
+      "content",
+      "blocks",
+      "transport"
+     ],
+     "from": "<h2>Transportation & Guide</h2><p class='ssub'>Private transport ikut saiz group. Driver-guide tempatan cakap Melayu, fleksibel hingga tengah malam. Airport transfer included.</p><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Kenderaan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>2–4 pax</td><td>Avanza / Innova</td><td>Private, ber-aircond</td></tr><tr><td class='it'>5–8 pax</td><td>Van 10-seater (Hiace)</td><td>Private</td></tr><tr><td class='it'>9+ pax</td><td>Van 16-seater</td><td>Private</td></tr></tbody></table></div><p class='ssub'>Driver hours ~12 jam/hari. <b>Max 1 luggage per pax</b> (kapasiti kenderaan). Tiada tour leader dari KL — hanya driver cum guide tempatan.</p>",
+     "to": "<h2>Transportation & Guide</h2><p class='ssub'>Private transport ikut saiz group. Driver-guide tempatan cakap Melayu, fleksibel hingga tengah malam. Airport transfer included.</p><div class='custblk'><table class='ctbl'><thead><tr><th>Pax</th><th>Kenderaan</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>2–4 pax</td><td>Avanza / Innova</td><td>Private, ber-aircond</td></tr><tr><td class='it'>5–8 pax</td><td>Van 8-seater</td><td>Private</td></tr><tr><td class='it'>9+ pax</td><td>Van 16-seater</td><td>Private</td></tr></tbody></table></div><p class='ssub'>Driver hours ~12 jam/hari. <b>Max 1 luggage per pax</b> (kapasiti kenderaan). Tiada tour leader dari KL — hanya driver cum guide tempatan.</p>",
+     "label": "KB kk-kundasang › content › blocks › transport"
+    },
+    {
+     "path": [
+      "kb",
+      "kk-kundasang",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT KK-Kundasang — Knowledge Base (Important Notes / FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*4 varian: 3D2N / 4D3N x Hotel 3-Star / Guesthouse. Harga per pax, asas 2-3 sebilik.*\n\n- Itinerari **final 7 hari** sebelum trip.\n- Bawa **MyKad atau Passport** untuk check-in flight domestik.\n- Non-Malaysian: tambah entrance fee + tourism tax ~RM170-370/pax (ARBA tidak handle).\n- Max 1 luggage per pax (kapasiti kenderaan).\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa kelebihan ARBA?**\nBeroperasi sejak 2014, Muslim-friendly tour, makan halal, entrance fee included, driver-guide cakap Melayu, dan fleksibel hingga tengah malam.\n\n**Apa beza 3D2N dan 4D3N?**\n3D2N: 1 malam Kundasang + 1 malam KK, tiada island trip. 4D3N: 1 malam Kundasang + 2 malam KK + island hopping Pulau Sapi & Manukan (shared tour).\n\n**Boleh customize itinerari?**\nBoleh. Tambah Poring Hot Spring (RM15/pax), Mari-Mari Cultural Village (RM160/dewasa), atau Mt Kinabalu Park.\n\n**Sesuai untuk hiking Gunung Kinabalu?**\nPakej ini tidak termasuk pendakian Gunung Kinabalu. Boleh request custom package — perlu permit + guide (booking ~6 bulan awal).\n\n**Sesuai untuk family, warga emas & anak kecil?**\nSangat sesuai. Family-friendly — kanak-kanak suka Rabbit Farm, Desa Dairy Farm & Fish Spa. Warga emas OK kerana private transport fleksibel untuk rehat (perjalanan KK-Kundasang ~2 jam).\n\n### B. Halal, Makanan & Solat\n\n**Makanan disediakan apa?**\n3D2N: 2 Breakfast + 1 Dinner. 4D3N: 3 Breakfast + 1 Lunch + 1 Dinner. Semua **halal** (Anjung Senja Seafood / restoran tempatan Muslim).\n\n**Senang cari makanan halal di sana?**\nYa. Kota Kinabalu banyak restoran halal; Pasar Filipino ada gerai seafood BBQ halal certified; Kampung Nelayan & Gayang antara seafood halal certified. Di Kundasang ada gerai Muslim di pekan & R&R.\n\n**Ada masjid atau surau untuk solat?**\nYa. Masjid Bandaraya KK (masjid terapung) ada ruang solat lelaki/perempuan, tempat wuduk & telekung. Di Kundasang, surau ada di pekan, R&R dan kebanyakan attraction. Untuk island trip, surau di pulau terhad — rancang waktu solat & bawa sejadah.\n\n**Perlu bawa telekung/sejadah sendiri?**\nDisyorkan bawa sejadah ringan & telekung untuk fleksibiliti semasa perjalanan dan di lokasi luar bandar / pulau.\n\n### C. Visa & Passport\n\n**Perlu visa?**\nTidak. Ini domestik Malaysia. Bawa **MyKad atau Passport** untuk check-in penerbangan domestik.\n\n**Rakyat asing (Non-Malaysian) macam mana?**\nPerlu bawa passport dan tambah entrance fee + tourism tax ~RM170-370/pax. ARBA tidak handle bayaran ini.\n\n### D. Flight & Airport\n\n**Naik flight apa?**\nPenerbangan domestik terus ke **BKI (Kota Kinabalu)** — AirAsia, Malaysia Airlines, Batik Air atau Firefly dari KUL. Masa penerbangan ~2.5 jam (2j30m-2j45m).\n\n**Flight termasuk dalam pakej?**\nTidak. Tiket flight book sendiri (exclusion). ARBA sediakan airport transfer di KK.\n\n**Berapa kg bagasi?**\nBergantung airline — AirAsia biasanya 20kg, MAS 25kg (semak semasa booking).\n\n### E. Hotel & Bilik\n\n**Bilik macam mana?**\nAsas double sharing. Triple = extra bed/mattress/sofa bed. Single supplement RM300/pax (3D2N) atau RM420/pax (4D3N).\n\n**Boleh upgrade hotel?**\nBoleh. 3.5-Star (Perkasa/Dreamworld, Kundasang) atau 4-Star (Promenade/Palace, KK sahaja) — +RM150/pax/malam. Tiada 4-Star di Kundasang.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\n**Mac-Sep** cuaca elok. Mac-Mei view Gunung Kinabalu paling jelas. Elak Dis (peak + sesak); Okt-Feb kadang hujan tapi tidak teruk.\n\n**Cuaca di sana macam mana?**\nKundasang sejuk **15-22°C** (highland ~1,500m), boleh turun ~13°C malam. Kota Kinabalu panas 26-32°C.\n\n**Perlu bawa baju sejuk?**\nYa. Kundasang sejuk waktu malam — bawa jacket / windbreaker. Bawa payung/raincoat ringan sebab hujan boleh datang bila-bila.\n\n### G. Shopping & Duit\n\n**Boleh shopping di mana?**\nKK: Pasar Filipino (seafood + souvenir), Jamilah Jewellery, Imago Mall, kedai coklat/hub Sabah. Kundasang: Nabalu Market & pekan (buah, sayur, strawberi, produk tenusu).\n\n**Perlu bawa cash berapa?**\nSekitar RM200-500/pax. Kad OK di bandar KK; cash untuk gerai tempatan Kundasang (Nabalu Market, pekan).\n\n### H. Payment & Refund\n\n**Last minute booking macam mana?**\n<3 minggu sebelum departure: +RM300/pax (2 pax) atau +RM200/pax (3+ pax). <21 hari: caj RM50/booking.\n\n### I. Add-ons & Customization\n\n**Boleh tambah insurance/takaful?**\nBoleh. Takaful TripCare 360 (Etiqa) dari RM50/pax untuk domestik.\n\n### J. Kesihatan & Keselamatan\n\n**Ada isu ketinggian di Kundasang?**\nKetinggian ~1,500m — kebanyakan orang tiada masalah. Bawa ubat peribadi; warga emas & yang ada masalah pernafasan ambil masa untuk sesuaikan diri.\n\n**Aktiviti laut selamat?**\nIsland trip dikendalikan operator berlesen dengan jaket keselamatan. Ikut arahan guide; snorkeling di kawasan ditetapkan.\n\n### K. Praktikal (SIM/Talian/Tandas)\n\n**Talian & internet OK?**\nMaxis/Celcom/Digi semua OK di KK & Kundasang; 4G stabil di kebanyakan kawasan.\n\n**Kuasa & soket elektrik?**\nMalaysia — soket Type G (3 pin), 240V. Sama seperti Semenanjung, tak perlu adapter.\n\n### L. Packing\n\n**Apa perlu bawa?**\nJacket/windbreaker (Kundasang sejuk), selipar & kasut selesa, payung/raincoat, sejadah & telekung, ubat peribadi, sunblock, dan pakaian renang (4D3N island trip). Muslimah: legging + baju labuh untuk aktiviti air.\n",
+     "to": "# PT KK-Kundasang — Knowledge Base (Important Notes / FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*2 pakej: 3D2N / 4D3N, Hotel 3-Star. Harga per pax, asas 2-3 sebilik.*\n\n- Itinerari **final 7 hari** sebelum trip.\n- Bawa **MyKad atau Passport** untuk check-in flight domestik.\n- Non-Malaysian: tambah entrance fee + tourism tax ~RM170-370/pax (ARBA tidak handle).\n- Max 1 luggage per pax (kapasiti kenderaan).\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa kelebihan ARBA?**\nBeroperasi sejak 2014, Muslim-friendly tour, makan halal, entrance fee included, driver-guide cakap Melayu, dan fleksibel hingga tengah malam.\n\n**Apa beza 3D2N dan 4D3N?**\n3D2N: 1 malam Kundasang + 1 malam KK, tiada island trip. 4D3N: 1 malam Kundasang + 2 malam KK + island hopping Pulau Sapi & Manukan (shared tour).\n\n**Boleh customize itinerari?**\nBoleh. Tambah Poring Hot Spring (RM15/pax), Mari-Mari Cultural Village (RM160/dewasa), atau Mt Kinabalu Park.\n\n**Sesuai untuk hiking Gunung Kinabalu?**\nPakej ini tidak termasuk pendakian Gunung Kinabalu. Boleh request custom package — perlu permit + guide (booking ~6 bulan awal).\n\n**Sesuai untuk family, warga emas & anak kecil?**\nSangat sesuai. Family-friendly — kanak-kanak suka Rabbit Farm, Desa Dairy Farm & Fish Spa. Warga emas OK kerana private transport fleksibel untuk rehat (perjalanan KK-Kundasang ~2 jam).\n\n### B. Halal, Makanan & Solat\n\n**Makanan disediakan apa?**\n3D2N: 2 Breakfast + 1 Dinner. 4D3N: 3 Breakfast + 1 Lunch + 1 Dinner. Semua **halal** (Anjung Senja Seafood / restoran tempatan Muslim).\n\n**Senang cari makanan halal di sana?**\nYa. Kota Kinabalu banyak restoran halal; Pasar Filipino ada gerai seafood BBQ halal certified; Kampung Nelayan & Gayang antara seafood halal certified. Di Kundasang ada gerai Muslim di pekan & R&R.\n\n**Ada masjid atau surau untuk solat?**\nYa. Masjid Bandaraya KK (masjid terapung) ada ruang solat lelaki/perempuan, tempat wuduk & telekung. Di Kundasang, surau ada di pekan, R&R dan kebanyakan attraction. Untuk island trip, surau di pulau terhad — rancang waktu solat & bawa sejadah.\n\n**Perlu bawa telekung/sejadah sendiri?**\nDisyorkan bawa sejadah ringan & telekung untuk fleksibiliti semasa perjalanan dan di lokasi luar bandar / pulau.\n\n### C. Visa & Passport\n\n**Perlu visa?**\nTidak. Ini domestik Malaysia. Bawa **MyKad atau Passport** untuk check-in penerbangan domestik.\n\n**Rakyat asing (Non-Malaysian) macam mana?**\nPerlu bawa passport dan tambah entrance fee + tourism tax ~RM170-370/pax. ARBA tidak handle bayaran ini.\n\n### D. Flight & Airport\n\n**Naik flight apa?**\nPenerbangan domestik terus ke **BKI (Kota Kinabalu)** — AirAsia, Malaysia Airlines, Batik Air atau Firefly dari KUL. Masa penerbangan ~2.5 jam (2j30m-2j45m).\n\n**Flight termasuk dalam pakej?**\nTidak. Tiket flight book sendiri (exclusion). ARBA sediakan airport transfer di KK.\n\n**Berapa kg bagasi?**\nBergantung airline — AirAsia biasanya 20kg, MAS 25kg (semak semasa booking).\n\n### E. Hotel & Bilik\n\n**Bilik macam mana?**\nAsas double sharing. Triple = extra bed/mattress/sofa bed. Single supplement RM300/pax (3D2N) atau RM450/pax (4D3N).\n\n**Boleh upgrade hotel?**\nBoleh. 3.5-Star (Perkasa/Dreamworld, Kundasang) +RM80/pax/malam atau 4-Star (Promenade/Palace, KK sahaja) +RM150/pax/malam. Tiada 4-Star di Kundasang.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\n**Mac-Sep** cuaca elok. Mac-Mei view Gunung Kinabalu paling jelas. Elak Dis (peak + sesak); Okt-Feb kadang hujan tapi tidak teruk.\n\n**Cuaca di sana macam mana?**\nKundasang sejuk **15-22°C** (highland ~1,500m), boleh turun ~13°C malam. Kota Kinabalu panas 26-32°C.\n\n**Perlu bawa baju sejuk?**\nYa. Kundasang sejuk waktu malam — bawa jacket / windbreaker. Bawa payung/raincoat ringan sebab hujan boleh datang bila-bila.\n\n### G. Shopping & Duit\n\n**Boleh shopping di mana?**\nKK: Pasar Filipino (seafood + souvenir), Jamilah Jewellery, Imago Mall, kedai coklat/hub Sabah. Kundasang: Nabalu Market & pekan (buah, sayur, strawberi, produk tenusu).\n\n**Perlu bawa cash berapa?**\nSekitar RM200-500/pax. Kad OK di bandar KK; cash untuk gerai tempatan Kundasang (Nabalu Market, pekan).\n\n### H. Payment & Refund\n\n**Last minute booking macam mana?**\nTiada caj last minute. Late booking surcharge RM50/booking jika tempahan kurang 45 hari sebelum berlepas (katalog).\n\n### I. Add-ons & Customization\n\n**Boleh tambah insurance/takaful?**\nBoleh. Takaful TripCare 360 (Etiqa) dari RM50/pax untuk domestik.\n\n### J. Kesihatan & Keselamatan\n\n**Ada isu ketinggian di Kundasang?**\nKetinggian ~1,500m — kebanyakan orang tiada masalah. Bawa ubat peribadi; warga emas & yang ada masalah pernafasan ambil masa untuk sesuaikan diri.\n\n**Aktiviti laut selamat?**\nIsland trip dikendalikan operator berlesen dengan jaket keselamatan. Ikut arahan guide; snorkeling di kawasan ditetapkan.\n\n### K. Praktikal (SIM/Talian/Tandas)\n\n**Talian & internet OK?**\nMaxis/Celcom/Digi semua OK di KK & Kundasang; 4G stabil di kebanyakan kawasan.\n\n**Kuasa & soket elektrik?**\nMalaysia — soket Type G (3 pin), 240V. Sama seperti Semenanjung, tak perlu adapter.\n\n### L. Packing\n\n**Apa perlu bawa?**\nJacket/windbreaker (Kundasang sejuk), selipar & kasut selesa, payung/raincoat, sejadah & telekung, ubat peribadi, sunblock, dan pakaian renang (4D3N island trip). Muslimah: legging + baju labuh untuk aktiviti air.\n",
+     "label": "KB kk-kundasang › content › snapshot"
+    }
+   ],
+   "catalogs": [
+    "Catalog sabah-kk-kundasang-3d2n: prices + add-ons from v83",
+    "Catalog sabah-kk-kundasang-4d3n: prices + add-ons from v83"
+   ],
+   "kb": [
+    "KB kk-kundasang: 5 changes"
+   ]
   }
  ]
 }
