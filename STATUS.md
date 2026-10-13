@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v82 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v82, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v83 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v83, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -178,6 +178,13 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   asal (Jeep Gumuk Pasir 200, ATV 100, Gondola 65, Borobudur 135, Horse Carriage 16) — 3 sell below that cost (flag, PO); the latest R&D Add-On sheet is copied from
   Lombok (not reliable). KB jogja: add-on prices = catalog (child 60 %), quotation without travel insurance / with meals, Hiace 7–12 · Bus 13+. Open: Goa Pindul /
   Gamplong cost; CR 4★ (The 101 Malioboro) vs catalog The 101 Tugu, upgrade RM100–120 vs CR difference RM88–110 per night.
+  **KK - Kundasang (v83, PO ezie 13 Oct; source of truth = ~/Downloads/PT KK-KUNDASANG R&D 2026.xlsx, tabs KKK COSTING + RAW DATA only — PO):** Basic 3D2N /
+  Standard 4D3N cost = KKK COSTING in components (transport per group ÷ pax 750 / 1,000 / 1,400 and 950 / 1,200 / 1,800 for 1–4 / 5–8 / 9–16 pax; Ming Garden 220 and KPR 225 per
+  room ÷ 2; meals 34 / 69; entrance 51 / 119) — the old costs were RM93–180 too high, so the thin-margin flags were false; Costing 1–10 pax (= catalog, 1 pax costed). Adult
+  margin 3D2N 25–36 % (1 pax 14.5 %), 4D3N 20–28 % (1 pax 7.9 % = sheet). Honeymoon 4D3N = sheet (couple RM1,165.5, selling − RM100/pax, no hub catalog); Guesthouse 3D2N /
+  4D3N and Honeymoon 3D2N removed (PO). Add-ons: catalog items cost from RAW DATA, selling = catalog; Poring + Canopy (20 / 15) and Mari-Mari swap (150 / 120) below cost
+  (flag); TripCare Area 2 / second Blue Ribbon set removed. KB: guesthouse texts removed, single 4D3N RM450, last-minute text removed (not in the catalog), upgrade 3.5★
+  +RM80 / 4★ +RM150, Van 8-seater 5–8. Child cost kept CWB 85 % / CNB 65 %. CR folder "CR KK Kundasang" in the R&D dir not used (not opened).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
