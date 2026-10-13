@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v78 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v78, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v79 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v79, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -158,6 +158,13 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   $1,030 would give ~12 % at 2 pax); KB quotation inclusions "{nights} breakfasts" vs catalog fullboard; child cost 100 % (Bursa CNB 6–10 %).
   Open: Uludag Snow Park cost (MyTrip); Etiqa TripCare zone for Turkey ("Area 2"?); catalog Bursa includes say 5x lunch but the itinerary has 3;
   KB Travel Map "Hotel Day 1" for Cappadocia lists the Cappadocia hotels although night 1 is in Istanbul (Viva Deluxe).
+  **Jakarta - Bandung (v79, PO ezie 13 Oct):** costs = CTRANS CR by pax (WhatsApp screenshot, now in TO Contract Rate: fullboard 4D3N 2–10 pax,
+  5 pax Avanza RM684 / Hiace RM757 = TO "CTRANS (Hiace van)"; 11–19 pax = 10 pax, PO) — checked; the "Katalog Penawaran 2026" PDF is CTRANS's public
+  price list (not ARBA's rate). Adult margin 27–38 %. Tipping RM0 (CTRANS charges none; catalog / KB text kept, PO); Option A / B same price; child cost
+  CWB 75 % / CNB 50 % (PO); Day 4 Jakarta stops stay "optional" (no refund if the flight is early, PO); vehicles Avanza 2–4 · Innova 5–6 · Hiace 7–12.
+  Add-ons: Whoosh duplicates removed (catalog item RM157, cost RM154), TripCare = Etiqa Area 1 (= Aceh), Argo Executive RM220 (= KB). KB: 2027 travel
+  surcharge (+RM50) removed, quotation meals = catalog, transport block Hiace 7–12. Costing 2–19 pax kept. Open: KB Jakarta Full Day Tour (Avanza)
+  RM320 / transport is below the hub cost RM333.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).

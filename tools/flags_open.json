@@ -170,6 +170,16 @@
    "fix": "Check the Etiqa zone for Turkey and update the TripCare costs / selling.",
    "by": "ezie",
    "at": "2026-10-13"
+  },
+  {
+   "code": "JBDO",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Jakarta - Bandung: KB Jakarta Full Day Tour below cost",
+   "detail": "KB Simple Customisation sells Jakarta Tour (full day) Avanza 2–4 pax at RM320 / transport; the hub cost is RM333 (hub selling RM400).",
+   "fix": "Raise the KB price (e.g. RM400 = hub) or confirm the CTRANS cost.",
+   "by": "ezie",
+   "at": "2026-10-13"
   }
  ]
 }
