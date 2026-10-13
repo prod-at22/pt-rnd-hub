@@ -76691,6 +76691,821 @@
    "kb": [
     "KB turki: 1 change"
    ]
+  },
+  {
+   "v": 79,
+   "at": "2026-10-13T01:13:23Z",
+   "by": "system",
+   "note": "Jakarta - Bandung cross-check (PO ezie 13 Oct 2026): costs = CTRANS CR by pax (WhatsApp, fullboard 2–10 pax; 5 pax Avanza RM684 / Hiace RM757; 11–19 pax = 10 pax, PO) — checked, screenshot added to TO Contract Rate (the 'Katalog Penawaran 2026' PDF is CTRANS's public price list); tipping RM0 (CTRANS charges none; catalog text kept, PO); Option A / B same price (PO); child cost CWB 75% / CNB 50% (were 90% / 75%, PO); add-ons: Whoosh duplicates removed (catalog item RM157, cost RM154), TripCare = Etiqa Area 1 set (= Aceh) with pair / family units, Argo Executive RM220 (= KB); KB: 2027 travel surcharge (+RM50) removed (not in the catalog), quotation meals = catalog (3x breakfast, 3 lunch, 3 dinner), transport Hiace 7–12 pax (= catalog). Costing 2–19 pax kept. Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "JBDO",
+      "packages",
+      "ctrans",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.9,
+     "to": 0.75,
+     "label": "Jakarta - Bandung › Jakarta - Bandung 4D3N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "JBDO",
+      "packages",
+      "ctrans",
+      "rules",
+      "cnbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 0.5,
+     "label": "Jakarta - Bandung › Jakarta - Bandung 4D3N › Rule › CNB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "JBDO",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "jbdo-a01",
+       "category": "Train",
+       "label": "Whoosh 1-Way + Shuttle (2-4 pax)",
+       "cost": 154,
+       "selling": 157,
+       "per": "pax",
+       "notes": "Jakarta↔Bandung"
+      },
+      {
+       "id": "jbdo-a02",
+       "category": "Train",
+       "label": "Whoosh 1-Way + Shuttle (4-5 pax)",
+       "cost": 144,
+       "selling": 157,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a03",
+       "category": "Train",
+       "label": "Whoosh 1-Way + Shuttle (6-12 pax)",
+       "cost": 134,
+       "selling": 157,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a04",
+       "category": "Train",
+       "label": "Argo Economy 1-Way + Shuttle (2-4 pax)",
+       "cost": 112,
+       "selling": 175,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a05",
+       "category": "Train",
+       "label": "Argo Executive 1-Way + Shuttle (2-4 pax)",
+       "cost": 140,
+       "selling": 200,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a06",
+       "category": "Train",
+       "label": "Argo Luxury 1-Way + Shuttle (2-4 pax)",
+       "cost": 213,
+       "selling": 280,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a07",
+       "category": "Tour",
+       "label": "Jakarta Half Day City Tour (2-4 pax)",
+       "cost": 180,
+       "selling": 250,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a08",
+       "category": "Tour",
+       "label": "Jakarta Full Day City Tour (2-3 pax)",
+       "cost": 333,
+       "selling": 400,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a09",
+       "category": "Tour",
+       "label": "Bandung Half Day City Tour (2-4 pax)",
+       "cost": 120,
+       "selling": 180,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a10",
+       "category": "Tour",
+       "label": "Bandung Full Day City Tour (2-4 pax)",
+       "cost": 166,
+       "selling": 260,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a11",
+       "category": "Tour",
+       "label": "Private Transfer JKT↔Bandung + Tour (2-4 pax)",
+       "cost": 499,
+       "selling": 550,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a12",
+       "category": "Activity",
+       "label": "Trans Studio Weekday (2-4 pax)",
+       "cost": 147,
+       "selling": 215,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a13",
+       "category": "Activity",
+       "label": "Trans Studio Weekend (2-4 pax)",
+       "cost": 178,
+       "selling": 250,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a14",
+       "category": "Activity",
+       "label": "Lembang Park & Zoo Weekday",
+       "cost": 18,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a15",
+       "category": "Activity",
+       "label": "Lembang Park & Zoo Weekend",
+       "cost": 24,
+       "selling": 30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a16",
+       "category": "Activity",
+       "label": "Honeymoon/Birthday Decoration (Cake+Flower+Card)",
+       "cost": 180,
+       "selling": 250,
+       "per": "set",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a17",
+       "category": "Accom",
+       "label": "Tambah 1 Night 3-Star (Bandung Normal)",
+       "cost": 65,
+       "selling": 90,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a18",
+       "category": "Accom",
+       "label": "Tambah 1 Night 4-Star (Bandung Normal)",
+       "cost": 110,
+       "selling": 150,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a19",
+       "category": "Accom",
+       "label": "Tambah 1 Night 3-Star (Jakarta Normal)",
+       "cost": 80,
+       "selling": 110,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a20",
+       "category": "Accom",
+       "label": "Tambah 1 Night 4-Star (Jakarta Normal)",
+       "cost": 115,
+       "selling": 200,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "jbdo-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a29",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a30",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-k001",
+       "category": "Add-On",
+       "label": "Zip Bike @ Lodge Maribaya",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM10 ~ RM15"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 1
+       }
+      },
+      {
+       "id": "jbdo-k002",
+       "category": "Add-On",
+       "label": "Rainbow Slide @ Floating Market",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM10 ~ RM15"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 2
+       }
+      },
+      {
+       "id": "jbdo-k003",
+       "category": "Add-On",
+       "label": "Whoosh Train Bandung-Jakarta",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 Way Whoosh Ticket (Economy Seat), Private Transport Pickup & Drop Off Train Station",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 3
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "jbdo-a04",
+       "category": "Train",
+       "label": "Argo Economy 1-Way + Shuttle (2-4 pax)",
+       "cost": 112,
+       "selling": 175,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a05",
+       "category": "Train",
+       "label": "Argo Executive 1-Way + Shuttle (2-4 pax)",
+       "cost": 140,
+       "selling": 220,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a06",
+       "category": "Train",
+       "label": "Argo Luxury 1-Way + Shuttle (2-4 pax)",
+       "cost": 213,
+       "selling": 280,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a07",
+       "category": "Tour",
+       "label": "Jakarta Half Day City Tour (2-4 pax)",
+       "cost": 180,
+       "selling": 250,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a08",
+       "category": "Tour",
+       "label": "Jakarta Full Day City Tour (2-3 pax)",
+       "cost": 333,
+       "selling": 400,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a09",
+       "category": "Tour",
+       "label": "Bandung Half Day City Tour (2-4 pax)",
+       "cost": 120,
+       "selling": 180,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a10",
+       "category": "Tour",
+       "label": "Bandung Full Day City Tour (2-4 pax)",
+       "cost": 166,
+       "selling": 260,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a11",
+       "category": "Tour",
+       "label": "Private Transfer JKT↔Bandung + Tour (2-4 pax)",
+       "cost": 499,
+       "selling": 550,
+       "per": "transport",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a12",
+       "category": "Activity",
+       "label": "Trans Studio Weekday (2-4 pax)",
+       "cost": 147,
+       "selling": 215,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a13",
+       "category": "Activity",
+       "label": "Trans Studio Weekend (2-4 pax)",
+       "cost": 178,
+       "selling": 250,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a14",
+       "category": "Activity",
+       "label": "Lembang Park & Zoo Weekday",
+       "cost": 18,
+       "selling": 25,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a15",
+       "category": "Activity",
+       "label": "Lembang Park & Zoo Weekend",
+       "cost": 24,
+       "selling": 30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a16",
+       "category": "Activity",
+       "label": "Honeymoon/Birthday Decoration (Cake+Flower+Card)",
+       "cost": 180,
+       "selling": 250,
+       "per": "set",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a17",
+       "category": "Accom",
+       "label": "Tambah 1 Night 3-Star (Bandung Normal)",
+       "cost": 65,
+       "selling": 90,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a18",
+       "category": "Accom",
+       "label": "Tambah 1 Night 4-Star (Bandung Normal)",
+       "cost": 110,
+       "selling": 150,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a19",
+       "category": "Accom",
+       "label": "Tambah 1 Night 3-Star (Jakarta Normal)",
+       "cost": 80,
+       "selling": 110,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a20",
+       "category": "Accom",
+       "label": "Tambah 1 Night 4-Star (Jakarta Normal)",
+       "cost": 115,
+       "selling": 200,
+       "per": "pax/night",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN, = Aceh)"
+      },
+      {
+       "id": "jbdo-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax"
+      },
+      {
+       "id": "jbdo-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair"
+      },
+      {
+       "id": "jbdo-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair"
+      },
+      {
+       "id": "jbdo-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family"
+      },
+      {
+       "id": "jbdo-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family"
+      },
+      {
+       "id": "jbdo-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax"
+      },
+      {
+       "id": "jbdo-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax"
+      },
+      {
+       "id": "jbdo-a29",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a30",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "jbdo-k001",
+       "category": "Add-On",
+       "label": "Zip Bike @ Lodge Maribaya",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM10 ~ RM15"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 1
+       }
+      },
+      {
+       "id": "jbdo-k002",
+       "category": "Add-On",
+       "label": "Rainbow Slide @ Floating Market",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM10 ~ RM15"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 2
+       }
+      },
+      {
+       "id": "jbdo-k003",
+       "category": "Add-On",
+       "label": "Whoosh Train Bandung-Jakarta",
+       "per": "pax",
+       "cost": 154,
+       "selling": 157,
+       "notes": "Kos CTRANS Whoosh 1-way + shuttle (2–4 pax RM154; 4–5 pax 144, 6–12 pax 134); jual = katalog",
+       "includes": "1 Way Whoosh Ticket (Economy Seat), Private Transport Pickup & Drop Off Train Station",
+       "price_lines": [
+        "RM157/pax"
+       ],
+       "catalogs": {
+        "jakarta-bandung": 3
+       }
+      }
+     ],
+     "label": "Jakarta - Bandung › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "JBDO",
+      "contracts"
+     ],
+     "from": [
+      {
+       "id": "1a1075462d7",
+       "name": "PT JBDO CTRANS 5D4N/4D3N Jan - Dec 2026.pdf",
+       "file": "contracts/jbdo/1a1075462d7-PT_JBDO_CTRANS_5D4N_4D3N_Jan_-_Dec_2026.pdf",
+       "to": "CTRANS",
+       "note": "From Drive · Production Team",
+       "size": 12170805,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1siQedl_JFBdBU9hgsvlLVcG_AZWJ-Liq"
+      }
+     ],
+     "to": [
+      {
+       "id": "1a1075462d7",
+       "name": "PT JBDO CTRANS 5D4N/4D3N Jan - Dec 2026.pdf",
+       "file": "contracts/jbdo/1a1075462d7-PT_JBDO_CTRANS_5D4N_4D3N_Jan_-_Dec_2026.pdf",
+       "to": "CTRANS",
+       "note": "From Drive · Production Team",
+       "size": 12170805,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1siQedl_JFBdBU9hgsvlLVcG_AZWJ-Liq"
+      },
+      {
+       "id": "1a132d17bdb",
+       "name": "CTRANS CR by pax (WhatsApp).png",
+       "file": "contracts/jbdo/1a132d17bdb-CTRANS_CR_by_pax_WhatsApp.png",
+       "to": "CTRANS",
+       "note": "Fullboard 4D3N, 2–10 pax (5 pax Avanza RM684 / Hiace RM757); 11–19 pax = 10 pax (PO 13 Oct 2026)",
+       "size": 111119,
+       "at": "2026-10-13T01:12:31Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Jakarta - Bandung › TO Contract Rate"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip, peak season, late booking dan surcaj 2027 dikira sendiri dan terus masuk dalam harga per pax. <b>Kadar transport ikut kawasan dan kelas kenderaan</b> (Avanza 2&ndash;4, Innova 5&ndash;6, Hiace 7&ndash;12) &mdash; pilih blok itinerary supaya kadar hari tambahan berlabuh pada kawasan yang betul. <b>Pindah bandar</b> guna blok <i>Pindah bandar</i>: ia mengenakan full day tour <b>dan</b> transfer, seperti nota rate card. Untuk malam peak yang guna hotel 4&#9733;, pilih <i>Naik taraf hotel 4 bintang &ndash; malam peak season</i> pada baris hari itu (RM90 upgrade + RM5 beza peak).</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Jakarta-Bandung 4H3M &middot; Option A (Nature &amp; Adventure)</option><option value='1'>PT Jakarta-Bandung 4H3M &middot; Option B (Kids Friendly)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-10)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>RM 350 per pax, sekali sahaja</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh berlepas / balik &mdash; panjang trip, peak season dan late booking dikira sendiri dan terus masuk dalam harga per pax. <b>Kadar transport ikut kawasan dan kelas kenderaan</b> (Avanza 2&ndash;4, Innova 5&ndash;6, Hiace 7&ndash;12) &mdash; pilih blok itinerary supaya kadar hari tambahan berlabuh pada kawasan yang betul. <b>Pindah bandar</b> guna blok <i>Pindah bandar</i>: ia mengenakan full day tour <b>dan</b> transfer, seperti nota rate card. Untuk malam peak yang guna hotel 4&#9733;, pilih <i>Naik taraf hotel 4 bintang &ndash; malam peak season</i> pada baris hari itu (RM90 upgrade + RM5 beza peak).</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Jakarta-Bandung 4H3M &middot; Option A (Nature &amp; Adventure)</option><option value='1'>PT Jakarta-Bandung 4H3M &middot; Option B (Kids Friendly)</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (6-10)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2-5)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>Bawah 2 tahun = FOC (katalog)</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>RM 350 per pax, sekali sahaja</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (final, semua kos)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB jakarta-bandung › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "content",
+      "blocks",
+      "transport"
+     ],
+     "from": "<h2>Transportation &amp; Guide</h2>\n<p class='ssub'>Pengangkutan persendirian sepanjang trip. Driver merangkap driving guide - bukan pengangkutan awam.</p>\n<div class='custblk'><table class='ctbl'><thead><tr><th>Bilangan pax</th><th>Kenderaan</th></tr></thead><tbody>\n<tr><td class='it'>2 - 4 pax</td><td>Toyota Avanza</td></tr>\n<tr><td class='it'>5 - 6 pax</td><td>Toyota Innova</td></tr>\n<tr><td class='it'>8 - 12 pax</td><td>Toyota Hiace</td></tr>\n</tbody></table></div>\n<div class='notebox'><b>Bagasi:</b> sila bawa maksimum 1 luggage seorang kerana ia menjejaskan kapasiti kenderaan. <b>Bas:</b> tidak digunakan untuk Bandung - jalan kecil dan mengganggu timing perjalanan; van maksimum 10 pax. <b>Trafik:</b> jangkakan kelewatan disebabkan trafik padat dan jalan sempit.</div>\n<div class='notebox'><b>Guide:</b> satu trip ditemani seorang driving guide tempatan (Indonesia, kebiasaannya Muslim) yang bertutur Melayu/Inggeris. Mereka mahir menguruskan makanan halal dan menjaga waktu solat. Tipping sudah termasuk dalam pakej - pelanggan tidak perlu bayar tip lagi kepada guide. Guide kebiasaannya lelaki.</div>",
+     "to": "<h2>Transportation &amp; Guide</h2>\n<p class='ssub'>Pengangkutan persendirian sepanjang trip. Driver merangkap driving guide - bukan pengangkutan awam.</p>\n<div class='custblk'><table class='ctbl'><thead><tr><th>Bilangan pax</th><th>Kenderaan</th></tr></thead><tbody>\n<tr><td class='it'>2 - 4 pax</td><td>Toyota Avanza</td></tr>\n<tr><td class='it'>5 - 6 pax</td><td>Toyota Innova</td></tr>\n<tr><td class='it'>7 - 12 pax</td><td>Toyota Hiace</td></tr>\n</tbody></table></div>\n<div class='notebox'><b>Bagasi:</b> sila bawa maksimum 1 luggage seorang kerana ia menjejaskan kapasiti kenderaan. <b>Bas:</b> tidak digunakan untuk Bandung - jalan kecil dan mengganggu timing perjalanan; van maksimum 10 pax. <b>Trafik:</b> jangkakan kelewatan disebabkan trafik padat dan jalan sempit.</div>\n<div class='notebox'><b>Guide:</b> satu trip ditemani seorang driving guide tempatan (Indonesia, kebiasaannya Muslim) yang bertutur Melayu/Inggeris. Mereka mahir menguruskan makanan halal dan menjaga waktu solat. Tipping sudah termasuk dalam pakej - pelanggan tidak perlu bayar tip lagi kepada guide. Guide kebiasaannya lelaki.</div>",
+     "label": "KB jakarta-bandung › content › blocks › transport"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "calc",
+      "intro"
+     ],
+     "from": "Isi pax dan tarikh berlepas / balik &mdash; panjang trip, peak season, late booking dan surcaj 2027 dikira sendiri dan terus masuk dalam harga per pax. <b>Kadar transport ikut kawasan dan kelas kenderaan</b> (Avanza 2&ndash;4, Innova 5&ndash;6, Hiace 7&ndash;12) &mdash; pilih blok itinerary supaya kadar hari tambahan berlabuh pada kawasan yang betul. <b>Pindah bandar</b> guna blok <i>Pindah bandar</i>: ia mengenakan full day tour <b>dan</b> transfer, seperti nota rate card. Untuk malam peak yang guna hotel 4&#9733;, pilih <i>Naik taraf hotel 4 bintang &ndash; malam peak season</i> pada baris hari itu (RM90 upgrade + RM5 beza peak).",
+     "to": "Isi pax dan tarikh berlepas / balik &mdash; panjang trip, peak season dan late booking dikira sendiri dan terus masuk dalam harga per pax. <b>Kadar transport ikut kawasan dan kelas kenderaan</b> (Avanza 2&ndash;4, Innova 5&ndash;6, Hiace 7&ndash;12) &mdash; pilih blok itinerary supaya kadar hari tambahan berlabuh pada kawasan yang betul. <b>Pindah bandar</b> guna blok <i>Pindah bandar</i>: ia mengenakan full day tour <b>dan</b> transfer, seperti nota rate card. Untuk malam peak yang guna hotel 4&#9733;, pilih <i>Naik taraf hotel 4 bintang &ndash; malam peak season</i> pada baris hari itu (RM90 upgrade + RM5 beza peak).",
+     "label": "KB jakarta-bandung › calc › intro"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Travel date 2027",
+       "dateIn": [
+        "2027-01-01",
+        "2027-06-30"
+       ],
+       "perPax": 50
+      }
+     ],
+     "to": [],
+     "label": "KB jakarta-bandung › calc › extraSurcharge"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "calc",
+      "variants",
+      "optA",
+      "inclusions",
+      2
+     ],
+     "from": "Daily hotel breakfast",
+     "to": "Meals - 3x International Breakfast, 3 Lunch, 3 Dinner",
+     "label": "KB jakarta-bandung › calc › variants › optA › inclusions › #3"
+    },
+    {
+     "path": [
+      "kb",
+      "jakarta-bandung",
+      "calc",
+      "variants",
+      "optB",
+      "inclusions",
+      2
+     ],
+     "from": "Daily hotel breakfast",
+     "to": "Meals - 3x International Breakfast, 3 Lunch, 3 Dinner",
+     "label": "KB jakarta-bandung › calc › variants › optB › inclusions › #3"
+    }
+   ],
+   "catalogs": [
+    "Catalog jakarta-bandung: add-ons from v79"
+   ],
+   "kb": [
+    "KB jakarta-bandung: 6 changes"
+   ]
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 78,
- "updatedAt": "2026-10-13T00:04:27Z",
+ "version": 79,
+ "updatedAt": "2026-10-13T01:13:23Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -17258,11 +17258,11 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.9
+       "value": 0.75
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 0.5
       },
       "infantCost": {
        "type": "flat",
@@ -17272,33 +17272,6 @@
     }
    ],
    "addons": [
-    {
-     "id": "jbdo-a01",
-     "category": "Train",
-     "label": "Whoosh 1-Way + Shuttle (2-4 pax)",
-     "cost": 154.0,
-     "selling": 157.0,
-     "per": "pax",
-     "notes": "Jakarta↔Bandung"
-    },
-    {
-     "id": "jbdo-a02",
-     "category": "Train",
-     "label": "Whoosh 1-Way + Shuttle (4-5 pax)",
-     "cost": 144.0,
-     "selling": 157.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "jbdo-a03",
-     "category": "Train",
-     "label": "Whoosh 1-Way + Shuttle (6-12 pax)",
-     "cost": 134.0,
-     "selling": 157.0,
-     "per": "pax",
-     "notes": null
-    },
     {
      "id": "jbdo-a04",
      "category": "Train",
@@ -17313,7 +17286,7 @@
      "category": "Train",
      "label": "Argo Executive 1-Way + Shuttle (2-4 pax)",
      "cost": 140.0,
-     "selling": 200.0,
+     "selling": 220.0,
      "per": "pax",
      "notes": null
     },
@@ -17455,74 +17428,67 @@
     {
      "id": "jbdo-a21",
      "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
+     "label": "TripCare 360 Individual (1-5 days) Area 1",
+     "cost": 28.0,
+     "selling": 45.0,
      "per": "pax",
-     "notes": "Etiqa Area 2"
+     "notes": "Etiqa Area 1 (ASEAN, = Aceh)"
     },
     {
      "id": "jbdo-a22",
      "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Individual (6-10 days) Area 1",
+     "cost": 41.0,
+     "selling": 62.0,
+     "per": "pax"
     },
     {
      "id": "jbdo-a23",
      "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Couple (1-5 days) Area 1",
+     "cost": 54.0,
+     "selling": 80.0,
+     "per": "pair"
     },
     {
      "id": "jbdo-a24",
      "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Couple (6-10 days) Area 1",
+     "cost": 86.0,
+     "selling": 113.0,
+     "per": "pair"
     },
     {
      "id": "jbdo-a25",
      "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Family (1-5 days) Area 1",
+     "cost": 70.0,
+     "selling": 100.0,
+     "per": "family"
     },
     {
      "id": "jbdo-a26",
      "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Family (6-10 days) Area 1",
+     "cost": 108.0,
+     "selling": 142.0,
+     "per": "family"
     },
     {
      "id": "jbdo-a27",
      "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Senior (1-5 days) Area 1",
+     "cost": 99.0,
+     "selling": 130.0,
+     "per": "pax"
     },
     {
      "id": "jbdo-a28",
      "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
+     "label": "TripCare 360 Senior (6-10 days) Area 1",
+     "cost": 141.0,
+     "selling": 186.0,
+     "per": "pax"
     },
     {
      "id": "jbdo-a29",
@@ -17594,10 +17560,10 @@
      "id": "jbdo-k003",
      "category": "Add-On",
      "label": "Whoosh Train Bandung-Jakarta",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 154.0,
+     "selling": 157.0,
+     "notes": "Kos CTRANS Whoosh 1-way + shuttle (2–4 pax RM154; 4–5 pax 144, 6–12 pax 134); jual = katalog",
      "includes": "1 Way Whoosh Ticket (Economy Seat), Private Transport Pickup & Drop Off Train Station",
      "price_lines": [
       "RM157/pax"
@@ -17621,6 +17587,16 @@
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1siQedl_JFBdBU9hgsvlLVcG_AZWJ-Liq"
+    },
+    {
+     "id": "1a132d17bdb",
+     "name": "CTRANS CR by pax (WhatsApp).png",
+     "file": "contracts/jbdo/1a132d17bdb-CTRANS_CR_by_pax_WhatsApp.png",
+     "to": "CTRANS",
+     "note": "Fullboard 4D3N, 2–10 pax (5 pax Avanza RM684 / Hiace RM757); 11–19 pax = 10 pax (PO 13 Oct 2026)",
+     "size": 111119,
+     "at": "2026-10-13T01:12:31Z",
+     "by": "ezie"
     }
    ],
    "hotels": [

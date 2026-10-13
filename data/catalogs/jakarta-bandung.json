@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 December 2026",
   "version": "v8",
-  "updated": "2026-08-08",
+  "updated": "2026-10-13",
   "kb_url": "",
   "po": "Ezie",
   "ops": "CIK IWAN",
@@ -253,5 +253,5 @@
       ]
     }
   ],
-  "hub_version": 30
+  "hub_version": 79
 }
