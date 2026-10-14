@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v105 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v105, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v106 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v106, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -289,8 +289,14 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   (2 pax adult 4.6 %, = R&D). Costing 2–10; child per R&D CWB 100 %, CNB = adult − accommodation (rules free) → CWB 2–3 pax ≈2–7 %. Add-ons: catalog items costed from R&D duplicates
   (Mandurah RM140 < cost 141, flag). KB: late booking RM50/booking (catalog); 2027 travel-date +RM100 kept (PO); Autumn & Winter peak already in the calculator. Open (flags): Premium
   2–5 pax margin, CWB, tipping / K&N charge / driver meals, transport tolak / tambah costs vs K&N, single supplement cost.
+  **Phuket (v106, PO ezie 15 Oct; basis = ~/Desktop/'PT R&D Phuket 2026.xlsx' (= KTT 2026 package PDFs in contracts/phu) → contracts/phu 'PHUKET COSTING RATE KTT RND 2026.pdf'):** 10 season / hotel
+  packages → 2 catalog packages (ids ktt-ibis-standard-lowseason / ktt-ibis-budget-phi-phi-lowseason kept); options = alternative TOs with sellingUpgrade (Std Marina 4★ +300, peak Jan–Apr
+  +250 / +550, Nov–Dec +300 / +600; Basic default Day 3 James Bond THB6,700 at catalog RM1,397 (PO), Phi Phi +100, Marina +300 / +400); cost = KTT THB per person × live FX (was MYR
+  at 0.122); Costing 2–10; nights 3. Catalog Standard peak now 1 Nov 2026 – 10 Jan 2027 +RM300 (was from 21 Dec; KTT high season starts 1 Nov) + KB calculator. Margins 31.8–42.2 % per TO.
+  tests/test_calc.js names threshold ≥185 (8 packages removed). Open (flags): no KTT rate after 20 Dec 2026 / 2027 (R&D 2027: Ibis unavailable, Tony Resort), Basic 4★ +250 (R&D) vs +300,
+  Banana / Parasailing low-end prices below cost, day-tour transport at cost, single supplement.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 4 destinations** (costs stored in MYR): JOG, MLE, PHU, SWS (PER done v105) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
+- **Live FX not used by 3 destinations** (costs stored in MYR): JOG, MLE, SWS (PER v105, PHU v106 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in

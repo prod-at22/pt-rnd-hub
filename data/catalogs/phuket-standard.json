@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v2",
-  "updated": "2026-08-05",
+  "updated": "2026-10-15",
   "kb_url": "https://prod-at22.github.io/phuket-kb/",
   "po": "Fyka",
   "ops": "CIK IWAN",
@@ -82,7 +82,7 @@
     "seasons": [
       {
         "label": "Peak Season",
-        "period": "21 Dec 2026 - 10 Jan 2027",
+        "period": "01 Nov 2026 - 10 Jan 2027",
         "rate": "RM300/pax"
       },
       {
@@ -224,5 +224,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 106
 }

@@ -520,6 +520,26 @@
    "fix": "Set the costs from K&N and decide the selling / deduction rates.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "PHU",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Phuket: no KTT rate after 20 Dec 2026 / 2027",
+   "detail": "KTT 2026 high season ends 20 Dec 2026; the catalogs sell peak to 10 Jan / 30 Apr 2027. The R&D sheet has 2027 high-season rates (11 Jan – 30 Apr 2027: Ibis not available, Tony Resort 3★ THB9,100 Basic / 10,400 Std, 4★ 10,500 / 11,700) but no KTT 2027 CR is in TO Contract Rate. Basic 4★ upgrade: R&D +RM250 (low), catalog / KB +RM300.",
+   "fix": "Get the KTT 2027 package rates and decide the 2027 hotel (Ibis unavailable).",
+   "by": "ezie",
+   "at": "2026-10-15"
+  },
+  {
+   "code": "PHU",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Phuket: add-on price ranges below cost; transport at cost",
+   "detail": "Banana Boat sells 'RM67–87' (cost RM70) and Parasailing 'RM157–197' (cost RM160): the low end is below cost. Full Day Tour Car / Van are sold at cost (RM415 / 450). Single supplement: Std RM450 (KTT single +THB2,500 ≈ RM305), Basic on request.",
+   "fix": "Set the low-end prices above cost and a margin on the day-tour transport.",
+   "by": "ezie",
+   "at": "2026-10-15"
   }
  ]
 }
