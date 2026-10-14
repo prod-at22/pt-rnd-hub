@@ -222,7 +222,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(doc.querySelector("#controls").textContent.includes("Tokyo"), "/hnd/ page is locked to Tokyo");
     ok(doc.querySelector("#costPax") && doc.querySelector(".tabm.on").dataset.tabmain === "costing", "Costing tab opens by default");
     ok(doc.querySelector(".fxbox").textContent.includes("0.029") && doc.querySelector(".fxbox").textContent.includes("0.026"), "FX chips: WIF 0.029, Qayyum 0.026");
-    ok([...doc.querySelectorAll(".tabm")].map(x => x.dataset.tabmain).join() === "costing,contracts,itinerary,surcharge,accommodation,addons,expect,policy,kbinfo,kbcalc,competitor,flags,history", "tabs: Costing, TO Contract Rate, Itinerary, Surcharge, Accommodation, Add On, What to Expect, Policy, Info KB, Simple Calculator, Competitor Analysis, Flags, History");
+    ok([...doc.querySelectorAll(".tabm")].map(x => x.dataset.tabmain).join() === "costing,contracts,itinerary,surcharge,accommodation,addons,expect,policy,kbinfo,kbcalc,competitor,quotes,flags,history", "tabs: Costing, TO Contract Rate, Itinerary, Surcharge, Accommodation, Add On, What to Expect, Policy, Info KB, Simple Calculator, Competitor Analysis, Quotations, Flags, History");
     // each catalog section on its own tab (data/catalogs/<slug>.json for the selected package)
     setVal(w, doc.querySelector("#selPkg"), "standard"); await tick(5);
     await tab(w, doc, "itinerary"); await until(() => doc.querySelector("#cat-tokyo-standard"));
@@ -944,6 +944,48 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const saved = JSON.parse(repo.files(repo.head)["data/data.json"]).destinations.find(x => x.code === "SEL").competitors;
     ok(saved.items.some(c => c.id === "pesaing-ujian" && c.prices["4"] === 1999) && saved.analysis.by === "aiman" && saved.items.find(c => c.id === "lurima-seoul-lite").prices["3"] === 1750, "data.json has the competitor, price and analysis");
     ok(pg.errors.length === 0, "competitor errors: " + pg.errors.join("|"));
+  }
+
+  console.log("8z. Quotations: encrypted per-PO workplace, phone required, Telegram text parsed, CRM closed tracking");
+  {
+    const pg = await boot(repo, "sel/", "#quotes"); await until(() => pg.doc.querySelector("#grid .card"));
+    const P2 = pg.w.PTCALC, $p = s => pg.doc.querySelector(s), W = pg.w;
+    ok($p("#grid").textContent.includes("Log in to see quotations"), "not logged in: no quotation data shown");
+    const vaultRaw = W.crypto.getRandomValues(new W.Uint8Array(32));
+    P2.SESSION = { u: "aiman", role: "admin", token: "tok-valid", vaultRaw }; P2.render();
+    ok(await until(() => $p("#qtCard")), "logged in: Quotations card loads (no file yet = empty list)");
+    W.eval("crmSetup()"); ok(await until(() => W.eval("USERS.crm && USERS.crm.pub")), "Account → Set up CRM link stores a key pair (private key encrypted)");
+    click(W, $p('[data-qt="new"]')); await until(() => $p("#qQuote"));
+    $p("#qRequest").value = "Seoul\n6-10 November 2026\n3 Adult\nPuan Kamariah Moksin";
+    $p("#qQuote").value = "PT SEOUL 5D4N\nPax: 3 Adult\nDate: 6-10 November 2026\nPrice: RM 4,197 per pax\nTotal 3 pax: RM 12,641\nPuan Kamariah Moksin";
+    click(W, $p("#qParse")); await tick(5);
+    ok($p("#qA").value === "3" && $p("#qPrice").value === "4197" && $p("#qTotal").value === "12641" && $p("#qCust").value === "Puan Kamariah Moksin" && $p("#qTravel").value === "6-10 November 2026" && $p("#qStatus").value === "Quoted", "Fill from text: pax, price, total, customer, travel date; status Quoted");
+    click(W, $p('[data-qt="save"]')); await tick(10);
+    ok($p("#modalRoot .err-t").textContent.includes("Phone number is required"), "phone is required");
+    $p("#qPhone").value = "+60 12-368 2424"; click(W, $p('[data-qt="save"]'));
+    ok(await until(() => !$p("#qQuote") && repo.files(repo.head)["data/quotes.enc.json"]), "saved as its own commit");
+    const enc = repo.files(repo.head)["data/quotes.enc.json"];
+    ok(!enc.includes("Kamariah") && !enc.includes("2424") && /"ct"/.test(enc) && /quotes: aiman added Q/.test(repo.log[repo.log.length - 1]) && !repo.log[repo.log.length - 1].includes("Kamariah"), "file and commit message carry no customer data (encrypted)");
+    ok(await until(() => $p("#qtCard tbody").textContent.includes("Puan Kamariah Moksin")), "quotation listed for this destination");
+    ok([...pg.doc.querySelectorAll(".qt-k")].find(k => k.textContent.includes("My requests")).textContent.includes("1"), "KPI: the PO's own requests");
+    // CRM: a closed PT lead for the same phone (stored as 60123682424) → Closed
+    {
+      const users = W.eval("USERS"), { subtle } = require("crypto").webcrypto;
+      const pub = await subtle.importKey("spki", Buffer.from(users.crm.pub, "base64"), { name: "RSA-OAEP", hash: "SHA-256" }, false, ["encrypt"]);
+      const raw = require("crypto").randomBytes(32), iv = require("crypto").randomBytes(12), k = await subtle.importKey("raw", raw, "AES-GCM", false, ["encrypt"]);
+      const body = JSON.stringify({ generatedAt: "2026-10-15T00:00:00Z", leads: [{ p: "0123682424", s: "Closed", c: "2026-10-14 21:00", t: "2026-10-13 10:00:00", d: "Seoul", tc: "Farah Faisal" }] });
+      const ct = Buffer.from(await subtle.encrypt({ name: "AES-GCM", iv }, k, Buffer.from(body))), key = Buffer.from(await subtle.encrypt({ name: "RSA-OAEP" }, pub, raw));
+      repo.trees[repo.commits[repo.head].tree]["data/crm.enc.json"] = JSON.stringify({ key: key.toString("base64"), iv: iv.toString("base64"), ct: ct.toString("base64") });
+      W.eval("QT.crm = null; QT.crmErr = null; crmLoad()");
+      await until(() => W.eval("!!QT.crm")); await tick(20);
+      ok(!$p("#qtCard tbody").textContent.includes("Kamariah") && [...pg.doc.querySelectorAll(".qt-k")].find(k => k.textContent.includes("Closed")).textContent.includes("1"), "closed quotation leaves the Open view; KPI Closed = 1");
+      click(W, $p('[data-qtf="Closed"]')); await tick(10);
+      ok(await until(() => $p("#qtCard .qt-closed")), "CRM lead with the same phone, closed after the request → Closed");
+      ok($p("#qtCard .sub").textContent.includes("CRM synced"), "CRM sync time shown");
+    }
+    P2.SESSION = { u: "thania", role: "editor", token: "tok-valid", vaultRaw }; W.eval("QT.list = null"); P2.render();
+    ok(await until(() => $p("#qtCard")) && !$p("#qtCard tbody").textContent.includes("Kamariah") && !$p("#qtPo"), "another PO sees only their own quotations (no PO switch for editors)");
+    ok(pg.errors.length === 0, "quotation errors: " + pg.errors.join("|"));
   }
 
   console.log("9. no runtime errors");

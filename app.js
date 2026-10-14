@@ -7,7 +7,7 @@ const REPO = { owner: "prod-at22", name: "pt-rnd-hub", branch: "main" };
 const ROOT = window.PT_ROOT || "";          // "../" on /<code>/ pages
 const PAGE_DEST = window.PT_DEST || null;   // destination code, null on the hub
 const PAGE_VIEW = window.PT_VIEW || null;   // "flags" on /flags/
-const PATHS = { data: "data/data.json", history: "data/history.json", users: "data/users.json", flags: "data/flags.json", catalogs: "data/catalogs/", kb: "data/kb/" };
+const PATHS = { data: "data/data.json", history: "data/history.json", users: "data/users.json", flags: "data/flags.json", catalogs: "data/catalogs/", kb: "data/kb/", quotes: "data/quotes.enc.json", crm: "data/crm.enc.json" };
 const KDF_ITER = 310000;
 const IDLE_LOGOUT_MS = 30 * 60 * 1000;
 const SESSION_KEY = "ptRndHub.session";   // sessionStorage: stay logged in across destination pages in this tab
@@ -22,7 +22,7 @@ let SESSION = null;   // {u, role, token, key}
 let EDIT = false;
 let VIEW = null;      // {v, data} when viewing an older version
 const SEL = { dest: null, pkg: new URLSearchParams(location.search).get("pkg"), variant: "auto", pax: 2, paxTab: "adult", showCalc: false, showRef: false, addonQty: {}, opt: {}, tab: (location.hash || "#costing").slice(1), flagSev: { high: true, medium: true, low: false }, flagArea: "", flagPO: "", flagQ: "" };
-const TABS = [["costing", "Costing"], ["contracts", "TO Contract Rate"], ["itinerary", "Itinerary"], ["surcharge", "Surcharge"], ["accommodation", "Accommodation"], ["addons", "Add On"], ["expect", "What to Expect"], ["policy", "Policy"], ["kbinfo", "Info KB"], ["kbcalc", "Simple Calculator"], ["competitor", "Competitor Analysis"], ["flags", "Flags"], ["history", "History"]];
+const TABS = [["costing", "Costing"], ["contracts", "TO Contract Rate"], ["itinerary", "Itinerary"], ["surcharge", "Surcharge"], ["accommodation", "Accommodation"], ["addons", "Add On"], ["expect", "What to Expect"], ["policy", "Policy"], ["kbinfo", "Info KB"], ["kbcalc", "Simple Calculator"], ["competitor", "Competitor Analysis"], ["quotes", "Quotations"], ["flags", "Flags"], ["history", "History"]];
 // each catalog section comes from its own tab: price = Costing, itinerary + includes/excludes = Itinerary, …
 // A destination can hide tabs (data.json destinations[].hideTabs, e.g. ["flags", "history"] for Bangkok, PO 10 Oct 2026).
 const tabsFor = d => TABS.filter(([id]) => !((d && d.hideTabs) || []).includes(id));
@@ -454,6 +454,7 @@ function renderMain(d, pkg) {
   else if (T === "kbinfo") { $("#grid").innerHTML = kbInfoTab(d); kbFilter(); }
   else if (T === "kbcalc") $("#grid").innerHTML = simpleCalcTab(d);
   else if (T === "competitor") $("#grid").innerHTML = competitorTab(d);
+  else if (T === "quotes") $("#grid").innerHTML = quotesTab(d);
   else if (T === "contracts") $("#grid").innerHTML = contractCard(d);
   else if (T === "addons") $("#grid").innerHTML = addonCard(d, pkg) || `<div class="card full"><div class="empty">No add-ons for ${esc(d.name)} yet.</div></div>`;
   else if (T === "flags") $("#grid").innerHTML = flagList(flagsFor(d.code), false);
@@ -1588,6 +1589,170 @@ function cmpNewId(d, name) {
   let id = b, n = 2; while (ids.has(id)) id = b + "-" + n++;
   return id;
 }
+/* ============================================================ Quotations (PO workplace)
+   Every quotation a PO gives a TC (Telegram ATT22): the TC's request, the quotation sent, customer + phone, status
+   and timing. Stored in data/quotes.enc.json, AES-GCM encrypted with the vault key (customer names / phones must not
+   be readable from the public repo): only logged-in users can read or save. Each save is its own commit
+   ("quotes: <user> …", no customer data in the message), merged by quote id so two POs can save at once.
+   Closed tracking: tools/crm_sync.js writes data/crm.enc.json once a day (PT leads from the CRM, by phone), encrypted
+   with the CRM public key (users.json crm.pub); the private key is in users.json crm.priv, encrypted with the vault key.
+   A quote whose phone matches a CRM lead closed after the request shows as Closed. A PO can also mark Closed / Lost. */
+const QT = { list: null, err: null, busy: false, crm: null, crmAt: null, crmErr: null, edit: null, poView: null, filter: "open" };
+const QT_STATUS = ["Pending", "Quoted", "Answered"];
+const normPhone = p => { let s = String(p || "").replace(/\D/g, ""); if (s.startsWith("60")) s = s.slice(1); else if (s.startsWith("1") && s.length >= 9) s = "0" + s; return s.length >= 9 ? s : ""; };
+const qtDate = iso => iso ? new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
+const qtHours = q => q.respondedAt && q.requestedAt ? (new Date(q.respondedAt) - new Date(q.requestedAt)) / 36e5 : NaN;
+const median = a => { const s = a.filter(num).sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : NaN; };
+async function qtVaultKey() { return crypto.subtle.importKey("raw", SESSION.vaultRaw, "AES-GCM", false, ["encrypt", "decrypt"]); }
+async function qtRead(head) {
+  try { const f = await GH.readJson(PATHS.quotes, head, SESSION.token); return JSON.parse(dec.decode(await aesDec(await qtVaultKey(), f))); }
+  catch (e) { if (e.status === 404) return { quotes: [] }; throw e; }
+}
+async function qtLoad() {
+  if (!SESSION || QT.busy) return;
+  QT.busy = true; QT.err = null;
+  try { QT.list = (await qtRead(await GH.head(SESSION.token))).quotes || []; } catch (e) { QT.err = "Could not load quotations: " + e.message; }
+  QT.busy = false; crmLoad(); render();
+}
+// One commit per change: read the latest file, apply this change by id, encrypt, commit (retry if someone saved first).
+async function qtSave(rec, remove) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const head = await GH.head(SESSION.token), doc = await qtRead(head), list = doc.quotes || [];
+    const i = list.findIndex(q => q.id === rec.id);
+    if (remove) { if (i >= 0) list.splice(i, 1); } else if (i >= 0) list[i] = rec; else list.push(rec);
+    const enc = await aesEnc(await qtVaultKey(), new TextEncoder().encode(JSON.stringify({ quotes: list })));
+    try { await GH.commit([{ path: PATHS.quotes, content: pretty({ v: 1, ...enc }) }], `quotes: ${SESSION.u} ${remove ? "removed" : i >= 0 ? "updated" : "added"} ${rec.id} (${rec.code})`, head, SESSION.token); QT.list = list; return; }
+    catch (e) { if (e.status === 422 || e.status === 409) continue; throw e; }
+  }
+  throw new Error("Could not save after 3 attempts — try again.");
+}
+async function crmLoad() {
+  if (!SESSION || QT.crm || QT.crmErr || !USERS.crm) return;
+  try {
+    const f = await fetchJson(PATHS.crm);
+    const priv = await crypto.subtle.importKey("pkcs8", await aesDec(await qtVaultKey(), USERS.crm.priv), { name: "RSA-OAEP", hash: "SHA-256" }, false, ["decrypt"]);
+    const raw = await crypto.subtle.decrypt({ name: "RSA-OAEP" }, priv, unb64(f.key));
+    const k = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+    const doc = JSON.parse(dec.decode(await aesDec(k, f)));
+    QT.crm = {}; for (const r of doc.leads || []) (QT.crm[r.p] ||= []).push(r);
+    QT.crmAt = doc.generatedAt;
+  } catch (e) { QT.crmErr = e.status === 404 || /404/.test(e.message) ? "No CRM data yet" : "CRM data unreadable: " + e.message; }
+  render();
+}
+// CRM leads for this quote's phone, created from 30 days before the request: closed → "Closed", else the latest status.
+function qtCrm(q) {
+  const p = normPhone(q.phone); if (!p || !QT.crm) return null;
+  const from = new Date(q.requestedAt || 0).getTime() - 30 * 864e5;
+  const rows = (QT.crm[p] || []).filter(r => !r.t || new Date(r.t.replace(" ", "T")).getTime() >= from);
+  if (!rows.length) return { status: "No lead" };
+  const closed = rows.find(r => /^(closed|payment|modified)$/i.test(String(r.s).trim()));
+  const r = closed || rows.sort((a, b) => String(b.t).localeCompare(String(a.t)))[0];
+  return { status: closed ? "Closed" : r.s || "Lead", at: closed ? (r.c || r.t) : r.t, dest: r.d, tc: r.tc };
+}
+const qtFinal = q => q.outcome || ((qtCrm(q) || {}).status === "Closed" ? "Closed" : q.status || "Pending");
+function quotesTab(d) {
+  if (!SESSION) return `<div class="card full"><h2>Quotations</h2><div class="empty">Log in to see quotations — customer names and phone numbers are stored encrypted and only logged-in users can read them.</div></div>`;
+  if (QT.list === null) { if (!QT.err) setTimeout(qtLoad, 0); return `<div class="card full"><h2>Quotations</h2><div class="empty">${QT.err ? esc(QT.err) : "Loading quotations…"}</div></div>`; }
+  const admin = isAdmin(), me = SESSION.u, view = admin ? (QT.poView ?? me) : me;
+  const mine = QT.list.filter(q => !view || (q.po || "").toLowerCase() === view);
+  const here = mine.filter(q => q.code === d.code);
+  // KPIs: this PO across all destinations (their own workload)
+  const quoted = mine.filter(q => q.type !== "Availability" && q.status !== "Pending");
+  const closed = mine.filter(q => qtFinal(q) === "Closed").length, pend = mine.filter(q => q.status === "Pending" && !q.outcome).length;
+  const tat = median(mine.filter(q => q.type !== "Availability").map(qtHours));
+  const noPhone = mine.filter(q => !normPhone(q.phone)).length;
+  const kpi = (l, v, s) => `<div class="qt-k"><div class="l">${l}</div><div class="v">${v}</div>${s ? `<div class="s">${s}</div>` : ""}</div>`;
+  const pos = [...new Set(QT.list.map(q => (q.po || "").toLowerCase()).filter(Boolean))].sort();
+  const F = QT.filter, shown = here.filter(q => F === "all" || (F === "open" ? !["Closed", "Lost"].includes(qtFinal(q)) : qtFinal(q) === F)).sort((a, b) => String(b.requestedAt).localeCompare(String(a.requestedAt)));
+  const chip = (k, l) => `<button class="tab${F === k ? " on" : ""}" data-qtf="${k}">${l}</button>`;
+  const crmNote = !USERS.crm ? "CRM link not set up (admin: Account → CRM link)" : QT.crmErr ? QT.crmErr : QT.crmAt ? "CRM synced " + qtDate(QT.crmAt) : "Loading CRM…";
+  const row = q => {
+    const c = qtCrm(q), fin = qtFinal(q), h = qtHours(q), pk = d.packages.find(p => p.id === q.pkg);
+    const pax = [q.adult && q.adult + "A", q.child && q.child + "C", q.infant && q.infant + "I"].filter(Boolean).join(" ") || "—";
+    const can = admin || (q.po || "").toLowerCase() === me;
+    return `<tr><td class="l">${esc(qtDate(q.requestedAt))}<div class="muted small">${esc(q.type || "Quotation")}</div></td>
+      <td class="l">${esc(q.tc || "—")}</td>
+      <td class="l"><b>${esc(q.customer || "—")}</b><div class="${normPhone(q.phone) ? "muted" : "bad-t"} small">${normPhone(q.phone) ? esc(q.phone) : "No phone"}</div></td>
+      <td class="l">${esc(pk ? pk.label : q.pkgLabel || "Custom")}<div class="muted small">${esc(pax)} · ${esc(q.travel || "—")}</div></td>
+      <td>${num(+q.price) && +q.price ? rm(+q.price) : "—"}<div class="muted small">${num(+q.total) && +q.total ? "total " + rm(+q.total) : ""}</div></td>
+      <td><span class="qt-st qt-${fin.toLowerCase()}">${esc(fin)}</span>${q.outcome ? `<div class="muted small">by PO</div>` : ""}</td>
+      <td class="l small">${c ? `${esc(c.status)}${c.at ? `<div class="muted">${esc(String(c.at).slice(0, 10))}</div>` : ""}` : `<span class="muted">—</span>`}</td>
+      <td class="small">${num(h) ? h.toFixed(1) + " h" : "—"}</td>
+      <td class="qt-act">${can ? `<button class="lnk" data-qt="edit" data-id="${esc(q.id)}">edit</button>` : ""}${q.quote ? `<button class="lnk" data-qt="copy" data-id="${esc(q.id)}">copy</button>` : ""}</td></tr>`;
+  };
+  return `<div class="card full" id="qtCard"><h2>Quotations · ${esc(d.name)} <span class="sub">${view ? "PO " + esc(view) : "all POs"} · ${esc(crmNote)}</span>
+      <span class="right">${admin ? `<select id="qtPo" class="qt-po"><option value="">All POs</option>${[...new Set([me, ...pos])].map(p => `<option value="${esc(p)}"${view === p ? " selected" : ""}>${esc(p)}</option>`).join("")}</select>` : ""}<button class="btn primary" data-qt="new">+ New quotation</button></span></h2>
+    <div class="qt-kpis">${kpi("My requests", mine.length, "all destinations")}${kpi("Pending", pend, pend ? "waiting for a price" : "")}${kpi("Quoted", quoted.length)}${kpi("Closed", closed, quoted.length ? pct(closed / quoted.length) + " of quoted" : "")}${kpi("Median TAT", num(tat) ? tat.toFixed(1) + " h" : "—", "request → quote")}${kpi("No phone", noPhone, noPhone ? "ask TC for the number" : "")}</div>
+    <div class="body qt-bar">${chip("open", "Open")}${chip("Pending", "Pending")}${chip("Quoted", "Quoted")}${chip("Closed", "Closed")}${chip("Lost", "Lost")}${chip("all", "All")}<span class="muted small" style="margin-left:auto">${here.length} for ${esc(d.name)}</span></div>
+    <div class="scroll"><table class="qt-t"><thead><tr><th class="l">Requested</th><th class="l">TC</th><th class="l">Customer</th><th class="l">Package</th><th>Price / pax</th><th>Status</th><th class="l">CRM</th><th>TAT</th><th></th></tr></thead>
+    <tbody>${shown.map(row).join("") || `<tr><td colspan="9" class="muted">No quotations${F === "all" ? "" : " in this view"}.</td></tr>`}</tbody></table></div>
+    <div class="note">Closed = the customer's phone has a closed PT booking in the CRM after the request (synced daily), or marked Closed by the PO. Data is encrypted; only logged-in users can read it.</div></div>`;
+}
+// Fill fields from a pasted Telegram request / quotation (PT … / Pax / Date / Price / Customer / phone).
+function qtParse(t) {
+  const o = {}, s = String(t || "");
+  const ph = s.match(/(?:\+?6?0)1\d[\s-]?\d{3,4}[\s-]?\d{3,4}/); if (ph) o.phone = ph[0].trim();
+  const cu = s.match(/(?:Customer|Cust|Nama)\s*:\s*([^\n(]+)/i) || s.match(/^\s*((?:Puan|Pn\.?|Encik|En\.?|Tuan|Dato'?|Datin|Cik|Mr\.?|Mrs\.?|Ms\.?)\s+[^\n(]+)/im); if (cu) o.customer = cu[1].trim();
+  const pax = s.match(/(\d+)\s*Adults?/i); if (pax) o.adult = +pax[1];
+  const ch = s.match(/(\d+)\s*(?:CWB|CNB|Child)/gi); if (ch) o.child = ch.reduce((a, x) => a + parseInt(x), 0);
+  const inf = s.match(/(\d+)\s*Infants?/i); if (inf) o.infant = +inf[1];
+  const dt = s.match(/Date\s*:\s*([^\n]+)/i) || s.match(/🗓\s*([^\n]+)/) || s.match(/(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-Z][a-z]+\s+20\d\d)/); if (dt) o.travel = dt[1].trim();
+  const pr = s.match(/Adult\s*:\s*RM\s*([\d,]+)/i) || s.match(/RM\s*([\d,]+)\s*(?:\/\s*pax|per pax)/i) || s.match(/Price\s*:\s*RM\s*([\d,]+)/i); if (pr) o.price = +pr[1].replace(/,/g, "");
+  const tot = s.match(/Total[^:\n]*:\s*RM\s*([\d,]+)/i); if (tot) o.total = +tot[1].replace(/,/g, "");
+  return o;
+}
+function openQuote(d, id) {
+  const q = id ? QT.list.find(x => x.id === id) : null, v = q || { requestedAt: new Date().toISOString(), status: "Pending", type: "Quotation", pkg: curPkg(d).id, po: SESSION.u };
+  QT.edit = { id: q ? q.id : null };
+  const loc = iso => { const t = new Date(iso || Date.now()); return new Date(t - t.getTimezoneOffset() * 6e4).toISOString().slice(0, 16); };
+  const tcs = [...new Set(QT.list.map(x => x.tc).filter(Boolean))].sort();
+  const f = (l, h) => `<label>${l}${h}</label>`;
+  modal(q ? "Edit quotation" : "New quotation · " + d.name, `
+    <div class="small muted">Paste the TC's request and/or your quotation from Telegram, then <b>Fill from text</b>. Phone number is required for CRM tracking.</div>
+    <div class="qt-g2">${f("TC request (from Telegram)", `<textarea id="qRequest" rows="5">${esc(v.request || "")}</textarea>`)}${f("Quotation sent (your reply)", `<textarea id="qQuote" rows="5">${esc(v.quote || "")}</textarea>`)}</div>
+    <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qSuggest" title="Selling Price from Costing for this package and adult pax">Use Selling Price</button></div>
+    <div class="qt-g4">
+      ${f("Requested at", `<input id="qReq" type="datetime-local" value="${loc(v.requestedAt)}">`)}
+      ${f("TC", `<input id="qTc" list="qTcs" value="${esc(v.tc || "")}"><datalist id="qTcs">${tcs.map(t => `<option value="${esc(t)}">`).join("")}</datalist>`)}
+      ${f("Customer", `<input id="qCust" value="${esc(v.customer || "")}">`)}
+      ${f("Phone (required)", `<input id="qPhone" value="${esc(v.phone || "")}" placeholder="012-345 6789">`)}
+      ${f("Package", `<select id="qPkg">${d.packages.map(p => `<option value="${esc(p.id)}"${v.pkg === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}<option value=""${v.pkg === "" ? " selected" : ""}>Custom / other</option></select>`)}
+      ${f("Adult / Child / Infant", `<span class="qt-pax"><input id="qA" type="number" min="0" value="${v.adult ?? ""}"><input id="qC" type="number" min="0" value="${v.child ?? ""}"><input id="qI" type="number" min="0" value="${v.infant ?? ""}"></span>`)}
+      ${f("Travel date", `<input id="qTravel" value="${esc(v.travel || "")}" placeholder="6–10 Nov 2026">`)}
+      ${f("Type", `<select id="qType">${["Quotation", "Availability"].map(t => `<option${v.type === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
+      ${f("Price / adult (RM)", `<input id="qPrice" type="number" value="${v.price ?? ""}">`)}
+      ${f("Total (RM)", `<input id="qTotal" type="number" value="${v.total ?? ""}">`)}
+      ${f("Status", `<select id="qStatus">${QT_STATUS.map(t => `<option${v.status === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
+      ${f("Quoted at", `<input id="qResp" type="datetime-local" value="${v.respondedAt ? loc(v.respondedAt) : ""}">`)}
+      ${f("Outcome (PO)", `<select id="qOut"><option value="">— (CRM decides)</option>${["Closed", "Lost"].map(t => `<option${v.outcome === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
+      ${f("Note", `<input id="qNote" value="${esc(v.note || "")}" placeholder="e.g. discount RM200/pax offered">`)}
+    </div>
+    <label class="small" style="flex-direction:row;display:flex;gap:6px;align-items:center"><input type="checkbox" id="qNoPhone"${q && !normPhone(q.phone) ? " checked" : ""}> TC has not given the phone yet (record is flagged "No phone")</label>
+    <div class="err-t"></div>`,
+    `${q ? `<button class="btn danger" data-qt="delete" data-id="${esc(q.id)}">Delete</button>` : ""}<button class="btn" data-close>Cancel</button><button class="btn primary" data-qt="save">Save</button>`, true);
+}
+async function qtSubmit(d) {
+  const $v = id => $("#" + id).value.trim(), n = id => $v(id) === "" ? null : +$v(id);
+  const phone = $v("qPhone");
+  if (!normPhone(phone) && !$("#qNoPhone").checked) return mErr("Phone number is required (or tick 'TC has not given the phone yet').");
+  const old = QT.edit.id ? QT.list.find(q => q.id === QT.edit.id) : null, now = new Date().toISOString();
+  const status = $v("qStatus"), resp = $v("qResp") ? new Date($v("qResp")).toISOString() : (status !== "Pending" ? (old && old.respondedAt) || now : null);
+  const rec = { ...(old || {}), id: old ? old.id : "Q" + Date.now().toString(36).toUpperCase(), code: d.code, pkg: $v("qPkg"), pkgLabel: $("#qPkg").selectedOptions[0].textContent,
+    requestedAt: $v("qReq") ? new Date($v("qReq")).toISOString() : now, tc: $v("qTc"), customer: $v("qCust"), phone, adult: n("qA"), child: n("qC"), infant: n("qI"),
+    travel: $v("qTravel"), type: $v("qType"), price: n("qPrice"), total: n("qTotal"), status, respondedAt: resp, outcome: $v("qOut") || null, note: $v("qNote"),
+    request: $("#qRequest").value, quote: $("#qQuote").value, po: old ? old.po : SESSION.u, updatedAt: now, updatedBy: SESSION.u, ...(old ? {} : { createdAt: now }) };
+  mErr("Saving…");
+  try { await qtSave(rec); closeModal(); toast("Quotation saved"); render(); } catch (e) { mErr("Save failed: " + e.message); }
+}
+// CRM link (admin, once): an RSA key pair; the public key lets the daily sync encrypt CRM leads for the hub,
+// the private key is kept in users.json encrypted with the vault key, so only logged-in users can read the leads.
+async function crmSetup() {
+  const kp = await crypto.subtle.generateKey({ name: "RSA-OAEP", modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: "SHA-256" }, true, ["encrypt", "decrypt"]);
+  const pub = b64(await crypto.subtle.exportKey("spki", kp.publicKey)), priv = new Uint8Array(await crypto.subtle.exportKey("pkcs8", kp.privateKey));
+  const next = clone(USERS); next.crm = { pub, priv: await aesEnc(await qtVaultKey(), priv), created: new Date().toISOString(), by: SESSION.u };
+  await saveUsers(next, `users: ${SESSION.u} set up the CRM link key`);
+  QT.crm = null; QT.crmErr = null;
+}
 function kbFilter() {
   const q = KB.q.trim().toLowerCase();
   document.querySelectorAll("[data-kbtext]").forEach(el => { const hit = !q || el.dataset.kbtext.includes(q); el.style.display = hit ? "" : "none"; if (el.tagName === "DETAILS") el.open = !!q && hit; });
@@ -1993,6 +2158,9 @@ function openAccount() {
     <input id="nt" type="password" placeholder="new fine-grained token" autocomplete="off">
     <div><button class="btn" id="doTok">Replace token</button></div>
     <hr style="border:0;border-top:1px solid var(--line);width:100%">
+    <b>CRM link (Quotations → closed tracking)</b><div class="small muted">${USERS.crm ? "Set up " + esc(fmtDate(USERS.crm.created)) + ". " : "Not set up. "}A key pair: the daily CRM sync encrypts PT leads with the public key; only logged-in users can decrypt them.</div>
+    <div><button class="btn" id="doCrm">${USERS.crm ? "Replace CRM key" : "Set up CRM link"}</button></div>
+    <hr style="border:0;border-top:1px solid var(--line);width:100%">
     <b>Claude API key (Competitor Analysis AI)</b><div class="small muted">${USERS.ai ? "Set. " : "Not set. "}Stored encrypted in users.json like the GitHub token; every logged-in user can use the AI. Create a key at platform.claude.com → API keys (set a monthly spend limit).</div>
     <input id="nak" type="password" placeholder="sk-ant-…" autocomplete="off">
     <div><button class="btn" id="doAiKey">${USERS.ai ? "Replace key" : "Save key"}</button>${USERS.ai ? ` <button class="btn danger" id="doAiDel">Remove key</button>` : ""}</div>` : ""}
@@ -2012,7 +2180,7 @@ document.addEventListener("click", async e => {
   if (t.id === "btnLogin") return openLogin();
   if (t.id === "doLogin") return doLogin();
   if (t.id === "doSetup") return doSetup();
-  if (t.id === "btnLogout") { if (pendingChanges().length && !confirm("Discard unsaved changes?")) return; SESSION = null; persistSession(); EDIT = false; DATA = clone(BASE); CAT.edit = {}; KB.edit = {}; return render(); }
+  if (t.id === "btnLogout") { if (pendingChanges().length && !confirm("Discard unsaved changes?")) return; SESSION = null; QT.list = null; QT.crm = null; QT.crmErr = null; persistSession(); EDIT = false; DATA = clone(BASE); CAT.edit = {}; KB.edit = {}; return render(); }
   if (t.id === "btnEdit") { EDIT = !EDIT; VIEW = null; return render(); }
   if (t.id === "btnAcct") return openAccount();
   if ((t.id === "btnHistory" || t.dataset.act === "history") && PAGE_DEST && tabsFor(curDest()).some(x => x[0] === "history")) { SEL.tab = "history"; history.replaceState(null, "", "#history"); return render(); }
@@ -2025,6 +2193,24 @@ document.addEventListener("click", async e => {
   if (t.id === "aiRun") return runCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST), t.dataset.id || null);
   if (t.id === "aiApply") return applyCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST));
   if (t.dataset.act === "cmpAnalyse") return runCmpAnalyse(DATA.destinations.find(x => x.code === PAGE_DEST));
+  if (t.dataset.qtf) { QT.filter = t.dataset.qtf; return render(); }
+  if (t.dataset.qt) {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), a = t.dataset.qt;
+    if (a === "new" || a === "edit") return openQuote(d, t.dataset.id);
+    if (a === "save") return qtSubmit(d);
+    if (a === "copy") { const q = QT.list.find(x => x.id === t.dataset.id); try { await navigator.clipboard.writeText(q.quote); toast("Quotation copied"); } catch (_) { toast("Copy failed"); } return; }
+    if (a === "delete") { const q = QT.list.find(x => x.id === t.dataset.id); if (!q || !confirm("Delete this quotation?")) return; mErr("Deleting…"); try { await qtSave(q, true); closeModal(); toast("Quotation deleted"); render(); } catch (e) { mErr(e.message); } return; }
+  }
+  if (t.id === "qParse") { const o = { ...qtParse($("#qRequest").value), ...qtParse($("#qQuote").value) }, m = { phone: "qPhone", customer: "qCust", adult: "qA", child: "qC", infant: "qI", travel: "qTravel", price: "qPrice", total: "qTotal" };
+    let n = 0; for (const [k, id] of Object.entries(m)) if (o[k] != null && o[k] !== "" && !$("#" + id).value) { $("#" + id).value = o[k]; n++; }
+    if ($("#qQuote").value.trim() && $("#qStatus").value === "Pending") $("#qStatus").value = "Quoted";
+    mErr(n ? `Filled ${n} field${n > 1 ? "s" : ""} — check them before saving.` : "Nothing new found in the text."); return; }
+  if (t.id === "qSuggest") { const d = DATA.destinations.find(x => x.code === PAGE_DEST), p = d.packages.find(x => x.id === $("#qPkg").value), a = +$("#qA").value || 0, c = +$("#qC").value || 0;
+    if (!p || !a) return mErr("Pick a package and the number of adults first.");
+    const n = Math.max(2, a + c), r = p.pricing.adult[String(n)] == null ? null : priceRow(d, p, activeVariantId(p, n), n).adult.selling;
+    if (!num(r)) return mErr(`No Selling Price for ${n} pax in ${p.label}.`);
+    $("#qPrice").value = Math.round(r); if (!$("#qTotal").value) $("#qTotal").value = Math.round(r * a); mErr(`Selling Price ${p.label}, ${n} pax: ${rm(r)} / adult (children not priced).`); return; }
+  if (t.id === "doCrm") { if (USERS.crm && !confirm("Replace the CRM key? The daily sync must run again before CRM status shows.")) return; return acct(crmSetup, "CRM link key saved"); }
   if (t.dataset.cmppkg) { SEL.pkg = t.dataset.cmppkg; SEL.variant = "auto"; return render(); }
   if (t.dataset.act === "cmpAdd") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), name = $("#cmpName").value.trim();
@@ -2263,6 +2449,7 @@ document.addEventListener("change", e => {
     (doc.rnd ||= {}).minMargin = Math.round(v) / 100; return render();
   }
   if (t.id && t.id.startsWith("opt_")) { (SEL.opt[SEL.dest] ||= {})[t.id.slice(4)] = t.value; return render(); }
+  if (t.id === "qtPo") { QT.poView = t.value; return render(); }
   if (t.id === "cmpPax") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), v = [...new Set(t.value.split(/[^0-9]+/).filter(Boolean).map(Number).filter(n => n >= 1 && n <= 99))].sort((a, b) => a - b);
     if (!v.length) { toast("Invalid pax list"); return render(); }

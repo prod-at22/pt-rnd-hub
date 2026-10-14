@@ -340,3 +340,18 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .cg-cell .cmp-eq{margin-top:0}
 
 .cmp-legend{padding:12px 14px 0;font-size:12px;color:var(--muted)}
+/* Quotations */
+.qt-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;padding:12px 14px 0}
+.qt-k{border:1px solid var(--line);border-radius:8px;padding:9px 11px}
+.qt-k .l{font-size:11.5px;color:var(--muted)} .qt-k .v{font-size:20px;font-weight:700;margin-top:2px} .qt-k .s{font-size:11px;color:var(--muted)}
+.qt-bar{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.qt-t td,.qt-t th{white-space:normal;vertical-align:top;font-size:12.5px}
+.qt-t th{text-transform:none;letter-spacing:0}
+.qt-st{font-weight:600} .qt-closed{color:var(--ok)} .qt-lost{color:var(--muted)} .qt-pending{color:var(--warn)}
+.qt-act{white-space:nowrap} .qt-act .lnk+.lnk{margin-left:8px}
+.qt-po{border:1px solid var(--line);border-radius:6px;padding:5px 8px;font:inherit;font-size:12.5px}
+.qt-g2{display:grid;grid-template-columns:1fr 1fr;gap:8px} .qt-g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.qt-g2 textarea{width:100%;box-sizing:border-box;font:inherit;font-size:12px}
+.qt-pax{display:flex;gap:4px} .qt-pax input{width:100%;min-width:0}
+@media (max-width:700px){.qt-g2,.qt-g4{grid-template-columns:1fr 1fr}}
+.bad-t{color:var(--bad)}
