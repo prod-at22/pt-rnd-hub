@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 93,
- "updatedAt": "2026-10-14T06:45:02Z",
+ "version": 94,
+ "updatedAt": "2026-10-14T08:00:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -20762,10 +20762,10 @@
    "name": "Melbourne",
    "country": "Australia",
    "duration": "5D4N",
-   "nights": 0,
+   "nights": 4,
    "po": "Acap",
    "source": "hub",
-   "note": "",
+   "note": "Cost = WAE costing rate (R&D PT MEL V3, 12 Mar 2026; PDF in TO Contract Rate) in AUD × live FX: car rental by vehicle (5 / 8 / 12-seater) + driver-guide day charges per group, Online Guide AUD80, hotel, entrance; visa assistance RM80. Child CWB 90 % / CNB 80 % (R&D). Costing 2–10 pax (= catalog; 11+ quote manual).",
    "fx": [
     {
      "id": "MYR",
@@ -20785,195 +20785,219 @@
    "rates": [],
    "tables": [
     {
-     "id": "WAE-BASIC__Ground-Cost-MYR",
-     "label": "WAE-BASIC · Ground Cost",
+     "id": "WAE-BASIC__Car-Rental",
+     "label": "WAE-BASIC · Car Rental (5-seater 2–3 · 8-seater 4–6 · 12-seater 7–10, AUD140 / 200 / 300 × 5 hari ÷ pax)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-BASIC",
+     "values": {
+      "2": 350.0,
+      "3": 233.3333,
+      "4": 250.0,
+      "5": 200.0,
+      "6": 166.6667,
+      "7": 214.2857,
+      "8": 187.5,
+      "9": 166.6667,
+      "10": 150.0
+     }
+    },
+    {
+     "id": "WAE-BASIC__Driver-Guide",
+     "label": "WAE-BASIC · Driver-Guide (D1 airport 230 · D2 Phillip Island 580 · D3 City 480 · D5 airport 197, per group)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-BASIC",
+     "values": {
+      "2": 743.5,
+      "3": 495.6667,
+      "4": 371.75,
+      "5": 297.4,
+      "6": 247.8333,
+      "7": 212.4286,
+      "8": 185.875,
+      "9": 165.2222,
+      "10": 148.7
+     }
+    },
+    {
+     "id": "WAE-BASIC__Online-Guide",
+     "label": "WAE-BASIC · Online Guide (OG) AUD80/pax",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-BASIC",
+     "values": {
+      "2": 80,
+      "3": 80,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 80,
+      "8": 80,
+      "9": 80,
+      "10": 80
+     }
+    },
+    {
+     "id": "WAE-BASIC__Hotel",
+     "label": "WAE-BASIC · Hotel 3★ (4 malam, AUD360/pax)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-BASIC",
+     "values": {
+      "2": 360,
+      "3": 360,
+      "4": 360,
+      "5": 360,
+      "6": 360,
+      "7": 360,
+      "8": 360,
+      "9": 360,
+      "10": 360
+     }
+    },
+    {
+     "id": "WAE-BASIC__Entrance",
+     "label": "WAE-BASIC · Entrance (Maru Koala 33 + Churchill 18)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-BASIC",
+     "values": {
+      "2": 51,
+      "3": 51,
+      "4": 51,
+      "5": 51,
+      "6": 51,
+      "7": 51,
+      "8": 51,
+      "9": 51,
+      "10": 51
+     }
+    },
+    {
+     "id": "WAE-BASIC__Visa-Assistance",
+     "label": "WAE-BASIC · Visa Application Assistance (RM80/pax)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "WAE-BASIC",
      "values": {
-      "2": 4594.656,
-      "3": 3555.831,
-      "4": 3250.1685,
-      "5": 2895.771,
-      "6": 2659.506,
-      "7": 2694.3045,
-      "8": 2542.2855,
-      "9": 2424.0675,
-      "10": 2329.476,
-      "11": 3025.9875,
-      "12": 2896.9965,
-      "13": 2787.87,
-      "14": 2694.3045,
-      "15": 2613.2505,
-      "16": 2542.2855,
-      "17": 2479.6995,
-      "18": 2424.0675,
-      "19": 2374.278,
-      "20": 2329.476,
-      "21": 2288.949,
-      "22": 2252.0985,
-      "23": 2588.5695,
-      "24": 2542.2855,
-      "25": 2499.735,
-      "26": 2460.4335,
-      "27": 2424.0675,
-      "28": 2390.295,
-      "29": 2358.831,
-      "30": 2329.476,
-      "31": 2302.002,
-      "32": 2276.2665,
-      "33": 2252.0985,
-      "34": 2229.327,
-      "35": 2207.8665,
-      "36": 2187.603,
-      "37": 2168.4225,
-      "38": 2150.268,
-      "39": 2133.0255,
-      "40": 2116.638
+      "2": 80,
+      "3": 80,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 80,
+      "8": 80,
+      "9": 80,
+      "10": 80
      }
     },
     {
-     "id": "WAE-BASIC__Tipping-MYR",
-     "label": "WAE-BASIC · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "WAE-BASIC",
+     "id": "WAE-STANDARD__Car-Rental",
+     "label": "WAE-STANDARD · Car Rental (5-seater 2–3 · 8-seater 4–6 · 12-seater 7–10, AUD140 / 200 / 300 × 5 hari ÷ pax)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-STANDARD",
      "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "2": 350.0,
+      "3": 233.3333,
+      "4": 250.0,
+      "5": 200.0,
+      "6": 166.6667,
+      "7": 214.2857,
+      "8": 187.5,
+      "9": 166.6667,
+      "10": 150.0
      }
     },
     {
-     "id": "WAE-STANDARD__Ground-Cost-MYR",
-     "label": "WAE-STANDARD · Ground Cost",
+     "id": "WAE-STANDARD__Driver-Guide",
+     "label": "WAE-STANDARD · Driver-Guide (D1 airport 230 · D2 Phillip Island + Penguin 686 · D3 Great Ocean Road 746 · D5 airport 197, per group)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-STANDARD",
+     "values": {
+      "2": 929.5,
+      "3": 619.6667,
+      "4": 464.75,
+      "5": 371.8,
+      "6": 309.8333,
+      "7": 265.5714,
+      "8": 232.375,
+      "9": 206.5556,
+      "10": 185.9
+     }
+    },
+    {
+     "id": "WAE-STANDARD__Online-Guide",
+     "label": "WAE-STANDARD · Online Guide (OG) AUD80/pax",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-STANDARD",
+     "values": {
+      "2": 80,
+      "3": 80,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 80,
+      "8": 80,
+      "9": 80,
+      "10": 80
+     }
+    },
+    {
+     "id": "WAE-STANDARD__Hotel",
+     "label": "WAE-STANDARD · Hotel 3★ + sarapan (4 malam, AUD460/pax)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-STANDARD",
+     "values": {
+      "2": 460,
+      "3": 460,
+      "4": 460,
+      "5": 460,
+      "6": 460,
+      "7": 460,
+      "8": 460,
+      "9": 460,
+      "10": 460
+     }
+    },
+    {
+     "id": "WAE-STANDARD__Entrance",
+     "label": "WAE-STANDARD · Entrance (Maru Koala 33 + Churchill 18 + Penguin Parade 34)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "WAE-STANDARD",
+     "values": {
+      "2": 85,
+      "3": 85,
+      "4": 85,
+      "5": 85,
+      "6": 85,
+      "7": 85,
+      "8": 85,
+      "9": 85,
+      "10": 85
+     }
+    },
+    {
+     "id": "WAE-STANDARD__Visa-Assistance",
+     "label": "WAE-STANDARD · Visa Application Assistance (RM80/pax)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "WAE-STANDARD",
      "values": {
-      "2": 5502.381,
-      "3": 4286.856,
-      "4": 3892.8435,
-      "5": 3485.436,
-      "6": 3213.831,
-      "7": 3223.407,
-      "8": 3052.464,
-      "9": 2919.483,
-      "10": 2813.121,
-      "11": 3596.3865,
-      "12": 3451.3215,
-      "13": 3328.6005,
-      "14": 3223.407,
-      "15": 3132.2355,
-      "16": 3052.464,
-      "17": 2982.069,
-      "18": 2919.483,
-      "19": 2863.509,
-      "20": 2813.121,
-      "21": 2767.521,
-      "22": 2726.082,
-      "23": 3104.4765,
-      "24": 3052.464,
-      "25": 3004.584,
-      "26": 2960.409,
-      "27": 2919.483,
-      "28": 2881.4925,
-      "29": 2846.124,
-      "30": 2813.121,
-      "31": 2782.227,
-      "32": 2753.2995,
-      "33": 2726.082,
-      "34": 2700.489,
-      "35": 2676.3495,
-      "36": 2653.578,
-      "37": 2632.0035,
-      "38": 2611.569,
-      "39": 2592.189,
-      "40": 2573.778
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Tipping-MYR",
-     "label": "WAE-STANDARD · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0
+      "2": 80,
+      "3": 80,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 80,
+      "8": 80,
+      "9": 80,
+      "10": 80
      }
     }
    ],
@@ -20983,21 +21007,45 @@
      "label": "WAE",
      "supplier": "WAE-BASIC 5D4N (Phillip Island + Melbourne City)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 10,
      "hotel": "Ibis Melbourne (3-Star)",
-     "notes": "",
+     "notes": "WAE costing rate (contracts/mel, from PT MEL R&D V3 12 Mar 2026) — AUD × live FX; visa assistance RM80.",
      "components": [
       {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
+       "key": "car-rental",
+       "label": "Car Rental",
        "per": "pax",
-       "expr": "T['WAE-BASIC__Ground-Cost-MYR']"
+       "expr": "T['WAE-BASIC__Car-Rental']"
       },
       {
-       "key": "tipping-myr",
-       "label": "Tipping",
+       "key": "driver-guide",
+       "label": "Driver-Guide",
        "per": "pax",
-       "expr": "T['WAE-BASIC__Tipping-MYR']"
+       "expr": "T['WAE-BASIC__Driver-Guide']"
+      },
+      {
+       "key": "online-guide",
+       "label": "Online Guide",
+       "per": "pax",
+       "expr": "T['WAE-BASIC__Online-Guide']"
+      },
+      {
+       "key": "hotel",
+       "label": "Hotel",
+       "per": "pax",
+       "expr": "T['WAE-BASIC__Hotel']"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrance",
+       "per": "pax",
+       "expr": "T['WAE-BASIC__Entrance']"
+      },
+      {
+       "key": "visa-assistance",
+       "label": "Visa Assistance",
+       "per": "pax",
+       "expr": "T['WAE-BASIC__Visa-Assistance']"
       }
      ]
     },
@@ -21006,21 +21054,45 @@
      "label": "WAE",
      "supplier": "WAE-STANDARD 5D4N (Phillip Island + Penguin Parade + Great Ocean Road)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 10,
      "hotel": "Ibis Melbourne (3-Star + Breakfast)",
-     "notes": "",
+     "notes": "WAE costing rate (contracts/mel, from PT MEL R&D V3 12 Mar 2026) — AUD × live FX; visa assistance RM80.",
      "components": [
       {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
+       "key": "car-rental",
+       "label": "Car Rental",
        "per": "pax",
-       "expr": "T['WAE-STANDARD__Ground-Cost-MYR']"
+       "expr": "T['WAE-STANDARD__Car-Rental']"
       },
       {
-       "key": "tipping-myr",
-       "label": "Tipping",
+       "key": "driver-guide",
+       "label": "Driver-Guide",
        "per": "pax",
-       "expr": "T['WAE-STANDARD__Tipping-MYR']"
+       "expr": "T['WAE-STANDARD__Driver-Guide']"
+      },
+      {
+       "key": "online-guide",
+       "label": "Online Guide",
+       "per": "pax",
+       "expr": "T['WAE-STANDARD__Online-Guide']"
+      },
+      {
+       "key": "hotel",
+       "label": "Hotel",
+       "per": "pax",
+       "expr": "T['WAE-STANDARD__Hotel']"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrance",
+       "per": "pax",
+       "expr": "T['WAE-STANDARD__Entrance']"
+      },
+      {
+       "key": "visa-assistance",
+       "label": "Visa Assistance",
+       "per": "pax",
+       "expr": "T['WAE-STANDARD__Visa-Assistance']"
       }
      ]
     }
@@ -21033,7 +21105,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "WAE-BASIC"
       }
      ],
@@ -21047,27 +21119,7 @@
        "7": 3597,
        "8": 3397,
        "9": 3397,
-       "10": 3397,
-       "11": 3397,
-       "12": 3397,
-       "13": 3397,
-       "14": 3397,
-       "15": 3397,
-       "16": 3347,
-       "17": 3347,
-       "18": 3347,
-       "19": 3347,
-       "20": 3347,
-       "21": 3297,
-       "22": 3297,
-       "23": 3297,
-       "24": 3297,
-       "25": 3297,
-       "26": 3247,
-       "27": 3247,
-       "28": 3247,
-       "29": 3247,
-       "30": 3247
+       "10": 3397
       },
       "cwb": {
        "2": 5697,
@@ -21078,27 +21130,7 @@
        "7": 3397,
        "8": 3197,
        "9": 3197,
-       "10": 3197,
-       "11": 3197,
-       "12": 3197,
-       "13": 3197,
-       "14": 3197,
-       "15": 3197,
-       "16": 3147,
-       "17": 3147,
-       "18": 3147,
-       "19": 3147,
-       "20": 3147,
-       "21": 3097,
-       "22": 3097,
-       "23": 3097,
-       "24": 3097,
-       "25": 3097,
-       "26": 3047,
-       "27": 3047,
-       "28": 3047,
-       "29": 3047,
-       "30": 3047
+       "10": 3197
       },
       "cnb": {
        "2": 5397,
@@ -21109,27 +21141,7 @@
        "7": 3097,
        "8": 2897,
        "9": 2897,
-       "10": 2897,
-       "11": 2897,
-       "12": 2897,
-       "13": 2897,
-       "14": 2897,
-       "15": 2897,
-       "16": 2847,
-       "17": 2847,
-       "18": 2847,
-       "19": 2847,
-       "20": 2847,
-       "21": 2797,
-       "22": 2797,
-       "23": 2797,
-       "24": 2797,
-       "25": 2797,
-       "26": 2747,
-       "27": 2747,
-       "28": 2747,
-       "29": 2747,
-       "30": 2747
+       "10": 2897
       },
       "infant": 1000
      },
@@ -21157,7 +21169,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "WAE-STANDARD"
       }
      ],
@@ -21171,27 +21183,7 @@
        "7": 4197,
        "8": 3997,
        "9": 3997,
-       "10": 3997,
-       "11": 3997,
-       "12": 3997,
-       "13": 3997,
-       "14": 3997,
-       "15": 3997,
-       "16": 3947,
-       "17": 3947,
-       "18": 3947,
-       "19": 3947,
-       "20": 3947,
-       "21": 3897,
-       "22": 3897,
-       "23": 3897,
-       "24": 3897,
-       "25": 3897,
-       "26": 3847,
-       "27": 3847,
-       "28": 3847,
-       "29": 3847,
-       "30": 3847
+       "10": 3997
       },
       "cwb": {
        "2": 6797,
@@ -21202,27 +21194,7 @@
        "7": 3997,
        "8": 3797,
        "9": 3797,
-       "10": 3797,
-       "11": 3797,
-       "12": 3797,
-       "13": 3797,
-       "14": 3797,
-       "15": 3797,
-       "16": 3747,
-       "17": 3747,
-       "18": 3747,
-       "19": 3747,
-       "20": 3747,
-       "21": 3697,
-       "22": 3697,
-       "23": 3697,
-       "24": 3697,
-       "25": 3697,
-       "26": 3647,
-       "27": 3647,
-       "28": 3647,
-       "29": 3647,
-       "30": 3647
+       "10": 3797
       },
       "cnb": {
        "2": 6497,
@@ -21233,27 +21205,7 @@
        "7": 3697,
        "8": 3497,
        "9": 3497,
-       "10": 3497,
-       "11": 3497,
-       "12": 3497,
-       "13": 3497,
-       "14": 3497,
-       "15": 3497,
-       "16": 3447,
-       "17": 3447,
-       "18": 3447,
-       "19": 3447,
-       "20": 3447,
-       "21": 3397,
-       "22": 3397,
-       "23": 3397,
-       "24": 3397,
-       "25": 3397,
-       "26": 3347,
-       "27": 3347,
-       "28": 3347,
-       "29": 3347,
-       "30": 3347
+       "10": 3497
       },
       "infant": 1000
      },
@@ -21277,46 +21229,46 @@
    ],
    "addons": [
     {
-     "id": "mel-a02",
-     "category": "Category",
-     "label": "Item",
-     "cost": null,
-     "selling": null,
-     "per": "Per",
-     "notes": "Notes"
-    },
-    {
      "id": "mel-a03",
      "category": "Activity",
-     "label": "Maru Koala & Animal Park (Phillip Island)",
-     "cost": 93.0,
-     "selling": 110.0,
+     "label": "Tolak Maru Koala & Animal Park ticket (sudah termasuk dalam pakej)",
+     "cost": -93.453987,
+     "selling": -93.0,
      "per": "pax",
-     "notes": null
+     "notes": "Kadar tolak = kos WAE CR"
     },
     {
      "id": "mel-a04",
      "category": "Activity",
-     "label": "Churchill Island Heritage Farm",
-     "cost": 51.0,
-     "selling": 55.0,
+     "label": "Tolak Churchill Island Heritage Farm ticket (sudah termasuk dalam pakej)",
+     "cost": -50.974902,
+     "selling": -51.0,
      "per": "pax",
-     "notes": null
+     "notes": "Kadar tolak = kos WAE CR"
     },
     {
      "id": "mel-a05",
      "category": "Activity",
-     "label": "Penguin Parade General Viewing",
-     "cost": 96.0,
+     "label": "Penguin Parade General Viewing (Basic; termasuk dalam Standard)",
+     "cost": 96.285926,
      "selling": 110.0,
      "per": "pax",
      "notes": null
+    },
+    {
+     "id": "mel-a05d",
+     "category": "Activity",
+     "label": "Tolak Penguin Parade General Viewing ticket (Standard, sudah termasuk dalam pakej)",
+     "cost": -96.285926,
+     "selling": -96.0,
+     "per": "pax",
+     "notes": "Kadar tolak = kos WAE CR"
     },
     {
      "id": "mel-a06",
      "category": "Activity",
      "label": "Sealife Aquarium (City)",
-     "cost": 96.0,
+     "cost": 96.285926,
      "selling": 175.0,
      "per": "pax",
      "notes": null
@@ -21325,7 +21277,7 @@
      "id": "mel-a07",
      "category": "Activity",
      "label": "Arthurs Seat Gondola Return (Mornington)",
-     "cost": 110.0,
+     "cost": 110,
      "selling": 110.0,
      "per": "pax",
      "notes": null
@@ -21334,25 +21286,25 @@
      "id": "mel-a08",
      "category": "Activity",
      "label": "Enchanted Adventure Park (Mornington)",
-     "cost": 135.0,
-     "selling": 135.0,
+     "cost": 135,
+     "selling": 120.0,
      "per": "pax",
-     "notes": null
+     "notes": "Selling = catalog (Enchanted Garden Adventure ticket, adult RM120 / child RM90); cost = WAE CR"
     },
     {
      "id": "mel-a09",
      "category": "Activity",
      "label": "Puffing Billy Steam Train (Dandenong)",
-     "cost": 187.0,
-     "selling": 215.0,
+     "cost": 186.907974,
+     "selling": 190.0,
      "per": "pax",
-     "notes": null
+     "notes": "Selling = catalog (Puffing Billy train ticket, adult RM190 / child RM95); cost = WAE CR"
     },
     {
      "id": "mel-a10",
      "category": "Activity",
      "label": "Cherry Fruit Picking (mid Dec - mid Feb)",
-     "cost": 57.0,
+     "cost": 56.63878,
      "selling": 65.0,
      "per": "pax",
      "notes": null
@@ -21361,7 +21313,7 @@
      "id": "mel-a11",
      "category": "Activity",
      "label": "Rayners Orchard Fruit Picking (mid Feb - mid Dec)",
-     "cost": 181.0,
+     "cost": 181.244096,
      "selling": 215.0,
      "per": "pax",
      "notes": null
@@ -21370,46 +21322,28 @@
      "id": "mel-a12",
      "category": "Activity",
      "label": "Snow Trip Mt Buller / Mt Baw Baw Entrance",
-     "cost": 85.0,
+     "cost": 85,
      "selling": 85.0,
      "per": "pax",
      "notes": null
     },
     {
-     "id": "mel-a13",
-     "category": "Day Tour",
-     "label": "Private Day Tour 5-seater",
-     "cost": 0.0,
-     "selling": 700.0,
-     "per": "day",
-     "notes": "AUD140/day"
+     "id": "mel-n01",
+     "category": "Hotel",
+     "label": "Hotel 3★ (Ibis) — tambah 1 malam",
+     "cost": 285.18,
+     "selling": 300.0,
+     "per": "pax/night",
+     "notes": "Kos AUD100/pax/malam (PO 14 Oct 2026); KB normal RM300"
     },
     {
-     "id": "mel-a14",
-     "category": "Day Tour",
-     "label": "Private Day Tour 7/8-seater",
-     "cost": 0.0,
-     "selling": 1000.0,
-     "per": "day",
-     "notes": "AUD200/day"
-    },
-    {
-     "id": "mel-a15",
-     "category": "Day Tour",
-     "label": "Private Day Tour 12-seater",
-     "cost": 0.0,
-     "selling": 1500.0,
-     "per": "day",
-     "notes": "AUD300/day"
-    },
-    {
-     "id": "mel-a16",
-     "category": "Visa",
-     "label": "ETA Visa Application (paid to AU Immigration)",
-     "cost": 0.0,
-     "selling": 70.0,
-     "per": "pax",
-     "notes": "AUD20"
+     "id": "mel-n02",
+     "category": "Hotel",
+     "label": "Hotel 3★ (Ibis) — tambah 1 malam (peak)",
+     "cost": 285.18,
+     "selling": 450.0,
+     "per": "pax/night",
+     "notes": "Kos AUD100/pax/malam (PO 14 Oct 2026); KB peak RM450"
     },
     {
      "id": "mel-a17",
@@ -21523,8 +21457,8 @@
      "id": "mel-a29",
      "category": "Wifi",
      "label": "Pocket Wifi RoamingMan 3GB (4G)",
-     "cost": 130.0,
-     "selling": 200.0,
+     "cost": 100.0,
+     "selling": 140.0,
      "per": "trip",
      "notes": null
     },
@@ -21532,8 +21466,8 @@
      "id": "mel-a30",
      "category": "Wifi",
      "label": "Pocket Wifi RoamingMan 6GB Whole Trip",
-     "cost": 100.0,
-     "selling": 140.0,
+     "cost": 130.0,
+     "selling": 200.0,
      "per": "trip",
      "notes": null
     },
@@ -21571,114 +21505,6 @@
      "cost": 58.0,
      "selling": 70.0,
      "per": "pcs",
-     "notes": null
-    },
-    {
-     "id": "mel-a35",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "mel-a36",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a37",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a38",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a39",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a40",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a41",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a42",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "mel-a43",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "mel-a44",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "mel-a45",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "mel-a46",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
      "notes": null
     },
     {
@@ -21843,6 +21669,19 @@
        ]
       }
      }
+    }
+   ],
+   "historyFrom": 94,
+   "contracts": [
+    {
+     "id": "c7e2a4b19d3",
+     "name": "WAE MELBOURNE COSTING RATE 2026.pdf",
+     "file": "contracts/mel/c7e2a4b19d3-WAE_MELBOURNE_COSTING_RATE_2026.pdf",
+     "to": "WAE",
+     "note": "From the R&D sheet PT MEL R&D (Costing BASIC / STANDARD + entrance), PO ezie 14 Oct 2026",
+     "size": 237130,
+     "at": "2026-10-14T08:00:00Z",
+     "by": "ezie"
     }
    ]
   },

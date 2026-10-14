@@ -370,6 +370,16 @@
    "fix": "Ask Emiya / Baim for the 2027 rates, single supplement and peak surcharge.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "MEL",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Melbourne: catalog private day tours have no cost / sell below cost",
+   "detail": "The 5 catalog day tours (Puffing Billy & Dandenong RM1,500, Mornington RM1,600, Great Ocean Road RM2,800, Winter Snow Trip RM3,200, City Half / Full Day RM800 / 1,500 per transport) have no cost in the hub. Estimate from the WAE CR (car rental + day charge, 5 / 8 / 12-seater): City Full Day 1,768 / 1,939 / 2,224 (all above RM1,500), Great Ocean Road 2,527 / 2,698 / 2,983 (12-seater above RM2,800); no CR day charge for Half Day, Puffing Billy, Mornington or Snow Trip. KB rate card sells these much higher (GOR RM3,350–4,300). Child ticket cost (Puffing Billy RM95, Enchanted RM90) not in the CR.",
+   "fix": "Get WAE day-tour rates per vehicle, then set cost (and decide whether the catalog price should vary by vehicle).",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
