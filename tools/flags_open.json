@@ -220,6 +220,36 @@
    "fix": "Confirm with KTT.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "KMGDL",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Yunnan 3 Wilayah: CR tipping 7 days vs Costing 6 days",
+   "detail": "The Tourdechina CR 3W 7D5N says tipping RMB30/pax/day × 7 days (same text as the 4W CR); Day 7 is the flight only, so the Costing keeps × 6 days (PO 10 Oct 2026). At × 7 the cost is RMB30 (≈RM18) per pax higher.",
+   "fix": "Ask Tourdechina whether 3W tipping is 6 or 7 days.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "KMGDLS",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Yunnan 4 Wilayah: single supplement RM700 vs CR RMB1,120",
+   "detail": "Catalog single supplement RM700/person; CR S/SUPP RMB1,120/pax for 2–9 pax ≈ RM684 at FX 0.6104 (margin ≈2 %), RMB780 for 10–14 pax ≈ RM476. 3W: RM600 vs RMB800 ≈ RM488 (fine).",
+   "fix": "Decide whether to raise the 4W single supplement (catalog + KB) or accept the thin margin.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "KMGDL",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Yunnan 3 + 4 Wilayah: add-on costs unknown",
+   "detail": "Airport transfer (MPV / Small Bus / Big Bus), bullet train 1st / Business class upgrade, luggage van, Indian/Arabic meal and One Day Tour have cost RM0 in both KMGDL and KMGDLS (not in the Tourdechina CRs). Extra lunch / dinner cost RM61 = CR meal budget at 2–3 pax (sold at RM60).",
+   "fix": "Ask Tourdechina for these rates, then fill the costs on the Add On tab (both packages).",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

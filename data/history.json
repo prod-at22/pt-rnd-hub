@@ -88614,6 +88614,2139 @@
      "label": "Krabi › TO Contract Rate"
     }
    ]
+  },
+  {
+   "v": 86,
+   "at": "2026-10-14T02:40:55Z",
+   "by": "ezie",
+   "note": "Yunnan 3 + 4 Wilayah verified (PO ezie 14 Oct 2026): 3W Tourdechina CR 7D5N in TO Contract Rate (tour fare = Costing; tipping × 6 days kept, CR says × 7 → flag); 4W cost now RMB × live FX from the CR 8D6N (was MYR at fixed 0.58), CNB 80 % of tour fare only (CR), nights 6; Costing 2–30 pax for both, 3W 15–30 prices = 4W pattern (−RM100 per band); 3W add-ons added (KB prices; TripCare / Blue Ribbon set), 4W duplicate TripCare / Blue Ribbon removed, extra lunch / dinner cost RM61 (CR meal budget 2–3 pax), Tolak Lunch / Dinner −RM30 (= KB); KB: 2027 surcharges removed (not in the catalogs), 'Upgrade hotel 4-star +RM240' removed (packages are 4★). Catalog prices unchanged; Flags / History from v86.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "note"
+     ],
+     "from": "Costing dari PT KMGDL R&D (Drive, 16 Ogos 2026) sebagai rujukan sahaja — hub ialah sumber (PO 10 Oct 2026).",
+     "to": "Kos = Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026, TO Contract Rate): tour fare RMB 6,800 / 4,900 / 4,250 / 3,300 (2–3 / 4–5 / 6–9 / 10–14 pax; 15–30 = kadar 10–14) × FX live; tipping RMB30 × 6 hari (PO 10 Oct 2026; CR tulis 7 hari). CWB 100 %, CNB 80 % tour fare (CR). Costing 2–30 pax; harga 15–30 ikut pola 4W (−RM100 setiap band, PO 14 Oct 2026).",
+     "label": "Yunnan 3 Wilayah › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "rates",
+      "f2",
+      "group"
+     ],
+     "from": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)",
+     "to": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)",
+     "label": "Yunnan 3 Wilayah › Rate › Rate Tour fare 2–3 pax (Tourdechina) › group"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "rates",
+      "f4",
+      "group"
+     ],
+     "from": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)",
+     "to": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)",
+     "label": "Yunnan 3 Wilayah › Rate › Rate Tour fare 4–5 pax (Tourdechina) › group"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "rates",
+      "f6",
+      "group"
+     ],
+     "from": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)",
+     "to": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)",
+     "label": "Yunnan 3 Wilayah › Rate › Rate Tour fare 6–9 pax (Tourdechina) › group"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "rates",
+      "f10",
+      "group"
+     ],
+     "from": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)",
+     "to": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)",
+     "label": "Yunnan 3 Wilayah › Rate › Rate Tour fare 10+ pax (Tourdechina) › group"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "variants",
+      "TOURDECHINA",
+      "supplier"
+     ],
+     "from": "TO TOURDECHINA — Yunnan 3 Wilayah 6D5N (Kunming-Dali-Lijiang)",
+     "to": "TO TOURDECHINA — Yunnan 3 Wilayah 7D5N (Kunming-Shilin-Dali-Lijiang)",
+     "label": "Yunnan 3 Wilayah › TO › TO Tourdechina › supplier"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "variants",
+      "TOURDECHINA",
+      "notes"
+     ],
+     "from": "Kadar tour fare RMB dari PT KMGDL R&D (sheet CR), rujukan sahaja. Termasuk: 5 malam hotel 4★ + breakfast, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Lijiang-Kunming), halal meals, entrance, boat Erhai, cable car Jade Dragon, buggy, airport transfer, English guide. Tipping RMB30/pax/hari × 6 hari (PO 10 Oct 2026; R&D tulis 7 hari). CWB 100%, CNB 80% tour fare.",
+     "to": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026). Termasuk: hotel 4★ + breakfast, 10 halal meals, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Lijiang-Kunming), first entrance, English speaking guide, airport transfer. Tipping RMB30/pax/hari × 6 hari (PO 10 Oct 2026; CR tulis × 7). Single supplement RMB800/pax (2–9), RMB700 (10–14). Surcaj CR RMB400/pax: Jul–Ogos, 1–8 Okt, Spring Festival. CWB 100 %, CNB 80 % tour fare.",
+     "label": "Yunnan 3 Wilayah › TO › TO Tourdechina › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 14,
+     "to": 30,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": null,
+     "to": 3097,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": null,
+     "to": 2997,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": null,
+     "to": 2997,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": null,
+     "to": 2997,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": null,
+     "to": 2997,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": null,
+     "to": 2997,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": null,
+     "to": 2897,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": null,
+     "to": 2797,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": null,
+     "to": 2797,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": null,
+     "to": 2797,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": null,
+     "to": 2797,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": null,
+     "to": 2797,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": null,
+     "to": 2697,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": null,
+     "to": 2597,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": null,
+     "to": 2597,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": null,
+     "to": 2597,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": null,
+     "to": 2597,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": null,
+     "to": 2597,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": null,
+     "to": 2497,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": null,
+     "to": 2497,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": null,
+     "to": 2497,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": null,
+     "to": 2497,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "packages",
+      "tourdechina",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": null,
+     "to": 2497,
+     "label": "Yunnan 3 Wilayah › Yunnan 3 Wilayah 6D5N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "addons"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "kmgdl-a01",
+       "category": "Transport",
+       "label": "Airport Transfer MPV (2-4 pax)",
+       "cost": 0,
+       "selling": 150,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a02",
+       "category": "Transport",
+       "label": "Airport Transfer Small Bus (5-6 pax)",
+       "cost": 0,
+       "selling": 250,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a03",
+       "category": "Transport",
+       "label": "Airport Transfer Big Bus (7-12 pax)",
+       "cost": 0,
+       "selling": 300,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a04",
+       "category": "Bullet Train",
+       "label": "First Class Upgrade",
+       "cost": 0,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a05",
+       "category": "Bullet Train",
+       "label": "Business Class Upgrade",
+       "cost": 0,
+       "selling": 300,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a06",
+       "category": "Luggage",
+       "label": "Luggage Van Bullet Train",
+       "cost": 0,
+       "selling": 650,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a07",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 61,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+      },
+      {
+       "id": "kmgdl-a08",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 61,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+      },
+      {
+       "id": "kmgdl-a09",
+       "category": "Meals",
+       "label": "Tolak Lunch",
+       "cost": -31,
+       "selling": -30,
+       "per": "pax/meal",
+       "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+      },
+      {
+       "id": "kmgdl-a10",
+       "category": "Meals",
+       "label": "Tolak Dinner",
+       "cost": -31,
+       "selling": -30,
+       "per": "pax/meal",
+       "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+      },
+      {
+       "id": "kmgdl-a11",
+       "category": "Meals",
+       "label": "Indian/Arabic meal",
+       "cost": 0,
+       "selling": 80,
+       "per": "pax/meal",
+       "notes": "Surcharge RM30"
+      },
+      {
+       "id": "kmgdl-a12",
+       "category": "Tour",
+       "label": "One Day Tour (Transport+Guide+L,D)",
+       "cost": 0,
+       "selling": 400,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdl-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdl-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdl-a24",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      }
+     ],
+     "label": "Yunnan 3 Wilayah › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "contracts"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "1a13848c387",
+       "name": "PT KMGDL TOURDECHINA YUNNAN 3 WILAYAH 7D5N (Jan - Dec 2026).doc.pdf",
+       "file": "contracts/kmgdl/1a13848c387-PT_KMGDL_TOURDECHINA_YUNNAN_3_WILAYAH_7D5N_Jan_-_Dec_2026_.doc.pdf",
+       "to": "Tourdechina",
+       "note": "CR 3W 7D5N, valid Oct 2025 – Dec 2026 (PO 14 Oct 2026) = Costing tour fare",
+       "size": 146348,
+       "at": "2026-10-14T02:40:55Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Yunnan 3 Wilayah › TO Contract Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDL",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 86,
+     "label": "Yunnan 3 Wilayah › historyFrom"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "nights"
+     ],
+     "from": 0,
+     "to": 6,
+     "label": "Yunnan 4 Wilayah › Nights"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "note"
+     ],
+     "from": "",
+     "to": "Kos = Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026, TO Contract Rate): tour fare RMB 8,000 / 5,800 / 5,200 / 4,400 (2–3 / 4–5 / 6–9 / 10–14 pax; 15–30 = kadar 10–14) × FX live (dulu MYR tetap 0.58); tipping RMB30 × 7 hari (CR). CWB 100 %, CNB 80 % tour fare (CR). Costing 2–30 pax.",
+     "label": "Yunnan 4 Wilayah › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "f2",
+       "label": "Tour fare 2–3 pax (Tourdechina)",
+       "value": 8000,
+       "fx": "RMB",
+       "unit": "RMB/pax",
+       "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+      },
+      {
+       "id": "f4",
+       "label": "Tour fare 4–5 pax (Tourdechina)",
+       "value": 5800,
+       "fx": "RMB",
+       "unit": "RMB/pax",
+       "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+      },
+      {
+       "id": "f6",
+       "label": "Tour fare 6–9 pax (Tourdechina)",
+       "value": 5200,
+       "fx": "RMB",
+       "unit": "RMB/pax",
+       "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+      },
+      {
+       "id": "f10",
+       "label": "Tour fare 10+ pax (Tourdechina)",
+       "value": 4400,
+       "fx": "RMB",
+       "unit": "RMB/pax",
+       "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+      },
+      {
+       "id": "tip",
+       "label": "Tipping, tidak termasuk dalam tour fare (Tourdechina)",
+       "value": 30,
+       "fx": "RMB",
+       "unit": "RMB/pax/hari",
+       "group": "Tipping"
+      }
+     ],
+     "label": "Yunnan 4 Wilayah › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "TOURDECHINA__Ground-Cost-MYR",
+       "label": "TOURDECHINA · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "TOURDECHINA",
+       "values": {
+        "2": 4640,
+        "3": 4640,
+        "4": 3364,
+        "5": 3364,
+        "6": 3016,
+        "7": 3016,
+        "8": 3016,
+        "9": 3016,
+        "10": 2552,
+        "11": 2552,
+        "12": 2552,
+        "13": 2552,
+        "14": 2552,
+        "15": 2552,
+        "16": 2552,
+        "17": 2552,
+        "18": 2552,
+        "19": 2552,
+        "20": 2552,
+        "21": 2552,
+        "22": 2552,
+        "23": 2552,
+        "24": 2552,
+        "25": 2552,
+        "26": 2552,
+        "27": 2552,
+        "28": 2552,
+        "29": 2552,
+        "30": 2552,
+        "31": 2552,
+        "32": 2552,
+        "33": 2552,
+        "34": 2552,
+        "35": 2552,
+        "36": 2552,
+        "37": 2552,
+        "38": 2552,
+        "39": 2552,
+        "40": 2552
+       }
+      },
+      {
+       "id": "TOURDECHINA__Tipping-MYR",
+       "label": "TOURDECHINA · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "TOURDECHINA",
+       "values": {
+        "2": 121.8,
+        "3": 121.8,
+        "4": 121.8,
+        "5": 121.8,
+        "6": 121.8,
+        "7": 121.8,
+        "8": 121.8,
+        "9": 121.8,
+        "10": 121.8,
+        "11": 121.8,
+        "12": 121.8,
+        "13": 121.8,
+        "14": 121.8,
+        "15": 121.8,
+        "16": 121.8,
+        "17": 121.8,
+        "18": 121.8,
+        "19": 121.8,
+        "20": 121.8,
+        "21": 121.8,
+        "22": 121.8,
+        "23": 121.8,
+        "24": 121.8,
+        "25": 121.8,
+        "26": 121.8,
+        "27": 121.8,
+        "28": 121.8,
+        "29": 121.8,
+        "30": 121.8,
+        "31": 121.8,
+        "32": 121.8,
+        "33": 121.8,
+        "34": 121.8,
+        "35": 121.8,
+        "36": 121.8,
+        "37": 121.8,
+        "38": 121.8,
+        "39": 121.8,
+        "40": 121.8
+       }
+      }
+     ],
+     "to": [],
+     "label": "Yunnan 4 Wilayah › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "variants",
+      "TOURDECHINA",
+      "supplier"
+     ],
+     "from": "TO TOURDECHINA — 4W (PT YUNNAN 4 WILAYAH 8D6N (Kunming-Shilin-Dali-Lijiang-Shang",
+     "to": "TO TOURDECHINA — Yunnan 4 Wilayah 8D6N (Kunming-Shilin-Dali-Lijiang-Shangri La)",
+     "label": "Yunnan 4 Wilayah › TO › TO Tourdechina › supplier"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "variants",
+      "TOURDECHINA",
+      "notes"
+     ],
+     "from": "",
+     "to": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026). Termasuk: hotel 4★ + breakfast, 12 halal meals, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Shangri La-Kunming), first entrance, English speaking guide, airport transfer. Tipping RMB30/pax/hari × 7 hari (CR). Single supplement RMB1,120/pax (2–9), RMB780 (10–14). Surcaj CR RMB400/pax: Jul–Ogos, 1–8 Okt, Spring Festival. CWB 100 %, CNB 80 % tour fare.",
+     "label": "Yunnan 4 Wilayah › TO › TO Tourdechina › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "variants",
+      "TOURDECHINA",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "ground-cost-myr",
+       "label": "Ground Cost",
+       "per": "pax",
+       "expr": "T['TOURDECHINA__Ground-Cost-MYR']"
+      },
+      {
+       "key": "tipping-myr",
+       "label": "Tipping",
+       "per": "pax",
+       "expr": "T['TOURDECHINA__Tipping-MYR']"
+      }
+     ],
+     "to": [
+      {
+       "key": "fare",
+       "label": "Tour fare (Tourdechina)",
+       "per": "group",
+       "expr": "band(pax,[3,R.f2],[5,R.f4],[9,R.f6],[999,R.f10])*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping × 7 hari",
+       "per": "group",
+       "expr": "R.tip*7*pax"
+      }
+     ],
+     "label": "Yunnan 4 Wilayah › TO › TO Tourdechina › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "packages",
+      "tourdechina",
+      "rules",
+      "cnbCost",
+      "on"
+     ],
+     "from": null,
+     "to": [
+      "fare"
+     ],
+     "label": "Yunnan 4 Wilayah › Yunnan 4 Wilayah 7D6N › Rule › CNB cost › on"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "kmgdls-a01",
+       "category": "Transport",
+       "label": "Airport Transfer MPV (2-4 pax)",
+       "cost": 0,
+       "selling": 150,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a02",
+       "category": "Transport",
+       "label": "Airport Transfer Small Bus (5-6 pax)",
+       "cost": 0,
+       "selling": 250,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a03",
+       "category": "Transport",
+       "label": "Airport Transfer Big Bus (7-12 pax)",
+       "cost": 0,
+       "selling": 350,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a04",
+       "category": "Bullet Train",
+       "label": "First Class Upgrade",
+       "cost": 0,
+       "selling": 120,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a05",
+       "category": "Bullet Train",
+       "label": "Business Class Upgrade",
+       "cost": 0,
+       "selling": 300,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a06",
+       "category": "Luggage",
+       "label": "Luggage Van Bullet Train (2-4 pax)",
+       "cost": 0,
+       "selling": 750,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a07",
+       "category": "Luggage",
+       "label": "Luggage Van Bullet Train (5-6 pax)",
+       "cost": 0,
+       "selling": 650,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a08",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 0,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a09",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 0,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a10",
+       "category": "Meals",
+       "label": "Indian/Arabic meal",
+       "cost": 0,
+       "selling": 80,
+       "per": "pax/meal",
+       "notes": "Surcharge RM30"
+      },
+      {
+       "id": "kmgdls-a11",
+       "category": "Tour",
+       "label": "One Day Tour (Transport+Guide+L,D)",
+       "cost": 0,
+       "selling": 400,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdls-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdls-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdls-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a35",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "to": [
+      {
+       "id": "kmgdls-a01",
+       "category": "Transport",
+       "label": "Airport Transfer MPV (2-4 pax)",
+       "cost": 0,
+       "selling": 150,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a02",
+       "category": "Transport",
+       "label": "Airport Transfer Small Bus (5-6 pax)",
+       "cost": 0,
+       "selling": 250,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a03",
+       "category": "Transport",
+       "label": "Airport Transfer Big Bus (7-12 pax)",
+       "cost": 0,
+       "selling": 350,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a04",
+       "category": "Bullet Train",
+       "label": "First Class Upgrade",
+       "cost": 0,
+       "selling": 120,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a05",
+       "category": "Bullet Train",
+       "label": "Business Class Upgrade",
+       "cost": 0,
+       "selling": 300,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a06",
+       "category": "Luggage",
+       "label": "Luggage Van Bullet Train (2-4 pax)",
+       "cost": 0,
+       "selling": 750,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a07",
+       "category": "Luggage",
+       "label": "Luggage Van Bullet Train (5-6 pax)",
+       "cost": 0,
+       "selling": 650,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a08",
+       "category": "Meals",
+       "label": "Extra Lunch",
+       "cost": 61,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+      },
+      {
+       "id": "kmgdls-a09",
+       "category": "Meals",
+       "label": "Extra Dinner",
+       "cost": 61,
+       "selling": 60,
+       "per": "pax/meal",
+       "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+      },
+      {
+       "id": "kmgdls-a36",
+       "category": "Meals",
+       "label": "Tolak Lunch",
+       "cost": -31,
+       "selling": -30,
+       "per": "pax/meal",
+       "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+      },
+      {
+       "id": "kmgdls-a37",
+       "category": "Meals",
+       "label": "Tolak Dinner",
+       "cost": -31,
+       "selling": -30,
+       "per": "pax/meal",
+       "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+      },
+      {
+       "id": "kmgdls-a10",
+       "category": "Meals",
+       "label": "Indian/Arabic meal",
+       "cost": 0,
+       "selling": 80,
+       "per": "pax/meal",
+       "notes": "Surcharge RM30"
+      },
+      {
+       "id": "kmgdls-a11",
+       "category": "Tour",
+       "label": "One Day Tour (Transport+Guide+L,D)",
+       "cost": 0,
+       "selling": 400,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdls-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kmgdls-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "kmgdls-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      }
+     ],
+     "label": "Yunnan 4 Wilayah › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "KMGDLS",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 86,
+     "label": "Yunnan 4 Wilayah › historyFrom"
+    },
+    {
+     "path": [
+      "kb",
+      "yunnan",
+      "content",
+      "blocks",
+      "custom"
+     ],
+     "from": "<h2>Simple Customisation & Add-ons</h2><p class='ssub'>Kadar rasmi dari <b>Product Cheatsheet 2026 &ndash; Yunnan</b>. Ini private tour &mdash; hampir semua komponen boleh tambah (Tambah) atau buang (Tolak). Sahkan setiap perubahan dengan operator sebelum confirm kepada customer.</p><h3 style='margin:16px 0 6px'>Airport Transfer</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Kenderaan</th><th>Kapasiti</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>MPV</td><td>2&ndash;4 pax</td><td class='add'>RM 150/way</td><td class='add'>RM 150/way</td><td>&minus;RM 100/transport</td></tr><tr><td class='it'>Small Bus</td><td>5&ndash;6 pax</td><td class='add'>RM 250/way</td><td class='add'>RM 250/way</td><td>&minus;RM 150/transport</td></tr><tr><td class='it'>Big Bus</td><td>7&ndash;12 pax</td><td class='add'>RM 300/way</td><td class='add'>RM 350/way</td><td>&minus;RM 250/transport</td></tr><tr><td class='it'>Big Bus</td><td>12 pax ke atas</td><td>&mdash;</td><td class='add'>RM 650/way</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Accommodation</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>Hotel 4-Star &mdash; 1 malam</td><td class='add'>+RM 200/bilik/malam</td><td class='add'>+RM 250/bilik/malam</td><td>&minus;RM 100/bilik/malam</td></tr><tr><td class='it'>Upgrade hotel 4-star (tier 4&ndash;5 pax)</td><td class='add'>+RM 240/pax</td><td class='add'>+RM 240/pax</td><td>&mdash;</td></tr><tr><td class='it'>Single Supplement</td><td class='add'>+RM 600/pax</td><td class='add'>+RM 700/pax</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Extra Night + Extra Day Tour</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Pax</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>Extra 1 malam + 1 day tour</td><td>2&ndash;4 pax</td><td class='add'>+RM 650/pax</td><td class='add'>+RM 650/pax</td><td>&minus;RM 300/pax</td></tr><tr><td class='it'>Extra 1 malam + 1 day tour</td><td>5&ndash;6 pax</td><td class='add'>+RM 850/pax</td><td class='add'>+RM 750/pax</td><td>&minus;RM 300/pax</td></tr><tr><td class='it'>Extra day tour sahaja<br><span class='ssub'>(transport + guide + meals, tanpa hotel)</span></td><td>&mdash;</td><td class='add'>+RM 400/pax</td><td class='add'>+RM 400/pax</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Meals</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Tambah</th><th>Tolak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>&mdash;</td><td>&mdash;</td><td>Sudah termasuk dalam bilik hotel &mdash; tidak boleh tambah/tolak</td></tr><tr><td class='it'>Lunch</td><td class='add'>+RM 60/pax/meal</td><td>&minus;RM 30/pax/meal</td><td>Halal, gaya sharing</td></tr><tr><td class='it'>Dinner</td><td class='add'>+RM 60/pax/meal</td><td>&minus;RM 30/pax/meal</td><td>Halal, gaya sharing</td></tr><tr><td class='it'>Indian / Arabic meals</td><td class='add'>RM 80/pax/meal</td><td>&mdash;</td><td>Surcharge +RM 30/pax berbanding meal biasa. Terpakai untuk <b>3W &amp; 4W</b></td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Transport, Guide &amp; Bullet Train</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Extra hour driver &amp; guide</td><td class='add'>RM 160/jam</td><td>Asas 10 jam/hari. Kadar ini <b>meliputi driver &amp; guide</b>. Bayar TUNAI di sana</td></tr><tr><td class='it'>Upgrade bullet train &mdash; 1st class (2+2)</td><td class='add'>3W +RM100/pax/way<br>4W +RM120/pax/way</td><td>Rujuk tab <b>Transportation &amp; Guide</b> untuk gambar &amp; susunan seat</td></tr><tr><td class='it'>Upgrade bullet train &mdash; Business class (2+1)</td><td class='add'>+RM 300/pax/way</td><td>Hanya 1/56 seat &mdash; book seawal 1 minggu, tidak dijamin</td></tr><tr><td class='it'>Luggage van (untuk bullet train)</td><td class='add'>RM 650&ndash;750/one way</td><td>3W RM650 &middot; 4W RM750 (2&ndash;4 pax) / RM650 (5&ndash;6 pax)</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Itinerari &amp; Lain-lain</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Yi Ethnic Costume / hanfu rental</td><td>Bayar di sana</td><td>Maklum Tour Leader untuk assist &mdash; juga Free Gift promo (kod FKMGDL)</td></tr><tr><td class='it'>Pocket wifi</td><td>Ikut sewa</td><td>Ada VPN &mdash; akses WhatsApp/Google tanpa sekatan. 1 wifi = 3 telefon</td></tr><tr><td class='it'>Travel insurance</td><td>Ikut plan</td><td>Tidak termasuk pakej &mdash; digalakkan</td></tr><tr><td class='it'>Oxygen canister</td><td>~50 Yuan/tangki</td><td>Beli di Lijiang, TL assist. Rujuk tab <b>Shopping &amp; Tips</b></td></tr></tbody></table></div><p class='ssub'>Semua kadar di atas adalah rujukan dalaman dari Product Cheatsheet 2026 &ndash; Yunnan. Harga tertakluk pada perubahan &mdash; sahkan dengan operator sebelum keluarkan quotation.</p>",
+     "to": "<h2>Simple Customisation & Add-ons</h2><p class='ssub'>Kadar rasmi dari <b>Product Cheatsheet 2026 &ndash; Yunnan</b>. Ini private tour &mdash; hampir semua komponen boleh tambah (Tambah) atau buang (Tolak). Sahkan setiap perubahan dengan operator sebelum confirm kepada customer.</p><h3 style='margin:16px 0 6px'>Airport Transfer</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Kenderaan</th><th>Kapasiti</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>MPV</td><td>2&ndash;4 pax</td><td class='add'>RM 150/way</td><td class='add'>RM 150/way</td><td>&minus;RM 100/transport</td></tr><tr><td class='it'>Small Bus</td><td>5&ndash;6 pax</td><td class='add'>RM 250/way</td><td class='add'>RM 250/way</td><td>&minus;RM 150/transport</td></tr><tr><td class='it'>Big Bus</td><td>7&ndash;12 pax</td><td class='add'>RM 300/way</td><td class='add'>RM 350/way</td><td>&minus;RM 250/transport</td></tr><tr><td class='it'>Big Bus</td><td>12 pax ke atas</td><td>&mdash;</td><td class='add'>RM 650/way</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Accommodation</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>Hotel 4-Star &mdash; 1 malam</td><td class='add'>+RM 200/bilik/malam</td><td class='add'>+RM 250/bilik/malam</td><td>&minus;RM 100/bilik/malam</td></tr><tr><td class='it'>Single Supplement</td><td class='add'>+RM 600/pax</td><td class='add'>+RM 700/pax</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Extra Night + Extra Day Tour</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Pax</th><th>Tambah &mdash; 3W</th><th>Tambah &mdash; 4W</th><th>Tolak</th></tr></thead><tbody><tr><td class='it'>Extra 1 malam + 1 day tour</td><td>2&ndash;4 pax</td><td class='add'>+RM 650/pax</td><td class='add'>+RM 650/pax</td><td>&minus;RM 300/pax</td></tr><tr><td class='it'>Extra 1 malam + 1 day tour</td><td>5&ndash;6 pax</td><td class='add'>+RM 850/pax</td><td class='add'>+RM 750/pax</td><td>&minus;RM 300/pax</td></tr><tr><td class='it'>Extra day tour sahaja<br><span class='ssub'>(transport + guide + meals, tanpa hotel)</span></td><td>&mdash;</td><td class='add'>+RM 400/pax</td><td class='add'>+RM 400/pax</td><td>&mdash;</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Meals</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Tambah</th><th>Tolak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Breakfast</td><td>&mdash;</td><td>&mdash;</td><td>Sudah termasuk dalam bilik hotel &mdash; tidak boleh tambah/tolak</td></tr><tr><td class='it'>Lunch</td><td class='add'>+RM 60/pax/meal</td><td>&minus;RM 30/pax/meal</td><td>Halal, gaya sharing</td></tr><tr><td class='it'>Dinner</td><td class='add'>+RM 60/pax/meal</td><td>&minus;RM 30/pax/meal</td><td>Halal, gaya sharing</td></tr><tr><td class='it'>Indian / Arabic meals</td><td class='add'>RM 80/pax/meal</td><td>&mdash;</td><td>Surcharge +RM 30/pax berbanding meal biasa. Terpakai untuk <b>3W &amp; 4W</b></td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Transport, Guide &amp; Bullet Train</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Extra hour driver &amp; guide</td><td class='add'>RM 160/jam</td><td>Asas 10 jam/hari. Kadar ini <b>meliputi driver &amp; guide</b>. Bayar TUNAI di sana</td></tr><tr><td class='it'>Upgrade bullet train &mdash; 1st class (2+2)</td><td class='add'>3W +RM100/pax/way<br>4W +RM120/pax/way</td><td>Rujuk tab <b>Transportation &amp; Guide</b> untuk gambar &amp; susunan seat</td></tr><tr><td class='it'>Upgrade bullet train &mdash; Business class (2+1)</td><td class='add'>+RM 300/pax/way</td><td>Hanya 1/56 seat &mdash; book seawal 1 minggu, tidak dijamin</td></tr><tr><td class='it'>Luggage van (untuk bullet train)</td><td class='add'>RM 650&ndash;750/one way</td><td>3W RM650 &middot; 4W RM750 (2&ndash;4 pax) / RM650 (5&ndash;6 pax)</td></tr></tbody></table></div><h3 style='margin:18px 0 6px'>Itinerari &amp; Lain-lain</h3><div class='custblk'><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Yi Ethnic Costume / hanfu rental</td><td>Bayar di sana</td><td>Maklum Tour Leader untuk assist &mdash; juga Free Gift promo (kod FKMGDL)</td></tr><tr><td class='it'>Pocket wifi</td><td>Ikut sewa</td><td>Ada VPN &mdash; akses WhatsApp/Google tanpa sekatan. 1 wifi = 3 telefon</td></tr><tr><td class='it'>Travel insurance</td><td>Ikut plan</td><td>Tidak termasuk pakej &mdash; digalakkan</td></tr><tr><td class='it'>Oxygen canister</td><td>~50 Yuan/tangki</td><td>Beli di Lijiang, TL assist. Rujuk tab <b>Shopping &amp; Tips</b></td></tr></tbody></table></div><p class='ssub'>Semua kadar di atas adalah rujukan dalaman dari Product Cheatsheet 2026 &ndash; Yunnan. Harga tertakluk pada perubahan &mdash; sahkan dengan operator sebelum keluarkan quotation.</p>",
+     "label": "KB yunnan › content › blocks › custom"
+    },
+    {
+     "path": [
+      "kb",
+      "yunnan",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Yunnan — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Yunnan 3 Wilayah (6D5N, Kunming–Dali–Lijiang) & PT Yunnan 4 Wilayah (7D6N, tambah Shangri La). Kedua-dua Ground & Tipping sahaja — TIDAK termasuk tiket flight.*\n\n- Katalog semasa: PT YUNNAN 3 WILAYAH 6D5N 2026 v1 & PT YUNNAN 4 WILAYAH 7D6N 2026 v1 (last updated 29 Jul 2026).\n- Private transport & guide asas 10 jam/hari; extra hour dikenakan caj (bayar TUNAI).\n- Final itinerari & hotel disahkan sekurang-kurangnya 15 hari sebelum trip.\n- WAJIB book RETURN flight (pergi-balik). Flight balik dari Kunming ada dua slot: petang (~5:55 PM, hari terakhir tour) atau awal pagi (~2:30 AM, hari selepas tour tamat) — pastikan timing betul.\n- Customer yang book hotel sendiri (pakej tanpa hotel): hotel WAJIB dalam bandar/zon yang sama & berdekatan dengan hotel rasmi ARBA — elak operational hiccup.\n- Semak trip validity & sahkan dengan staff sebelum book connecting domestic flight.\n- Blackout: Chinese New Year (14–22 Feb 2026), Labor Day (1–5 Mei 2026).\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Ada berapa pakej Yunnan?**\nDua: PT Yunnan 3 Wilayah (6D5N — Kunming, Dali, Lijiang) dan PT Yunnan 4 Wilayah (7D6N — tambah Shangri La dengan Tiger Leaping Gorge & Dukezong Ancient Town).\n\n**Kenapa durasi katalog berubah dari 7D5N/8D6N ke 6D5N/7D6N?**\nKatalog baharu (v1, 29 Jul 2026) mengira hari berdasarkan hari tour sebenar di Yunnan. Bilangan malam, itinerari dan harga kekal SAMA (5 malam untuk 3W, 6 malam untuk 4W) — hanya hari ketibaan semula di KL tidak lagi dikira sebagai satu Day. Guna 6D5N & 7D6N dalam semua komunikasi baharu.\n\n**Apa beza 3 Wilayah dan 4 Wilayah?**\n4 Wilayah tambah satu wilayah (Shangri La) + 1 malam, dengan Tiger Leaping Gorge (incl escalator) & Dukezong Ancient Town. Bullet train balik dari Shangri La ke Kunming (~5–6 jam) berbanding Lijiang ke Kunming (~4–4.5 jam) untuk 3 Wilayah.\n\n**Pakej ni cover apa (highlight)?**\nJade Dragon Snow Mountain (cable car ~4,506m), Dali Santorini & Erhai Lake boat tour, Lijiang Ancient Town (UNESCO), Shilin Stone Forest (UNESCO), Blue Moon Valley, Lijiang Impression Show, Dongbaqu, Dry Sea, Black Dragon Pool, Kunming Waterfall Park, lawatan masjid (Shuncheng, Yongning, Lijiang) — dan untuk 4W, Tiger Leaping Gorge & Dukezong.\n\n**Apa USP ARBA berbanding pesaing?**\n2x bullet train (bukan coach), lebih lama di Dali Santorini & Erhai Lake boat tour, tipping included, TIADA shopping stops / tourist traps (cth cream centre, kilang), guide English speaking, makan fullboard halal.\n\n**Boleh customize itinerari?**\nBoleh — ini private tour. Sahkan sebarang perubahan dengan operator sebelum confirm ke customer.\n\n**Bullet train kelas apa termasuk dalam pakej? Boleh upgrade?**\nTermasuk pakej: **2nd class (Economy)**, susunan seat 3+2. Boleh upgrade — 1st class (2+2) +RM100/pax/way (3W) atau +RM120/pax/way (4W); Business class (2+1) +RM300/pax/way tetapi hanya 1/56 seat setiap coach, kena book seawal 1 minggu dan tidak dijamin. Rujuk tab Transportation & Guide untuk gambar setiap kelas.\n\n**Berapa lama perjalanan setiap hari?**\nAntara bandar guna bullet train (~2 jam Kunming–Dali; ~4–6 jam balik ke Kunming) & private transport (~2–3 jam). Private transport asas 10 jam/hari.\n\n**Flight petang, macam mana Day akhir?**\nGuest dengan flight petang (AK 102, ~5:55 PM) akan transfer ke airport selepas lunch pada hari city tour Kunming, dan trip tamat pada hari tersebut — Day 6 untuk 3W, Day 7 untuk 4W. Guest ini akan miss Yongning Mosque, Kunming Waterfall Park & dinner.\n\n**Bila trip sebenarnya tamat?**\n3 Wilayah: Day 6 (Kunming city tour + airport transfer). 4 Wilayah: Day 7. Flight awal pagi bermakna guest berlepas ~2:30 AM keesokan harinya.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nYa — makan fullboard halal disediakan sepanjang trip (kecuali sarapan hotel & selera sendiri). Yunnan ada komuniti Muslim Hui yang ramai, jadi restoran halal wujud di semua bandar dalam itinerari.\n\n**Makanan apa yang dihidang? (contoh menu sebenar)**\nHidangan Cina-Muslim gaya sharing di meja pusing: ayam panggang/bakar & ayam kukus, hirisan daging lembu, daging kisar cili hijau, kobis/sawi/kailan goreng, telur goreng tomato, jagung & edamame, kentang bakar berperisa, cendawan goreng, ikan bilis goreng, mantou (bun goreng), sup daging atau sup kobis, dan nasi putih kukus tanpa had. Sambal & dip (cili merah, cili hijau, bijan) diletak di sebelah — bukan dalam masakan. Rujuk tab ini untuk gambar hidangan sebenar trip ARBA.\n\n**Berapa hidangan setiap kali makan?**\nBiasanya 6–8 dishes + nasi putih + sup untuk satu meja (8–10 pax), gaya sharing. Untuk group kecil (2–5 pax) bilangan dishes dikurangkan mengikut saiz meja tetapi kuantiti kekal cukup.\n\n**Makanan Yunnan pedas ke?**\nMasakan Yunnan memang guna cili, tetapi tidak semua hidangan pedas. Sambal dan dip diletak di sebelah supaya guest boleh kawal sendiri. Boleh minta guide/TL maklum kepada restoran untuk kurangkan pedas.\n\n**Ada arak dalam makanan?**\nMakanan yang disediakan tour adalah halal. Untuk makan sendiri di luar, sahkan status halal & elak masakan yang guna arak/lemak babi.\n\n**Boleh bawa makanan sendiri dari Malaysia (RTE / kembara meals)?**\nBoleh — makanan segera seperti pek kembara, mi segera, biskut, roti & coklat dibenarkan. TETAPI makanan RTE yang ada self-heating / warmer TIDAK boleh dibawa (dikira dangerous goods) sama ada dalam hand carry atau checked luggage.\n\n**Makanan berasaskan daging boleh dibawa?**\nTIDAK digalakkan. Pihak berkuasa China ketat terhadap produk daging — serunding, rendang & sambal daging berisiko dirampas di kastam. Bawa makanan kering bukan daging sahaja. Buah & sayur segar juga tidak dibenarkan.\n\n**Perlu declare makanan di kastam?**\nTidak perlu declare untuk makanan kering bukan daging. Digalakkan lampirkan senarai ingredient & jenama dalam bentuk A4 supaya mudah diurus jika kastam bertanya.\n\n**Makanan bayi macam mana?**\nMakanan bayi boleh dibawa dalam cabin. Bawa dalam pek asal beserta label — jangan dibuka atau disalin ke bekas lain.\n\n**Air mineral disediakan?**\nYa — setiap peserta terima satu botol air mineral setiap hari sepanjang tour. Hotel juga sediakan air mineral botol dalam bilik.\n\n**Air panas untuk bancuh susu anak dalam flight?**\nBoleh minta terus dengan flight attendant di atas flight.\n\n**Macam mana nak solat? Ada masjid/surau?**\nItinerari termasuk lawatan masjid — Shuncheng Mosque & Yongning Mosque (Kunming), Lijiang Mosque. Di tempat tarikan yang tiada surau, solat Zohor/Asar biasanya dijamak on the road atau di hotel.\n\n**Perlu bawa telekung/sejadah sendiri?**\nYa — bawa sejadah kecil/travel & pakaian solat kerana anda mungkin perlu solat di tempat terbuka. Bawa juga botol spray untuk wudhu.\n\n**Waktu solat sama dengan Malaysia?**\nZon waktu sama (UTC+8), jadi hampir sama. Kerana lebih ke utara: musim sejuk Subuh lewat & Maghrib awal; musim panas Subuh awal & Maghrib lewat. Guna app seperti Muslim Pro untuk waktu tepat.\n\n### C. Visa & Passport\n\n**Perlu visa ke China?**\nTidak — rakyat Malaysia (passport biasa) boleh masuk China tanpa visa sehingga 30 hari setiap lawatan, di bawah pengecualian visa China–Malaysia yang dilanjutkan sehingga 31 Dis 2026.\n\n**Ada borang/QR wajib sebelum masuk?**\nYa — lengkapkan China Arrival Card (borang ketibaan) sebelum/semasa ketibaan. Sediakan juga bukti tiket balik & tempahan penginapan.\n\n**Arrival card — kanak-kanak kena isi juga?**\nYa. Kedua-dua dewasa dan kanak-kanak perlu isi. Untuk kanak-kanak, butiran boleh diisi di bahagian accompanying family members.\n\n**Salah isi arrival form, boleh edit?**\nTidak boleh diedit. Kalau ada ralat, apply semula borang baharu.\n\n**Inviter details — nombor telefon perlu letak 86?**\nTidak perlu letak kod 86. Isi nombor seperti biasa.\n\n**Perlu register fingerprint masa turun plane?**\nTidak perlu register di mesin self-declaration. Biasanya ada announcement selepas landing menyuruh register fingerprint sebelum immigration — boleh skip, jimat masa.\n\n**Flow turun kapal di Kunming macam mana?**\n1) Turun plane, skip mesin self-declaration fingerprint. 2) Immigration screening. 3) Isi arrival form (pastikan semua details lengkap). 4) Immigration. 5) Claim luggage — meeting point kita.\n\n**Passport kena sah berapa lama?**\nSekurang-kurangnya 6 bulan dari tarikh trip. Pastikan passport tidak rosak/koyak. Semak tarikh luput awal-awal.\n\n**Anak bawah 18 tahun perlu surat beranak?**\nKalau bersama parents, cukup passport sahaja. Boleh sediakan salinan surat beranak sebagai standby.\n\n**Bukan warganegara Malaysia macam mana?**\nSyarat visa mungkin berbeza mengikut kewarganegaraan. Minta customer semak dengan kedutaan China / consultant lebih awal.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej Ground & Tipping sahaja. Tiket flight, bagasi, in-flight meal & airport tax TIDAK termasuk.\n\n**Kenapa kena book RETURN flight, bukan one-way?**\nTiga sebab: (1) Immigration China minta bukti tiket balik semasa ketibaan. (2) Harga return jauh lebih murah dari dua one-way. (3) Slot flight balik dari Kunming terhad (petang ~5:55 PM atau awal pagi ~2:30 AM) — kalau book one-way dahulu, guest berisiko tiada seat balik pada tarikh yang padan dengan tamat tour. Sentiasa quote & book pergi-balik sekali.\n\n**Flight ke Kunming dari KL macam mana?**\nPenerbangan terus KUL ke Kunming (KMG) ~3 jam 45 minit. Pilihan utama: AirAsia AK 103 (9:40 PM, harian) & Batik Air OD 670 (9:50 PM, Isnin & Rabu–Ahad). Kedua-duanya tiba awal pagi hari berikutnya.\n\n**Flight balik dari Kunming ada pilihan apa?**\nTiga: AK 104 (2:30 AM, tiba KUL 6:25 AM, harian) · OD 671 (2:35 AM, tiba KUL 6:35 AM) · AK 102 (5:55 PM, tiba KUL 9:55 PM). Slot awal pagi = guest habiskan Day akhir sepenuhnya. Slot petang 5:55 PM = transfer ke airport selepas lunch, trip tamat lebih awal. Rujuk tab Flight & Airport untuk padanan penuh.\n\n**Sampai airport mana?**\nKunming Changshui International Airport (KMG).\n\n**Bagasi berapa kg? Boleh share dengan family?**\nAirAsia: 20kg/pax. Boleh kongsi allowance dengan ahli keluarga — contoh 3 orang = 60kg total. Setiap pax maksimum 2 luggage, dan tiada satu beg boleh melebihi 32kg.\n\n**Power bank & bateri — boleh check-in?**\nTIDAK. Power bank dan semua jenis bateri WAJIB dalam hand carry, tidak boleh dalam check-in luggage. Power bank tanpa logo CCC berisiko dirampas di China — bawa yang ada logo CCC.\n\n**Hand carry — apa tak boleh bawa?**\nCecair melebihi 100ml (kena check-in); cecair 100ml ke bawah perlu dibungkus dalam plastik yang diikat ketat. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) tidak boleh — kena check-in.\n\n**Beg susu anak dikira dalam hand carry?**\nYa. Infant bawah 2 tahun tiada baggage allowance; hanya stroller free of charge. Botol susu, pampers, swaddle, milk powder & tisu dikira dalam cabin allowance (7kg) penjaga/parents.\n\n**Stroller kena check-in?**\nTidak. Inform staf kaunter semasa check-in untuk dapatkan tag. Stroller tidak dikira hand luggage dan boleh dibawa sampai ke pintu kapal — assistant akan ambil di pintu pesawat.\n\n**Wrap bag perlu?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Boleh wrap sebelum briefing & check-in di KLIA2. Plastik yang sama boleh diguna semula untuk wrap balik.\n\n**Boleh pilih/booking seat dalam flight?**\nTidak — tiket group booking, seat ditetapkan random oleh airline. Airport Conductor & Tour Leader akan susun seating supaya ahli keluarga duduk berdekatan, dengan keutamaan kepada keluarga dengan anak kecil & warga emas.\n\n**Boleh preorder in-flight meal terus dari AirAsia?**\nTidak — kami tidak berikan nombor booking flight kepada peserta kerana tiket dibeli secara group booking. Guest boleh beli meal di atas flight; sediakan cash MYR.\n\n**Rokok boleh bawa?**\nBoleh, maksimum 1 karton (200 puntung rokok).\n\n**Heat pack — hand carry atau check-in?**\nDisposable heat pack disyorkan simpan dalam check-in luggage.\n\n**Kena sampai airport berapa awal?**\nBerada di boarding gate sekurang-kurangnya 1 jam 15 minit sebelum berlepas. Airport Conductor akan maklum masa & tempat berkumpul dalam WhatsApp group.\n\n**Ada connecting domestic flight?**\nSemak trip validity dengan staff sebelum book sebarang connecting domestic flight.\n\n### E. Hotel & Bilik\n\n**Berapa malam & di mana?**\n3W: 5 malam (Kunming, Dali, Lijiang x2, Kunming). 4W: 6 malam (tambah Shangri La 1 malam). Guest akan tukar hotel beberapa kali sebab trip merentas beberapa bandar.\n\n**Boleh upgrade hotel?**\nUntuk tier 4–5 pax, upgrade 4-star +RM240/pax. Sahkan pilihan lain dengan operator.\n\n**Dalam bilik hotel ada iron?**\nKebiasaannya ya — hotel di China sediakan iron & ironing board dalam bilik.\n\n**Ada laundry di hotel?**\nKebiasaannya hotel di China ada laundry room. Rujuk Tour Guide/Tour Leader semasa di hotel untuk tahu di tingkat mana.\n\n**Bila itinerari & hotel final?**\nDisahkan sekurang-kurangnya 15 hari sebelum trip.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik ke Yunnan?**\nSpring (Mac–Mei, 15–25°C) & Autumn (Sep–Nov, 10–25°C) paling selesa & kurang hujan. Summer hijau tapi ramai + kerap hujan. Winter sejuk (-4 hingga 15°C) — peluang nampak salji di JDSM/Shangri La.\n\n**Yunnan ada salji tak?**\nUmumnya tiada di bandar (Yunnan di selatan China). Masa winter boleh nampak salji di Jade Dragon Snow Mountain atau Shangri La.\n\n**Perlu kasut snow?**\nTidak wajib. Sport shoes atau kasut yang selesa sudah memadai. Kalau boleh dapat kasut water resistant / snow boots, lebih baik terutama musim winter di JDSM & Shangri La. Bawa stokin lebih — in case kasut atau stokin basah.\n\n**Thermal wear — pakai dari Malaysia atau salin di sana?**\nSebaiknya salin di sana. Pakai baju yang selesa untuk flight; risau panas & kurang selesa kalau pakai thermal wear dari Malaysia.\n\n**Di mana beli hot pack?**\nBoleh cari di Daiso atau Decathlon di Malaysia. Boleh juga beli di sana — minta tour guide atau Tour Leader assist.\n\n**Pakaian apa nak bawa?**\nWinter/Autumn: thermal wear, sweater, coat. Spring/Summer: pakaian ringan. Sentiasa bawa jaket untuk JDSM (puncak sejuk) + topi/cermin mata hitam untuk sunburn di puncak. Semak suhu terkini di accuweather.com.\n\n### G. Shopping & Duit\n\n**Guna duit apa?**\nRenminbi (RMB / Chinese Yuan / CNY). Denominasi biasa: 1, 5, 10, 20, 50, 100 Yuan.\n\n**Cara bayar di sana?**\nTunai diterima (kedai kecil/luar bandar). Kad kredit/debit di hotel & pusat besar (aktifkan untuk luar negara). E-wallet/QR sangat popular — Alipay, WeChat Pay, Touch'N Go. Pastikan e-wallet ada baki cukup.\n\n**Perlu setup account Alipay?**\nTidak perlu. Touch'N Go eWallet sudah mencukupi kerana ia guna sistem yang sama dengan Alipay di China. Ini pilihan yang kami syorkan.\n\n**Touch'N Go diterima meluas di sana?**\nYa — TNG eWallet guna sistem yang sama dengan Alipay. Walau begitu, sediakan juga cash untuk kedai-kedai kecil.\n\n**Boleh guna WeChat Pay, Wise card atau Maybank QR?**\nWeChat Pay boleh, tetapi proses installation agak rumit — TNG lebih mudah. Maybank QR boleh digunakan. Wise card boleh guna tetapi perlu link dengan Alipay. Kalau ada notifikasi akaun Alipay restricted, minta guest check dengan bank/Wise — kami tidak boleh selesaikan isu akaun pihak ketiga.\n\n**Berapa duit poket dicadangkan?**\nSekitar RM200–RM500 seorang. Tukar duit siap di Malaysia & isi e-wallet awal. Jangan bawa tunai banyak. Isytihar jika bawa >5,000 RMB / setara 5,000 USD.\n\n**Shopping stop bila & di mana?**\nSouvenir shopping di Nanping Pedestrian Street, Kunming — Day 5 untuk 3 Wilayah, Day 6 untuk 4 Wilayah. Ada juga peluang beli souvenir di Lijiang Ancient Town & Dali Ancient Town. TIADA shopping stop paksa / tourist trap dalam pakej ARBA.\n\n### H. Payment & Refund\n\n**Extra hour driver/guide bayar macam mana?**\nBayar TUNAI di sana. Private transport & guide asas 10 jam sehari. Extra hour driver & guide: RM160/jam (Product Cheatsheet 2026) — kadar ini meliputi kedua-duanya. Rujuk tab Simple Customisation untuk kadar penuh.\n\n### I. Add-ons & Customization\n\n**Ada spot tambahan / optional?**\nExtra hour driver & guide RM160/jam (bayar TUNAI di sana). Extra 1 malam + 1 day tour, extra day tour sahaja (+RM400/pax), Indian/Arabic meals (RM80/pax/meal) dan upgrade bullet train — rujuk tab Simple Customisation untuk kadar penuh.\n\n**Boleh tambah wifi / insurans?**\nBoleh — pocket wifi (ada VPN, akses WhatsApp/Google tanpa sekatan) & travel insurance boleh ditambah (tidak termasuk pakej).\n\n**Yi Ethnic Costume / hanfu — bayar di sana boleh?**\nBoleh. Add-on Yi Ethnic Costume dan sewa hanfu boleh dibayar terus di sana — guest cuma perlu maklum kepada Tour Leader untuk assist proses sewa.\n\n### J. Kesihatan, Keselamatan & Emergency\n\n**Kenapa Yunnan dianggap kawasan high altitude?**\nKuala Lumpur hanya 139m atas paras laut. Semua bandar dalam itinerari Yunnan jauh lebih tinggi: Kunming 1,895m · Tiger Leaping Gorge 1,800m · Dali 2,090m · Lijiang 2,410m · Shangri La 3,300m · puncak Jade Dragon Snow Mountain 4,506m — lebih tinggi dari Gunung Kinabalu (4,095m). Pada 4,500m, oksigen yang ada untuk badan kira-kira 40% lebih rendah berbanding paras laut, jadi guest boleh alami Acute Mountain Sickness (AMS). Rujuk tab Shopping & Tips untuk carta perbandingan ketinggian.\n\n**Apa tanda AMS & apa perlu buat?**\nTanda biasa: sakit kepala, pening, loya, sesak nafas, letih luar biasa, susah tidur. Kalau berlaku — berhenti bergerak, rehat, minum air, guna oxygen canister, dan maklum kepada guide/Tour Leader SEGERA. Jangan paksa teruskan naik. Rawatan paling berkesan ialah turun ke altitud lebih rendah.\n\n**Siapa paling berisiko?**\nWarga emas, kanak-kanak, guest yang ada masalah jantung/paru-paru, anemia, atau tidak pernah ke kawasan tinggi. Kami syorkan guest berisiko dapatkan clearance doktor sebelum book.\n\n**Perlu bawa ubat untuk high altitude? Kena preskripsi?**\nBoleh bawa kalau perlu. Ubat yang paling biasa disebut ialah Diamox (Acetazolamide 250mg) untuk cegah/kurangkan AMS — di Malaysia ia ubat berpreskripsi, jadi guest WAJIB rujuk doktor atau ahli farmasi dahulu untuk dos & kesesuaian (ada kontraindikasi seperti alahan sulfa, masalah buah pinggang, ibu mengandung/menyusu). ARBA tidak preskripsi atau bekalkan ubat ini. Untuk tujuan kastam, ubat OTC seperti panadol & ubat selsema tidak perlu preskripsi.\n\n**Oxygen canister — beli di Malaysia atau di sana?**\nBeli di sana. Harga sekitar 50 Yuan/tangki, dijual di Lijiang. Sebelum naik JDSM, bas akan singgah di satu tempat pembelian oxygen tank dan Tour Leader akan assist. Kami syorkan beli terutama untuk warga emas & kanak-kanak.\n\n**Berapa tangki oksigen diperlukan seorang?**\nCadangan: 1 tangki di JDSM + 1 tangki di Shangri La (untuk pakej 4 Wilayah). Ini optional sahaja — guest boleh rujuk Tour Leader untuk maklumat lanjut.\n\n**Tips elak AMS sebelum naik JDSM?**\nMinum air banyak, tidur cukup malam sebelum, elak makan terlalu berat, elak merokok, bergerak perlahan-lahan di puncak (jangan berlari atau naik tangga cepat), dan pakai jaket tebal kerana sejuk memburukkan gejala.\n\n**Ubat preskripsi (darah tinggi, kencing manis) macam mana?**\nBawa bersama surat doktor sebagai bukti guest memang perlu ambil ubat tersebut. Surat boleh didapatkan dari mana-mana klinik jika yang asal hilang.\n\n**Portable nebuliser boleh bawa?**\nBoleh dibawa on board. Kalau ada surat doktor, bawa sekali.\n\n**Cable car boleh tutup?**\nYa — cable car JDSM mungkin ditutup jika angin kencang atau penyelenggaraan. Alternatif: lawat kawasan kaki gunung seperti Blue Moon Valley & Dry Sea.\n\n**Keselamatan barang?**\nChina ramai pelancong & kawasan sesak — jaga barang peribadi, berhati-hati saku/beg di tempat awam & pintu masuk.\n\n### K. Praktikal (SIM, Socket, Toilet, Internet)\n\n**Internet di China?**\nFacebook, Instagram, TikTok, Google (Gmail/YouTube) & WhatsApp disekat. Guna pocket wifi (ada VPN) atau roaming Malaysia (SIM Malaysia yang aktif). JANGAN beli SIM lokal China. Muat turun Google Translate/WeChat Translator awal.\n\n**eSIM ok tak?**\nKurang disarankan — banyak apps disekat di China, jadi ada risiko app tertentu tidak boleh digunakan dengan eSIM tempatan. Kami syorkan roaming Malaysia atau pocket wifi.\n\n**Roaming — perlu VPN? Bila turn on?**\nCheck dengan telco provider sama ada pakej roaming mereka termasuk VPN. Turn on roaming SELEPAS sampai di China, bukan sebelum berlepas.\n\n**Pocket wifi — bila dapat & boleh share berapa telefon?**\nSatu pocket wifi boleh dikongsi untuk 3 telefon. Pocket wifi diberikan di airport pada hari berlepas — wakil kami akan pickup & distribute semasa assembly & briefing.\n\n**WhatsApp / TikTok boleh guna?**\nDisekat kalau guna line tempatan China. Boleh guna seperti biasa jika sambung melalui pocket wifi (roamingman) atau roaming Malaysia — off mobile data telefon dan connect ke pocket wifi.\n\n**Plug socket jenis apa?**\nBerbeza dari Malaysia — bawa travel universal adapter. Digalakkan bawa extension plug. Simpan power bank/charger/adapter dalam hand carry.\n\n**Toilet ada paip/hose?**\nKebanyakan tandas TIADA paip/bidet — bawa botol spray & tisu untuk wudhu & kegunaan tandas.\n\n**Language barrier?**\nBahasa utama Mandarin & dialek tempatan; ramai penduduk tidak fasih English. Guna app terjemahan.\n\n### L. Packing / Barang Bawa\n\n**Barang basic untuk trip Yunnan? (checklist)**\nPassport, sweater/light jacket/thermal (Spring/Autumn), winter coat/thermal (Winter), telekung & sejadah travel, botol spray kosong (wudhu), tisu/wet wipes, stokin 2+ pasang (bawa lebih), kasut selesa/sneakers atau water resistant boots, peralatan mandian & solek, ubat peribadi + surat doktor untuk ubat preskripsi, universal adapter plug, payung kecil, tuala travel, baju hujan/poncho, power bank (hand carry, logo CCC), hot pack, duit poket (RM200–RM500), snek kering bukan daging.\n\n**Nota pakaian penting?**\nPakai kasut/sneakers selesa (banyak berjalan) — elak kasut tumit tinggi. Bawa payung/baju hujan terutama musim luruh. Untuk JDSM & Shangri La, jaket tebal wajib walaupun musim panas.\n\n**Apa yang TIDAK boleh dibawa?**\nPower bank/bateri dalam check-in luggage · RTE self-heating · produk daging (serunding, rendang, sambal daging) · buah & sayur segar · barang tajam dalam hand carry · cecair melebihi 100ml dalam hand carry · lebih 1 karton rokok.",
+     "to": "# PT Yunnan — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Dua varian: PT Yunnan 3 Wilayah (6D5N, Kunming–Dali–Lijiang) & PT Yunnan 4 Wilayah (7D6N, tambah Shangri La). Kedua-dua Ground & Tipping sahaja — TIDAK termasuk tiket flight.*\n\n- Katalog semasa: PT YUNNAN 3 WILAYAH 6D5N 2026 v1 & PT YUNNAN 4 WILAYAH 7D6N 2026 v1 (last updated 29 Jul 2026).\n- Private transport & guide asas 10 jam/hari; extra hour dikenakan caj (bayar TUNAI).\n- Final itinerari & hotel disahkan sekurang-kurangnya 15 hari sebelum trip.\n- WAJIB book RETURN flight (pergi-balik). Flight balik dari Kunming ada dua slot: petang (~5:55 PM, hari terakhir tour) atau awal pagi (~2:30 AM, hari selepas tour tamat) — pastikan timing betul.\n- Customer yang book hotel sendiri (pakej tanpa hotel): hotel WAJIB dalam bandar/zon yang sama & berdekatan dengan hotel rasmi ARBA — elak operational hiccup.\n- Semak trip validity & sahkan dengan staff sebelum book connecting domestic flight.\n- Blackout: Chinese New Year (14–22 Feb 2026), Labor Day (1–5 Mei 2026).\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Ada berapa pakej Yunnan?**\nDua: PT Yunnan 3 Wilayah (6D5N — Kunming, Dali, Lijiang) dan PT Yunnan 4 Wilayah (7D6N — tambah Shangri La dengan Tiger Leaping Gorge & Dukezong Ancient Town).\n\n**Kenapa durasi katalog berubah dari 7D5N/8D6N ke 6D5N/7D6N?**\nKatalog baharu (v1, 29 Jul 2026) mengira hari berdasarkan hari tour sebenar di Yunnan. Bilangan malam, itinerari dan harga kekal SAMA (5 malam untuk 3W, 6 malam untuk 4W) — hanya hari ketibaan semula di KL tidak lagi dikira sebagai satu Day. Guna 6D5N & 7D6N dalam semua komunikasi baharu.\n\n**Apa beza 3 Wilayah dan 4 Wilayah?**\n4 Wilayah tambah satu wilayah (Shangri La) + 1 malam, dengan Tiger Leaping Gorge (incl escalator) & Dukezong Ancient Town. Bullet train balik dari Shangri La ke Kunming (~5–6 jam) berbanding Lijiang ke Kunming (~4–4.5 jam) untuk 3 Wilayah.\n\n**Pakej ni cover apa (highlight)?**\nJade Dragon Snow Mountain (cable car ~4,506m), Dali Santorini & Erhai Lake boat tour, Lijiang Ancient Town (UNESCO), Shilin Stone Forest (UNESCO), Blue Moon Valley, Lijiang Impression Show, Dongbaqu, Dry Sea, Black Dragon Pool, Kunming Waterfall Park, lawatan masjid (Shuncheng, Yongning, Lijiang) — dan untuk 4W, Tiger Leaping Gorge & Dukezong.\n\n**Apa USP ARBA berbanding pesaing?**\n2x bullet train (bukan coach), lebih lama di Dali Santorini & Erhai Lake boat tour, tipping included, TIADA shopping stops / tourist traps (cth cream centre, kilang), guide English speaking, makan fullboard halal.\n\n**Boleh customize itinerari?**\nBoleh — ini private tour. Sahkan sebarang perubahan dengan operator sebelum confirm ke customer.\n\n**Bullet train kelas apa termasuk dalam pakej? Boleh upgrade?**\nTermasuk pakej: **2nd class (Economy)**, susunan seat 3+2. Boleh upgrade — 1st class (2+2) +RM100/pax/way (3W) atau +RM120/pax/way (4W); Business class (2+1) +RM300/pax/way tetapi hanya 1/56 seat setiap coach, kena book seawal 1 minggu dan tidak dijamin. Rujuk tab Transportation & Guide untuk gambar setiap kelas.\n\n**Berapa lama perjalanan setiap hari?**\nAntara bandar guna bullet train (~2 jam Kunming–Dali; ~4–6 jam balik ke Kunming) & private transport (~2–3 jam). Private transport asas 10 jam/hari.\n\n**Flight petang, macam mana Day akhir?**\nGuest dengan flight petang (AK 102, ~5:55 PM) akan transfer ke airport selepas lunch pada hari city tour Kunming, dan trip tamat pada hari tersebut — Day 6 untuk 3W, Day 7 untuk 4W. Guest ini akan miss Yongning Mosque, Kunming Waterfall Park & dinner.\n\n**Bila trip sebenarnya tamat?**\n3 Wilayah: Day 6 (Kunming city tour + airport transfer). 4 Wilayah: Day 7. Flight awal pagi bermakna guest berlepas ~2:30 AM keesokan harinya.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nYa — makan fullboard halal disediakan sepanjang trip (kecuali sarapan hotel & selera sendiri). Yunnan ada komuniti Muslim Hui yang ramai, jadi restoran halal wujud di semua bandar dalam itinerari.\n\n**Makanan apa yang dihidang? (contoh menu sebenar)**\nHidangan Cina-Muslim gaya sharing di meja pusing: ayam panggang/bakar & ayam kukus, hirisan daging lembu, daging kisar cili hijau, kobis/sawi/kailan goreng, telur goreng tomato, jagung & edamame, kentang bakar berperisa, cendawan goreng, ikan bilis goreng, mantou (bun goreng), sup daging atau sup kobis, dan nasi putih kukus tanpa had. Sambal & dip (cili merah, cili hijau, bijan) diletak di sebelah — bukan dalam masakan. Rujuk tab ini untuk gambar hidangan sebenar trip ARBA.\n\n**Berapa hidangan setiap kali makan?**\nBiasanya 6–8 dishes + nasi putih + sup untuk satu meja (8–10 pax), gaya sharing. Untuk group kecil (2–5 pax) bilangan dishes dikurangkan mengikut saiz meja tetapi kuantiti kekal cukup.\n\n**Makanan Yunnan pedas ke?**\nMasakan Yunnan memang guna cili, tetapi tidak semua hidangan pedas. Sambal dan dip diletak di sebelah supaya guest boleh kawal sendiri. Boleh minta guide/TL maklum kepada restoran untuk kurangkan pedas.\n\n**Ada arak dalam makanan?**\nMakanan yang disediakan tour adalah halal. Untuk makan sendiri di luar, sahkan status halal & elak masakan yang guna arak/lemak babi.\n\n**Boleh bawa makanan sendiri dari Malaysia (RTE / kembara meals)?**\nBoleh — makanan segera seperti pek kembara, mi segera, biskut, roti & coklat dibenarkan. TETAPI makanan RTE yang ada self-heating / warmer TIDAK boleh dibawa (dikira dangerous goods) sama ada dalam hand carry atau checked luggage.\n\n**Makanan berasaskan daging boleh dibawa?**\nTIDAK digalakkan. Pihak berkuasa China ketat terhadap produk daging — serunding, rendang & sambal daging berisiko dirampas di kastam. Bawa makanan kering bukan daging sahaja. Buah & sayur segar juga tidak dibenarkan.\n\n**Perlu declare makanan di kastam?**\nTidak perlu declare untuk makanan kering bukan daging. Digalakkan lampirkan senarai ingredient & jenama dalam bentuk A4 supaya mudah diurus jika kastam bertanya.\n\n**Makanan bayi macam mana?**\nMakanan bayi boleh dibawa dalam cabin. Bawa dalam pek asal beserta label — jangan dibuka atau disalin ke bekas lain.\n\n**Air mineral disediakan?**\nYa — setiap peserta terima satu botol air mineral setiap hari sepanjang tour. Hotel juga sediakan air mineral botol dalam bilik.\n\n**Air panas untuk bancuh susu anak dalam flight?**\nBoleh minta terus dengan flight attendant di atas flight.\n\n**Macam mana nak solat? Ada masjid/surau?**\nItinerari termasuk lawatan masjid — Shuncheng Mosque & Yongning Mosque (Kunming), Lijiang Mosque. Di tempat tarikan yang tiada surau, solat Zohor/Asar biasanya dijamak on the road atau di hotel.\n\n**Perlu bawa telekung/sejadah sendiri?**\nYa — bawa sejadah kecil/travel & pakaian solat kerana anda mungkin perlu solat di tempat terbuka. Bawa juga botol spray untuk wudhu.\n\n**Waktu solat sama dengan Malaysia?**\nZon waktu sama (UTC+8), jadi hampir sama. Kerana lebih ke utara: musim sejuk Subuh lewat & Maghrib awal; musim panas Subuh awal & Maghrib lewat. Guna app seperti Muslim Pro untuk waktu tepat.\n\n### C. Visa & Passport\n\n**Perlu visa ke China?**\nTidak — rakyat Malaysia (passport biasa) boleh masuk China tanpa visa sehingga 30 hari setiap lawatan, di bawah pengecualian visa China–Malaysia yang dilanjutkan sehingga 31 Dis 2026.\n\n**Ada borang/QR wajib sebelum masuk?**\nYa — lengkapkan China Arrival Card (borang ketibaan) sebelum/semasa ketibaan. Sediakan juga bukti tiket balik & tempahan penginapan.\n\n**Arrival card — kanak-kanak kena isi juga?**\nYa. Kedua-dua dewasa dan kanak-kanak perlu isi. Untuk kanak-kanak, butiran boleh diisi di bahagian accompanying family members.\n\n**Salah isi arrival form, boleh edit?**\nTidak boleh diedit. Kalau ada ralat, apply semula borang baharu.\n\n**Inviter details — nombor telefon perlu letak 86?**\nTidak perlu letak kod 86. Isi nombor seperti biasa.\n\n**Perlu register fingerprint masa turun plane?**\nTidak perlu register di mesin self-declaration. Biasanya ada announcement selepas landing menyuruh register fingerprint sebelum immigration — boleh skip, jimat masa.\n\n**Flow turun kapal di Kunming macam mana?**\n1) Turun plane, skip mesin self-declaration fingerprint. 2) Immigration screening. 3) Isi arrival form (pastikan semua details lengkap). 4) Immigration. 5) Claim luggage — meeting point kita.\n\n**Passport kena sah berapa lama?**\nSekurang-kurangnya 6 bulan dari tarikh trip. Pastikan passport tidak rosak/koyak. Semak tarikh luput awal-awal.\n\n**Anak bawah 18 tahun perlu surat beranak?**\nKalau bersama parents, cukup passport sahaja. Boleh sediakan salinan surat beranak sebagai standby.\n\n**Bukan warganegara Malaysia macam mana?**\nSyarat visa mungkin berbeza mengikut kewarganegaraan. Minta customer semak dengan kedutaan China / consultant lebih awal.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej Ground & Tipping sahaja. Tiket flight, bagasi, in-flight meal & airport tax TIDAK termasuk.\n\n**Kenapa kena book RETURN flight, bukan one-way?**\nTiga sebab: (1) Immigration China minta bukti tiket balik semasa ketibaan. (2) Harga return jauh lebih murah dari dua one-way. (3) Slot flight balik dari Kunming terhad (petang ~5:55 PM atau awal pagi ~2:30 AM) — kalau book one-way dahulu, guest berisiko tiada seat balik pada tarikh yang padan dengan tamat tour. Sentiasa quote & book pergi-balik sekali.\n\n**Flight ke Kunming dari KL macam mana?**\nPenerbangan terus KUL ke Kunming (KMG) ~3 jam 45 minit. Pilihan utama: AirAsia AK 103 (9:40 PM, harian) & Batik Air OD 670 (9:50 PM, Isnin & Rabu–Ahad). Kedua-duanya tiba awal pagi hari berikutnya.\n\n**Flight balik dari Kunming ada pilihan apa?**\nTiga: AK 104 (2:30 AM, tiba KUL 6:25 AM, harian) · OD 671 (2:35 AM, tiba KUL 6:35 AM) · AK 102 (5:55 PM, tiba KUL 9:55 PM). Slot awal pagi = guest habiskan Day akhir sepenuhnya. Slot petang 5:55 PM = transfer ke airport selepas lunch, trip tamat lebih awal. Rujuk tab Flight & Airport untuk padanan penuh.\n\n**Sampai airport mana?**\nKunming Changshui International Airport (KMG).\n\n**Bagasi berapa kg? Boleh share dengan family?**\nAirAsia: 20kg/pax. Boleh kongsi allowance dengan ahli keluarga — contoh 3 orang = 60kg total. Setiap pax maksimum 2 luggage, dan tiada satu beg boleh melebihi 32kg.\n\n**Power bank & bateri — boleh check-in?**\nTIDAK. Power bank dan semua jenis bateri WAJIB dalam hand carry, tidak boleh dalam check-in luggage. Power bank tanpa logo CCC berisiko dirampas di China — bawa yang ada logo CCC.\n\n**Hand carry — apa tak boleh bawa?**\nCecair melebihi 100ml (kena check-in); cecair 100ml ke bawah perlu dibungkus dalam plastik yang diikat ketat. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) tidak boleh — kena check-in.\n\n**Beg susu anak dikira dalam hand carry?**\nYa. Infant bawah 2 tahun tiada baggage allowance; hanya stroller free of charge. Botol susu, pampers, swaddle, milk powder & tisu dikira dalam cabin allowance (7kg) penjaga/parents.\n\n**Stroller kena check-in?**\nTidak. Inform staf kaunter semasa check-in untuk dapatkan tag. Stroller tidak dikira hand luggage dan boleh dibawa sampai ke pintu kapal — assistant akan ambil di pintu pesawat.\n\n**Wrap bag perlu?**\nTidak wajib, tetapi disyorkan untuk luggage keras. Boleh wrap sebelum briefing & check-in di KLIA2. Plastik yang sama boleh diguna semula untuk wrap balik.\n\n**Boleh pilih/booking seat dalam flight?**\nTidak — tiket group booking, seat ditetapkan random oleh airline. Airport Conductor & Tour Leader akan susun seating supaya ahli keluarga duduk berdekatan, dengan keutamaan kepada keluarga dengan anak kecil & warga emas.\n\n**Boleh preorder in-flight meal terus dari AirAsia?**\nTidak — kami tidak berikan nombor booking flight kepada peserta kerana tiket dibeli secara group booking. Guest boleh beli meal di atas flight; sediakan cash MYR.\n\n**Rokok boleh bawa?**\nBoleh, maksimum 1 karton (200 puntung rokok).\n\n**Heat pack — hand carry atau check-in?**\nDisposable heat pack disyorkan simpan dalam check-in luggage.\n\n**Kena sampai airport berapa awal?**\nBerada di boarding gate sekurang-kurangnya 1 jam 15 minit sebelum berlepas. Airport Conductor akan maklum masa & tempat berkumpul dalam WhatsApp group.\n\n**Ada connecting domestic flight?**\nSemak trip validity dengan staff sebelum book sebarang connecting domestic flight.\n\n### E. Hotel & Bilik\n\n**Berapa malam & di mana?**\n3W: 5 malam (Kunming, Dali, Lijiang x2, Kunming). 4W: 6 malam (tambah Shangri La 1 malam). Guest akan tukar hotel beberapa kali sebab trip merentas beberapa bandar.\n\n**Boleh upgrade hotel?**\nSemua pakej sudah guna hotel 4-star tempatan. Permintaan hotel lain — sahkan dengan operator sebelum quote.\n\n**Dalam bilik hotel ada iron?**\nKebiasaannya ya — hotel di China sediakan iron & ironing board dalam bilik.\n\n**Ada laundry di hotel?**\nKebiasaannya hotel di China ada laundry room. Rujuk Tour Guide/Tour Leader semasa di hotel untuk tahu di tingkat mana.\n\n**Bila itinerari & hotel final?**\nDisahkan sekurang-kurangnya 15 hari sebelum trip.\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik ke Yunnan?**\nSpring (Mac–Mei, 15–25°C) & Autumn (Sep–Nov, 10–25°C) paling selesa & kurang hujan. Summer hijau tapi ramai + kerap hujan. Winter sejuk (-4 hingga 15°C) — peluang nampak salji di JDSM/Shangri La.\n\n**Yunnan ada salji tak?**\nUmumnya tiada di bandar (Yunnan di selatan China). Masa winter boleh nampak salji di Jade Dragon Snow Mountain atau Shangri La.\n\n**Perlu kasut snow?**\nTidak wajib. Sport shoes atau kasut yang selesa sudah memadai. Kalau boleh dapat kasut water resistant / snow boots, lebih baik terutama musim winter di JDSM & Shangri La. Bawa stokin lebih — in case kasut atau stokin basah.\n\n**Thermal wear — pakai dari Malaysia atau salin di sana?**\nSebaiknya salin di sana. Pakai baju yang selesa untuk flight; risau panas & kurang selesa kalau pakai thermal wear dari Malaysia.\n\n**Di mana beli hot pack?**\nBoleh cari di Daiso atau Decathlon di Malaysia. Boleh juga beli di sana — minta tour guide atau Tour Leader assist.\n\n**Pakaian apa nak bawa?**\nWinter/Autumn: thermal wear, sweater, coat. Spring/Summer: pakaian ringan. Sentiasa bawa jaket untuk JDSM (puncak sejuk) + topi/cermin mata hitam untuk sunburn di puncak. Semak suhu terkini di accuweather.com.\n\n### G. Shopping & Duit\n\n**Guna duit apa?**\nRenminbi (RMB / Chinese Yuan / CNY). Denominasi biasa: 1, 5, 10, 20, 50, 100 Yuan.\n\n**Cara bayar di sana?**\nTunai diterima (kedai kecil/luar bandar). Kad kredit/debit di hotel & pusat besar (aktifkan untuk luar negara). E-wallet/QR sangat popular — Alipay, WeChat Pay, Touch'N Go. Pastikan e-wallet ada baki cukup.\n\n**Perlu setup account Alipay?**\nTidak perlu. Touch'N Go eWallet sudah mencukupi kerana ia guna sistem yang sama dengan Alipay di China. Ini pilihan yang kami syorkan.\n\n**Touch'N Go diterima meluas di sana?**\nYa — TNG eWallet guna sistem yang sama dengan Alipay. Walau begitu, sediakan juga cash untuk kedai-kedai kecil.\n\n**Boleh guna WeChat Pay, Wise card atau Maybank QR?**\nWeChat Pay boleh, tetapi proses installation agak rumit — TNG lebih mudah. Maybank QR boleh digunakan. Wise card boleh guna tetapi perlu link dengan Alipay. Kalau ada notifikasi akaun Alipay restricted, minta guest check dengan bank/Wise — kami tidak boleh selesaikan isu akaun pihak ketiga.\n\n**Berapa duit poket dicadangkan?**\nSekitar RM200–RM500 seorang. Tukar duit siap di Malaysia & isi e-wallet awal. Jangan bawa tunai banyak. Isytihar jika bawa >5,000 RMB / setara 5,000 USD.\n\n**Shopping stop bila & di mana?**\nSouvenir shopping di Nanping Pedestrian Street, Kunming — Day 5 untuk 3 Wilayah, Day 6 untuk 4 Wilayah. Ada juga peluang beli souvenir di Lijiang Ancient Town & Dali Ancient Town. TIADA shopping stop paksa / tourist trap dalam pakej ARBA.\n\n### H. Payment & Refund\n\n**Extra hour driver/guide bayar macam mana?**\nBayar TUNAI di sana. Private transport & guide asas 10 jam sehari. Extra hour driver & guide: RM160/jam (Product Cheatsheet 2026) — kadar ini meliputi kedua-duanya. Rujuk tab Simple Customisation untuk kadar penuh.\n\n### I. Add-ons & Customization\n\n**Ada spot tambahan / optional?**\nExtra hour driver & guide RM160/jam (bayar TUNAI di sana). Extra 1 malam + 1 day tour, extra day tour sahaja (+RM400/pax), Indian/Arabic meals (RM80/pax/meal) dan upgrade bullet train — rujuk tab Simple Customisation untuk kadar penuh.\n\n**Boleh tambah wifi / insurans?**\nBoleh — pocket wifi (ada VPN, akses WhatsApp/Google tanpa sekatan) & travel insurance boleh ditambah (tidak termasuk pakej).\n\n**Yi Ethnic Costume / hanfu — bayar di sana boleh?**\nBoleh. Add-on Yi Ethnic Costume dan sewa hanfu boleh dibayar terus di sana — guest cuma perlu maklum kepada Tour Leader untuk assist proses sewa.\n\n### J. Kesihatan, Keselamatan & Emergency\n\n**Kenapa Yunnan dianggap kawasan high altitude?**\nKuala Lumpur hanya 139m atas paras laut. Semua bandar dalam itinerari Yunnan jauh lebih tinggi: Kunming 1,895m · Tiger Leaping Gorge 1,800m · Dali 2,090m · Lijiang 2,410m · Shangri La 3,300m · puncak Jade Dragon Snow Mountain 4,506m — lebih tinggi dari Gunung Kinabalu (4,095m). Pada 4,500m, oksigen yang ada untuk badan kira-kira 40% lebih rendah berbanding paras laut, jadi guest boleh alami Acute Mountain Sickness (AMS). Rujuk tab Shopping & Tips untuk carta perbandingan ketinggian.\n\n**Apa tanda AMS & apa perlu buat?**\nTanda biasa: sakit kepala, pening, loya, sesak nafas, letih luar biasa, susah tidur. Kalau berlaku — berhenti bergerak, rehat, minum air, guna oxygen canister, dan maklum kepada guide/Tour Leader SEGERA. Jangan paksa teruskan naik. Rawatan paling berkesan ialah turun ke altitud lebih rendah.\n\n**Siapa paling berisiko?**\nWarga emas, kanak-kanak, guest yang ada masalah jantung/paru-paru, anemia, atau tidak pernah ke kawasan tinggi. Kami syorkan guest berisiko dapatkan clearance doktor sebelum book.\n\n**Perlu bawa ubat untuk high altitude? Kena preskripsi?**\nBoleh bawa kalau perlu. Ubat yang paling biasa disebut ialah Diamox (Acetazolamide 250mg) untuk cegah/kurangkan AMS — di Malaysia ia ubat berpreskripsi, jadi guest WAJIB rujuk doktor atau ahli farmasi dahulu untuk dos & kesesuaian (ada kontraindikasi seperti alahan sulfa, masalah buah pinggang, ibu mengandung/menyusu). ARBA tidak preskripsi atau bekalkan ubat ini. Untuk tujuan kastam, ubat OTC seperti panadol & ubat selsema tidak perlu preskripsi.\n\n**Oxygen canister — beli di Malaysia atau di sana?**\nBeli di sana. Harga sekitar 50 Yuan/tangki, dijual di Lijiang. Sebelum naik JDSM, bas akan singgah di satu tempat pembelian oxygen tank dan Tour Leader akan assist. Kami syorkan beli terutama untuk warga emas & kanak-kanak.\n\n**Berapa tangki oksigen diperlukan seorang?**\nCadangan: 1 tangki di JDSM + 1 tangki di Shangri La (untuk pakej 4 Wilayah). Ini optional sahaja — guest boleh rujuk Tour Leader untuk maklumat lanjut.\n\n**Tips elak AMS sebelum naik JDSM?**\nMinum air banyak, tidur cukup malam sebelum, elak makan terlalu berat, elak merokok, bergerak perlahan-lahan di puncak (jangan berlari atau naik tangga cepat), dan pakai jaket tebal kerana sejuk memburukkan gejala.\n\n**Ubat preskripsi (darah tinggi, kencing manis) macam mana?**\nBawa bersama surat doktor sebagai bukti guest memang perlu ambil ubat tersebut. Surat boleh didapatkan dari mana-mana klinik jika yang asal hilang.\n\n**Portable nebuliser boleh bawa?**\nBoleh dibawa on board. Kalau ada surat doktor, bawa sekali.\n\n**Cable car boleh tutup?**\nYa — cable car JDSM mungkin ditutup jika angin kencang atau penyelenggaraan. Alternatif: lawat kawasan kaki gunung seperti Blue Moon Valley & Dry Sea.\n\n**Keselamatan barang?**\nChina ramai pelancong & kawasan sesak — jaga barang peribadi, berhati-hati saku/beg di tempat awam & pintu masuk.\n\n### K. Praktikal (SIM, Socket, Toilet, Internet)\n\n**Internet di China?**\nFacebook, Instagram, TikTok, Google (Gmail/YouTube) & WhatsApp disekat. Guna pocket wifi (ada VPN) atau roaming Malaysia (SIM Malaysia yang aktif). JANGAN beli SIM lokal China. Muat turun Google Translate/WeChat Translator awal.\n\n**eSIM ok tak?**\nKurang disarankan — banyak apps disekat di China, jadi ada risiko app tertentu tidak boleh digunakan dengan eSIM tempatan. Kami syorkan roaming Malaysia atau pocket wifi.\n\n**Roaming — perlu VPN? Bila turn on?**\nCheck dengan telco provider sama ada pakej roaming mereka termasuk VPN. Turn on roaming SELEPAS sampai di China, bukan sebelum berlepas.\n\n**Pocket wifi — bila dapat & boleh share berapa telefon?**\nSatu pocket wifi boleh dikongsi untuk 3 telefon. Pocket wifi diberikan di airport pada hari berlepas — wakil kami akan pickup & distribute semasa assembly & briefing.\n\n**WhatsApp / TikTok boleh guna?**\nDisekat kalau guna line tempatan China. Boleh guna seperti biasa jika sambung melalui pocket wifi (roamingman) atau roaming Malaysia — off mobile data telefon dan connect ke pocket wifi.\n\n**Plug socket jenis apa?**\nBerbeza dari Malaysia — bawa travel universal adapter. Digalakkan bawa extension plug. Simpan power bank/charger/adapter dalam hand carry.\n\n**Toilet ada paip/hose?**\nKebanyakan tandas TIADA paip/bidet — bawa botol spray & tisu untuk wudhu & kegunaan tandas.\n\n**Language barrier?**\nBahasa utama Mandarin & dialek tempatan; ramai penduduk tidak fasih English. Guna app terjemahan.\n\n### L. Packing / Barang Bawa\n\n**Barang basic untuk trip Yunnan? (checklist)**\nPassport, sweater/light jacket/thermal (Spring/Autumn), winter coat/thermal (Winter), telekung & sejadah travel, botol spray kosong (wudhu), tisu/wet wipes, stokin 2+ pasang (bawa lebih), kasut selesa/sneakers atau water resistant boots, peralatan mandian & solek, ubat peribadi + surat doktor untuk ubat preskripsi, universal adapter plug, payung kecil, tuala travel, baju hujan/poncho, power bank (hand carry, logo CCC), hot pack, duit poket (RM200–RM500), snek kering bukan daging.\n\n**Nota pakaian penting?**\nPakai kasut/sneakers selesa (banyak berjalan) — elak kasut tumit tinggi. Bawa payung/baju hujan terutama musim luruh. Untuk JDSM & Shangri La, jaket tebal wajib walaupun musim panas.\n\n**Apa yang TIDAK boleh dibawa?**\nPower bank/bateri dalam check-in luggage · RTE self-heating · produk daging (serunding, rendang, sambal daging) · buah & sayur segar · barang tajam dalam hand carry · cecair melebihi 100ml dalam hand carry · lebih 1 karton rokok.",
+     "label": "KB yunnan › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "yunnan",
+      "calc",
+      "peak",
+      "windows"
+     ],
+     "from": [
+      [
+       "2026-06-19",
+       "2026-06-21"
+      ],
+      [
+       "2027-06-12",
+       "2027-06-14"
+      ]
+     ],
+     "to": [
+      [
+       "2026-06-19",
+       "2026-06-21"
+      ]
+     ],
+     "label": "KB yunnan › calc › peak › windows"
+    },
+    {
+     "path": [
+      "kb",
+      "yunnan",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Peak Season - China Summer Holiday",
+       "dateIn": [
+        "2026-07-01",
+        "2026-08-31"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - China Golden Week",
+       "dateIn": [
+        "2026-10-01",
+        "2026-10-08"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - Christmas and New Year",
+       "dateIn": [
+        "2026-12-22",
+        "2027-01-05"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - China Summer Holiday",
+       "dateIn": [
+        "2027-07-01",
+        "2027-08-31"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - China Golden Week",
+       "dateIn": [
+        "2027-10-01",
+        "2027-10-08"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - Christmas and New Year",
+       "dateIn": [
+        "2027-12-22",
+        "2028-01-05"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "2027 travel surcharge",
+       "dateIn": [
+        "2027-01-01",
+        "2027-06-30"
+       ],
+       "perPax": 100
+      }
+     ],
+     "to": [
+      {
+       "label": "Peak Season - China Summer Holiday",
+       "dateIn": [
+        "2026-07-01",
+        "2026-08-31"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - China Golden Week",
+       "dateIn": [
+        "2026-10-01",
+        "2026-10-08"
+       ],
+       "perPax": 300
+      },
+      {
+       "label": "Peak Season - Christmas and New Year",
+       "dateIn": [
+        "2026-12-22",
+        "2027-01-05"
+       ],
+       "perPax": 300
+      }
+     ],
+     "label": "KB yunnan › calc › extraSurcharge"
+    },
+    {
+     "path": [
+      "kb",
+      "yunnan",
+      "calc",
+      "addons"
+     ],
+     "from": [
+      [
+       "Bullet train 1st Class upgrade, 3 Wilayah - per pax per way",
+       100,
+       100,
+       "unit"
+      ],
+      [
+       "Bullet train 1st Class upgrade, 4 Wilayah - per pax per way",
+       120,
+       120,
+       "unit"
+      ],
+      [
+       "Bullet train Business Class upgrade - per pax per way",
+       300,
+       300,
+       "unit"
+      ],
+      [
+       "Luggage van for bullet train, 3 Wilayah - per one way",
+       650,
+       0,
+       "share"
+      ],
+      [
+       "Luggage van for bullet train, 4 Wilayah 2-4 pax - per one way",
+       750,
+       0,
+       "share"
+      ],
+      [
+       "Luggage van for bullet train, 4 Wilayah 5-6 pax - per one way",
+       650,
+       0,
+       "share"
+      ],
+      [
+       "Additional 4-Star hotel night, 3 Wilayah - per room per night",
+       200,
+       0,
+       "unit"
+      ],
+      [
+       "Additional 4-Star hotel night, 4 Wilayah - per room per night",
+       250,
+       0,
+       "unit"
+      ],
+      [
+       "Less one hotel night - per room per night",
+       -100,
+       0,
+       "unit"
+      ],
+      [
+       "Indian or Arabic meal surcharge - per pax per meal",
+       30,
+       30,
+       "unit"
+      ],
+      [
+       "Upgrade to 4-Star hotel - per pax (kadar muka depan katalog)",
+       240,
+       240,
+       "pax"
+      ]
+     ],
+     "to": [
+      [
+       "Bullet train 1st Class upgrade, 3 Wilayah - per pax per way",
+       100,
+       100,
+       "unit"
+      ],
+      [
+       "Bullet train 1st Class upgrade, 4 Wilayah - per pax per way",
+       120,
+       120,
+       "unit"
+      ],
+      [
+       "Bullet train Business Class upgrade - per pax per way",
+       300,
+       300,
+       "unit"
+      ],
+      [
+       "Luggage van for bullet train, 3 Wilayah - per one way",
+       650,
+       0,
+       "share"
+      ],
+      [
+       "Luggage van for bullet train, 4 Wilayah 2-4 pax - per one way",
+       750,
+       0,
+       "share"
+      ],
+      [
+       "Luggage van for bullet train, 4 Wilayah 5-6 pax - per one way",
+       650,
+       0,
+       "share"
+      ],
+      [
+       "Additional 4-Star hotel night, 3 Wilayah - per room per night",
+       200,
+       0,
+       "unit"
+      ],
+      [
+       "Additional 4-Star hotel night, 4 Wilayah - per room per night",
+       250,
+       0,
+       "unit"
+      ],
+      [
+       "Less one hotel night - per room per night",
+       -100,
+       0,
+       "unit"
+      ],
+      [
+       "Indian or Arabic meal surcharge - per pax per meal",
+       30,
+       30,
+       "unit"
+      ]
+     ],
+     "label": "KB yunnan › calc › addons"
+    }
+   ]
   }
  ]
 }

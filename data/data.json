@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "version": 85,
- "updatedAt": "2026-10-14T02:14:20Z",
- "updatedBy": "system",
+ "version": 86,
+ "updatedAt": "2026-10-14T02:40:55Z",
+ "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
   "marginDangerPct": 0.05,
@@ -29599,7 +29599,7 @@
    "nights": 5,
    "po": "Amirul",
    "source": "hub",
-   "note": "Costing dari PT KMGDL R&D (Drive, 16 Ogos 2026) sebagai rujukan sahaja — hub ialah sumber (PO 10 Oct 2026).",
+   "note": "Kos = Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026, TO Contract Rate): tour fare RMB 6,800 / 4,900 / 4,250 / 3,300 (2–3 / 4–5 / 6–9 / 10–14 pax; 15–30 = kadar 10–14) × FX live; tipping RMB30 × 6 hari (PO 10 Oct 2026; CR tulis 7 hari). CWB 100 %, CNB 80 % tour fare (CR). Costing 2–30 pax; harga 15–30 ikut pola 4W (−RM100 setiap band, PO 14 Oct 2026).",
    "fx": [
     {
      "id": "MYR",
@@ -29623,7 +29623,7 @@
      "value": 6800,
      "fx": "RMB",
      "unit": "RMB/pax",
-     "group": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)"
+     "group": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)"
     },
     {
      "id": "f4",
@@ -29631,7 +29631,7 @@
      "value": 4900,
      "fx": "RMB",
      "unit": "RMB/pax",
-     "group": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)"
+     "group": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)"
     },
     {
      "id": "f6",
@@ -29639,7 +29639,7 @@
      "value": 4250,
      "fx": "RMB",
      "unit": "RMB/pax",
-     "group": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)"
+     "group": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)"
     },
     {
      "id": "f10",
@@ -29647,7 +29647,7 @@
      "value": 3300,
      "fx": "RMB",
      "unit": "RMB/pax",
-     "group": "Tourdechina CR 2026 (rujukan: PT KMGDL R&D, sheet CR)"
+     "group": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026)"
     },
     {
      "id": "tip",
@@ -29663,11 +29663,11 @@
     {
      "id": "TOURDECHINA",
      "label": "Tourdechina",
-     "supplier": "TO TOURDECHINA — Yunnan 3 Wilayah 6D5N (Kunming-Dali-Lijiang)",
+     "supplier": "TO TOURDECHINA — Yunnan 3 Wilayah 7D5N (Kunming-Shilin-Dali-Lijiang)",
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "4-Star (Kunming / Dali / Lijiang) — Country Inn / WenYue / Kyriad or similar",
-     "notes": "Kadar tour fare RMB dari PT KMGDL R&D (sheet CR), rujukan sahaja. Termasuk: 5 malam hotel 4★ + breakfast, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Lijiang-Kunming), halal meals, entrance, boat Erhai, cable car Jade Dragon, buggy, airport transfer, English guide. Tipping RMB30/pax/hari × 6 hari (PO 10 Oct 2026; R&D tulis 7 hari). CWB 100%, CNB 80% tour fare.",
+     "notes": "Tourdechina CR 3W 7D5N (Oct 2025 – Dec 2026). Termasuk: hotel 4★ + breakfast, 10 halal meals, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Lijiang-Kunming), first entrance, English speaking guide, airport transfer. Tipping RMB30/pax/hari × 6 hari (PO 10 Oct 2026; CR tulis × 7). Single supplement RMB800/pax (2–9), RMB700 (10–14). Surcaj CR RMB400/pax: Jul–Ogos, 1–8 Okt, Spring Festival. CWB 100 %, CNB 80 % tour fare.",
      "components": [
       {
        "key": "fare",
@@ -29692,7 +29692,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 14,
+       "to": 30,
        "variant": "TOURDECHINA"
       }
      ],
@@ -29710,7 +29710,23 @@
        "11": 3197,
        "12": 3197,
        "13": 3197,
-       "14": 3197
+       "14": 3197,
+       "15": 3097,
+       "16": 3097,
+       "17": 3097,
+       "18": 3097,
+       "19": 3097,
+       "20": 3097,
+       "21": 2997,
+       "22": 2997,
+       "23": 2997,
+       "24": 2997,
+       "25": 2997,
+       "26": 2897,
+       "27": 2897,
+       "28": 2897,
+       "29": 2897,
+       "30": 2897
       },
       "cwb": {
        "2": 4797,
@@ -29725,7 +29741,23 @@
        "11": 2997,
        "12": 2997,
        "13": 2997,
-       "14": 2997
+       "14": 2997,
+       "15": 2897,
+       "16": 2897,
+       "17": 2897,
+       "18": 2897,
+       "19": 2897,
+       "20": 2897,
+       "21": 2797,
+       "22": 2797,
+       "23": 2797,
+       "24": 2797,
+       "25": 2797,
+       "26": 2697,
+       "27": 2697,
+       "28": 2697,
+       "29": 2697,
+       "30": 2697
       },
       "cnb": {
        "2": 4597,
@@ -29740,7 +29772,23 @@
        "11": 2797,
        "12": 2797,
        "13": 2797,
-       "14": 2797
+       "14": 2797,
+       "15": 2697,
+       "16": 2697,
+       "17": 2697,
+       "18": 2697,
+       "19": 2697,
+       "20": 2697,
+       "21": 2597,
+       "22": 2597,
+       "23": 2597,
+       "24": 2597,
+       "25": 2597,
+       "26": 2497,
+       "27": 2497,
+       "28": 2497,
+       "29": 2497,
+       "30": 2497
       },
       "infant": 0
      },
@@ -29765,11 +29813,239 @@
      }
     }
    ],
-   "addons": [],
+   "addons": [
+    {
+     "id": "kmgdl-a01",
+     "category": "Transport",
+     "label": "Airport Transfer MPV (2-4 pax)",
+     "cost": 0.0,
+     "selling": 150.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a02",
+     "category": "Transport",
+     "label": "Airport Transfer Small Bus (5-6 pax)",
+     "cost": 0.0,
+     "selling": 250.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a03",
+     "category": "Transport",
+     "label": "Airport Transfer Big Bus (7-12 pax)",
+     "cost": 0.0,
+     "selling": 300.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a04",
+     "category": "Bullet Train",
+     "label": "First Class Upgrade",
+     "cost": 0.0,
+     "selling": 100.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a05",
+     "category": "Bullet Train",
+     "label": "Business Class Upgrade",
+     "cost": 0.0,
+     "selling": 300.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a06",
+     "category": "Luggage",
+     "label": "Luggage Van Bullet Train",
+     "cost": 0.0,
+     "selling": 650.0,
+     "per": "way",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a07",
+     "category": "Meals",
+     "label": "Extra Lunch",
+     "cost": 61.0,
+     "selling": 60.0,
+     "per": "pax/meal",
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+    },
+    {
+     "id": "kmgdl-a08",
+     "category": "Meals",
+     "label": "Extra Dinner",
+     "cost": 61.0,
+     "selling": 60.0,
+     "per": "pax/meal",
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+    },
+    {
+     "id": "kmgdl-a09",
+     "category": "Meals",
+     "label": "Tolak Lunch",
+     "cost": -31.0,
+     "selling": -30.0,
+     "per": "pax/meal",
+     "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+    },
+    {
+     "id": "kmgdl-a10",
+     "category": "Meals",
+     "label": "Tolak Dinner",
+     "cost": -31.0,
+     "selling": -30.0,
+     "per": "pax/meal",
+     "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+    },
+    {
+     "id": "kmgdl-a11",
+     "category": "Meals",
+     "label": "Indian/Arabic meal",
+     "cost": 0.0,
+     "selling": 80.0,
+     "per": "pax/meal",
+     "notes": "Surcharge RM30"
+    },
+    {
+     "id": "kmgdl-a12",
+     "category": "Tour",
+     "label": "One Day Tour (Transport+Guide+L,D)",
+     "cost": 0.0,
+     "selling": 400.0,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a13",
+     "category": "Takaful",
+     "label": "TripCare 360 Individual (1-5 days)",
+     "cost": 40.5,
+     "selling": 64.0,
+     "per": "pax",
+     "notes": "Etiqa Area 2"
+    },
+    {
+     "id": "kmgdl-a14",
+     "category": "Takaful",
+     "label": "TripCare 360 Individual (6-10 days)",
+     "cost": 58.87,
+     "selling": 88.5,
+     "per": "pax",
+     "notes": "Etiqa Area 2"
+    },
+    {
+     "id": "kmgdl-a15",
+     "category": "Takaful",
+     "label": "TripCare 360 Couple (1-5 days)",
+     "cost": 77.25,
+     "selling": 113.0,
+     "per": "pair",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a16",
+     "category": "Takaful",
+     "label": "TripCare 360 Couple (6-10 days)",
+     "cost": 122.87,
+     "selling": 160.5,
+     "per": "pair",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a17",
+     "category": "Takaful",
+     "label": "TripCare 360 Family (1-5 days)",
+     "cost": 100.12,
+     "selling": 143.5,
+     "per": "family",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a18",
+     "category": "Takaful",
+     "label": "TripCare 360 Family (6-10 days)",
+     "cost": 153.62,
+     "selling": 201.5,
+     "per": "family",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a19",
+     "category": "Takaful",
+     "label": "TripCare 360 Senior (1-5 days)",
+     "cost": 141.62,
+     "selling": 185.5,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a20",
+     "category": "Takaful",
+     "label": "TripCare 360 Senior (6-10 days)",
+     "cost": 201.62,
+     "selling": 265.5,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a21",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Silver",
+     "cost": 14.5,
+     "selling": 20.0,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a22",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Gold",
+     "cost": 29.0,
+     "selling": 40.0,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a23",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Platinum",
+     "cost": 44.0,
+     "selling": 55.0,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "kmgdl-a24",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Diamond",
+     "cost": 58.0,
+     "selling": 70.0,
+     "per": "pcs",
+     "notes": null
+    }
+   ],
    "catalogs": [
     "PT YUNNAN 3 WILAYAH 6D5N 2026 v1"
    ],
-   "contracts": [],
+   "contracts": [
+    {
+     "id": "1a13848c387",
+     "name": "PT KMGDL TOURDECHINA YUNNAN 3 WILAYAH 7D5N (Jan - Dec 2026).doc.pdf",
+     "file": "contracts/kmgdl/1a13848c387-PT_KMGDL_TOURDECHINA_YUNNAN_3_WILAYAH_7D5N_Jan_-_Dec_2026_.doc.pdf",
+     "to": "Tourdechina",
+     "note": "CR 3W 7D5N, valid Oct 2025 – Dec 2026 (PO 14 Oct 2026) = Costing tour fare",
+     "size": 146348,
+     "at": "2026-10-14T02:40:55Z",
+     "by": "ezie"
+    }
+   ],
    "hotels": [
     {
      "id": "kmgdl-h01",
@@ -29807,17 +30083,18 @@
       }
      }
     }
-   ]
+   ],
+   "historyFrom": 86
   },
   {
    "code": "KMGDLS",
    "name": "Yunnan 4 Wilayah",
    "country": "China",
    "duration": "7D6N",
-   "nights": 0,
+   "nights": 6,
    "po": "Amirul",
    "source": "hub",
-   "note": "",
+   "note": "Kos = Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026, TO Contract Rate): tour fare RMB 8,000 / 5,800 / 5,200 / 4,400 (2–3 / 4–5 / 6–9 / 10–14 pax; 15–30 = kadar 10–14) × FX live (dulu MYR tetap 0.58); tipping RMB30 × 7 hari (CR). CWB 100 %, CNB 80 % tour fare (CR). Costing 2–30 pax.",
    "fx": [
     {
      "id": "MYR",
@@ -29834,126 +30111,70 @@
      "live": "CNY"
     }
    ],
-   "rates": [],
-   "tables": [
+   "rates": [
     {
-     "id": "TOURDECHINA__Ground-Cost-MYR",
-     "label": "TOURDECHINA · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "TOURDECHINA",
-     "values": {
-      "2": 4640,
-      "3": 4640,
-      "4": 3364,
-      "5": 3364,
-      "6": 3016,
-      "7": 3016,
-      "8": 3016,
-      "9": 3016,
-      "10": 2552,
-      "11": 2552,
-      "12": 2552,
-      "13": 2552,
-      "14": 2552,
-      "15": 2552,
-      "16": 2552,
-      "17": 2552,
-      "18": 2552,
-      "19": 2552,
-      "20": 2552,
-      "21": 2552,
-      "22": 2552,
-      "23": 2552,
-      "24": 2552,
-      "25": 2552,
-      "26": 2552,
-      "27": 2552,
-      "28": 2552,
-      "29": 2552,
-      "30": 2552,
-      "31": 2552,
-      "32": 2552,
-      "33": 2552,
-      "34": 2552,
-      "35": 2552,
-      "36": 2552,
-      "37": 2552,
-      "38": 2552,
-      "39": 2552,
-      "40": 2552
-     }
+     "id": "f2",
+     "label": "Tour fare 2–3 pax (Tourdechina)",
+     "value": 8000,
+     "fx": "RMB",
+     "unit": "RMB/pax",
+     "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
     },
     {
-     "id": "TOURDECHINA__Tipping-MYR",
-     "label": "TOURDECHINA · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "TOURDECHINA",
-     "values": {
-      "2": 121.8,
-      "3": 121.8,
-      "4": 121.8,
-      "5": 121.8,
-      "6": 121.8,
-      "7": 121.8,
-      "8": 121.8,
-      "9": 121.8,
-      "10": 121.8,
-      "11": 121.8,
-      "12": 121.8,
-      "13": 121.8,
-      "14": 121.8,
-      "15": 121.8,
-      "16": 121.8,
-      "17": 121.8,
-      "18": 121.8,
-      "19": 121.8,
-      "20": 121.8,
-      "21": 121.8,
-      "22": 121.8,
-      "23": 121.8,
-      "24": 121.8,
-      "25": 121.8,
-      "26": 121.8,
-      "27": 121.8,
-      "28": 121.8,
-      "29": 121.8,
-      "30": 121.8,
-      "31": 121.8,
-      "32": 121.8,
-      "33": 121.8,
-      "34": 121.8,
-      "35": 121.8,
-      "36": 121.8,
-      "37": 121.8,
-      "38": 121.8,
-      "39": 121.8,
-      "40": 121.8
-     }
+     "id": "f4",
+     "label": "Tour fare 4–5 pax (Tourdechina)",
+     "value": 5800,
+     "fx": "RMB",
+     "unit": "RMB/pax",
+     "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+    },
+    {
+     "id": "f6",
+     "label": "Tour fare 6–9 pax (Tourdechina)",
+     "value": 5200,
+     "fx": "RMB",
+     "unit": "RMB/pax",
+     "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+    },
+    {
+     "id": "f10",
+     "label": "Tour fare 10+ pax (Tourdechina)",
+     "value": 4400,
+     "fx": "RMB",
+     "unit": "RMB/pax",
+     "group": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026)"
+    },
+    {
+     "id": "tip",
+     "label": "Tipping, tidak termasuk dalam tour fare (Tourdechina)",
+     "value": 30,
+     "fx": "RMB",
+     "unit": "RMB/pax/hari",
+     "group": "Tipping"
     }
    ],
+   "tables": [],
    "variants": [
     {
      "id": "TOURDECHINA",
      "label": "Tourdechina",
-     "supplier": "TO TOURDECHINA — 4W (PT YUNNAN 4 WILAYAH 8D6N (Kunming-Shilin-Dali-Lijiang-Shang",
+     "supplier": "TO TOURDECHINA — Yunnan 4 Wilayah 8D6N (Kunming-Shilin-Dali-Lijiang-Shangri La)",
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "4-Star (Kunming/Dali/Lijiang/Shangri La) — Country Inn / WenYue / Kyriad / LanOu",
-     "notes": "",
+     "notes": "Tourdechina CR 4W 8D6N (Oct 2025 – Dec 2026). Termasuk: hotel 4★ + breakfast, 12 halal meals, private transport (10 jam), bullet train 2nd class (Kunming-Dali, Shangri La-Kunming), first entrance, English speaking guide, airport transfer. Tipping RMB30/pax/hari × 7 hari (CR). Single supplement RMB1,120/pax (2–9), RMB780 (10–14). Surcaj CR RMB400/pax: Jul–Ogos, 1–8 Okt, Spring Festival. CWB 100 %, CNB 80 % tour fare.",
      "components": [
       {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['TOURDECHINA__Ground-Cost-MYR']"
+       "key": "fare",
+       "label": "Tour fare (Tourdechina)",
+       "per": "group",
+       "expr": "band(pax,[3,R.f2],[5,R.f4],[9,R.f6],[999,R.f10])*pax"
       },
       {
-       "key": "tipping-myr",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['TOURDECHINA__Tipping-MYR']"
+       "key": "tipping",
+       "label": "Tipping × 7 hari",
+       "per": "group",
+       "expr": "R.tip*7*pax"
       }
      ]
     }
@@ -30075,7 +30296,10 @@
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.8
+       "value": 0.8,
+       "on": [
+        "fare"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -30152,19 +30376,37 @@
      "id": "kmgdls-a08",
      "category": "Meals",
      "label": "Extra Lunch",
-     "cost": 0.0,
+     "cost": 61.0,
      "selling": 60.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
     },
     {
      "id": "kmgdls-a09",
      "category": "Meals",
      "label": "Extra Dinner",
-     "cost": 0.0,
+     "cost": 61.0,
      "selling": 60.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "Kos: bajet meal CR Tourdechina RMB100/pax (2–3 pax; 4–5 RMB80, 6–7 RMB70, 8+ RMB50)"
+    },
+    {
+     "id": "kmgdls-a36",
+     "category": "Meals",
+     "label": "Tolak Lunch",
+     "cost": -31.0,
+     "selling": -30.0,
+     "per": "pax/meal",
+     "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
+    },
+    {
+     "id": "kmgdls-a37",
+     "category": "Meals",
+     "label": "Tolak Dinner",
+     "cost": -31.0,
+     "selling": -30.0,
+     "per": "pax/meal",
+     "notes": "Customer skip meal · Jimat kos: bajet meal CR RMB50 (8+ pax; 2–3 pax RMB100)"
     },
     {
      "id": "kmgdls-a10",
@@ -30291,114 +30533,6 @@
      "selling": 70.0,
      "per": "pcs",
      "notes": null
-    },
-    {
-     "id": "kmgdls-a24",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "kmgdls-a25",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a26",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a29",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a30",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a31",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a32",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a33",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a34",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "kmgdls-a35",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
     }
    ],
    "catalogs": [
@@ -30466,7 +30600,8 @@
       }
      }
     }
-   ]
+   ],
+   "historyFrom": 86
   },
   {
    "code": "PEK",
