@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v93 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v93, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v94 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v94, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -238,10 +238,22 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   650 / 600; breakfast only + L&D estimate RM120) → Option B margin 25–40 % (was 21–32 %). +RM25 in both Emiya costs = Sibayak 4★ Berastagi (KB Free Gift promo). TO hotel
   labels fixed; duplicate Emerald hotel removed; nights 3; add-on duplicates removed, meal cost RM15 (CR L&D −RM90), TripCare pair / family; KB 8–15 Mar 2027 +RM90 removed.
   Not added (PO): Emiya optional programs (Sibayak hike, Tero-Tero rafting, Sikulikap). Open: CR validity (Dec 2026 vs catalog Jan 2027), single / peak costs.
+  **Melbourne (v94, PO ezie 14 Oct; source = Google Sheet 'PT MEL R&D' 1OI4P02SoelT2fPFk5zolNbY96M_If3U3x_eNjxX4slE (V3, 12 Mar 2026) — PO: R&D is the source; its
+  Costing (BASIC / STANDARD) + entrance table compiled into contracts/mel 'WAE MELBOURNE COSTING RATE 2026.pdf' = the WAE CR):** hub cost was the sheet's 'Costing' tab AUD × fixed 2.85 (checked,
+  every pax 2–10); now AUD × live FX in components: Car Rental (5-seater 2–3 · 8-seater 4–6 · 12-seater 7–10, AUD140 / 200 / 300 × 5 days ÷ pax), Driver-Guide day charges per group (Basic
+  230 + 580 + 480 + 197, Std 230 + 686 + 746 + 197), Online Guide (OG) AUD80/pax, hotel AUD360 / 460 (Std with breakfast), entrance per CR (Maru 33 + Churchill 18 [+ Penguin 34]), visa
+  assistance RM80 (MYR). Costing 2–10 pax (= catalog; 11+ quote manual — the 11–12 pax 5 % flag is gone); nights 4; child CWB 90 % / CNB 80 % (R&D). Margins (AUD 2.85177): adult 18.6–27.1 %.
+  Add-ons: ticket costs = CR table (RM at 2.832), Puffing Billy / Enchanted sell = catalog RM190 / RM120 (Enchanted below cost → flag, PO); Maru / Churchill = deductions only −RM93 / −RM51,
+  Penguin deduction −RM96 (Std), Penguin add-on RM110 (Basic); TripCare Area 3 kept (Area 2 removed), duplicate Blue Ribbon / header row / ETA visa RM70 (assistance is in the cost) /
+  R&D car-rental rows 'Private Day Tour 5 / 7-8 / 12-seater' removed; Pocket Wifi prices swapped back (3GB 140, 6GB 200); new 'Hotel 3★ tambah 1 malam' cost AUD100 (sell 300 / peak 450),
+  linked in KB rnd.cost (vnight) with the ticket / deduction add-ons. KB melbourne: Travel Date 2027 +RM100 removed, Late Booking RM50 kept (PO), rate card 12-seater 7–10 / 21-seater 11–18
+  (= R&D), deductions = CR, TripCare from RM72, wifi swapped, ETA row removed. Catalogs unchanged (mirror: nothing to render); Flags / History from v94.
+  Open (flags_open): the 5 catalog private day tours have no cost (City Full Day RM1,500 and GOR 12-seater sell below the CR car + day-charge estimate; no CR rate for Half Day /
+  Puffing Billy / Mornington / Snow); child ticket costs. R&D sheet still says validity 30 Jun 2026 (catalog 31 Mar 2027 kept).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 7 destinations** (costs stored in MYR): JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
+- **Live FX not used by 6 destinations** (costs stored in MYR): JOG, PER, NSNZ, MLE, PHU, SWS (MEL done v94) —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
+- **Next:** ask the PO which destination to verify next (Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
