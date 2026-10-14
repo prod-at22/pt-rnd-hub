@@ -338,6 +338,6 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .cg-cell ul{margin:0;padding-left:16px} .cg-cell li{margin:2px 0}
 .cg-cell .cmp-k{color:var(--muted)}
 .cg-cell .cmp-eq{margin-top:0}
-.df .dv{border-radius:3px;padding:0 3px;margin:0 -1px}
-.df.red .dv{background:#fde4e6;color:#8f1d24} .df.green .dv{background:#e2f4ea;color:#17603d} .df.yel .dv{background:#fff1b8;color:#5c4a00}
+.df .dv{font-weight:600}
+.df.red .dv{color:var(--bad)} .df.green .dv{color:var(--ok)} .df.yel .dv{color:#b7791f}
 .cmp-legend{padding:12px 14px 0;font-size:12px;color:var(--muted)}

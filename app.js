@@ -1327,7 +1327,7 @@ const CMP_SW = [["strength", "Strength"], ["weakness", "Weakness"]];
 const CMP_PAX = [2, 4, 6, 8];
 const AI_MODEL = "claude-opus-5-5";
 const AI_SDK = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.129.0/+esm";
-let CMP_AI = null;   // last AI result waiting for "Guna" in the modal
+let CMP_AI = null;   // last AI result waiting for "Use" in the modal
 const cmpAspects = d => { const A = (d.competitors || {}).aspects; return A && A.length ? A.map(a => [a.id, a.label]) : CMP_ASPECTS; };
 const cmpPax = d => { const p = (d.competitors || {}).pax; return p && p.length ? p : CMP_PAX; };
 // Columns: each ARBA package with competitors (package order), then its competitors.
@@ -1354,9 +1354,9 @@ function cmpDiff(k, a, c) {
   const n = x => String(x || "").trim().toLowerCase();
   if (!n(c) || n(a) === n(c)) return "";
   const cls = x => /tidak dinyatakan|tak dinyatakan|not stated|tak jelas/.test(n(x)) ? "na" : /^(excluded|exclude|tidak termasuk|tak termasuk|not included|no\b|tiada|none)/.test(n(x)) ? "exc" : /^(included|include|termasuk|ya\b|yes\b)/.test(n(x)) ? "inc" : "txt";
-  if (k === "hours") { const h = x => { const m = n(x).match(/(\d+(?:\.\d+)?)\s*jam/) || n(x).match(/(\d+(?:\.\d+)?)/); return m ? +m[1] : NaN; }, x = h(a), y = h(c);
+  if (k === "hours") { const h = x => { const m = n(x).match(/(\d+(?:\.\d+)?)\s*(?:jam|hrs?|hours?)/) || n(x).match(/(\d+(?:\.\d+)?)/); return m ? +m[1] : NaN; }, x = h(a), y = h(c);
     if (num(x) && num(y)) return y > x ? "red" : y < x ? "green" : ""; }
-  if (k === "meals") { const lvl = x => cls(x) === "exc" || /^no meal/.test(n(x)) ? 0 : /full.?board|ikut aturcara|lunch|dinner|tengah hari|malam|makan halal/.test(n(x)) ? 2 : /breakfast|sarapan/.test(n(x)) ? 1 : NaN, x = lvl(a), y = lvl(c);
+  if (k === "meals") { const lvl = x => cls(x) === "exc" || /^no meal/.test(n(x)) ? 0 : /full.?board|ikut aturcara|per itinerary|lunch|dinner|tengah hari|malam|makan halal|halal meals/.test(n(x)) ? 2 : /breakfast|sarapan/.test(n(x)) ? 1 : NaN, x = lvl(a), y = lvl(c);
     if (num(x) && num(y)) return y > x ? "red" : y < x ? "green" : ""; }
   const x = cls(a), y = cls(c);
   if (x === "inc" && y === "exc") return "green";
@@ -1365,7 +1365,7 @@ function cmpDiff(k, a, c) {
   return "yel";
 }
 // View mode of Competitor Analysis: one row per category, one card per column, bullet points (Edit costs keeps the table).
-const CMP_CATS = [["Harga seorang", null], ["Pakej", ["days", "packaging", "hours"]], ["Guide & USP", ["guide", "usp"]], ["Inklusi", ["accommodation", "meals", "tipping", "visa"]], ["Kekuatan", ["strength"]], ["Kelemahan", ["weakness"]]];
+const CMP_CATS = [["Price per pax", null], ["Package", ["days", "packaging", "hours"]], ["Guide & USP", ["guide", "usp"]], ["Inclusions", ["accommodation", "meals", "tipping", "visa"]], ["Strengths", ["strength"]], ["Weaknesses", ["weakness"]]];
 function cmpGrid(d, pkg, cols, pax, adult) {
   const lbl = Object.fromEntries(cmpAspects(d)), C = d.competitors || {};
   const val = (col, k) => String((col.arba ? ((C.arba || {})[pkg.id] || {})[k] : (col.c.attrs || {})[k]) || "").trim();
@@ -1375,7 +1375,7 @@ function cmpGrid(d, pkg, cols, pax, adult) {
       const a = adult(x); if (col.arba) return num(a) ? `<li>${x} pax <b>${rm(a)}</b></li>` : "";
       const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN; if (!num(p)) return "";
       const dl = p - a, ex = +col.c.extra || 0;
-      return `<li>${x} pax <b>${rm(p)}</b>${num(dl) && a ? ` <span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : ""}${ex ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : ""}</li>`;
+      return `<li>${x} pax <b>${rm(p)}</b>${num(dl) && a ? ` <span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Competitor cheaper by" : "ARBA cheaper by"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : ""}${ex ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">like-for-like ${rm(p + ex)}</div>` : ""}</li>`;
     }).filter(Boolean));
     const one = keys.length === 1;
     return bullets(keys.flatMap(k => { const v = val(col, k); if (!v || v === "-") return [];
@@ -1384,11 +1384,11 @@ function cmpGrid(d, pkg, cols, pax, adult) {
       return [`<li${f ? ` class="df ${f}" title="ARBA: ${esc(arb || "—")}"` : ""}>${["days", "packaging", "usp"].includes(k) ? "" : `<span class="cmp-k">${esc(lbl[k] || k)}:</span> `}<span class="dv">${esc(v)}</span></li>`]; }));
   };
   const head = cols.map(col => {
-    const c = col.c, tip = c ? [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ") : "";
+    const c = col.c, tip = c ? [c.source, c.updated && "updated " + c.updated].filter(Boolean).join(" · ") : "";
     return `<div class="cg-head${col.arba ? " arba" : ""}"${tip ? ` title="${esc(tip)}"` : ""}>${col.arba ? `ARBA<small>${esc(pkg.label)}</small>` : esc(c.name)}</div>`;
   }).join("");
   const rows = CMP_CATS.map(([l, keys]) => `<div class="cg-cat">${esc(l)}</div>${cols.map(col => `<div class="cg-cell${col.arba ? " arba" : ""}">${cell(col, keys)}</div>`).join("")}`).join("");
-  const legend = `<div class="cmp-legend">Berbanding ARBA: <span class="df red"><span class="dv">merah</span></span> pesaing lebih baik · <span class="df green"><span class="dv">hijau</span></span> ARBA lebih baik · <span class="df yel"><span class="dv">kuning</span></span> berbeza (tuding untuk nilai ARBA)</div>`;
+  const legend = `<div class="cmp-legend">Compared with ARBA: <span class="df red"><span class="dv">red</span></span> competitor better · <span class="df green"><span class="dv">green</span></span> ARBA better · <span class="df yel"><span class="dv">amber</span></span> different (hover for ARBA's value)</div>`;
   return legend + `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
 }
 // Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
@@ -1400,20 +1400,20 @@ function competitorTab(d) {
   const attrPath = (col, k) => col.arba ? [...base, "arba", col.pkg.id, k] : [...base, "items", col.c.id, "attrs", k];
   const attrVal = (col, k) => col.arba ? ((C.arba || {})[col.pkg.id] || {})[k] : (col.c.attrs || {})[k];
   const adult = x => { const v = pkg.pricing.adult[String(x)]; return v == null || v === "" ? NaN : +v; };
-  const aiOk = E && SESSION && SESSION.aiKey, dis = aiOk ? "" : ` disabled title="Perlu Claude API key — admin: Account → Claude API key"`;
+  const aiOk = E && SESSION && SESSION.aiKey, dis = aiOk ? "" : ` disabled title="Needs a Claude API key — admin: Account → Claude API key"`;
   const others = d.packages.filter(p => p.id !== pkg.id && (C.items || []).some(c => c.vs === p.id));
-  const head = `<h2>Competitor Analysis <span class="sub">${esc(pkg.label)} lawan ${cols.length - 1 || "tiada"} pesaing</span>
-    ${E ? `<span class="right"><button class="btn" data-act="cmpAI"${dis}>✦ Tambah pesaing</button>${cols.length ? `<button class="btn" data-act="cmpAnalyse"${dis}>✦ Analisis</button>` : ""}</span>` : ""}</h2>`;
-  const bar = E ? `<div class="cmp-bar"><input id="cmpName" placeholder="Nama pesaing"><input type="hidden" id="cmpVs" value="${esc(pkg.id)}"><button class="btn" data-act="cmpAdd">+ Manual</button>
+  const head = `<h2>Competitor Analysis <span class="sub">${esc(pkg.label)} vs ${cols.length - 1 || "no"} competitor${cols.length === 2 ? "" : "s"}</span>
+    ${E ? `<span class="right"><button class="btn" data-act="cmpAI"${dis}>✦ Add competitor</button>${cols.length ? `<button class="btn" data-act="cmpAnalyse"${dis}>✦ Analyse</button>` : ""}</span>` : ""}</h2>`;
+  const bar = E ? `<div class="cmp-bar"><input id="cmpName" placeholder="Competitor name"><input type="hidden" id="cmpVs" value="${esc(pkg.id)}"><button class="btn" data-act="cmpAdd">+ Manual</button>
       <label class="cmp-paxin">Pax <input id="cmpPax" value="${esc(pax.join(", "))}"></label></div>` : "";
-  const elsewhere = others.length ? `<div class="cmp-other">Pesaing juga ada untuk ${others.map(p => `<button class="lnk" data-cmppkg="${esc(p.id)}">${esc(p.label)}</button>`).join(", ")}</div>` : "";
-  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${bar}<div class="empty">Tiada pesaing untuk ${esc(pkg.label)}.${E ? " Tambah di atas." : ""}</div>${elsewhere}</div>`;
+  const elsewhere = others.length ? `<div class="cmp-other">Competitors also for ${others.map(p => `<button class="lnk" data-cmppkg="${esc(p.id)}">${esc(p.label)}</button>`).join(", ")}</div>` : "";
+  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${bar}<div class="empty">No competitors for ${esc(pkg.label)} yet.${E ? " Add one above." : ""}</div>${elsewhere}</div>`;
   const th = cols.map(col => {
     if (col.arba) return `<th class="cmp-arba"><div class="cmp-h">ARBA</div>
       <div class="cmp-tag">${esc(pkg.label)}</div></th>`;
-    const c = col.c, tip = [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ");
+    const c = col.c, tip = [c.source, c.updated && "updated " + c.updated].filter(Boolean).join(" · ");
     return `<th${tip ? ` title="${esc(tip)}"` : ""}>${E ? `<input class="cmp-name${chg([...base, "items", c.id, "name"], c.name)}" data-path="${esc(JSON.stringify([...base, "items", c.id, "name"]))}" data-kind="text" value="${esc(c.name)}">` : `<div class="cmp-h">${esc(c.name)}</div>`}
-      ${E ? `<div class="cmp-act"><button class="lnk" data-act="cmpAI" data-id="${esc(c.id)}"${aiOk ? "" : " disabled"}>✦ kemas kini</button><button class="lnk" data-act="cmpDel" data-id="${esc(c.id)}">buang</button></div>` : ""}</th>`;
+      ${E ? `<div class="cmp-act"><button class="lnk" data-act="cmpAI" data-id="${esc(c.id)}"${aiOk ? "" : " disabled"}>✦ update</button><button class="lnk" data-act="cmpDel" data-id="${esc(c.id)}">remove</button></div>` : ""}</th>`;
   }).join("");
   const grp = l => `<tr class="cmp-grp"><td colspan="${n}">${l}</td></tr>`;
   const rowA = ([k, l]) => `<tr><th class="cmp-asp">${esc(l)}</th>${cols.map(col => `<td class="${col.arba ? "cmp-arba" : ""}">${txt(attrPath(col, k), attrVal(col, k))}</td>`).join("")}</tr>`;
@@ -1422,26 +1422,26 @@ function competitorTab(d) {
     if (col.arba) return `<td class="cmp-arba">${rm(a)}</td>`;
     const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN, dl = p - a, ex = +col.c.extra || 0;
     const cell = E ? ed([...base, "items", col.c.id, "prices", String(x)], num(p) ? p : undefined) : num(p) ? rm(p) : '<span class="muted">—</span>';
-    const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : "";
-    const eq = ex && num(p) ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : "";
+    const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Competitor cheaper by" : "ARBA cheaper by"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : "";
+    const eq = ex && num(p) ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">like-for-like ${rm(p + ex)}</div>` : "";
     return `<td><span class="cmp-pv">${cell}${gap}</span>${eq}</td>`;
   }).join("")}</tr>`;
-  const exRow = E ? `<tr><th class="cmp-asp" title="RM seorang untuk jadikan harga pesaing setanding ARBA">Tambahan setara</th>${cols.map(col => col.arba ? `<td class="cmp-arba"></td>` :
-    `<td>${ed([...base, "items", col.c.id, "extra"], col.c.extra)}<input class="ed txt cmp-exn${chg([...base, "items", col.c.id, "extraNote"], col.c.extraNote)}" placeholder="cth. hotel + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}"></td>`).join("")}</tr>` : "";
+  const exRow = E ? `<tr><th class="cmp-asp" title="RM per pax to make the competitor's price like-for-like with ARBA">Like-for-like extra</th>${cols.map(col => col.arba ? `<td class="cmp-arba"></td>` :
+    `<td>${ed([...base, "items", col.c.id, "extra"], col.c.extra)}<input class="ed txt cmp-exn${chg([...base, "items", col.c.id, "extraNote"], col.c.extraNote)}" placeholder="e.g. hotel + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}"></td>`).join("")}</tr>` : "";
   const A = C.analysis;
-  const ana = A && (A.text || (A.actions || []).length) ? `<div class="cmp-ana">${(A.actions || []).length ? `<h4>Cadangan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-      ${A.text ? `<details><summary>Analisis penuh</summary><div class="cmp-md">${cmpMd(A.text)}</div></details>` : ""}
+  const ana = A && (A.text || (A.actions || []).length) ? `<div class="cmp-ana">${(A.actions || []).length ? `<h4>Recommendations</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+      ${A.text ? `<details><summary>Full analysis</summary><div class="cmp-md">${cmpMd(A.text)}</div></details>` : ""}
       <div class="cmp-by">✦ ${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</div></div>` : "";
   if (!E) return `<div class="card full" id="cmpCard">${head}${cmpGrid(d, pkg, cols, pax, adult)}${elsewhere}${ana}</div>`;   // view: category cards with bullets; Edit costs: the table below
   return `<div class="card full" id="cmpCard">${head}${bar}
     <div class="scroll"><table class="cmp-t${E ? " cmp-e" : ""}"><thead><tr><th class="cmp-asp"></th>${th}</tr></thead>
-    <tbody>${grp("Harga seorang")}${pax.map(rowP).join("")}${exRow}${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
+    <tbody>${grp("Price per pax")}${pax.map(rowP).join("")}${exRow}${grp("Package")}${cmpAspects(d).map(rowA).join("")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
     ${elsewhere}${ana}</div>`;
 }
 
 /* ---------- Claude (browser, API key from the vault) */
 async function aiCall({ system, content, schema, web }) {
-  if (!SESSION || !SESSION.aiKey) throw new Error("Claude API key belum ditetapkan. Admin: Account → Claude API key.");
+  if (!SESSION || !SESSION.aiKey) throw new Error("No Claude API key set. Admin: Account → Claude API key.");
   const sdk = await import(AI_SDK), Anthropic = sdk.default;
   const client = new Anthropic({ apiKey: SESSION.aiKey, dangerouslyAllowBrowser: true });
   const messages = [{ role: "user", content }];
@@ -1455,25 +1455,25 @@ async function aiCall({ system, content, schema, web }) {
         ...(web ? { tools: [{ type: "web_fetch_20260209", name: "web_fetch", max_uses: 6 }] } : {}),
       }).finalMessage();
       if (msg.stop_reason === "pause_turn") { messages.push({ role: "assistant", content: msg.content }); continue; }   // server tool still working: continue the same turn
-      if (msg.stop_reason === "refusal") throw new Error("Claude tidak dapat memproses permintaan ini.");
-      if (msg.stop_reason === "max_tokens") throw new Error("Jawapan AI terpotong (terlalu panjang). Cuba dengan input yang lebih ringkas.");
+      if (msg.stop_reason === "refusal") throw new Error("Claude could not process this request.");
+      if (msg.stop_reason === "max_tokens") throw new Error("The AI answer was cut off (too long). Try a shorter input.");
       const text = msg.content.filter(b => b.type === "text").map(b => b.text).join("").trim();
       return JSON.parse(text);
     }
-    throw new Error("AI tidak selesai — cuba lagi.");
+    throw new Error("The AI did not finish — try again.");
   } catch (e) {
-    if (e instanceof sdk.AuthenticationError) throw new Error("Claude API key ditolak — admin perlu tukar di Account → Claude API key.");
-    if (e instanceof sdk.RateLimitError) throw new Error("Had penggunaan Claude dicapai — cuba sebentar lagi.");
-    if (e instanceof sdk.APIError) throw new Error("Ralat Claude API" + (e.status ? " (" + e.status + ")" : "") + ": " + (e.message || ""));
+    if (e instanceof sdk.AuthenticationError) throw new Error("Claude API key rejected — an admin must replace it in Account → Claude API key.");
+    if (e instanceof sdk.RateLimitError) throw new Error("Claude usage limit reached — try again shortly.");
+    if (e instanceof sdk.APIError) throw new Error("Claude API error" + (e.status ? " (" + e.status + ")" : "") + ": " + (e.message || ""));
     throw e;
   }
 }
 const sObj = props => ({ type: "object", additionalProperties: false, required: Object.keys(props), properties: props });
 const sStr = d => ({ type: "string", description: d });
-const AI_SYS = "Anda penganalisis produk ARBA Travel (Malaysia): pakej Private Tour (PT) mesra Muslim — makanan halal dijaga, waktu solat, guide sendiri, tiada tourist trap. " +
-  "Bandingkan pakej pesaing dengan pakej ARBA secara adil, like-for-like: perhatikan apa yang termasuk / dikecualikan (hotel, makan, visa / K-ETA, tipping, tiket), jam guide, jenis guide, dan harga RM seorang dewasa ikut bilangan pax. " +
-  "Tulis dalam Bahasa Melayu ringkas seperti jadual dalaman (frasa pendek, campur istilah Inggeris biasa seperti driving guide, F&E, USP). Jangan reka fakta: jika maklumat tiada dalam sumber, tulis \"-\" atau \"tidak dinyatakan\". " +
-  "Harga mata wang asing: tukar ke RM dan sebut kadar dalam nota.";
+const AI_SYS = "You are a product analyst at ARBA Travel (Malaysia), which sells Muslim-friendly Private Tour (PT) packages — halal food taken care of, prayer times, own guide, no tourist traps. " +
+  "Compare competitor packages with the ARBA package fairly, like-for-like: what is included / excluded (hotel, meals, visa / K-ETA, tipping, tickets), guide hours, guide type, and the RM price per adult by number of pax. " +
+  "Write in concise English like an internal comparison table (short phrases; common terms such as driving guide, F&E, USP). Do not invent facts: if the source does not say, write \"-\" or \"Not stated\". " +
+  "Foreign-currency prices: convert to RM and state the rate in the note.";
 async function cmpArbaContext(d, pkgIds) {
   let idx = CAT.index; if (!idx) { try { idx = CAT.index = await fetchJson(PATHS.catalogs + "index.json"); } catch (_) { idx = {}; } }
   const out = [];
@@ -1491,72 +1491,72 @@ async function fileBlock(f) {
   const data = b64big(await f.arrayBuffer());
   if (f.type === "application/pdf") return { type: "document", source: { type: "base64", media_type: "application/pdf", data } };
   if (/^image\/(png|jpeg|gif|webp)$/.test(f.type)) return { type: "image", source: { type: "base64", media_type: f.type, data } };
-  if (/^text\//.test(f.type) || /\.(txt|md|csv)$/i.test(f.name)) return { type: "text", text: `Fail ${f.name}:\n` + await f.text() };
-  throw new Error(`${f.name}: jenis fail tidak disokong (guna gambar PNG/JPG/WebP, PDF atau teks).`);
+  if (/^text\//.test(f.type) || /\.(txt|md|csv)$/i.test(f.name)) return { type: "text", text: `File ${f.name}:\n` + await f.text() };
+  throw new Error(`${f.name}: file type not supported (use a PNG/JPG/WebP image, PDF or text).`);
 }
 function openCmpAI(d, id) {
   const c = id && ((d.competitors || {}).items || []).find(x => x.id === id);
   CMP_AI = null;
-  modal(c ? `✦ Kemas kini ${c.name} dengan AI` : "✦ Tambah pesaing dengan AI", `
-    <div class="small">Beri apa-apa sumber pesaing: tampal teks iklan / WhatsApp, upload screenshot atau PDF katalog, atau URL halaman pakej. Claude akan isi semua aspek dan harga ikut pax.</div>
+  modal(c ? `✦ Update ${c.name} with AI` : "✦ Add a competitor with AI", `
+    <div class="small">Give any source about the competitor: paste ad / WhatsApp text, upload a screenshot or catalogue PDF, or a package page URL. Claude fills every aspect and the price per pax.</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-      <label>Nama pesaing (pilihan)<input id="aiName" value="${esc(c ? c.name : "")}" placeholder="cth. Lurima Lite"></label>
-      <label>Bandingkan dengan pakej ARBA<select id="aiVs">${d.packages.map(p => `<option value="${esc(p.id)}"${(c ? c.vs : (curPkg(d) || {}).id) === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}</select></label></div>
-    <label>URL pakej pesaing (pilihan, satu setiap baris)<textarea id="aiUrl" rows="2" placeholder="https://…">${esc(c && /^https?:/.test(c.source || "") ? c.source : "")}</textarea></label>
-    <label>Teks (pilihan)<textarea id="aiText" rows="6" placeholder="Tampal maklumat pakej pesaing di sini"></textarea></label>
-    <label>Screenshot / PDF (pilihan)<input id="aiFiles" type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif,application/pdf,.txt,.md,.csv"></label>
+      <label>Competitor name (optional)<input id="aiName" value="${esc(c ? c.name : "")}" placeholder="e.g. Lurima Seoul Lite"></label>
+      <label>Compare with ARBA package<select id="aiVs">${d.packages.map(p => `<option value="${esc(p.id)}"${(c ? c.vs : (curPkg(d) || {}).id) === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}</select></label></div>
+    <label>Competitor package URL (optional, one per line)<textarea id="aiUrl" rows="2" placeholder="https://…">${esc(c && /^https?:/.test(c.source || "") ? c.source : "")}</textarea></label>
+    <label>Text (optional)<textarea id="aiText" rows="6" placeholder="Paste the competitor's package details here"></textarea></label>
+    <label>Screenshot / PDF (optional)<input id="aiFiles" type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif,application/pdf,.txt,.md,.csv"></label>
     <div class="err-t"></div><div id="aiOut"></div>`,
-    `<button class="btn" data-close>Batal</button><button class="btn primary" id="aiRun" data-id="${esc(id || "")}">✦ Jana dengan AI</button>`, true);
+    `<button class="btn" data-close>Cancel</button><button class="btn primary" id="aiRun" data-id="${esc(id || "")}">✦ Generate with AI</button>`, true);
 }
 async function runCmpAI(d, id) {
   const urls = $("#aiUrl").value.split(/\s+/).filter(u => /^https?:\/\//i.test(u)), text = $("#aiText").value.trim(), files = [...$("#aiFiles").files], name = $("#aiName").value.trim(), vs = $("#aiVs").value;
-  if (!urls.length && !text && !files.length) return mErr("Beri sekurang-kurangnya satu sumber: URL, teks atau fail.");
+  if (!urls.length && !text && !files.length) return mErr("Give at least one source: a URL, text or a file.");
   const asp = [...cmpAspects(d), ...CMP_SW], pax = cmpPax(d), old = id && d.competitors.items.find(x => x.id === id);
   const schema = sObj({
-    name: sStr("Nama pesaing + nama pakej, ringkas, cth. 'Lurima Lite'"),
-    attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l + (k === "strength" || k === "weakness" ? " — berbanding pakej ARBA yang dibandingkan" : ""))]))),
-    prices: { type: "array", description: `Harga RM seorang dewasa ikut pax. Wajib untuk pax ${pax.join(", ")} jika boleh dikira daripada sumber; tambah pax lain jika ada.`, items: sObj({ pax: { type: "integer" }, price_rm: { type: "number" } }) },
-    extra_rm_per_pax: { type: "number", description: "Anggaran RM seorang untuk jadikan harga pesaing setara ARBA (perkara yang ARBA sertakan tetapi pesaing kecualikan). 0 jika tiada." },
-    extra_note: sStr("Apa yang dikira dalam extra_rm_per_pax, cth. 'hotel RM980 + K-ETA RM50'"),
-    source_note: sStr("Sumber ringkas, cth. URL atau 'screenshot FB 12 Okt'"),
+    name: sStr("Competitor + package name, short, e.g. 'Lurima Travel · Seoul Lite'"),
+    attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l + (k === "strength" || k === "weakness" ? " — compared with the ARBA package" : ""))]))),
+    prices: { type: "array", description: `RM price per adult by pax. Required for pax ${pax.join(", ")} when the source allows; add other pax if given.`, items: sObj({ pax: { type: "integer" }, price_rm: { type: "number" } }) },
+    extra_rm_per_pax: { type: "number", description: "Estimated RM per pax to make the competitor's price like-for-like with ARBA (things ARBA includes but the competitor excludes). 0 if none." },
+    extra_note: sStr("What extra_rm_per_pax covers, e.g. 'hotel RM980 + K-ETA RM30'"),
+    source_note: sStr("Short source, e.g. the URL or 'FB screenshot 12 Oct'"),
   });
   const content = [];
   for (const f of files) content.push(await fileBlock(f));
   const arba = await cmpArbaContext(d, [vs]);
-  content.push({ type: "text", text: `Destinasi: ${d.name}. Pakej ARBA untuk dibandingkan:\n${JSON.stringify(arba[0])}\n\n` +
-    (old ? `Data pesaing sedia ada (kemas kini ikut sumber baharu, kekalkan yang masih betul):\n${JSON.stringify({ name: old.name, attrs: old.attrs, prices: old.prices, extra: old.extra, extraNote: old.extraNote })}\n\n` : "") +
-    (name ? `Nama pesaing: ${name}\n` : "") + (urls.length ? `Baca halaman ini dengan web_fetch:\n${urls.join("\n")}\n` : "") + (text ? `Teks daripada pengguna:\n${text}\n` : "") +
-    `\nIsi semua aspek pesaing dan harga untuk pax ${pax.join(", ")}.` });
-  $("#aiRun").disabled = true; mErr(""); $("#aiOut").innerHTML = `<div class="muted small">✦ Claude sedang membaca sumber… (boleh ambil 20–60 saat)</div>`;
+  content.push({ type: "text", text: `Destination: ${d.name}. ARBA package to compare with:\n${JSON.stringify(arba[0])}\n\n` +
+    (old ? `Existing competitor data (update from the new source, keep what is still right):\n${JSON.stringify({ name: old.name, attrs: old.attrs, prices: old.prices, extra: old.extra, extraNote: old.extraNote })}\n\n` : "") +
+    (name ? `Competitor name: ${name}\n` : "") + (urls.length ? `Read these pages with web_fetch:\n${urls.join("\n")}\n` : "") + (text ? `Text from the user:\n${text}\n` : "") +
+    `\nFill every aspect of the competitor and the prices for pax ${pax.join(", ")}.` });
+  $("#aiRun").disabled = true; mErr(""); $("#aiOut").innerHTML = `<div class="muted small">✦ Claude is reading the source… (20–60 seconds)</div>`;
   try {
     const r = await aiCall({ system: AI_SYS, content, schema, web: urls.length > 0 });
     CMP_AI = { kind: "item", id, vs, r };
     $("#aiOut").innerHTML = `<div class="cmp-prev"><b>${esc(r.name || name)}</b> <span class="muted small">${esc(r.source_note || "")}</span>
       <table><tbody>${asp.map(([k, l]) => `<tr><th class="l">${esc(l)}</th><td class="l cmp-wrap">${esc(r.attrs[k] || "—")}</td></tr>`).join("")}
       ${(r.prices || []).sort((a, b) => a.pax - b.pax).map(p => `<tr><th class="l">Price (${p.pax} pax)</th><td class="l">${rm(p.price_rm)}</td></tr>`).join("")}
-      ${r.extra_rm_per_pax ? `<tr><th class="l">Tambahan setara</th><td class="l">${rm(r.extra_rm_per_pax)} · ${esc(r.extra_note)}</td></tr>` : ""}</tbody></table></div>`;
-    $("#aiRun").outerHTML = `<button class="btn primary" id="aiApply">Guna dalam jadual</button>`;
+      ${r.extra_rm_per_pax ? `<tr><th class="l">Like-for-like extra</th><td class="l">${rm(r.extra_rm_per_pax)} · ${esc(r.extra_note)}</td></tr>` : ""}</tbody></table></div>`;
+    $("#aiRun").outerHTML = `<button class="btn primary" id="aiApply">Use in table</button>`;
   } catch (e) { $("#aiOut").innerHTML = ""; mErr(e.message); $("#aiRun").disabled = false; }
 }
 async function runCmpAnalyse(d) {
   const C = d.competitors, cols = cmpCols(d), asp = cmpAspects(d);
   const pkgIds = [...new Set(cols.map(c => c.pkg.id))];
-  modal("✦ Analisis AI", `<div class="err-t"></div><div id="aiOut"><div class="muted small">✦ Claude sedang menganalisis ${pkgIds.length} pakej ARBA dan ${cols.length - pkgIds.length} pesaing… (boleh ambil 30–90 saat)</div></div>`, `<button class="btn" data-close>Batal</button>`, true);
+  modal("✦ AI analysis", `<div class="err-t"></div><div id="aiOut"><div class="muted small">✦ Claude is analysing ${pkgIds.length} ARBA package(s) and ${cols.length - pkgIds.length} competitor(s)… (30–90 seconds)</div></div>`, `<button class="btn" data-close>Cancel</button>`, true);
   try {
     const arba = await cmpArbaContext(d, pkgIds);
     const comps = C.items.map(c => ({ id: c.id, name: c.name, vs: c.vs, attrs: c.attrs, prices_rm_per_adult_by_pax: c.prices, extra_rm_per_pax: c.extra || 0, extra_note: c.extraNote || "" }));
     const schema = sObj({
-      arba: { type: "array", description: "Satu entri bagi setiap pakej ARBA: isi aspek daripada katalog.", items: sObj({ id: { type: "string", enum: pkgIds }, attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l)]))) }) },
-      columns: { type: "array", description: "Satu entri bagi setiap lajur (pakej ARBA dan setiap pesaing).", items: sObj({ id: { type: "string", enum: cols.map(c => c.id) }, strength: sStr("Kekuatan utama, frasa pendek"), weakness: sStr("Kelemahan utama, frasa pendek, '-' jika tiada") }) },
-      summary: sStr("Analisis 150–300 patah perkataan dalam markdown ringkas (## tajuk, - senarai, **tebal**): kedudukan harga ARBA vs pesaing ikut pax (termasuk harga setara), perbezaan inklusi, risiko, dan peluang."),
-      actions: { type: "array", description: "3–6 cadangan tindakan konkrit untuk PO (harga, inklusi, USP, cara Sales pitch).", items: { type: "string" } },
+      arba: { type: "array", description: "One entry per ARBA package: fill the aspects from the catalogue.", items: sObj({ id: { type: "string", enum: pkgIds }, attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l)]))) }) },
+      columns: { type: "array", description: "One entry per column (ARBA package and each competitor).", items: sObj({ id: { type: "string", enum: cols.map(c => c.id) }, strength: sStr("Main strengths, short phrases separated by ';'"), weakness: sStr("Main weaknesses, short phrases separated by ';', '-' if none") }) },
+      summary: sStr("150–300 word analysis in simple markdown (## heading, - list, **bold**): ARBA's price position vs competitors by pax (incl. like-for-like prices), inclusion differences, risks and opportunities."),
+      actions: { type: "array", description: "3–6 concrete recommendations for the PO (price, inclusions, USP, how Sales should pitch).", items: { type: "string" } },
     });
-    const r = await aiCall({ system: AI_SYS, schema, content: [{ type: "text", text: `Destinasi: ${d.name}. Pax untuk harga: ${cmpPax(d).join(", ")}. Aspek: ${asp.map(a => a[0] + " = " + a[1]).join("; ")}.\n\nPakej ARBA (harga = Catalog Price):\n${JSON.stringify(arba)}\n\nPesaing:\n${JSON.stringify(comps)}\n\nIsi aspek ARBA daripada katalog, tulis kekuatan / kelemahan setiap lajur, ringkasan dan cadangan.` }] });
+    const r = await aiCall({ system: AI_SYS, schema, content: [{ type: "text", text: `Destination: ${d.name}. Pax for prices: ${cmpPax(d).join(", ")}. Aspects: ${asp.map(a => a[0] + " = " + a[1]).join("; ")}.\n\nARBA packages (price = Catalog Price):\n${JSON.stringify(arba)}\n\nCompetitors:\n${JSON.stringify(comps)}\n\nFill the ARBA aspects from the catalogue, write strengths / weaknesses for each column, a summary and recommendations.` }] });
     CMP_AI = { kind: "analysis", r };
-    $("#aiOut").innerHTML = `<div class="cmp-md">${cmpMd(r.summary)}${(r.actions || []).length ? `<h4>Cadangan tindakan</h4><ul>${r.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
-      <label class="small" style="display:flex;gap:6px;align-items:center;flex-direction:row"><input type="checkbox" id="aiOverwrite"> Tulis ganti sel yang sudah diisi (aspek ARBA, Strength, Weakness)</label>
-      <div class="small muted">Guna: aspek ARBA yang kosong diisi daripada katalog, Strength / Weakness diisi, ringkasan disimpan di bawah jadual. Tekan Save selepas itu.</div>`;
-    $("#modalRoot .mf").innerHTML = `<button class="btn" data-close>Batal</button><button class="btn primary" id="aiApply">Guna dalam jadual</button>`;
+    $("#aiOut").innerHTML = `<div class="cmp-md">${cmpMd(r.summary)}${(r.actions || []).length ? `<h4>Recommendations</h4><ul>${r.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
+      <label class="small" style="display:flex;gap:6px;align-items:center;flex-direction:row"><input type="checkbox" id="aiOverwrite"> Overwrite cells that are already filled (ARBA aspects, Strength, Weakness)</label>
+      <div class="small muted">Use: empty ARBA aspects are filled from the catalogue, Strength / Weakness are filled, the summary is kept under the table. Press Save afterwards.</div>`;
+    $("#modalRoot .mf").innerHTML = `<button class="btn" data-close>Cancel</button><button class="btn primary" id="aiApply">Use in table</button>`;
   } catch (e) { $("#aiOut").innerHTML = ""; mErr(e.message); }
 }
 function applyCmpAI(d) {
@@ -1565,7 +1565,7 @@ function applyCmpAI(d) {
   if (x.kind === "item") {
     const r = x.r, prices = {};
     for (const p of r.prices || []) if (num(p.price_rm) && p.price_rm > 0) prices[String(p.pax)] = Math.round(p.price_rm);
-    const fields = { name: r.name || $("#aiName").value.trim() || "Pesaing", vs: x.vs, attrs: r.attrs, prices, extra: Math.round(+r.extra_rm_per_pax || 0), extraNote: r.extra_note || "", source: r.source_note || "", updated: today };
+    const fields = { name: r.name || $("#aiName").value.trim() || "Competitor", vs: x.vs, attrs: r.attrs, prices, extra: Math.round(+r.extra_rm_per_pax || 0), extraNote: r.extra_note || "", source: r.source_note || "", updated: today };
     if (x.id) Object.assign(items.find(c => c.id === x.id), fields);
     else items.push({ id: cmpNewId(d, fields.name), ...fields });
     SEL.pkg = x.vs;
@@ -1580,11 +1580,11 @@ function applyCmpAI(d) {
     }
     C.analysis = { text: x.r.summary || "", actions: x.r.actions || [], at: new Date().toISOString(), by: SESSION.u };
   }
-  CMP_AI = null; closeModal(); toast("Dimasukkan dalam jadual — tekan Save untuk simpan"); render();
+  CMP_AI = null; closeModal(); toast("Added to the table — press Save to keep it"); render();
 }
 function cmpNewId(d, name) {
   const ids = new Set(((d.competitors || {}).items || []).map(c => c.id).concat(d.packages.map(p => p.id)));
-  const b = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 30) || "pesaing";
+  const b = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 30) || "competitor";
   let id = b, n = 2; while (ids.has(id)) id = b + "-" + n++;
   return id;
 }
@@ -1993,9 +1993,9 @@ function openAccount() {
     <input id="nt" type="password" placeholder="new fine-grained token" autocomplete="off">
     <div><button class="btn" id="doTok">Replace token</button></div>
     <hr style="border:0;border-top:1px solid var(--line);width:100%">
-    <b>Claude API key (Competitor Analysis AI)</b><div class="small muted">${USERS.ai ? "Ditetapkan. " : "Belum ditetapkan. "}Disimpan terenkripsi dalam users.json seperti token GitHub; semua user yang log masuk boleh guna AI. Buat key di platform.claude.com → API keys (letak had belanja bulanan).</div>
+    <b>Claude API key (Competitor Analysis AI)</b><div class="small muted">${USERS.ai ? "Set. " : "Not set. "}Stored encrypted in users.json like the GitHub token; every logged-in user can use the AI. Create a key at platform.claude.com → API keys (set a monthly spend limit).</div>
     <input id="nak" type="password" placeholder="sk-ant-…" autocomplete="off">
-    <div><button class="btn" id="doAiKey">${USERS.ai ? "Tukar key" : "Simpan key"}</button>${USERS.ai ? ` <button class="btn danger" id="doAiDel">Buang key</button>` : ""}</div>` : ""}
+    <div><button class="btn" id="doAiKey">${USERS.ai ? "Replace key" : "Save key"}</button>${USERS.ai ? ` <button class="btn danger" id="doAiDel">Remove key</button>` : ""}</div>` : ""}
     <div class="err-t"></div>`, `<button class="btn" data-close>Close</button>`, isAdmin);
 }
 async function acct(fn, okMsg) { mErr("Saving…"); try { await fn(); mErr(""); toast(okMsg); openAccount(); } catch (e) { mErr(e.message); } }
@@ -2028,14 +2028,14 @@ document.addEventListener("click", async e => {
   if (t.dataset.cmppkg) { SEL.pkg = t.dataset.cmppkg; SEL.variant = "auto"; return render(); }
   if (t.dataset.act === "cmpAdd") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), name = $("#cmpName").value.trim();
-    if (!name) return toast("Isi nama pesaing");
+    if (!name) return toast("Enter the competitor name");
     const C = d.competitors ||= { pax: CMP_PAX.slice(), items: [] };
     (C.items ||= []).push({ id: cmpNewId(d, name), name, vs: $("#cmpVs").value, attrs: {}, prices: {} }); SEL.pkg = $("#cmpVs").value;
-    toast(`Ditambah "${name}" — isi sel kuning, kemudian Save`); return render();
+    toast(`Added "${name}" — fill in the cells, then Save`); return render();
   }
   if (t.dataset.act === "cmpDel") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), c = d.competitors.items.find(x => x.id === t.dataset.id);
-    if (!c || !confirm(`Buang "${c.name}" daripada Competitor Analysis?\n\nTiada yang disimpan sehingga anda tekan Save.`)) return;
+    if (!c || !confirm(`Remove "${c.name}" from Competitor Analysis?\n\nNothing is saved until you press Save.`)) return;
     d.competitors.items = d.competitors.items.filter(x => x.id !== c.id); return render();
   }
   if (t.dataset.act === "calcMd") {
@@ -2193,18 +2193,18 @@ document.addEventListener("click", async e => {
   }
   if (t.id === "doAiKey" || t.id === "doAiDel") {
     const key = t.id === "doAiKey" ? $("#nak").value.trim() : null;
-    if (t.id === "doAiKey" && !key) return mErr("Tampal Claude API key.");
-    if (t.id === "doAiDel" && !confirm("Buang Claude API key? AI dalam Competitor Analysis akan berhenti.")) return;
+    if (t.id === "doAiKey" && !key) return mErr("Paste the Claude API key.");
+    if (t.id === "doAiDel" && !confirm("Remove the Claude API key? The AI in Competitor Analysis will stop working.")) return;
     return acct(async () => {
       if (key) {   // check the key before storing it
         const sdk = await import(AI_SDK);
         try { await new sdk.default({ apiKey: key, dangerouslyAllowBrowser: true }).models.retrieve(AI_MODEL); }
-        catch (e) { throw new Error(e instanceof sdk.AuthenticationError ? "Key ditolak oleh Claude API." : "Tidak dapat semak key: " + e.message); }
+        catch (e) { throw new Error(e instanceof sdk.AuthenticationError ? "The Claude API rejected the key." : "Could not check the key: " + e.message); }
       }
       const vk = await crypto.subtle.importKey("raw", SESSION.vaultRaw, "AES-GCM", false, ["encrypt"]), next = clone(USERS);
       if (key) next.ai = await aesEnc(vk, enc.encode(key)); else delete next.ai;
       await saveUsers(next, `users: ${SESSION.u} ${key ? "set" : "removed"} Claude API key`); SESSION.aiKey = key;
-    }, key ? "Claude API key disimpan" : "Claude API key dibuang");
+    }, key ? "Claude API key saved" : "Claude API key removed");
   }
   if (t.id === "doTok") {
     const tok = $("#nt").value.trim(); if (!tok) return mErr("Paste the new token.");
@@ -2265,7 +2265,7 @@ document.addEventListener("change", e => {
   if (t.id && t.id.startsWith("opt_")) { (SEL.opt[SEL.dest] ||= {})[t.id.slice(4)] = t.value; return render(); }
   if (t.id === "cmpPax") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), v = [...new Set(t.value.split(/[^0-9]+/).filter(Boolean).map(Number).filter(n => n >= 1 && n <= 99))].sort((a, b) => a - b);
-    if (!v.length) { toast("Senarai pax tidak sah"); return render(); }
+    if (!v.length) { toast("Invalid pax list"); return render(); }
     (d.competitors ||= { items: [] }).pax = v; return render();
   }
   if (t.id === "flagArea") { SEL.flagArea = t.value; return render(); }

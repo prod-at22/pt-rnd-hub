@@ -137798,6 +137798,420 @@
      "label": "Catalog nz-north-only (deleted — ST New Zealand North Island 6D5N no longer sold)"
     }
    ]
+  },
+  {
+   "v": 98,
+   "at": "2026-10-14T10:52:56Z",
+   "by": "ezie",
+   "note": "Competitor Analysis Seoul in English (aspects, strengths / weaknesses, analysis, recommendations)",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "competitors"
+     ],
+     "from": {
+      "pax": [
+       3,
+       4,
+       6,
+       8
+      ],
+      "aspects": [
+       {
+        "id": "days",
+        "label": "Days"
+       },
+       {
+        "id": "accommodation",
+        "label": "Accommodation"
+       },
+       {
+        "id": "guide",
+        "label": "Tour Guide"
+       },
+       {
+        "id": "hours",
+        "label": "Hours"
+       },
+       {
+        "id": "packaging",
+        "label": "Packaging"
+       },
+       {
+        "id": "usp",
+        "label": "USP"
+       },
+       {
+        "id": "meals",
+        "label": "Meals"
+       },
+       {
+        "id": "tipping",
+        "label": "Tipping"
+       },
+       {
+        "id": "visa",
+        "label": "K-ETA"
+       }
+      ],
+      "arba": {
+       "atk-bsc": {
+        "days": "5D4N",
+        "accommodation": "Included",
+        "guide": "Driving guide",
+        "hours": "10 jam",
+        "packaging": "2 hari F&E incl accom",
+        "usp": "Local guide, Gyeongbok, Nami",
+        "meals": "Breakfast",
+        "tipping": "Included",
+        "visa": "Included",
+        "strength": "Halal dijaga, no tourist trap, accom incl",
+        "weakness": "Lebih mahal drp Lurima Lite walau selepas tambah hotel (3–6 pax); guide tempatan, bukan Melayu"
+       },
+       "atk-std": {
+        "days": "5D4N",
+        "accommodation": "Included",
+        "guide": "Driving guide",
+        "hours": "10 jam",
+        "packaging": "Full tour Seoul City",
+        "usp": "+ Namsan Cable Car",
+        "meals": "Breakfast",
+        "tipping": "Included",
+        "visa": "Included",
+        "strength": "Full guided + Cable Car, tipping & K-ETA termasuk, harga jauh lebih rendah drp pakej Muslim full-board",
+        "weakness": "Breakfast sahaja — pesaing Muslim full-board sertakan makan halal"
+       }
+      },
+      "items": [
+       {
+        "id": "lurima-seoul-lite",
+        "name": "Lurima Travel · Seoul Lite",
+        "vs": "atk-bsc",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Excluded (add RM1,020/pax)",
+         "guide": "Malaysian guide + driver",
+         "hours": "10 jam × 2 hari",
+         "packaging": "2 hari tour + 2 hari F&E",
+         "usp": "Guide Melayu menetap di Korea, Gyeongbok, Nami",
+         "meals": "No meals (dibawa ke restoran halal)",
+         "tipping": "Included",
+         "visa": "Bantu mohon, fee tak dinyatakan",
+         "strength": "Harga paling rendah; guide Melayu",
+         "weakness": "Hotel & makan dikecualikan; harga 2025"
+        },
+        "prices": {
+         "3": 1750,
+         "4": 1500,
+         "6": 1260,
+         "8": 1290
+        },
+        "extra": 1050,
+        "extraNote": "hotel RM1,020 + K-ETA ~RM30",
+        "source": "lurimatravel.com/private-tour/pakej-korea-murah-2026 · harga sah sehingga 31 Dis 2025",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "jeju-muslim-travel",
+        "name": "Jeju Muslim Travel · Private Seoul",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included (3★, dekat Dongdaemun)",
+         "guide": "Tour guide + van",
+         "hours": "9 jam (9:30–18:30)",
+         "packaging": "Full tour 4 hari",
+         "usp": "Makan halal ikut aturcara, Masjid Seoul, Nami, Gyeongbok",
+         "meals": "Ikut aturcara (halal)",
+         "tipping": "Tidak dinyatakan",
+         "visa": "Tidak dinyatakan",
+         "strength": "Makan halal termasuk; full tour 4 hari",
+         "weakness": "Min 4 pax (tiada harga 2–3 pax); tipping / K-ETA tak jelas"
+        },
+        "prices": {
+         "4": 3490,
+         "6": 3490,
+         "8": 2890
+        },
+        "extra": 0,
+        "extraNote": "",
+        "source": "jejumuslimtravel.com/private_trip_seoul · halaman bertajuk 2025, tarikh sah tidak dinyatakan",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "selamat-bercuti",
+        "name": "Selamat Bercuti · Seoul + Nami",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included (3★; 4★ +RM360–500)",
+         "guide": "English-speaking guide + private transport",
+         "hours": "Tidak dinyatakan",
+         "packaging": "Full tour 4 hari + duty-free / shopping stops",
+         "usp": "Nami cruise, hanbok, Starfield COEX, Masjid Itaewon",
+         "meals": "Breakfast + makan halal ikut aturcara",
+         "tipping": "Excluded (USD5/pax/hari)",
+         "visa": "Excluded",
+         "strength": "Full-board halal, aturcara padat",
+         "weakness": "Paling mahal; tipping & K-ETA tak termasuk; banyak shopping stop"
+        },
+        "prices": {
+         "3": 5890,
+         "4": 4190,
+         "6": 4190,
+         "8": 3490
+        },
+        "extra": 140,
+        "extraNote": "tipping USD5 × 5 hari + K-ETA (anggaran)",
+        "source": "selamatbercuti.com/tours/5d4n-seoul-nami-island · sah Mac–Nov 2026, 3★",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "sedunia-delightful-korea",
+        "name": "Sedunia Travel · Delightful South Korea",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included",
+         "guide": "English-speaking guide",
+         "hours": "Tidak dinyatakan",
+         "packaging": "Full tour: Seoul, Seorak, Everland",
+         "usp": "Everland, Seorak cable car, Nami",
+         "meals": "Halal ikut aturcara (hampir full-board)",
+         "tipping": "Tidak dinyatakan",
+         "visa": "Excluded",
+         "strength": "Everland & Seorak termasuk; makan halal",
+         "weakness": "Shopping wajib (tak ikut +RM900); harga sama 4–8 pax; min 4 pax"
+        },
+        "prices": {
+         "4": 4620,
+         "6": 4620,
+         "8": 4620
+        },
+        "extra": 30,
+        "extraNote": "K-ETA (anggaran)",
+        "source": "seduniatravel.com 5D4N Delightful South Korea (Muslim) · sah Jan–Nov 2026, peak +RM300",
+        "updated": "2026-10-14"
+       }
+      ],
+      "analysis": {
+       "by": "claude (riset web)",
+       "at": "2026-10-14T08:42:10Z",
+       "text": "## Kedudukan harga\n- **Seoul Basic vs Lurima Seoul Lite:** Lurima nampak 42–47% lebih murah, tetapi tanpa hotel. Selepas tambah hotel RM1,020 dan K-ETA, harga setara Lurima ialah RM2,800 (3 pax), RM2,550 (4 pax), RM2,310 (6 pax), RM2,340 (8 pax). ARBA masih **4–7% lebih mahal pada 3–6 pax**, tetapi sedikit lebih murah pada 8 pax. Harga Lurima ialah harga 2025 — harga 2026 mungkin lebih tinggi.\n- **Seoul Standard vs pakej Muslim full-board:** ARBA **jauh lebih murah** — Jeju Muslim Travel +9% (4 pax) hingga +34% (6 pax), Selamat Bercuti +31% hingga +61%, Sedunia +44% hingga +93%. Pesaing ini sertakan makan halal tengah hari / malam, jadi bezanya sebahagiannya ialah kos makan.\n\n## Perbezaan inklusi\n- ARBA satu-satunya yang menyertakan **tipping dan K-ETA** secara jelas dalam kedua-dua pakej.\n- Pesaing full-board menjual **makan halal termasuk** sebagai nilai utama; ARBA Standard hanya breakfast.\n- Lurima menjual **guide Melayu** yang menetap di Korea — USP yang ARBA tiada pada Basic.\n- Selamat Bercuti dan Sedunia ada **shopping stop** (Sedunia wajib, tak ikut +RM900) — ARBA boleh pitch \"no tourist trap\".\n\n## Risiko\n- Pelanggan yang bandingkan harga iklan \"dari RM1,190\" akan nampak ARBA Basic dua kali ganda lebih mahal.\n- Untuk kumpulan 2–3 pax, Jeju Muslim Travel dan Sedunia tiada harga — ruang ARBA.",
+       "actions": [
+        "Dalam iklan Seoul Basic, tunjuk harga 'termasuk hotel, tipping & K-ETA' supaya tak dibandingkan dengan harga tanpa hotel Lurima.",
+        "Semak margin Seoul Basic 3–6 pax: turun ~RM90–200 sudah setara Lurima selepas hotel.",
+        "Tambah add-on 'pakej makan halal' (tengah hari + malam) untuk Seoul Standard — masih lebih murah drp Jeju Muslim / Selamat Bercuti.",
+        "Sales pitch Standard: tiada shopping stop, tipping & K-ETA termasuk, lebih murah 9–93% drp pakej Muslim full-board (kebanyakan 30%+).",
+        "Pertimbang pilihan guide berbahasa Melayu sebagai upgrade untuk lawan Lurima.",
+        "Minta sebut harga 2026 Lurima dan Jeju Muslim Travel (halaman masih harga 2025) sebelum ubah harga."
+       ]
+      }
+     },
+     "to": {
+      "pax": [
+       3,
+       4,
+       6,
+       8
+      ],
+      "aspects": [
+       {
+        "id": "days",
+        "label": "Days"
+       },
+       {
+        "id": "accommodation",
+        "label": "Accommodation"
+       },
+       {
+        "id": "guide",
+        "label": "Tour Guide"
+       },
+       {
+        "id": "hours",
+        "label": "Hours"
+       },
+       {
+        "id": "packaging",
+        "label": "Packaging"
+       },
+       {
+        "id": "usp",
+        "label": "USP"
+       },
+       {
+        "id": "meals",
+        "label": "Meals"
+       },
+       {
+        "id": "tipping",
+        "label": "Tipping"
+       },
+       {
+        "id": "visa",
+        "label": "K-ETA"
+       }
+      ],
+      "arba": {
+       "atk-bsc": {
+        "days": "5D4N",
+        "accommodation": "Included",
+        "guide": "Driving guide",
+        "hours": "10 hrs",
+        "packaging": "2 days F&E incl. hotel",
+        "usp": "Local guide, Gyeongbokgung, Nami",
+        "meals": "Breakfast",
+        "tipping": "Included",
+        "visa": "Included",
+        "strength": "Halal taken care of; no tourist traps; hotel included",
+        "weakness": "Dearer than Lurima Seoul Lite even after adding its hotel (3–6 pax); local guide, not Malay-speaking"
+       },
+       "atk-std": {
+        "days": "5D4N",
+        "accommodation": "Included",
+        "guide": "Driving guide",
+        "hours": "10 hrs",
+        "packaging": "Full Seoul city tour",
+        "usp": "+ Namsan Cable Car",
+        "meals": "Breakfast",
+        "tipping": "Included",
+        "visa": "Included",
+        "strength": "Fully guided + cable car; tipping & K-ETA included; far cheaper than Muslim full-board packages",
+        "weakness": "Breakfast only — Muslim competitors include halal lunch & dinner"
+       }
+      },
+      "items": [
+       {
+        "id": "lurima-seoul-lite",
+        "name": "Lurima Travel · Seoul Lite",
+        "vs": "atk-bsc",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Excluded (add RM1,020/pax)",
+         "guide": "Malaysian guide + driver",
+         "hours": "10 hrs × 2 days",
+         "packaging": "2 tour days + 2 days F&E",
+         "usp": "Malay-speaking guide living in Korea, Gyeongbokgung, Nami",
+         "meals": "No meals (taken to halal restaurants)",
+         "tipping": "Included",
+         "visa": "Helps apply, fee not stated",
+         "strength": "Lowest price; Malay-speaking guide",
+         "weakness": "Hotel & meals excluded; 2025 price"
+        },
+        "prices": {
+         "3": 1750,
+         "4": 1500,
+         "6": 1260,
+         "8": 1290
+        },
+        "extra": 1050,
+        "extraNote": "hotel RM1,020 + K-ETA ~RM30",
+        "source": "lurimatravel.com/private-tour/pakej-korea-murah-2026 · price valid until 31 Dec 2025",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "jeju-muslim-travel",
+        "name": "Jeju Muslim Travel · Private Seoul",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included (3★, near Dongdaemun)",
+         "guide": "Tour guide + van",
+         "hours": "9 hrs (9:30–18:30)",
+         "packaging": "Full tour, 4 days",
+         "usp": "Halal meals per itinerary, Seoul Central Mosque, Nami, Gyeongbokgung",
+         "meals": "Per itinerary (halal)",
+         "tipping": "Not stated",
+         "visa": "Not stated",
+         "strength": "Halal meals included; full tour 4 days",
+         "weakness": "Min 4 pax (no 2–3 pax price); tipping / K-ETA unclear"
+        },
+        "prices": {
+         "4": 3490,
+         "6": 3490,
+         "8": 2890
+        },
+        "extra": 0,
+        "extraNote": "",
+        "source": "jejumuslimtravel.com/private_trip_seoul · page titled 2025, no validity date",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "selamat-bercuti",
+        "name": "Selamat Bercuti · Seoul + Nami",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included (3★; 4★ +RM360–500)",
+         "guide": "English-speaking guide + private transport",
+         "hours": "Not stated",
+         "packaging": "Full tour, 4 days + duty-free / shopping stops",
+         "usp": "Nami cruise, hanbok, Starfield COEX, Itaewon mosque",
+         "meals": "Breakfast + halal meals per itinerary",
+         "tipping": "Excluded (USD5/pax/day)",
+         "visa": "Excluded",
+         "strength": "Halal full board; packed itinerary",
+         "weakness": "Most expensive; tipping & K-ETA not included; many shopping stops"
+        },
+        "prices": {
+         "3": 5890,
+         "4": 4190,
+         "6": 4190,
+         "8": 3490
+        },
+        "extra": 140,
+        "extraNote": "tipping USD5 × 5 days + K-ETA (estimate)",
+        "source": "selamatbercuti.com/tours/5d4n-seoul-nami-island · valid Mar–Nov 2026, 3★",
+        "updated": "2026-10-14"
+       },
+       {
+        "id": "sedunia-delightful-korea",
+        "name": "Sedunia Travel · Delightful South Korea",
+        "vs": "atk-std",
+        "attrs": {
+         "days": "5D4N",
+         "accommodation": "Included",
+         "guide": "English-speaking guide",
+         "hours": "Not stated",
+         "packaging": "Full tour: Seoul, Seorak, Everland",
+         "usp": "Everland, Seorak cable car, Nami",
+         "meals": "Halal meals per itinerary (almost full board)",
+         "tipping": "Not stated",
+         "visa": "Excluded",
+         "strength": "Everland & Seorak included; halal meals",
+         "weakness": "Compulsory shopping (skip = +RM900); same price 4–8 pax; min 4 pax"
+        },
+        "prices": {
+         "4": 4620,
+         "6": 4620,
+         "8": 4620
+        },
+        "extra": 30,
+        "extraNote": "K-ETA (estimate)",
+        "source": "seduniatravel.com 5D4N Delightful South Korea (Muslim) · valid Jan–Nov 2026, peak +RM300",
+        "updated": "2026-10-14"
+       }
+      ],
+      "analysis": {
+       "by": "claude (web research)",
+       "at": "2026-10-14T08:42:10Z",
+       "text": "## Price position\n- **Seoul Basic vs Lurima Seoul Lite:** Lurima looks 42–47% cheaper, but without a hotel. After adding its RM1,020 hotel and K-ETA, Lurima's like-for-like price is RM2,800 (3 pax), RM2,550 (4 pax), RM2,310 (6 pax), RM2,340 (8 pax). ARBA is still **4–7% dearer at 3–6 pax**, and slightly cheaper at 8 pax. Lurima's prices are 2025 — 2026 may be higher.\n- **Seoul Standard vs Muslim full-board packages:** ARBA is **much cheaper** — Jeju Muslim Travel +9% (4 pax) to +34% (6 pax), Selamat Bercuti +31% to +61%, Sedunia +44% to +93%. These competitors include halal lunch / dinner, so part of the gap is the cost of meals.\n\n## Inclusion differences\n- ARBA is the only one that clearly includes **tipping and K-ETA** in both packages.\n- Full-board competitors sell **halal meals included** as their main value; ARBA Standard is breakfast only.\n- Lurima sells a **Malay-speaking guide** living in Korea — a USP ARBA Basic does not have.\n- Selamat Bercuti and Sedunia have **shopping stops** (Sedunia compulsory, skipping costs +RM900) — ARBA can pitch \"no tourist traps\".\n\n## Risks\n- Customers comparing the advertised \"from RM1,190\" will see ARBA Basic as twice the price.\n- For 2–3 pax, Jeju Muslim Travel and Sedunia have no price — room for ARBA.",
+       "actions": [
+        "In Seoul Basic ads, show the price as 'incl. hotel, tipping & K-ETA' so it is not compared with Lurima's no-hotel price.",
+        "Review Seoul Basic margin at 3–6 pax: ~RM90–200 lower matches Lurima after its hotel.",
+        "Add a 'halal meals' add-on (lunch + dinner) to Seoul Standard — still cheaper than Jeju Muslim / Selamat Bercuti.",
+        "Sales pitch for Standard: no shopping stops, tipping & K-ETA included, 9–93% cheaper than Muslim full-board packages (mostly 30%+).",
+        "Consider a Malay-speaking guide as an upgrade to compete with Lurima.",
+        "Ask Lurima and Jeju Muslim Travel for 2026 quotes (their pages still show 2025 prices) before changing prices."
+       ]
+      }
+     },
+     "label": "Seoul › Competitor Analysis"
+    }
+   ]
   }
  ]
 }
