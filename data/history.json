@@ -93066,6 +93066,320 @@
      "label": "KB turki › calc › variants › klasikstd › inclusions › #6"
     }
    ]
+  },
+  {
+   "v": 88,
+   "at": "2026-10-14T03:31:05Z",
+   "by": "ezie",
+   "note": "Turki Klasik Basic (PO ezie 14 Oct 2026): the −$200/pax Basic estimate itemised — Topkapi −$61 (≈ RM250, MyTrip add-on cost) + −$139 estimate for 6 lunch + 7 dinner and the Istanbul hotel difference (Ramada Pera vs Viva Deluxe, 2 nights), unsplit until MyTrip gives rates. Costs and margins unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "TUR",
+      "note"
+     ],
+     "from": "Kos = MyTrip CR (TO Contract Rate) '8D7N Classic Turki Tour' USD × FX live (dulu MYR tetap 3.97); Basic = CR − $200/pax (ARBA, bukan CR). Tipping $5 × 8 hari dari 7 pax (CR TNI). Costing 2–24 pax (= CR; katalog cetak 2–9). CWB / CNB 100 % (CR tiada kadar anak).",
+     "to": "Kos = MyTrip CR (TO Contract Rate) '8D7N Classic Turki Tour' USD × FX live (dulu MYR tetap 3.97); Basic = CR − $200/pax (ARBA, bukan CR): Topkapi −$61 + makan & hotel −$139 (anggaran). Tipping $5 × 8 hari dari 7 pax (CR TNI). Costing 2–24 pax (= CR; katalog cetak 2–9). CWB / CNB 100 % (CR tiada kadar anak).",
+     "label": "Turki Klasik › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "TUR",
+      "rates"
+     ],
+     "from": [
+      {
+       "id": "f2",
+       "label": "Tour fare 2 pax (MyTrip)",
+       "value": 1550,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f3",
+       "label": "Tour fare 3 pax (MyTrip)",
+       "value": 1380,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f4",
+       "label": "Tour fare 4 pax (MyTrip)",
+       "value": 1350,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f5",
+       "label": "Tour fare 5 pax (MyTrip)",
+       "value": 1290,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f6",
+       "label": "Tour fare 6 pax (MyTrip)",
+       "value": 950,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f7",
+       "label": "Tour fare 7 pax (MyTrip)",
+       "value": 790,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f8",
+       "label": "Tour fare 8 pax (MyTrip)",
+       "value": 750,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f9",
+       "label": "Tour fare 9 pax (MyTrip)",
+       "value": 670,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f10",
+       "label": "Tour fare 10–14 pax (MyTrip)",
+       "value": 630,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f15",
+       "label": "Tour fare 15–19 pax (MyTrip)",
+       "value": 600,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f20",
+       "label": "Tour fare 20–24 pax (MyTrip)",
+       "value": 550,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "tip",
+       "label": "Tipping 7+ pax (TNI), tidak termasuk dalam tour fare (MyTrip)",
+       "value": 5,
+       "fx": "USD",
+       "unit": "USD/pax/hari",
+       "group": "Tipping"
+      },
+      {
+       "id": "bsc",
+       "label": "Basic: tolak lunch/dinner + hotel Istanbul New City (anggaran ARBA, bukan CR)",
+       "value": -200,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "Basic (ARBA)"
+      }
+     ],
+     "to": [
+      {
+       "id": "f2",
+       "label": "Tour fare 2 pax (MyTrip)",
+       "value": 1550,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f3",
+       "label": "Tour fare 3 pax (MyTrip)",
+       "value": 1380,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f4",
+       "label": "Tour fare 4 pax (MyTrip)",
+       "value": 1350,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f5",
+       "label": "Tour fare 5 pax (MyTrip)",
+       "value": 1290,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f6",
+       "label": "Tour fare 6 pax (MyTrip)",
+       "value": 950,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f7",
+       "label": "Tour fare 7 pax (MyTrip)",
+       "value": 790,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f8",
+       "label": "Tour fare 8 pax (MyTrip)",
+       "value": 750,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f9",
+       "label": "Tour fare 9 pax (MyTrip)",
+       "value": 670,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f10",
+       "label": "Tour fare 10–14 pax (MyTrip)",
+       "value": 630,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f15",
+       "label": "Tour fare 15–19 pax (MyTrip)",
+       "value": 600,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "f20",
+       "label": "Tour fare 20–24 pax (MyTrip)",
+       "value": 550,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+      },
+      {
+       "id": "tip",
+       "label": "Tipping 7+ pax (TNI), tidak termasuk dalam tour fare (MyTrip)",
+       "value": 5,
+       "fx": "USD",
+       "unit": "USD/pax/hari",
+       "group": "Tipping"
+      },
+      {
+       "id": "bscTop",
+       "label": "Basic: tolak Topkapi Palace (≈ RM250, kos add-on MyTrip)",
+       "value": -61,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "Basic (ARBA)"
+      },
+      {
+       "id": "bscRest",
+       "label": "Basic: tolak 6 lunch + 7 dinner & beza hotel Istanbul 2 malam (Ramada Pera vs Viva Deluxe) — baki anggaran ARBA, belum dipecahkan (tunggu MyTrip)",
+       "value": -139,
+       "fx": "USD",
+       "unit": "USD/pax",
+       "group": "Basic (ARBA)"
+      }
+     ],
+     "label": "Turki Klasik › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "TUR",
+      "variants",
+      "MYTRIP-BSC-3STAR",
+      "notes"
+     ],
+     "from": "Kos = baris CR Classic − $200/pax (anggaran ARBA untuk breakfast sahaja + Ramada Pera; CR tiada kadar Basic — flag). 2–6 pax termasuk tipping; 7+ pax tipping $5/pax/hari × 8 hari.",
+     "to": "Kos = baris CR Classic − $200/pax, dipecahkan: Topkapi −$61 (≈ RM250, kos add-on MyTrip) + baki anggaran ARBA −$139 untuk 6 lunch + 7 dinner dan beza hotel Istanbul 2 malam (Ramada Pera vs Viva Deluxe) — CR tiada kadar Basic (flag). 2–6 pax termasuk tipping; 7+ pax tipping $5/pax/hari × 8 hari.",
+     "label": "Turki Klasik › TO › TO MyTrip › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "TUR",
+      "variants",
+      "MYTRIP-BSC-3STAR",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "fare",
+       "label": "Tour fare (MyTrip)",
+       "per": "group",
+       "expr": "band(pax,[2,R.f2],[3,R.f3],[4,R.f4],[5,R.f5],[6,R.f6],[7,R.f7],[8,R.f8],[9,R.f9],[14,R.f10],[19,R.f15],[999,R.f20])*pax"
+      },
+      {
+       "key": "basic",
+       "label": "Basic −$200 (ARBA)",
+       "per": "group",
+       "expr": "R.bsc*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping × 8 hari (7+ pax)",
+       "per": "group",
+       "expr": "band(pax,[6,0],[999,R.tip*8])*pax"
+      }
+     ],
+     "to": [
+      {
+       "key": "fare",
+       "label": "Tour fare (MyTrip)",
+       "per": "group",
+       "expr": "band(pax,[2,R.f2],[3,R.f3],[4,R.f4],[5,R.f5],[6,R.f6],[7,R.f7],[8,R.f8],[9,R.f9],[14,R.f10],[19,R.f15],[999,R.f20])*pax"
+      },
+      {
+       "key": "basic-topkapi",
+       "label": "Tolak Topkapi (Basic)",
+       "per": "group",
+       "expr": "R.bscTop*pax"
+      },
+      {
+       "key": "basic-meals-hotel",
+       "label": "Tolak 6L+7D & beza hotel Istanbul (anggaran)",
+       "per": "group",
+       "expr": "R.bscRest*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping × 8 hari (7+ pax)",
+       "per": "group",
+       "expr": "band(pax,[6,0],[999,R.tip*8])*pax"
+      }
+     ],
+     "label": "Turki Klasik › TO › TO MyTrip › Component"
+    }
+   ]
   }
  ]
 }

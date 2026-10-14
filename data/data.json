@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 87,
- "updatedAt": "2026-10-14T03:12:05Z",
+ "version": 88,
+ "updatedAt": "2026-10-14T03:31:05Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -3112,7 +3112,7 @@
    "nights": 7,
    "po": "Acap",
    "source": "hub",
-   "note": "Kos = MyTrip CR (TO Contract Rate) '8D7N Classic Turki Tour' USD × FX live (dulu MYR tetap 3.97); Basic = CR − $200/pax (ARBA, bukan CR). Tipping $5 × 8 hari dari 7 pax (CR TNI). Costing 2–24 pax (= CR; katalog cetak 2–9). CWB / CNB 100 % (CR tiada kadar anak).",
+   "note": "Kos = MyTrip CR (TO Contract Rate) '8D7N Classic Turki Tour' USD × FX live (dulu MYR tetap 3.97); Basic = CR − $200/pax (ARBA, bukan CR): Topkapi −$61 + makan & hotel −$139 (anggaran). Tipping $5 × 8 hari dari 7 pax (CR TNI). Costing 2–24 pax (= CR; katalog cetak 2–9). CWB / CNB 100 % (CR tiada kadar anak).",
    "fx": [
     {
      "id": "MYR",
@@ -3227,9 +3227,17 @@
      "group": "Tipping"
     },
     {
-     "id": "bsc",
-     "label": "Basic: tolak lunch/dinner + hotel Istanbul New City (anggaran ARBA, bukan CR)",
-     "value": -200,
+     "id": "bscTop",
+     "label": "Basic: tolak Topkapi Palace (≈ RM250, kos add-on MyTrip)",
+     "value": -61,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "Basic (ARBA)"
+    },
+    {
+     "id": "bscRest",
+     "label": "Basic: tolak 6 lunch + 7 dinner & beza hotel Istanbul 2 malam (Ramada Pera vs Viva Deluxe) — baki anggaran ARBA, belum dipecahkan (tunggu MyTrip)",
+     "value": -139,
      "fx": "USD",
      "unit": "USD/pax",
      "group": "Basic (ARBA)"
@@ -3267,7 +3275,7 @@
      "paxMin": 2,
      "paxMax": 24,
      "hotel": "3★ (Ramada Pera Istanbul + others) + Breakfast only",
-     "notes": "Kos = baris CR Classic − $200/pax (anggaran ARBA untuk breakfast sahaja + Ramada Pera; CR tiada kadar Basic — flag). 2–6 pax termasuk tipping; 7+ pax tipping $5/pax/hari × 8 hari.",
+     "notes": "Kos = baris CR Classic − $200/pax, dipecahkan: Topkapi −$61 (≈ RM250, kos add-on MyTrip) + baki anggaran ARBA −$139 untuk 6 lunch + 7 dinner dan beza hotel Istanbul 2 malam (Ramada Pera vs Viva Deluxe) — CR tiada kadar Basic (flag). 2–6 pax termasuk tipping; 7+ pax tipping $5/pax/hari × 8 hari.",
      "components": [
       {
        "key": "fare",
@@ -3276,10 +3284,16 @@
        "expr": "band(pax,[2,R.f2],[3,R.f3],[4,R.f4],[5,R.f5],[6,R.f6],[7,R.f7],[8,R.f8],[9,R.f9],[14,R.f10],[19,R.f15],[999,R.f20])*pax"
       },
       {
-       "key": "basic",
-       "label": "Basic −$200 (ARBA)",
+       "key": "basic-topkapi",
+       "label": "Tolak Topkapi (Basic)",
        "per": "group",
-       "expr": "R.bsc*pax"
+       "expr": "R.bscTop*pax"
+      },
+      {
+       "key": "basic-meals-hotel",
+       "label": "Tolak 6L+7D & beza hotel Istanbul (anggaran)",
+       "per": "group",
+       "expr": "R.bscRest*pax"
       },
       {
        "key": "tipping",
