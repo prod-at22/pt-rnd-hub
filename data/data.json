@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 84,
- "updatedAt": "2026-10-14T02:03:12Z",
+ "version": 85,
+ "updatedAt": "2026-10-14T02:14:20Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -34419,7 +34419,7 @@
    "nights": 3,
    "po": "Fyka",
    "source": "hub",
-   "note": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax (KTT CR 2026: Normal = 1 May–31 Oct 2026, High = 11 Jan–30 Apr 2026, highest range). Hotel tier adds the catalog upgrade (4★ RM250/pax; Honeymoon RM450/couple). Day 3 Phi Phi sells +RM100/pax (catalog). Costing 2–10 pax (= catalog). KTT 2027 rates (11 Jan–30 Apr 2027) are in TO Contract Rate but not in the Costing yet (PO decision).",
+   "note": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax (KTT CR 2026: Normal = 1 May–31 Oct 2026; High = 11 Jan–30 Apr 2026, highest range — that CR is in Drive CR PT 2026 (CENTRALIZE)/CR KRABI, not uploaded). Hotel tier adds the catalog upgrade (4★ RM250/pax; Honeymoon RM450/couple). Day 3 Phi Phi sells +RM100/pax (catalog). Costing 2–10 pax (= catalog). KTT 2027 rates (11 Jan–30 Apr 2027) are in TO Contract Rate but not in the Costing yet (PO decision).",
    "options": [
     {
      "id": "hotel",
@@ -36050,36 +36050,6 @@
    ],
    "contracts": [
     {
-     "id": "1a13825d203",
-     "name": "ARBA__Krabi_4D3N_Package A_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
-     "file": "contracts/kbv/1a13825d203-ARBA__Krabi_4D3N_Package_A_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
-     "to": "KTT",
-     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
-     "size": 4926926,
-     "at": "2026-10-14T02:02:45Z",
-     "by": "ezie"
-    },
-    {
-     "id": "1a13825d204",
-     "name": "ARBA__Krabi_4D3N_Package.B_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
-     "file": "contracts/kbv/1a13825d204-ARBA__Krabi_4D3N_Package.B_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
-     "to": "KTT",
-     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
-     "size": 4876394,
-     "at": "2026-10-14T02:02:45Z",
-     "by": "ezie"
-    },
-    {
-     "id": "1a13825d205",
-     "name": "ARBA__Krabi_4D3N_Package.C_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
-     "file": "contracts/kbv/1a13825d205-ARBA__Krabi_4D3N_Package.C_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
-     "to": "KTT",
-     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
-     "size": 4925129,
-     "at": "2026-10-14T02:02:45Z",
-     "by": "ezie"
-    },
-    {
      "id": "1a13825d206",
      "name": "ARBA__Krabi_4D3N_Package A__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
      "file": "contracts/kbv/1a13825d206-ARBA__Krabi_4D3N_Package_A__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
@@ -36144,8 +36114,8 @@
      "name": "ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d20c-ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5466790,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1429900,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     },
@@ -36154,8 +36124,8 @@
      "name": "ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d20d-ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5459381,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1422441,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     },
@@ -36164,8 +36134,8 @@
      "name": "ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d20e-ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5484207,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1446312,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     },
@@ -36174,8 +36144,8 @@
      "name": "ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d20f-ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5468314,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1431429,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     },
@@ -36184,8 +36154,8 @@
      "name": "ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d210-ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5460959,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1424064,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     },
@@ -36194,8 +36164,8 @@
      "name": "ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "file": "contracts/kbv/1a13825d211-ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
      "to": "KTT",
-     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
-     "size": 5485539,
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet · compressed (emoji font subset; pages identical)",
+     "size": 1447681,
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     }
