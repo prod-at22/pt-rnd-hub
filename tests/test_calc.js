@@ -963,7 +963,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     click(W, $p("#qSuggest")); await tick(5);
     { const P = P2.DATA.destinations.find(x => x.code === "SEL").packages.find(x => x.id === $p("#qPkg").value), r = P2.priceRow(P2.DATA.destinations.find(x => x.code === "SEL"), P, "ATK-BSC", 3);
       ok($p("#qC_adult").value === String(Math.round(r.adult.cost)) && $p("#qT_adult").value === String(Math.round(r.adult.selling)) && $p("#qT1_adult").textContent === "RM" + Math.round(r.adult.selling + 200).toLocaleString("en-MY") && /Total T1/.test($p("#qTot").textContent) && /Margin/.test($p("#qTot").textContent), "Use Costing prices: cost + Selling T2 per category from Costing (3 pax), T1 = T2 + 200, totals and margin"); }
-    ok([...$p("#qTcSel").options].map(o => o.textContent).join(",") === "— pick TC —,Aqilah,Farah,Jannah,Ashiqin,Megat,Hamizah,Yana,Syamil,Zaki,Ahmad,Iman,Other…", "TC is a list of the 11 TCs + Other");
+    ok([...$p("#qTcSel").options].map(o => o.textContent).join(",") === "— pick TC —,Aqilah,Far,Farah,Jannah,Ashiqin,Megat,Hamizah,Yana,Syamil,Zaki,Ahmad,Iman,Other…", "TC is a list of the 12 TCs + Other");
     setVal(W, $p("#qTcSel"), "Jannah");
     click(W, $p('[data-qt="save"]')); await tick(10);
     ok($p("#modalRoot .err-t").textContent.includes("Phone number is required"), "phone is required");

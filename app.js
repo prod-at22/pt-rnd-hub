@@ -1599,7 +1599,7 @@ function cmpNewId(d, name) {
    A quote whose phone matches a CRM lead closed after the request shows as Closed. A PO can also mark Closed / Lost. */
 const QT = { list: null, err: null, busy: false, crm: null, crmAt: null, crmErr: null, edit: null, poView: null, filter: "open" };
 const QT_STATUS = ["Pending", "Quoted"];
-const QT_TCS = ["Aqilah", "Farah", "Jannah", "Ashiqin", "Megat", "Hamizah", "Yana", "Syamil", "Zaki", "Ahmad", "Iman"];   // Travel Consultants (PO, 14 Oct 2026); "Other…" types a new name
+const QT_TCS = ["Aqilah", "Far", "Farah", "Jannah", "Ashiqin", "Megat", "Hamizah", "Yana", "Syamil", "Zaki", "Ahmad", "Iman"];   // Travel Consultants (PO, 14 Oct 2026); "Other…" types a new name
 const normPhone = p => { let s = String(p || "").replace(/\D/g, ""); if (s.startsWith("60")) s = s.slice(1); else if (s.startsWith("1") && s.length >= 9) s = "0" + s; return s.length >= 9 ? s : ""; };
 const qtDate = iso => iso ? new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
 // Versions: a customer change makes a new version (v2, v3, …) of the same request; the earlier ones are kept.
