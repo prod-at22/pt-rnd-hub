@@ -210,7 +210,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Std quotation meals 7B·6L·7D, '4★ upgrade +~RM1,800' note removed. Margins (USD 4.085): Std adult 9.5–24.6 %, Basic 9.6–22.2 %. Open (flags_open): Basic rate, child rates,
   single supplement, KB transport rate card amounts (Istanbul ↔ Ankara Sprinter 'RM37,000' — currency?). Catalogs unchanged; Flags / History from v87.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 7 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, PHU, SWS —
+- **Live FX not used by 8 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Yunnan done 14 Oct, v86).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
