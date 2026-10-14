@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 99,
- "updatedAt": "2026-10-14T10:57:38Z",
+ "version": 100,
+ "updatedAt": "2026-10-14T12:00:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -20981,225 +20981,137 @@
      "live": "AUD"
     }
    ],
-   "rates": [],
-   "tables": [
+   "rates": [
     {
-     "id": "WAE-BASIC__Car-Rental",
-     "label": "WAE-BASIC · Car Rental (5-seater 2–3 · 8-seater 4–6 · 12-seater 7–10, AUD140 / 200 / 300 × 5 hari ÷ pax)",
-     "unit": "AUD/pax",
+     "id": "car5",
+     "label": "Car rental 5-seater · 2–3 pax (WAE, per day)",
+     "value": 140,
      "fx": "AUD",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 350.0,
-      "3": 233.3333,
-      "4": 250.0,
-      "5": 200.0,
-      "6": 166.6667,
-      "7": 214.2857,
-      "8": 187.5,
-      "9": 166.6667,
-      "10": 150.0
-     }
+     "unit": "AUD/day",
+     "group": "1. Car rental (× 5 days)"
     },
     {
-     "id": "WAE-BASIC__Driver-Guide",
-     "label": "WAE-BASIC · Driver-Guide (D1 airport 230 · D2 Phillip Island 580 · D3 City 480 · D5 airport 197, per group)",
-     "unit": "AUD/pax",
+     "id": "car8",
+     "label": "Car rental 8-seater · 4–6 pax (WAE, per day)",
+     "value": 200,
      "fx": "AUD",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 743.5,
-      "3": 495.6667,
-      "4": 371.75,
-      "5": 297.4,
-      "6": 247.8333,
-      "7": 212.4286,
-      "8": 185.875,
-      "9": 165.2222,
-      "10": 148.7
-     }
+     "unit": "AUD/day",
+     "group": "1. Car rental (× 5 days)"
     },
     {
-     "id": "WAE-BASIC__Online-Guide",
-     "label": "WAE-BASIC · Online Guide (OG) AUD80/pax",
-     "unit": "AUD/pax",
+     "id": "car12",
+     "label": "Car rental 12-seater · 7–10 pax (WAE, per day)",
+     "value": 300,
      "fx": "AUD",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 80,
-      "3": 80,
-      "4": 80,
-      "5": 80,
-      "6": 80,
-      "7": 80,
-      "8": 80,
-      "9": 80,
-      "10": 80
-     }
+     "unit": "AUD/day",
+     "group": "1. Car rental (× 5 days)"
     },
     {
-     "id": "WAE-BASIC__Hotel",
-     "label": "WAE-BASIC · Hotel 3★ (4 malam, AUD360/pax)",
-     "unit": "AUD/pax",
+     "id": "airIn",
+     "label": "Day 1 airport transfer (WAE)",
+     "value": 230,
      "fx": "AUD",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 360,
-      "3": 360,
-      "4": 360,
-      "5": 360,
-      "6": 360,
-      "7": 360,
-      "8": 360,
-      "9": 360,
-      "10": 360
-     }
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
     },
     {
-     "id": "WAE-BASIC__Entrance",
-     "label": "WAE-BASIC · Entrance (Maru Koala 33 + Churchill 18)",
-     "unit": "AUD/pax",
+     "id": "piB",
+     "label": "Day 2 Phillip Island 10h (WAE)",
+     "value": 580,
      "fx": "AUD",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 51,
-      "3": 51,
-      "4": 51,
-      "5": 51,
-      "6": 51,
-      "7": 51,
-      "8": 51,
-      "9": 51,
-      "10": 51
-     }
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
     },
     {
-     "id": "WAE-BASIC__Visa-Assistance",
-     "label": "WAE-BASIC · Visa Application Assistance (RM80/pax)",
-     "unit": "MYR/pax",
+     "id": "piS",
+     "label": "Day 2 Phillip Island + Penguin 12h (WAE)",
+     "value": 686,
+     "fx": "AUD",
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
+    },
+    {
+     "id": "city",
+     "label": "Day 3 Melbourne City 10h (WAE)",
+     "value": 480,
+     "fx": "AUD",
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
+    },
+    {
+     "id": "gor",
+     "label": "Day 3 Great Ocean Road 12h (WAE)",
+     "value": 746,
+     "fx": "AUD",
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
+    },
+    {
+     "id": "airOut",
+     "label": "Day 5 airport transfer (WAE)",
+     "value": 197,
+     "fx": "AUD",
+     "unit": "AUD/group",
+     "group": "2. Driver-guide day charges"
+    },
+    {
+     "id": "og",
+     "label": "Online Guide (WAE, per pax)",
+     "value": 80,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "3. Online Guide"
+    },
+    {
+     "id": "hotelB",
+     "label": "Hotel 3★ Ibis (WAE, per pax per night)",
+     "value": 90,
+     "fx": "AUD",
+     "unit": "AUD/pax/night",
+     "group": "4. Hotel"
+    },
+    {
+     "id": "hotelS",
+     "label": "Hotel 3★ Ibis + breakfast (WAE, per pax per night)",
+     "value": 115,
+     "fx": "AUD",
+     "unit": "AUD/pax/night",
+     "group": "4. Hotel"
+    },
+    {
+     "id": "maru",
+     "label": "Maru Koala & Animal Park (WAE, CR)",
+     "value": 33,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "5. Entrance"
+    },
+    {
+     "id": "church",
+     "label": "Churchill Island Heritage Farm (WAE, CR)",
+     "value": 18,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "5. Entrance"
+    },
+    {
+     "id": "peng",
+     "label": "Penguin Parade General Viewing (WAE, CR)",
+     "value": 34,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "5. Entrance"
+    },
+    {
+     "id": "visa",
+     "label": "Visa application assistance (ARBA, per pax)",
+     "value": 80,
      "fx": "MYR",
-     "group": "WAE-BASIC",
-     "values": {
-      "2": 80,
-      "3": 80,
-      "4": 80,
-      "5": 80,
-      "6": 80,
-      "7": 80,
-      "8": 80,
-      "9": 80,
-      "10": 80
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Car-Rental",
-     "label": "WAE-STANDARD · Car Rental (5-seater 2–3 · 8-seater 4–6 · 12-seater 7–10, AUD140 / 200 / 300 × 5 hari ÷ pax)",
-     "unit": "AUD/pax",
-     "fx": "AUD",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 350.0,
-      "3": 233.3333,
-      "4": 250.0,
-      "5": 200.0,
-      "6": 166.6667,
-      "7": 214.2857,
-      "8": 187.5,
-      "9": 166.6667,
-      "10": 150.0
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Driver-Guide",
-     "label": "WAE-STANDARD · Driver-Guide (D1 airport 230 · D2 Phillip Island + Penguin 686 · D3 Great Ocean Road 746 · D5 airport 197, per group)",
-     "unit": "AUD/pax",
-     "fx": "AUD",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 929.5,
-      "3": 619.6667,
-      "4": 464.75,
-      "5": 371.8,
-      "6": 309.8333,
-      "7": 265.5714,
-      "8": 232.375,
-      "9": 206.5556,
-      "10": 185.9
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Online-Guide",
-     "label": "WAE-STANDARD · Online Guide (OG) AUD80/pax",
-     "unit": "AUD/pax",
-     "fx": "AUD",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 80,
-      "3": 80,
-      "4": 80,
-      "5": 80,
-      "6": 80,
-      "7": 80,
-      "8": 80,
-      "9": 80,
-      "10": 80
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Hotel",
-     "label": "WAE-STANDARD · Hotel 3★ + sarapan (4 malam, AUD460/pax)",
-     "unit": "AUD/pax",
-     "fx": "AUD",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 460,
-      "3": 460,
-      "4": 460,
-      "5": 460,
-      "6": 460,
-      "7": 460,
-      "8": 460,
-      "9": 460,
-      "10": 460
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Entrance",
-     "label": "WAE-STANDARD · Entrance (Maru Koala 33 + Churchill 18 + Penguin Parade 34)",
-     "unit": "AUD/pax",
-     "fx": "AUD",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 85,
-      "3": 85,
-      "4": 85,
-      "5": 85,
-      "6": 85,
-      "7": 85,
-      "8": 85,
-      "9": 85,
-      "10": 85
-     }
-    },
-    {
-     "id": "WAE-STANDARD__Visa-Assistance",
-     "label": "WAE-STANDARD · Visa Application Assistance (RM80/pax)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "WAE-STANDARD",
-     "values": {
-      "2": 80,
-      "3": 80,
-      "4": 80,
-      "5": 80,
-      "6": 80,
-      "7": 80,
-      "8": 80,
-      "9": 80,
-      "10": 80
-     }
+     "unit": "RM/pax",
+     "group": "6. Visa"
     }
    ],
+   "tables": [],
    "variants": [
     {
      "id": "WAE-BASIC",
@@ -21213,38 +21125,38 @@
       {
        "key": "car-rental",
        "label": "Car Rental",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Car-Rental']"
+       "per": "group",
+       "expr": "5*band(pax,[3,R.car5],[6,R.car8],[10,R.car12])"
       },
       {
        "key": "driver-guide",
        "label": "Driver-Guide",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Driver-Guide']"
+       "per": "group",
+       "expr": "R.airIn+R.piB+R.city+R.airOut"
       },
       {
        "key": "online-guide",
        "label": "Online Guide",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Online-Guide']"
+       "per": "group",
+       "expr": "R.og*pax"
       },
       {
        "key": "hotel",
        "label": "Hotel",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Hotel']"
+       "per": "group",
+       "expr": "R.hotelB*N*pax"
       },
       {
        "key": "entrance",
        "label": "Entrance",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Entrance']"
+       "per": "group",
+       "expr": "(R.maru+R.church)*pax"
       },
       {
        "key": "visa-assistance",
        "label": "Visa Assistance",
-       "per": "pax",
-       "expr": "T['WAE-BASIC__Visa-Assistance']"
+       "per": "group",
+       "expr": "R.visa*pax"
       }
      ]
     },
@@ -21260,38 +21172,38 @@
       {
        "key": "car-rental",
        "label": "Car Rental",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Car-Rental']"
+       "per": "group",
+       "expr": "5*band(pax,[3,R.car5],[6,R.car8],[10,R.car12])"
       },
       {
        "key": "driver-guide",
        "label": "Driver-Guide",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Driver-Guide']"
+       "per": "group",
+       "expr": "R.airIn+R.piS+R.gor+R.airOut"
       },
       {
        "key": "online-guide",
        "label": "Online Guide",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Online-Guide']"
+       "per": "group",
+       "expr": "R.og*pax"
       },
       {
        "key": "hotel",
        "label": "Hotel",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Hotel']"
+       "per": "group",
+       "expr": "R.hotelS*N*pax"
       },
       {
        "key": "entrance",
        "label": "Entrance",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Entrance']"
+       "per": "group",
+       "expr": "(R.maru+R.church+R.peng)*pax"
       },
       {
        "key": "visa-assistance",
        "label": "Visa Assistance",
-       "per": "pax",
-       "expr": "T['WAE-STANDARD__Visa-Assistance']"
+       "per": "group",
+       "expr": "R.visa*pax"
       }
      ]
     }
@@ -23040,278 +22952,209 @@
      "live": "NZD"
     }
    ],
-   "rates": [],
+   "rates": [
+    {
+     "id": "ns4",
+     "label": "Vehicle + petrol + parking 4-seater · 2–3 pax (ARBA, 10D9N, per trip)",
+     "value": 2500,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "ns5",
+     "label": "Vehicle + petrol + parking 5-seater · 4 pax (ARBA, 10D9N, per trip)",
+     "value": 3150,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "ns8",
+     "label": "Vehicle + petrol + parking 8-seater · 5–6 pax (ARBA, 10D9N, per trip)",
+     "value": 4800,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "ns10",
+     "label": "Vehicle + petrol + parking 10-seater · 7–8 pax (ARBA, 10D9N, per trip)",
+     "value": 5240,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "si4",
+     "label": "Vehicle + petrol + parking 4-seater · 2–3 pax (ARBA, South 8D7N, per trip)",
+     "value": 1900,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "si5",
+     "label": "Vehicle + petrol + parking 5-seater · 4 pax (ARBA, South 8D7N, per trip)",
+     "value": 2300,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "si8",
+     "label": "Vehicle + petrol + parking 8-seater · 5–6 pax (ARBA, South 8D7N, per trip)",
+     "value": 3550,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "si10",
+     "label": "Vehicle + petrol + parking 10-seater · 7–8 pax (ARBA, South 8D7N, per trip)",
+     "value": 3600,
+     "fx": "NZD",
+     "unit": "NZD/trip",
+     "group": "1. Vehicle (per trip)"
+    },
+    {
+     "id": "dgFlt",
+     "label": "Driving guide international flight (ARBA)",
+     "value": 5500,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgDom",
+     "label": "Driving guide domestic flight (ARBA, 10D9N)",
+     "value": 800,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgHotNS",
+     "label": "Driving guide hotel (ARBA, 10D9N)",
+     "value": 3000,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgHotSI",
+     "label": "Driving guide hotel (ARBA, South 8D7N)",
+     "value": 2400,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgWifi",
+     "label": "Driving guide wifi (ARBA)",
+     "value": 250,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgIns",
+     "label": "Driving guide insurance (ARBA)",
+     "value": 250,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgWageNS",
+     "label": "Driving guide wages (ARBA, 10D9N)",
+     "value": 3500,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "dgWageSI",
+     "label": "Driving guide wages (ARBA, South 8D7N)",
+     "value": 2800,
+     "fx": "MYR",
+     "unit": "RM/trip",
+     "group": "2. Driving guide"
+    },
+    {
+     "id": "nzeta",
+     "label": "NZeTA (ARBA, per person)",
+     "value": 123,
+     "fx": "NZD",
+     "unit": "NZD/pax",
+     "group": "3. NZeTA"
+    },
+    {
+     "id": "estNS9",
+     "label": "Transport + DG estimate 9 pax (ARBA, R&D estimate 10D9N, per pax)",
+     "value": 3800,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "4. 9–10 pax estimate"
+    },
+    {
+     "id": "estNS10",
+     "label": "Transport + DG estimate 10 pax (ARBA, R&D estimate 10D9N, per pax)",
+     "value": 3500,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "4. 9–10 pax estimate"
+    },
+    {
+     "id": "estSI9",
+     "label": "Transport + DG estimate 9 pax (ARBA, R&D estimate South 8D7N, per pax)",
+     "value": 3100,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "4. 9–10 pax estimate"
+    },
+    {
+     "id": "estSI10",
+     "label": "Transport + DG estimate 10 pax (ARBA, R&D estimate South 8D7N, per pax)",
+     "value": 2800,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "4. 9–10 pax estimate"
+    },
+    {
+     "id": "hotNS",
+     "label": "Hotel 3★ 9 nights (ARBA, 10D9N, per pax)",
+     "value": 3150,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "5. Hotel"
+    },
+    {
+     "id": "hotSI",
+     "label": "Hotel 3★ 7 nights (ARBA, South 8D7N, per pax)",
+     "value": 2450,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "5. Hotel"
+    },
+    {
+     "id": "domFlt",
+     "label": "Domestic flight AKL-CHC + ZQN-AKL (ARBA, per pax)",
+     "value": 800,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "6. Domestic flight"
+    },
+    {
+     "id": "meals",
+     "label": "Welcome lunch + salmon farm (ARBA, per pax)",
+     "value": 60,
+     "fx": "NZD",
+     "unit": "NZD/pax",
+     "group": "7. Meals"
+    }
+   ],
    "tables": [
-    {
-     "id": "ARBA-TO-10D9N-N-S__Vehicle",
-     "label": "ARBA-TO-10D9N-N-S · Vehicle + petrol + parking per group ÷ pax (4-seater 2–3 NZD2,500 · 5-seater 4 3,150 · 8-seater 5–6 4,800 · 10-seater 7–8 5,240; 9–10 pax in Transport-DG-Estimate)",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 1250.0,
-      "3": 833.3333,
-      "4": 787.5,
-      "5": 960.0,
-      "6": 800.0,
-      "7": 748.5714,
-      "8": 655.0,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Driver-Guide",
-     "label": "ARBA-TO-10D9N-N-S · Driving guide from Malaysia per group ÷ pax (int. flight 5,500 + dom. flight 800 + hotel 3,000 + wifi 250 + insurance 250 + wages 3,500)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 6650.0,
-      "3": 4433.3333,
-      "4": 3325.0,
-      "5": 2660.0,
-      "6": 2216.6667,
-      "7": 1900.0,
-      "8": 1662.5,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Driver-NZeTA",
-     "label": "ARBA-TO-10D9N-N-S · Driving guide NZeTA NZD123 per group ÷ pax",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 61.5,
-      "3": 41.0,
-      "4": 30.75,
-      "5": 24.6,
-      "6": 20.5,
-      "7": 17.5714,
-      "8": 15.375,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Transport-DG-Estimate",
-     "label": "ARBA-TO-10D9N-N-S · Transport + driving guide 9–10 pax (R&D flat estimate per pax, no 12-seater rate)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 3800,
-      "10": 3500
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Hotel",
-     "label": "ARBA-TO-10D9N-N-S · Hotel 3★ (RM3,150/pax)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 3150,
-      "3": 3150,
-      "4": 3150,
-      "5": 3150,
-      "6": 3150,
-      "7": 3150,
-      "8": 3150,
-      "9": 3150,
-      "10": 3150
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Domestic-Flight",
-     "label": "ARBA-TO-10D9N-N-S · Domestic flight AKL-CHC + ZQN-AKL",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 800,
-      "3": 800,
-      "4": 800,
-      "5": 800,
-      "6": 800,
-      "7": 800,
-      "8": 800,
-      "9": 800,
-      "10": 800
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__Meals",
-     "label": "ARBA-TO-10D9N-N-S · Welcome lunch + salmon farm NZD60",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 60,
-      "3": 60,
-      "4": 60,
-      "5": 60,
-      "6": 60,
-      "7": 60,
-      "8": 60,
-      "9": 60,
-      "10": 60
-     }
-    },
-    {
-     "id": "ARBA-TO-10D9N-N-S__NZeTA",
-     "label": "ARBA-TO-10D9N-N-S · NZeTA NZD123",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-10D9N-N-S",
-     "values": {
-      "2": 123,
-      "3": 123,
-      "4": 123,
-      "5": 123,
-      "6": 123,
-      "7": 123,
-      "8": 123,
-      "9": 123,
-      "10": 123
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Vehicle",
-     "label": "ARBA-TO-8D7N-South · Vehicle + petrol + parking per group ÷ pax (4-seater 2–3 NZD1,900 · 5-seater 4 2,300 · 8-seater 5–6 3,550 · 10-seater 7–8 3,600; 9–10 pax in Transport-DG-Estimate)",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 950.0,
-      "3": 633.3333,
-      "4": 575.0,
-      "5": 710.0,
-      "6": 591.6667,
-      "7": 514.2857,
-      "8": 450.0,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Driver-Guide",
-     "label": "ARBA-TO-8D7N-South · Driving guide from Malaysia per group ÷ pax (int. flight 5,500 + hotel 2,400 + wifi 250 + insurance 250 + wages 2,800)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 5600.0,
-      "3": 3733.3333,
-      "4": 2800.0,
-      "5": 2240.0,
-      "6": 1866.6667,
-      "7": 1600.0,
-      "8": 1400.0,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Driver-NZeTA",
-     "label": "ARBA-TO-8D7N-South · Driving guide NZeTA NZD123 per group ÷ pax",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 61.5,
-      "3": 41.0,
-      "4": 30.75,
-      "5": 24.6,
-      "6": 20.5,
-      "7": 17.5714,
-      "8": 15.375,
-      "9": 0,
-      "10": 0
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Transport-DG-Estimate",
-     "label": "ARBA-TO-8D7N-South · Transport + driving guide 9–10 pax (R&D flat estimate per pax, no 12-seater rate)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 3100,
-      "10": 2800
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Hotel",
-     "label": "ARBA-TO-8D7N-South · Hotel 3★ (RM2,450/pax)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 2450,
-      "3": 2450,
-      "4": 2450,
-      "5": 2450,
-      "6": 2450,
-      "7": 2450,
-      "8": 2450,
-      "9": 2450,
-      "10": 2450
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__Meals",
-     "label": "ARBA-TO-8D7N-South · Welcome lunch + salmon farm NZD60",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 60,
-      "3": 60,
-      "4": 60,
-      "5": 60,
-      "6": 60,
-      "7": 60,
-      "8": 60,
-      "9": 60,
-      "10": 60
-     }
-    },
-    {
-     "id": "ARBA-TO-8D7N-South__NZeTA",
-     "label": "ARBA-TO-8D7N-South · NZeTA NZD123",
-     "unit": "NZD/pax",
-     "fx": "NZD",
-     "group": "ARBA-TO-8D7N-South",
-     "values": {
-      "2": 123,
-      "3": 123,
-      "4": 123,
-      "5": 123,
-      "6": 123,
-      "7": 123,
-      "8": 123,
-      "9": 123,
-      "10": 123
-     }
-    },
     {
      "id": "ARBA-TO-9D8N-Std__Ground-Cost-MYR",
      "label": "ARBA-TO-9D8N-Std · Ground Cost (no source — ST not costed in the R&D sheet)",
@@ -23362,50 +23205,50 @@
       {
        "key": "vehicle",
        "label": "Vehicle",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Vehicle']"
+       "per": "group",
+       "expr": "band(pax,[3,R.ns4],[4,R.ns5],[6,R.ns8],[8,R.ns10],[10,0])"
       },
       {
        "key": "driver-guide",
        "label": "Driving Guide",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Driver-Guide']"
+       "per": "group",
+       "expr": "band(pax,[8,R.dgFlt+R.dgDom+R.dgHotNS+R.dgWifi+R.dgIns+R.dgWageNS],[10,0])"
       },
       {
        "key": "driver-nzeta",
        "label": "Guide NZeTA",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Driver-NZeTA']"
+       "per": "group",
+       "expr": "band(pax,[8,R.nzeta],[10,0])"
       },
       {
        "key": "transport-dg-estimate",
        "label": "Transport + DG (9–10 est.)",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Transport-DG-Estimate']"
+       "per": "group",
+       "expr": "band(pax,[8,0],[9,R.estNS9*pax],[10,R.estNS10*pax])"
       },
       {
        "key": "hotel",
        "label": "Hotel",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Hotel']"
+       "per": "group",
+       "expr": "R.hotNS*pax"
       },
       {
        "key": "domestic-flight",
        "label": "Domestic Flight",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Domestic-Flight']"
+       "per": "group",
+       "expr": "R.domFlt*pax"
       },
       {
        "key": "meals",
        "label": "Meals",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__Meals']"
+       "per": "group",
+       "expr": "R.meals*pax"
       },
       {
        "key": "nzeta",
        "label": "NZeTA",
-       "per": "pax",
-       "expr": "T['ARBA-TO-10D9N-N-S__NZeTA']"
+       "per": "group",
+       "expr": "R.nzeta*pax"
       }
      ]
     },
@@ -23421,44 +23264,44 @@
       {
        "key": "vehicle",
        "label": "Vehicle",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Vehicle']"
+       "per": "group",
+       "expr": "band(pax,[3,R.si4],[4,R.si5],[6,R.si8],[8,R.si10],[10,0])"
       },
       {
        "key": "driver-guide",
        "label": "Driving Guide",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Driver-Guide']"
+       "per": "group",
+       "expr": "band(pax,[8,R.dgFlt+R.dgHotSI+R.dgWifi+R.dgIns+R.dgWageSI],[10,0])"
       },
       {
        "key": "driver-nzeta",
        "label": "Guide NZeTA",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Driver-NZeTA']"
+       "per": "group",
+       "expr": "band(pax,[8,R.nzeta],[10,0])"
       },
       {
        "key": "transport-dg-estimate",
        "label": "Transport + DG (9–10 est.)",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Transport-DG-Estimate']"
+       "per": "group",
+       "expr": "band(pax,[8,0],[9,R.estSI9*pax],[10,R.estSI10*pax])"
       },
       {
        "key": "hotel",
        "label": "Hotel",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Hotel']"
+       "per": "group",
+       "expr": "R.hotSI*pax"
       },
       {
        "key": "meals",
        "label": "Meals",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__Meals']"
+       "per": "group",
+       "expr": "R.meals*pax"
       },
       {
        "key": "nzeta",
        "label": "NZeTA",
-       "per": "pax",
-       "expr": "T['ARBA-TO-8D7N-South__NZeTA']"
+       "per": "group",
+       "expr": "R.nzeta*pax"
       }
      ]
     },

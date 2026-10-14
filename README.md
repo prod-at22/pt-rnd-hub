@@ -47,6 +47,8 @@ The R&D files are no longer read, compared or kept in sync — do not update the
 
 - **Tokyo (HND), Osaka (OSK), Tokyo-Osaka (KIX)** are rate by rate (supplier rate × FX), so editing one
   rate updates every pax count; Show calculation / Rate reference work there.
+- **Melbourne (MEL)** and **New Zealand PT 10D9N / South 8D7N (NSNZ)** are rate by rate too (v100): WAE / ARBA NZ raw rates
+  (AUD / NZD × live FX, RM items) with formulas, from the costing-rate PDFs in TO Contract Rate.
 - **Seoul (SEL) Basic / Standard, Seoul-Jeju, Jeju, Jeju-Udo** cost = the ATK contract rate per pax
   (ATK CR 2026 Korea in KRW × 0.0030, `contracts/…KRW.xlsx`). When ATK sends a new CR, run
   `tools/build_sel.py` / `tools/build_korea_cr.py` (they read the contract, not an R&D sheet).

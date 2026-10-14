@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v94 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v94, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v100 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v100, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -250,8 +250,21 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   (= R&D), deductions = CR, TripCare from RM72, wifi swapped, ETA row removed. Catalogs unchanged (mirror: nothing to render); Flags / History from v94.
   Open (flags_open): the 5 catalog private day tours have no cost (City Full Day RM1,500 and GOR 12-seater sell below the CR car + day-charge estimate; no CR rate for Half Day /
   Puffing Billy / Mornington / Snow); child ticket costs. R&D sheet still says validity 30 Jun 2026 (catalog 31 Mar 2027 kept).
+  **New Zealand (v97, PO ezie 14 Oct; source = ~/Downloads/'PT NSNZ R&D-ACAP PUNYA.xlsx' (PO Acap), tab Costing, compiled into contracts/nsnz 'ARBA NZ COSTING RATE 2026.pdf'):**
+  ST North Island 6D5N removed (catalog nz-north-only deleted — mirror removed page / PDF, 404 checked; KB variant stni + card + texts; 6 North add-ons; pt-kb-house catalogs.json nav; names.json,
+  flags.py, tools/catalogs.json, app.js CATALOG_ROUTE) and PT North 6D5N (no catalog) removed. PT 10D9N / South 8D7N cost = sheet (hub was the same sheet at NZD 2.327): own Malaysian
+  driving guide per group (int. flight 5,500, dom. 800 (10D9N), hotel 3,000 / 2,400, wifi 250, insurance 250, wages 3,500 / 2,800 RM + NZeTA NZD123), vehicle + petrol + parking NZD per trip
+  (4-seater 2–3 · 5-seater 4 · 8-seater 5–6 · 10-seater 7–8: 2,500 / 3,150 / 4,800 / 5,240 and South 1,900 / 2,300 / 3,550 / 3,600), hotel RM3,150 / 2,450, dom. flight RM800, meals NZD60,
+  NZeTA NZD123 — NZD × live FX; 9–10 pax = sheet flat estimate RM3,800 / 3,500 and 3,100 / 2,800 per pax (flag). Margins (NZD 2.29331): 10D9N adult 12.3–21.1 % (2 pax lowest),
+  South 15.7–29.7 %. ST 9D8N 3★ / Apartment costs kept (no source in the sheet, ~22.6 % at every pax → flag). Costing 2–10 pax. Add-ons: catalog items costed from the sheet
+  (duplicates removed), TripCare Area 3 = sheet (+ 11–18 day couple / family / senior), Area 2 / Blue Ribbon duplicates / header row removed. Catalogs: typos (Dunedin, Souvenir,
+  Accommodation, Access), 'Larnach Castle (Optional)'. KB new-zealand: late booking RM50 → 0 (Last Minute per catalog only), rate-card 'Sahkan dengan PO' notes removed, Taupo free
+  gift removed; 2027 travel add-on +RM150 KEPT (PO exception). Hub list shows 'New Zealand North & South (3-Star Hotel)' (PO). Open (flags_open): 9–10 pax estimate, ST costs,
+  add-ons without cost (Agrodome, Hamilton Garden, Shotover, Fruit Picking — prints Shotover's prices, Milford ex-Te Anau, child prices).
+  **Raw costing (v100, PO):** MEL and NSNZ PT 10D9N / South 8D7N cost tables replaced by raw rates + formulas (d.rates, R.* with band(pax,…)) — Show rate reference / Show
+  calculation now work there like Tokyo; costs unchanged. NB: other sessions pushed v95 / v96 / v98 / v99 (Competitor Analysis) in parallel — always pull before building a version.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 6 destinations** (costs stored in MYR): JOG, PER, NSNZ, MLE, PHU, SWS (MEL done v94) —
+- **Live FX not used by 5 destinations** (costs stored in MYR): JOG, PER, MLE, PHU, SWS (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
