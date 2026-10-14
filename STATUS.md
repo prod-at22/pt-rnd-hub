@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v90 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v90, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v91 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v91, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -218,10 +218,17 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   (K6), 2–4 pax margins (K12), Std 15–21 pax margin 3.7–8 % / CWB below cost at 15 & 19 (catalog 13–30 prices are extrapolated). tests/test_calc.js rate codes updated.
   Catalogs and KB unchanged. **On hold (PO 14 Oct, flags only):** KB jepun 2027 peak windows + 'Travel date 2027 +RM200' (not in any Japan catalog; ProdReq §4C
   says no 2027 projection — removal prepared, all Japan except Hokkaido) and Tokyo 13–30 pax prices below the ProdReq rule (Std 15–21 3.7–13.7 %).
+  **Lombok (v91, PO ezie 14 Oct; Pak Anang rate card image (PO) + Drive 'PT LOP R&D' Sheet3 (file 1kJAu8d06SrU5pTzId5v7tqx83NF4fIsXwpcvU4GYW0Y) — both in TO Contract Rate lop):**
+  cost now IDR × live FX = Sheet3 (Cost TO Anang 2.55m / 2.35m / 2.15m / 1.95m / 1.65m per band, Pink Beach per group, Tips 200k; was MYR at 0.0002273265) — checked;
+  Honeymoon 3★ / 4★ removed from hub + KB (PO; Sheet3 had 2,497 / 2,697 per couple vs hub 2,697 / 3,057); nights 3; Costing 2–30 kept; adult margin 35–50 %.
+  Add-ons: rate-card transport (airport / half / full day × Avanza / Innova / Hiace) with cost, deductions = rate card cost (also in KB: full −137/−194/−274,
+  half −91/−126/−194, airport −57/−80/−137, Pink Beach boat −285, entrance −11), boats (Teluk Nare, slow boat, SIC, Pink Beach), Cidomo cost RM91 sell RM120
+  (hub + KB), extra night sells = KB (3★ RM85, 4★ RM120; 4★ cost RM86), extra hour 150k IDR per vehicle. KB compare tab = Standard 3★ vs 4★. Catalog unchanged.
+  Open: 3★ extra-night cost (old RM120 > sell RM85) — ask Pak Anang. Info only: Sembalun 3★ hotels 650k, weekend +150k, peak +200k (in LOP note).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 8 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
+- **Live FX not used by 7 destinations** (costs stored in MYR): JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Tokyo done 14 Oct, v90; two items flagged on hold).
+- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Surabaya next was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
