@@ -35,7 +35,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   byte from Drive "Catalog PT (new)/catalogs" (`tools/import_catalogs.py --from-drive` — do NOT run again,
   it would overwrite hub edits). data/catalogs/index.json links slug → package (MAP in tools/flags.py);
   rebuild it with `python3 tools/import_catalogs.py` after editing a catalog. Not linked:
-  maldives-standard, yunnan-3-wilayah-6d5n (no calculator package).
+  maldives-standard (no calculator package).
 - Destination page tabs show the selected package's catalog section by section (see README "Catalogs"); every
   field editable in Edit costs; each card links the public page / PDF.
 - **Mirror (automatic, no token)**: workflow `mirror.yml` lives in **prod-at22/catalog-pt-public** itself. Every
@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v85 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v85, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v86 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v86, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -192,12 +192,19 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   FAQ upgrade / CNB fixed. Flags: 2027 rates not in Costing (PO decision), no KTT 4D3N rate 1 Nov 2026–10 Jan 2027, CR 2026 typos. TO Contract Rate (v85): Low 2026
   (6) + 2027 (6) PDFs; the 3 High 2026 PDFs removed (PO); 2027 PDFs compressed 5.3 → 1.4 MB (whole Segoe UI Emoji font was embedded; subset with fontTools via
   PyMuPDF, every page renders identical). Pushing 51 MB needed `git -c http.postBuffer=524288000 push`; the removed / old blobs stay in git history (v84).
+  **Yunnan 3 + 4 Wilayah (v86, PO ezie 14 Oct; Tourdechina CRs: 3W 7D5N = PO PDF, now in TO Contract Rate kmgdl; 4W 8D6N .doc; both valid Oct 2025 – Dec 2026; R&D folders not used):**
+  3W tour fare = CR (6,800 / 4,900 / 4,250 / 3,300 RMB) — checked; tipping × 6 days kept (CR text says × 7, looks copied from 4W → flag); 4W cost now RMB × live FX from the CR
+  (8,000 / 5,800 / 5,200 / 4,400 + tipping RMB30 × 7; was MYR at fixed 0.58), CNB 80 % of tour fare only (CR), nights 6; Costing 2–30 pax both (CR stops at 14 → 15–30 cost = 10–14 rate;
+  3W 15–30 prices = 4W pattern −RM100 per band: 3,097 / 2,997 / 2,897); catalogs still print 2–14 (unchanged). Add-ons: 3W set added (= KB prices + TripCare / Blue Ribbon), 4W duplicate
+  TripCare / Blue Ribbon removed, extra lunch / dinner cost RM61 (CR meal budget 2–3 pax, sells RM60 → flag), Tolak Lunch / Dinner −RM30 (cost −RM31) both. KB yunnan: 2027 surcharges
+  removed (not in catalogs), 'Upgrade hotel 4-star +RM240' removed (packages are 4★), FAQ answer changed. Kept (PO): 'Driving Guide' highlight, KB flight times (AK102), International Breakfast.
+  On hold (PO): KB Transport tab 10–15 / 16+ pax rows (CR / catalog stop at 14). Margins (FX 0.6104): 3W adult 11–29 %, CWB 7.3 % at 2–3 pax; 4W adult 8.8 % at 2–3 pax, 26–30 pax
+  adult 9.1 % / CWB 2.9 % (flag). Open (flags_open): 4W single RM700 vs CR RMB1,120 ≈ RM684; add-on costs unknown (airport, train upgrades, luggage van, Indian/Arabic, day tour); 3W tipping days.
+  Catalogs unchanged (mirror: nothing to render); Flags / History from v86.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
+- **Live FX not used by 10 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next (PO ezie 14 Oct): Yunnan 3 Wilayah (KMGDL, catalog yunnan-3-wilayah-6d5n) + Yunnan 4 Wilayah (KMGDLS, catalog yunnan-4-wilayah)** — PO Amirul, TO Tourdechina
-  (RMB), one KB `yunnan` for both. KMGDL has no TO Contract Rate file; KMGDLS has the Tourdechina 4W 8D6N 2026 .doc. R&D folders: ~/Downloads/PT DESTINASI R&D REFORMAT/
-  YUNNAN 3 WILAYAH, YUNNAN 4 WILAYAH, GT Yunan 3 wilayah (ask the PO before using). Same method as every check above.
+- **Next:** ask the PO which destination to verify next (Yunnan done 14 Oct, v86).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
