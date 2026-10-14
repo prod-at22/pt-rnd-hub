@@ -1599,6 +1599,7 @@ function cmpNewId(d, name) {
    A quote whose phone matches a CRM lead closed after the request shows as Closed. A PO can also mark Closed / Lost. */
 const QT = { list: null, err: null, busy: false, crm: null, crmAt: null, crmErr: null, edit: null, poView: null, filter: "open" };
 const QT_STATUS = ["Pending", "Quoted"];
+const QT_TCS = ["Aqilah", "Farah", "Jannah", "Ashiqin", "Megat", "Hamizah", "Yana", "Syamil", "Zaki", "Ahmad", "Iman"];   // Travel Consultants (PO, 14 Oct 2026); "Other…" types a new name
 const normPhone = p => { let s = String(p || "").replace(/\D/g, ""); if (s.startsWith("60")) s = s.slice(1); else if (s.startsWith("1") && s.length >= 9) s = "0" + s; return s.length >= 9 ? s : ""; };
 const qtDate = iso => iso ? new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
 // Versions: a customer change makes a new version (v2, v3, …) of the same request; the earlier ones are kept.
@@ -1728,7 +1729,6 @@ function openQuote(d, id, vi, isNew) {
   const chips = q ? `<div class="qt-vers">${vs.map((x, i) => `<button class="tab${!isNew && i === vi ? " on" : ""}" data-qt="ver" data-id="${esc(q.id)}" data-vi="${i}" title="${esc(x.at ? "saved " + fmtDate(x.at) + (x.by ? " by " + x.by : "") : "")}">v${i + 1}</button>`).join("")}${isNew ? `<button class="tab on">v${vs.length + 1} (new)</button>` : `<button class="btn" data-qt="newver" data-id="${esc(q.id)}">+ New version (customer change)</button>`}
     <span class="muted small">${isNew ? "Copied from v" + vs.length + " — change what the customer asked, paste the new quotation, Save." : vi < vs.length - 1 ? "Older version — kept for reference." : ""}</span></div>` : "";
   const loc = iso => { const t = new Date(iso || Date.now()); return new Date(t - t.getTimezoneOffset() * 6e4).toISOString().slice(0, 16); };
-  const tcs = [...new Set(QT.list.map(x => x.tc).filter(Boolean))].sort();
   const f = (l, h) => `<label>${l}${h}</label>`, val = x => x == null ? "" : x;
   const grid = `<div class="scroll"><table class="qt-pt"><thead><tr><th class="l"></th>${QT_CAT.map(([, l]) => `<th>${l}</th>`).join("")}</tr></thead><tbody>
     <tr><th class="l">Pax</th>${QT_CAT.map(([k]) => `<td><input id="qN_${k}" type="number" min="0" value="${val(v[k])}"></td>`).join("")}</tr>
@@ -1743,7 +1743,9 @@ function openQuote(d, id, vi, isNew) {
     <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qWrite" title="Write the quotation (T1 prices, itinerary, inclusions / exclusions from the catalog) into 'Quotation sent'">Write quotation</button> <button class="btn" id="qSuggest" title="Cost and Selling Price (T2) from Costing for this package and pax">Use Costing prices</button></div>
     <div class="qt-g4">
       ${f("Requested at", `<input id="qReq" type="datetime-local" value="${loc(v.requestedAt)}">`)}
-      ${f("TC", `<input id="qTc" list="qTcs" value="${esc(v.tc || "")}"><datalist id="qTcs">${tcs.map(t => `<option value="${esc(t)}">`).join("")}</datalist>`)}
+      ${f("TC", (() => { const known = QT_TCS.includes(v.tc || ""), other = v.tc && !known;
+        return `<select id="qTcSel"><option value="">— pick TC —</option>${QT_TCS.map(t => `<option${v.tc === t ? " selected" : ""}>${esc(t)}</option>`).join("")}<option value="__other"${other ? " selected" : ""}>Other…</option></select>
+        <input id="qTc" placeholder="TC name" value="${esc(other ? v.tc : "")}" style="${other ? "" : "display:none"}">`; })())}
       ${f("Customer", `<input id="qCust" value="${esc(v.customer || "")}">`)}
       ${f("Phone (required)", `<input id="qPhone" value="${esc(v.phone || "")}" placeholder="012-345 6789">`)}
       ${f("Package", `<select id="qPkg">${d.packages.map(p => `<option value="${esc(p.id)}"${v.pkg === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}<option value=""${v.pkg === "" ? " selected" : ""}>Custom / other</option></select>`)}
@@ -1834,7 +1836,7 @@ async function qtSubmit(d) {
   vs[vi] = { v: vi + 1, pkg: $v("qPkg"), pkgLabel: $("#qPkg").selectedOptions[0].textContent, travel: $v("qTravel"), ...pax, cost, t2, quote: $("#qQuote").value, note: $v("qNote"),
     respondedAt: resp, at: (vs[vi] && vs[vi].at) || now, by: (vs[vi] && vs[vi].by) || SESSION.u, ...(vs[vi] ? { editedAt: now, editedBy: SESSION.u } : {}) };
   const rec = { ...(old || {}), id: old ? old.id : "Q" + Date.now().toString(36).toUpperCase(), code: d.code,
-    requestedAt: $v("qReq") ? new Date($v("qReq")).toISOString() : now, tc: $v("qTc"), customer: $v("qCust"), phone,
+    requestedAt: $v("qReq") ? new Date($v("qReq")).toISOString() : now, tc: $v("qTcSel") === "__other" ? $v("qTc") : $v("qTcSel"), customer: $v("qCust"), phone,
     status, outcome: $v("qOut") || null, request: $("#qRequest").value, versions: vs, po: old ? old.po : SESSION.u, updatedAt: now, updatedBy: SESSION.u, ...(old ? {} : { createdAt: now }) };
   for (const k of [...QT_VF, "type", "child", "price", "total"]) delete rec[k];   // version fields live in versions[]
   mErr("Saving…");
@@ -2301,7 +2303,7 @@ document.addEventListener("click", async e => {
   if (t.id === "qParse") { const o = { ...qtParse($("#qRequest").value), ...qtParse($("#qQuote").value) }, m = { phone: "qPhone", customer: "qCust", adult: "qN_adult", cwb: "qN_cwb", cnb: "qN_cnb", infant: "qN_infant", travel: "qTravel" };
     for (const [k] of QT_CAT) if (o["p_" + k] != null) o["t2_" + k] = o["p_" + k] - (k === "infant" ? 0 : QT_T1_ADD), m["t2_" + k] = "qT_" + k;   // quoted price = T1
     let n = 0; for (const [k, id] of Object.entries(m)) if (o[k] != null && o[k] !== "" && !$("#" + id).value) { $("#" + id).value = o[k]; n++; }
-    qtCalc();
+    qtCalc(); if (normPhone($("#qPhone").value)) $("#qNoPhone").checked = false;
     if (!$("#qQuote").value.trim()) { const d = DATA.destinations.find(x => x.code === PAGE_DEST); if (!$("#qT_adult").value) qtCosting(d); $("#qQuote").value = await qtWrite(d); n++; }   // no price yet → Costing T2, then write it in T1
     if ($("#qQuote").value.trim() && $("#qStatus").value === "Pending") $("#qStatus").value = "Quoted";
     mErr(n ? `Filled ${n} field${n > 1 ? "s" : ""} — check them before saving.` : "Nothing new found in the text."); return; }
@@ -2519,6 +2521,7 @@ document.addEventListener("keydown", e => {
 });
 document.addEventListener("input", e => {
   if (e.target.id && /^q[NCT]_/.test(e.target.id)) qtCalc();
+  if (e.target.id === "qPhone" && $("#qNoPhone")) { if (normPhone(e.target.value)) $("#qNoPhone").checked = false; mErr(""); }
   if (e.target.id === "hubSearch") { SEL.hubQ = e.target.value; filterHub(); }
   if (e.target.id === "kbq") { KB.q = e.target.value; kbFilter(); }
   if (e.target.id === "flagQ") { SEL.flagQ = e.target.value; render(); const i = $("#flagQ"); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }
@@ -2550,6 +2553,8 @@ document.addEventListener("change", e => {
   }
   if (t.id && t.id.startsWith("opt_")) { (SEL.opt[SEL.dest] ||= {})[t.id.slice(4)] = t.value; return render(); }
   if (t.id === "qtPo") { QT.poView = t.value; return render(); }
+  if (t.id === "qTcSel") { $("#qTc").style.display = t.value === "__other" ? "" : "none"; if (t.value === "__other") $("#qTc").focus(); return; }
+  if (t.id === "qNoPhone" && t.checked && normPhone($("#qPhone").value)) { t.checked = false; return mErr("This quotation already has a phone number."); }
   if (t.id === "cmpPax") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), v = [...new Set(t.value.split(/[^0-9]+/).filter(Boolean).map(Number).filter(n => n >= 1 && n <= 99))].sort((a, b) => a - b);
     if (!v.length) { toast("Invalid pax list"); return render(); }
