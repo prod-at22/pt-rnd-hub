@@ -15,7 +15,7 @@
  "KIX": {"packages": {"wif-bsc": "Tokyo - Osaka Basic 7D6N", "qay-ucop-std-wif-std": "Tokyo - Osaka Standard 7D6N"},
          "variants": {"WIF-BSC": "WIF", "QAY-UCOP-STD": "Qayyum + Ucop", "WIF-STD": "WIF"}},
  "OSK": {"packages": {"wif-basic": "Osaka Basic 5D4N", "ucop-std-wif-std": "Osaka Standard 5D4N"},
-         "variants": {"WIF-BASIC": "WIF", "UCOP-STD": "Ucop", "WIF-STD": "WIF"}},
+         "variants": {"WIF-BASIC": "WIF", "UCOP-STD": "Ucop", "UCOP-HIACE": "Ucop", "WIF-STD": "WIF"}},
  "CTS": {"packages": {"wif-cts": "Hokkaido - Sapporo 5D4N"}, "variants": {"WIF-CTS": "WIF"}},
  "DPS": {"packages": {"alfian-std-3s": "Bali Standard 4D3N", "alfian-hny-std": "Bali Honeymoon Standard 4D3N", "alfian-hny-prem": "Bali Honeymoon Premium 4D3N"},
          "variants": {"Alfian-STD-3S": "Alfian", "Alfian-HNY-STD": "Alfian", "Alfian-HNY-PREM": "Alfian"}},

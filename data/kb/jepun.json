@@ -5699,47 +5699,47 @@
     "code": "HND"
    },
    "rate:day:[Osaka City]:1-7": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.city14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Osaka City]:8-9": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.city14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Osaka City]:10-12": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.city14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Nara]:1-7": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.nara14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Nara]:8-9": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.nara14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Nara]:10-12": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.nara14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Kyoto]:1-7": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.kyo14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Kyoto]:8-9": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.kyo14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "rate:day:[Kyoto]:10-12": {
-    "expr": "band(pax,[7,R.r18_jpyucop/4],[9,(R.r16_jpywif+R.r27_jpywif)/4],[999,(R.r17_jpywif+R.r27_jpywif)/4])",
+    "expr": "band(pax,[7,R.ucopStd/4],[9,R.ucopHiace/4],[999,R.kyo14+R.gFull+R.gAcc+R.gMeal+R.gTrn])",
     "code": "OSK"
    },
    "vnight:osakab": {
-    "expr": "R.r22",
+    "expr": "R.hotel3",
     "code": "OSK"
    },
    "vnight:osakas": {
-    "expr": "R.r23",
+    "expr": "R.apt",
     "code": "OSK"
    },
    "vnight:tobab": {

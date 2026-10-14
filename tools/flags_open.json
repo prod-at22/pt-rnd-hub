@@ -410,6 +410,36 @@
    "fix": "Get the costs (and the real Fruit Picking price) and fill them in Add On.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "OSK",
+   "severity": "high",
+   "area": "Cost",
+   "title": "Osaka Standard 15–30 pax: sold below / near cost on CR vehicles",
+   "detail": "With the WIF CR Coaster (15–18) and Bus (19–30) the Standard cost/pax rises (e.g. 15 pax RM2,972, 19 pax RM2,990) while the Costing prices for 13–30 pax are extrapolated (catalog prints 2–12): adult margin 15 pax 0.8 %, 19 pax −1.5 %, 24 pax 9.8 %; CWB negative at 15–17 / 19–20. Costing kept 2–30 (PO).",
+   "fix": "Set 13–30 pax prices from the CR vehicles (or quote 13+ manually).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "OSK",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Osaka: USJ ticket and 5G wifi costs",
+   "detail": "USJ ticket sells RM250 (catalog D4) with cost RM249.4 (R&D sheet; WIF CR: current price + ¥1,500 ticket service charge) — margin ~0 %. Pocket Wifi 5G (RM60 / RM100) is not in the WIF CR (only ¥2,000/day wifi).",
+   "fix": "Confirm the USJ price with WIF; confirm or remove the 5G wifi item.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "OSK",
+   "severity": "low",
+   "area": "Cost",
+   "title": "KB jepun: breakfast add-on RM40 below WIF CR cost",
+   "detail": "The KB jepun calculator adds breakfast at RM40 (Tokyo / Osaka / Tokyo-Osaka) while the WIF CR customer breakfast is ¥1,500 ≈ RM43.5.",
+   "fix": "Decide the Japan breakfast price (e.g. RM50 like Hokkaido).",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

@@ -562,8 +562,9 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(deep.doc.querySelector("#selPkg").value === "atk-std", "sel/?pkg=atk-std opens Seoul Standard");
     ok(/PO\s*Aiman/.test(deep.doc.querySelector("#controls").textContent), "Seoul page shows PO Aiman");
     // Osaka / Tokyo-Osaka are rate by rate too (tools/build_jp_rates.py): codes + Rate reference
-    for (const [path, pkg, want] of [["osk/", "ucop-std-wif-std", "A × 2 × J|B × J|C × 4 × 2 pax"], ["kix/", "qay-ucop-std-wif-std", "(A + B) × O|C × O|D × 2 pax|E × 2 pax × P|F × 6 × 2 pax"]]) {
-      const pg = await boot(repo, path, "?pkg=" + pkg), $c = s => pg.doc.querySelector("#costPax " + s);
+    const fresh = mockRepo(files, ["tok-valid"]);   // current data: step 6 restored an older version in `repo`
+    for (const [path, pkg, want] of [["osk/", "ucop-std-wif-std", "A × 2 × W|B × W|C × 4 × 2 pax"], ["kix/", "qay-ucop-std-wif-std", "(A + B) × O|C × O|D × 2 pax|E × 2 pax × P|F × 6 × 2 pax"]]) {
+      const pg = await boot(fresh, path, "?pkg=" + pkg), $c = s => pg.doc.querySelector("#costPax " + s);
       click(pg.w, $c("[data-ref]")); await tick(5); click(pg.w, $c("[data-calc]")); await tick(5);
       const r2 = pg.doc.querySelector('#costPax tr[data-pax="2"]'), got = [...r2.querySelectorAll(".calc")].map(x => x.textContent.replace(/ = [\d,]+$/, "")).join("|");
       ok(got === want, path + " 2 pax calculation: " + got);

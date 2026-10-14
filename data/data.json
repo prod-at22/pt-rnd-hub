@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 101,
- "updatedAt": "2026-10-14T11:14:43Z",
+ "version": 102,
+ "updatedAt": "2026-10-14T12:30:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -8749,10 +8749,10 @@
    "name": "Osaka",
    "country": "Jepun",
    "duration": "5D4N",
-   "nights": 0,
+   "nights": 4,
    "po": "Thania",
    "source": "hub",
-   "note": "",
+   "note": "Costs = WIF CR 2026 (contracts/osk) + PT Japan R&D 2024 sheet (COSTING - OSK BSC / STD, PDF in TO Contract Rate): Basic public transport + JR Kyoto (was a Tokyo–Kyoto shinkansen RM200/way) + Kintetsu Nara + guide 4 days (own fares) + WIF charge; Standard 2–7 Ucop Vellfire, 8–9 Ucop Hiace, 10+ WIF 14-seater / Coaster / Bus + guide; airport Kansai per CR. FX fixed (Japan): WIF 0.029, Ucop 0.029. Costing 2–30 (catalog prints 2–12).",
    "fx": [
     {
      "id": "MYR",
@@ -8770,123 +8770,235 @@
     {
      "id": "JPY-UCOP",
      "label": "JPY (UCOP) → MYR",
-     "value": 0.0259,
+     "value": 0.029,
      "locked": true,
-     "source": "hub"
+     "source": "PT Japan R&D 2024 sheet (COSTING - OSK STD, Ucop block) uses 0.029 (PO 14 Oct 2026); was 0.0259"
     }
    ],
    "rates": [
     {
-     "id": "r6_jpywif",
-     "label": "Kansai 1-7 pax (WIF)",
-     "value": 18000,
+     "id": "kix7",
+     "label": "Kansai Airport 7-seater · 1–4 pax (WIF, CR)",
+     "value": 20000,
      "fx": "JPY-WIF",
      "unit": "JPY/way",
-     "group": "Raw Costing row 6"
+     "group": "1. Airport transfer"
     },
     {
-     "id": "r7_jpywif",
-     "label": "Kansai 8-9 pax (WIF)",
+     "id": "kix10",
+     "label": "Kansai Airport 10-seater · 5–8 pax (WIF, CR)",
      "value": 25000,
      "fx": "JPY-WIF",
      "unit": "JPY/way",
-     "group": "Raw Costing row 7"
+     "group": "1. Airport transfer"
     },
     {
-     "id": "r8_jpywif",
-     "label": "Kansai 10-12 pax (WIF)",
+     "id": "kix14",
+     "label": "Kansai Airport 14-seater · 9–14 pax (WIF, CR)",
      "value": 30000,
      "fx": "JPY-WIF",
      "unit": "JPY/way",
-     "group": "Raw Costing row 8"
+     "group": "1. Airport transfer"
     },
     {
-     "id": "r13_jpywif",
-     "label": "Public Transport pass (WIF)",
+     "id": "kixCo",
+     "label": "Kansai Airport Coaster 16–18 seat (WIF, CR)",
+     "value": 80000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/way",
+     "group": "1. Airport transfer"
+    },
+    {
+     "id": "kixBus",
+     "label": "Kansai Airport Bus 30 seat (WIF, CR)",
+     "value": 130000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/way",
+     "group": "1. Airport transfer"
+    },
+    {
+     "id": "ucopAir",
+     "label": "Kansai Airport Vellfire/Noah 1–7 pax (Ucop, sheet)",
+     "value": 18000,
+     "fx": "JPY-UCOP",
+     "unit": "JPY/way",
+     "group": "1. Airport transfer"
+    },
+    {
+     "id": "ucopHAir",
+     "label": "Kansai Airport return Hiace 8–9 pax (Ucop, sheet)",
+     "value": 80000,
+     "fx": "JPY-UCOP",
+     "unit": "JPY/return",
+     "group": "1. Airport transfer"
+    },
+    {
+     "id": "ucopStd",
+     "label": "Private transport + driver-guide 4 days, Vellfire/Noah 1–7 pax (Ucop, sheet)",
+     "value": 215000,
+     "fx": "JPY-UCOP",
+     "unit": "JPY/trip",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "ucopHiace",
+     "label": "Private transport + driver-guide 4 days, Hiace 8–9 pax (Ucop, sheet)",
+     "value": 275000,
+     "fx": "JPY-UCOP",
+     "unit": "JPY/trip",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "city14",
+     "label": "Osaka City Tour 14-seater (WIF, CR)",
+     "value": 50000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "cityCo",
+     "label": "Osaka City Tour Coaster (WIF, CR)",
+     "value": 160000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "cityBus",
+     "label": "Osaka City Tour Bus (WIF, CR)",
+     "value": 200000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "kyo14",
+     "label": "Kyoto 14-seater (WIF, CR)",
+     "value": 70000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "kyoCo",
+     "label": "Kyoto Coaster (WIF, CR)",
+     "value": 170000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "kyoBus",
+     "label": "Kyoto Bus (WIF, CR)",
+     "value": 210000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "nara14",
+     "label": "Nara 14-seater (WIF, CR)",
+     "value": 70000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "naraCo",
+     "label": "Nara Coaster (WIF, CR)",
+     "value": 170000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "naraBus",
+     "label": "Nara Bus (WIF, CR)",
+     "value": 210000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "2. Private transport"
+    },
+    {
+     "id": "ptPass",
+     "label": "Osaka public transport pass (WIF, sheet, per pax per day)",
      "value": 1500,
      "fx": "JPY-WIF",
      "unit": "JPY/pax/day",
-     "group": "Raw Costing row 13"
+     "group": "3. Public transport"
     },
     {
-     "id": "r14",
-     "label": "Osaka-Kyoto-Osaka (Shinkansen) (WIF)",
-     "value": 200,
-     "fx": "MYR",
-     "unit": "MYR/way",
-     "group": "Raw Costing row 14"
+     "id": "jrKyoto",
+     "label": "JR Osaka–Kyoto special rapid (COMMON, public fare)",
+     "value": 580,
+     "fx": "JPY-WIF",
+     "unit": "JPY/pax/way",
+     "group": "3. Public transport"
     },
     {
-     "id": "r15_jpywif",
-     "label": "Osaka-Nara (Kintetsu Pass) (WIF)",
+     "id": "kintetsu",
+     "label": "Kintetsu Rail day pass Osaka–Nara (WIF, sheet)",
      "value": 1900,
      "fx": "JPY-WIF",
      "unit": "JPY/pax",
-     "group": "Raw Costing row 15"
+     "group": "3. Public transport"
     },
     {
-     "id": "r22",
+     "id": "hotel3",
      "label": "Hotel 3★ (Basic) (COMMON)",
      "value": 250,
      "fx": "MYR",
      "unit": "MYR/pax/night",
-     "group": "Raw Costing row 22"
+     "group": "4. Accommodation"
     },
     {
-     "id": "r27_jpywif",
-     "label": "Tour Guide (5D4N, group) (WIF)",
-     "value": 110000,
-     "fx": "JPY-WIF",
-     "unit": "JPY/group",
-     "group": "Raw Costing row 27"
-    },
-    {
-     "id": "r31_jpywif",
-     "label": "Charge WIF (WIF)",
-     "value": 6000,
-     "fx": "JPY-WIF",
-     "unit": "JPY/pax",
-     "group": "Raw Costing row 31"
-    },
-    {
-     "id": "r9_jpyucop",
-     "label": "Kansai 1-7 pax (Ucop)",
-     "value": 18000,
-     "fx": "JPY-UCOP",
-     "unit": "JPY/way",
-     "group": "Raw Costing row 9"
-    },
-    {
-     "id": "r18_jpyucop",
-     "label": "Private Transport Std 2-7 (Ucop)",
-     "value": 215000,
-     "fx": "JPY-UCOP",
-     "unit": "JPY/trip",
-     "group": "Raw Costing row 18"
-    },
-    {
-     "id": "r23",
+     "id": "apt",
      "label": "Apartment (Standard) (COMMON)",
      "value": 250,
      "fx": "MYR",
      "unit": "MYR/pax/night",
-     "group": "Raw Costing row 23"
+     "group": "4. Accommodation"
     },
     {
-     "id": "r16_jpywif",
-     "label": "Private Transport Std 8-9 (WIF)",
-     "value": 210000,
+     "id": "gFull",
+     "label": "Guide full day allowance (WIF, CR)",
+     "value": 20000,
      "fx": "JPY-WIF",
-     "unit": "JPY/trip",
-     "group": "Raw Costing row 16"
+     "unit": "JPY/day",
+     "group": "5. Tour guide"
     },
     {
-     "id": "r17_jpywif",
-     "label": "Private Transport Std 10-12 (WIF)",
-     "value": 240000,
+     "id": "gAcc",
+     "label": "Guide accommodation (WIF, CR)",
+     "value": 5000,
      "fx": "JPY-WIF",
-     "unit": "JPY/trip",
-     "group": "Raw Costing row 17"
+     "unit": "JPY/day",
+     "group": "5. Tour guide"
+    },
+    {
+     "id": "gMeal",
+     "label": "Guide meals (WIF, CR)",
+     "value": 1500,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "5. Tour guide"
+    },
+    {
+     "id": "gTrn",
+     "label": "Guide transport (WIF, CR)",
+     "value": 1000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/day",
+     "group": "5. Tour guide"
+    },
+    {
+     "id": "wifCharge",
+     "label": "Group management fee (WIF, CR)",
+     "value": 6000,
+     "fx": "JPY-WIF",
+     "unit": "JPY/pax",
+     "group": "6. WIF charge"
     }
    ],
    "tables": [],
@@ -8898,55 +9010,49 @@
      "paxMin": 2,
      "paxMax": 40,
      "hotel": "Smile Hotel or similar (3-Star)",
-     "notes": "Basic: public transport + shinkansen Kyoto + Kintetsu Nara + guide",
+     "notes": "Basic: public transport + JR Kyoto + Kintetsu Nara + guide (WIF CR)",
      "components": [
       {
        "key": "airport",
-       "label": "Airport",
+       "label": "Airport Kansai",
        "per": "group",
-       "expr": "band(pax,[7,2*R.r6_jpywif],[9,2*R.r7_jpywif],[999,2*R.r8_jpywif])"
+       "expr": "2*band(pax,[4,R.kix7],[8,R.kix10],[14,R.kix14],[18,R.kixCo],[999,R.kixBus])"
       },
       {
        "key": "transport",
-       "label": "Transport",
+       "label": "Public transport pass ×N days",
        "per": "group",
-       "expr": "R.r13_jpywif*4*pax"
+       "expr": "R.ptPass*N*pax"
       },
       {
        "key": "osaka-kyoto",
-       "label": "Osaka-Kyoto",
+       "label": "JR Osaka–Kyoto return",
        "per": "group",
-       "expr": "R.r14*2*pax"
+       "expr": "R.jrKyoto*2*pax"
       },
       {
        "key": "osaka-nara",
-       "label": "Osaka-Nara",
+       "label": "Kintetsu Osaka–Nara",
        "per": "group",
-       "expr": "R.r15_jpywif*pax"
+       "expr": "R.kintetsu*pax"
       },
       {
        "key": "accomm",
-       "label": "Accomm",
+       "label": "Hotel 3★ ×N nights",
        "per": "group",
-       "expr": "R.r22*4*pax"
+       "expr": "R.hotel3*N*pax"
       },
       {
        "key": "tour-guide",
-       "label": "Tour Guide",
+       "label": "Tour guide (4 days + own Kyoto / Nara fares)",
        "per": "group",
-       "expr": "R.r27_jpywif"
+       "expr": "(R.gFull+R.gAcc+R.gMeal+R.gTrn)*4+R.jrKyoto*2+R.kintetsu"
       },
       {
        "key": "charge-wif",
-       "label": "Charge WIF",
+       "label": "WIF service charge",
        "per": "group",
-       "expr": "R.r31_jpywif*pax"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "group",
-       "expr": "0"
+       "expr": "R.wifCharge*pax"
       }
      ]
     },
@@ -8957,55 +9063,54 @@
      "paxMin": 2,
      "paxMax": 7,
      "hotel": "Apartment (Standard)",
-     "notes": "Standard 2-7 = Ucop (Alphard) private; driver-guide bundled",
+     "notes": "Standard 2–7 = Ucop Vellfire/Noah (driver-guide bundled) — PT Japan R&D sheet, COSTING - OSK STD (FX 0.029)",
      "components": [
       {
        "key": "airport",
-       "label": "Airport",
+       "label": "Airport Kansai",
        "per": "group",
-       "expr": "2*R.r9_jpyucop"
+       "expr": "2*R.ucopAir"
       },
       {
        "key": "transport",
-       "label": "Transport",
+       "label": "Private transport + driver-guide (4 days)",
        "per": "group",
-       "expr": "R.r18_jpyucop"
-      },
-      {
-       "key": "osaka-kyoto",
-       "label": "Osaka-Kyoto",
-       "per": "group",
-       "expr": "0"
-      },
-      {
-       "key": "osaka-nara",
-       "label": "Osaka-Nara",
-       "per": "group",
-       "expr": "0"
+       "expr": "R.ucopStd"
       },
       {
        "key": "accomm",
-       "label": "Accomm",
+       "label": "Apartment ×N nights",
        "per": "group",
-       "expr": "R.r23*4*pax"
+       "expr": "R.apt*N*pax"
+      }
+     ]
+    },
+    {
+     "id": "UCOP-HIACE",
+     "label": "Ucop",
+     "supplier": "UCOP-STD — Standard pax 2-7 · operator UCOP (Alphard private) · FX 0.0259",
+     "paxMin": 8,
+     "paxMax": 9,
+     "hotel": "Apartment (Standard)",
+     "notes": "Standard 8–9 = Ucop Hiace (driver-guide bundled) — PT Japan R&D sheet, COSTING - OSK STD",
+     "components": [
+      {
+       "key": "airport",
+       "label": "Airport Kansai",
+       "per": "group",
+       "expr": "R.ucopHAir"
       },
       {
-       "key": "tour-guide",
-       "label": "Tour Guide",
+       "key": "transport",
+       "label": "Private transport + driver-guide (4 days)",
        "per": "group",
-       "expr": "0"
+       "expr": "R.ucopHiace"
       },
       {
-       "key": "charge-wif",
-       "label": "Charge WIF",
+       "key": "accomm",
+       "label": "Apartment ×N nights",
        "per": "group",
-       "expr": "0"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "group",
-       "expr": "0"
+       "expr": "R.apt*N*pax"
       }
      ]
     },
@@ -9013,58 +9118,40 @@
      "id": "WIF-STD",
      "label": "WIF",
      "supplier": "WIF-STD — Standard pax 8+ · operator WIF (Hiace private) · FX 0.029",
-     "paxMin": 8,
+     "paxMin": 10,
      "paxMax": 40,
      "hotel": "Apartment (Standard)",
-     "notes": "Standard 8+ = WIF (Hiace) private + guide + WIF charge",
+     "notes": "Standard 10+ = WIF private transport (14-seater / Coaster / Bus per CR) + guide + WIF charge",
      "components": [
       {
        "key": "airport",
-       "label": "Airport",
+       "label": "Airport Kansai",
        "per": "group",
-       "expr": "band(pax,[9,2*R.r7_jpywif],[999,2*R.r8_jpywif])"
+       "expr": "2*band(pax,[14,R.kix14],[18,R.kixCo],[999,R.kixBus])"
       },
       {
        "key": "transport",
-       "label": "Transport",
+       "label": "Private transport (2× city + Kyoto + Nara)",
        "per": "group",
-       "expr": "band(pax,[9,R.r16_jpywif],[999,R.r17_jpywif])"
-      },
-      {
-       "key": "osaka-kyoto",
-       "label": "Osaka-Kyoto",
-       "per": "group",
-       "expr": "0"
-      },
-      {
-       "key": "osaka-nara",
-       "label": "Osaka-Nara",
-       "per": "group",
-       "expr": "0"
+       "expr": "band(pax,[14,2*R.city14+R.kyo14+R.nara14],[18,2*R.cityCo+R.kyoCo+R.naraCo],[999,2*R.cityBus+R.kyoBus+R.naraBus])"
       },
       {
        "key": "accomm",
-       "label": "Accomm",
+       "label": "Apartment ×N nights",
        "per": "group",
-       "expr": "R.r23*4*pax"
+       "expr": "R.apt*N*pax"
       },
       {
        "key": "tour-guide",
-       "label": "Tour Guide",
+       "label": "Tour guide (4 days)",
        "per": "group",
-       "expr": "R.r27_jpywif"
+       "expr": "(R.gFull+R.gAcc+R.gMeal+R.gTrn)*4"
       },
       {
        "key": "charge-wif",
-       "label": "Charge WIF",
+       "label": "WIF service charge",
        "per": "group",
-       "expr": "R.r31_jpywif*pax"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "group",
-       "expr": "0"
+       "expr": "R.wifCharge*pax"
       }
      ]
     }
@@ -9206,6 +9293,11 @@
       },
       {
        "from": 8,
+       "to": 9,
+       "variant": "UCOP-HIACE"
+      },
+      {
+       "from": 10,
        "to": 30,
        "variant": "WIF-STD"
       }
@@ -9329,10 +9421,10 @@
      "id": "osk-a01",
      "category": "Activity",
      "label": "Universal Studio Japan (USJ) ticket",
-     "cost": 200.0,
+     "cost": 249.4,
      "selling": 250.0,
      "per": "pax",
-     "notes": "Per PDF: RM250/pax add-on D4"
+     "notes": "Katalog D4 RM250/pax; kos = sheet entrance USJ RM249.4 (CR WIF: harga semasa) — margin nipis, flag"
     },
     {
      "id": "osk-a02",
@@ -9353,76 +9445,31 @@
      "notes": "Arashiyama / Kyoto town"
     },
     {
-     "id": "osk-a04",
-     "category": "Tour",
-     "label": "Osaka City Tour (Private Transport, 2 pax)",
-     "cost": 600.0,
-     "selling": 897.0,
-     "per": "pax",
-     "notes": "Voxy/Noah"
-    },
-    {
-     "id": "osk-a05",
-     "category": "Tour",
-     "label": "Osaka City Tour (Private Transport, 5-12 pax)",
-     "cost": 250.0,
-     "selling": 397.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "osk-a06",
-     "category": "Tour",
-     "label": "Nara Day Tour (Private, 2 pax)",
-     "cost": 600.0,
-     "selling": 897.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "osk-a07",
-     "category": "Tour",
-     "label": "Kyoto Day Tour (Private, 2 pax)",
-     "cost": 450.0,
-     "selling": 697.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "osk-a08",
-     "category": "Tour",
-     "label": "Tokyo+Ghibli (Tokyo extension)",
-     "cost": 800.0,
-     "selling": 1200.0,
-     "per": "pax",
-     "notes": "Add-on Tokyo trip"
-    },
-    {
      "id": "osk-a09",
      "category": "Meals",
      "label": "Breakfast — Tambah",
-     "cost": 87.0,
+     "cost": 43.5,
      "selling": 116.0,
      "per": "meal/pax",
-     "notes": "¥1500/breakfast × FX"
+     "notes": "WIF CR Customer Meals breakfast ¥1,500 × 0.029"
     },
     {
      "id": "osk-a10",
      "category": "Meals",
      "label": "Lunch — Tambah",
-     "cost": 87.0,
+     "cost": 58.0,
      "selling": 130.0,
      "per": "meal/pax",
-     "notes": "¥2000/lunch × FX"
+     "notes": "WIF CR Customer Meals lunch ¥2,000 × 0.029"
     },
     {
      "id": "osk-a11",
      "category": "Meals",
      "label": "Dinner — Tambah",
-     "cost": 87.0,
+     "cost": 58.0,
      "selling": 130.0,
      "per": "meal/pax",
-     "notes": "¥2000/dinner × FX"
+     "notes": "WIF CR Customer Meals dinner ¥2,000 × 0.029"
     },
     {
      "id": "osk-a12",
@@ -9446,10 +9493,10 @@
      "id": "osk-a14",
      "category": "Hotel",
      "label": "Reduce 1 Night — Tolak",
-     "cost": -200.0,
-     "selling": -290.0,
+     "cost": -250.0,
+     "selling": -250.0,
      "per": "pax/night",
-     "notes": "Refund 1 night"
+     "notes": "Kadar tolak = kos accommodation RM250/pax/malam (= KB)"
     },
     {
      "id": "osk-a15",
@@ -9464,10 +9511,10 @@
      "id": "osk-a16",
      "category": "Wifi",
      "label": "Pocket Wifi 4G — daily",
-     "cost": 40.0,
+     "cost": 58.0,
      "selling": 70.0,
      "per": "day",
-     "notes": "WIF B2B ¥2000/day"
+     "notes": "WIF CR Pocket Wifi ¥2,000/hari × 0.029"
     },
     {
      "id": "osk-a17",
@@ -9502,7 +9549,7 @@
      "label": "TripCare 360 — Couple (1-5d)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -9511,7 +9558,7 @@
      "label": "TripCare 360 — Couple (6-10d)",
      "cost": 122.87,
      "selling": 160.5,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -9520,7 +9567,7 @@
      "label": "TripCare 360 — Family (1-5d)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -9529,7 +9576,7 @@
      "label": "TripCare 360 — Family (6-10d)",
      "cost": 153.62,
      "selling": 201.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -9590,10 +9637,10 @@
      "id": "osk-k001",
      "category": "Add-on Accommodation",
      "label": "Apartment / 3 Star Hotel",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax/night",
+     "cost": 250.0,
+     "selling": 300.0,
+     "notes": "Kos = accommodation Costing RM250/pax/malam (ARBA tempah sendiri)",
      "price_lines": [
       "RM300/Night/Pax"
      ],
@@ -9606,10 +9653,10 @@
      "id": "osk-k002",
      "category": "Upgrade to Private Transport",
      "label": "Osaka City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 536.5,
+     "selling": 897.0,
+     "notes": "Band 2 pax · per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9624,13 +9671,40 @@
      }
     },
     {
+     "id": "osk-k002-b",
+     "category": "Upgrade to Private Transport",
+     "label": "Osaka City Tour — 3 pax",
+     "cost": 343.17,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
+     "id": "osk-k002-c",
+     "category": "Upgrade to Private Transport",
+     "label": "Osaka City Tour — 4 pax",
+     "cost": 246.5,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
+     "id": "osk-k002-d",
+     "category": "Upgrade to Private Transport",
+     "label": "Osaka City Tour — 5–12 pax",
+     "cost": 188.5,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
      "id": "osk-k003",
      "category": "Upgrade to Private Transport",
      "label": "Nara Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 553.9,
+     "selling": 897.0,
+     "notes": "Band 2 pax · per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9645,13 +9719,40 @@
      }
     },
     {
+     "id": "osk-k003-b",
+     "category": "Upgrade to Private Transport",
+     "label": "Nara Day Tour — 3 pax",
+     "cost": 336.4,
+     "selling": 697.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
+     "id": "osk-k003-c",
+     "category": "Upgrade to Private Transport",
+     "label": "Nara Day Tour — 4–5 pax",
+     "cost": 227.65,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
+     "id": "osk-k003-d",
+     "category": "Upgrade to Private Transport",
+     "label": "Nara Day Tour — 6–12 pax",
+     "cost": 118.9,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
      "id": "osk-k004",
      "category": "Upgrade to Private Transport",
      "label": "Kyoto Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 575.36,
+     "selling": 697.0,
+     "notes": "Band 2 pax · per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9665,13 +9766,31 @@
      }
     },
     {
+     "id": "osk-k004-b",
+     "category": "Upgrade to Private Transport",
+     "label": "Kyoto Day Tour — 3 pax",
+     "cost": 357.86,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
+     "id": "osk-k004-c",
+     "category": "Upgrade to Private Transport",
+     "label": "Kyoto Day Tour — 4–12 pax",
+     "cost": 249.11,
+     "selling": 297.0,
+     "per": "pax",
+     "notes": "per pax · kos = kenderaan WIF CR (driver sahaja, guide sudah dalam Basic) ÷ pax − tambang customer yang tidak dipakai; band paling mahal"
+    },
+    {
      "id": "osk-k005",
      "category": "Add-on Public Transport",
      "label": "Osaka City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 442.25,
+     "selling": 697.0,
+     "notes": "Band 2 pax · per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal",
      "includes": "Public Transport Card, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses",
      "duration": "From 9am to 7pm",
@@ -9689,13 +9808,49 @@
      }
     },
     {
+     "id": "osk-k005-b",
+     "category": "Add-on Public Transport",
+     "label": "Osaka City Tour — 3 pax",
+     "cost": 309.33,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k005-c",
+     "category": "Add-on Public Transport",
+     "label": "Osaka City Tour — 4–5 pax",
+     "cost": 242.88,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k005-d",
+     "category": "Add-on Public Transport",
+     "label": "Osaka City Tour — 6–11 pax",
+     "cost": 176.42,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k005-e",
+     "category": "Add-on Public Transport",
+     "label": "Osaka City Tour — 12 pax",
+     "cost": 109.96,
+     "selling": 297.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
      "id": "osk-k006",
      "category": "Add-on Public Transport",
      "label": "Nara Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 524.9,
+     "selling": 897.0,
+     "notes": "Band 2 pax · per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal",
      "includes": "Public Transport Card, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses",
      "duration": "From 9am to 7pm",
@@ -9713,13 +9868,49 @@
      }
     },
     {
+     "id": "osk-k006-b",
+     "category": "Add-on Public Transport",
+     "label": "Nara Day Tour — 3 pax",
+     "cost": 382.8,
+     "selling": 697.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k006-c",
+     "category": "Add-on Public Transport",
+     "label": "Nara Day Tour — 4 pax",
+     "cost": 311.75,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k006-d",
+     "category": "Add-on Public Transport",
+     "label": "Nara Day Tour — 5–6 pax",
+     "cost": 269.12,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k006-e",
+     "category": "Add-on Public Transport",
+     "label": "Nara Day Tour — 7–12 pax",
+     "cost": 220.4,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
      "id": "osk-k007",
      "category": "Add-on Public Transport",
      "label": "Kyoto Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 492.71,
+     "selling": 897.0,
+     "notes": "Band 2 pax · per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal",
      "includes": "Public Transport Card, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses",
      "duration": "From 9am to 7pm",
@@ -9736,13 +9927,40 @@
      }
     },
     {
+     "id": "osk-k007-b",
+     "category": "Add-on Public Transport",
+     "label": "Kyoto Day Tour — 3–4 pax",
+     "cost": 354.19,
+     "selling": 697.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k007-c",
+     "category": "Add-on Public Transport",
+     "label": "Kyoto Day Tour — 5–9 pax",
+     "cost": 243.37,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
+     "id": "osk-k007-d",
+     "category": "Add-on Public Transport",
+     "label": "Kyoto Day Tour — 10–12 pax",
+     "cost": 160.25,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "per pax · kos = pass ¥1,500 + tambang customer + (guide WIF 1 hari ¥27,500 + tambang guide) ÷ pax; band paling mahal"
+    },
+    {
      "id": "osk-k008",
      "category": "Add-on Private Transport",
      "label": "Osaka City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "trip",
+     "cost": 1450.0,
+     "selling": 3000.0,
+     "notes": "Band 1–7 pax · per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9758,13 +9976,31 @@
      }
     },
     {
+     "id": "osk-k008-b",
+     "category": "Add-on Private Transport",
+     "label": "Osaka City Tour — 8–9 pax",
+     "cost": 1885.0,
+     "selling": 3400.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
+    },
+    {
+     "id": "osk-k008-c",
+     "category": "Add-on Private Transport",
+     "label": "Osaka City Tour — 10–12 pax",
+     "cost": 2247.5,
+     "selling": 3800.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
+    },
+    {
      "id": "osk-k009",
      "category": "Add-on Private Transport",
      "label": "Nara Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "trip",
+     "cost": 1595.0,
+     "selling": 3300.0,
+     "notes": "Band 1–7 pax · per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9780,13 +10016,31 @@
      }
     },
     {
+     "id": "osk-k009-b",
+     "category": "Add-on Private Transport",
+     "label": "Nara Day Tour — 8–9 pax",
+     "cost": 2030.0,
+     "selling": 3700.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
+    },
+    {
+     "id": "osk-k009-c",
+     "category": "Add-on Private Transport",
+     "label": "Nara Day Tour — 10–12 pax",
+     "cost": 2827.5,
+     "selling": 4400.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
+    },
+    {
      "id": "osk-k010",
      "category": "Add-on Private Transport",
      "label": "Kyoto Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "trip",
+     "cost": 1740.0,
+     "selling": 3300.0,
+     "notes": "Band 1–7 pax · per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -9800,6 +10054,24 @@
       "osaka-basic": 10,
       "osaka-standard": 7
      }
+    },
+    {
+     "id": "osk-k010-b",
+     "category": "Add-on Private Transport",
+     "label": "Kyoto Day Tour — 8–9 pax",
+     "cost": 2175.0,
+     "selling": 3700.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
+    },
+    {
+     "id": "osk-k010-c",
+     "category": "Add-on Private Transport",
+     "label": "Kyoto Day Tour — 10–12 pax",
+     "cost": 2827.5,
+     "selling": 4400.0,
+     "per": "trip",
+     "notes": "per trip · kos = sheet ADD ON - OSAKA STANDARD (1–7 / 8–9 driver-cum-guide, 10–12 WIF 14-seater + guide)"
     }
    ],
    "catalogs": [
@@ -9817,6 +10089,16 @@
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1n6VDUN3XlFwIQMbTJ43H-UeZ6ktgcdy1"
+    },
+    {
+     "id": "e5c3a9d1f02",
+     "name": "OSAKA COSTING RATE WIF UCOP 2026.pdf",
+     "file": "contracts/osk/e5c3a9d1f02-OSAKA_COSTING_RATE_WIF_UCOP_2026.pdf",
+     "to": "WIF / Ucop",
+     "note": "PT Japan R&D 2024 sheet, tabs COSTING - OSK BSC / COSTING - OSK STD (PO ezie 14 Oct 2026)",
+     "size": 805226,
+     "at": "2026-10-14T12:30:00Z",
+     "by": "ezie"
     }
    ],
    "hotels": [
@@ -9946,7 +10228,8 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 102
   },
   {
    "code": "CTS",
