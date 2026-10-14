@@ -296,8 +296,9 @@ textarea.mono{font-family:ui-monospace,Menlo,monospace;font-size:12px;width:100%
 .cmp-bar #cmpName{width:220px}
 .cmp-paxin{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--muted);margin-left:auto}
 .cmp-paxin input{width:90px}
-.cmp-t{border-collapse:separate;border-spacing:0;min-width:100%}
-.cmp-t th,.cmp-t td{border-bottom:1px solid var(--line);white-space:normal;vertical-align:middle;min-width:150px;max-width:260px;padding:9px 14px;text-align:center;font-size:13px;background:#fff;color:var(--ink)}
+.cmp-t{border-collapse:separate;border-spacing:0;width:auto}
+#cmpCard{width:fit-content;max-width:100%}
+.cmp-t th,.cmp-t td{border-bottom:1px solid var(--line);white-space:normal;vertical-align:middle;width:170px;min-width:150px;max-width:190px;padding:8px 12px;text-align:center;font-size:13px;background:#fff;color:var(--ink)}
 .cmp-t thead th{text-transform:none;letter-spacing:0;vertical-align:bottom;padding:14px 14px 10px;border-bottom:1px solid var(--ink)}
 .cmp-h{font-weight:700;font-size:13.5px}
 .cmp-tag{font-size:11px;font-weight:500;color:var(--muted);margin-top:2px}
@@ -319,7 +320,7 @@ textarea.cmp-in:focus,input.cmp-name:focus{outline:1px solid var(--ink);border-c
 input.cmp-name{width:100%;box-sizing:border-box;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:5px;padding:3px 6px;font:inherit;font-weight:700;font-size:13.5px;text-align:center}
 input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;box-sizing:border-box;text-align:center;font-family:inherit}
 .cmp-other{padding:10px 14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
-.cmp-ana{padding:12px 14px 14px;border-top:1px solid var(--line);font-size:13px;max-width:900px}
+.cmp-ana{padding:12px 14px 14px;border-top:1px solid var(--line);font-size:13px;}
 .cmp-ana h4{margin:0 0 6px;font-size:13px} .cmp-ana ul{margin:0;padding-left:20px} .cmp-ana li{margin:3px 0}
 .cmp-ana details{margin-top:10px} .cmp-ana summary{cursor:pointer;color:var(--muted);font-size:12.5px}
 .cmp-md h4{margin:12px 0 4px;font-size:13px} .cmp-md p{margin:4px 0} .cmp-md ul{margin:4px 0;padding-left:20px}
