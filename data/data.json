@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 102,
- "updatedAt": "2026-10-14T12:30:00Z",
+ "version": 103,
+ "updatedAt": "2026-10-14T13:45:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -17853,10 +17853,10 @@
    "name": "Padang - Bukittinggi",
    "country": "Indonesia",
    "duration": "4D3N",
-   "nights": 0,
+   "nights": 3,
    "po": "Fyka",
    "source": "hub",
-   "note": "",
+   "note": "Cost = Pak Herman CR (WhatsApp, RM per pax: 2–4 550 · 5–10 525 · 11–15 500 · 16–19 485) + RM25/pax 4★ upgrade Berastagi (PO). Costing 2–19 (CR max 19). 4★ package removed: catalog upgrade +RM80/pax/night (cost unknown). Child CWB 85 % / CNB 70 % (no CR child rate).",
    "fx": [
     {
      "id": "MYR",
@@ -17891,8 +17891,7 @@
       "16": 485,
       "17": 485,
       "18": 485,
-      "19": 485,
-      "20": 485
+      "19": 485
      }
     },
     {
@@ -17919,13 +17918,12 @@
       "16": 0,
       "17": 0,
       "18": 0,
-      "19": 0,
-      "20": 0
+      "19": 0
      }
     },
     {
      "id": "HERMAN__Add-1-Night-4star-MYR",
-     "label": "HERMAN · Add 1 Night 4star",
+     "label": "HERMAN · 4★ upgrade Berastagi (+RM25/pax, PO 14 Oct 2026)",
      "unit": "MYR/pax",
      "fx": "MYR",
      "group": "HERMAN",
@@ -17947,92 +17945,7 @@
       "16": 25,
       "17": 25,
       "18": 25,
-      "19": 25,
-      "20": 25
-     }
-    },
-    {
-     "id": "HERMAN-4S__Ground-Cost-MYR",
-     "label": "HERMAN-4S · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "HERMAN-4S",
-     "values": {
-      "2": 790,
-      "3": 790,
-      "4": 790,
-      "5": 765,
-      "6": 765,
-      "7": 765,
-      "8": 765,
-      "9": 765,
-      "10": 765,
-      "11": 740,
-      "12": 740,
-      "13": 740,
-      "14": 740,
-      "15": 740,
-      "16": 725,
-      "17": 725,
-      "18": 725,
-      "19": 725,
-      "20": 725
-     }
-    },
-    {
-     "id": "HERMAN-4S__Tipping-MYR",
-     "label": "HERMAN-4S · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "HERMAN-4S",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0
-     }
-    },
-    {
-     "id": "HERMAN-4S__Add-1-Night-4star-MYR",
-     "label": "HERMAN-4S · Add 1 Night 4star",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "HERMAN-4S",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0
+      "19": 25
      }
     }
    ],
@@ -18040,9 +17953,9 @@
     {
      "id": "HERMAN",
      "label": "Herman",
-     "supplier": "TO HERMAN — Padang-Bukittinggi 4D3N (3-Star Hotel) · Max 19 pax (pax 20 flagged ",
+     "supplier": "HERMAN — Padang-Bukittinggi 4D3N (3-Star Hotel) · CR 2–19 pax",
      "paxMin": 2,
-     "paxMax": 20,
+     "paxMax": 19,
      "hotel": "Grand Bunda / Royal Denai (BKT) · HW Hotel (Padang)",
      "notes": "",
      "components": [
@@ -18060,38 +17973,9 @@
       },
       {
        "key": "add-1-night-4star-myr",
-       "label": "Add 1 Night 4star",
+       "label": "4★ upgrade Berastagi",
        "per": "pax",
        "expr": "T['HERMAN__Add-1-Night-4star-MYR']"
-      }
-     ]
-    },
-    {
-     "id": "HERMAN-4S",
-     "label": "Herman",
-     "supplier": "TO HERMAN-4S — 4-Star Upgrade (Grand Rocky / Santika / Grand Royal Denai) · +RM ",
-     "paxMin": 2,
-     "paxMax": 20,
-     "hotel": "Grand Rocky / Santika / Grand Royal Denai (4★)",
-     "notes": "",
-     "components": [
-      {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['HERMAN-4S__Ground-Cost-MYR']"
-      },
-      {
-       "key": "tipping-myr",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['HERMAN-4S__Tipping-MYR']"
-      },
-      {
-       "key": "add-1-night-4star-myr",
-       "label": "Add 1 Night 4star",
-       "per": "pax",
-       "expr": "T['HERMAN-4S__Add-1-Night-4star-MYR']"
       }
      ]
     }
@@ -18104,7 +17988,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 20,
+       "to": 19,
        "variant": "HERMAN"
       }
      ],
@@ -18127,8 +18011,7 @@
        "16": 1037,
        "17": 1037,
        "18": 1037,
-       "19": 1037,
-       "20": 1037
+       "19": 1037
       },
       "cwb": {
        "2": 1197,
@@ -18148,8 +18031,7 @@
        "16": 937,
        "17": 937,
        "18": 937,
-       "19": 937,
-       "20": 937
+       "19": 937
       },
       "cnb": {
        "2": 1097,
@@ -18169,108 +18051,13 @@
        "16": 837,
        "17": 837,
        "18": 837,
-       "19": 837,
-       "20": 837
+       "19": 837
       },
       "infant": 0
      },
      "rules": {
       "discountTier2": 200,
       "tierUpgrade": 0,
-      "cwbCost": {
-       "type": "pct",
-       "value": 0.85
-      },
-      "cnbCost": {
-       "type": "pct",
-       "value": 0.7
-      },
-      "infantCost": {
-       "type": "flat",
-       "value": 0
-      }
-     }
-    },
-    {
-     "id": "herman-4s",
-     "label": "Padang - Bukittinggi 4D3N · 4★",
-     "catalog": null,
-     "assign": [
-      {
-       "from": 2,
-       "to": 20,
-       "variant": "HERMAN-4S"
-      }
-     ],
-     "pricing": {
-      "adult": {
-       "2": 1297,
-       "3": 1157,
-       "4": 1157,
-       "5": 1157,
-       "6": 1157,
-       "7": 1097,
-       "8": 1097,
-       "9": 1097,
-       "10": 1097,
-       "11": 1057,
-       "12": 1057,
-       "13": 1057,
-       "14": 1057,
-       "15": 1057,
-       "16": 1037,
-       "17": 1037,
-       "18": 1037,
-       "19": 1037,
-       "20": 1037
-      },
-      "cwb": {
-       "2": 1197,
-       "3": 1057,
-       "4": 1057,
-       "5": 1057,
-       "6": 1057,
-       "7": 997,
-       "8": 997,
-       "9": 997,
-       "10": 997,
-       "11": 957,
-       "12": 957,
-       "13": 957,
-       "14": 957,
-       "15": 957,
-       "16": 937,
-       "17": 937,
-       "18": 937,
-       "19": 937,
-       "20": 937
-      },
-      "cnb": {
-       "2": 1097,
-       "3": 957,
-       "4": 957,
-       "5": 957,
-       "6": 957,
-       "7": 897,
-       "8": 897,
-       "9": 897,
-       "10": 897,
-       "11": 857,
-       "12": 857,
-       "13": 857,
-       "14": 857,
-       "15": 857,
-       "16": 837,
-       "17": 837,
-       "18": 837,
-       "19": 837,
-       "20": 837
-      },
-      "infant": 0
-     },
-     "rules": {
-      "discountTier2": 200,
-      "tierUpgrade": 240,
       "cwbCost": {
        "type": "pct",
        "value": 0.85
@@ -18295,24 +18082,6 @@
      "selling": 100.0,
      "per": "pax",
      "notes": "Optional add-on"
-    },
-    {
-     "id": "pdg-a02",
-     "category": "Optional Tour",
-     "label": "Holbung Tour (Tasik Maninjau add-on)",
-     "cost": 0.0,
-     "selling": 150.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a03",
-     "category": "Optional Tour",
-     "label": "Aek Manik Pool Sidamanik",
-     "cost": 0.0,
-     "selling": 100.0,
-     "per": "pax",
-     "notes": null
     },
     {
      "id": "pdg-a04",
@@ -18465,114 +18234,6 @@
      "cost": 58.0,
      "selling": 70.0,
      "per": "pcs",
-     "notes": null
-    },
-    {
-     "id": "pdg-a21",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "pdg-a22",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a23",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a24",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a25",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a26",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pdg-a29",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pdg-a30",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pdg-a31",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pdg-a32",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
      "notes": null
     }
    ],
@@ -18754,7 +18415,8 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 103
   },
   {
    "code": "JBDO",

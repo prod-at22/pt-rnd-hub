@@ -146568,6 +146568,1224 @@
      "label": "KB jepun › rnd › cost › vnight:osakas › expr"
     }
    ]
+  },
+  {
+   "v": 103,
+   "at": "2026-10-14T13:45:00Z",
+   "by": "ezie",
+   "note": "Padang - Bukittinggi verified (PO ezie 14 Oct 2026; CR = Pak Herman WhatsApp rates in TO Contract Rate): cost = CR 2–4 RM550 · 5–10 525 · 11–15 500 · 16–19 485 (checked) + RM25/pax 4★ upgrade Berastagi kept (PO: real cost); Costing 2–19 (CR max 19, PO); 4★ package (no catalog, cost = selling) removed — catalog upgrade +RM80/night stays; nights 3; add-ons: Holbung Tour / Aek Manik Pool (Lake Toba items) removed, TripCare Area 2 + duplicate Blue Ribbon removed (Area 1 kept); child CWB 85 % / CNB 70 % kept. Flags: CR inclusions / 4★ upgrade / peak / 20 pax, add-ons without cost. Catalog / KB price band 16–20 → 16–19 (PO), KB FAQ tier text and 20-pax note; Flags / History from v103.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "nights"
+     ],
+     "from": 0,
+     "to": 3,
+     "label": "Padang - Bukittinggi › Nights"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "note"
+     ],
+     "from": "",
+     "to": "Cost = Pak Herman CR (WhatsApp, RM per pax: 2–4 550 · 5–10 525 · 11–15 500 · 16–19 485) + RM25/pax 4★ upgrade Berastagi (PO). Costing 2–19 (CR max 19). 4★ package removed: catalog upgrade +RM80/pax/night (cost unknown). Child CWB 85 % / CNB 70 % (no CR child rate).",
+     "label": "Padang - Bukittinggi › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "HERMAN__Ground-Cost-MYR",
+       "label": "HERMAN · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 550,
+        "3": 550,
+        "4": 550,
+        "5": 525,
+        "6": 525,
+        "7": 525,
+        "8": 525,
+        "9": 525,
+        "10": 525,
+        "11": 500,
+        "12": 500,
+        "13": 500,
+        "14": 500,
+        "15": 500,
+        "16": 485,
+        "17": 485,
+        "18": 485,
+        "19": 485,
+        "20": 485
+       }
+      },
+      {
+       "id": "HERMAN__Tipping-MYR",
+       "label": "HERMAN · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      },
+      {
+       "id": "HERMAN__Add-1-Night-4star-MYR",
+       "label": "HERMAN · Add 1 Night 4star",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 25,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 25,
+        "12": 25,
+        "13": 25,
+        "14": 25,
+        "15": 25,
+        "16": 25,
+        "17": 25,
+        "18": 25,
+        "19": 25,
+        "20": 25
+       }
+      },
+      {
+       "id": "HERMAN-4S__Ground-Cost-MYR",
+       "label": "HERMAN-4S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN-4S",
+       "values": {
+        "2": 790,
+        "3": 790,
+        "4": 790,
+        "5": 765,
+        "6": 765,
+        "7": 765,
+        "8": 765,
+        "9": 765,
+        "10": 765,
+        "11": 740,
+        "12": 740,
+        "13": 740,
+        "14": 740,
+        "15": 740,
+        "16": 725,
+        "17": 725,
+        "18": 725,
+        "19": 725,
+        "20": 725
+       }
+      },
+      {
+       "id": "HERMAN-4S__Tipping-MYR",
+       "label": "HERMAN-4S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN-4S",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      },
+      {
+       "id": "HERMAN-4S__Add-1-Night-4star-MYR",
+       "label": "HERMAN-4S · Add 1 Night 4star",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN-4S",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "HERMAN__Ground-Cost-MYR",
+       "label": "HERMAN · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 550,
+        "3": 550,
+        "4": 550,
+        "5": 525,
+        "6": 525,
+        "7": 525,
+        "8": 525,
+        "9": 525,
+        "10": 525,
+        "11": 500,
+        "12": 500,
+        "13": 500,
+        "14": 500,
+        "15": 500,
+        "16": 485,
+        "17": 485,
+        "18": 485,
+        "19": 485
+       }
+      },
+      {
+       "id": "HERMAN__Tipping-MYR",
+       "label": "HERMAN · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0
+       }
+      },
+      {
+       "id": "HERMAN__Add-1-Night-4star-MYR",
+       "label": "HERMAN · 4★ upgrade Berastagi (+RM25/pax, PO 14 Oct 2026)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "HERMAN",
+       "values": {
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 25,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 25,
+        "12": 25,
+        "13": 25,
+        "14": 25,
+        "15": 25,
+        "16": 25,
+        "17": 25,
+        "18": 25,
+        "19": 25
+       }
+      }
+     ],
+     "label": "Padang - Bukittinggi › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "HERMAN",
+       "label": "Herman",
+       "supplier": "TO HERMAN — Padang-Bukittinggi 4D3N (3-Star Hotel) · Max 19 pax (pax 20 flagged ",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "Grand Bunda / Royal Denai (BKT) · HW Hotel (Padang)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['HERMAN__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['HERMAN__Tipping-MYR']"
+        },
+        {
+         "key": "add-1-night-4star-myr",
+         "label": "Add 1 Night 4star",
+         "per": "pax",
+         "expr": "T['HERMAN__Add-1-Night-4star-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "HERMAN-4S",
+       "label": "Herman",
+       "supplier": "TO HERMAN-4S — 4-Star Upgrade (Grand Rocky / Santika / Grand Royal Denai) · +RM ",
+       "paxMin": 2,
+       "paxMax": 20,
+       "hotel": "Grand Rocky / Santika / Grand Royal Denai (4★)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['HERMAN-4S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['HERMAN-4S__Tipping-MYR']"
+        },
+        {
+         "key": "add-1-night-4star-myr",
+         "label": "Add 1 Night 4star",
+         "per": "pax",
+         "expr": "T['HERMAN-4S__Add-1-Night-4star-MYR']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "HERMAN",
+       "label": "Herman",
+       "supplier": "HERMAN — Padang-Bukittinggi 4D3N (3-Star Hotel) · CR 2–19 pax",
+       "paxMin": 2,
+       "paxMax": 19,
+       "hotel": "Grand Bunda / Royal Denai (BKT) · HW Hotel (Padang)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['HERMAN__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['HERMAN__Tipping-MYR']"
+        },
+        {
+         "key": "add-1-night-4star-myr",
+         "label": "4★ upgrade Berastagi",
+         "per": "pax",
+         "expr": "T['HERMAN__Add-1-Night-4star-MYR']"
+        }
+       ]
+      }
+     ],
+     "label": "Padang - Bukittinggi › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "packages"
+     ],
+     "from": [
+      {
+       "id": "herman",
+       "label": "Padang - Bukittinggi 4D3N · 3★",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 20,
+         "variant": "HERMAN"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1297,
+         "3": 1157,
+         "4": 1157,
+         "5": 1157,
+         "6": 1157,
+         "7": 1097,
+         "8": 1097,
+         "9": 1097,
+         "10": 1097,
+         "11": 1057,
+         "12": 1057,
+         "13": 1057,
+         "14": 1057,
+         "15": 1057,
+         "16": 1037,
+         "17": 1037,
+         "18": 1037,
+         "19": 1037,
+         "20": 1037
+        },
+        "cwb": {
+         "2": 1197,
+         "3": 1057,
+         "4": 1057,
+         "5": 1057,
+         "6": 1057,
+         "7": 997,
+         "8": 997,
+         "9": 997,
+         "10": 997,
+         "11": 957,
+         "12": 957,
+         "13": 957,
+         "14": 957,
+         "15": 957,
+         "16": 937,
+         "17": 937,
+         "18": 937,
+         "19": 937,
+         "20": 937
+        },
+        "cnb": {
+         "2": 1097,
+         "3": 957,
+         "4": 957,
+         "5": 957,
+         "6": 957,
+         "7": 897,
+         "8": 897,
+         "9": 897,
+         "10": 897,
+         "11": 857,
+         "12": 857,
+         "13": 857,
+         "14": 857,
+         "15": 857,
+         "16": 837,
+         "17": 837,
+         "18": 837,
+         "19": 837,
+         "20": 837
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.7
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "herman-4s",
+       "label": "Padang - Bukittinggi 4D3N · 4★",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 20,
+         "variant": "HERMAN-4S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1297,
+         "3": 1157,
+         "4": 1157,
+         "5": 1157,
+         "6": 1157,
+         "7": 1097,
+         "8": 1097,
+         "9": 1097,
+         "10": 1097,
+         "11": 1057,
+         "12": 1057,
+         "13": 1057,
+         "14": 1057,
+         "15": 1057,
+         "16": 1037,
+         "17": 1037,
+         "18": 1037,
+         "19": 1037,
+         "20": 1037
+        },
+        "cwb": {
+         "2": 1197,
+         "3": 1057,
+         "4": 1057,
+         "5": 1057,
+         "6": 1057,
+         "7": 997,
+         "8": 997,
+         "9": 997,
+         "10": 997,
+         "11": 957,
+         "12": 957,
+         "13": 957,
+         "14": 957,
+         "15": 957,
+         "16": 937,
+         "17": 937,
+         "18": 937,
+         "19": 937,
+         "20": 937
+        },
+        "cnb": {
+         "2": 1097,
+         "3": 957,
+         "4": 957,
+         "5": 957,
+         "6": 957,
+         "7": 897,
+         "8": 897,
+         "9": 897,
+         "10": 897,
+         "11": 857,
+         "12": 857,
+         "13": 857,
+         "14": 857,
+         "15": 857,
+         "16": 837,
+         "17": 837,
+         "18": 837,
+         "19": 837,
+         "20": 837
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 240,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.7
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "herman",
+       "label": "Padang - Bukittinggi 4D3N · 3★",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 19,
+         "variant": "HERMAN"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1297,
+         "3": 1157,
+         "4": 1157,
+         "5": 1157,
+         "6": 1157,
+         "7": 1097,
+         "8": 1097,
+         "9": 1097,
+         "10": 1097,
+         "11": 1057,
+         "12": 1057,
+         "13": 1057,
+         "14": 1057,
+         "15": 1057,
+         "16": 1037,
+         "17": 1037,
+         "18": 1037,
+         "19": 1037
+        },
+        "cwb": {
+         "2": 1197,
+         "3": 1057,
+         "4": 1057,
+         "5": 1057,
+         "6": 1057,
+         "7": 997,
+         "8": 997,
+         "9": 997,
+         "10": 997,
+         "11": 957,
+         "12": 957,
+         "13": 957,
+         "14": 957,
+         "15": 957,
+         "16": 937,
+         "17": 937,
+         "18": 937,
+         "19": 937
+        },
+        "cnb": {
+         "2": 1097,
+         "3": 957,
+         "4": 957,
+         "5": 957,
+         "6": 957,
+         "7": 897,
+         "8": 897,
+         "9": 897,
+         "10": 897,
+         "11": 857,
+         "12": 857,
+         "13": 857,
+         "14": 857,
+         "15": 857,
+         "16": 837,
+         "17": 837,
+         "18": 837,
+         "19": 837
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.7
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "label": "Padang - Bukittinggi"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "pdg-a01",
+       "category": "Optional Tour",
+       "label": "Shopping Tour Bukittinggi (Sanjai, Pasar Atas)",
+       "cost": 0,
+       "selling": 100,
+       "per": "pax",
+       "notes": "Optional add-on"
+      },
+      {
+       "id": "pdg-a02",
+       "category": "Optional Tour",
+       "label": "Holbung Tour (Tasik Maninjau add-on)",
+       "cost": 0,
+       "selling": 150,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a03",
+       "category": "Optional Tour",
+       "label": "Aek Manik Pool Sidamanik",
+       "cost": 0,
+       "selling": 100,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a04",
+       "category": "Cultural",
+       "label": "Baju Adat Minangkabau Photo Session (Istana Pagaruyung)",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Traditional dress rental"
+      },
+      {
+       "id": "pdg-a05",
+       "category": "Cultural",
+       "label": "Dreampark Lembah Harau entry",
+       "cost": 0,
+       "selling": 30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a06",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 0,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "pdg-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pdg-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pdg-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "pdg-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pdg-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pdg-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pdg-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pdg-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a17",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "pdg-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a29",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pdg-a30",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pdg-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "pdg-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      }
+     ],
+     "to": [
+      {
+       "id": "pdg-a01",
+       "category": "Optional Tour",
+       "label": "Shopping Tour Bukittinggi (Sanjai, Pasar Atas)",
+       "cost": 0,
+       "selling": 100,
+       "per": "pax",
+       "notes": "Optional add-on"
+      },
+      {
+       "id": "pdg-a04",
+       "category": "Cultural",
+       "label": "Baju Adat Minangkabau Photo Session (Istana Pagaruyung)",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Traditional dress rental"
+      },
+      {
+       "id": "pdg-a05",
+       "category": "Cultural",
+       "label": "Dreampark Lembah Harau entry",
+       "cost": 0,
+       "selling": 30,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a06",
+       "category": "Transport",
+       "label": "Airport Transfer (extra)",
+       "cost": 0,
+       "selling": 100,
+       "per": "way",
+       "notes": null
+      },
+      {
+       "id": "pdg-a07",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB (4G) 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pdg-a08",
+       "category": "Wifi",
+       "label": "Pocket Wifi 10GB (5G) 4D3N",
+       "cost": 48,
+       "selling": 110,
+       "per": "trip",
+       "notes": "RoamingMan"
+      },
+      {
+       "id": "pdg-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1"
+      },
+      {
+       "id": "pdg-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pdg-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "pdg-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pdg-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "pdg-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "pdg-a17",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a18",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "pdg-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      }
+     ],
+     "label": "Padang - Bukittinggi › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "PDG",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 103,
+     "label": "Padang - Bukittinggi › historyFrom"
+    },
+    {
+     "path": [
+      "catalogs",
+      "padang-bukittinggi",
+      "prices",
+      "rows",
+      4,
+      "pax"
+     ],
+     "from": "16 - 20",
+     "to": "16 - 19",
+     "label": "Catalog padang-bukittinggi › prices › rows › #5 › pax"
+    },
+    {
+     "path": [
+      "kb",
+      "padang-bukittinggi",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Padang–Bukittinggi — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Pakej Private Tour 4D3N — dua pilihan routing: **Option A** (alam & warisan penuh) dan **Option B** (santai + shopping). Hotel 3★ standard, boleh naik taraf 4★.*\n\n- Driver & guide **asas 12 jam**; **150,000 IDR/jam** dikenakan bagi setiap jam tambahan (bayaran tunai).\n- Ketibaan disyorkan **09:00–10:00 pagi** pada Hari 1.\n- Itinerari muktamad & susunan hotel disahkan **14 hari** sebelum trip.\n- Sila semak validity trip sebelum tempah sebarang connecting domestic flight.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa beza Option A dan Option B?**\nBeza hanya pada Hari 2 dan Hari 3. **Option A** (Hari 2): Kelok 9, Lembah Harau, Tabek Patah, Kota Payakumbuh, Istana Pagaruyung & Danau Singkarak. **Option B** (Hari 2): Istana Pagaruyung, Danau Singkarak & shopping di Bukittinggi. Hari 3 Option B bermula dengan shopping sebelum Panorama Baru, Puncak Lawang & Koto Gadang. Hari 1 dan Hari 4 sama untuk kedua-duanya, dan harga sama.\n\n**Berapa hari pakej ini?**\n4 Hari 3 Malam (4D3N) — dua malam pertama di Bukittinggi, malam ketiga di Padang.\n\n**Berapa minimum pax?**\nHarga bermula dari **2 pax**. Kadar menurun mengikut saiz group sehingga tier 16–20 pax.\n\n**Ini Private Tour atau Joined Tour?**\nPrivate Tour (PT) — kenderaan & guide eksklusif untuk group anda sahaja.\n\n**Banyak berjalan kaki?**\nYa, beberapa lokasi (Koto Gadang/Janjang Saribu, Lembah Harau, Lubang Jepang) memerlukan banyak berjalan. Pakai kasut selesa.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nSangat senang. Sumatera Barat majoriti Muslim; semua makan (fullboard) di restoran halal tempatan — masakan Padang/Minang. Maklumkan awal jika ada alahan atau keperluan diet khas.\n\n**Masakan Padang pedas — ada pilihan untuk yang tak tahan pedas?**\nAda. Hidangan Padang biasanya berkuah pedas, tetapi restoran menyediakan lauk tidak pedas seperti ayam goreng, ikan bakar, telur dadar dan sayur. Maklumkan kepada guide sebelum waktu makan.\n\n**Ada masjid/surau untuk solat?**\nAda di mana-mana. Masjid Raya Sumatera Barat adalah antara tarikan utama dalam itinerari, dan setiap lokasi lawatan ada surau berhampiran. Waktu solat mudah dijaga sepanjang trip.\n\n**Perlu bawa sejadah/telekung sendiri?**\nDigalakkan bawa sejadah & telekung sendiri untuk keselesaan ibadah harian.\n\n### C. Visa & Passport\n\n**Perlu visa ke Indonesia?**\nPemegang pasport Malaysia **tidak perlu visa** untuk lawatan pelancongan sehingga **30 hari** (visa exemption ASEAN).\n\n**Apa itu All Indonesia Arrival Card — wajib ke?**\nWajib. Sejak **1 Oktober 2025** semua ketibaan ke Indonesia perlu menghantar borang digital **All Indonesia** (imigresen, kastam, kesihatan & kuarantin dalam satu borang) — ia menggantikan borang e-CD kastam. Isi di **allindonesia.imigrasi.go.id** atau aplikasi All Indonesia, sehingga **3 hari** sebelum tiba, dan simpan QR code untuk ditunjuk semasa pemeriksaan.\n\n**Ada urusan Autogate di airport?**\nYa. Pelancong 14 tahun ke atas boleh isi borang **Indonesia Visa Exemption** di evisa.imigrasi.go.id untuk dapatkan QR code Autogate. Borang hanya boleh diisi **2 hari sebelum** penerbangan.\n\n**Syarat pasport?**\nPasport mesti sah sekurang-kurangnya **6 bulan** dari tarikh trip.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Harga adalah Ground + Tipping sahaja; tiket penerbangan antarabangsa dibeli berasingan.\n\n**Ada flight terus dari KUL?**\nYa. **AirAsia AK 403** terbang terus KUL 07:45 → PDG (Minangkabau Intl) 07:55, harian, ± 1 jam 10 minit. Anggaran tambang pergi-balik RM400–RM600 sepax.\n\n**Flight balik jam berapa?**\n**AK 404** bertolak PDG 16:05 → tiba KUL 18:20, harian — sesuai untuk Hari 4 kerana ada lawatan Masjid Raya & Pantai Air Manis sebelum transfer ke lapangan terbang. Ada juga **AK 402** pagi (PDG 08:25 → KUL 10:35) jika group mahu balik awal, tetapi aktiviti Hari 4 terpaksa dilepaskan. Mulai 25 Oktober 2026 waktu bertukar sedikit — sahkan waktu semasa tempah.\n\n**Beza waktu Padang dengan Malaysia?**\nPadang guna waktu WIB, **1 jam di belakang** waktu Malaysia.\n\n**Masa ketibaan yang disyorkan?**\nTiba di PDG sekitar **09:00–10:00 pagi** untuk mula itinerari Hari 1. Ketibaan lewat / pelepasan awal tidak dilayan refund untuk aktiviti & makan.\n\n### E. Hotel & Bilik\n\n**Boleh bilik untuk 3 orang?**\nHotel 3★ standard adalah double-sharing; boleh tambah extra bed dalam bilik double. Untuk bilik triple penuh yang lebih selesa, disyorkan naik taraf 4★ (+RM80/pax/malam).\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\nMusim kering sekitar **April–Oktober**; paling kering **Jun–Ogos**. Suhu tropika 27–28°C sepanjang tahun; kawasan tinggi (Bukittinggi, Puncak Lawang, Tabek Patah) lebih sejuk.\n\n**Musim hujan bila?**\nSekitar November–Februari, Januari selalunya paling lembap. Bawa payung/jaket ringan bila-bila masa.\n\n**Peak season pakej?**\n25 Dis 2025–5 Jan 2026, 15–31 Mac 2026, 25 Jun–12 Jul 2026, 25 Dis 2026–5 Jan 2027. Surcharge +RM50/pax/malam (3★) atau +RM60/pax/malam (4★).\n\n### G. Shopping & Duit\n\n**Beli apa (ole-ole)?**\nSongket Pandai Sikek, batik, pisang salai (keripik), kopi Talago/Kiniko, keripik sanjai, kraf perak Koto Gadang.\n\n**Mata wang & bawa duit berapa?**\nIndonesian Rupiah (IDR). Cadangan duit poket **RM1,500–RM3,000/pax**. Tukar duit di Malaysia lebih baik; kad debit/kredit & QR Pay diterima di bandar (aktifkan overseas withdrawal dulu).\n\n### H. Payment & Refund\n\n**Bila dapat itinerari muktamad?**\nItinerari muktamad dan susunan hotel disahkan **14 hari** sebelum trip.\n\n**Ketibaan lewat / pelepasan awal?**\nTidak dilayan refund untuk aktiviti & makan yang terlepas.\n\n### I. Add-ons & Customization\n\n**Boleh tambah jam guide/transport?**\nBoleh — 150,000 IDR/jam melebihi asas 12 jam (bayaran tunai di lokasi).\n\n**Boleh tukar dari Option A ke Option B?**\nBoleh, tiada caj tambahan — harga kedua-dua routing sama. Maklumkan awal supaya operator boleh susun kenderaan & masa.\n\n**Boleh tambah Lubang Jepang?**\nBoleh. Terowong Jepun di Bukittinggi ini bukan dalam itinerari katalog; bayaran guide terowong dibuat di lokasi.\n\n**Boleh customize itinerari?**\nBoleh dibincang dengan consultant; tertakluk kepada masa, jarak & persetujuan operator.\n\n### J. Kesihatan & Keselamatan\n\n**Selamat ke?**\nSecara umum selamat. Jaga barang peribadi, elak tinggalkan beg tanpa pengawasan. Bawa ubat peribadi jika perlu.\n\n**Banyak jalan kaki / tangga?**\nYa di Koto Gadang, Lubang Jepang & Lembah Harau — sesuai untuk yang cergas; maklumkan jika ada warga emas atau isu mobiliti.\n\n### K. Praktikal (SIM/socket/tandas)\n\n**Internet?**\nSIM tempatan tidak boleh didaftar dalam telefon Malaysia (cukai tinggi). Guna roaming atau pocket WiFi (egg).\n\n**Air paip boleh minum?**\nTidak. Guna air botol — disediakan/mudah dibeli sepanjang trip.\n\n**Socket plug?**\nIndonesia guna soket **2 pin**. Bawa universal adaptor & extension plug jika banyak peranti. Simpan powerbank/charger dalam hand carry.\n\n### L. Packing\n\n**Nak bawa apa?**\nPasport (sah 6 bulan+), pakaian secukupnya + pakaian aktiviti, sejadah & telekung, peralatan mandi & solek, adaptor universal, duit poket, kasut selesa, ubat peribadi. Pakaian selesa & tidak terlalu tebal (kawasan tinggi sejuk sedikit).\n",
+     "to": "# PT Padang–Bukittinggi — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*Pakej Private Tour 4D3N — dua pilihan routing: **Option A** (alam & warisan penuh) dan **Option B** (santai + shopping). Hotel 3★ standard, boleh naik taraf 4★.*\n\n- Driver & guide **asas 12 jam**; **150,000 IDR/jam** dikenakan bagi setiap jam tambahan (bayaran tunai).\n- Ketibaan disyorkan **09:00–10:00 pagi** pada Hari 1.\n- Itinerari muktamad & susunan hotel disahkan **14 hari** sebelum trip.\n- Sila semak validity trip sebelum tempah sebarang connecting domestic flight.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa beza Option A dan Option B?**\nBeza hanya pada Hari 2 dan Hari 3. **Option A** (Hari 2): Kelok 9, Lembah Harau, Tabek Patah, Kota Payakumbuh, Istana Pagaruyung & Danau Singkarak. **Option B** (Hari 2): Istana Pagaruyung, Danau Singkarak & shopping di Bukittinggi. Hari 3 Option B bermula dengan shopping sebelum Panorama Baru, Puncak Lawang & Koto Gadang. Hari 1 dan Hari 4 sama untuk kedua-duanya, dan harga sama.\n\n**Berapa hari pakej ini?**\n4 Hari 3 Malam (4D3N) — dua malam pertama di Bukittinggi, malam ketiga di Padang.\n\n**Berapa minimum pax?**\nHarga bermula dari **2 pax**. Kadar menurun mengikut saiz group sehingga tier 16–19 pax.\n\n**Ini Private Tour atau Joined Tour?**\nPrivate Tour (PT) — kenderaan & guide eksklusif untuk group anda sahaja.\n\n**Banyak berjalan kaki?**\nYa, beberapa lokasi (Koto Gadang/Janjang Saribu, Lembah Harau, Lubang Jepang) memerlukan banyak berjalan. Pakai kasut selesa.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nSangat senang. Sumatera Barat majoriti Muslim; semua makan (fullboard) di restoran halal tempatan — masakan Padang/Minang. Maklumkan awal jika ada alahan atau keperluan diet khas.\n\n**Masakan Padang pedas — ada pilihan untuk yang tak tahan pedas?**\nAda. Hidangan Padang biasanya berkuah pedas, tetapi restoran menyediakan lauk tidak pedas seperti ayam goreng, ikan bakar, telur dadar dan sayur. Maklumkan kepada guide sebelum waktu makan.\n\n**Ada masjid/surau untuk solat?**\nAda di mana-mana. Masjid Raya Sumatera Barat adalah antara tarikan utama dalam itinerari, dan setiap lokasi lawatan ada surau berhampiran. Waktu solat mudah dijaga sepanjang trip.\n\n**Perlu bawa sejadah/telekung sendiri?**\nDigalakkan bawa sejadah & telekung sendiri untuk keselesaan ibadah harian.\n\n### C. Visa & Passport\n\n**Perlu visa ke Indonesia?**\nPemegang pasport Malaysia **tidak perlu visa** untuk lawatan pelancongan sehingga **30 hari** (visa exemption ASEAN).\n\n**Apa itu All Indonesia Arrival Card — wajib ke?**\nWajib. Sejak **1 Oktober 2025** semua ketibaan ke Indonesia perlu menghantar borang digital **All Indonesia** (imigresen, kastam, kesihatan & kuarantin dalam satu borang) — ia menggantikan borang e-CD kastam. Isi di **allindonesia.imigrasi.go.id** atau aplikasi All Indonesia, sehingga **3 hari** sebelum tiba, dan simpan QR code untuk ditunjuk semasa pemeriksaan.\n\n**Ada urusan Autogate di airport?**\nYa. Pelancong 14 tahun ke atas boleh isi borang **Indonesia Visa Exemption** di evisa.imigrasi.go.id untuk dapatkan QR code Autogate. Borang hanya boleh diisi **2 hari sebelum** penerbangan.\n\n**Syarat pasport?**\nPasport mesti sah sekurang-kurangnya **6 bulan** dari tarikh trip.\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak. Harga adalah Ground + Tipping sahaja; tiket penerbangan antarabangsa dibeli berasingan.\n\n**Ada flight terus dari KUL?**\nYa. **AirAsia AK 403** terbang terus KUL 07:45 → PDG (Minangkabau Intl) 07:55, harian, ± 1 jam 10 minit. Anggaran tambang pergi-balik RM400–RM600 sepax.\n\n**Flight balik jam berapa?**\n**AK 404** bertolak PDG 16:05 → tiba KUL 18:20, harian — sesuai untuk Hari 4 kerana ada lawatan Masjid Raya & Pantai Air Manis sebelum transfer ke lapangan terbang. Ada juga **AK 402** pagi (PDG 08:25 → KUL 10:35) jika group mahu balik awal, tetapi aktiviti Hari 4 terpaksa dilepaskan. Mulai 25 Oktober 2026 waktu bertukar sedikit — sahkan waktu semasa tempah.\n\n**Beza waktu Padang dengan Malaysia?**\nPadang guna waktu WIB, **1 jam di belakang** waktu Malaysia.\n\n**Masa ketibaan yang disyorkan?**\nTiba di PDG sekitar **09:00–10:00 pagi** untuk mula itinerari Hari 1. Ketibaan lewat / pelepasan awal tidak dilayan refund untuk aktiviti & makan.\n\n### E. Hotel & Bilik\n\n**Boleh bilik untuk 3 orang?**\nHotel 3★ standard adalah double-sharing; boleh tambah extra bed dalam bilik double. Untuk bilik triple penuh yang lebih selesa, disyorkan naik taraf 4★ (+RM80/pax/malam).\n\n### F. Cuaca & Musim\n\n**Bila musim terbaik?**\nMusim kering sekitar **April–Oktober**; paling kering **Jun–Ogos**. Suhu tropika 27–28°C sepanjang tahun; kawasan tinggi (Bukittinggi, Puncak Lawang, Tabek Patah) lebih sejuk.\n\n**Musim hujan bila?**\nSekitar November–Februari, Januari selalunya paling lembap. Bawa payung/jaket ringan bila-bila masa.\n\n**Peak season pakej?**\n25 Dis 2025–5 Jan 2026, 15–31 Mac 2026, 25 Jun–12 Jul 2026, 25 Dis 2026–5 Jan 2027. Surcharge +RM50/pax/malam (3★) atau +RM60/pax/malam (4★).\n\n### G. Shopping & Duit\n\n**Beli apa (ole-ole)?**\nSongket Pandai Sikek, batik, pisang salai (keripik), kopi Talago/Kiniko, keripik sanjai, kraf perak Koto Gadang.\n\n**Mata wang & bawa duit berapa?**\nIndonesian Rupiah (IDR). Cadangan duit poket **RM1,500–RM3,000/pax**. Tukar duit di Malaysia lebih baik; kad debit/kredit & QR Pay diterima di bandar (aktifkan overseas withdrawal dulu).\n\n### H. Payment & Refund\n\n**Bila dapat itinerari muktamad?**\nItinerari muktamad dan susunan hotel disahkan **14 hari** sebelum trip.\n\n**Ketibaan lewat / pelepasan awal?**\nTidak dilayan refund untuk aktiviti & makan yang terlepas.\n\n### I. Add-ons & Customization\n\n**Boleh tambah jam guide/transport?**\nBoleh — 150,000 IDR/jam melebihi asas 12 jam (bayaran tunai di lokasi).\n\n**Boleh tukar dari Option A ke Option B?**\nBoleh, tiada caj tambahan — harga kedua-dua routing sama. Maklumkan awal supaya operator boleh susun kenderaan & masa.\n\n**Boleh tambah Lubang Jepang?**\nBoleh. Terowong Jepun di Bukittinggi ini bukan dalam itinerari katalog; bayaran guide terowong dibuat di lokasi.\n\n**Boleh customize itinerari?**\nBoleh dibincang dengan consultant; tertakluk kepada masa, jarak & persetujuan operator.\n\n### J. Kesihatan & Keselamatan\n\n**Selamat ke?**\nSecara umum selamat. Jaga barang peribadi, elak tinggalkan beg tanpa pengawasan. Bawa ubat peribadi jika perlu.\n\n**Banyak jalan kaki / tangga?**\nYa di Koto Gadang, Lubang Jepang & Lembah Harau — sesuai untuk yang cergas; maklumkan jika ada warga emas atau isu mobiliti.\n\n### K. Praktikal (SIM/socket/tandas)\n\n**Internet?**\nSIM tempatan tidak boleh didaftar dalam telefon Malaysia (cukai tinggi). Guna roaming atau pocket WiFi (egg).\n\n**Air paip boleh minum?**\nTidak. Guna air botol — disediakan/mudah dibeli sepanjang trip.\n\n**Socket plug?**\nIndonesia guna soket **2 pin**. Bawa universal adaptor & extension plug jika banyak peranti. Simpan powerbank/charger dalam hand carry.\n\n### L. Packing\n\n**Nak bawa apa?**\nPasport (sah 6 bulan+), pakaian secukupnya + pakaian aktiviti, sejadah & telekung, peralatan mandi & solek, adaptor universal, duit poket, kasut selesa, ubat peribadi. Pakaian selesa & tidak terlalu tebal (kawasan tinggi sejuk sedikit).\n",
+     "label": "KB padang-bukittinggi › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "padang-bukittinggi",
+      "calc",
+      "paxNotes",
+      4,
+      "text"
+     ],
+     "from": "20 pax: tier harga katalog berhenti di 20 pax dan operator quote maksimum 19 pax. Minta quotation baharu sebelum confirm.",
+     "to": "20 pax ke atas: harga katalog berhenti di 19 pax (kadar operator maksimum 19 pax). Minta quotation baharu sebelum confirm.",
+     "label": "KB padang-bukittinggi › calc › paxNotes › #5 › text"
+    },
+    {
+     "path": [
+      "kb",
+      "padang-bukittinggi",
+      "calc",
+      "variants",
+      "optA",
+      "tiers",
+      4,
+      "to"
+     ],
+     "from": 20,
+     "to": 19,
+     "label": "KB padang-bukittinggi › calc › variants › optA › tiers › #5 › to"
+    },
+    {
+     "path": [
+      "kb",
+      "padang-bukittinggi",
+      "calc",
+      "variants",
+      "optB",
+      "tiers",
+      4,
+      "to"
+     ],
+     "from": 20,
+     "to": 19,
+     "label": "KB padang-bukittinggi › calc › variants › optB › tiers › #5 › to"
+    }
+   ]
   }
  ]
 }

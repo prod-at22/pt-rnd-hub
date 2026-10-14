@@ -440,6 +440,26 @@
    "fix": "Decide the Japan breakfast price (e.g. RM50 like Hokkaido).",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "PDG",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Padang - Bukittinggi: CR gaps (inclusions, 4★ upgrade, peak, 20 pax)",
+   "detail": "Pak Herman's CR is a WhatsApp price per pax only (2–4 RM550 · 5–10 525 · 11–15 500 · 16–19 485): it does not state what is included (full meals, entrance, tipping, hotels). No cost for the catalog 4★ upgrade (+RM80/pax/night) or the peak surcharge (3★ RM50 / 4★ RM60 per night). CR stops at 19 pax while the catalog prints 16–20 (Costing now 2–19).",
+   "fix": "Ask Pak Herman to confirm the inclusions, the 4★ upgrade and peak rates, and a 20-pax rate.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "PDG",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Padang - Bukittinggi: add-ons without cost",
+   "detail": "Shopping Tour Bukittinggi RM100, Baju Adat photo session RM50, Dreampark Lembah Harau RM30 and extra airport transfer RM100 have cost RM0 (no TO rate).",
+   "fix": "Get the costs from Pak Herman and fill them in Add On.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

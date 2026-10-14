@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v102 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v102, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v103 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v103, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -273,6 +273,10 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Tokyo+Ghibli removed, meals = WIF CR, Tolak 1 malam −RM250, wifi ¥2,000/day, USJ cost RM249.4 (flag), TripCare pair / family. KB jepun rnd cost formulas for Osaka follow the new
   rates. tests/test_calc.js: Osaka calc string now 'A × 2 × W|…' and the osk / kix check boots a fresh mock repo (step 6 restores an older version). Catalogs / KB pages unchanged.
   Open: Std 15–30 below cost, USJ / 5G wifi, KB jepun breakfast RM40 < CR RM43.5; Wagyu cost kept at the CR ¥6,000 (sheet says RM255.2).
+  **Padang - Bukittinggi (v103, PO ezie 14 Oct; CR = Pak Herman WhatsApp in contracts/pdg):** cost = CR per pax 2–4 RM550 · 5–10 525 · 11–15 500 · 16–19 485 (checked) + RM25/pax
+  '4★ upgrade Berastagi' kept (PO: real cost — note Berastagi is in the Medan itinerary, not Padang); Costing 2–19 (CR max 19) and catalog / KB band 16–20 → 16–19 (PO); 4★ package (no
+  catalog, cost = selling) removed, upgrade +RM80/night stays in catalog / KB; nights 3; Holbung / Aek Manik (Lake Toba items) removed, TripCare Area 2 + Blue Ribbon duplicates removed
+  (Area 1 kept); child CWB 85 % / CNB 70 % kept. Adult margin 38.7–47.6 %. Open (flags_open): CR inclusions, 4★ upgrade / peak costs, add-ons without cost.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 5 destinations** (costs stored in MYR): JOG, PER, MLE, PHU, SWS (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
