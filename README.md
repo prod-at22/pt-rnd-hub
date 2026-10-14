@@ -12,8 +12,7 @@ see
 Hub: `https://prod-at22.github.io/pt-rnd-hub/` — a simple list like PT Catalog House, one row per catalog package (names from
 the Project PT sheet, `tools/catalogs.json`), its PO and last update, searchable. Each
 destination has its own link by code in lowercase, e.g. `/sel/`, `/seljju/`, `/hnd/`, `/kix/`,
-`/dps/`, `/mle/`, `/kbv/`, `/ltoba/` (Medan Lake Toba). 37 destinations are live; Yunnan 3
-Wilayah has no costing in the hub yet.
+`/dps/`, `/mle/`, `/kbv/`, `/ltoba/` (Medan Lake Toba), `/kmgdl/` (Yunnan 3 Wilayah). 38 destinations are live.
 
 **Krabi (KBV)** has Hotel and Season selectors: cost = the hotel's KTT rate (THB) × FX for the
 package and Day-3 choice (Tour operator box); a 4★ / 4★+ hotel adds the catalog upgrade.
@@ -106,8 +105,8 @@ it runs `catalog-build/changed.py <last mirrored hub commit> <now>`, which resol
 (content + Costing prices + Add On items) and rebuilds only those whose page differs (all of them when
 `catalog-build/` changed). The cron schedule in that workflow is only a fallback — GitHub runs it rarely.
 The admin's token therefore needs **Contents: Read and write on pt-rnd-hub** and **Actions: Read and write
-on catalog-pt-public and pt-kb-house**; without the second the save still works and the page says the catalogs wait for the schedule. Catalogs without a Costing package /
-hub destination (Maldives 4 Star, Yunnan 3 Wilayah) keep printed amounts (and, for Yunnan 3 Wilayah, its own add-on list). Keep every pax in a band at the same Costing price — Flags warns.
+on catalog-pt-public and pt-kb-house**; without the second the save still works and the page says the catalogs wait for the schedule. Every catalog is linked to a
+Costing package (Yunnan 3 Wilayah since v53, Maldives 4 Star since v54), so its prices and add-ons always come from the hub. Keep every pax in a band at the same Costing price — Flags warns.
 
 ## KB House → pt-kb-house (since 9 Oct 2026, v32)
 

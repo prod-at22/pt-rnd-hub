@@ -13,7 +13,7 @@ npm i jsdom --no-save && node tests/test_calc.js   # must say ALL PASSED
 After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests, commit, push, wait for the Pages build.
 
 ## Page today
-- Hub: one row per catalog package (name · PO · last update). 37 destinations.
+- Hub: one row per catalog package (name · PO · last update). 38 destinations.
 - Destination page: header (PO, FX chips — editable in Edit costs) · **Package** (package name only) · **Tour operator** (operator
   name only; lists just that package's TOs, auto-picked by pax) · tabs Costing / Itinerary / Surcharge / Add On / What to Expect / Policy / TO Contract Rate / Flags / History.
 - Costing table: one block per TO; component columns (group RM), headers = component name only. Rate-built TOs
@@ -284,7 +284,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
    /flags/ regenerated 7 Oct on data v25 (95 flags: 29 high · 37 medium · 29 low). New since v6: KK margin
    problems in 11 lines and Perhentian Shari-La under 10% / CWB below cost (both from Selling = Catalog − RM200),
    Seoul-Jeju 2 pax 6.8% and Jeju-Udo 3.8% margin, Korea 26–30 pax no cost, Qayyum FX 0.026 (HND) vs 0.0259 (KIX).
-7. No costing in the hub yet: Yunnan 3 Wilayah, Maldives Standard (4★). Codes SNZ, NNZ, SUBM, KMGDL not on the hub.
+7. Done: Yunnan 3 Wilayah (KMGDL, v52–v53, verified v86) and Maldives 4 Star (v54) have Costing. Codes SNZ, NNZ, SUBM not on the hub.
 8. Done (11 Oct): logins — admin ezie + 5 PO editors (see HANDOFF).
 9. Uploaded only files named PT from the Drive "Production Team" folder; unlabelled CRs (Perhentian resorts,
    Semporna Legend, Perth K&N, NZ price list, Pak Jamal, KK / Krabi / Maldives folders) were not uploaded.
