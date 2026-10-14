@@ -326,3 +326,4 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .cmp-md h4{margin:12px 0 4px;font-size:13px} .cmp-md p{margin:4px 0} .cmp-md ul{margin:4px 0;padding-left:20px}
 .cmp-by{margin-top:10px;font-size:11px;color:var(--muted)}
 .cmp-prev table{width:100%;margin-top:6px} .cmp-prev th{text-transform:none;letter-spacing:0;font-size:12px;width:150px}
+#cmpCard .cmp-ana,#cmpCard .cmp-other,#cmpCard .empty{width:0;min-width:calc(100% - 28px)}
