@@ -151531,6 +151531,3305 @@
      "label": "Perhentian › historyFrom"
     }
    ]
+  },
+  {
+   "v": 105,
+   "at": "2026-10-14T16:15:00Z",
+   "by": "ezie",
+   "note": "Perth verified (PO ezie 14 Oct 2026; PT PER R&D 'Raw Costing' compiled into TO Contract Rate 'PERTH COSTING RATE KN 2026.pdf'): costs now K&N coach rates + ARBA components in AUD × live FX (was MYR at fixed 2.853746) — Std 12-Seater 2× airport + 2× 8 h, Prem 2× airport + 6 h + 8 h + 5 h + Pinnacles (AUD 3,400; R&D 3,416), accommodation by room config, lunch / entrance / tipping / K&N charge / driver meals per R&D. Premium meals-entrance-tipping was AUD 268 in the hub vs 395 in the R&D → Premium cost +≈RM350/pax (2 pax margin 8.9 → 4.6 %, = R&D). Costing 2–10; child per R&D: CWB 100 %, CNB = adult − accommodation. Add-ons: catalog items costed from the R&D duplicates (duplicates removed; Mandurah sells RM140 at cost 141 — flag). KB: late booking text RM50 / booking (catalog); 2027 travel-date add-on kept (PO). Flags: R&D cost questions, add-on / transport adjustment costs. Catalog unchanged; Flags / History from v105.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "note"
+     ],
+     "from": "",
+     "to": "Cost = K&N coach rates + ARBA components from PT PER R&D 'Raw Costing' (PDF in TO Contract Rate), AUD × live FX (was MYR at fixed 2.853746). Costing 2–10 (= catalog). Child per R&D: CWB 100 %, CNB = adult − accommodation.",
+     "label": "Perth › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "air12",
+       "label": "Airport transfer day, 12-Seater Hiace 1–10 pax (K&N, CR)",
+       "value": 250,
+       "fx": "AUD",
+       "unit": "AUD/way",
+       "group": "1. K&N coach"
+      },
+      {
+       "id": "h5_12",
+       "label": "Tour 5 hours, 12-Seater (K&N, CR)",
+       "value": 500,
+       "fx": "AUD",
+       "unit": "AUD/day",
+       "group": "1. K&N coach"
+      },
+      {
+       "id": "h6_12",
+       "label": "Tour 6 hours, 12-Seater (K&N, CR)",
+       "value": 600,
+       "fx": "AUD",
+       "unit": "AUD/day",
+       "group": "1. K&N coach"
+      },
+      {
+       "id": "h8_12",
+       "label": "Tour 8 hours, 12-Seater (K&N, CR)",
+       "value": 800,
+       "fx": "AUD",
+       "unit": "AUD/day",
+       "group": "1. K&N coach"
+      },
+      {
+       "id": "pin12",
+       "label": "Pinnacles day tour, 12-Seater (K&N, CR)",
+       "value": 1000,
+       "fx": "AUD",
+       "unit": "AUD/day",
+       "group": "1. K&N coach"
+      },
+      {
+       "id": "lunch",
+       "label": "Lunch Charcoal / Kailis (ARBA, R&D, per pax per meal)",
+       "value": 25,
+       "fx": "AUD",
+       "unit": "AUD/pax/meal",
+       "group": "2. Meals"
+      },
+      {
+       "id": "lunchP",
+       "label": "Lunch Premium 3x (ARBA, R&D, per pax)",
+       "value": 85,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "2. Meals"
+      },
+      {
+       "id": "cav",
+       "label": "Caversham Wildlife Park entrance (ARBA, R&D)",
+       "value": 28,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "entP",
+       "label": "Entrances Premium: Caversham, Mandurah cruise, Lancelin, Pinnacles (ARBA, R&D)",
+       "value": 83,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "3. Entrance"
+      },
+      {
+       "id": "tipS",
+       "label": "Tipping Standard (ARBA, R&D)",
+       "value": 28,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "4. Tipping & charges"
+      },
+      {
+       "id": "tipP",
+       "label": "Tipping Premium (ARBA, R&D)",
+       "value": 42,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "4. Tipping & charges"
+      },
+      {
+       "id": "knChg",
+       "label": "K&N charge (K&N, R&D)",
+       "value": 100,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "4. Tipping & charges"
+      },
+      {
+       "id": "drvS",
+       "label": "Driver meals Standard (ARBA, R&D)",
+       "value": 50,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "4. Tipping & charges"
+      },
+      {
+       "id": "drvP",
+       "label": "Driver meals Premium (ARBA, R&D)",
+       "value": 85,
+       "fx": "AUD",
+       "unit": "AUD/pax",
+       "group": "4. Tipping & charges"
+      }
+     ],
+     "label": "Perth › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "K-N-STD__Transport",
+       "label": "K&N STD · Transport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N STD",
+       "values": {
+        "2": 2996.4333,
+        "3": 1997.6222,
+        "4": 1498.2167,
+        "5": 1198.5733,
+        "6": 998.8111,
+        "7": 856.1238,
+        "8": 750.5352,
+        "9": 664.9228,
+        "10": 599.2867,
+        "11": 674.5114,
+        "12": 618.3211,
+        "13": 570.7492,
+        "14": 529.9692,
+        "15": 494.6398,
+        "16": 463.7337,
+        "17": 436.4519,
+        "18": 412.1951,
+        "19": 390.5066,
+        "20": 370.987,
+        "21": 638.6969,
+        "22": 609.6743,
+        "23": 583.163,
+        "24": 558.8491,
+        "25": 536.5042,
+        "26": 515.8717,
+        "27": 496.7516,
+        "28": 479.0298,
+        "29": 462.5066,
+        "30": 447.0964
+       }
+      },
+      {
+       "id": "K-N-STD__Accommodation",
+       "label": "K&N STD · Accommodation",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N STD",
+       "values": {
+        "2": 770.5114,
+        "3": 607.8479,
+        "4": 585.0179,
+        "5": 536.5042,
+        "6": 607.8479,
+        "7": 596.4329,
+        "8": 585.0179,
+        "9": 559.3342,
+        "10": 536.5042,
+        "11": 726.421,
+        "12": 770.5114,
+        "13": 733.1844,
+        "14": 770.5114,
+        "15": 738.1785,
+        "16": 770.5114,
+        "17": 741.974,
+        "18": 770.5114,
+        "19": 744.9704,
+        "20": 770.5114,
+        "21": 747.3961,
+        "22": 770.5114,
+        "23": 749.4222,
+        "24": 770.5114,
+        "25": 751.1059,
+        "26": 770.5114,
+        "27": 752.5328,
+        "28": 770.5114,
+        "29": 753.7885,
+        "30": 770.5114
+       }
+      },
+      {
+       "id": "K-N-STD__Meals-Ent-Tips",
+       "label": "K&N STD · Meals+Ent+Tips",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N STD",
+       "values": {
+        "2": 730.559,
+        "3": 730.559,
+        "4": 730.559,
+        "5": 730.559,
+        "6": 730.559,
+        "7": 730.559,
+        "8": 730.559,
+        "9": 730.559,
+        "10": 730.559,
+        "11": 730.559,
+        "12": 730.559,
+        "13": 730.559,
+        "14": 730.559,
+        "15": 730.559,
+        "16": 730.559,
+        "17": 730.559,
+        "18": 730.559,
+        "19": 730.559,
+        "20": 730.559,
+        "21": 730.559,
+        "22": 730.559,
+        "23": 730.559,
+        "24": 730.559,
+        "25": 730.559,
+        "26": 730.559,
+        "27": 730.559,
+        "28": 730.559,
+        "29": 730.559,
+        "30": 730.559
+       }
+      },
+      {
+       "id": "K-N-PREMIUM__Transport",
+       "label": "K&N PREMIUM · Transport",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N PREMIUM",
+       "values": {
+        "2": 4874.1982,
+        "3": 3247.5629,
+        "4": 2437.0991,
+        "5": 1949.1085,
+        "6": 1623.7815,
+        "7": 1392.628,
+        "8": 1218.5495,
+        "9": 1081.5697,
+        "10": 975.9811,
+        "11": 1063.6767,
+        "12": 975.0394,
+        "13": 900.0144,
+        "14": 835.7481,
+        "15": 780.0144,
+        "16": 731.2724,
+        "17": 688.2665,
+        "18": 650.0263,
+        "19": 615.8098,
+        "20": 585.0179,
+        "21": 1019.1868,
+        "22": 972.8705,
+        "23": 930.578,
+        "24": 891.7956,
+        "25": 856.1238,
+        "26": 823.1916,
+        "27": 792.7136,
+        "28": 764.4044,
+        "29": 738.0358,
+        "30": 713.4365
+       }
+      },
+      {
+       "id": "K-N-PREMIUM__Accommodation",
+       "label": "K&N PREMIUM · Accommodation",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N PREMIUM",
+       "values": {
+        "2": 1463.9717,
+        "3": 1164.3284,
+        "4": 1426.873,
+        "5": 1284.1857,
+        "6": 1164.3284,
+        "7": 1335.5531,
+        "8": 1463.9717,
+        "9": 1364.0906,
+        "10": 1463.9717,
+        "11": 1462.5448,
+        "12": 1462.5448,
+        "13": 1462.5448,
+        "14": 1462.5448,
+        "15": 1462.5448,
+        "16": 1462.5448,
+        "17": 1462.5448,
+        "18": 1462.5448,
+        "19": 1462.5448,
+        "20": 1462.5448,
+        "21": 1462.5448,
+        "22": 1462.5448,
+        "23": 1462.5448,
+        "24": 1462.5448,
+        "25": 1462.5448,
+        "26": 1462.5448,
+        "27": 1462.5448,
+        "28": 1462.5448,
+        "29": 1462.5448,
+        "30": 1462.5448
+       }
+      },
+      {
+       "id": "K-N-PREMIUM__Meals-Ent-Tips",
+       "label": "K&N PREMIUM · Meals+Ent+Tips",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "K&N PREMIUM",
+       "values": {
+        "2": 764.8039,
+        "3": 764.8039,
+        "4": 764.8039,
+        "5": 764.8039,
+        "6": 764.8039,
+        "7": 764.8039,
+        "8": 764.8039,
+        "9": 764.8039,
+        "10": 764.8039,
+        "11": 764.8039,
+        "12": 764.8039,
+        "13": 764.8039,
+        "14": 764.8039,
+        "15": 764.8039,
+        "16": 764.8039,
+        "17": 764.8039,
+        "18": 764.8039,
+        "19": 764.8039,
+        "20": 764.8039,
+        "21": 764.8039,
+        "22": 764.8039,
+        "23": 764.8039,
+        "24": 764.8039,
+        "25": 764.8039,
+        "26": 764.8039,
+        "27": 764.8039,
+        "28": 764.8039,
+        "29": 764.8039,
+        "30": 764.8039
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "K-N-STD__Accommodation",
+       "label": "K-N-STD · Apartment 3★ 4 nights per pax by room config (R&D)",
+       "unit": "AUD/pax",
+       "fx": "AUD",
+       "group": "K-N-STD",
+       "values": {
+        "2": 270,
+        "3": 213,
+        "4": 205,
+        "5": 188,
+        "6": 213,
+        "7": 209,
+        "8": 205,
+        "9": 196,
+        "10": 188
+       }
+      },
+      {
+       "id": "K-N-PREMIUM__Accommodation",
+       "label": "K-N-PREMIUM · Hotel 4★ Mercure 5 nights per pax by room config (R&D)",
+       "unit": "AUD/pax",
+       "fx": "AUD",
+       "group": "K-N-PREMIUM",
+       "values": {
+        "2": 513,
+        "3": 408,
+        "4": 500,
+        "5": 450,
+        "6": 408,
+        "7": 468,
+        "8": 513,
+        "9": 478,
+        "10": 513
+       }
+      }
+     ],
+     "label": "Perth › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-STD",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Perth › TO › TO K&N › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-STD",
+      "notes"
+     ],
+     "from": "Extrapolated beyond catalog.",
+     "to": "K&N CR (contracts/per, from PT PER R&D Raw Costing): 12-Seater 2× airport + 2× 8 h tour; AUD × live FX",
+     "label": "Perth › TO › TO K&N › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-STD",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "transport",
+       "label": "Transport",
+       "per": "pax",
+       "expr": "T['K-N-STD__Transport']"
+      },
+      {
+       "key": "accommodation",
+       "label": "Accommodation",
+       "per": "pax",
+       "expr": "T['K-N-STD__Accommodation']"
+      },
+      {
+       "key": "meals-ent-tips",
+       "label": "Meals+Ent+Tips",
+       "per": "pax",
+       "expr": "T['K-N-STD__Meals-Ent-Tips']"
+      }
+     ],
+     "to": [
+      {
+       "key": "transport",
+       "label": "Transport 12-Seater (2× airport + 2× 8 h)",
+       "per": "group",
+       "expr": "2*R.air12+2*R.h8_12"
+      },
+      {
+       "key": "accommodation",
+       "label": "Accommodation",
+       "per": "pax",
+       "expr": "T['K-N-STD__Accommodation']"
+      },
+      {
+       "key": "lunch",
+       "label": "Lunch ×2",
+       "per": "group",
+       "expr": "R.lunch*2*pax"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrance (Caversham)",
+       "per": "group",
+       "expr": "R.cav*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "group",
+       "expr": "R.tipS*pax"
+      },
+      {
+       "key": "kn-charge",
+       "label": "K&N charge",
+       "per": "group",
+       "expr": "R.knChg*pax"
+      },
+      {
+       "key": "driver-meals",
+       "label": "Driver meals",
+       "per": "group",
+       "expr": "R.drvS*pax"
+      }
+     ],
+     "label": "Perth › TO › TO K&N › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-PREMIUM",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Perth › TO › TO K&N › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-PREMIUM",
+      "notes"
+     ],
+     "from": "Extrapolated beyond catalog.",
+     "to": "K&N CR (contracts/per): 12-Seater 2× airport + 6 h + 8 h + 5 h (city 4 h) + Pinnacles day; AUD × live FX (R&D used AUD 3,416 per group)",
+     "label": "Perth › TO › TO K&N › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "variants",
+      "K-N-PREMIUM",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "transport",
+       "label": "Transport",
+       "per": "pax",
+       "expr": "T['K-N-PREMIUM__Transport']"
+      },
+      {
+       "key": "accommodation",
+       "label": "Accommodation",
+       "per": "pax",
+       "expr": "T['K-N-PREMIUM__Accommodation']"
+      },
+      {
+       "key": "meals-ent-tips",
+       "label": "Meals+Ent+Tips",
+       "per": "pax",
+       "expr": "T['K-N-PREMIUM__Meals-Ent-Tips']"
+      }
+     ],
+     "to": [
+      {
+       "key": "transport",
+       "label": "Transport 12-Seater (2× airport + 6 h + 8 h + 5 h + Pinnacles)",
+       "per": "group",
+       "expr": "2*R.air12+R.h6_12+R.h8_12+R.h5_12+R.pin12"
+      },
+      {
+       "key": "accommodation",
+       "label": "Accommodation",
+       "per": "pax",
+       "expr": "T['K-N-PREMIUM__Accommodation']"
+      },
+      {
+       "key": "lunch",
+       "label": "Lunch ×3",
+       "per": "group",
+       "expr": "R.lunchP*pax"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrances",
+       "per": "group",
+       "expr": "R.entP*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "group",
+       "expr": "R.tipP*pax"
+      },
+      {
+       "key": "kn-charge",
+       "label": "K&N charge",
+       "per": "group",
+       "expr": "R.knChg*pax"
+      },
+      {
+       "key": "driver-meals",
+       "label": "Driver meals",
+       "per": "group",
+       "expr": "R.drvP*pax"
+      }
+     ],
+     "label": "Perth › TO › TO K&N › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Perth › Perth Standard 5D4N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "11"
+     ],
+     "from": 3097,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "12"
+     ],
+     "from": 3097,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "13"
+     ],
+     "from": 3097,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "14"
+     ],
+     "from": 3097,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": 3097,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 2997,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 2997,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 2997,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 2997,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 2997,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "11"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "12"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "13"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "14"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": 2897,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 2797,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 2697,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 2697,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 2697,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 2697,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 2697,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "11"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "12"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "13"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "14"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": 2597,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 2497,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 2497,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 2497,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 2497,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 2497,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 2397,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Perth › Perth Standard 5D4N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.9,
+     "to": 1,
+     "label": "Perth › Perth Standard 5D4N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "rules",
+      "cnbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 1,
+     "label": "Perth › Perth Standard 5D4N › Rule › CNB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-std",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "accommodation"
+     ],
+     "label": "Perth › Perth Standard 5D4N › Rule › CNB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Perth › Perth Premium 6D5N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "11"
+     ],
+     "from": 4497,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "12"
+     ],
+     "from": 4497,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "13"
+     ],
+     "from": 4497,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "14"
+     ],
+     "from": 4497,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": 4497,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 4397,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 4397,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 4397,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 4397,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 4397,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "11"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "12"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "13"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "14"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": 4297,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 4197,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "11"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "12"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "13"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "14"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": 4097,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 3997,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 3897,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 3897,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 3897,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 3897,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 3897,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 3797,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 3797,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 3797,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 3797,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 3797,
+     "to": null,
+     "label": "Perth › Perth Premium 6D5N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.9,
+     "to": 1,
+     "label": "Perth › Perth Premium 6D5N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "rules",
+      "cnbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 1,
+     "label": "Perth › Perth Premium 6D5N › Rule › CNB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "packages",
+      "k-n-premium",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "accommodation"
+     ],
+     "label": "Perth › Perth Premium 6D5N › Rule › CNB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "per-a01",
+       "category": "Activity",
+       "label": "Mandurah Dolphin & Scenic Canal Cruise — Adult (16y+)",
+       "cost": 141,
+       "selling": 180,
+       "per": "pax",
+       "notes": "1-hour cruise. PREM includes (STD add-on). PDF RM 140/pax — sell at RM 180"
+      },
+      {
+       "id": "per-a02",
+       "category": "Activity",
+       "label": "Mandurah Dolphin Cruise — Youth (3-15y)",
+       "cost": 70,
+       "selling": 90,
+       "per": "pax",
+       "notes": "FOC <2yo"
+      },
+      {
+       "id": "per-a03",
+       "category": "Activity",
+       "label": "Araluen Tulip Park — Adult (12y+) [Seasonal Aug-Oct]",
+       "cost": 65,
+       "selling": 85,
+       "per": "pax",
+       "notes": "Late August - Early October only"
+      },
+      {
+       "id": "per-a04",
+       "category": "Activity",
+       "label": "Araluen Tulip Park — Child (7-11y) [Seasonal]",
+       "cost": 50,
+       "selling": 65,
+       "per": "pax",
+       "notes": "FOC ≤6yo"
+      },
+      {
+       "id": "per-a05",
+       "category": "Activity",
+       "label": "Rottnest Ferry Return — Adult (13y+)",
+       "cost": 280,
+       "selling": 350,
+       "per": "pax",
+       "notes": "From Fremantle. Excludes shuttle + activity + lunch"
+      },
+      {
+       "id": "per-a06",
+       "category": "Activity",
+       "label": "Rottnest Ferry Return — Child (4-12y)",
+       "cost": 200,
+       "selling": 250,
+       "per": "pax",
+       "notes": "FOC ≤3yo"
+      },
+      {
+       "id": "per-a07",
+       "category": "Activity",
+       "label": "Rottnest Shuttle (Perth City ↔ Ferry Terminal)",
+       "cost": 1400,
+       "selling": 1800,
+       "per": "transport (10pax)",
+       "notes": "Pickup/dropoff Perth City. Excludes ferry ticket"
+      },
+      {
+       "id": "per-a08",
+       "category": "Activity",
+       "label": "Pinnacles Day Tour (12-Seater, 10hr + entrance) [STD add-on]",
+       "cost": 2900,
+       "selling": 3800,
+       "per": "transport (10pax)",
+       "notes": "PREM includes. STD add-on. K&N rate AUD 1,450"
+      },
+      {
+       "id": "per-a09",
+       "category": "Activity",
+       "label": "Pinnacles Desert Entrance only (DIY transport)",
+       "cost": 48,
+       "selling": 55,
+       "per": "pax",
+       "notes": "If using own transport"
+      },
+      {
+       "id": "per-a10",
+       "category": "Activity",
+       "label": "Lancelin Sand Dunes — Sand Board Rental",
+       "cost": 70,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Optional. ATV not included"
+      },
+      {
+       "id": "per-a11",
+       "category": "Activity",
+       "label": "Fruit Picking (Seasonal)",
+       "cost": 70,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Summer harvest — Strawberry/Apple/Cherry depending on month"
+      },
+      {
+       "id": "per-a12",
+       "category": "Transport — Airport (Tambah)",
+       "label": "12-Seater Midnight Surcharge (Tambah)",
+       "cost": 0,
+       "selling": 90,
+       "per": "way",
+       "notes": "AUD 50 ≈ RM 150 → split AUD 30/per way ≈ RM 90"
+      },
+      {
+       "id": "per-a13",
+       "category": "Transport — Airport (Tolak)",
+       "label": "Self-Arrange Airport Transfer (Tolak)",
+       "cost": 0,
+       "selling": -250,
+       "per": "pair",
+       "notes": "Customer DIY — refund RM 250 (covers 1 return)"
+      },
+      {
+       "id": "per-a14",
+       "category": "Tour Transport (Tambah)",
+       "label": "Extra Tour Hour (12-Seater)",
+       "cost": 0,
+       "selling": 150,
+       "per": "hour",
+       "notes": "AUD 50/hour cash to driver — sell at RM 150"
+      },
+      {
+       "id": "per-a15",
+       "category": "Tour Transport (Tolak)",
+       "label": "Reduce Tour Day (8hr → 0hr)",
+       "cost": 0,
+       "selling": -800,
+       "per": "day",
+       "notes": "Free & Easy substitution — refund RM 800/day (12-Seater)"
+      },
+      {
+       "id": "per-a16",
+       "category": "Meals (Tambah)",
+       "label": "Extra Lunch (Halal Restaurant)",
+       "cost": 70,
+       "selling": 90,
+       "per": "pax",
+       "notes": "Add halal lunch beyond itinerary"
+      },
+      {
+       "id": "per-a17",
+       "category": "Meals (Tambah)",
+       "label": "Extra Dinner (Halal Restaurant)",
+       "cost": 90,
+       "selling": 120,
+       "per": "pax",
+       "notes": "Add halal dinner"
+      },
+      {
+       "id": "per-a18",
+       "category": "Meals (Tolak)",
+       "label": "Skip Lunch (DIY)",
+       "cost": 0,
+       "selling": -50,
+       "per": "pax",
+       "notes": "Refund if customer prefers own arrangement"
+      },
+      {
+       "id": "per-a19",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 3★ Apartment (STD)",
+       "cost": 150,
+       "selling": 200,
+       "per": "pax/night",
+       "notes": "Pre/post stay extension, Not in CDB Area, No Breakfast"
+      },
+      {
+       "id": "per-a20",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 3★ Hotel Criterion (STD)",
+       "cost": 185,
+       "selling": 250,
+       "per": "pax/night",
+       "notes": "CBD Area but No Breakfast in 3 star hotel"
+      },
+      {
+       "id": "per-a21",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 4★ Mercure (STD upgrade / PREM default)",
+       "cost": 250,
+       "selling": 350,
+       "per": "pax/night",
+       "notes": "In CBD Area, English Style Breakfast Included"
+      },
+      {
+       "id": "per-a22",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 5★ Duxton (PREM upgrade)",
+       "cost": 350,
+       "selling": 500,
+       "per": "pax/night",
+       "notes": "In CBD Area, Breakfast Halal"
+      },
+      {
+       "id": "per-a23",
+       "category": "Hotel (Reduce)",
+       "label": "Reduce 1 Night Stay",
+       "cost": 0,
+       "selling": -180,
+       "per": "pax/night",
+       "notes": "Refund if customer leaves a night early"
+      },
+      {
+       "id": "per-a24",
+       "category": "Wifi",
+       "label": "Pocket Wifi — Australia 3GB (4G) [RoamingMan]",
+       "cost": 85,
+       "selling": 150,
+       "per": "trip",
+       "notes": "Per trip per device"
+      },
+      {
+       "id": "per-a25",
+       "category": "Wifi",
+       "label": "eSIM Australia 5GB (7 days)",
+       "cost": 55,
+       "selling": 95,
+       "per": "trip",
+       "notes": "Alternative — phone supports eSIM"
+      },
+      {
+       "id": "per-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari) — Area 3",
+       "cost": 54,
+       "selling": 72,
+       "per": "pax",
+       "notes": "Etiqa. Australia = Area 3"
+      },
+      {
+       "id": "per-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari) — Area 3",
+       "cost": 79,
+       "selling": 115,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (11-18 hari) — Area 3",
+       "cost": 133,
+       "selling": 174,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari) — Area 3",
+       "cost": 103,
+       "selling": 138,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "per-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 hari) — Area 3",
+       "cost": 160,
+       "selling": 211,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "per-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari) — Area 3",
+       "cost": 144,
+       "selling": 188,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "per-a32",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 hari) — Area 3",
+       "cost": 201,
+       "selling": 265,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "per-a33",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari) — Area 3",
+       "cost": 186,
+       "selling": 244,
+       "per": "pax",
+       "notes": "Age 70+"
+      },
+      {
+       "id": "per-a34",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 hari) — Area 3",
+       "cost": 266,
+       "selling": 351,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a35",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "Per bag"
+      },
+      {
+       "id": "per-a36",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-a37",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-a38",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-k001",
+       "category": "Additional Activities",
+       "label": "Araluen Tulip Park (Late August to Early October only)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Entrance ticket to Araluen Tulip Park",
+       "excludes": "Lunch onboard or additional activities",
+       "price_lines": [
+        "RM85/pax for Adult (12 years old and above)",
+        "RM65/pax for Children (7 - 11 years old)",
+        "Free for Children 6 years old & below"
+       ],
+       "catalogs": {
+        "perth-premium": 1,
+        "perth-standard": 2
+       }
+      },
+      {
+       "id": "per-k002",
+       "category": "Additional Activities",
+       "label": "Return Ferry Ticket to Rottnest Island",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Return Ferry Ticket from Fremantle",
+       "excludes": "Shuttle, Activity at Rottnest & Lunch",
+       "price_lines": [
+        "RM350/pax for Adult (13 years old and above)",
+        "RM250/pax for Children (4 - 12 years old)",
+        "Free for Children 3 years old & below"
+       ],
+       "catalogs": {
+        "perth-premium": 2,
+        "perth-standard": 3
+       }
+      },
+      {
+       "id": "per-k003",
+       "category": "Additional Activities",
+       "label": "Return Shuttle to Rottnest Ferry Terminal",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Transport pickup & drop off to Rottnest Ferry Terminal",
+       "excludes": "Ferry Ticket & Lunch",
+       "price_lines": [
+        "RM1800/transport",
+        "(Pickup & Drop Off from/to Perth City Area)",
+        "*Transport capacity up to 10 pax"
+       ],
+       "catalogs": {
+        "perth-premium": 3,
+        "perth-standard": 4
+       }
+      },
+      {
+       "id": "per-k004",
+       "category": "Additional Activities",
+       "label": "Mandurah Dolphin & Scenic Canal Cruise",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 hour Mandurah Cruise Tour & Scenic View ticket",
+       "excludes": "Lunch onboard or additional activities",
+       "price_lines": [
+        "RM140/pax for Adult (16 years old and above)",
+        "RM90/pax for Youth (3 - 15 years old)",
+        "Free for Child 2 years old & below"
+       ],
+       "catalogs": {
+        "perth-standard": 1
+       }
+      },
+      {
+       "id": "per-k005",
+       "category": "Additional Activities",
+       "label": "Day Tour to Pinnacles Desert",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "10 hours Transport + Driver Guide + Entrance to Pinnacles",
+       "excludes": "Extra hours, midnight hours and meals",
+       "price_lines": [
+        "RM3800/transport",
+        "(Pickup & Drop Off from/to Perth City Area Only)",
+        "*Transport capacity up to 10 pax"
+       ],
+       "catalogs": {
+        "perth-standard": 5
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "per-a02",
+       "category": "Activity",
+       "label": "Mandurah Dolphin Cruise — Youth (3-15y)",
+       "cost": 70,
+       "selling": 90,
+       "per": "pax",
+       "notes": "FOC <2yo"
+      },
+      {
+       "id": "per-a04",
+       "category": "Activity",
+       "label": "Araluen Tulip Park — Child (7-11y) [Seasonal]",
+       "cost": 50,
+       "selling": 65,
+       "per": "pax",
+       "notes": "FOC ≤6yo"
+      },
+      {
+       "id": "per-a06",
+       "category": "Activity",
+       "label": "Rottnest Ferry Return — Child (4-12y)",
+       "cost": 200,
+       "selling": 250,
+       "per": "pax",
+       "notes": "FOC ≤3yo"
+      },
+      {
+       "id": "per-a09",
+       "category": "Activity",
+       "label": "Pinnacles Desert Entrance only (DIY transport)",
+       "cost": 48,
+       "selling": 55,
+       "per": "pax",
+       "notes": "If using own transport"
+      },
+      {
+       "id": "per-a10",
+       "category": "Activity",
+       "label": "Lancelin Sand Dunes — Sand Board Rental",
+       "cost": 70,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Optional. ATV not included"
+      },
+      {
+       "id": "per-a11",
+       "category": "Activity",
+       "label": "Fruit Picking (Seasonal)",
+       "cost": 70,
+       "selling": 80,
+       "per": "pax",
+       "notes": "Summer harvest — Strawberry/Apple/Cherry depending on month"
+      },
+      {
+       "id": "per-a12",
+       "category": "Transport — Airport (Tambah)",
+       "label": "12-Seater Midnight Surcharge (Tambah)",
+       "cost": 0,
+       "selling": 90,
+       "per": "way",
+       "notes": "AUD 50 ≈ RM 150 → split AUD 30/per way ≈ RM 90"
+      },
+      {
+       "id": "per-a13",
+       "category": "Transport — Airport (Tolak)",
+       "label": "Self-Arrange Airport Transfer (Tolak)",
+       "cost": 0,
+       "selling": -250,
+       "per": "pair",
+       "notes": "Customer DIY — refund RM 250 (covers 1 return)"
+      },
+      {
+       "id": "per-a14",
+       "category": "Tour Transport (Tambah)",
+       "label": "Extra Tour Hour (12-Seater)",
+       "cost": 0,
+       "selling": 150,
+       "per": "hour",
+       "notes": "AUD 50/hour cash to driver — sell at RM 150"
+      },
+      {
+       "id": "per-a15",
+       "category": "Tour Transport (Tolak)",
+       "label": "Reduce Tour Day (8hr → 0hr)",
+       "cost": 0,
+       "selling": -800,
+       "per": "day",
+       "notes": "Free & Easy substitution — refund RM 800/day (12-Seater)"
+      },
+      {
+       "id": "per-a16",
+       "category": "Meals (Tambah)",
+       "label": "Extra Lunch (Halal Restaurant)",
+       "cost": 70,
+       "selling": 90,
+       "per": "pax",
+       "notes": "Add halal lunch beyond itinerary"
+      },
+      {
+       "id": "per-a17",
+       "category": "Meals (Tambah)",
+       "label": "Extra Dinner (Halal Restaurant)",
+       "cost": 90,
+       "selling": 120,
+       "per": "pax",
+       "notes": "Add halal dinner"
+      },
+      {
+       "id": "per-a18",
+       "category": "Meals (Tolak)",
+       "label": "Skip Lunch (DIY)",
+       "cost": 0,
+       "selling": -50,
+       "per": "pax",
+       "notes": "Refund if customer prefers own arrangement"
+      },
+      {
+       "id": "per-a19",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 3★ Apartment (STD)",
+       "cost": 150,
+       "selling": 200,
+       "per": "pax/night",
+       "notes": "Pre/post stay extension, Not in CDB Area, No Breakfast"
+      },
+      {
+       "id": "per-a20",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 3★ Hotel Criterion (STD)",
+       "cost": 185,
+       "selling": 250,
+       "per": "pax/night",
+       "notes": "CBD Area but No Breakfast in 3 star hotel"
+      },
+      {
+       "id": "per-a21",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 4★ Mercure (STD upgrade / PREM default)",
+       "cost": 250,
+       "selling": 350,
+       "per": "pax/night",
+       "notes": "In CBD Area, English Style Breakfast Included"
+      },
+      {
+       "id": "per-a22",
+       "category": "Hotel (Extend)",
+       "label": "Extra Night — 5★ Duxton (PREM upgrade)",
+       "cost": 350,
+       "selling": 500,
+       "per": "pax/night",
+       "notes": "In CBD Area, Breakfast Halal"
+      },
+      {
+       "id": "per-a23",
+       "category": "Hotel (Reduce)",
+       "label": "Reduce 1 Night Stay",
+       "cost": 0,
+       "selling": -180,
+       "per": "pax/night",
+       "notes": "Refund if customer leaves a night early"
+      },
+      {
+       "id": "per-a24",
+       "category": "Wifi",
+       "label": "Pocket Wifi — Australia 3GB (4G) [RoamingMan]",
+       "cost": 85,
+       "selling": 150,
+       "per": "trip",
+       "notes": "Per trip per device"
+      },
+      {
+       "id": "per-a25",
+       "category": "Wifi",
+       "label": "eSIM Australia 5GB (7 days)",
+       "cost": 55,
+       "selling": 95,
+       "per": "trip",
+       "notes": "Alternative — phone supports eSIM"
+      },
+      {
+       "id": "per-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari) — Area 3",
+       "cost": 54,
+       "selling": 72,
+       "per": "pax",
+       "notes": "Etiqa. Australia = Area 3"
+      },
+      {
+       "id": "per-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari) — Area 3",
+       "cost": 79,
+       "selling": 115,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (11-18 hari) — Area 3",
+       "cost": 133,
+       "selling": 174,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari) — Area 3",
+       "cost": 103,
+       "selling": 138,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "per-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 hari) — Area 3",
+       "cost": 160,
+       "selling": 211,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "per-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari) — Area 3",
+       "cost": 144,
+       "selling": 188,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "per-a32",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 hari) — Area 3",
+       "cost": 201,
+       "selling": 265,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "per-a33",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari) — Area 3",
+       "cost": 186,
+       "selling": 244,
+       "per": "pax",
+       "notes": "Age 70+"
+      },
+      {
+       "id": "per-a34",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 hari) — Area 3",
+       "cost": 266,
+       "selling": 351,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "per-a35",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "Per bag"
+      },
+      {
+       "id": "per-a36",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-a37",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-a38",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "per-k001",
+       "category": "Additional Activities",
+       "label": "Araluen Tulip Park (Late August to Early October only)",
+       "per": "pax",
+       "cost": 65,
+       "selling": 85,
+       "notes": "Adult / transport; kos daripada item R&D berganda (Araluen Tulip Park — Adult (12y+) [Seasonal Aug-Oct])",
+       "includes": "Entrance ticket to Araluen Tulip Park",
+       "excludes": "Lunch onboard or additional activities",
+       "price_lines": [
+        "RM85/pax for Adult (12 years old and above)",
+        "RM65/pax for Children (7 - 11 years old)",
+        "Free for Children 6 years old & below"
+       ],
+       "catalogs": {
+        "perth-premium": 1,
+        "perth-standard": 2
+       }
+      },
+      {
+       "id": "per-k002",
+       "category": "Additional Activities",
+       "label": "Return Ferry Ticket to Rottnest Island",
+       "per": "pax",
+       "cost": 280,
+       "selling": 350,
+       "notes": "Adult / transport; kos daripada item R&D berganda (Rottnest Ferry Return — Adult (13y+))",
+       "includes": "Return Ferry Ticket from Fremantle",
+       "excludes": "Shuttle, Activity at Rottnest & Lunch",
+       "price_lines": [
+        "RM350/pax for Adult (13 years old and above)",
+        "RM250/pax for Children (4 - 12 years old)",
+        "Free for Children 3 years old & below"
+       ],
+       "catalogs": {
+        "perth-premium": 2,
+        "perth-standard": 3
+       }
+      },
+      {
+       "id": "per-k003",
+       "category": "Additional Activities",
+       "label": "Return Shuttle to Rottnest Ferry Terminal",
+       "per": "transport (10pax)",
+       "cost": 1400,
+       "selling": 1800,
+       "notes": "Adult / transport; kos daripada item R&D berganda (Rottnest Shuttle (Perth City ↔ Ferry Terminal))",
+       "includes": "Transport pickup & drop off to Rottnest Ferry Terminal",
+       "excludes": "Ferry Ticket & Lunch",
+       "price_lines": [
+        "RM1800/transport",
+        "(Pickup & Drop Off from/to Perth City Area)",
+        "*Transport capacity up to 10 pax"
+       ],
+       "catalogs": {
+        "perth-premium": 3,
+        "perth-standard": 4
+       }
+      },
+      {
+       "id": "per-k004",
+       "category": "Additional Activities",
+       "label": "Mandurah Dolphin & Scenic Canal Cruise",
+       "per": "pax",
+       "cost": 141,
+       "selling": 140,
+       "notes": "Adult / transport; kos daripada item R&D berganda (Mandurah Dolphin & Scenic Canal Cruise — Adult (16y+))",
+       "includes": "1 hour Mandurah Cruise Tour & Scenic View ticket",
+       "excludes": "Lunch onboard or additional activities",
+       "price_lines": [
+        "RM140/pax for Adult (16 years old and above)",
+        "RM90/pax for Youth (3 - 15 years old)",
+        "Free for Child 2 years old & below"
+       ],
+       "catalogs": {
+        "perth-standard": 1
+       }
+      },
+      {
+       "id": "per-k005",
+       "category": "Additional Activities",
+       "label": "Day Tour to Pinnacles Desert",
+       "per": "transport (10pax)",
+       "cost": 2900,
+       "selling": 3800,
+       "notes": "Adult / transport; kos daripada item R&D berganda (Pinnacles Day Tour (12-Seater, 10hr + entrance) [STD add-on])",
+       "includes": "10 hours Transport + Driver Guide + Entrance to Pinnacles",
+       "excludes": "Extra hours, midnight hours and meals",
+       "price_lines": [
+        "RM3800/transport",
+        "(Pickup & Drop Off from/to Perth City Area Only)",
+        "*Transport capacity up to 10 pax"
+       ],
+       "catalogs": {
+        "perth-standard": 5
+       }
+      }
+     ],
+     "label": "Perth › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 105,
+     "label": "Perth › historyFrom"
+    },
+    {
+     "path": [
+      "destinations",
+      "PER",
+      "contracts"
+     ],
+     "from": null,
+     "to": [
+      {
+       "id": "f6d1b8a3c47",
+       "name": "PERTH COSTING RATE KN 2026.pdf",
+       "file": "contracts/per/f6d1b8a3c47-PERTH_COSTING_RATE_KN_2026.pdf",
+       "to": "K&N",
+       "note": "PT PER R&D tab Raw Costing (K&N coach rates + per-pax build-up), PO ezie 14 Oct 2026",
+       "size": 303648,
+       "at": "2026-10-14T16:15:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Perth › TO Contract Rate"
+    },
+    {
+     "path": [
+      "kb",
+      "perth",
+      "content",
+      "blocks",
+      "surcharge"
+     ],
+     "from": "<p class='ssub'>Semua kadar ikut katalog PT Perth v3 (jadual Surcharge - Accommodation Upgrade &amp; Peak Season). Surcaj peak dikira atas harga pakej.</p><div class='custblk' style='margin-top:14px'><h3 style='margin:0 0 6px'>Add-on Travel Date 2027</h3><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Travel date 1 Jan – 30 Jun 2027</td><td class='add'>+RM 100 / pax</td><td>Ditambah di atas harga pakej dan surcaj peak. Sumber: rate card ARBA 2026/2027 — tiada dalam katalog</td></tr><tr><td class='it'>Late booking — 2 pax ke atas</td><td class='add'>+RM 50 / pax</td><td>By request. Sumber: rate card ARBA 2026/2027 — tiada dalam katalog</td></tr></tbody></table></div>",
+     "to": "<p class='ssub'>Semua kadar ikut katalog PT Perth v3 (jadual Surcharge - Accommodation Upgrade &amp; Peak Season). Surcaj peak dikira atas harga pakej.</p><div class='custblk' style='margin-top:14px'><h3 style='margin:0 0 6px'>Add-on Travel Date 2027</h3><table class='ctbl'><thead><tr><th>Item</th><th>Caj</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Travel date 1 Jan – 30 Jun 2027</td><td class='add'>+RM 100 / pax</td><td>Ditambah di atas harga pakej dan surcaj peak. Sumber: rate card ARBA 2026/2027 — tiada dalam katalog</td></tr><tr><td class='it'>Late booking — tempahan kurang 45 hari sebelum berlepas</td><td class='add'>+RM 50 / booking</td><td>Ikut katalog PT Perth v3</td></tr></tbody></table></div>",
+     "label": "KB perth › content › blocks › surcharge"
+    }
+   ]
   }
  ]
 }

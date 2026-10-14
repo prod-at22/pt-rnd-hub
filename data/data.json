@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 104,
- "updatedAt": "2026-10-14T15:30:00Z",
+ "version": 105,
+ "updatedAt": "2026-10-14T16:15:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -24297,7 +24297,7 @@
    "nights": 0,
    "po": "Acap",
    "source": "hub",
-   "note": "",
+   "note": "Cost = K&N coach rates + ARBA components from PT PER R&D 'Raw Costing' (PDF in TO Contract Rate), AUD × live FX (was MYR at fixed 2.853746). Costing 2–10 (= catalog). Child per R&D: CWB 100 %, CNB = adult − accommodation.",
    "fx": [
     {
      "id": "MYR",
@@ -24314,234 +24314,155 @@
      "live": "AUD"
     }
    ],
-   "rates": [],
+   "rates": [
+    {
+     "id": "air12",
+     "label": "Airport transfer day, 12-Seater Hiace 1–10 pax (K&N, CR)",
+     "value": 250,
+     "fx": "AUD",
+     "unit": "AUD/way",
+     "group": "1. K&N coach"
+    },
+    {
+     "id": "h5_12",
+     "label": "Tour 5 hours, 12-Seater (K&N, CR)",
+     "value": 500,
+     "fx": "AUD",
+     "unit": "AUD/day",
+     "group": "1. K&N coach"
+    },
+    {
+     "id": "h6_12",
+     "label": "Tour 6 hours, 12-Seater (K&N, CR)",
+     "value": 600,
+     "fx": "AUD",
+     "unit": "AUD/day",
+     "group": "1. K&N coach"
+    },
+    {
+     "id": "h8_12",
+     "label": "Tour 8 hours, 12-Seater (K&N, CR)",
+     "value": 800,
+     "fx": "AUD",
+     "unit": "AUD/day",
+     "group": "1. K&N coach"
+    },
+    {
+     "id": "pin12",
+     "label": "Pinnacles day tour, 12-Seater (K&N, CR)",
+     "value": 1000,
+     "fx": "AUD",
+     "unit": "AUD/day",
+     "group": "1. K&N coach"
+    },
+    {
+     "id": "lunch",
+     "label": "Lunch Charcoal / Kailis (ARBA, R&D, per pax per meal)",
+     "value": 25,
+     "fx": "AUD",
+     "unit": "AUD/pax/meal",
+     "group": "2. Meals"
+    },
+    {
+     "id": "lunchP",
+     "label": "Lunch Premium 3x (ARBA, R&D, per pax)",
+     "value": 85,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "2. Meals"
+    },
+    {
+     "id": "cav",
+     "label": "Caversham Wildlife Park entrance (ARBA, R&D)",
+     "value": 28,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "3. Entrance"
+    },
+    {
+     "id": "entP",
+     "label": "Entrances Premium: Caversham, Mandurah cruise, Lancelin, Pinnacles (ARBA, R&D)",
+     "value": 83,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "3. Entrance"
+    },
+    {
+     "id": "tipS",
+     "label": "Tipping Standard (ARBA, R&D)",
+     "value": 28,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "4. Tipping & charges"
+    },
+    {
+     "id": "tipP",
+     "label": "Tipping Premium (ARBA, R&D)",
+     "value": 42,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "4. Tipping & charges"
+    },
+    {
+     "id": "knChg",
+     "label": "K&N charge (K&N, R&D)",
+     "value": 100,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "4. Tipping & charges"
+    },
+    {
+     "id": "drvS",
+     "label": "Driver meals Standard (ARBA, R&D)",
+     "value": 50,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "4. Tipping & charges"
+    },
+    {
+     "id": "drvP",
+     "label": "Driver meals Premium (ARBA, R&D)",
+     "value": 85,
+     "fx": "AUD",
+     "unit": "AUD/pax",
+     "group": "4. Tipping & charges"
+    }
+   ],
    "tables": [
     {
-     "id": "K-N-STD__Transport",
-     "label": "K&N STD · Transport",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N STD",
-     "values": {
-      "2": 2996.4333,
-      "3": 1997.6222,
-      "4": 1498.2167,
-      "5": 1198.5733,
-      "6": 998.8111,
-      "7": 856.1238,
-      "8": 750.5352,
-      "9": 664.9228,
-      "10": 599.2867,
-      "11": 674.5114,
-      "12": 618.3211,
-      "13": 570.7492,
-      "14": 529.9692,
-      "15": 494.6398,
-      "16": 463.7337,
-      "17": 436.4519,
-      "18": 412.1951,
-      "19": 390.5066,
-      "20": 370.987,
-      "21": 638.6969,
-      "22": 609.6743,
-      "23": 583.163,
-      "24": 558.8491,
-      "25": 536.5042,
-      "26": 515.8717,
-      "27": 496.7516,
-      "28": 479.0298,
-      "29": 462.5066,
-      "30": 447.0964
-     }
-    },
-    {
      "id": "K-N-STD__Accommodation",
-     "label": "K&N STD · Accommodation",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N STD",
+     "label": "K-N-STD · Apartment 3★ 4 nights per pax by room config (R&D)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "K-N-STD",
      "values": {
-      "2": 770.5114,
-      "3": 607.8479,
-      "4": 585.0179,
-      "5": 536.5042,
-      "6": 607.8479,
-      "7": 596.4329,
-      "8": 585.0179,
-      "9": 559.3342,
-      "10": 536.5042,
-      "11": 726.421,
-      "12": 770.5114,
-      "13": 733.1844,
-      "14": 770.5114,
-      "15": 738.1785,
-      "16": 770.5114,
-      "17": 741.974,
-      "18": 770.5114,
-      "19": 744.9704,
-      "20": 770.5114,
-      "21": 747.3961,
-      "22": 770.5114,
-      "23": 749.4222,
-      "24": 770.5114,
-      "25": 751.1059,
-      "26": 770.5114,
-      "27": 752.5328,
-      "28": 770.5114,
-      "29": 753.7885,
-      "30": 770.5114
-     }
-    },
-    {
-     "id": "K-N-STD__Meals-Ent-Tips",
-     "label": "K&N STD · Meals+Ent+Tips",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N STD",
-     "values": {
-      "2": 730.559,
-      "3": 730.559,
-      "4": 730.559,
-      "5": 730.559,
-      "6": 730.559,
-      "7": 730.559,
-      "8": 730.559,
-      "9": 730.559,
-      "10": 730.559,
-      "11": 730.559,
-      "12": 730.559,
-      "13": 730.559,
-      "14": 730.559,
-      "15": 730.559,
-      "16": 730.559,
-      "17": 730.559,
-      "18": 730.559,
-      "19": 730.559,
-      "20": 730.559,
-      "21": 730.559,
-      "22": 730.559,
-      "23": 730.559,
-      "24": 730.559,
-      "25": 730.559,
-      "26": 730.559,
-      "27": 730.559,
-      "28": 730.559,
-      "29": 730.559,
-      "30": 730.559
-     }
-    },
-    {
-     "id": "K-N-PREMIUM__Transport",
-     "label": "K&N PREMIUM · Transport",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N PREMIUM",
-     "values": {
-      "2": 4874.1982,
-      "3": 3247.5629,
-      "4": 2437.0991,
-      "5": 1949.1085,
-      "6": 1623.7815,
-      "7": 1392.628,
-      "8": 1218.5495,
-      "9": 1081.5697,
-      "10": 975.9811,
-      "11": 1063.6767,
-      "12": 975.0394,
-      "13": 900.0144,
-      "14": 835.7481,
-      "15": 780.0144,
-      "16": 731.2724,
-      "17": 688.2665,
-      "18": 650.0263,
-      "19": 615.8098,
-      "20": 585.0179,
-      "21": 1019.1868,
-      "22": 972.8705,
-      "23": 930.578,
-      "24": 891.7956,
-      "25": 856.1238,
-      "26": 823.1916,
-      "27": 792.7136,
-      "28": 764.4044,
-      "29": 738.0358,
-      "30": 713.4365
+      "2": 270,
+      "3": 213,
+      "4": 205,
+      "5": 188,
+      "6": 213,
+      "7": 209,
+      "8": 205,
+      "9": 196,
+      "10": 188
      }
     },
     {
      "id": "K-N-PREMIUM__Accommodation",
-     "label": "K&N PREMIUM · Accommodation",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N PREMIUM",
+     "label": "K-N-PREMIUM · Hotel 4★ Mercure 5 nights per pax by room config (R&D)",
+     "unit": "AUD/pax",
+     "fx": "AUD",
+     "group": "K-N-PREMIUM",
      "values": {
-      "2": 1463.9717,
-      "3": 1164.3284,
-      "4": 1426.873,
-      "5": 1284.1857,
-      "6": 1164.3284,
-      "7": 1335.5531,
-      "8": 1463.9717,
-      "9": 1364.0906,
-      "10": 1463.9717,
-      "11": 1462.5448,
-      "12": 1462.5448,
-      "13": 1462.5448,
-      "14": 1462.5448,
-      "15": 1462.5448,
-      "16": 1462.5448,
-      "17": 1462.5448,
-      "18": 1462.5448,
-      "19": 1462.5448,
-      "20": 1462.5448,
-      "21": 1462.5448,
-      "22": 1462.5448,
-      "23": 1462.5448,
-      "24": 1462.5448,
-      "25": 1462.5448,
-      "26": 1462.5448,
-      "27": 1462.5448,
-      "28": 1462.5448,
-      "29": 1462.5448,
-      "30": 1462.5448
-     }
-    },
-    {
-     "id": "K-N-PREMIUM__Meals-Ent-Tips",
-     "label": "K&N PREMIUM · Meals+Ent+Tips",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "K&N PREMIUM",
-     "values": {
-      "2": 764.8039,
-      "3": 764.8039,
-      "4": 764.8039,
-      "5": 764.8039,
-      "6": 764.8039,
-      "7": 764.8039,
-      "8": 764.8039,
-      "9": 764.8039,
-      "10": 764.8039,
-      "11": 764.8039,
-      "12": 764.8039,
-      "13": 764.8039,
-      "14": 764.8039,
-      "15": 764.8039,
-      "16": 764.8039,
-      "17": 764.8039,
-      "18": 764.8039,
-      "19": 764.8039,
-      "20": 764.8039,
-      "21": 764.8039,
-      "22": 764.8039,
-      "23": 764.8039,
-      "24": 764.8039,
-      "25": 764.8039,
-      "26": 764.8039,
-      "27": 764.8039,
-      "28": 764.8039,
-      "29": 764.8039,
-      "30": 764.8039
+      "2": 513,
+      "3": 408,
+      "4": 500,
+      "5": 450,
+      "6": 408,
+      "7": 468,
+      "8": 513,
+      "9": 478,
+      "10": 513
      }
     }
    ],
@@ -24551,15 +24472,15 @@
      "label": "K&N",
      "supplier": "K&N — PERTH STANDARD 5D4N (Apartment) [DEFAULT]",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Comfort Inn/Good Health Apartment (3★)",
-     "notes": "Extrapolated beyond catalog.",
+     "notes": "K&N CR (contracts/per, from PT PER R&D Raw Costing): 12-Seater 2× airport + 2× 8 h tour; AUD × live FX",
      "components": [
       {
        "key": "transport",
-       "label": "Transport",
-       "per": "pax",
-       "expr": "T['K-N-STD__Transport']"
+       "label": "Transport 12-Seater (2× airport + 2× 8 h)",
+       "per": "group",
+       "expr": "2*R.air12+2*R.h8_12"
       },
       {
        "key": "accommodation",
@@ -24568,10 +24489,34 @@
        "expr": "T['K-N-STD__Accommodation']"
       },
       {
-       "key": "meals-ent-tips",
-       "label": "Meals+Ent+Tips",
-       "per": "pax",
-       "expr": "T['K-N-STD__Meals-Ent-Tips']"
+       "key": "lunch",
+       "label": "Lunch ×2",
+       "per": "group",
+       "expr": "R.lunch*2*pax"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrance (Caversham)",
+       "per": "group",
+       "expr": "R.cav*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "group",
+       "expr": "R.tipS*pax"
+      },
+      {
+       "key": "kn-charge",
+       "label": "K&N charge",
+       "per": "group",
+       "expr": "R.knChg*pax"
+      },
+      {
+       "key": "driver-meals",
+       "label": "Driver meals",
+       "per": "group",
+       "expr": "R.drvS*pax"
       }
      ]
     },
@@ -24580,15 +24525,15 @@
      "label": "K&N",
      "supplier": "K&N — PERTH PREMIUM 6D5N (4-Star Hotel)",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Mercure On Hay or similar (4★)",
-     "notes": "Extrapolated beyond catalog.",
+     "notes": "K&N CR (contracts/per): 12-Seater 2× airport + 6 h + 8 h + 5 h (city 4 h) + Pinnacles day; AUD × live FX (R&D used AUD 3,416 per group)",
      "components": [
       {
        "key": "transport",
-       "label": "Transport",
-       "per": "pax",
-       "expr": "T['K-N-PREMIUM__Transport']"
+       "label": "Transport 12-Seater (2× airport + 6 h + 8 h + 5 h + Pinnacles)",
+       "per": "group",
+       "expr": "2*R.air12+R.h6_12+R.h8_12+R.h5_12+R.pin12"
       },
       {
        "key": "accommodation",
@@ -24597,10 +24542,34 @@
        "expr": "T['K-N-PREMIUM__Accommodation']"
       },
       {
-       "key": "meals-ent-tips",
-       "label": "Meals+Ent+Tips",
-       "per": "pax",
-       "expr": "T['K-N-PREMIUM__Meals-Ent-Tips']"
+       "key": "lunch",
+       "label": "Lunch ×3",
+       "per": "group",
+       "expr": "R.lunchP*pax"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrances",
+       "per": "group",
+       "expr": "R.entP*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "group",
+       "expr": "R.tipP*pax"
+      },
+      {
+       "key": "kn-charge",
+       "label": "K&N charge",
+       "per": "group",
+       "expr": "R.knChg*pax"
+      },
+      {
+       "key": "driver-meals",
+       "label": "Driver meals",
+       "per": "group",
+       "expr": "R.drvP*pax"
       }
      ]
     }
@@ -24613,7 +24582,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "K-N-STD"
       }
      ],
@@ -24627,27 +24596,7 @@
        "7": 3197,
        "8": 3097,
        "9": 3097,
-       "10": 3097,
-       "11": 3097,
-       "12": 3097,
-       "13": 3097,
-       "14": 3097,
-       "15": 3097,
-       "16": 2997,
-       "17": 2997,
-       "18": 2997,
-       "19": 2997,
-       "20": 2997,
-       "21": 2897,
-       "22": 2897,
-       "23": 2897,
-       "24": 2897,
-       "25": 2897,
-       "26": 2797,
-       "27": 2797,
-       "28": 2797,
-       "29": 2797,
-       "30": 2797
+       "10": 3097
       },
       "cwb": {
        "2": 4797,
@@ -24658,27 +24607,7 @@
        "7": 2997,
        "8": 2897,
        "9": 2897,
-       "10": 2897,
-       "11": 2897,
-       "12": 2897,
-       "13": 2897,
-       "14": 2897,
-       "15": 2897,
-       "16": 2797,
-       "17": 2797,
-       "18": 2797,
-       "19": 2797,
-       "20": 2797,
-       "21": 2697,
-       "22": 2697,
-       "23": 2697,
-       "24": 2697,
-       "25": 2697,
-       "26": 2597,
-       "27": 2597,
-       "28": 2597,
-       "29": 2597,
-       "30": 2597
+       "10": 2897
       },
       "cnb": {
        "2": 4497,
@@ -24689,27 +24618,7 @@
        "7": 2697,
        "8": 2597,
        "9": 2597,
-       "10": 2597,
-       "11": 2597,
-       "12": 2597,
-       "13": 2597,
-       "14": 2597,
-       "15": 2597,
-       "16": 2497,
-       "17": 2497,
-       "18": 2497,
-       "19": 2497,
-       "20": 2497,
-       "21": 2397,
-       "22": 2397,
-       "23": 2397,
-       "24": 2397,
-       "25": 2397,
-       "26": 2297,
-       "27": 2297,
-       "28": 2297,
-       "29": 2297,
-       "30": 2297
+       "10": 2597
       },
       "infant": 0
      },
@@ -24718,11 +24627,14 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.9
+       "value": 1.0
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 1.0,
+       "free": [
+        "accommodation"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -24737,7 +24649,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "K-N-PREMIUM"
       }
      ],
@@ -24751,27 +24663,7 @@
        "7": 4797,
        "8": 4497,
        "9": 4497,
-       "10": 4497,
-       "11": 4497,
-       "12": 4497,
-       "13": 4497,
-       "14": 4497,
-       "15": 4497,
-       "16": 4397,
-       "17": 4397,
-       "18": 4397,
-       "19": 4397,
-       "20": 4397,
-       "21": 4297,
-       "22": 4297,
-       "23": 4297,
-       "24": 4297,
-       "25": 4297,
-       "26": 4197,
-       "27": 4197,
-       "28": 4197,
-       "29": 4197,
-       "30": 4197
+       "10": 4497
       },
       "cwb": {
        "2": 7797,
@@ -24782,27 +24674,7 @@
        "7": 4597,
        "8": 4297,
        "9": 4297,
-       "10": 4297,
-       "11": 4297,
-       "12": 4297,
-       "13": 4297,
-       "14": 4297,
-       "15": 4297,
-       "16": 4197,
-       "17": 4197,
-       "18": 4197,
-       "19": 4197,
-       "20": 4197,
-       "21": 4097,
-       "22": 4097,
-       "23": 4097,
-       "24": 4097,
-       "25": 4097,
-       "26": 3997,
-       "27": 3997,
-       "28": 3997,
-       "29": 3997,
-       "30": 3997
+       "10": 4297
       },
       "cnb": {
        "2": 7597,
@@ -24813,27 +24685,7 @@
        "7": 4397,
        "8": 4097,
        "9": 4097,
-       "10": 4097,
-       "11": 4097,
-       "12": 4097,
-       "13": 4097,
-       "14": 4097,
-       "15": 4097,
-       "16": 3997,
-       "17": 3997,
-       "18": 3997,
-       "19": 3997,
-       "20": 3997,
-       "21": 3897,
-       "22": 3897,
-       "23": 3897,
-       "24": 3897,
-       "25": 3897,
-       "26": 3797,
-       "27": 3797,
-       "28": 3797,
-       "29": 3797,
-       "30": 3797
+       "10": 4097
       },
       "infant": 0
      },
@@ -24842,11 +24694,14 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.9
+       "value": 1.0
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 1.0,
+       "free": [
+        "accommodation"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -24857,15 +24712,6 @@
    ],
    "addons": [
     {
-     "id": "per-a01",
-     "category": "Activity",
-     "label": "Mandurah Dolphin & Scenic Canal Cruise — Adult (16y+)",
-     "cost": 141.0,
-     "selling": 180.0,
-     "per": "pax",
-     "notes": "1-hour cruise. PREM includes (STD add-on). PDF RM 140/pax — sell at RM 180"
-    },
-    {
      "id": "per-a02",
      "category": "Activity",
      "label": "Mandurah Dolphin Cruise — Youth (3-15y)",
@@ -24873,15 +24719,6 @@
      "selling": 90.0,
      "per": "pax",
      "notes": "FOC <2yo"
-    },
-    {
-     "id": "per-a03",
-     "category": "Activity",
-     "label": "Araluen Tulip Park — Adult (12y+) [Seasonal Aug-Oct]",
-     "cost": 65.0,
-     "selling": 85.0,
-     "per": "pax",
-     "notes": "Late August - Early October only"
     },
     {
      "id": "per-a04",
@@ -24893,15 +24730,6 @@
      "notes": "FOC ≤6yo"
     },
     {
-     "id": "per-a05",
-     "category": "Activity",
-     "label": "Rottnest Ferry Return — Adult (13y+)",
-     "cost": 280.0,
-     "selling": 350.0,
-     "per": "pax",
-     "notes": "From Fremantle. Excludes shuttle + activity + lunch"
-    },
-    {
      "id": "per-a06",
      "category": "Activity",
      "label": "Rottnest Ferry Return — Child (4-12y)",
@@ -24909,24 +24737,6 @@
      "selling": 250.0,
      "per": "pax",
      "notes": "FOC ≤3yo"
-    },
-    {
-     "id": "per-a07",
-     "category": "Activity",
-     "label": "Rottnest Shuttle (Perth City ↔ Ferry Terminal)",
-     "cost": 1400.0,
-     "selling": 1800.0,
-     "per": "transport (10pax)",
-     "notes": "Pickup/dropoff Perth City. Excludes ferry ticket"
-    },
-    {
-     "id": "per-a08",
-     "category": "Activity",
-     "label": "Pinnacles Day Tour (12-Seater, 10hr + entrance) [STD add-on]",
-     "cost": 2900.0,
-     "selling": 3800.0,
-     "per": "transport (10pax)",
-     "notes": "PREM includes. STD add-on. K&N rate AUD 1,450"
     },
     {
      "id": "per-a09",
@@ -25202,10 +25012,10 @@
      "id": "per-k001",
      "category": "Additional Activities",
      "label": "Araluen Tulip Park (Late August to Early October only)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 65.0,
+     "selling": 85.0,
+     "notes": "Adult / transport; kos daripada item R&D berganda (Araluen Tulip Park — Adult (12y+) [Seasonal Aug-Oct])",
      "includes": "Entrance ticket to Araluen Tulip Park",
      "excludes": "Lunch onboard or additional activities",
      "price_lines": [
@@ -25222,10 +25032,10 @@
      "id": "per-k002",
      "category": "Additional Activities",
      "label": "Return Ferry Ticket to Rottnest Island",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 280.0,
+     "selling": 350.0,
+     "notes": "Adult / transport; kos daripada item R&D berganda (Rottnest Ferry Return — Adult (13y+))",
      "includes": "Return Ferry Ticket from Fremantle",
      "excludes": "Shuttle, Activity at Rottnest & Lunch",
      "price_lines": [
@@ -25242,10 +25052,10 @@
      "id": "per-k003",
      "category": "Additional Activities",
      "label": "Return Shuttle to Rottnest Ferry Terminal",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "transport (10pax)",
+     "cost": 1400.0,
+     "selling": 1800.0,
+     "notes": "Adult / transport; kos daripada item R&D berganda (Rottnest Shuttle (Perth City ↔ Ferry Terminal))",
      "includes": "Transport pickup & drop off to Rottnest Ferry Terminal",
      "excludes": "Ferry Ticket & Lunch",
      "price_lines": [
@@ -25262,10 +25072,10 @@
      "id": "per-k004",
      "category": "Additional Activities",
      "label": "Mandurah Dolphin & Scenic Canal Cruise",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 141.0,
+     "selling": 140.0,
+     "notes": "Adult / transport; kos daripada item R&D berganda (Mandurah Dolphin & Scenic Canal Cruise — Adult (16y+))",
      "includes": "1 hour Mandurah Cruise Tour & Scenic View ticket",
      "excludes": "Lunch onboard or additional activities",
      "price_lines": [
@@ -25281,10 +25091,10 @@
      "id": "per-k005",
      "category": "Additional Activities",
      "label": "Day Tour to Pinnacles Desert",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "transport (10pax)",
+     "cost": 2900.0,
+     "selling": 3800.0,
+     "notes": "Adult / transport; kos daripada item R&D berganda (Pinnacles Day Tour (12-Seater, 10hr + entrance) [STD add-on])",
      "includes": "10 hours Transport + Driver Guide + Entrance to Pinnacles",
      "excludes": "Extra hours, midnight hours and meals",
      "price_lines": [
@@ -25509,7 +25319,20 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 105,
+   "contracts": [
+    {
+     "id": "f6d1b8a3c47",
+     "name": "PERTH COSTING RATE KN 2026.pdf",
+     "file": "contracts/per/f6d1b8a3c47-PERTH_COSTING_RATE_KN_2026.pdf",
+     "to": "K&N",
+     "note": "PT PER R&D tab Raw Costing (K&N coach rates + per-pax build-up), PO ezie 14 Oct 2026",
+     "size": 303648,
+     "at": "2026-10-14T16:15:00Z",
+     "by": "ezie"
+    }
+   ]
   },
   {
    "code": "NSNZ",

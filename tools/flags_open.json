@@ -500,6 +500,26 @@
    "fix": "Prepare the 2027 season rates / catalogs; fix the KB peak start date.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "PER",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Perth: R&D cost questions (tipping, driver meals, 2-pax margin)",
+   "detail": "PT PER R&D Raw Costing: Section 4 says tipping AUD100/pax while the cost tables use tipping AUD28 (Std) / 42 (Prem) + 'K&N charge' AUD100 + driver meals AUD50 / 85 per pax. 2-pax adult margin stays thin (Std ≈10 %, Prem ≈9 %); CWB 100 % / CNB adult − hotel per R&D. Premium transport now = K&N rates (AUD 3,400 per group; R&D used 3,416). Single supplement (RM1,500 / 2,500) has no cost.",
+   "fix": "Confirm the K&N charge, tipping and driver meals with K&N; review the 2-pax prices.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "PER",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Perth: add-on prices vs K&N costs",
+   "detail": "Mandurah cruise sells RM140 (Standard catalog) with cost RM141. Transport adjustments have cost RM0: midnight surcharge sells RM90 per way while K&N charges +AUD50 (≈RM143); extra hour RM150 vs AUD50 (≈RM143); tolak airport −RM250 / pair and tolak tour day −RM800 vs K&N AUD250 per way / AUD800 per 8 h (12-Seater).",
+   "fix": "Set the costs from K&N and decide the selling / deduction rates.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

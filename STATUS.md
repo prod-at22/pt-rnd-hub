@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v104 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v104, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v105 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v105, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -283,8 +283,14 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   duplicates / TripCare Area 2 / Blue Ribbon / header removed. Margins: Basic 17.6 % (1 pax), 27.5–38.1 %; Std 14.4–22.7 %. Open (flags, PO): boat / snorkel possibly double counted
   (Shari-La 578 → 458 if so), airport transfer 'Return RM65' vs one-way cost RM60, Fun Dive RM120 < cost 177, private boat / marine park, catalogs valid to 15 Oct 2026 (2027 season
   needed), KB Shari-La peak '21 Mac 2025' (should be 2026).
+  **Perth (v105, PO ezie 14 Oct; source = ~/Desktop/'PT PER R&D.xlsx' tab Raw Costing → contracts/per 'PERTH COSTING RATE KN 2026.pdf'):** costs = K&N coach rates + ARBA components in
+  AUD × live FX (were MYR at 2.853746): Std 12-Seater 2× airport AUD250 + 2× 8 h AUD800; Prem 2× airport + 6 h + 8 h + 5 h + Pinnacles AUD1,000 (= AUD3,400; R&D 3,416); accommodation by room
+  config (table); lunch / entrance / tipping / K&N charge AUD100 / driver meals per R&D. NB the hub's old Premium meals-entrance-tipping was AUD268 vs R&D 395 → Premium cost +≈RM350/pax
+  (2 pax adult 4.6 %, = R&D). Costing 2–10; child per R&D CWB 100 %, CNB = adult − accommodation (rules free) → CWB 2–3 pax ≈2–7 %. Add-ons: catalog items costed from R&D duplicates
+  (Mandurah RM140 < cost 141, flag). KB: late booking RM50/booking (catalog); 2027 travel-date +RM100 kept (PO); Autumn & Winter peak already in the calculator. Open (flags): Premium
+  2–5 pax margin, CWB, tipping / K&N charge / driver meals, transport tolak / tambah costs vs K&N, single supplement cost.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 5 destinations** (costs stored in MYR): JOG, PER, MLE, PHU, SWS (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
+- **Live FX not used by 4 destinations** (costs stored in MYR): JOG, MLE, PHU, SWS (PER done v105) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
