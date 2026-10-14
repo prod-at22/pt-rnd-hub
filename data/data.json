@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 103,
- "updatedAt": "2026-10-14T13:45:00Z",
+ "version": 104,
+ "updatedAt": "2026-10-14T15:30:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -41691,10 +41691,10 @@
    "name": "Perhentian",
    "country": "Domestik",
    "duration": "3D2N",
-   "nights": 0,
+   "nights": 2,
    "po": "Fyka",
    "source": "hub",
-   "note": "",
+   "note": "Cost = CALCULATOR PHT (R&D PT PERHENTIAN, tabs RAW DATA PHT / CALCULATOR PHT): resort package (Shari-La Fullboard Standard Twin low RM458 / Deluxe Triple 435; Mimpi Free & Easy Hill View twin RM1,060 / triple 960 / single 1,590) + boat RM60 + snorkel RM60 per pax (possible double count — flag). Costing 1–10 pax (= catalog). Child (CWB / CNB) = resort child rate 3–12: Shari-La RM256, Mimpi RM580 + snorkel RM30 (flag).",
    "fx": [
     {
      "id": "MYR",
@@ -41721,27 +41721,7 @@
       "7": 568.14,
       "8": 578,
       "9": 570.33,
-      "10": 578,
-      "11": 578,
-      "12": 578,
-      "13": 578,
-      "14": 578,
-      "15": 578,
-      "16": 578,
-      "17": 578,
-      "18": 578,
-      "19": 578,
-      "20": 578,
-      "21": 578,
-      "22": 578,
-      "23": 578,
-      "24": 578,
-      "25": 578,
-      "26": 578,
-      "27": 578,
-      "28": 578,
-      "29": 578,
-      "30": 578
+      "10": 578
      }
     },
     {
@@ -41760,27 +41740,7 @@
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0
+      "10": 0
      }
     },
     {
@@ -41799,27 +41759,7 @@
       "7": 1137.14,
       "8": 1180,
       "9": 1146.67,
-      "10": 1180,
-      "11": 1180,
-      "12": 1180,
-      "13": 1180,
-      "14": 1180,
-      "15": 1180,
-      "16": 1180,
-      "17": 1180,
-      "18": 1180,
-      "19": 1180,
-      "20": 1180,
-      "21": 1180,
-      "22": 1180,
-      "23": 1180,
-      "24": 1180,
-      "25": 1180,
-      "26": 1180,
-      "27": 1180,
-      "28": 1180,
-      "29": 1180,
-      "30": 1180
+      "10": 1180
      }
     },
     {
@@ -41838,27 +41778,7 @@
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0
+      "10": 0
      }
     }
    ],
@@ -41868,7 +41788,7 @@
      "label": "Shari-La Resort",
      "supplier": "SHARI-LA — Perhentian Kecil (2.5-Star) [BASIC] [DEFAULT]",
      "paxMin": 1,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Shari-La Resort (2.5★ Perhentian Kecil)",
      "notes": "Cost verified via CALCULATOR PHT buildup (boat+snorkel+accomm)",
      "components": [
@@ -41891,7 +41811,7 @@
      "label": "Mimpi Resort",
      "supplier": "MIMPI — Perhentian Kecil (4-Star) [STANDARD]",
      "paxMin": 1,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Mimpi Resort (4★ Perhentian Kecil)",
      "notes": "Cost verified via CALCULATOR PHT buildup (boat+snorkel+accomm)",
      "components": [
@@ -41917,8 +41837,8 @@
      "catalog": null,
      "assign": [
       {
-       "from": 2,
-       "to": 30,
+       "from": 1,
+       "to": 10,
        "variant": "Shari-La"
       }
      ],
@@ -41933,26 +41853,6 @@
        "8": 997,
        "9": 997,
        "10": 997,
-       "11": 947,
-       "12": 947,
-       "13": 947,
-       "14": 947,
-       "15": 947,
-       "16": 897,
-       "17": 897,
-       "18": 897,
-       "19": 897,
-       "20": 897,
-       "21": 847,
-       "22": 847,
-       "23": 847,
-       "24": 847,
-       "25": 847,
-       "26": 797,
-       "27": 797,
-       "28": 797,
-       "29": 797,
-       "30": 797,
        "1": 1457
       },
       "cwb": {
@@ -41964,27 +41864,7 @@
        "7": 907,
        "8": 897,
        "9": 897,
-       "10": 897,
-       "11": 847,
-       "12": 847,
-       "13": 847,
-       "14": 847,
-       "15": 847,
-       "16": 797,
-       "17": 797,
-       "18": 797,
-       "19": 797,
-       "20": 797,
-       "21": 747,
-       "22": 747,
-       "23": 747,
-       "24": 747,
-       "25": 747,
-       "26": 697,
-       "27": 697,
-       "28": 697,
-       "29": 697,
-       "30": 697
+       "10": 897
       },
       "cnb": {
        "2": 897,
@@ -41995,27 +41875,7 @@
        "7": 807,
        "8": 797,
        "9": 797,
-       "10": 797,
-       "11": 747,
-       "12": 747,
-       "13": 747,
-       "14": 747,
-       "15": 747,
-       "16": 697,
-       "17": 697,
-       "18": 697,
-       "19": 697,
-       "20": 697,
-       "21": 647,
-       "22": 647,
-       "23": 647,
-       "24": 647,
-       "25": 647,
-       "26": 597,
-       "27": 597,
-       "28": 597,
-       "29": 597,
-       "30": 597
+       "10": 797
       },
       "infant": 0
      },
@@ -42023,12 +41883,12 @@
       "discountTier2": 0,
       "tierUpgrade": 0,
       "cwbCost": {
-       "type": "pct",
-       "value": 0.95
+       "type": "flat",
+       "value": 256
       },
       "cnbCost": {
-       "type": "pct",
-       "value": 0.1
+       "type": "flat",
+       "value": 256
       },
       "infantCost": {
        "type": "flat",
@@ -42042,8 +41902,8 @@
      "catalog": null,
      "assign": [
       {
-       "from": 2,
-       "to": 30,
+       "from": 1,
+       "to": 10,
        "variant": "Mimpi"
       }
      ],
@@ -42058,26 +41918,6 @@
        "8": 1597,
        "9": 1597,
        "10": 1597,
-       "11": 1597,
-       "12": 1597,
-       "13": 1597,
-       "14": 1597,
-       "15": 1597,
-       "16": 1597,
-       "17": 1597,
-       "18": 1597,
-       "19": 1597,
-       "20": 1597,
-       "21": 1597,
-       "22": 1597,
-       "23": 1597,
-       "24": 1597,
-       "25": 1597,
-       "26": 1597,
-       "27": 1597,
-       "28": 1597,
-       "29": 1597,
-       "30": 1597,
        "1": 2197
       },
       "cwb": {
@@ -42089,27 +41929,7 @@
        "7": 1497,
        "8": 1497,
        "9": 1497,
-       "10": 1497,
-       "11": 1497,
-       "12": 1497,
-       "13": 1497,
-       "14": 1497,
-       "15": 1497,
-       "16": 1497,
-       "17": 1497,
-       "18": 1497,
-       "19": 1497,
-       "20": 1497,
-       "21": 1497,
-       "22": 1497,
-       "23": 1497,
-       "24": 1497,
-       "25": 1497,
-       "26": 1497,
-       "27": 1497,
-       "28": 1497,
-       "29": 1497,
-       "30": 1497
+       "10": 1497
       },
       "cnb": {
        "2": 1397,
@@ -42120,27 +41940,7 @@
        "7": 1397,
        "8": 1397,
        "9": 1397,
-       "10": 1397,
-       "11": 1397,
-       "12": 1397,
-       "13": 1397,
-       "14": 1397,
-       "15": 1397,
-       "16": 1397,
-       "17": 1397,
-       "18": 1397,
-       "19": 1397,
-       "20": 1397,
-       "21": 1397,
-       "22": 1397,
-       "23": 1397,
-       "24": 1397,
-       "25": 1397,
-       "26": 1397,
-       "27": 1397,
-       "28": 1397,
-       "29": 1397,
-       "30": 1397
+       "10": 1397
       },
       "infant": 0
      },
@@ -42148,12 +41948,12 @@
       "discountTier2": 0,
       "tierUpgrade": 0,
       "cwbCost": {
-       "type": "pct",
-       "value": 0.95
+       "type": "flat",
+       "value": 610
       },
       "cnbCost": {
-       "type": "pct",
-       "value": 0.1
+       "type": "flat",
+       "value": 610
       },
       "infantCost": {
        "type": "flat",
@@ -42164,69 +41964,6 @@
    ],
    "addons": [
     {
-     "id": "pht-a02",
-     "category": "Category",
-     "label": "Item",
-     "cost": null,
-     "selling": null,
-     "per": "Per",
-     "notes": "Notes"
-    },
-    {
-     "id": "pht-a03",
-     "category": "Activity",
-     "label": "Honeymoon Set Shari-La (CLD + Bed Deco)",
-     "cost": 247.0,
-     "selling": 280.0,
-     "per": "couple",
-     "notes": null
-    },
-    {
-     "id": "pht-a04",
-     "category": "Activity",
-     "label": "Honeymoon Set Mimpi (CLD + Bed Deco)",
-     "cost": 557.0,
-     "selling": 600.0,
-     "per": "couple",
-     "notes": null
-    },
-    {
-     "id": "pht-a05",
-     "category": "Activity",
-     "label": "Honeymoon Set Ombak (legacy)",
-     "cost": 347.0,
-     "selling": 380.0,
-     "per": "couple",
-     "notes": "Ombak no longer in core V3 catalog but add-on still sold per source costing sheet"
-    },
-    {
-     "id": "pht-a06",
-     "category": "Activity",
-     "label": "Snorkelling Pulau Rawa",
-     "cost": 107.0,
-     "selling": 120.0,
-     "per": "pax",
-     "notes": "Min 4 pax"
-    },
-    {
-     "id": "pht-a07",
-     "category": "Activity",
-     "label": "Scuba Diving (DSD)",
-     "cost": 250.0,
-     "selling": 300.0,
-     "per": "pax",
-     "notes": "Min 1 pax; incl gear + dive master"
-    },
-    {
-     "id": "pht-a08",
-     "category": "Activity",
-     "label": "Scuba Diving (Fun Dive)",
-     "cost": 177.0,
-     "selling": 120.0,
-     "per": "pax",
-     "notes": "Min 1 pax. ⚠ Cost RM177 > sell RM120 (loss) — per source costing sheet, flag for ARBA review"
-    },
-    {
      "id": "pht-a09",
      "category": "Transport",
      "label": "Return Airport Transfer (sharing)",
@@ -42234,24 +41971,6 @@
      "selling": 130.0,
      "per": "pax",
      "notes": "KB Airport <-> KB Jetty return (2x one-way cost RM60)"
-    },
-    {
-     "id": "pht-a10",
-     "category": "Transport",
-     "label": "Private Boat Transfer Return",
-     "cost": null,
-     "selling": 957.0,
-     "per": "boat",
-     "notes": "Max 12 pax/boat"
-    },
-    {
-     "id": "pht-a11",
-     "category": "Transport",
-     "label": "Private Boat Island Hopping (5 snorkel pts)",
-     "cost": null,
-     "selling": 957.0,
-     "per": "boat",
-     "notes": "Max 12 pax/boat"
     },
     {
      "id": "pht-a12",
@@ -42389,114 +42108,6 @@
      "notes": null
     },
     {
-     "id": "pht-a27",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (1-5 hari)",
-     "cost": 40.5,
-     "selling": 64.0,
-     "per": "pax",
-     "notes": "Etiqa Area 2"
-    },
-    {
-     "id": "pht-a28",
-     "category": "Takaful",
-     "label": "TripCare 360 — Individual (6-10 hari)",
-     "cost": 58.87,
-     "selling": 88.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a29",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (1-5 hari)",
-     "cost": 77.25,
-     "selling": 113.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a30",
-     "category": "Takaful",
-     "label": "TripCare 360 — Couple (6-10 hari)",
-     "cost": 122.87,
-     "selling": 160.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a31",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (1-5 hari)",
-     "cost": 100.12,
-     "selling": 143.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a32",
-     "category": "Takaful",
-     "label": "TripCare 360 — Family (6-10 hari)",
-     "cost": 153.62,
-     "selling": 201.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a33",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (1-5 hari)",
-     "cost": 141.62,
-     "selling": 185.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a34",
-     "category": "Takaful",
-     "label": "TripCare 360 — Senior (6-10 hari)",
-     "cost": 201.62,
-     "selling": 265.5,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "pht-a35",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Silver",
-     "cost": 14.5,
-     "selling": 20.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pht-a36",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Gold",
-     "cost": 29.0,
-     "selling": 40.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pht-a37",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Platinum",
-     "cost": 44.0,
-     "selling": 55.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
-     "id": "pht-a38",
-     "category": "Luggage",
-     "label": "Blue Ribbon — Diamond",
-     "cost": 58.0,
-     "selling": 70.0,
-     "per": "unit",
-     "notes": null
-    },
-    {
      "id": "pht-k001",
      "category": "Add On Activity",
      "label": "Return Airport Transfer (Sharing Basis)",
@@ -42517,10 +42128,10 @@
      "id": "pht-k002",
      "category": "Add On Activity",
      "label": "Return Private Boat Transfer (From Jetty Kuala Besut to Resort)",
-     "per": "",
+     "per": "boat",
      "cost": null,
-     "selling": null,
-     "notes": null,
+     "selling": 957.0,
+     "notes": "Max 12 pax/boat · tiada kos dalam RAW DATA PHT (flag)",
      "includes": "Max 12 pax per private boat",
      "price_lines": [
       "RM957/Boat"
@@ -42534,10 +42145,10 @@
      "id": "pht-k003",
      "category": "Add On Activity",
      "label": "Private Boat Island Hopping Tour (5 Snorkelling Point)",
-     "per": "",
+     "per": "boat",
      "cost": null,
-     "selling": null,
-     "notes": null,
+     "selling": 957.0,
+     "notes": "Max 12 pax/boat · tiada kos dalam RAW DATA PHT (flag)",
      "includes": "Max 12 pax per private boat; 5 Snorkelling Point: Shark Point, Fish Point, Nemo Point, Turtle Point, Teluk Keke",
      "price_lines": [
       "RM957/Boat"
@@ -42551,10 +42162,10 @@
      "id": "pht-k004",
      "category": "Add On Activity",
      "label": "Snorkelling Pulau Rawa",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 107.0,
+     "selling": 120.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Sharing boat with other tourist; minimum 4 pax to join this tour",
      "price_lines": [
       "RM120/pax"
@@ -42568,10 +42179,10 @@
      "id": "pht-k005",
      "category": "Add On Activity",
      "label": "Scuba Diving (DSD)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 250.0,
+     "selling": 300.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Scuba Gear & Dive Master; minimum 1 pax to join this tour",
      "price_lines": [
       "RM300/pax"
@@ -42585,10 +42196,10 @@
      "id": "pht-k006",
      "category": "Add On Activity",
      "label": "Scuba Diving (Fun Dive)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 177.0,
+     "selling": 120.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Scuba Gear & Dive Master; minimum 1 pax to join this tour",
      "price_lines": [
       "RM120/pax"
@@ -42602,10 +42213,10 @@
      "id": "pht-k007",
      "category": "Add On Activity",
      "label": "Honeymoon Package Mimpi Resort Perhentian",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "couple",
+     "cost": 557.0,
+     "selling": 600.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Honeymoon Bedroom Decoration, Candle Light Dinner for Couple",
      "price_lines": [
       "RM600/couple"
@@ -42619,10 +42230,10 @@
      "id": "pht-k008",
      "category": "Add On Activity",
      "label": "Honeymoon Package Shari-la Resort Perhentian",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "couple",
+     "cost": 247.0,
+     "selling": 280.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Honeymoon Bedroom Decoration, Candle Light Dinner for Couple",
      "price_lines": [
       "RM280/couple"
@@ -42636,10 +42247,10 @@
      "id": "pht-k009",
      "category": "Add On Activity",
      "label": "Honeymoon Package Ombak Resort Perhentian",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "couple",
+     "cost": 347.0,
+     "selling": 380.0,
+     "notes": "Kos = RAW DATA PHT (item berganda dibuang)",
      "includes": "Honeymoon Bedroom Decoration, Candle Light Dinner for Couple",
      "price_lines": [
       "RM380/couple"
@@ -42804,7 +42415,8 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 104
   }
  ]
 }

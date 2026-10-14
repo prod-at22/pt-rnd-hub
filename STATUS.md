@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v103 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v103, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v104 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v104, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -277,6 +277,12 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   '4★ upgrade Berastagi' kept (PO: real cost — note Berastagi is in the Medan itinerary, not Padang); Costing 2–19 (CR max 19) and catalog / KB band 16–20 → 16–19 (PO); 4★ package (no
   catalog, cost = selling) removed, upgrade +RM80/night stays in catalog / KB; nights 3; Holbung / Aek Manik (Lake Toba items) removed, TripCare Area 2 + Blue Ribbon duplicates removed
   (Area 1 kept); child CWB 85 % / CNB 70 % kept. Adult margin 38.7–47.6 %. Open (flags_open): CR inclusions, 4★ upgrade / peak costs, add-ons without cost.
+  **Perhentian (v104, PO ezie 14 Oct; source = ~/Desktop/'PT PERHENTIAN R&D.xlsx', tabs RAW DATA PHT + CALCULATOR PHT only — no CR in TO Contract Rate):** cost = CALCULATOR PHT
+  (checked): Shari-La Fullboard Standard Twin low RM458 / Deluxe Triple 435, Mimpi Free & Easy Hill View twin 1,060 / triple 960 / single 1,590, + boat RM60 + snorkel RM60 per pax;
+  Costing 1–10 pax (1 pax costed; 11–30 removed); child CWB / CNB = resort child rate Shari-La RM256 / Mimpi RM610 (flag); nights 2; catalog add-ons costed from the duplicates,
+  duplicates / TripCare Area 2 / Blue Ribbon / header removed. Margins: Basic 17.6 % (1 pax), 27.5–38.1 %; Std 14.4–22.7 %. Open (flags, PO): boat / snorkel possibly double counted
+  (Shari-La 578 → 458 if so), airport transfer 'Return RM65' vs one-way cost RM60, Fun Dive RM120 < cost 177, private boat / marine park, catalogs valid to 15 Oct 2026 (2027 season
+  needed), KB Shari-La peak '21 Mac 2025' (should be 2026).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 5 destinations** (costs stored in MYR): JOG, PER, MLE, PHU, SWS (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).

@@ -460,6 +460,46 @@
    "fix": "Get the costs from Pak Herman and fill them in Add On.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "PHT",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Perhentian: boat / snorkel possibly counted twice in the cost",
+   "detail": "CALCULATOR PHT adds boat RM60 + snorkelling RM60 per pax on top of the Shari-La Fullboard package (which already includes the roundtrip boat transfer and a snorkelling trip) and boat RM60 on top of the Mimpi Free & Easy package (includes the boat). If double: Shari-La 2 pax cost RM578 → 458 (margin 35.6 → 48.9 %), Mimpi RM1,180 → 1,120 (15.5 → 19.8 %).",
+   "fix": "Confirm with the resorts / ops what the RM60 boat line covers and correct the cost.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "PHT",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Perhentian: child cost = resort child rate (estimate)",
+   "detail": "CWB / CNB cost set to the resort child package rate (3–12 yrs): Shari-La RM256, Mimpi RM580 + child snorkel RM30 = RM610 (was 95 % / 10 % of adult). The rate covers 3–12 while the catalog splits CWB 6–11 / CNB 2–5; boat for children (RM30) not added.",
+   "fix": "Confirm the child rates (and under-3) with the resorts.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "PHT",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Perhentian: airport transfer, Fun Dive, private boat, marine park",
+   "detail": "Catalog prints 'Return Airport Transfer (Sharing) RM65/pax' while RAW DATA PHT has RM60 cost / RM65 selling one way (KB: one way RM65, return RM130). Fun Dive sells RM120 with cost RM177. Private boat transfer / island hopping RM957 have no cost. Single supplement / late booking add-ons have no cost. Marine Park fee: catalog RM5 / RM2, RAW RM12/pax.",
+   "fix": "Decide the airport transfer text / price and Fun Dive price; get the private boat cost; confirm the marine park fee.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "PHT",
+   "severity": "medium",
+   "area": "Sheet",
+   "title": "Perhentian: catalog validity ends 15 Oct 2026",
+   "detail": "Both catalogs are valid until 15 October 2026 (monsoon closure 15 Oct – 15 Feb) yet print a 2027 travel-date surcharge (15 Feb – 31 Mar 2027). KB Shari-La peak text and calculator window start '21 Mac 2025' while the catalog says 21 March 2026.",
+   "fix": "Prepare the 2027 season rates / catalogs; fix the KB peak start date.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
