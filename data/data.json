@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 100,
- "updatedAt": "2026-10-14T12:00:00Z",
+ "version": 101,
+ "updatedAt": "2026-10-14T11:14:43Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -2296,7 +2296,109 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "aspects": [
+     {
+      "id": "days",
+      "label": "Days"
+     },
+     {
+      "id": "accommodation",
+      "label": "Accommodation"
+     },
+     {
+      "id": "guide",
+      "label": "Tour Guide"
+     },
+     {
+      "id": "hours",
+      "label": "Hours"
+     },
+     {
+      "id": "packaging",
+      "label": "Packaging"
+     },
+     {
+      "id": "usp",
+      "label": "USP"
+     },
+     {
+      "id": "meals",
+      "label": "Meals"
+     },
+     {
+      "id": "tipping",
+      "label": "Tipping"
+     },
+     {
+      "id": "visa",
+      "label": "K-ETA"
+     }
+    ],
+    "arba": {
+     "atk-std": {
+      "days": "6D5N",
+      "accommodation": "Included (3★ Seoul + Jeju)",
+      "guide": "Driving guide (2–9 pax); guide + driver 10+",
+      "hours": "10 hrs",
+      "packaging": "Full tour 5 days (Seoul + Nami + 2 days Jeju)",
+      "usp": "Nami, Gyeongbokgung, Itaewon mosque, Seongsan Ilchulbong, Namsan Cable Car",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Not stated in catalog",
+      "strength": "Far cheaper than Muslim full-board rival; tipping included; 2 full Jeju days; Itaewon mosque visit",
+      "weakness": "Breakfast only; Korean English-speaking driving guide; extra hours charged in cash"
+     }
+    },
+    "items": [
+     {
+      "id": "selamat-bercuti-seoul-jeju",
+      "name": "Selamat Bercuti · 6D5N Seoul + Jeju + Nami (Private)",
+      "vs": "atk-std",
+      "attrs": {
+       "days": "6D5N",
+       "accommodation": "Included (3★; 4★ option)",
+       "guide": "English-speaking guide + private transport",
+       "hours": "Not stated",
+       "packaging": "Full tour 6 days (1.5 days Jeju)",
+       "usp": "Halal lunch & dinner daily, Jeju flights included, Nami, hanbok at Eunpyeong Hanok Village",
+       "meals": "Breakfast + lunch + dinner (halal per itinerary)",
+       "tipping": "Excluded (USD5/pax/day)",
+       "visa": "K-ETA excluded",
+       "strength": "Full board halal meals; domestic Jeju flights included; 4★ option",
+       "weakness": "Much higher price; only ~1.5 days in Jeju; shopping stops (ginseng, amethyst, duty-free); tipping & K-ETA extra"
+      },
+      "prices": {
+       "2": 7490,
+       "4": 5890,
+       "6": 5890,
+       "8": 4990
+      },
+      "extra": 126,
+      "extraNote": "tipping USD5 × 6 days = USD30 ≈ RM126 (USD 4.20)",
+      "source": "selamatbercuti.com/tours/6d5n-seoul-jeju-island-nami-island-mt-sorak · 3★ rates, valid Mar–Nov 2026; 2–3 / 4–6 / 7–9 pax bands",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Seoul–Jeju Standard is clearly cheaper than the only like-for-like Malaysian private rival found. Selamat Bercuti (3★) is +25% above ARBA at 2 pax (RM7,490 vs RM5,997), +31% at 4 pax, +40% at 6 pax and +28% at 8 pax. Adding its excluded tipping (RM126), the like-for-like gap widens to +27%–+43%.\n\n## Inclusion differences\nSelamat Bercuti includes halal lunch and dinner every day, round-trip Seoul–Jeju flights and a 4★ upgrade option, but excludes tipping and K-ETA and adds shopping stops. ARBA includes tipping, gives two full Jeju days plus Namsan Cable Car, but is breakfast-only with a Korean English-speaking driving guide.\n\n## Risks\nCustomers comparing \"all meals included\" may still see ARBA as thin; part of the price gap is meals the customer pays separately in Korea. ARBA's catalog does not state whether K-ETA or the domestic flight is included, which weakens a like-for-like pitch. Only one land-only rival with a pax table was found; others bundle international flights or show only from-prices.",
+     "actions": [
+      "Keep current pricing; the RM1,100+ per-pax headroom vs Selamat Bercuti protects margin even after meal costs",
+      "Make the catalog explicit on the Seoul–Jeju domestic flight and K-ETA so sales can claim like-for-like",
+      "Offer an optional halal lunch/dinner add-on (per day) so ARBA can match full-board offers on request",
+      "Pitch '2 full Jeju days, no shopping stops, tipping included' against full-board rivals with shopping-heavy itineraries"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "JJU",
@@ -2790,7 +2892,110 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     4,
+     6,
+     8,
+     10
+    ],
+    "aspects": [
+     {
+      "id": "days",
+      "label": "Days"
+     },
+     {
+      "id": "accommodation",
+      "label": "Accommodation"
+     },
+     {
+      "id": "guide",
+      "label": "Tour Guide"
+     },
+     {
+      "id": "hours",
+      "label": "Hours"
+     },
+     {
+      "id": "packaging",
+      "label": "Packaging"
+     },
+     {
+      "id": "usp",
+      "label": "USP"
+     },
+     {
+      "id": "meals",
+      "label": "Meals"
+     },
+     {
+      "id": "tipping",
+      "label": "Tipping"
+     },
+     {
+      "id": "visa",
+      "label": "K-ETA"
+     }
+    ],
+    "arba": {
+     "atk-pt": {
+      "accommodation": "Included (3★ Jeju)",
+      "guide": "Driving guide (2–8 pax); guide + driver 9+",
+      "hours": "10 hrs",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Not stated in catalog",
+      "days": "4D3N",
+      "packaging": "Full tour 3 days + departure",
+      "usp": "Jeju City, West/South & East loops, seasonal tour incl.",
+      "strength": "Prices 2–3 pax (rival starts at 4); tipping included; seasonal attraction ticket included",
+      "weakness": "Higher price than halal full-board rival; breakfast only; Korean English-speaking driving guide"
+     }
+    },
+    "items": [
+     {
+      "id": "jeju-muslim-travel-4d3n",
+      "name": "Jeju Muslim Travel · Private Trip Jeju 4D3N",
+      "vs": "atk-pt",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (2/3★; 4★ option)",
+       "guide": "Tour guide + transport (language not stated)",
+       "hours": "10.5 hrs (8:00–18:30)",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Halal meals, Hallasan, Jeolmul forest, Seongsan, Jusangjeolli",
+       "meals": "Lunch & dinner D1–3, breakfast D2–4 (halal)",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Lower per-pax price; halal lunch & dinner included; Malaysian company with Jeju office",
+       "weakness": "No 2–3 pax price (min 4 pax); 2025 page; tipping / K-ETA not stated; page does not say per person"
+      },
+      "prices": {
+       "4": 2135,
+       "6": 2135,
+       "8": 2015,
+       "10": 1915
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jejumuslimtravel.com/private-trip-jeju · page titled 'Pakej Pulau Jeju 2025', no validity date; 2/3★ rates, 4–6 / 7–9 / 10+ pax bands; assumed per pax (not stated)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is more expensive than Jeju Muslim Travel at every pax count that both price: rival is -18% at 4 pax (RM2,135 vs RM2,597), -7% at 6, -8% at 8 and -9% at 10 pax (range -18% to -7%). No extra is added, as the rival already includes hotel. ARBA's 2-pax price (RM3,697) has no direct rival quote since Jeju Muslim Travel starts at 4 pax.\n\n## Inclusion differences\nJeju Muslim Travel includes halal lunch and dinner on tour days and runs 8:00–18:30; ARBA is breakfast-only with a 10-hour driving guide but includes tipping and a seasonal attraction. Rival states nothing on tipping, K-ETA or guide language.\n\n## Risks\nA rival that is cheaper and includes halal meals is a direct threat for 4+ pax Muslim families. The rival price is from a 2025 page and does not state per person, so a 2026 rate may be higher. ARBA's 4-pax tier is the weakest point.",
+     "actions": [
+      "Review the 4-pax tier (now RM2,597); it is the largest gap vs Jeju Muslim Travel",
+      "Lead sales on 2–3 pax couples/small families, where the main halal rival has no price",
+      "Test a halal lunch add-on or 'halal-meal' version to answer full-board rivals",
+      "Ask the supplier for the 2026 Jeju Muslim Travel-equivalent cost (guide + van) to see if a 6–10 pax price cut is possible",
+      "Stress tipping included and no shopping stops in TC scripts"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "JJUO",
@@ -3301,7 +3506,110 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     4,
+     6,
+     8,
+     10
+    ],
+    "aspects": [
+     {
+      "id": "days",
+      "label": "Days"
+     },
+     {
+      "id": "accommodation",
+      "label": "Accommodation"
+     },
+     {
+      "id": "guide",
+      "label": "Tour Guide"
+     },
+     {
+      "id": "hours",
+      "label": "Hours"
+     },
+     {
+      "id": "packaging",
+      "label": "Packaging"
+     },
+     {
+      "id": "usp",
+      "label": "USP"
+     },
+     {
+      "id": "meals",
+      "label": "Meals"
+     },
+     {
+      "id": "tipping",
+      "label": "Tipping"
+     },
+     {
+      "id": "visa",
+      "label": "K-ETA"
+     }
+    ],
+    "arba": {
+     "atk-std": {
+      "accommodation": "Included (3★ Jeju)",
+      "guide": "Driving guide (2–8 pax); guide + driver 9+",
+      "hours": "10 hrs",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Not stated in catalog",
+      "days": "5D4N",
+      "packaging": "Full tour 3 days + Udo F&E + departure",
+      "usp": "Udo ferry ticket incl., Jeju City/West/South/East loops",
+      "strength": "Prices 2–3 pax (rival starts at 4); tipping & Udo ferry included",
+      "weakness": "10–22% above full-board halal rival; breakfast only; Udo day is F&E"
+     }
+    },
+    "items": [
+     {
+      "id": "jeju-muslim-travel-5d4n",
+      "name": "Jeju Muslim Travel · Private Trip Jeju 5D4N",
+      "vs": "atk-std",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (2/3★; 4★ option)",
+       "guide": "Tour guide + transport (language not stated)",
+       "hours": "10.5 hrs (8:00–18:30)",
+       "packaging": "Full tour 3 days + Udo day + departure",
+       "usp": "Udo ferry + ~3 hrs free time, halal meals, Hallasan, Seongsan",
+       "meals": "Lunch & dinner D1–3, dinner D4, breakfast D2–5 (halal)",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Lower per-pax price; halal lunch & dinner included; Malaysian company with Jeju office",
+       "weakness": "No 2–3 pax price (min 4 pax); 2025 page; tipping / K-ETA not stated; page does not say per person"
+      },
+      "prices": {
+       "4": 2480,
+       "6": 2480,
+       "8": 2360,
+       "10": 2260
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jejumuslimtravel.com/private-trip-jeju · page titled 'Pakej Pulau Jeju 2025', no validity date; 2/3★ rates, 4–6 / 7–9 / 10+ pax bands; assumed per pax (not stated)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is more expensive than Jeju Muslim Travel at every pax count that both price: rival is -22% at 4 pax (RM2,480 vs RM3,197), -8% at 6, -12% at 8 and -13% at 10 pax (range -22% to -8%). No extra is added, as the rival already includes hotel. ARBA's 2-pax price (RM4,497) has no direct rival quote since Jeju Muslim Travel starts at 4 pax.\n\n## Inclusion differences\nJeju Muslim Travel includes halal lunch and dinner on tour days and runs 8:00–18:30; ARBA is breakfast-only with a 10-hour driving guide but includes tipping and the Udo ferry. Rival states nothing on tipping, K-ETA or guide language.\n\n## Risks\nA rival that is cheaper and includes halal meals is a direct threat for 4+ pax Muslim families. The rival price is from a 2025 page and does not state per person, so a 2026 rate may be higher. ARBA's 4-pax tier is the weakest point.",
+     "actions": [
+      "Review the 4-pax tier (now RM3,197); it is the largest gap vs Jeju Muslim Travel",
+      "Lead sales on 2–3 pax couples/small families, where the main halal rival has no price",
+      "Test a halal lunch add-on or 'halal-meal' version to answer full-board rivals",
+      "Ask the supplier for the 2026 Jeju Muslim Travel-equivalent cost (guide + van) to see if a 6–10 pax price cut is possible",
+      "Stress tipping included and no shopping stops in TC scripts"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "TUR",
@@ -4145,7 +4453,112 @@
      }
     }
    ],
-   "historyFrom": 87
+   "historyFrom": 87,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "mytrip-std-3star": {
+      "days": "8D7N",
+      "accommodation": "Included (3★, 5 check-ins)",
+      "guide": "English-speaking guide + driver",
+      "hours": "10–11 hrs",
+      "packaging": "Full tour 8 days (2 days tram in Istanbul)",
+      "usp": "Ankara, Cappadocia, Konya, Pamukkale, Bursa mosques & Ottoman tombs",
+      "meals": "Full board (7B 6L 7D)",
+      "tipping": "Included",
+      "visa": "Visa-free (Malaysian passport)",
+      "strength": "Full board + tipping included; Bursa Ottoman heritage day; English-speaking guide plus driver",
+      "weakness": "3★ hotels vs competitor 4–5★; dearer than Kembara Istanbul at 2–6 pax; entrance fees excluded"
+     },
+     "mytrip-bsc-3star": {
+      "days": "8D7N",
+      "accommodation": "Included (3★, 5 check-ins)",
+      "guide": "Driving guide",
+      "hours": "10–11 hrs (extra hours charged)",
+      "packaging": "Full tour 8 days (1 day tram in Istanbul)",
+      "usp": "Same Klasik route at lowest price",
+      "meals": "Breakfast only",
+      "tipping": "Included",
+      "visa": "Visa-free (Malaysian passport)",
+      "strength": "Tipping included; far cheaper than DMC private rates; strong group pricing from 9 pax",
+      "weakness": "Breakfast only; driving guide (no separate guide); entrance fees excluded"
+     }
+    },
+    "items": [
+     {
+      "id": "kembara-istanbul-discover-turkiye",
+      "name": "Kembara Istanbul · Discover Türkiye 8D7N (Ground)",
+      "vs": "mytrip-std-3star",
+      "attrs": {
+       "days": "8D7N",
+       "accommodation": "Included (4–5★, names not stated)",
+       "guide": "English-speaking tour guide + bus/van",
+       "hours": "Not stated",
+       "packaging": "Full tour 8 days, ground only",
+       "usp": "Halal meals throughout, Kusadasi/Selcuk added, Bosphorus cruise, entrance tickets included",
+       "meals": "B/L/D per itinerary (halal); not in inclusions list",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Cheaper at 2–6 pax; 4–5★ hotels; entrance tickets included",
+       "weakness": "Private vs joined not stated; tipping not stated; no validity date; identical price table reused on 5D4N page"
+      },
+      "prices": {
+       "2": 5179,
+       "4": 4379,
+       "6": 3179,
+       "8": 3179
+      },
+      "extra": 0,
+      "extraNote": "Tipping not stated (may be extra)",
+      "source": "kembaraistanbul.com/8-hari-7-malam-discover-turkiye · price bands 2–3/4–5/6–8 pax, no validity date stated",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "myturkeyadventure-classic-8d",
+      "name": "My Turkey Adventure · Private Classic 8 days (tailor-made)",
+      "vs": "mytrip-bsc-3star",
+      "attrs": {
+       "days": "8 days (per-day rate)",
+       "accommodation": "Included (3★ central, breakfast)",
+       "guide": "Licensed English-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "Tailor-made full tour, 8 days",
+       "usp": "Domestic flights instead of long drives, skip-the-line tickets",
+       "meals": "Breakfast only (lunch/dinner excluded)",
+       "tipping": "Excluded",
+       "visa": "Excluded (visa fees)",
+       "strength": "Separate licensed guide + driver; entrance tickets & domestic flights included",
+       "weakness": "Much higher price; tipping & lunch/dinner excluded; USD estimator, not a fixed package; Turkish DMC, not Malaysian"
+      },
+      "prices": {
+       "2": 11088,
+       "4": 10534,
+       "6": 9979,
+       "8": 9425
+      },
+      "extra": 160,
+      "extraNote": "tipping estimate ~RM20/pax/day (page suggests guide €10–20 + driver €5–10 per day) — estimate",
+      "source": "myturkeyadventure.com/private-turkey-tours · Classic USD330/pax/day, 2 sharing, 3–4 pax −5%, 5–7 −10%, 8+ −15%; USD→RM 4.20; '2026 rates'",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nBoth Klasik tiers compared. **Standard** is 24.3–29.3% dearer than Kembara Istanbul's 8D7N ground package (RM5,179 vs RM6,997 at 2 pax; RM3,179 vs RM4,497 at 6 pax). **Basic** is far cheaper than My Turkey Adventure's Classic private rate: the DMC is 81.9% higher at 2 pax and 204.3% higher at 8 pax (RM9,585 vs RM3,097 like-for-like incl. ~RM160 tipping estimate).\n\n## Inclusion differences\n- Kembara Istanbul: 4–5★ hotels, entrance tickets and halal meals, English guide; adds Kusadasi/Selcuk but tipping and private/joined status are not stated.\n- ARBA Standard: 3★, full board, tipping included, entrance fees excluded.\n- My Turkey Adventure: separate guide + driver, domestic flights, tickets, but breakfast only and tipping excluded — closer to ARBA Basic in meals.\n\n## Risks\nKembara Istanbul's headline undercuts Standard by RM1,018–1,818/pax at 2–8 pax with better hotels; customers comparing ads will see ARBA as expensive. Their table has no validity date and may be a joined-van price — verify before reacting.",
+     "actions": [
+      "Mystery-shop Kembara Istanbul for a 4-pax private quote to confirm whether RM4,379 is private and whether tipping is extra",
+      "Pitch Standard on 'tipping included + Bursa Ottoman heritage + no hidden extras' and show a like-for-like table vs ads that exclude tipping/entrance",
+      "Review Standard 2–6 pax margin; a 4★ upgrade option would neutralise the 4–5★ comparison",
+      "Push Basic as the value private option — it sits far below DMC private rates even before tipping"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "ISTBUR",
@@ -4632,7 +5045,71 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "mytrip-3s": {
+      "days": "5D4N",
+      "accommodation": "Included (3★)",
+      "guide": "Driving guide",
+      "hours": "10–11 hrs",
+      "packaging": "Full tour 5 days (2 days tram in Istanbul)",
+      "usp": "Bursa Ottoman heritage, Eyup Sultan, Pierre Loti, late airport transfer after 5PM",
+      "meals": "Full board (4B 3L 4D)",
+      "tipping": "Included",
+      "visa": "Visa-free (Malaysian passport)",
+      "strength": "Full board + tipping included; cheaper at 2 pax; late departure transfer",
+      "weakness": "3★ vs 4–5★; driving guide only; no Uludag; dearer at 6–8 pax"
+     }
+    },
+    "items": [
+     {
+      "id": "kembara-istanbul-istanbul-bursa",
+      "name": "Kembara Istanbul · Istanbul Bursa 5D4N (Ground)",
+      "vs": "mytrip-3s",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (4–5★, names not stated)",
+       "guide": "English-speaking tour guide + bus/van",
+       "hours": "Not stated",
+       "packaging": "Full tour 5 days, ground only (ferry to Bursa)",
+       "usp": "Mount Uludag, Galata Tower, Bosphorus cruise, entrance tickets included",
+       "meals": "Halal B/L/D per itinerary; not in inclusions list",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "4–5★ hotels; Uludag included; cheaper at 6–8 pax",
+       "weakness": "Private vs joined not stated; tipping not stated; no validity date; dearer at 2 pax"
+      },
+      "prices": {
+       "2": 5179,
+       "4": 4379,
+       "6": 3179,
+       "8": 3179
+      },
+      "extra": 0,
+      "extraNote": "Tipping not stated (may be extra)",
+      "source": "kembaraistanbul.com/5-hari-4-malam-istanbul-bursa-ground · price bands 2–3/4–5/6–8 pax, no validity date stated",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nKembara Istanbul's 5D4N ground package is 8.0% above ARBA at 2 pax (RM5,179 vs RM4,797), level at 4 pax (−0.4%, RM4,379 vs RM4,397), and cheaper at 6 pax (−14.0%, RM3,179 vs RM3,697) and 8 pax (−6.4%, RM3,179 vs RM3,397).\n\n## Inclusion differences\n- Kembara Istanbul: 4–5★ hotels, entrance tickets, Mount Uludag and Galata Tower, English tour guide, halal meals per itinerary; tipping not stated.\n- ARBA: 3★, full board, tipping included, driving guide, Eyup Sultan + Pierre Loti and late (after 5PM) airport transfer; entrance fees excluded.\n\n## Risks\nCompetitor uses the identical price table as its 8D7N package, so figures may be a template rather than a real 5D4N cost — verify. If genuine, ARBA loses on hotel grade and price at 6–8 pax, the typical family size.",
+     "actions": [
+      "Verify Kembara Istanbul's 5D4N price (same table as its 8D7N) via mystery-shop before repricing",
+      "Consider trimming the 6-pax tier (RM3,697) toward RM3,400 to stay competitive with family groups",
+      "Add Mount Uludag as an optional add-on to match the competitor's highlight",
+      "Pitch 'tipping included + late flight transfer + Bursa Ottoman heritage' as the differentiator"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "ISTCAP",
@@ -5192,7 +5669,71 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "mytrip-pt-3star": {
+      "days": "6D5N",
+      "accommodation": "Included (3★)",
+      "guide": "Driving guide",
+      "hours": "10–11 hrs",
+      "packaging": "Full tour, domestic flights IST–Cappadocia both ways",
+      "usp": "Fly instead of 10-hr drive; Cappadocia valleys + Eyup, Pierre Loti, Galata",
+      "meals": "Full board (5B 4L 5D)",
+      "tipping": "Included",
+      "visa": "Visa-free (Malaysian passport)",
+      "strength": "Full board + tipping included; domestic flights in itinerary; well below DMC private rate",
+      "weakness": "Driving guide only; entrance fees excluded; 2-pax price high"
+     }
+    },
+    "items": [
+     {
+      "id": "myturkeyadventure-classic-6d",
+      "name": "My Turkey Adventure · Private Classic 6 days (tailor-made)",
+      "vs": "mytrip-pt-3star",
+      "attrs": {
+       "days": "6 days (per-day rate)",
+       "accommodation": "Included (3★ central, breakfast)",
+       "guide": "Licensed English-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "Tailor-made full tour, 6 days",
+       "usp": "Istanbul + Cappadocia with domestic flights, skip-the-line tickets",
+       "meals": "Breakfast only (lunch/dinner excluded)",
+       "tipping": "Excluded",
+       "visa": "Excluded (visa fees)",
+       "strength": "Separate licensed guide + driver; entrance tickets & domestic flights included",
+       "weakness": "Much higher price; tipping & lunch/dinner excluded; USD estimator, not a fixed package; Turkish DMC, not Malaysian"
+      },
+      "prices": {
+       "2": 8316,
+       "4": 7900,
+       "6": 7484,
+       "8": 7069
+      },
+      "extra": 120,
+      "extraNote": "tipping estimate ~RM20/pax/day (page suggests guide €10–20 + driver €5–10 per day) — estimate",
+      "source": "myturkeyadventure.com/private-turkey-tours · Classic USD330/pax/day, 2 sharing, 3–4 pax −5%, 5–7 −10%, 8+ −15%; USD→RM 4.20; '2026 rates'",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nOnly one priced private competitor found: My Turkey Adventure (Istanbul DMC selling to Malaysians) Classic 6 days. It is 32.1% above ARBA at 2 pax (RM8,316 vs RM6,297) rising to 60.8% at 8 pax (RM7,069 vs RM4,397). Like-for-like with ~RM120 tipping estimate: RM8,436–7,189, i.e. 34.0–63.5% above ARBA.\n\n## Inclusion differences\n- Both: 3★ hotels, domestic flights, private vehicle.\n- My Turkey Adventure: separate licensed guide + driver and entrance tickets, but breakfast only and tipping excluded.\n- ARBA: full board and tipping included; driving guide; entrance fees excluded.\n\n## Risks\nCompetitor is a per-day estimator in USD, not a fixed package — final quotes may vary. Malaysian agencies mostly sell Istanbul–Cappadocia as group tours with flights, so customers may compare ARBA land price against all-in group fares (RM4,500–5,500) and perceive it as costly.",
+     "actions": [
+      "Lead with 'full board + tipping + domestic flights included' — the DMC alternative charges more and still excludes lunch, dinner and tipping",
+      "Add a clear note on entrance fees (Topkapi/Hagia Sophia) with an optional ticket bundle to match competitors that include tickets",
+      "Prepare a sales script comparing ARBA private land vs group-with-flight packages so TCs can explain the private premium",
+      "Re-check for Malaysian private 6D5N competitors next quarter; none with a pax table was found"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "HND",
@@ -6699,7 +7240,112 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "basic": {
+      "days": "5D4N",
+      "accommodation": "Included (hotel, Tokyo)",
+      "guide": "Tour guide (public transport)",
+      "hours": "10 hrs",
+      "packaging": "Full tour 4 days (public transport)",
+      "usp": "Mt Fuji Panoramic Ropeway, Kawaguchiko Mosque, Asakusa, Odaiba",
+      "meals": "No meals (guide takes to halal restaurants)",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "Guide on all 4 days; much cheaper than JomJapan at every pax; tipping included",
+      "weakness": "Public transport, lots of walking & stairs; no meals included"
+     },
+     "standard": {
+      "days": "5D4N",
+      "accommodation": "Included (apartment / hotel)",
+      "guide": "Driving guide (2–7 pax); driver + guide 8 pax+",
+      "hours": "10 hrs",
+      "packaging": "Full tour 4 days, private transport",
+      "usp": "Iyashi no Sato, Oishi Park, Kawaguchiko Mosque, Akihabara, Odaiba",
+      "meals": "No meals; breakfast only if hotel",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "Private transport all days; 2-pax price available; slightly below Lurima",
+      "weakness": "Guide not Malaysian; apartment stays may be mixed with hotel"
+     }
+    },
+    "items": [
+     {
+      "id": "jomjapan-tokyo-fuji-5d4n",
+      "name": "JomJapan / Asuma Travel · Pakej Tokyo Fuji 5D4N",
+      "vs": "basic",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★ hotel or equivalent)",
+       "guide": "Tour guide (Malay/English/Japanese)",
+       "hours": "Not stated",
+       "packaging": "3 tour days + 1 day F&E (Day 4, no guide)",
+       "usp": "Malay-speaking guide, Gotemba outlet, kimono at Iyashi no Sato, Tokyo Tower",
+       "meals": "3 halal lunches",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; 3 halal lunches & entrance fees included",
+       "weakness": "Much higher price; mixed public/private transport; Day 4 no guide"
+      },
+      "prices": {
+       "2": 7530,
+       "4": 5150,
+       "6": 4650,
+       "8": 4500
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jomjapan.com/tour/pakej-tokyo-5d4n-muslim-jepun (same table on asumatravel.com) · titled 2026/2027, no validity date; flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "lurima-tokyo-fuji-5d4n",
+      "name": "Lurima Travel · Tokyo Fuji 5D4N",
+      "vs": "standard",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (Hen na Hotel / Hotel Trend Asakusa)",
+       "guide": "Malaysian driver-guide (lives in Japan)",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days, private MPV/Hiace",
+       "usp": "Malaysian guide, Kawaguchiko + Oishi Park + Iyashi no Sato, Harajuku, Roppongi",
+       "meals": "No meals (taken to halal restaurants)",
+       "tipping": "Included",
+       "visa": "Visa-free (Visit Japan Web)",
+       "strength": "Malaysian guide; private MPV all days; tipping included",
+       "weakness": "No 2-pax price (min 3); peak surcharge RM50/pax/night; Narita +RM400/car"
+      },
+      "prices": {
+       "4": 4350,
+       "6": 3820,
+       "8": 3700
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "lurimatravel.com/private-tour/tokyo-fuji-5d4n · price valid until 31 Dec 2026; flights excluded",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n**Basic** (public transport) is far below JomJapan's Tokyo Fuji 5D4N: +57.0% at 2 pax, +56.2% at 4 pax and +60.9% at 8 pax (competitor dearer). **Standard** (private transport) sits just under Lurima: +6.2% at 4 pax, +6.2% at 6 pax and +0.1% at 8 pax — practically level at 8 pax (RM3,697 vs RM3,700).\n\n## Inclusion differences\n- JomJapan adds 3 halal lunches, entrance fees and a Malay-speaking guide, but Day 4 is free & easy and transport is mixed public/private.\n- Lurima's Malaysian driver-guide and private MPV match ARBA Standard; neither includes meals. Lurima has no 2-pax price; ARBA does.\n- Both ARBA tiers include tipping and a 10-hr day.\n\n## Risks\n- ARBA Standard 8-pax (RM3,697) is higher than 6-pax (RM3,597), erasing the gap vs Lurima.\n- \"Malaysian guide\" is the competitor's main hook; ARBA's guide is local.\n- JomJapan has no validity date and tipping is not stated.",
+     "actions": [
+      "Review Standard 8-pax price (RM3,697 > 6-pax RM3,597) so it stays clearly below Lurima's RM3,700",
+      "Pitch Basic as the cheapest fully guided Tokyo private tour — guide on all 4 days vs JomJapan's free Day 4",
+      "Sell Standard's 2-pax price, which Lurima does not offer",
+      "Consider an optional halal-lunch add-on to counter JomJapan's 3 included lunches",
+      "Highlight Kawaguchiko Mosque stop and tipping inclusion in sales scripts"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "KIX",
@@ -8007,7 +8653,96 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "qay-ucop-std-wif-std": {
+      "days": "7D6N",
+      "accommodation": "Included (apartment / hotel, Tokyo 4N + Osaka 2N)",
+      "guide": "Tour guide + private transport",
+      "hours": "10 hrs",
+      "packaging": "Full tour 6 days, private transport + Shinkansen",
+      "usp": "Fuji (Oishi Park, Kawaguchiko Mosque), Odaiba, Osaka Castle, Arashiyama, Fushimi Inari",
+      "meals": "No meals; breakfast only if hotel",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "At or below Lurima at 4–8 pax; well below JomJapan; Disney add-on RM300",
+      "weakness": "Guide not Malaysian; 8-pax price higher than 6-pax; no meals"
+     }
+    },
+    "items": [
+     {
+      "id": "lurima-tokyo-osaka-7d6n",
+      "name": "Lurima Travel · Tokyo Osaka 7D6N",
+      "vs": "qay-ucop-std-wif-std",
+      "attrs": {
+       "days": "7D6N",
+       "accommodation": "Included (Tokyo 3N + Chisun Standard Osaka 3N)",
+       "guide": "Malaysian driver-guide (lives in Japan)",
+       "hours": "Not stated",
+       "packaging": "Full tour 5 days, private MPV/Hiace + Shinkansen",
+       "usp": "Malaysian guide, Fuji, Harajuku, Gion & Sannenzaka",
+       "meals": "No meals (taken to halal restaurants)",
+       "tipping": "Included",
+       "visa": "Visa-free (Visit Japan Web)",
+       "strength": "Malaysian guide; 3 nights Osaka; tipping & Shinkansen included",
+       "weakness": "Min 4 pax; peak surcharge RM50/pax/night; 1 less tour day than ARBA (no Nara/Fushimi)"
+      },
+      "prices": {
+       "4": 5890,
+       "6": 5140,
+       "8": 5290
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "lurimatravel.com/private-tour/tokyo-osaka-7d6n · price valid until 31 Dec 2026; flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "jomjapan-osaka-tokyo-6d5n",
+      "name": "JomJapan / Asuma Travel · Osaka Tokyo 6H5M Private Trip",
+      "vs": "qay-ucop-std-wif-std",
+      "attrs": {
+       "days": "6D5N (1 day shorter)",
+       "accommodation": "Included (apartment / guest house or equivalent)",
+       "guide": "Tour guide (Malay/English/Japanese) + private van",
+       "hours": "Not stated",
+       "packaging": "Full tour 6 days, private van + Shinkansen Kyoto–Shin-Fuji",
+       "usp": "teamLab Planets, Sagano Romantic Train, Kachi Kachi Ropeway, Umeda Sky",
+       "meals": "6 halal lunches",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "6 halal lunches; Malay-speaking guide; more paid attractions",
+       "weakness": "Min 4 pax; much higher price; 1 night shorter; tipping not stated"
+      },
+      "prices": {
+       "4": 7757,
+       "6": 6691,
+       "8": 5780
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jomjapan.com/tour/pakej-osaka-tokyo-6d5n-muslim-jepun · no validity date; flights excluded",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared on **Tokyo - Osaka Standard 7D6N** only (Basic is public transport; no land-only public-transport competitor with a price table was found). Lurima Tokyo Osaka 7D6N is +5.2% at 4 pax, +2.9% at 6 pax and -0.1% at 8 pax vs ARBA — essentially parity at 8 pax. JomJapan's 6D5N private trip is +38.6% at 4 pax and +9.1% at 8 pax despite being one night shorter.\n\n## Inclusion differences\n- ARBA: 5 guided days incl. Kyoto day with Arashiyama + Fushimi Inari, 10-hr day, tipping included.\n- Lurima: Malaysian driver-guide, 3N Tokyo + 3N Osaka, Shinkansen and tipping included; no meals.\n- JomJapan: 6 halal lunches, teamLab and Sagano train, but 6D5N and tipping not stated.\n\n## Risks\n- ARBA 8-pax (RM5,297) is above 6-pax (RM4,997), so the advantage vs Lurima disappears at 8.\n- Lurima's Malaysian guide is a strong emotional sell for families.\n- No competitor matched the Basic tier, so its position is untested.",
+     "actions": [
+      "Bring the Standard 8-pax price below RM5,290 (Lurima) — e.g. align with the 6-pax RM4,997 band",
+      "Sell the extra Fushimi Inari / Osaka Castle coverage vs Lurima's 5 tour days",
+      "Position against JomJapan as 'one more night, RM2,160 less per pax at 4 pax'",
+      "Add an optional halal-lunch bundle to blunt JomJapan's 6 included lunches"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "OSK",
@@ -9107,7 +9842,111 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "wif-basic": {
+      "days": "5D4N",
+      "accommodation": "Included (apartment / hotel, Osaka)",
+      "guide": "Driving guide 2–9 pax (public transport days)",
+      "hours": "10 hrs",
+      "packaging": "Full tour 4 days (public transport)",
+      "usp": "Osaka Castle, Arashiyama, Fushimi Inari, Nara Deer Park, Osaka Bay",
+      "meals": "No meals (guide takes to halal restaurants)",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "Guided all 4 days; 2-pax price RM4,497; far below JomJapan",
+      "weakness": "Public transport; no meals; no mosque stop listed"
+     },
+     "ucop-std-wif-std": {
+      "days": "5D4N",
+      "accommodation": "Included (apartment / hotel, Osaka)",
+      "guide": "Driving guide 2–9 pax; driver + guide 10 pax+",
+      "hours": "10 hrs",
+      "packaging": "Full tour 4 days, private transport",
+      "usp": "Osaka Castle, Arashiyama, Fushimi Inari, Nara, USJ option RM250",
+      "meals": "No meals; breakfast only if hotel",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "Below Lurima at 4–8 pax; 10-hr day vs 9; 2-pax price available",
+      "weakness": "Guide not Malaysian; apartment stays; no meals"
+     }
+    },
+    "items": [
+     {
+      "id": "jomjapan-osaka-kyoto-5d4n",
+      "name": "JomJapan / Asuma Travel · Pakej Osaka Kyoto 5D4N",
+      "vs": "wif-basic",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★ hotel or equivalent)",
+       "guide": "Tour guide (Malay/English/Japanese)",
+       "hours": "Not stated",
+       "packaging": "3 tour days + 1 day F&E (Day 4)",
+       "usp": "Kobe Mosque, Osaka Mosque, Kyoto Mosque, Shin-Kobe Ropeway, Todaiji",
+       "meals": "3 halal lunches",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; 3 mosque visits; 3 halal lunches",
+       "weakness": "Much higher price; Day 4 no guide; mixed public/private transport"
+      },
+      "prices": {
+       "2": 6770,
+       "4": 4500,
+       "6": 4040,
+       "8": 3900
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jomjapan.com/tour/pakej-kyoto-osaka-5d4n-muslim-jepun · no validity date; flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "lurima-osaka-kyoto-5d4n",
+      "name": "Lurima Travel · Osaka Kyoto 5D4N",
+      "vs": "ucop-std-wif-std",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (Link Hotel / Chisun Standard Osaka)",
+       "guide": "Malaysian driver-guide (lives in Japan)",
+       "hours": "9 hrs",
+       "packaging": "Full tour 4 days, private MPV/Hiace",
+       "usp": "Malaysian guide, Kuromon Market, Gion & Kiyomizudera, Nara",
+       "meals": "No meals (taken to halal restaurants)",
+       "tipping": "Included",
+       "visa": "Visa-free (Visit Japan Web)",
+       "strength": "Malaysian guide; private MPV; Osaka entrance fees included",
+       "weakness": "Min 3 pax; 9-hr day; peak surcharge RM50/pax/night"
+      },
+      "prices": {
+       "4": 4230,
+       "6": 3760,
+       "8": 3580
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "lurimatravel.com/private-tour/osaka-kyoto-5d4n · price valid until 31 Dec 2026; flights excluded; first price column read as adult",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n**Osaka Basic** is well below JomJapan Osaka Kyoto 5D4N: +50.5% at 2 pax, +28.7% at 4 pax, +26.4% at 6 pax and +30.1% at 8 pax. **Osaka Standard** is cheaper than Lurima Osaka Kyoto 5D4N: +5.8% at 4 pax, +14.0% at 6 pax and +8.6% at 8 pax.\n\n## Inclusion differences\n- JomJapan includes 3 halal lunches, 3 mosque visits and Kobe, but Day 4 is free & easy (no guide).\n- Lurima uses a Malaysian driver-guide on a 9-hr day with Osaka entrance fees; ARBA gives 10 hrs.\n- All exclude dinners; ARBA and Lurima include tipping.\n\n## Risks\n- ARBA itineraries list no mosque stop in Kansai — competitors make mosque visits a headline.\n- Lurima's price table columns are loosely labelled; adult figure used is the first column.\n- JomJapan prices carry no validity date.",
+     "actions": [
+      "Add an Osaka or Kobe Mosque prayer stop to the Basic/Standard itineraries and catalogue",
+      "Pitch Standard as private transport + 10-hr day for less than Lurima's 9-hr Malaysian-guide tour",
+      "Promote Basic 2-pax (RM4,497) vs JomJapan's RM6,770 for couples",
+      "Consider a Kobe add-on day to match JomJapan's coverage"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "CTS",
@@ -9642,7 +10481,125 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "wif-cts": {
+      "days": "5D4N",
+      "accommodation": "Included (3★ hotel)",
+      "guide": "Driver + tour guide",
+      "hours": "10 hrs",
+      "packaging": "Full tour 5 days, private transport",
+      "usp": "Lake Shikotsu, Otaru Mosque, Asahiyama Zoo, Blue Pond, seasonal Day 4",
+      "meals": "No meals (halal restaurant / konbini)",
+      "tipping": "Included",
+      "visa": "Not required (visa-free)",
+      "strength": "All 5 days guided incl. arrival day; Blue Pond & Asahiyama Zoo; year-round; separate driver + guide",
+      "weakness": "Dearer than Lurima at every pax; 2 pax RM8,197; no meals"
+     }
+    },
+    "items": [
+     {
+      "id": "lurima-sapporo-winter-5d4n",
+      "name": "Lurima Travel · Sapporo Winter Experience 5D4N",
+      "vs": "wif-cts",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (Mystays Nakajima / APA Sapporo)",
+       "guide": "Malaysian driver-guide (lives in Japan)",
+       "hours": "9 hrs",
+       "packaging": "Full tour 5 days, private MPV/Hiace",
+       "usp": "Malaysian guide, Sapporo Mosque, Biei, snow park, e-SIM + insurance",
+       "meals": "No meals (taken to halal restaurants)",
+       "tipping": "Included",
+       "visa": "Visa-free",
+       "strength": "Cheaper at all pax; Malaysian guide; e-SIM & insurance included",
+       "weakness": "Winter dates only (Dec–Feb); driver-guide not separate guide; 9-hr day"
+      },
+      "prices": {
+       "2": 6200,
+       "4": 4550,
+       "6": 4170,
+       "8": 3570
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "lurimatravel.com/private-tour/hokkaido-sapporo-5d4n · for bookings before 1 Sep 2026, travel Dec 2026–Feb 2027; flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "jomjapan-hokkaido-5d4n",
+      "name": "JomJapan / Asuma Travel · Pakej Hokkaido 5D4N",
+      "vs": "wif-cts",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★ hotel or equivalent)",
+       "guide": "Tour guide (Malay/English/Japanese)",
+       "hours": "Not stated",
+       "packaging": "3 tour days + 1 day F&E (Day 3)",
+       "usp": "Otaru Mosque, Noboribetsu Jigokudani, Nijo Market",
+       "meals": "3 breakfasts + 3 halal lunches",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; 3 halal lunches; breakfast included",
+       "weakness": "Day 3 no guide; mixed public/private transport; no Biei"
+      },
+      "prices": {
+       "2": 7940,
+       "4": 5450,
+       "6": 4940,
+       "8": 4780
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "jomjapan.com/tour/pakej-hokkaido-5d4n-muslim-jepun · no validity date; flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "sedunia-relaxing-hokkaido-5d4n",
+      "name": "Sedunia Travel · 5D4N Relaxing Hokkaido (Muslim)",
+      "vs": "wif-cts",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★ standard)",
+       "guide": "English driver-guide",
+       "hours": "10 hrs",
+       "packaging": "3 tour days + 1 day F&E (Day 4)",
+       "usp": "Noboribetsu, Lake Shikotsu, Otaru",
+       "meals": "Daily breakfast + 2 halal lunches",
+       "tipping": "Excluded (JPY500/pax/day)",
+       "visa": "Not stated",
+       "strength": "Breakfast + halal lunches included",
+       "weakness": "Only 2-pax price; far more expensive; tipping excluded; weekend surcharge"
+      },
+      "prices": {
+       "2": 11380
+      },
+      "extra": 58,
+      "extraNote": "tipping JPY500 × 4 guided days at JPY0.029",
+      "source": "seduniatravel.com/holidays/asia/japan/5d4n-relaxing-hokkaido · Standard 3★, valid till Sep 2026; min 2 pax; flights excluded; JPY at 0.029",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nLurima's Sapporo Winter 5D4N undercuts ARBA everywhere: -24.4% at 2 pax, -14.1% at 4 pax, -5.2% at 6 pax and -6.0% at 8 pax. JomJapan Hokkaido 5D4N is -3.1% at 2 pax but +12.3% at 6 pax and +25.9% at 8 pax. Sedunia (2 pax only) is +39.5% like-for-like after adding tipping.\n\n## Inclusion differences\n- ARBA: separate driver + tour guide, 5 guided days, Biei Blue Pond + Asahiyama Zoo, seasonal Day 4, tipping included.\n- Lurima: Malaysian driver-guide (9 hrs), e-SIM + insurance included, but winter dates only.\n- JomJapan / Sedunia: halal lunches (and breakfast) included, but one free day with no guide.\n\n## Risks\n- ARBA 2-pax RM8,197 is the most exposed — Lurima is RM1,997 lower.\n- Lurima's offer is winter-only; year-round comparison is thin.\n- JomJapan validity and tipping are not stated.",
+     "actions": [
+      "Review 2–4 pax pricing (RM8,197 / RM5,297) against Lurima's RM6,200 / RM4,550",
+      "Sell the separate driver + guide and 5 fully guided days (vs free days at JomJapan/Sedunia)",
+      "Highlight Biei Blue Pond and Asahiyama Zoo, which Lurima and JomJapan itineraries do not list",
+      "Consider bundling e-SIM to match Lurima's inclusions",
+      "Re-check Lurima's summer pricing once published"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "DPS",
@@ -11234,7 +12191,162 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "alfian-std-3s": {
+      "days": "4D3N",
+      "accommodation": "3★ hotel, 3 nights",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "3 tour days + airport transfer day",
+      "usp": "Uluwatu, Nusa Penida or Nusa Dua, Kintamani, Penglipuran",
+      "meals": "3 breakfasts + 1 dinner (Bale Udang)",
+      "tipping": "Included",
+      "visa": "Not included (VoA / Bali levy own cost)",
+      "strength": "Cheapest per pax at every group size; tipping included; Nusa Penida option; 12-hr driver-guide days",
+      "weakness": "Only 1 dinner, no lunches; no airport-day tour beyond Uluwatu; not marketed as full-board halal"
+     },
+     "alfian-hny-std": {
+      "days": "4D3N",
+      "accommodation": "3★ hotel 2N + private pool villa 1N",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "3 tour days + airport transfer day",
+      "usp": "Pool villa night, honeymoon dinner, Nusa Penida or Nusa Dua",
+      "meals": "3 breakfasts + 1 romantic dinner",
+      "tipping": "Included",
+      "visa": "Not included (VoA / Bali levy own cost)",
+      "strength": "Private pool villa night; tipping included; Nusa Penida option",
+      "weakness": "Priced above IKHLAS honeymoon; few meals; no massage/swing extras"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-bali",
+      "name": "IKHLAS Travel · 4D3N Bali (FIT)",
+      "vs": "alfian-std-3s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ (Amaris Hotel or similar)",
+       "guide": "Driver cum guide / guide assistance",
+       "hours": "Not stated",
+       "packaging": "2 full tour days + arrival & departure days",
+       "usp": "Kintamani, Tegalalang, Tegenungan, Bedugul, Tanah Lot sunset",
+       "meals": "Full board halal (B/L/D days 2–3)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Full-board halal meals; tipping & entrance included; strong Muslim brand (AirAsia/ikhlas.com)",
+       "weakness": "Day 1 free & easy only; no Nusa Penida; 2–3 pax RM1,750 is double ARBA"
+      },
+      "prices": {
+       "2": 1750,
+       "4": 1690,
+       "6": 1690,
+       "8": 1590
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/ms/my/southeastasia/indonesia/bali/4d3n-bali-fit · twin/triple adult, rate valid until 20 Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "hgg-bali-muslim",
+      "name": "HolidayGoGoGo · 4D3N Bali Natural & Cultural (Muslim-friendly)",
+      "vs": "alfian-std-3s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ Siesta Hotel Legian or similar",
+       "guide": "English-speaking tour guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Uluwatu Kecak, waterfalls, Alas Harum, Nusa Penida West",
+       "meals": "Per itinerary (approx. 3B, 1–2L, 1–2D; page inconsistent)",
+       "tipping": "Excluded",
+       "visa": "Not stated",
+       "strength": "Nusa Penida + Kecak + Jimbaran dinner; valid to Mar 2027",
+       "weakness": "Tipping excluded; private not stated; halal arrangements not detailed; much pricier"
+      },
+      "prices": {
+       "2": 1749,
+       "4": 1559,
+       "6": 1409,
+       "8": 1239
+      },
+      "extra": 40,
+      "extraNote": "tipping ~RM10/pax/day × 4 days (estimate)",
+      "source": "holidaygogogo.com/4d3n-bali-natural-and-cultural-tour-package-bm · 3★ rate, valid until 31 Mar 2027, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ikhlas-bali-honeymoon",
+      "name": "IKHLAS Travel · 4D3N Bali Honeymoon (FIT)",
+      "vs": "alfian-hny-std",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ Harper Kuta by ASTON, honeymoon decoration",
+       "guide": "English driver assistance",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + last day",
+       "usp": "Candle-light dinner Jimbaran, Bali Swing, 2-hr Balinese massage, banana boat",
+       "meals": "Per itinerary (B/L/D days 2–3 + candle-light dinner)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Cheaper than ARBA; massage, swing, photo costume included; tipping included",
+       "weakness": "No pool villa; no Nusa Penida; English (not Malay) driver"
+      },
+      "prices": {
+       "2": 1045
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/ms/my/southeastasia/indonesia/bali/4d3n-bali-honeymoon · RM2,090 per couple (double room) ÷ 2, valid until 31 Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "hgg-bali-honeymoon",
+      "name": "HolidayGoGoGo · 4D3N Bali Honeymoon (Uluwatu & Jungle Swing)",
+      "vs": "alfian-hny-std",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "4★ The One Legian (Superior)",
+       "guide": "English-speaking tour guide",
+       "hours": "Not stated",
+       "packaging": "2 tour days + arrival dinner + departure",
+       "usp": "Jimbaran romantic dinner, Uluwatu Kecak, waterfalls",
+       "meals": "3 breakfasts, 1 lunch, 2 dinners",
+       "tipping": "Excluded",
+       "visa": "Not stated",
+       "strength": "4★ hotel; romantic Jimbaran dinner; valid to Mar 2027",
+       "weakness": "Halal not stated; tipping excluded; no pool villa; nearly double ARBA price"
+      },
+      "prices": {
+       "2": 1929
+      },
+      "extra": 40,
+      "extraNote": "tipping ~RM10/pax/day × 4 days (estimate)",
+      "source": "holidaygogogo.com/4d3n-bali-honeymoon-uluwatu-temple-jungle-swing-tour-package-bm · per pax, valid until 31 Mar 2027, flights excluded",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared **Bali Standard 4D3N** (3★, all pax) and **Honeymoon Standard** (2 pax); Honeymoon Premium skipped (no like-for-like halal pool-villa competitor). Standard is far below both Muslim competitors: IKHLAS is +104.2% to +123.2% above ARBA, HolidayGoGoGo +73.5% to +108.8% like-for-like (incl. ~RM40 tipping). Honeymoon Standard is the exception: IKHLAS Honeymoon is RM1045/pax vs ARBA RM999 — only +4.6%, i.e. RM46 per pax. HolidayGoGoGo honeymoon (4★) is +97.1% like-for-like.\n\n## Inclusion differences\nIKHLAS and HolidayGoGoGo sell full or near-full board; ARBA Standard gives breakfast + 1 dinner only. IKHLAS honeymoon adds a 2-hr massage, Bali Swing, banana boat and candle-light dinner; ARBA counters with a private pool-villa night and Nusa Penida. Both competitors use English-speaking guides; HolidayGoGoGo excludes tipping.\n\n## Risks\nThe huge gap on Standard partly reflects ARBA's thin meal plan — customers comparing \"per pax\" may assume ARBA is all-in. Honeymoon Standard is almost at parity with an IKHLAS package that bundles more extras.",
+     "actions": [
+      "Keep Bali Standard price; pitch it as 'half the price of full-board Muslim packages' and offer a halal lunch/dinner add-on",
+      "Honeymoon Standard: add one low-cost extra (massage or Bali Swing) or trim price to beat IKHLAS by more than RM46/pax",
+      "Lead honeymoon sales with the private pool-villa night and Nusa Penida — neither IKHLAS nor HolidayGoGoGo honeymoon has both",
+      "State meal count clearly on the catalog so 'breakfast + 1 dinner' is not compared against full-board prices"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "LOP",
@@ -12057,7 +13169,99 @@
      "by": "ezie"
     }
    ],
-   "historyFrom": 91
+   "historyFrom": 91,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "pak-anang-3s": {
+      "days": "4D3N",
+      "accommodation": "3★ hotel, 3 nights",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "Full tour 4 days",
+      "usp": "Gili Trawangan snorkelling + Masjid, Sembalun or Pink Beach, Sasak villages",
+      "meals": "Full board (3B, 4L, 3D)",
+      "tipping": "Included",
+      "visa": "Not included (VoA own cost)",
+      "strength": "Cheapest per pax at every group size; full board + tipping included; tour on all 4 days",
+      "weakness": "Gili boat type not stated (vs private speedboat at competitors); 3★ only; extra activities paid by customer"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-lombok",
+      "name": "IKHLAS Travel · 4D3N Lombok (FIT)",
+      "vs": "pak-anang-3s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ Rinjani Lodge (inclusions say 2 nights)",
+       "guide": "Driver cum guide (2–5 pax)",
+       "hours": "Not stated",
+       "packaging": "3 tour days + day 4 free & easy",
+       "usp": "Sasak villages, Sendang Gile waterfall, private speedboat to Gili",
+       "meals": "2B, 3L, 2D (per inclusions)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Private speedboat Gili charter; tipping included; Muslim brand",
+       "weakness": "Most expensive; fewer meals; day 4 free & easy; inclusions list only 2 hotel nights"
+      },
+      "prices": {
+       "2": 1550,
+       "4": 1390,
+       "6": 1390,
+       "8": 1250
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/ms/my/southeastasia/indonesia/lombok/4d3n-lombok-fit · twin/triple adult, rate valid until 20 Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "selamatbercuti-lombok",
+      "name": "Selamat Bercuti · 4D3N Lombok Private Tour",
+      "vs": "pak-anang-3s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ Lombok Garden Mataram",
+       "guide": "Driver cum guide (2–6 pax); van + licensed guide (7–16 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Bukit Merese sunset, private boat to Gili, Sendang Gile & Tiu Kelep waterfalls",
+       "meals": "3B, 3L, 3D",
+       "tipping": "Excluded (RM10/pax/day)",
+       "visa": "Not stated",
+       "strength": "Private boat to Gili; 4★/5★ options; licensed guide for 7+ pax",
+       "weakness": "Tipping excluded; two conflicting price tables on page; Gili activities extra"
+      },
+      "prices": {
+       "2": 1280,
+       "4": 1150,
+       "6": 1150,
+       "8": 1050
+      },
+      "extra": 40,
+      "extraNote": "tipping RM10/pax/day × 4 days (rate stated on page)",
+      "source": "selamatbercuti.com/tours/4d3n-lombok · 3★, header table (2–3/4–6/7–9 pax), valid until Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Lombok 4D3N (3★) is the cheapest of the three at every group size. Selamat Bercuti is +13.9% to +24.9% above ARBA like-for-like (adding RM40 tipping it excludes); the gap is smallest at 8 pax (RM133/pax). IKHLAS is +30.6% to +46.6% above ARBA.\n\n## Inclusion differences\nARBA has the richest meal plan (full board incl. day-4 lunch) and tours on all 4 days. Both competitors use a **private speedboat** to Gili and visit Sendang Gile waterfall; ARBA offers Sembalun or Pink Beach instead. IKHLAS lists only 2 hotel nights and fewer meals; Selamat Bercuti excludes tipping (RM10/pax/day) but offers 4★/5★ upgrades.\n\n## Risks\nSelamat Bercuti's page shows two conflicting price tables (6 pax RM1,150 vs RM1,050). If customers see the lower table the 6-pax gap narrows. Wet season (Nov–Mar) and Gili sea conditions may hit ARBA's boat day harder if it uses shared/public boats.",
+     "actions": [
+      "Hold current pricing — ARBA leads on price at 2, 4, 6 and 8 pax",
+      "Confirm and state the Gili boat type; if it is shared, quote a private speedboat upgrade since both competitors include one",
+      "Offer a 4★ Senggigi hotel option to match Selamat Bercuti's upgrade ladder",
+      "Sales pitch: 'full board, tipping included, tour on all 4 days' versus competitors' extra tipping or free-and-easy last day"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "JOG",
@@ -12542,7 +13746,99 @@
      "at": "2026-10-13T10:07:17Z",
      "by": "ezie"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "pak-jamal-3-star": {
+      "days": "4D3N",
+      "accommodation": "3★ hotel near Malioboro, 3 nights",
+      "guide": "Driving guide",
+      "hours": "Not stated",
+      "packaging": "Full tour 4 days",
+      "usp": "Bukit Panguk sunrise, Timang jeep, Kraton, Plaosan, Merapi lava jeep",
+      "meals": "Full board (3B, 3L, 3D)",
+      "tipping": "Included",
+      "visa": "Not included (VoA own cost)",
+      "strength": "Tipping included; Merapi jeep + Timang jeep; hotel walkable to Malioboro; cheaper than IKHLAS",
+      "weakness": "Borobudur entrance excluded; RM117–187/pax above Syoknya like-for-like; extra bed for triples"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-jogja",
+      "name": "IKHLAS Travel · 4D3N Jogjakarta (FIT)",
+      "vs": "pak-jamal-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ H Boutique Hotel Jogja",
+       "guide": "Guide assistance",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Timang, Merapi jeep, Borobudur, Mangunan pines, Kraton",
+       "meals": "Full board halal (3B, 4L, 3D)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Entrance fees incl. Borobudur listed; full-board halal; tipping included",
+       "weakness": "26–41% more expensive than ARBA; flat price 4–7 pax"
+      },
+      "prices": {
+       "2": 1590,
+       "4": 1550,
+       "6": 1550,
+       "8": 1450
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/ms/my/southeastasia/indonesia/jogjakarta/4d3n-jogjakarta-fit · twin/triple adult, rate valid until 20 Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "syoknya-jogja",
+      "name": "Syoknya Travel · Pakej Jogja 4H3M (private)",
+      "vs": "pak-jamal-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ hotel, 3 nights",
+       "guide": "Driver (helps with info & photos)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Gumuk Pasir, Timang jeep, Merapi lava jeep, Malioboro",
+       "meals": "Full board halal (3B, 3L, 3D)",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Lowest price; private, no mixing; similar itinerary to ARBA",
+       "weakness": "Driver only; tipping not stated; no Kraton / temples; no validity date"
+      },
+      "prices": {
+       "2": 1100,
+       "4": 930,
+       "6": 870,
+       "8": 870
+      },
+      "extra": 40,
+      "extraNote": "tipping ~RM10/pax/day × 4 days (estimate, page silent)",
+      "source": "syoknyatravel.com/tours/pakejjogja · 4D3N column, 2026 page, no validity date, flights excluded",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Jogjakarta 4D3N (3★) sits between the two. IKHLAS is +26.5% to +41.3% above ARBA. Syoknya Travel is 9.3% to 17.0% below ARBA like-for-like (after adding ~RM40 estimated tipping), e.g. RM970 vs RM1157 at 4 pax.\n\n## Inclusion differences\nAll three are full-board halal with a 3★ hotel and Merapi + Timang jeeps. ARBA adds Kraton, Taman Sari, Plaosan and a Bukit Panguk sunrise; Syoknya skips the heritage sites and uses a driver only. IKHLAS includes Borobudur, which ARBA excludes (entrance at own cost). ARBA's hotel is walkable to Malioboro.\n\n## Risks\nSyoknya's itinerary is close to ARBA's at a visibly lower price, so price-led 4–8 pax families may defect. The excluded Borobudur ticket weakens ARBA's value story versus IKHLAS.",
+     "actions": [
+      "Review 4–8 pax tiers: ARBA is RM187 above Syoknya like-for-like at 4 pax — consider narrowing by RM50–100 at 4–8 pax",
+      "Include Borobudur entrance or show its cost upfront to compete with IKHLAS",
+      "Pitch heritage content (Kraton, Taman Sari, Plaosan) and driving guide vs Syoknya's driver-only",
+      "Highlight tipping included and Malioboro-walkable hotel in TC scripts"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "ACEH",
@@ -13389,7 +14685,98 @@
      "roomNote": "rollaway untuk triple"
     }
    ],
-   "historyFrom": 57
+   "historyFrom": 57,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "asonanggroe-3-star": {
+      "days": "4D3N",
+      "accommodation": "Included (3★ Banda Aceh)",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "Full tour 3 days + departure day",
+      "usp": "Tsunami Museum, Masjid Raya Baiturrahman, Lampuuk, Syiah Kuala tomb",
+      "meals": "Halal full board (D1 dinner, D2–3 B/L/D, D4 B)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "strength": "Tipping included; full board halal; valid to Jan 2027",
+      "weakness": "Banda Aceh only, no Sabang; driving guide, no separate guide for big groups"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-aceh-sabang",
+      "name": "IKHLAS Travel · 4D3N Aceh & Sabang (FIT)",
+      "vs": "asonanggroe-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Grand Permata Hati or similar)",
+       "guide": "Driver cum guide / tour guide",
+       "hours": "Not stated",
+       "packaging": "Full tour incl. 1 night Sabang",
+       "usp": "Adds Sabang day (KM0, Iboih), Tsunami Museum, Lampuuk; AirAsia Rewards points",
+       "meals": "Halal, per itinerary (D1 D, D2–3 B/L/D, D4 B)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Covers Sabang in same 4D3N; tipping included; big Muslim-travel brand",
+       "weakness": "Much higher price; non-refundable deposit RM365/pax"
+      },
+      "prices": {
+       "2": 1350,
+       "4": 1190,
+       "6": 1190,
+       "8": 1150
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/en/gb/southeastasia/Indonesia/aceh/4d3n-aceh-sabang-fit · twin/triple, bands 2–3/4–7/8–9 pax · valid 1 Jan–31 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "selamatbercuti-historical-aceh",
+      "name": "Selamat Bercuti · 4D3N Historical of Banda Aceh",
+      "vs": "asonanggroe-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Portola Arabia / Al Hanifi / Grand Permata Hati)",
+       "guide": "Driver cum guide (<11 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "Siron mass grave, PLTD Apung, Tsunami Museum, Lhoknga & Lampuuk grilled fish",
+       "meals": "Halal, per program (D1 L/D, D2–3 B/L/D, D4 B)",
+       "tipping": "Excluded (RM7/pax/day)",
+       "visa": "Not stated",
+       "strength": "Cheapest price; 4★ option available; very similar itinerary",
+       "weakness": "Tipping excluded; two conflicting pax-band tables on page"
+      },
+      "prices": {
+       "2": 950,
+       "4": 850,
+       "6": 850
+      },
+      "extra": 28,
+      "extraNote": "tipping RM7 × 4 days",
+      "source": "selamatbercuti.com/tours/4d3n-historical-of-banda-aceh · 3★ rate · valid until 15 Dec 2026 (low season); 8 pax skipped (page bands conflict: 7–9 RM750 vs 4–8 RM850)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Aceh Standard 4D3N (RM997 at 2 pax, RM937 at 6–8 pax) sits in the middle. Selamat Bercuti's 4D3N Historical Banda Aceh is cheaper even after adding RM28 tipping: like-for-like RM978 at 2 pax (-1.9%), RM878 at 4 pax (-9.2%) and 6 pax (-6.3%). IKHLAS Travel 4D3N Aceh & Sabang is 22.7–35.4% above ARBA (RM1,150–1,350).\n\n## Inclusion differences\n- All three use 3★ hotels, halal meals and a driver cum guide.\n- ARBA and IKHLAS include tipping; Selamat Bercuti charges RM7/pax/day on top.\n- IKHLAS fits a Sabang overnight (KM0, Iboih) into the same 4D3N, so its higher price buys a wider route.\n- ARBA keeps a 12-hour guide day and Syiah Kuala tomb; competitors do not state hours.\n\n## Risks\n- Selamat Bercuti undercuts by RM59–89 at 4–6 pax, and its page shows two conflicting pax tables, so its 8-pax rate (RM750 or RM850) is uncertain.\n- Customers comparing \"Aceh 4D3N\" may see IKHLAS's Sabang day as better value despite the price.",
+     "actions": [
+      "Trim the 4–6 pax tier by about RM60–90 to match Selamat Bercuti like-for-like (RM878)",
+      "Pitch 'tipping included, no extra cash' against Selamat Bercuti's RM7/pax/day",
+      "Position Aceh-only vs IKHLAS as a slower, deeper Banda Aceh trip; upsell the Aceh-Sabang 5D4N to customers asking about Sabang",
+      "Add a 4★ option, as Selamat Bercuti offers one"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "ACEHSBG",
@@ -14770,7 +16157,98 @@
      }
     }
    ],
-   "historyFrom": 57
+   "historyFrom": 57,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "asonanggroe-3-star": {
+      "days": "5D4N",
+      "accommodation": "Included (3★; Freddies Sabang, fan only)",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "Full tour 4 days + departure day",
+      "usp": "Sabang + Rubiah snorkelling, dolphin trip, KM0, Tsunami Museum",
+      "meals": "Halal full board (D1 dinner, D2–4 B/L/D, D5 B)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "strength": "Dolphin trip & Rubiah snorkelling built in; tipping included; 2 full Aceh days",
+      "weakness": "Sabang hotel fan-only (no aircon); dearer than 5D4N competitor"
+     }
+    },
+    "items": [
+     {
+      "id": "tmtours-aceh-sabang-5d4n",
+      "name": "TM Tours & Travel · 5D4N Banda Aceh Sabang Island Tour",
+      "vs": "asonanggroe-3-star",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (hotel not named)",
+       "guide": "Tour guide or driver cum guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + departure day",
+       "usp": "Japanese Fort, KM0, Iboih, Tsunami Museum, Lampuuk",
+       "meals": "Full board per itinerary",
+       "tipping": "Excluded (amount not stated)",
+       "visa": "Not stated",
+       "strength": "Lower price, same 5D4N length; full board",
+       "weakness": "Rubiah glass-boat optional (extra); tipping excluded; FIT may convert to group departure"
+      },
+      "prices": {
+       "2": 1140,
+       "4": 1140,
+       "6": 1140
+      },
+      "extra": 50,
+      "extraNote": "tipping, estimate RM10 × 5 days",
+      "source": "tmtours.com.my/traveldez/product/tour/package/TMT-0582-5d4n-banda-aceh-sabang-island-tour.html · twin, 2–6 pax, low season · page updated 16 Mar 2026, no validity date",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "startravel-aceh-sabang-4d3n",
+      "name": "Star Travel · 4D3N Banda Aceh + Sabang (Private)",
+      "vs": "asonanggroe-3-star",
+      "attrs": {
+       "days": "4D3N (1 day shorter)",
+       "accommodation": "Included (3★ Banda Aceh; Nagoya Inn Sabang)",
+       "guide": "Driver cum guide (<11 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "KM0, Sumur Tiga, Gapang, Iboih; ferry included",
+       "meals": "Halal, per program",
+       "tipping": "Excluded (RM7/pax/day)",
+       "visa": "Not stated",
+       "strength": "Cheaper per pax; 4★ option; valid till Mar 2027",
+       "weakness": "One day shorter; snorkelling & glass-boat extra; tipping excluded"
+      },
+      "prices": {
+       "2": 1260,
+       "4": 1090,
+       "6": 1090,
+       "8": 1090
+      },
+      "extra": 28,
+      "extraNote": "tipping RM7 × 4 days (not adjusted for 1 day shorter)",
+      "source": "startravel.com.my/tours/4d3n-banda-aceh-sabang-tour-private-tour · 3★, bands 2–3/4–8 pax · valid till Mar 2027",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Aceh-Sabang 5D4N (RM1,397 at 2 pax, RM1,297 at 6–8 pax) is the most expensive option found. TM Tours' 5D4N, after an estimated RM50 tipping, is RM1,190 at 2–6 pax: 14.8% below ARBA at 2 pax, 12.3% at 4 pax and 8.2% at 6 pax. Star Travel's 4D3N Aceh + Sabang is RM1,288 like-for-like at 2 pax (-7.8%) and RM1,118 at 4–8 pax (-17.6% at 4, -13.8% at 6–8), but it is one day shorter.\n\n## Inclusion differences\n- ARBA includes the dolphin trip and Rubiah snorkelling; TM Tours and Star Travel list snorkelling / glass-boat as optional extras.\n- ARBA includes tipping; both competitors exclude it (Star Travel RM7/pax/day; TM Tours amount not stated).\n- ARBA's Sabang hotel (Freddies) is fan-only; Star Travel offers a 4★ Sabang option (Mata Ie / Casanemo).\n\n## Risks\n- Gap of RM107–239/pax looks large on headline price before customers notice ARBA's built-in activities.\n- The fan-only Sabang hotel is a complaint risk next to air-conditioned competitor options.",
+     "actions": [
+      "Show dolphin trip + Rubiah snorkelling as priced inclusions in the catalog so the RM107–207 gap vs TM Tours is explained",
+      "Offer an air-conditioned Sabang Town hotel option (or upgrade price) beside Freddies",
+      "Review the 2-pax tier (RM1,397), where the gap to TM Tours is largest (14.8%)",
+      "Sell 'tipping + activities included, no surprises' against both competitors"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "LTOBA",
@@ -15965,7 +17443,127 @@
      }
     }
    ],
-   "historyFrom": 93
+   "historyFrom": 93,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "emiya": {
+      "days": "4D3N",
+      "accommodation": "Included (3★ Parapat, Berastagi, Medan)",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "3 tour days + shopping/F&E day 4",
+      "usp": "Samosir, Holbung, Sipiso-Piso; Option A/B (B +RM50/pax)",
+      "meals": "Local Indonesian full board (D1 L/D, D2–3 B/L/D, D4 B)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "strength": "Cheapest at 2 pax; tipping included; Option B upgrade path",
+      "weakness": "Driving guide only; 5-hr transfer day 1; Option B costs +RM50/pax"
+     }
+    },
+    "items": [
+     {
+      "id": "holidaygogogo-medan-toba",
+      "name": "HolidayGoGoGo · 4D3N Medan – Lake Toba Sightseeing",
+      "vs": "emiya",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Parapat & Berastagi, 4★ Grandhika Medan)",
+       "guide": "Driver cum guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Samosir ferry, Sipiso-Piso, Mt Sinabung view, Maimoon Palace; ulos welcome",
+       "meals": "Per itinerary (D1 L/D, D2–3 B/L/D, D4 B); halal not stated",
+       "tipping": "Excluded (RM10/pax/day)",
+       "visa": "Not stated",
+       "strength": "Same 3-stop route; 4★ in Medan; cheaper at 6 pax",
+       "weakness": "Tipping excluded; halal not stated; peak surcharges extra"
+      },
+      "prices": {
+       "2": 1239,
+       "4": 1019,
+       "6": 939,
+       "8": 939
+      },
+      "extra": 40,
+      "extraNote": "tipping RM10 × 4 days",
+      "source": "holidaygogogo.com/4d3n-medan-lake-toba-sightseeing-tour · Set A (Grandhika Medan), bands 2–3/4–5/6–8 · valid until 30 Nov 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "startravel-medan-toba",
+      "name": "Star Travel · 4D3N Medan, Lake Toba & Berastagi (Private)",
+      "vs": "emiya",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★; 1N Samosir/Parapat + 2N Medan)",
+       "guide": "Driver cum guide (<11 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "Night on Samosir, Tomok, Sipiso-Piso, Medan full-day city tour",
+       "meals": "Halal (D1 L/D, D2–3 B/L/D, D4 B)",
+       "tipping": "Excluded (RM7/pax/day)",
+       "visa": "Not stated",
+       "strength": "Halal stated; ferry included; 4★/5★ options",
+       "weakness": "No Berastagi overnight; tipping excluded; flat price 4–8 pax"
+      },
+      "prices": {
+       "2": 1240,
+       "4": 1020,
+       "6": 1020,
+       "8": 1020
+      },
+      "extra": 28,
+      "extraNote": "tipping RM7 × 4 days",
+      "source": "startravel.com.my/tours/4d3n-medan-lake-toba-tour-berastagi-1n-lake-toba-2n-medan-private-tour-min-2-to-go · 3★, bands 2–3/4–8 · valid till Mar 2027",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ikhlas-medan-parapat-brastagi",
+      "name": "IKHLAS Travel · 4D3N Medan, Parapat & Brastagi (FIT)",
+      "vs": "emiya",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Atsari Parapat, Green Garden, Swiss-Belinn Medan)",
+       "guide": "Driver cum guide (2–5); tour guide (6+)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + free time day 4",
+       "usp": "Samosir ferry, Medan city tour, welcome souvenir",
+       "meals": "Full board halal",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Tour guide from 6 pax; tipping included; strong Muslim brand",
+       "weakness": "Most expensive (+RM393–533/pax vs ARBA); RM365 non-refundable deposit"
+      },
+      "prices": {
+       "2": 1690,
+       "4": 1390,
+       "6": 1390,
+       "8": 1350
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/en/gb/southeastasia/Indonesia/medan/4d3n-medan_parapat_brastagi-fit · twin/triple, bands 2–3/4–7/8–9 · valid 1 Jan–31 Dec 2026",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared on ARBA's Parapat option (emiya). ARBA is the cheapest at 2, 4 and 8 pax. Like-for-like, HolidayGoGoGo (with RM40 tipping) is RM1,279 at 2 pax (+10.5%), RM1,059 at 4 pax (+6.2%), RM979 at 6 pax (+2.3%) and 8 pax (+7.9%). Star Travel (with RM28 tipping) is 5.1–15.5% above ARBA. IKHLAS is 39.4–48.8% above ARBA (RM1,350–1,690).\n\n## Inclusion differences\n- HolidayGoGoGo follows the same Parapat–Berastagi–Medan route and adds a 4★ hotel in Medan; its page does not state halal.\n- Star Travel sleeps on Samosir and gives Medan a full city-tour day, with no Berastagi night.\n- IKHLAS gives a tour guide from 6 pax and a welcome souvenir; tipping included, as at ARBA.\n- ARBA includes tipping; HolidayGoGoGo (RM10/pax/day) and Star Travel (RM7/pax/day) do not.\n\n## Risks\n- At 6 pax HolidayGoGoGo's headline RM939 is below ARBA's RM957; only tipping makes ARBA cheaper.\n- ARBA's Option B adds RM50/pax (RM1,007 at 6 pax), which puts ARBA RM28 above HolidayGoGoGo like-for-like.",
+     "actions": [
+      "Keep current pricing; ARBA leads on like-for-like price at all pax counts",
+      "Put 'tipping included' in the price line, since headline competitor prices look close at 6 pax",
+      "Mention halal arrangement clearly vs HolidayGoGoGo, which does not state halal",
+      "Consider a 4★ Medan night upgrade to match HolidayGoGoGo"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PDG",
@@ -16742,7 +18340,138 @@
      },
      "roomNote": "Bilik triple sedia ada"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "herman": {
+      "days": "4D3N",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "Full tour 3 days + Padang day 4",
+      "usp": "Anai, Pandai Sikek, Lembah Harau, Pagaruyung, Puncak Lawang, Masjid Raya Sumbar",
+      "meals": "Local Indonesian full board (D1 L/D, D2–3 B/L/D, D4 B)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "accommodation": "Included (3★ Bukittinggi 2N, Padang 1N)",
+      "strength": "Below IKHLAS at every pax; tipping included; day-4 Padang sights before flight",
+      "weakness": "Dearer than Selamat Bercuti at 4–6 pax; 3★ double rooms only (extra bed for triple)"
+     },
+     "herman-4s": {
+      "days": "4D3N",
+      "guide": "Driving guide",
+      "hours": "12 hrs",
+      "packaging": "Full tour 3 days + Padang day 4",
+      "usp": "Anai, Pandai Sikek, Lembah Harau, Pagaruyung, Puncak Lawang, Masjid Raya Sumbar",
+      "meals": "Local Indonesian full board (D1 L/D, D2–3 B/L/D, D4 B)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "accommodation": "Included (4★; catalog shows 3★ version, same route assumed)",
+      "strength": "4★ comfort; tipping included",
+      "weakness": "RM179/pax above Selamat Bercuti 4★ like-for-like at 4–6 pax"
+     }
+    },
+    "items": [
+     {
+      "id": "selamatbercuti-padang-3s",
+      "name": "Selamat Bercuti · 4D3N Padang – Bukittinggi (3★ Silver)",
+      "vs": "herman",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★, 2N Bukittinggi + 1N Padang)",
+       "guide": "Driver cum guide (<11 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Harau, Kelok 9, Pagaruyung, Jam Gadang, Puncak Lawang, Siti Nurbaya",
+       "meals": "Halal (D1 L/D, D2–3 B/L/D, D4 B)",
+       "tipping": "Excluded (RM7/pax/day)",
+       "visa": "Not stated",
+       "strength": "Lowest price at 4–6 pax; near-identical route",
+       "weakness": "Tipping excluded; conflicting pax bands on page"
+      },
+      "prices": {
+       "2": 1100,
+       "4": 880,
+       "6": 880
+      },
+      "extra": 28,
+      "extraNote": "tipping RM7 × 4 days",
+      "source": "selamatbercuti.com/tours/4d3n-padang-bukittinggi · 3★ · valid until Dec 2026 (low season); 8 pax skipped (bands conflict 7–9 RM780 vs 4–8 RM880)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ikhlas-padang-bukittinggi",
+      "name": "IKHLAS Travel · 4D3N Padang & Bukit Tinggi (FIT)",
+      "vs": "herman",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★+ favehotel Olo Padang, Atiyan Bukittinggi)",
+       "guide": "1 driver cum tour guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "Ngarai Sianok, Lake Singkarak, Maninjau, Pasar Raya Padang",
+       "meals": "Halal B/L/D",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Tipping included; Muslim brand; online booking",
+       "weakness": "RM253–493/pax dearer than ARBA; RM365 non-refundable deposit"
+      },
+      "prices": {
+       "2": 1590,
+       "4": 1250,
+       "6": 1250,
+       "8": 1150
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/en/gb/southeastasia/Indonesia/padang/4d3n-padang-bukit-tinggi-fit · twin/triple, bands 2–3/4–7/8–9 · valid until 20 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "selamatbercuti-padang-4s",
+      "name": "Selamat Bercuti · 4D3N Padang – Bukittinggi (4★ Gold)",
+      "vs": "herman-4s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (4★, 2N Bukittinggi + 1N Padang)",
+       "guide": "Driver cum guide (<11 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Same route as 3★ tier",
+       "meals": "Halal (D1 L/D, D2–3 B/L/D, D4 B)",
+       "tipping": "Excluded (RM7/pax/day)",
+       "visa": "Not stated",
+       "strength": "Cheapest 4★ option found",
+       "weakness": "Tipping excluded; conflicting pax bands on page"
+      },
+      "prices": {
+       "2": 1180,
+       "4": 990,
+       "6": 990
+      },
+      "extra": 28,
+      "extraNote": "tipping RM7 × 4 days",
+      "source": "selamatbercuti.com/tours/4d3n-padang-bukittinggi · 4★ · valid until Dec 2026 (low season); 8 pax skipped (bands conflict)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nBoth ARBA tiers compared (herman 3★, herman-4s 4★). 3★: Selamat Bercuti, with RM28 tipping added, is RM1,128 at 2 pax (+2.8%) but RM908 at 4–6 pax (-5.1%, RM49 below ARBA's RM957). IKHLAS is 28.2–44.9% above ARBA (RM1,150–1,590). 4★: Selamat Bercuti Gold is RM1,208 at 2 pax (-9.6%) and RM1,018 at 4–6 pax (-15.0%, RM179 below ARBA's RM1,197).\n\n## Inclusion differences\n- All three run the same core route (Anai, Harau/Pagaruyung, Ngarai Sianok, Maninjau, Padang) with 2N Bukittinggi + 1N Padang and halal meals.\n- ARBA and IKHLAS include tipping; Selamat Bercuti charges RM7/pax/day.\n- IKHLAS adds Lake Singkarak; Selamat Bercuti adds an optional Minang dance night.\n\n## Risks\n- The ARBA 4★ tier is uncompetitive vs Selamat Bercuti Gold at every priced pax count.\n- ARBA's 4★ catalog is not published; the comparison assumes the same route as 3★.\n- Selamat Bercuti's 8-pax rate is unclear (pax bands conflict), so the 8-pax comparison is missing.",
+     "actions": [
+      "Cut the 4★ tier toward RM1,020–1,050 at 4–6 pax or justify it with named 4★ hotels",
+      "Trim the 3★ 4–6 pax tier by about RM50 to match Selamat Bercuti like-for-like",
+      "Publish a 4★ catalog with hotel names",
+      "Sell vs IKHLAS on price: RM253–493/pax cheaper with the same tipping-included basis"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "JBDO",
@@ -17335,7 +19064,98 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "ctrans": {
+      "days": "4D3N",
+      "accommodation": "3★ hotel Bandung, 3 nights",
+      "guide": "Driving guide",
+      "hours": "Not stated",
+      "packaging": "Full tour 4 days",
+      "usp": "Whoosh train Jakarta–Bandung, Kawah Putih or kid-friendly day, Maribaya, Floating Market",
+      "meals": "Full board (3B, 3L, 3D)",
+      "tipping": "Included",
+      "visa": "Not included (VoA own cost)",
+      "strength": "Cheapest at every size; Whoosh included; tipping included; IKHLAS is 51% dearer at 2 pax",
+      "weakness": "All 3 nights in Bandung (little Jakarta time); 3★ vs 4★ at Minhakim; 1 luggage per pax limit"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-jkt-bdo",
+      "name": "IKHLAS Travel · 4D3N Jakarta & Bandung (Speed Train)",
+      "vs": "ctrans",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "3★ Indies Hotel Bandung + HORU Mangga Dua Jakarta",
+       "guide": "Driver cum guide (2–6 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Whoosh Bandung–Jakarta, Maribaya, Floating Market, Monas & Istiqlal",
+       "meals": "Full board halal (3B, 3L, 3D)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Whoosh + full board + tipping included; Jakarta night & city tour",
+       "weakness": "2–3 pax RM1,950; no Kawah Putih; flat price 4–7 pax"
+      },
+      "prices": {
+       "2": 1950,
+       "4": 1550,
+       "6": 1550,
+       "8": 1490
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/ms/my/southeastasia/indonesia/jakarta/4d3n-jakarta-bandung-fit · twin/triple adult, rate valid until 20 Dec 2026, flights excluded",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "minhakim-jkt-bdo",
+      "name": "Minhakim Travels · Pakej Private Jakarta Bandung 4H3M",
+      "vs": "ctrans",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "4★ hotel (Bandung + Jakarta)",
+       "guide": "Malay-speaking driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days",
+       "usp": "Lembang or Ciwidey/Kawah Putih (+RM20), TMII, Monas/Istiqlal",
+       "meals": "3B + lunches & dinners per itinerary",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "4★ hotels; Malay-speaking driver; Jakarta night",
+       "weakness": "Min 4 pax; Whoosh is optional extra (drives Cipularang); RM1,000/pax non-refundable deposit; no validity date"
+      },
+      "prices": {
+       "4": 1315,
+       "6": 1315,
+       "8": 1235
+      },
+      "extra": 94,
+      "extraNote": "Whoosh one way ~IDR 200,000 = RM54 + tipping ~RM40 (estimates)",
+      "source": "minhakimtravels.com/product/pakej-private-jakarta-bandung-4h3m · 4–7 / 8–10 pax bands, no validity date, flights excluded, IDR @0.00027",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Jakarta–Bandung 4D3N is the cheapest at every pax. IKHLAS is +50.9% to +57.0% above ARBA (RM1950 vs RM1287 at 2 pax). Minhakim (min 4 pax) is +34.7% to +42.8% above like-for-like, after adding an estimated RM94 for the Whoosh ticket and tipping it does not include.\n\n## Inclusion differences\nARBA and IKHLAS both include Whoosh, full board and tipping; IKHLAS rides it Bandung→Jakarta and spends a night in Jakarta with Monas/Istiqlal. Minhakim uses 4★ hotels and a Malay-speaking driver but drives the Cipularang toll road unless Whoosh is bought. ARBA alone offers a Kawah Putih vs kid-friendly choice on day 2.\n\n## Risks\nMinhakim's 4★ hotels and Malay-speaking driver can justify its premium to some families. ARBA spends all nights in Bandung, so Jakarta-focused customers may prefer IKHLAS or Minhakim.",
+     "actions": [
+      "Keep pricing; ARBA leads at all pax sizes, especially 2–3 pax",
+      "Offer a Jakarta-night variant (2N Bandung + 1N Jakarta) to match IKHLAS and Minhakim",
+      "Add an optional 4★ hotel supplement to answer Minhakim",
+      "Sales pitch: 'Whoosh + full board + tipping included' and the Kawah Putih / kids-day choice"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "SUBB",
@@ -17972,7 +19792,127 @@
      },
      "roomNote": "Extra bed untuk triple"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "pak-jamal-s-b-m": {
+      "days": "4D3N",
+      "accommodation": "Included (3★ / homestay in Bromo)",
+      "guide": "Driving guide",
+      "hours": "Not stated",
+      "packaging": "Full tour 3 days + departure day",
+      "usp": "Bromo sunrise jeep, Masjid Tiban, Coban Rondo, Santerra, Kajoetangan",
+      "meals": "Breakfast only (3×)",
+      "tipping": "Included",
+      "visa": "Not required (MY passport, visa-free)",
+      "strength": "Mid-priced; tipping included; Bromo jeep included",
+      "weakness": "No lunch/dinner while all competitors are full board; submarine museum entry excluded; Bromo homestay"
+     }
+    },
+    "items": [
+     {
+      "id": "ikhlas-surabaya-bromo-malang",
+      "name": "IKHLAS Travel · 4D3N Surabaya, Bromo & Malang (FIT)",
+      "vs": "pak-jamal-s-b-m",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Zest Surabaya, Whiz Prime Malang; 2★ Grand Whiz Bromo)",
+       "guide": "Driver cum guide (2–6 pax)",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "Bromo sunrise jeep, Chengho Mosque, Red Bridge, Submarine Monument",
+       "meals": "Full board halal (B/L/D)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Full board halal; tipping & jeep included; named hotels",
+       "weakness": "Dearer at 2–6 pax; RM365 non-refundable deposit"
+      },
+      "prices": {
+       "2": 1950,
+       "4": 1650,
+       "6": 1650,
+       "8": 1290
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "ikhlas.com/travel/en/gb/southeastasia/Indonesia/surabaya-bromo-malang/4d3n-surabaya-bromo-malang-fit · twin/triple, bands 2–3/4–7/8–9 · valid 1 Jan–31 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "nuh-surabaya-bromo",
+      "name": "Nuh Travel · Pakej Surabaya Bromo 4D3N (Nuh2Go Private)",
+      "vs": "pak-jamal-s-b-m",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Fave Surabaya, Regent Park Malang, Nadia Bromo)",
+       "guide": "Tour guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure day",
+       "usp": "Bromo jeep, Sunan Ampel, Masjid Tiban, Coban Rondo, Santerra",
+       "meals": "Per programme (D1 L/D, D2–3 B/L/D, D4 B); halal not stated",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Tour guide; full board; tipping included",
+       "weakness": "Highest price at 2–6 pax"
+      },
+      "prices": {
+       "2": 2090,
+       "4": 1690,
+       "6": 1650,
+       "8": 1490
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "nuhtravel.com.my/tour/pakej-surabaya-bromo · 3★, bands 2–3/4–5/6–7/8–10 · valid until Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "syoknya-surabaya-bromo-malang",
+      "name": "Syoknya Travel · Pakej Surabaya + Bromo + Malang 4H3M (Private)",
+      "vs": "pak-jamal-s-b-m",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (Bromo chalet, Malang hotel, 3★ Surabaya)",
+       "guide": "Driver cum guide",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + free/departure day 4",
+       "usp": "Bromo jeep & permit, Rumah Warna Warni, Masjid Turen, Tanggulangin",
+       "meals": "3B/3L/3D",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Cheapest at every pax; full board",
+       "weakness": "Bromo chalet; tipping not stated; no validity date"
+      },
+      "prices": {
+       "2": 1345,
+       "4": 979,
+       "6": 994,
+       "8": 964
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "syoknyatravel.com/tours/pakejbromo · per-pax price by group size · page titled 2026, no validity date",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared on Surabaya-Bromo-Malang 4D3N (pak-jamal-s-b-m); the Surabaya-Malang package was skipped (no like competitor found). ARBA (RM1,397 at 2 pax, RM1,097 at 8 pax) is in the middle. Syoknya Travel is cheaper at every pax: -3.7% at 2 pax, -18.2% at 4 pax (RM979), -17.0% at 6 pax and -12.1% at 8 pax. IKHLAS is 17.6–39.6% above ARBA and Nuh Travel 35.8–49.6% above.\n\n## Inclusion differences\n- Every competitor includes lunch and dinner (full board); ARBA includes breakfast only.\n- ARBA, IKHLAS and Nuh include tipping; Syoknya does not state it.\n- All include the Bromo sunrise jeep. Nuh gives a tour guide; others a driver cum guide.\n- ARBA excludes submarine museum entry; IKHLAS includes the Submarine Monument.\n\n## Risks\n- On a full-board basis the gap vs Syoknya is wider than the headline numbers suggest, since ARBA customers also pay for 6 meals.\n- IKHLAS's 8-pax price (RM1,290) is only RM193 above ARBA while adding all lunches and dinners.",
+     "actions": [
+      "Add lunch and dinner (full board halal) and reprice, or show meals as a clear add-on price",
+      "Review the 4–6 pax tier (RM1,197), where Syoknya is RM203–218 cheaper",
+      "Include submarine museum entry to remove a small irritation",
+      "Pitch tipping included and a hotel (not chalet) where possible vs Syoknya"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "DLMNHCM",
@@ -18718,7 +20658,140 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "ibrahim-4d3n": {
+      "days": "4D3N",
+      "accommodation": "Included (3★, 2N Dalat + 1N HCM)",
+      "guide": "Driving guide",
+      "hours": "8–10 hrs (long drives 3–8 hrs)",
+      "packaging": "Full tour 3 days + half-day F&E",
+      "usp": "Mongo Land Rainbow Slide + Datanla Alpine Coaster incl., Mui Ne dunes, telekung warehouse stop",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Full board + tipping included; both Dalat rides included; similar price to Ayyash Faruq at 4–6 pax",
+      "weakness": "Driving guide only (not Malay-speaking); 2-pax price above ZFB; jeep at dunes optional"
+     },
+     "ibrahim-5d4n": {
+      "days": "5D4N",
+      "accommodation": "Included (3★, 2N Dalat + 2N HCM)",
+      "guide": "Driving guide",
+      "hours": "8–10 hrs",
+      "packaging": "Full tour 4 days + half-day F&E",
+      "usp": "+ Mekong Delta day (4 islands, horse-cart, fabric market)",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Full board + tipping included; Mekong day; within ~4% of Ayyash Faruq at every pax",
+      "weakness": "No cheaper than Ayyash Faruq, which offers a Malay-speaking guide; jeep optional"
+     }
+    },
+    "items": [
+     {
+      "id": "ayyash-hcm-4h3m",
+      "name": "Ayyash Faruq Travel · 4H3M Ho Chi Minh + Dalat + Mui Ne (Private)",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★, 2N Dalat + 1N HCM)",
+       "guide": "Cambodian-Malay tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + F&E last morning",
+       "usp": "Malay-speaking guide; Rainbow Slide + Alpine Coaster incl.; white/yellow dunes",
+       "meals": "Full board, 100% halal",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; same itinerary & rides as ARBA; cheaper at 8 pax",
+       "weakness": "Tipping not stated; jeep RM170/jeep extra; no validity date"
+      },
+      "prices": {
+       "2": 1797,
+       "4": 1317,
+       "6": 1257,
+       "8": 1067
+      },
+      "extra": 0,
+      "extraNote": "none; tipping not stated (may be extra)",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=137 · 'Harga semasa', no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "zfb-hcm-dalat-4d3n",
+      "name": "ZFB Travel · 4D3N Ho Chi Minh – Dalat – Mui Ne – HCM",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3–4★, 1N Dalat + 2N HCM)",
+       "guide": "Malay- or English-speaking guide",
+       "hours": "Not stated",
+       "packaging": "Fly into Dalat; 2 tour days + Mekong day",
+       "usp": "Mekong Delta private boat, Crazy House, Robin Hill, free SIM; no Mui Ne stop in itinerary",
+       "meals": "2 halal meals + breakfasts only",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Lowest price at 6–8 pax; Malay-speaking guide option; free SIM",
+       "weakness": "Only 2 halal meals; flies into Dalat (Lien Khuong) — extra domestic flight; no Mui Ne in day plan"
+      },
+      "prices": {
+       "2": 1690,
+       "4": 1290,
+       "6": 1090,
+       "8": 990
+      },
+      "extra": 125,
+      "extraNote": "estimate: ~5 halal meals ARBA includes at ~RM25 each",
+      "source": "zfbtravel.com/packages/4d3n-ho-chi-minh-dalat-mui-ne-ho-chi-minh · valid until 31 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ayyash-hcm-5h4m",
+      "name": "Ayyash Faruq Travel · 5H4M Ho Chi Minh + Dalat + Mui Ne + Mekong (Private)",
+      "vs": "ibrahim-5d4n",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★, 2N Dalat + 2N HCM)",
+       "guide": "Cambodian-Malay tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + F&E last morning",
+       "usp": "Malay-speaking guide; Mekong boat + sampan; Rainbow Slide + Alpine Coaster incl.",
+       "meals": "Full board, 100% halal",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; same route & full board; 1–4% cheaper",
+       "weakness": "Tipping not stated; jeep RM170/jeep extra; no validity date"
+      },
+      "prices": {
+       "2": 1857,
+       "4": 1567,
+       "6": 1437,
+       "8": 1227
+      },
+      "extra": 0,
+      "extraNote": "none; tipping not stated (may be extra)",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=133 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is priced in line with the market here. 4D3N vs Ayyash Faruq: competitor is -6% to +7% vs ARBA (dearer at 2 pax +7%, cheaper at 8 pax -6%). ZFB Travel looks -13% at 8 pax, but after adding ~RM125 for meals it is only -2% to +8% like-for-like. 5D4N vs Ayyash Faruq: -4% to -1%, i.e. ARBA is marginally dearer at every pax.\n\n## Inclusion differences\nAyyash Faruq copies ARBA almost exactly (same 2N Dalat + Mui Ne + HCM route, Rainbow Slide + Alpine Coaster, full halal board) but adds a Malay-speaking guide. ZFB gives only 2 halal meals, flies into Dalat and skips Mui Ne. ARBA states tipping is included; neither competitor does.\n\n## Risks\nNear-identical product at a near-identical price means customers choose on guide language; ARBA's driving guide loses that comparison. Competitor prices carry no validity date and may move.",
+     "actions": [
+      "Lead the sales pitch with 'tipping included + full board' since Ayyash Faruq and ZFB do not state tipping",
+      "Trim the 5D4N 6–8 pax tiers by ~RM40–50 to sit at or below Ayyash Faruq (-3% / -4% gap today)",
+      "Check with the Vietnam operator if a Malay-speaking (Cham/Cambodian-Malay) guide can be offered as an add-on",
+      "Consider including the Mui Ne jeep (competitors charge ~RM170/jeep) as a visible USP at 2–4 pax"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PQC",
@@ -19383,7 +21456,140 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "ibrahim-4d3n": {
+      "days": "4D3N",
+      "accommodation": "Included (3★, Sunset Town)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs",
+      "packaging": "Full tour 3 days + F&E last morning",
+      "usp": "Hon Thom cable car + Aquatopia, VinWonders + Safari, Grand World, Teddy Bear Museum",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Full board; all major tickets incl. Teddy Bear Museum; tipping included",
+      "weakness": "15–30% dearer than Ayyash Faruq like-for-like; driving guide, not Malay-speaking; repeat same restaurant"
+     },
+     "ibrahim-5d4n": {
+      "days": "5D4N",
+      "accommodation": "Included (3★, Sunset Town)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs",
+      "packaging": "Full tour 4 days + F&E last morning",
+      "usp": "+ VinWonders Aquarium, Tranh Stream, Sanato Beach",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Full board; most complete island coverage; tipping included",
+      "weakness": "12–30% dearer than Ayyash Faruq; gap widest at 6–8 pax"
+     }
+    },
+    "items": [
+     {
+      "id": "ayyash-pqc-4h3m",
+      "name": "Ayyash Faruq Travel · 4H3M Phu Quoc Family Fun (Private)",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included ('comfortable hotel', star not stated)",
+       "guide": "Malay/English-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + F&E last morning",
+       "usp": "Hon Thom cable car, Safari + VinWonders combo, Venice boat incl.; Malay guide",
+       "meals": "B/D daily + Day 1 lunch (halal; café dinner D2)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; same key tickets; tipping included; much cheaper",
+       "weakness": "Hotel star not stated; 2 lunches not included; Aquatopia/Grand World ticket not confirmed"
+      },
+      "prices": {
+       "2": 1997,
+       "4": 1617,
+       "6": 1437,
+       "8": 1337
+      },
+      "extra": 50,
+      "extraNote": "estimate: 2 lunches ARBA includes at ~RM25",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=259 · 'Harga semasa', no validity date",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "zfb-pqc-4d3n",
+      "name": "ZFB Travel · 4D3N Phu Quoc Private Halal Tour",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★, 4★ upgrade)",
+       "guide": "Malay/English-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "2.5 tour days + F&E",
+       "usp": "Grand World, Hon Thom cable car + Aquatopia; free SIM",
+       "meals": "Breakfast + 1 lunch",
+       "tipping": "Excluded",
+       "visa": "Not stated",
+       "strength": "Lowest headline price; Malay-speaking guide option",
+       "weakness": "VinWonders & Safari excluded (optional upgrade); few meals; tipping extra"
+      },
+      "prices": {
+       "2": 1790,
+       "4": 1390,
+       "6": 1290,
+       "8": 1190
+      },
+      "extra": 400,
+      "extraNote": "estimate: VinWonders + Safari ~RM230, ~5 halal meals ~RM125, tipping ~RM45",
+      "source": "zfbtravel.com/packages/4d3n-phu-quoc · valid until 31 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ayyash-pqc-5h4m",
+      "name": "Ayyash Faruq Travel · 5H4M Phu Quoc Lengkap (Private)",
+      "vs": "ibrahim-5d4n",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included ('comfortable hotel', star not stated)",
+       "guide": "Malay/English-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + F&E last morning",
+       "usp": "North–south island incl. Tranh Stream, pearl & pepper farm, cable car, Safari + VinWonders",
+       "meals": "Near full board (D3 lunch not listed; café dinners)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; tipping included; 12–30% cheaper",
+       "weakness": "Hotel star not stated; café dinners not stated halal"
+      },
+      "prices": {
+       "2": 2497,
+       "4": 2017,
+       "6": 1707,
+       "8": 1647
+      },
+      "extra": 25,
+      "extraNote": "estimate: 1 lunch ARBA includes",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=260 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "Seasons: ARBA's Phu Quoc brief has one rate per tier, so no season pick was needed.\n\n## Price position (ARBA Selling Price)\nARBA is the most expensive private Phu Quoc option found. 4D3N: Ayyash Faruq is -30% to -17% vs ARBA (-28% to -15% like-for-like); ZFB Travel is -38% to -25% (-20% to -9% after adding estimated VinWonders/Safari, meals and tipping). 5D4N: Ayyash Faruq is -31% to -13% (-30% to -12% like-for-like). The gap widens with group size.\n\n## Inclusion differences\nARBA has full board and includes Teddy Bear Museum, Safari, VinWonders and the cable car. Ayyash Faruq includes the same big tickets and tipping, with a Malay-speaking guide, but leaves out 1–2 lunches. ZFB excludes VinWonders/Safari and tipping.\n\n## Risks\nA customer comparing online will see Ayyash Faruq RM540–620 cheaper per pax at 4–8 pax for a near-identical day plan. Competitor hotel grade is not stated (could be below 3★).",
+     "actions": [
+      "Review the 4D3N 4–8 pax tiers: Ayyash Faruq is -25% / -28% / -26% vs ARBA like-for-like at 4/6/8 pax; target closing at least half the gap",
+      "Check the supplier cost for Sunset Town hotels — Ayyash Faruq's unstated hotel grade may explain part of the gap; if so, name ARBA's hotel in the catalog",
+      "Sell full board + Teddy Bear Museum + tipping included as the 'no hidden cost' pitch vs ZFB",
+      "Ask the operator for a Malay-speaking guide option, which both competitors offer"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "HNSH",
@@ -20131,7 +22337,140 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "ibrahim-5d4n": {
+      "days": "5D4N",
+      "accommodation": "Included (3★: 1N Sapa, 2N Hanoi, 1N Halong cruise)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs (Sapa drive 6–8 hrs)",
+      "packaging": "Full tour 4 days + departure",
+      "usp": "Overnight Halong cruise + kayak, Fansipan cable car, Mega Grand World",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Only one with an overnight Halong cruise; tipping included; on par with Ayyash Faruq at 4–8 pax",
+      "weakness": "2-pax price 21% above Ayyash Faruq; only 1 night in Sapa; driving guide"
+     },
+     "ibrahim-4d3n": {
+      "days": "4D3N",
+      "accommodation": "Included (3★: 1N Sapa, 2N Hanoi)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs (Sapa drive 6–8 hrs)",
+      "packaging": "Full tour 3 days + departure",
+      "usp": "Fansipan cable car + train, Masjid Al Noor, Hanoi Old Quarter",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Cheapest private Hanoi–Sapa found at 2–6 pax; tipping & full board included",
+      "weakness": "Only 1 night in Sapa; long road transfer both ways"
+     }
+    },
+    "items": [
+     {
+      "id": "ayyash-hanoi-sapa-halong-5h4m",
+      "name": "Ayyash Faruq Travel · 5H4M Hanoi + Sapa + Ha Long Bay (Private)",
+      "vs": "ibrahim-5d4n",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★: 2N Sapa, 2N Hanoi)",
+       "guide": "English-speaking tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + departure",
+       "usp": "2 nights Sapa, Fansipan monorail + cable car, Halong day cruise",
+       "meals": "Full board (halal)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Flat price 2–4 pax (cheaper for couples); 2 nights Sapa; tipping included",
+       "weakness": "Halong day cruise only (no overnight); English guide; no validity date"
+      },
+      "prices": {
+       "2": 2597,
+       "4": 2597,
+       "6": 2397,
+       "8": 2397
+      },
+      "extra": 0,
+      "extraNote": "none (Halong is day cruise vs ARBA overnight — ARBA value not priced in)",
+      "source": "ayyashfaruq.com/component/sppagebuilder/page/167 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ayyash-hanoi-sapa-4h3m",
+      "name": "Ayyash Faruq Travel · 4H3M Hanoi + Sapa + Fansipan (Private)",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★: 1N sleeper train, 1N Sapa, 1N Hanoi)",
+       "guide": "English-speaking tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Sleeper train to Sapa, Fansipan, Lao Chai/Ta Van trek",
+       "meals": "Full board (halal)",
+       "tipping": "Included",
+       "visa": "Not stated",
+       "strength": "Sleeper train saves a road day; village trek; tipping included",
+       "weakness": "Dearer than ARBA at 2–6 pax; a night on the train instead of a hotel"
+      },
+      "prices": {
+       "2": 2497,
+       "4": 2437,
+       "6": 2117,
+       "8": 1737
+      },
+      "extra": 0,
+      "extraNote": "none",
+      "source": "ayyashfaruq.com/component/sppagebuilder/page/164 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "holidaygogogo-hanoi-sapa-4h3m",
+      "name": "HolidayGoGoGo · 4H3M Leisure Muslim Hanoi & Sapa",
+      "vs": "ibrahim-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★: 2N Sapa, 1N Hanoi)",
+       "guide": "English-speaking tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "2 nights Sapa, Fansipan cable car + train, Masjid Al-Noor",
+       "meals": "Halal per itinerary (breakfast buffet not fully halal)",
+       "tipping": "Excluded (USD3/pax/day)",
+       "visa": "Excluded (if applicable)",
+       "strength": "2 nights in Sapa; Fansipan incl.; clear 2026 validity",
+       "weakness": "Most expensive at 2–6 pax; tipping extra; English guide only"
+      },
+      "prices": {
+       "2": 2935,
+       "4": 2935,
+       "6": 2385,
+       "8": 1970
+      },
+      "extra": 50,
+      "extraNote": "tipping USD3 × 4 days ≈ RM50",
+      "source": "holidaygogogo.com/4h3m-pakej-leisure-muslim-hanoi-sapa/ · valid until Dec 2026",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n5D4N: Ayyash Faruq is -21% to +1% vs ARBA — ARBA is 26% dearer at 2 pax but within 3% at 4–8 pax. 4D3N Hanoi–Sapa: ARBA is the cheapest found at 2–6 pax; Ayyash Faruq is -7% to +14% and HolidayGoGoGo +8% to +40% like-for-like (incl. ~RM50 tipping). Only at 8 pax does Ayyash Faruq undercut ARBA (-7%).\n\n## Inclusion differences\nARBA 5D4N is the only package found with an overnight Halong cruise; Ayyash Faruq uses a day cruise but gives 2 nights in Sapa. Both competitors use English-speaking guides. HolidayGoGoGo excludes tipping; Ayyash Faruq and ARBA include it.\n\n## Risks\nARBA's 2-pax 5D4N tier stands out for couples. One night in Sapa with 6–8 hr drives each way may feel rushed vs competitors' 2 nights / sleeper train.",
+     "actions": [
+      "Reduce the 5D4N 2-pax tier (RM3277) toward RM2,800–2,900; it is now 26% above Ayyash Faruq's flat 2–4 pax price of RM2,597",
+      "Market the overnight Halong cruise as the headline USP — no Malaysian competitor found includes it",
+      "Promote the 4D3N as best value at 2–6 pax; review the 8-pax tier (RM1,877) where Ayyash Faruq is cheaper",
+      "Consider a 2-night Sapa or sleeper-train option to answer the 'too much driving' objection"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "DADH",
@@ -20954,7 +23293,112 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "bismillah-4d3n": {
+      "days": "4D3N",
+      "accommodation": "Included (3★)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs",
+      "packaging": "Full tour 3 days + F&E last morning",
+      "usp": "Bana Hills cable car, Champa Museum, coconut basket boat, Son Tra night market",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Full board; tipping included; Champa Museum + basket boat incl.",
+      "weakness": "11–28% above Ayyash Faruq; driving guide, not Malay-speaking; Alpine Coaster extra"
+     },
+     "bismillah-5d4n": {
+      "days": "5D4N",
+      "accommodation": "Included (3★)",
+      "guide": "Driving guide",
+      "hours": "~10 hrs",
+      "packaging": "Full tour 4 days + F&E last morning",
+      "usp": "+ Han River Cruise, Asia Park",
+      "meals": "Full board (halal)",
+      "tipping": "Included",
+      "visa": "Not needed (visa-free)",
+      "strength": "Han River Cruise + Asia Park incl.; tipping included",
+      "weakness": "19–24% above Ayyash Faruq, which adds a Hue day; flat 2–4 pax price"
+     }
+    },
+    "items": [
+     {
+      "id": "ayyash-danang-4h3m",
+      "name": "Ayyash Faruq Travel · 4H3M Danang + Hoi An (Private)",
+      "vs": "bismillah-4d3n",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★/4★, Gemma Hotel or similar)",
+       "guide": "Malay-speaking tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Malay guide, Bana Hills cable car + halal buffet lunch, basket boat, free SIM",
+       "meals": "Full board (halal)",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide; 3★/4★ hotel; much cheaper",
+       "weakness": "Tipping not stated; no Champa Museum; no validity date"
+      },
+      "prices": {
+       "2": 1457,
+       "4": 1457,
+       "6": 1397,
+       "8": 1247
+      },
+      "extra": 0,
+      "extraNote": "none; tipping not stated (may be extra)",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=256 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ayyash-danang-hue-5h4m",
+      "name": "Ayyash Faruq Travel · 5H4M Danang + Hoi An + Hue (Private)",
+      "vs": "bismillah-5d4n",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★/4★, Gemma Hotel or similar)",
+       "guide": "Malay-speaking tour guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + departure",
+       "usp": "+ Hue via Hai Van Pass, Malay guide, free SIM",
+       "meals": "Full board (halal)",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Adds Hue / Hai Van Pass; Malay guide; ~20% cheaper",
+       "weakness": "Tipping not stated; no Han River cruise / Asia Park; no validity date"
+      },
+      "prices": {
+       "2": 1697,
+       "4": 1697,
+       "6": 1677,
+       "8": 1497
+      },
+      "extra": 0,
+      "extraNote": "none; tipping not stated (may be extra)",
+      "source": "ayyashfaruq.com/index.php?option=com_sppagebuilder&view=page&id=257 · no validity date (site © 2026)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is clearly above the market. 4D3N: Ayyash Faruq is -28% to -11% vs ARBA, widest for couples (-28% at 2 pax). 5D4N: Ayyash Faruq is -24% to -19% and also adds a Hue day. Even adding ~RM50 for unstated tipping, Ayyash Faruq stays well below ARBA at every pax.\n\n## Inclusion differences\nBoth include full halal board, Bana Hills cable car and the basket boat. ARBA adds Champa Museum (4D3N) or Han River Cruise + Asia Park (5D4N) and states tipping is included. Ayyash Faruq offers a Malay-speaking guide, 3★/4★ hotel, a halal buffet at Bana Hills, a free SIM and, in 5H4M, Hue via Hai Van Pass. Sun Getaways (US$194 'per pax', basis not stated, excludes cable car) was not used.\n\n## Risks\nDanang is a high-search destination; a 20%+ gap against a Malaysian Muslim agency with a Malay guide will cost conversions, especially for 2–4 pax.",
+     "actions": [
+      "Re-cost the 4D3N 2–4 pax tiers (Ayyash Faruq is -28% / -18% vs ARBA at 2 / 4 pax)",
+      "Restructure the 5D4N: either add a Hue / Hai Van Pass day or close the RM400–480 gap at 2–6 pax",
+      "Ask the Danang operator for a Malay-speaking guide quote; it is now the norm among Malaysian competitors",
+      "Pitch tipping-included and Han River Cruise / Asia Park as differentiators in sales scripts"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "MEL",
@@ -21794,7 +24238,111 @@
      "at": "2026-10-14T08:00:00Z",
      "by": "ezie"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "wae-basic": {
+      "days": "5D4N",
+      "accommodation": "Included (3★ city centre, Free Tram Zone)",
+      "guide": "Driving guide (Malaysian, Melbourne-based)",
+      "hours": "10 hrs",
+      "packaging": "2 tour days + 1 day F&E",
+      "usp": "Phillip Island wildlife & farm day, Melbourne city icons",
+      "meals": "No meals (halal-friendly meal stops)",
+      "tipping": "Included",
+      "visa": "Assistance free, AUD20 fee own expense",
+      "strength": "Malaysian driving guide; 3★ city-centre hotel; tipping included; visa assistance",
+      "weakness": "No meals at all; 2-pax price very high; no Penguin Parade or Great Ocean Road"
+     },
+     "wae-standard": {
+      "days": "5D4N",
+      "accommodation": "Included (3★ city centre, Free Tram Zone)",
+      "guide": "Driving guide (Malaysian, Melbourne-based)",
+      "hours": "12 hrs",
+      "packaging": "2 tour days + 1 day F&E",
+      "usp": "Phillip Island + Penguin Parade, Great Ocean Road & 12 Apostles",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Assistance free, AUD20 fee own expense",
+      "strength": "Penguin Parade + Great Ocean Road in 12-hr days; tipping included; Malaysian guide",
+      "weakness": "Breakfast only vs halal lunch & dinner at AMI; no city tour day; dearer than AMI at 2 and 8 pax"
+     }
+    },
+    "items": [
+     {
+      "id": "ami-amazing-melbourne",
+      "name": "AMI Travel · 5D4N The Amazing of Melbourne",
+      "vs": "wae-standard",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (4★ Mercure Welcome Melbourne or similar)",
+       "guide": "Malay & English speaking tour guide",
+       "hours": "Not stated",
+       "packaging": "3 tour days + 1 day F&E",
+       "usp": "City tour + Phillip Island & Penguin Parade + Great Ocean Road",
+       "meals": "Halal meals per itinerary (B + L/D on tour days)",
+       "tipping": "Excluded",
+       "visa": "Excluded",
+       "strength": "4★ hotel; halal lunch & dinner on 3 days; extra city tour day; Malay-speaking guide",
+       "weakness": "Tipping & visa excluded; price page expired 31 Jan 2026"
+      },
+      "prices": {
+       "2": 5634,
+       "4": 4914,
+       "6": 4194,
+       "8": 3354
+      },
+      "extra": 60,
+      "extraNote": "tipping ~AUD5/day × 4 days (estimate)",
+      "source": "amitravel.my/package-pakej/5d4n-the-amazing-of-melbourne-australia-phillip-island-tour-great-ocean-road-tour (archived Jun 2026; bands min 2/3/5/8 pax) · valid until 31 Jan 2026; live page ami.travel now shows 'from RM2,634'",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ami-explore-melbourne",
+      "name": "AMI Travel · 5D4N Explore Melbourne",
+      "vs": "wae-basic",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (2★ Easystay Apartments, St Kilda)",
+       "guide": "Tour guide cum driver (language not stated)",
+       "hours": "Not stated",
+       "packaging": "2 tour days + 2 days F&E",
+       "usp": "City tour + tram + Yarra cruise, Phillip Island & Penguin Parade, entrance tickets",
+       "meals": "No meals",
+       "tipping": "Excluded",
+       "visa": "Excluded",
+       "strength": "Cheapest at 6+ pax; entrance tickets, Yarra cruise & Penguin Parade included",
+       "weakness": "Only priced for 6–11 pax (surcharge below 6); 2★ apartment outside CBD; tipping excluded; 2024 validity"
+      },
+      "prices": {
+       "6": 2501,
+       "8": 2501
+      },
+      "extra": 60,
+      "extraNote": "tipping ~AUD5/day × 4 days (estimate)",
+      "source": "amitravel.my/package-pakej/5d4n-explore-melbourne (archived Nov 2025; 'price for 6–11 pax') · valid until 31 Dec 2024; still listed 'from RM2,501' on ami.travel",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n**Standard vs AMI Amazing Melbourne (4★, Phillip Island + Great Ocean Road):** AMI is 17.1% below ARBA at 2 pax (RM5,634 vs RM6,797) and 11.7% below at 8 pax, but 2.4% above at 4 pax and 4.9% above at 6 pax. Like-for-like (adding ~RM60 tipping to AMI) ARBA is RM1,103 above at 2 pax, RM177 below at 4 and RM257 below at 6.\n\n**Basic vs AMI Explore Melbourne (6–11 pax only):** AMI is 26.4% below ARBA at 6 pax and 21.8% below at 8 pax (RM2,501 flat); like-for-like ARBA is RM836 / RM636 higher.\n\n## Inclusion differences\n- AMI Amazing gives a 4★ hotel, halal lunch & dinner on 3 days, an extra city-tour day and a Malay-speaking guide; ARBA Standard gives breakfast only.\n- AMI Explore uses a 2★ St Kilda apartment, no meals, but includes Yarra cruise and Penguin Parade; ARBA Basic has no Penguin Parade.\n- Both AMI packages exclude tipping and visa; ARBA includes tipping and free visa assistance.\n\n## Risks\n- Both AMI price tables show expired validity (Jan 2026 / Dec 2024); the live page only shows 'from' prices, so current rates may differ.\n- ARBA's 2-pax Standard price is the clear outlier.",
+     "actions": [
+      "Review Standard 2-pax price (RM6,797): it is RM1,103 above AMI's 4★ full-tour package like-for-like",
+      "Add at least one halal lunch (e.g. Phillip Island) to Standard to counter AMI's lunch + dinner inclusion",
+      "Position Basic for 2–4 pax couples/families, where AMI Explore has no price (min 6 pax)",
+      "Pitch 'Malaysian guide living in Melbourne + tipping included + city-centre hotel' against AMI's excluded tipping and 2★ St Kilda apartment",
+      "Consider adding Penguin Parade as a priced add-on to Basic, since AMI Explore includes it"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PER",
@@ -22925,7 +25473,98 @@
      "name": "Ibis Perth",
      "catalogs": {}
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "k-n-std": {
+      "days": "5D4N",
+      "accommodation": "Included (apartment, outside CBD)",
+      "guide": "Driving guide",
+      "hours": "8 hrs",
+      "packaging": "2 tour days + 1 day F&E",
+      "usp": "Swan Valley + Caversham Wildlife Park, Fremantle, Kings Park area",
+      "meals": "Lunch × 2 (charcoal chicken, fish & chips)",
+      "tipping": "Included",
+      "visa": "Not stated",
+      "strength": "Lowest-priced private Perth option at 2–8 pax; 2 lunches & Caversham included; tipping included",
+      "weakness": "Only 2 tour days; no Pinnacles; apartment outside CBD with 1 bathroom"
+     }
+    },
+    "items": [
+     {
+      "id": "privatetour-my-perth",
+      "name": "Private Tour & Travel (privatetour.my) · Perth 5D4N",
+      "vs": "k-n-std",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (apartment / cottage / hotel)",
+       "guide": "Tour leader / Malay-speaking driver",
+       "hours": "Not stated (OT AUD50/hr)",
+       "packaging": "3 tour days + 1 day F&E",
+       "usp": "Pinnacles + Lancelin sand dunes, Fremantle, Caversham, Kings Park",
+       "meals": "No meals (taken to restaurants)",
+       "tipping": "Included",
+       "visa": "Fee excluded, helps apply",
+       "strength": "Malay-speaking driver; Pinnacles & Lancelin included; 3 tour days",
+       "weakness": "Far dearer at every pax; meals & entrance tickets excluded; no validity date"
+      },
+      "prices": {
+       "2": 10988,
+       "4": 7588,
+       "6": 5888,
+       "8": 5288
+      },
+      "extra": 210,
+      "extraNote": "2 lunches ~RM110 + Caversham entry ~RM100 that ARBA includes (estimate)",
+      "source": "privatetour.my/perth · bands 2 / 3-4 / 5-6 / 7-9 pax · no validity stated",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "ami-wonderful-perth-santai",
+      "name": "AMI Travel · 5D4N Wonderful Perth (Ground Santai)",
+      "vs": "k-n-std",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (3★ Perth city apartment or similar)",
+       "guide": "Tour guide cum driver",
+       "hours": "Not stated",
+       "packaging": "3 tour days + arrival/departure",
+       "usp": "Caversham, Fremantle, Kings Park, Trigg Beach, West Coast Drive",
+       "meals": "Halal lunch daily (Day 1–4)",
+       "tipping": "Excluded",
+       "visa": "Excluded",
+       "strength": "Cheaper than ARBA at 6–8 pax; lunch every day; 3 tour days; city apartment",
+       "weakness": "Min 5 pax; tipping & visa excluded; no Pinnacles; validity ended 31 Jan 2026"
+      },
+      "prices": {
+       "6": 2498,
+       "8": 2498
+      },
+      "extra": 60,
+      "extraNote": "tipping ~AUD5/day × 4 days (estimate)",
+      "source": "amitravel.my/package-pakej/5d4n-wonderful-perth-australia-halal (archived Jun 2026; 'min 5 pax') · valid until 31 Jan 2026",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n**Standard 5D4N vs privatetour.my Perth 5D4N:** ARBA is far cheaper at every pax: privatetour.my is 119.9% higher at 2 pax (RM10,988 vs RM4,997), 137.3% at 4 pax, 96.5% at 6 pax and 82.5% at 8 pax. Like-for-like (+RM210 for lunches and Caversham entry ARBA includes) the gap is RM6,201 at 2 pax and RM2,601 at 8 pax.\n\n**Standard vs AMI Wonderful Perth (Ground Santai, min 5 pax):** AMI is 16.6% below ARBA at 6 pax and 13.8% below at 8 pax (RM2,498). Like-for-like with ~RM60 tipping, ARBA is RM439 higher at 6 and RM339 higher at 8.\n\n## Inclusion differences\n- privatetour.my adds Pinnacles + Lancelin and a Malay-speaking driver, but excludes meals and entrance tickets.\n- AMI Santai gives 3 tour days with halal lunch daily and a city apartment; ARBA gives 2 tour days, 2 lunches and an apartment outside the CBD.\n- ARBA includes tipping; both competitors' visa fees and AMI's tipping are excluded.\n\n## Risks\n- AMI's table expired 31 Jan 2026 (archived copy); privatetour.my gives no validity date.\n- For groups of 6–8, AMI offers more tour days for less money.",
+     "actions": [
+      "Keep Standard pricing for 2–4 pax: it undercuts the only published private competitor by more than RM4,600 at 4 pax",
+      "Review 6–8 pax pricing: AMI Santai is RM339–439 cheaper like-for-like with an extra tour day",
+      "Consider adding a third tour day (e.g. Kings Park / Trigg Beach half day) or daily lunch to Standard",
+      "Sales pitch: 'private driver, tipping included, Caversham + 2 lunches included, from 2 pax' vs AMI's min 5 pax",
+      "Promote Premium 6D5N (with Pinnacles) to customers comparing with privatetour.my's Pinnacles itinerary"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "NSNZ",
@@ -24031,7 +26670,112 @@
      "at": "2026-10-14T11:00:00Z",
      "by": "ezie"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "arba-to-10d9n-n-s": {
+      "days": "10D9N",
+      "accommodation": "Included (3★ hotel, 8 hotel changes)",
+      "guide": "Driving guide (Malay/English)",
+      "hours": "Max 12 hrs",
+      "packaging": "Full tour 9 days (N & S Island)",
+      "usp": "Rotorua, Taupo, Tekapo, Mt Cook, Milford, Queenstown, Masjid An Noor",
+      "meals": "Lunch × 2",
+      "tipping": "Included",
+      "visa": "Not stated",
+      "strength": "Cheaper than privatetour.my at 2–8 pax; 3★ hotels; 12-hr days; welcome lunch",
+      "weakness": "Hobbiton, Milford cruise & gondola are paid add-ons; domestic flights inclusion not stated in catalog; 8 hotel changes"
+     },
+     "arba-to-8d7n-south": {
+      "days": "8D7N",
+      "accommodation": "Included (3★ hotel)",
+      "guide": "Driving guide (Malay/English)",
+      "hours": "Max 10 hrs",
+      "packaging": "Full tour 7 days (South Island loop)",
+      "usp": "Christchurch–Tekapo–Te Anau–Milford–Queenstown–Dunedin, salmon farm",
+      "meals": "Lunch × 2",
+      "tipping": "Included",
+      "visa": "Not stated",
+      "strength": "Christchurch in/out, no domestic flight needed; cheaper than privatetour.my 8D7N; 3★ hotels",
+      "weakness": "Milford cruise, gondola & Larnach Castle optional; long drives; South Island only"
+     }
+    },
+    "items": [
+     {
+      "id": "privatetour-my-nz-10d9n",
+      "name": "Private Tour & Travel (privatetour.my) · NZ North & South 10D9N",
+      "vs": "arba-to-10d9n-n-s",
+      "attrs": {
+       "days": "10D9N",
+       "accommodation": "Included (apartment / cottage / hotel; some shared bathroom)",
+       "guide": "Tour leader / Malay-speaking driver guide",
+       "hours": "Max 10 hrs",
+       "packaging": "Full tour 9 days (N & S Island)",
+       "usp": "Rotorua, Taupo, Christchurch, Tekapo, Queenstown, Milford, Moeraki",
+       "meals": "No meals (taken to restaurants)",
+       "tipping": "Included",
+       "visa": "NZeTA + IVL included",
+       "strength": "NZeTA & IVL included; domestic flights listed as included; Malay-speaking driver",
+       "weakness": "Dearer at every pax; meals & entrance tickets excluded; lower-grade rooms; no validity date"
+      },
+      "prices": {
+       "2": 17188,
+       "4": 14188,
+       "6": 11788,
+       "8": 10188
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "privatetour.my/pakej-oceania-newzealand · bands 2 / 3-4 / 5-6 / 7-9 pax · no validity stated",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "privatetour-my-nz-8d7n",
+      "name": "Private Tour & Travel (privatetour.my) · NZ North & South 8D7N",
+      "vs": "arba-to-8d7n-south",
+      "attrs": {
+       "days": "8D7N",
+       "accommodation": "Included (apartment / cottage / hotel; some shared bathroom)",
+       "guide": "Tour leader / Malay-speaking driver guide",
+       "hours": "Max 10 hrs",
+       "packaging": "6 tour days + 1 day F&E (Auckland in/out)",
+       "usp": "Hobbiton area, Rotorua, Tekapo, Mt Cook view, Milford, Queenstown",
+       "meals": "No meals (taken to restaurants)",
+       "tipping": "Included",
+       "visa": "NZeTA + IVL included",
+       "strength": "Covers both islands in same 8 days; NZeTA & IVL included; Malay-speaking driver",
+       "weakness": "Dearer at every pax; not a South-only loop (domestic flight AKL–ZQN); meals & tickets excluded"
+      },
+      "prices": {
+       "2": 14488,
+       "4": 11688,
+       "6": 10188,
+       "8": 9288
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "privatetour.my/pakej-oceania-newzealand · bands 2 / 3-4 / 5-6 / 7-9 pax · no validity stated · closest same-length private NZ package (South-only 6D5N also listed)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\n**10D9N North & South vs privatetour.my 10D9N:** ARBA is cheaper at every pax: privatetour.my is 7.4% higher at 2 pax (RM17,188 vs RM15,997), 23.4% at 4 pax, 17.9% at 6 pax and 6.2% at 8 pax (RM591 more).\n\n**8D7N South vs privatetour.my 8D7N North & South:** privatetour.my is 13.2% higher at 2 pax (RM14,488 vs RM12,797), 21.8% at 4 pax, 18.5% at 6 pax and 22.3% at 8 pax. No extra was added, so like-for-like equals headline.\n\n## Inclusion differences\n- privatetour.my includes NZeTA + IVL and lists domestic flights as included; ARBA's catalog does not state visa or domestic-flight inclusion.\n- privatetour.my uses apartments / cottages, some with shared bathrooms; ARBA uses 3★ hotels and adds 2 lunches.\n- Both exclude Hobbiton, Milford cruise and gondola; privatetour.my caps days at 10 hrs vs ARBA's 12 hrs on 10D9N.\n\n## Risks\n- Only one Malaysian competitor publishes a NZ private price table; others (AMI, Berkat Tours, Muslim Travel Bug) are 'from' or on enquiry.\n- The 8D7N comparison is North & South vs ARBA's South-only loop, so it is indicative only.",
+     "actions": [
+      "Hold current NZ pricing: ARBA is 6–23% below the only published private competitor at every pax",
+      "State clearly in the catalog whether domestic flights and NZeTA/IVL are included, since privatetour.my advertises both",
+      "Pitch 3★ hotels with private bathrooms and 12-hr driving days against apartment/shared-bathroom stays",
+      "Consider a bundled Milford Sound cruise price, as no competitor includes it either and it is the top request"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "MLE",
@@ -26590,7 +29334,112 @@
      "by": "ezie"
     }
    ],
-   "historyFrom": 92
+   "historyFrom": 92,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "mle-basic-low": {
+      "days": "4D3N",
+      "accommodation": "Included (3★ Maafushi)",
+      "guide": "No guide (hotel staff; shared speedboat)",
+      "hours": "Not stated",
+      "packaging": "1 shared excursion + 1 day F&E",
+      "usp": "Shared nurse-shark / fish-tank excursion",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Not stated",
+      "strength": "Includes a shared excursion; tipping included; flat price from 2 pax",
+      "weakness": "RM347 dearer than Asuma's 3★ Maafushi; breakfast only"
+     },
+     "mle-4star-low": {
+      "days": "4D3N",
+      "accommodation": "Included (4★ Maafushi, Kaani / Arena)",
+      "guide": "No guide (hotel staff; shared speedboat)",
+      "hours": "Not stated",
+      "packaging": "2 days shared excursions + sunset/night fishing",
+      "usp": "Full-day excursion or shark bay snorkelling + night fishing",
+      "meals": "Full board (B, L, D)",
+      "tipping": "Included",
+      "visa": "Not stated",
+      "strength": "Full board halal-friendly meals; excursion + night fishing; tipping included",
+      "weakness": "RM578 above HolidayGoGoGo's Arena Beach; excursion needs min 6 (Kaani) / 10 (Arena) pax"
+     }
+    },
+    "items": [
+     {
+      "id": "asuma-maldives-4d3n",
+      "name": "Asuma Travel · Pakej Maldives 4D3N (Maafushi)",
+      "vs": "mle-basic-low",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★ Maafushi or equivalent, double room)",
+       "guide": "Airport guide on arrival only",
+       "hours": "Not stated",
+       "packaging": "Fully F&E (free kayak / paddle)",
+       "usp": "Free water kayak / paddle board",
+       "meals": "Halal buffet breakfast",
+       "tipping": "Not stated",
+       "visa": "Not stated",
+       "strength": "Cheapest Maafushi package; halal breakfast; airport meet & greet",
+       "weakness": "No excursion included; +RM200 peak surcharge 21 Dec–30 Apr; green tax not stated"
+      },
+      "prices": {
+       "2": 1550,
+       "4": 1550,
+       "6": 1550,
+       "8": 1550
+      },
+      "extra": 150,
+      "extraNote": "1 shared excursion that ARBA includes ~USD35 (estimate)",
+      "source": "asumatravel.com/pakej-percutian/pakej-maldives-4d3n-muslim · 2026/2027 page, flat per person from 2 pax",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "holidaygogogo-arena-beach",
+      "name": "HolidayGoGoGo · 4D3N Muslim Arena Beach Maldives",
+      "vs": "mle-4star-low",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (Arena Beach Hotel, Maafushi)",
+       "guide": "Not stated (shared tours)",
+       "hours": "Not stated",
+       "packaging": "Daily shared tours",
+       "usp": "Shark Bay snorkel + dolphin cruise, half-day snorkel, sandbank with lunch",
+       "meals": "3 B, 2 L, 3 D (halal)",
+       "tipping": "Excluded",
+       "visa": "Not stated",
+       "strength": "Cheaper than ARBA 4★; 3 excursions incl. sandbank & dolphin; green tax included",
+       "weakness": "Tipping excluded; festive gala dinners mandatory; validity ends 31 Oct 2026"
+      },
+      "prices": {
+       "2": 2319,
+       "4": 2319,
+       "6": 2319,
+       "8": 2319
+      },
+      "extra": 40,
+      "extraNote": "tipping ~USD10/pax (estimate)",
+      "source": "holidaygogogo.com/4h3m-pakej-percutian-muslim-arena-beach-maldives · twin rate for 11 Jan–31 Oct 2026, valid until 31 Oct 2026",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nRepresentative seasons: **Basic Low Season** and **4 Star Low Season** (prices are flat per person from 2 pax).\n\n**Basic vs Asuma Travel 3★ Maafushi:** Asuma is 18.3% below ARBA (RM1,550 vs RM1,897). Adding ~RM150 for the shared excursion ARBA includes, ARBA is still RM197 higher (Asuma 10.4% below like-for-like).\n\n**4 Star vs HolidayGoGoGo Arena Beach:** HolidayGoGoGo is 20.0% below ARBA (RM2,319 vs RM2,897); with ~RM40 tipping added it is still RM538 below.\n\n## Inclusion differences\n- Asuma includes halal breakfast and kayak only, no excursion; it adds RM200 in 21 Dec–30 Apr.\n- HolidayGoGoGo includes 3 B / 2 L / 3 D, three shared tours (shark bay + dolphin, half-day snorkel, sandbank with lunch) and green tax; ARBA 4 Star gives full board, one excursion + night fishing, and tipping.\n- ARBA's 4★ excursion needs min 6 (Kaani) or 10 (Arena) pax; HolidayGoGoGo has no stated minimum.\n\n## Risks\n- HolidayGoGoGo's rate ends 31 Oct 2026; its next season price is not yet published.\n- ARBA is the most expensive option in both tiers.",
+     "actions": [
+      "Review 4 Star Low Season (RM2,897): a like-for-like gap of RM538 vs HolidayGoGoGo's Arena Beach is hard to defend",
+      "Remove or relax the min 6/10 pax excursion condition on 4 Star, or swap in a sandbank/dolphin trip with no minimum",
+      "For Basic, emphasise the included shared excursion and tipping vs Asuma's F&E-only package; consider trimming ~RM200",
+      "Recheck HolidayGoGoGo after 31 Oct 2026 for its new season rate before repricing"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "KMGDL",
@@ -27085,7 +29934,71 @@
      }
     }
    ],
-   "historyFrom": 86
+   "historyFrom": 86,
+   "competitors": {
+    "pax": [
+     2,
+     5,
+     7,
+     10
+    ],
+    "arba": {
+     "tourdechina": {
+      "days": "6D5N",
+      "accommodation": "Included (4★, Kunming/Dali/Lijiang)",
+      "guide": "Driving guide",
+      "hours": "10 hrs",
+      "packaging": "Full tour 5 days (Day 1 arrival only)",
+      "usp": "2 bullet trains, Jade Dragon cable car, Impression Lijiang, Erhai boat, 3 mosque visits",
+      "meals": "Full board Day 2–6 (B/L/D)",
+      "tipping": "Included",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "Full board halal from 2 pax; tipping & both bullet trains included; 3 mosque visits built in",
+      "weakness": "RM4,797 at 2 pax is above Lurima before meals; driving guide only, not Malay-speaking"
+     }
+    },
+    "items": [
+     {
+      "id": "lurima-yunnan-6d5n",
+      "name": "Lurima Travel · Yunnan 6D5N",
+      "vs": "tourdechina",
+      "attrs": {
+       "days": "6D5N",
+       "accommodation": "Included (4★ equivalent)",
+       "guide": "English-speaking local guide + private MPV",
+       "hours": "Not stated",
+       "packaging": "4 tour days + Day 6 free & easy",
+       "usp": "Huayu Ranch, Jade Dragon Glacier Park, Ganhaizi show, Yongning Mosque",
+       "meals": "Halal per itinerary only from 7 pax (2–6 pax: breakfast only)",
+       "tipping": "Excluded (RM200/pax)",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Lowest price at 7–10 pax; halal meals from 7 pax; Malaysian-style guide",
+       "weakness": "No meals for 2–6 pax; tipping & insurance extra; only one bullet train (Lijiang–Kunming); no Stone Forest"
+      },
+      "prices": {
+       "2": 4215,
+       "5": 3095,
+       "7": 3195,
+       "10": 2895
+      },
+      "extra": 200,
+      "extraNote": "tipping RM200/pax (stated); meals for 2–6 pax not added (would add ~RM300+ estimate)",
+      "source": "lurimatravel.com/private-tour/yunnan-6d5n · price valid until 31 Dec 2026 (excl. CNY, summer, National Day)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nAgainst Lurima Travel's private Yunnan 6D5N, ARBA is dearer on headline price: -12.1% at 2 pax (RM4,215 vs RM4,797), -20.6% at 5 pax, -8.6% at 7 pax and -3.4% at 10 pax (negative = Lurima cheaper). Adding Lurima's RM200 tipping, the like-for-like gap narrows to -8.0%, -15.4%, -2.9% and +3.3%; ARBA becomes cheaper at 10 pax.\n\n## Inclusion differences\nARBA includes halal lunch and dinner from 2 pax; Lurima gives breakfast only for 2–6 pax, so its 2 and 5 pax prices still understate the real cost (meals not costed). ARBA has two bullet trains, Stone Forest and an Erhai boat; Lurima has one train, a free day and excludes insurance.\n\n## Risks\nLurima's 'from RM2,560' headline and Malaysian-style guide pitch look cheaper to customers; ARBA's 5-pax tier is the weakest point.",
+     "actions": [
+      "Review the 4–5 pax tier: it is the largest gap vs Lurima even after tipping",
+      "Pitch 'full board halal from 2 pax + tipping included' explicitly against meal-less small-group quotes",
+      "Highlight two bullet trains and Stone Forest as itinerary value in sales scripts",
+      "Recheck Lurima before Q1 2027 since its price is valid only to 31 Dec 2026"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "KMGDLS",
@@ -27602,7 +30515,71 @@
      }
     }
    ],
-   "historyFrom": 86
+   "historyFrom": 86,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "tourdechina": {
+      "days": "7D6N",
+      "accommodation": "Included (4★, 4 cities)",
+      "guide": "Driving guide",
+      "hours": "10 hrs",
+      "packaging": "Full tour 6 days (Day 1 arrival only)",
+      "usp": "Shangri-La + Tiger Leaping Gorge, Jade Dragon cable car, 2 bullet trains, 3 mosque visits",
+      "meals": "Full board Day 2–7 (B/L/D)",
+      "tipping": "Included",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "Full board from 2 pax; tipping & trains included; covers 4 regions in 7 days",
+      "weakness": "Driving guide only; 2-pax price RM5,497 per person is steep; long 5–6 hr train day"
+     }
+    },
+    "items": [
+     {
+      "id": "mursyid-yunnan-9d7n",
+      "name": "Mursyid Al Haramain · 9D7N Yunnan Muslim Tour",
+      "vs": "tourdechina",
+      "attrs": {
+       "days": "9D7N (incl. 2 flight nights)",
+       "accommodation": "Included (4★, 4 cities)",
+       "guide": "English-speaking guide + coach",
+       "hours": "Not stated",
+       "packaging": "Full tour 7 days, small group/exclusive",
+       "usp": "Muslim village & family visit, Shilin, Chongren Muslim Food Street, Shangri-La",
+       "meals": "Breakfast; halal lunch & dinner only from 8 pax",
+       "tipping": "Included",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Longer stay (7 nights); Muslim heritage visits; tipping included",
+       "weakness": "No lunch/dinner for 2–7 pax; only one bullet train; peak hotel surcharges extra; no validity date"
+      },
+      "prices": {
+       "2": 7090,
+       "4": 4390,
+       "6": 3890,
+       "8": 3790
+      },
+      "extra": 0,
+      "extraNote": "none added; meals excluded for 2–7 pax not costed",
+      "source": "mursyidalharamain.com/ms/pakej-percutian-muslim/9d7n-yunnan-muslim-tour-kunming-dali-lijiang-shangri-la · no validity date (blackouts listed to Feb 2027), land only",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nThe only land-only, pax-priced Shangri-La competitor found is Mursyid Al Haramain's 9D7N Muslim tour. Versus ARBA 7D6N: +29.0% at 2 pax (RM7,090 vs RM5,497), +2.2% at 4 pax, -0.2% at 6 pax and -2.7% at 8 pax. Tipping is included on both, so like-for-like equals headline (no extra added).\n\n## Inclusion differences\nMursyid gives one more hotel night and Muslim village/family visits, but excludes lunch and dinner for 2–7 pax; ARBA is full board from 2 pax and has two bullet trains. Malaysian 7D6N alternatives found (Jejak Vacation, Nomad Travel) are group tours with flights, so not used.\n\n## Risks\nAt 6–8 pax Mursyid is level with ARBA while offering an extra night; small groups will not notice its missing meals until quoted.",
+     "actions": [
+      "Lead the 2-pax pitch with the price advantage vs Mursyid (RM1,593/pax cheaper)",
+      "At 6–8 pax, sell full-board halal meals as the differentiator vs similarly priced 9D7N options",
+      "Consider adding a Muslim village or halal food street stop to match competitor USPs",
+      "Keep searching for a 7D6N private Shangri-La competitor; current comparison is a longer itinerary"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PEK",
@@ -28161,7 +31138,97 @@
      }
     }
    ],
-   "historyFrom": 67
+   "historyFrom": 67,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "tourdechina": {
+      "days": "5D4N",
+      "accommodation": "Included (4★ Beijing)",
+      "guide": "Tour guide + private transport",
+      "hours": "10 hrs",
+      "packaging": "Full tour 4 days + departure",
+      "usp": "Mutianyu Great Wall incl. cable car/toboggan, Niujie & Nandouya mosques, Forbidden City",
+      "meals": "Breakfast + lunch + dinner",
+      "tipping": "Included",
+      "visa": "Visa-free for Malaysians (not in catalog)",
+      "strength": "Full board + tipping included; Mutianyu with cable car; 2 mosque visits; cheaper than Selamat Bercuti at 2 pax",
+      "weakness": "Higher than rivals at 4 and 8 pax; no Universal/Tianjin option; flat 2–3 pax price"
+     }
+    },
+    "items": [
+     {
+      "id": "selamat-bercuti-beijing-tianjin",
+      "name": "Selamat Bercuti · 5D4N Beijing + Tianjin (Private)",
+      "vs": "tourdechina",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (4★ Beijing Jiangxi Hotel or similar)",
+       "guide": "English- or Malay-speaking guide + private transport",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days + departure (incl. Tianjin day)",
+       "usp": "Malay-speaking guide option, Tianjin day trip, Niujie & Madian mosques, acrobatic show, panda house",
+       "meals": "Breakfast + lunch + dinner (halal per itinerary)",
+       "tipping": "Excluded (amount not stated)",
+       "visa": "Not stated",
+       "strength": "Malay-speaking guide option; adds Tianjin; full board halal",
+       "weakness": "2025 price; tipping extra; Great Wall section not named"
+      },
+      "prices": {
+       "2": 5290,
+       "4": 3590,
+       "6": 3590,
+       "8": 2790
+      },
+      "extra": 60,
+      "extraNote": "tipping estimate ~RMB20/pax/day × 5 days ≈ RM60 (CNY 0.58)",
+      "source": "selamatbercuti.com/tours/5d-4n-beijing-tianjin · 4★ rates, valid Apr–Dec 2025; 2–3 / 4–6 / 7–9 pax bands",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "sedunia-beijing-break",
+      "name": "Sedunia Travel · 5D4N Beijing Break (Muslim)",
+      "vs": "tourdechina",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included (4★ Standard; Superior option)",
+       "guide": "English-speaking guide + private transport",
+       "hours": "Not stated",
+       "packaging": "3 tour days + Universal Studios day + departure",
+       "usp": "Universal Beijing Resort day, Juyongguan Great Wall, Qianmen Street",
+       "meals": "Halal per itinerary (B/L/D D2–3, B/D D4)",
+       "tipping": "Excluded (RM135/pax/day)",
+       "visa": "China visa excluded",
+       "strength": "Lower headline price at 2 pax; Universal Studios day",
+       "weakness": "Only 2-pax price; Great Wall cable car not included; no Niujie mosque; tipping & visa extra"
+      },
+      "prices": {
+       "2": 3700
+      },
+      "extra": 675,
+      "extraNote": "tipping RM135/pax/day × 5 days as stated on page (looks high; may be per trip)",
+      "source": "seduniatravel.com/holidays/asia/china/5d4n-beijing-break-muslim · Standard 2-pax rate, valid Jul 2025 – Jun 2026",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nMixed. Against Selamat Bercuti (4★), ARBA is cheaper at 2 pax (rival +26%, RM5,290 vs RM4,197) and 6 pax (+6%), but dearer at 4 pax (rival -10%) and 8 pax (-18%). Like-for-like with ~RM60 tipping: +27%, -9%, +7%, -16%. Sedunia's 2-pax headline is -12% below ARBA (RM3,700), but with its stated RM135/pax/day tipping it becomes RM4,375 (+4%).\n\n## Inclusion differences\nARBA is full board with tipping included and uses Mutianyu with cable car/toboggan plus Niujie and Nandouya mosques. Selamat Bercuti offers a Malay-speaking guide option and a Tianjin day; Sedunia swaps a sightseeing day for Universal Studios and excludes the Great Wall cable car, tipping and visa.\n\n## Risks\nSelamat Bercuti's price is 2025 and Sedunia's validity ended June 2026, so both may rise. Sedunia's tipping figure looks unusually high and may be a typo, which would make it cheaper than ARBA. ARBA's 4–5 pax and 8–9 pax tiers look exposed.",
+     "actions": [
+      "Review the 4–5 pax tier (RM3,997) and the 7–9 pax tier (RM3,397), where Selamat Bercuti is cheaper",
+      "Pitch 'tipping included, full board, Mutianyu cable car' against rivals' headline prices",
+      "Consider a Malay-speaking guide option or highlight guide language in the catalog",
+      "Offer an optional Universal Beijing day as an add-on to counter Sedunia",
+      "Keep the 2-pax price; ARBA is already below Selamat Bercuti there"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "BKK",
@@ -28707,7 +31774,99 @@
      }
     }
    ],
-   "historyFrom": 65
+   "historyFrom": 65,
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "chiwanon-almas-3-star": {
+      "days": "4D3N",
+      "accommodation": "Included (3★)",
+      "guide": "Driver only",
+      "hours": "12 hrs",
+      "packaging": "Full tour 2 days + arrival/departure transfers",
+      "usp": "Mae Klong + floating market, Grand Palace/Wat Arun, Chatuchak; Safari/Pattaya add-ons",
+      "meals": "Breakfast only",
+      "tipping": "Included",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "Lowest price at every pax; 12-hr private vehicle; tipping included; flexible add-on days",
+      "weakness": "Breakfast only; no guide; floating-market boat RM280 extra"
+     }
+    },
+    "items": [
+     {
+      "id": "syoknya-bangkok-4h3m",
+      "name": "Syoknya Travel · Pakej Bangkok 4H3M",
+      "vs": "chiwanon-almas-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (star not stated, halal breakfast)",
+       "guide": "Malay/Indonesian-speaking guide + driver",
+       "hours": "Not stated",
+       "packaging": "Full tour 3 days + departure",
+       "usp": "Malay-speaking guide, floating market boat, dinner cruise, Muslim street food",
+       "meals": "3B + 3L + 2D halal + 1 cruise dinner",
+       "tipping": "Included",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Near full-board halal; Malay-speaking guide; boat & cruise included",
+       "weakness": "2–4 pax share one price; star rating not stated; no validity date"
+      },
+      "prices": {
+       "2": 2073,
+       "4": 2073,
+       "6": 1410,
+       "8": 1410
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "syoknyatravel.com/bangkok · bands 2–4 / 5–9 pax; page '2026', no validity date",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "zfb-bangkok-muslim-4d3n",
+      "name": "ZFB Travel · Bangkok Muslim Tour 4D3N",
+      "vs": "chiwanon-almas-3-star",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★)",
+       "guide": "Driver + tour guide (hours not stated)",
+       "hours": "Not stated",
+       "packaging": "Full tour 2 days + arrival/departure",
+       "usp": "Halal Thai lunch & dinner daily, canal boat ride, river cruise",
+       "meals": "B/L/D halal per program",
+       "tipping": "Included (4 days)",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Halal full board; insurance & tipping included",
+       "weakness": "Most expensive at 2 pax; validity not stated (page updated Sep 2025)"
+      },
+      "prices": {
+       "2": 2719,
+       "4": 1914,
+       "6": 1914,
+       "8": 1551
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "zfbtravel.com/packages/bangkok-muslim-tour-4-days-3-nights-cultural-shopping-extravaganza · bands 2–3 / 4–6 / 7–9 pax; no validity, updated 2025-09-07",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA Bangkok Standard is the cheapest at every pax. Syoknya Travel is +48.4% at 2 pax, +89.0% at 4 pax and +41.4% at 6–8 pax above ARBA. ZFB Travel is +94.6% at 2 pax, +74.5% at 4 pax, +92.0% at 6 pax and +55.6% at 8 pax above. Both include tipping, so no extra was added.\n\n## Inclusion differences\nBoth competitors are near full-board halal (lunch and dinner daily) with a guide; Syoknya adds a Malay-speaking guide, the floating-market boat and a dinner cruise. ARBA is breakfast only, driver only, but gives a 12-hour vehicle and add-on days (Safari, Kanchanaburi, Pattaya).\n\n## Risks\nCustomers may compare headline prices without seeing meals; ARBA's RM280 longtail boat add-on narrows the gap for small groups.",
+     "actions": [
+      "Market ARBA as the budget private option: 'half the price of full-board packages, eat where you like'",
+      "Offer an optional halal lunch+dinner meal plan to compete with Syoknya/ZFB",
+      "Consider bundling the floating-market boat at 4+ pax",
+      "Keep the 2-pax price; there is headroom vs competitors"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PHU",
@@ -31545,7 +34704,112 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "ktt-ibis-standard-lowseason": {
+      "days": "4D3N",
+      "accommodation": "Included (Ibis 3★)",
+      "guide": "Driver (private transfers); shared boat crew",
+      "hours": "10 hrs",
+      "packaging": "2 shared island tours + city tour",
+      "usp": "James Bond canoe (big boat) + Phi Phi speedboat + city tour",
+      "meals": "Breakfast + 2 island lunches",
+      "tipping": "Included",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "Tipping included; same islands as competitors; named hotel (Ibis)",
+      "weakness": "Flat RM1,597 for 2–10 pax, no small-group discount; dearer than Syoknya at every pax"
+     },
+     "ktt-ibis-budget-phi-phi-lowseason": {
+      "days": "4D3N",
+      "accommodation": "Included (Ibis 3★)",
+      "guide": "Driver (private transfers); shared boat crew",
+      "hours": "10 hrs",
+      "packaging": "2 shared island tours, no city tour",
+      "usp": "Racha & Coral speedboat + Phi Phi",
+      "meals": "Breakfast + 2 island lunches",
+      "tipping": "Included",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "2 island days incl. Phi Phi; tipping included; cheaper than HolidayGoGoGo like-for-like",
+      "weakness": "No city tour; flat price for 2–10 pax; no guide on land"
+     }
+    },
+    "items": [
+     {
+      "id": "syoknya-phuket-4h3m",
+      "name": "Syoknya Travel · Pakej Phuket 4H3M",
+      "vs": "ktt-ibis-standard-lowseason",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★, hotel of choice)",
+       "guide": "English-speaking guide; private transfers & city tour",
+       "hours": "Not stated",
+       "packaging": "2 join island tours + private city tour",
+       "usp": "James Bond canoe + Phi Phi speedboat + city tour, park fees included",
+       "meals": "Breakfast + 2 island lunches",
+       "tipping": "Excluded",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Same itinerary at lower price; park & entrance fees included; pax discounts",
+       "weakness": "Tipping excluded; halal not stated; no validity date"
+      },
+      "prices": {
+       "2": 1347,
+       "4": 1259,
+       "6": 1220,
+       "8": 1200
+      },
+      "extra": 56,
+      "extraNote": "tipping ~RM14/pax/day × 4 (estimate)",
+      "source": "syoknyatravel.com/tours/phuket · bands 2 / 3–4 / 5–7 / 8–10 pax; no validity date",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "holidaygogogo-phuket-4h3m",
+      "name": "HolidayGoGoGo · 4H3M Phuket Adventure",
+      "vs": "ktt-ibis-budget-phi-phi-lowseason",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (Best Western Patong)",
+       "guide": "English guide (city tour only) + driver",
+       "hours": "Not stated",
+       "packaging": "1 shared island tour + city tour + 2 days F&E",
+       "usp": "Phi Phi + Khai speedboat, Old Town & Wat Chalong",
+       "meals": "Breakfast + 1 island lunch",
+       "tipping": "Excluded (~RM14/pax/day)",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Patong location; city tour included; pax discounts",
+       "weakness": "Only 1 island tour; tipping & entrance tickets excluded; halal not stated"
+      },
+      "prices": {
+       "2": 1299,
+       "4": 1199,
+       "6": 1079,
+       "8": 1059
+      },
+      "extra": 316,
+      "extraNote": "Coral Island speedboat option RM260 + tipping RM56 (estimate) to match ARBA's 2 island days",
+      "source": "holidaygogogo.com/pakej-lawatan-4h3m-penerokaan-spa-phuket · travel 1 Apr–31 Oct 2026 rate (expires end Oct)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared tiers: Standard Ibis low season and Basic (Phi Phi) Ibis low season (other seasons/hotels skipped). Syoknya's 4H3M has the same James Bond + Phi Phi + city-tour itinerary and is cheaper: -15.7% at 2 pax to -24.9% at 8 pax; with estimated tipping, like-for-like is -12.1% to -21.4%. HolidayGoGoGo vs ARBA Basic: headline +8.5% at 2 pax to -11.5% at 8 pax, but like-for-like (Coral Island option + tipping) HolidayGoGoGo is +34.9% to +14.9% above ARBA.\n\n## Inclusion differences\nARBA includes tipping; both competitors exclude it. Syoknya includes park/entrance fees and a guide; HolidayGoGoGo has one island tour only.\n\n## Risks\nARBA Standard's flat RM1,597 for 2–10 pax is the clearest overpricing in this set; neither competitor states halal meals, so halal is ARBA's pitch.",
+     "actions": [
+      "Cut Phuket Standard low season toward RM1,350–1,400 at 2 pax and add 4+ pax tiers",
+      "Clarify whether national park fees are included; Syoknya includes them",
+      "Sell Basic (Phi Phi) on 'two island days + tipping included' vs single-tour packages",
+      "Add a halal-meal guarantee on island lunches to differentiate"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "KBV",
@@ -33305,7 +36569,112 @@
      "at": "2026-10-14T02:02:45Z",
      "by": "ezie"
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "budget": {
+      "days": "4D3N",
+      "accommodation": "Included (hotel of your choice)",
+      "guide": "Driver (private transfers); shared boat crew",
+      "hours": "10 hrs",
+      "packaging": "City tour + 2 shared island tours",
+      "usp": "4-island longtail + Hong Island",
+      "meals": "Breakfast + 2 island lunches",
+      "tipping": "Not included (ground only)",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "2 island days at a flat price; city tour on arrival",
+      "weakness": "Flat RM1,097 for 2–10 pax; tipping not included; dearer than HolidayGoGoGo like-for-like at 6–8 pax"
+     },
+     "standard": {
+      "days": "4D3N",
+      "accommodation": "Included (hotel of your choice)",
+      "guide": "Driver (private transfers); shared boat crew",
+      "hours": "10 hrs",
+      "packaging": "City tour + island tour + Emerald Pool/Phi Phi day",
+      "usp": "4-island + Emerald Pool, or Phi Phi (+RM100)",
+      "meals": "Breakfast + 2 lunches",
+      "tipping": "Not included (ground only)",
+      "visa": "Not required (visa-free for Malaysians)",
+      "strength": "Cheaper than Syoknya at 2–8 pax; Phi Phi upgrade option",
+      "weakness": "No dinners vs Syoknya full board; no guide; tipping not included"
+     }
+    },
+    "items": [
+     {
+      "id": "holidaygogogo-krabi-7-island",
+      "name": "HolidayGoGoGo · 4H3M Krabi 7 Islands Sunset",
+      "vs": "budget",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (Ao Nang Sunset Hotel)",
+       "guide": "English guide (city tour only); car 2–4 / van 5–10 pax",
+       "hours": "Not stated",
+       "packaging": "City tour + 1 shared island tour + 1 day F&E",
+       "usp": "7-island sunset longtail with plankton swim, park fee included",
+       "meals": "Breakfast + 1 dinner",
+       "tipping": "Excluded",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Lower base price; park fee & sunset dinner included",
+       "weakness": "Only 1 island tour (Hong Island optional RM175); halal not stated; rate ends 31 Oct 2026"
+      },
+      "prices": {
+       "2": 1068,
+       "4": 960,
+       "6": 855,
+       "8": 825
+      },
+      "extra": 175,
+      "extraNote": "optional Hong Island longtail + kayak RM175 (page price) to match ARBA's 2nd island day",
+      "source": "holidaygogogo.com/4h3m-pakej-percutian-pengembaraan-island-hopping-krabi · travel 21 Apr–31 Oct 2026 rate",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "syoknya-krabi-4h3m",
+      "name": "Syoknya Travel · Pakej Krabi 4H3M",
+      "vs": "standard",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3★, hotel of choice)",
+       "guide": "English-speaking guide; private transfers & city tour",
+       "hours": "Not stated",
+       "packaging": "City tour + island tour + Emerald Pool/Hot Spring",
+       "usp": "4-island + Hot Spring, Emerald Pool, Tiger Cave; full board",
+       "meals": "Full board (B/L/D)",
+       "tipping": "Excluded",
+       "visa": "Not required (visa-free for Malaysians)",
+       "strength": "Full board; guide; park fees included",
+       "weakness": "Dearer at every pax; tipping excluded; no validity date"
+      },
+      "prices": {
+       "2": 1614,
+       "4": 1434,
+       "6": 1369,
+       "8": 1349
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "syoknyatravel.com/tours/krabi · bands 2 / 3–4 / 5–7 / 8–10 pax; no validity date",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nBasic vs HolidayGoGoGo 7 Islands Sunset: headline -2.6% at 2 pax to -24.8% at 8 pax; adding its RM175 Hong Island option, like-for-like is +13.3% at 2 pax, +3.5% at 4, -6.1% at 6 and -8.8% at 8. Standard vs Syoknya 4H3M: Syoknya is dearer by +24.4% at 2 pax, +10.6% at 4, +5.6% at 6 and +4.0% at 8. Honeymoon not compared.\n\n## Inclusion differences\nSyoknya is full board with a guide and park fees; ARBA Standard gives breakfast and 2 lunches. HolidayGoGoGo includes park fee and sunset dinner but only one island tour. Tipping is excluded by all three.\n\n## Risks\nARBA's flat price for 2–10 pax loses to banded competitors at 6+ pax; HolidayGoGoGo's 2026 rate ends 31 Oct, so expect new prices.",
+     "actions": [
+      "Introduce 6+ pax tiers on Krabi Basic (about RM1,000) to match banded competitors",
+      "Pitch Standard as cheaper than full-board packages, with dinner left free",
+      "State national park fee inclusion clearly in the catalog",
+      "Re-check HolidayGoGoGo after its 31 Oct 2026 rate expiry"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "SWS",
@@ -34720,7 +38089,71 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "musafir-arbato-pt": {
+      "days": "7D6N",
+      "accommodation": "Included (3/4★ near city centre)",
+      "guide": "Malaysian driving guide",
+      "hours": "Not stated",
+      "packaging": "Full private transport 7 days",
+      "usp": "Malaysian guide from arrival to departure; Zermatt, Blausee, CLOY spots",
+      "meals": "Breakfast only",
+      "tipping": "Included",
+      "visa": "Visa-free (Malaysian passport)",
+      "strength": "Malaysian driving guide; 3/4★ hotels; tipping included; cheaper at every pax",
+      "weakness": "Breakfast only; mountain excursions optional; drop & pick-up basis at some sites"
+     }
+    },
+    "items": [
+     {
+      "id": "privatetour-my-switzerland-8d7n",
+      "name": "Jomventures (privatetour.my) · Pakej Eropah Switzerland 8D7N",
+      "vs": "musafir-arbato-pt",
+      "attrs": {
+       "days": "8D7N",
+       "accommodation": "Included (2–3★ hotel or apartment)",
+       "guide": "Tour leader + driver (language not stated)",
+       "hours": "Not stated",
+       "packaging": "Private car/MPV 8 days",
+       "usp": "Geneva, Lausanne/Vevey, Gornergrat, Pilatus in suggested route",
+       "meals": "Breakfast at hotels only (none in apartments)",
+       "tipping": "Driver tipping included; tour leader not stated",
+       "visa": "Not stated",
+       "strength": "One extra day; Geneva/Lake Geneva covered; land-only Malaysian agency",
+       "weakness": "Higher price at every pax; 2–3★ or apartment; 7–8 pax price jumps (2 cars)"
+      },
+      "prices": {
+       "2": 14988,
+       "4": 11288,
+       "6": 8588,
+       "8": 10688
+      },
+      "extra": 0,
+      "extraNote": "",
+      "source": "privatetour.my/pakej/switzerland/pakej-eropah-switzerland-8d7n · bands 2/3–4/5–6/7–8 pax, no validity date stated",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared the main Private Tour (Self Tour has no like-for-like competitor found). Jomventures (privatetour.my) 8D7N is above ARBA at every pax: +1.3% at 2 pax (RM14,988 vs RM14,797), +15.2% at 4 pax (RM11,288 vs RM9,797), +10.1% at 6 pax (RM8,588 vs RM7,797) and +9.1% at 8 pax (RM10,688 vs RM9,797). Extra = 0 (driver tipping included by both).\n\n## Inclusion differences\n- Jomventures: one extra day, Geneva/Lausanne in route, 2–3★ hotel or apartment (no breakfast in apartments), tour leader + driver, language not stated.\n- ARBA: 3/4★ hotels with breakfast, Malaysian driving guide arrival to departure, tipping included.\n\n## Risks\nBoth price 7–8 pax higher than 5–6 pax (second vehicle), which looks odd to customers. Group tours with flights from ~RM9,699 (Nuh Travel) undercut ARBA land-only at 2–4 pax in customers' eyes.",
+     "actions": [
+      "Hold current pricing — ARBA is cheaper at every pax with better hotel grade",
+      "Pitch 'Malaysian guide from Zurich arrival to departure + 3/4★ with breakfast' against apartment-based competitors",
+      "Explain the 8-pax step-up (2 vehicles) in the catalog, or smooth it to avoid looking like an error",
+      "Offer a Titlis/Gornergrat ticket bundle to counter 'optional' items in the itinerary"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "KKK",
@@ -35680,7 +39113,112 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "bahrun-3d-hotel": {
+      "days": "3D2N",
+      "accommodation": "Included (3★ Kundasang + 3★ KK)",
+      "guide": "Driving guide",
+      "hours": "Not stated",
+      "packaging": "Full private tour 3 days",
+      "usp": "Rumah Terbalik, Desa Dairy Farm, Rabbit Farm, Tamparuli, Filipino Market",
+      "meals": "2 breakfasts + 1 dinner",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "strength": "Private car from 2 pax; tipping included; 1 night Kundasang + 1 night KK city; far below operator private-tour prices",
+      "weakness": "Driving guide only, no licensed guide; only 1 dinner; no Kinabalu Park/Poring in itinerary"
+     },
+     "bahrun-4d-hotel": {
+      "days": "4D3N",
+      "accommodation": "Included (3★ Kundasang + 2 nights 3★ KK)",
+      "guide": "Driving guide",
+      "hours": "Not stated",
+      "packaging": "Full tour 4 days incl. island day (SIC boat)",
+      "usp": "Kundasang farms + Sapi & Manukan island hopping + Tanjung Aru sunset",
+      "meals": "3 breakfasts + 1 lunch + 1 dinner",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "strength": "Highland + island in one package; private car; tipping included; much cheaper than operator 4D3N",
+      "weakness": "Island day is shared (SIC); driving guide only; few meals included"
+     }
+    },
+    "items": [
+     {
+      "id": "amazingborneo-kundasang-highlights-private",
+      "name": "Amazing Borneo Tours · 3D2N Kundasang Highlights (Private Charter with Tour Guide)",
+      "vs": "bahrun-3d-hotel",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (Kinabalu Pine Resort or similar, 2 nights Kundasang)",
+       "guide": "Licensed tour guide + van driver",
+       "hours": "08:00–17:00 (approx.)",
+       "packaging": "Full private tour 3 days",
+       "usp": "Licensed guide; Kinabalu Park, Poring Hot Spring, Desa Cow Farm, Alpaca Club, Sosodikon Hill",
+       "meals": "2 breakfasts + 2 dinners (halal not stated)",
+       "tipping": "Excluded (optional)",
+       "visa": "Not applicable",
+       "strength": "Licensed guide; covers Kinabalu Park & Poring; 2 dinners included",
+       "weakness": "Minimum 4 pax; entrance fees & tipping excluded; halal meals not stated; both nights in Kundasang, no KK city stay"
+      },
+      "prices": {
+       "4": 1488,
+       "6": 1488,
+       "8": 1488
+      },
+      "extra": 60,
+      "extraNote": "entrance fees (e.g. Desa farm, rabbit farm) ~RM40 + tipping ~RM20, estimate",
+      "source": "amazingborneo.com/package/3d2n-kundasang-highlights-private-charter-with-tour-guide · travel period 1 Jan–31 Dec 2026, all-market rate for 4+ pax (offer price; list MYR 1,985)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "amazingborneo-kk-kundasang-family-c",
+      "name": "Amazing Borneo Tours · 4D3N KK & Kundasang Highlights with North Borneo Cruises (Family Package C)",
+      "vs": "bahrun-4d-hotel",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (The LUMA Hotel KK 4★ ×2 + Kinabalu Pine Resort ×1)",
+       "guide": "English-speaking guide, join-in (private on request at extra fee)",
+       "hours": "Not stated",
+       "packaging": "Full tour 4 days, join-in (seat-in-coach)",
+       "usp": "Sunset dinner cruise, Kinabalu Park, Poring, Desa Cow Farm; all entrance fees included",
+       "meals": "3 breakfasts + 2 lunches + 2 dinners (halal not stated)",
+       "tipping": "Excluded (optional)",
+       "visa": "Not applicable",
+       "strength": "All entrance fees & more meals included; 4★ KK hotel; sunset dinner cruise",
+       "weakness": "Join-in, not private; no island hopping; halal meals not stated"
+      },
+      "prices": {
+       "2": 1690,
+       "4": 1575,
+       "6": 1575,
+       "8": 1575
+      },
+      "extra": 0,
+      "extraNote": "none (tipping optional; entrance fees already included)",
+      "source": "amazingborneo.com/package/4d3n-kota-kinabalu-and-kundasang-highlights-with-north-borneo-cruises-family-package-c · Malaysia market, travel 1 Apr–31 Dec 2026 (offer price; 2–3 pax and 4–9 pax bands)",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is far cheaper than the only published private/organised Kundasang packages found. 3D2N: Amazing Borneo's private guided tour (RM1,488, 4+ pax) is +97% vs ARBA at 4 pax (RM757), +110% at 6 and +120% at 8; like-for-like with RM60 entrance/tipping estimate it is +104% to +129%. 4D3N: Amazing Borneo's join-in Family Package C is +34% at 2 pax (RM1,690 vs RM1,257) and +58% to +76% at 4–8 pax. No Malaysian Muslim agency publishes a priced private Kundasang package.\n\n## Inclusion differences\nAmazing Borneo gives a licensed guide, Kinabalu Park/Poring and more dinners; the 4D3N version adds all entrance fees, a 4★ KK hotel and a dinner cruise. ARBA offers a private car from 2 pax, tipping included, a KK city night and (4D3N) an island day, but only a driving guide and few meals.\n\n## Risks\nThe operator is foreign-market oriented and does not state halal meals, so it is not a like-for-like Muslim-family product. Real price pressure is more likely from unlisted WhatsApp/Facebook Sabah drivers, which this research could not price. ARBA's very low price may undersell its value.",
+     "actions": [
+      "Hold or test a modest increase on 4–8 pax tiers; ARBA sits roughly half the published operator price",
+      "Add Kinabalu Park (and Poring if open) to the 3D2N itinerary to match the main operator route",
+      "Pitch 'private car from 2 pax + tipping included + halal handled' vs minimum-4-pax operator tours",
+      "Consider including 1–2 more halal dinners to close the meal gap at low cost",
+      "Survey local Sabah driver-guide pages (Facebook/WhatsApp) for the true low-end benchmark"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "SEM",
@@ -38045,7 +41583,163 @@
      "name": "Sisipan Island",
      "catalogs": {}
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "legend-3d-1s": {
+      "days": "3D2N",
+      "accommodation": "Included (1 night 1★ water chalet + 1 night Semporna town hotel)",
+      "guide": "No guide (shared boat crew)",
+      "hours": "Not stated",
+      "packaging": "1 island-hopping day (SIC) + F&E",
+      "usp": "Water chalet night + Bohey Dulang or Mataking island hopping",
+      "meals": "2 breakfasts + 1 lunch box + 2 dinners",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "strength": "Lowest water-chalet price found; tipping included; shared Tawau transfer & boat included",
+      "weakness": "Only 1 night on the water; 1★ chalet; sharing boat/transfer, not private; Mabul is an add-on"
+     },
+     "legend-4d-1s": {
+      "days": "4D3N",
+      "accommodation": "Included (1 night 1★ water chalet + 2 nights Semporna town hotel)",
+      "guide": "No guide (shared boat crew)",
+      "hours": "Not stated",
+      "packaging": "1 island-hopping day (SIC) + 2 days F&E",
+      "usp": "Water chalet night + Bohey Dulang or Mataking; Mabul add-on RM180/pax",
+      "meals": "3 breakfasts + 1 lunch box + 2 dinners",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "strength": "Water chalet night included; tipping included; cheaper than full water-resort stays",
+      "weakness": "Only 1 island hop in 4 days; 2 F&E days; town hotel for 2 nights; sharing basis"
+     }
+    },
+    "items": [
+     {
+      "id": "bluestar-seastar-3d2n",
+      "name": "Blue Star Travel & Tour · Seastar Resort Semporna 3D2N",
+      "vs": "legend-3d-1s",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (2 nights Seastar overwater resort)",
+       "guide": "Not stated",
+       "hours": "Not stated",
+       "packaging": "1 island-hopping package (B or C) + resort stay",
+       "usp": "Both nights on the water; Mataking/Timba-Timba/Pom Pom or Mabul/Kapalai",
+       "meals": "Full board (halal not stated)",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "Both nights overwater; full board; Malaysian agency (Kota Bharu)",
+       "weakness": "Island entry fees RM10–50/pax extra; validity not stated; price shown for 2 pax only"
+      },
+      "prices": {
+       "2": 1471
+      },
+      "extra": 0,
+      "extraNote": "none added (island entry fees RM10–50/pax excluded; ARBA treatment not stated)",
+      "source": "bluestartraveltour.com/en/seastar-resort-semporna · 2-pax adult rate, validity not stated (page dated 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "amazingborneo-seastar-3d2n",
+      "name": "Amazing Borneo Tours · Semporna Water Chalet – Sea Star Resort 3D2N",
+      "vs": "legend-3d-1s",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (2 nights Sea Star water chalet)",
+       "guide": "English-speaking support team",
+       "hours": "Not stated",
+       "packaging": "Island hopping & snorkelling per itinerary, join-in",
+       "usp": "Full board, transparent kayak, snorkel gear",
+       "meals": "Full board buffet (halal not stated)",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "Both nights overwater; full board; Tawau transfer included; 2026 rate published",
+       "weakness": "Join-in basis; Bohey Dulang hiking & Mabul fees extra; peak surcharge RM75/night"
+      },
+      "prices": {
+       "2": 2265,
+       "4": 2265,
+       "6": 2265,
+       "8": 2265
+      },
+      "extra": 0,
+      "extraNote": "none",
+      "source": "amazingborneo.com/package/semporna-water-chalet-sea-star-resort-semporna · Malaysia market adult, group 2+, travel 1 Jan–31 Dec 2026 (offer price; list MYR 3,020)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "bluestar-seastar-4d3n",
+      "name": "Blue Star Travel & Tour · Seastar Resort Semporna 4D3N",
+      "vs": "legend-4d-1s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (3 nights Seastar overwater resort)",
+       "guide": "Not stated",
+       "hours": "Not stated",
+       "packaging": "1 island-hopping package (B or C) + resort stay",
+       "usp": "All nights on the water",
+       "meals": "Full board (halal not stated)",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "3 nights overwater; full board; Malaysian agency",
+       "weakness": "Island entry fees extra; validity not stated; 2-pax price only"
+      },
+      "prices": {
+       "2": 2175
+      },
+      "extra": 0,
+      "extraNote": "none added (island entry fees RM10–50/pax excluded)",
+      "source": "bluestartraveltour.com/en/seastar-resort-semporna · 2-pax adult rate, validity not stated (page dated 2026)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "melancong-semporna-mabul-4d3n",
+      "name": "Melancong.my (Hadigo Travel & Tours) · Pakej Semporna & Pulau Mabul Reef 4D3N",
+      "vs": "legend-4d-1s",
+      "attrs": {
+       "days": "4D3N",
+       "accommodation": "Included (2.0★ Semporna town hotel; no water chalet)",
+       "guide": "Tour guide on island trips",
+       "hours": "Not stated",
+       "packaging": "2 island-hopping days (A + B/C) + F&E",
+       "usp": "Bohey Dulang, Mantabuan, Sibuan, Mataking, Mabul, Kapalai; park & jetty fees included",
+       "meals": "3 breakfasts + 2 island lunches",
+       "tipping": "Excluded",
+       "visa": "Not applicable",
+       "strength": "Much lower price; 2 island-hopping days; park/jetty fees included",
+       "weakness": "No water chalet night; tipping excluded; group tour; flights optional add-on"
+      },
+      "prices": {
+       "2": 745,
+       "4": 745,
+       "6": 745,
+       "8": 745
+      },
+      "extra": 20,
+      "extraNote": "tipping ~RM20/pax, estimate (no water-chalet adjustment)",
+      "source": "melancong.my/tour/pakej-semporna-pulau-mabul · 2.0★ hotel tier (2.5★ RM855, 3★ RM975), flat per-adult rate, 'all seasons', no expiry stated; flights not included",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nCompared on the 1★ water chalet tier (main seller); 2★/3★ and honeymoon rows skipped. ARBA's flat RM1,197 (2–10 pax) is the cheapest water-chalet product found. 3D2N: Blue Star's Seastar package (RM1,471, 2 pax) is +23%; vs ARBA's 2★ chalet tier (RM1,597) it is -8%. Amazing Borneo's join-in Sea Star rate (RM2,265) is +89% at every pax. 4D3N: Blue Star Seastar (RM2,175) is +56% vs ARBA RM1,397; Melancong.my's town-hotel package (RM745) is -47%, -45% like-for-like with tipping.\n\n## Inclusion differences\nCompetitors keep guests on the water every night with full board; ARBA gives 1 water-chalet night then a town hotel and a lunch box. Melancong.my has no water chalet but 2 island-hopping days with park fees included vs ARBA's 1.\n\n## Risks\nThe 4D3N tier is exposed: budget sellers offer 2 island days at about half ARBA's price, while ARBA adds 2 F&E days. Blue Star prices are 2-pax only with no stated validity. Halal meals are not stated by any competitor.",
+     "actions": [
+      "Pitch the 3D2N 1★ tier as the lowest-price water-chalet stay; highlight tipping and Tawau transfer included",
+      "Rework 4D3N: include a second island hop (e.g. Mabul) instead of a pure F&E day, or lower the price",
+      "Offer a '2 nights on water' upgrade to answer Seastar-type full-resort packages",
+      "Confirm whether island entry/park fees are included and state it clearly in the catalog",
+      "Add halal-meal confirmation to the catalog as a differentiator"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   },
   {
    "code": "PHT",
@@ -39037,7 +42731,135 @@
      "name": "Mimpi Perhentian Resort",
      "catalogs": {}
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {
+     "shari-la": {
+      "days": "3D2N",
+      "guide": "No guide (shared boat crew)",
+      "hours": "Not stated",
+      "packaging": "1 snorkelling day (SIC) + F&E",
+      "meals": "Full board: 2 breakfasts + 2 lunches + 2 dinners",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "accommodation": "Included (Shari-La Resort, standard room)",
+      "usp": "5-point snorkelling, windmill trekking, Long Beach fire show",
+      "strength": "Full board included; tipping included; group tiers fall to RM597 at 26+ pax",
+      "weakness": "Well above resort-agency prices for the same resort; no peak-season price in base; shared boat"
+     },
+     "mimpi": {
+      "days": "3D2N",
+      "guide": "No guide (shared boat crew)",
+      "hours": "Not stated",
+      "packaging": "1 snorkelling day (SIC) + F&E",
+      "meals": "Full board: 2 breakfasts + 2 lunches + 2 dinners",
+      "tipping": "Included",
+      "visa": "Not applicable",
+      "accommodation": "Included (Mimpi Resort, standard room)",
+      "usp": "5-point snorkelling, windmill trekking at a newer resort",
+      "strength": "Same inclusions as resort's own package; tipping included; flat price 2–30 pax",
+      "weakness": "Priced above agency from-price; no group discount; shared boat"
+     }
+    },
+    "items": [
+     {
+      "id": "mango-sharila-fe",
+      "name": "Mango Vacations · Shari-La Island Resort 3D2N Free & Easy",
+      "vs": "shari-la",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (Shari-La standard room, twin)",
+       "guide": "No guide",
+       "hours": "Not stated",
+       "packaging": "1 snorkelling trip + F&E",
+       "usp": "Snorkelling trip with gear; fast-boat transfer",
+       "meals": "2 breakfasts only",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "Published 2026 seasonal rate table; much lower price",
+       "weakness": "Breakfast only; marine park & jetty fees excluded; no windmill trek"
+      },
+      "prices": {
+       "2": 470,
+       "4": 470,
+       "6": 470,
+       "8": 470
+      },
+      "extra": 100,
+      "extraNote": "2 lunches + 2 dinners ~RM25 each, estimate",
+      "source": "mangovacations.com.my/trip/shari-la-island-resort-3d2n-free-easy-package · low-season twin rate (shoulder RM510, peak RM540), per person regardless of group size, valid until 31 Dec 2026",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "holidaygogogo-sharila-snorkel",
+      "name": "HolidayGoGoGo Tours · 3H2M Perhentian Shari-La Island Resort Pakej Snorkeling",
+      "vs": "shari-la",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (Shari-La, room not stated)",
+       "guide": "No guide",
+       "hours": "Not stated",
+       "packaging": "1 long snorkelling trip + F&E",
+       "usp": "5–6 snorkel points, sunset tea, BBQ dinner",
+       "meals": "Full board: 2 breakfasts + 2 lunches + 1 dinner + 1 BBQ dinner",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "Full board like ARBA; MOTAC-licensed Malaysian agency; BBQ & sunset tea",
+       "weakness": "From-price only; marine park & council fees excluded"
+      },
+      "prices": {
+       "2": 465
+      },
+      "extra": 0,
+      "extraNote": "none",
+      "source": "holidaygogogo.com/3h2m-perhentian-shari-la-island-resort-pakej-snorkeling · from-price, pax not stated (placed at 2 pax); 2026 page, validity not stated",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "holidaygogogo-mimpi-exploration",
+      "name": "HolidayGoGoGo Tours · 3H2M Mimpi Perhentian Resort Pakej Exploration",
+      "vs": "mimpi",
+      "attrs": {
+       "days": "3D2N",
+       "accommodation": "Included (Mimpi, Hillview Superior / Ocean Deluxe)",
+       "guide": "No guide",
+       "hours": "Not stated",
+       "packaging": "1 snorkelling trip + windmill trek + F&E",
+       "usp": "Same route as ARBA: snorkelling + windmill trekking",
+       "meals": "Full board: 2 breakfasts + 2 lunches + 2 dinners",
+       "tipping": "Not stated",
+       "visa": "Not applicable",
+       "strength": "Identical inclusions to ARBA; MOTAC-licensed Malaysian agency",
+       "weakness": "From-price only; marine park & council fees excluded"
+      },
+      "prices": {
+       "2": 1130
+      },
+      "extra": 0,
+      "extraNote": "none",
+      "source": "holidaygogogo.com/3h2m-mimpi-perhentian-resort-pakej-exploration · from-price, pax not stated (placed at 2 pax); 2026 page, validity not stated",
+      "updated": "2026-10-14"
+     }
+    ],
+    "analysis": {
+     "text": "## Price position (ARBA Selling Price)\nARBA is the most expensive option at both resorts. Shari-La: Mango Vacations' low-season twin rate (RM470) is -48% vs ARBA at 2 pax (RM897) and -41% at 8 pax (RM797); adding RM100 for the missing lunches/dinners it is still -36% to -28%. HolidayGoGoGo's full-board Shari-La from-price (RM465) is -48% at 2 pax. Mimpi: HolidayGoGoGo's from-price (RM1,130) is -19% vs ARBA RM1,397.\n\n## Inclusion differences\nInclusions are almost identical: shared boat from Kuala Besut, full board, one snorkelling trip; the Mimpi rival adds the same windmill trek. Mango is breakfast-only. ARBA includes tipping; all rivals exclude marine park/council fees, as ARBA does.\n\n## Risks\nThese are resort-direct style packages that customers can compare in minutes, so ARBA's premium is very visible. HolidayGoGoGo shows from-prices only, so real 2-pax rates may be higher. Perhentian closes 15 Oct–15 Feb, so prices matter for the 2027 season opening.",
+     "actions": [
+      "Re-cost Shari-La 2–8 pax toward the RM570–610 like-for-like range (Mango low/shoulder + meals); keep tipping and hand-holding as the premium",
+      "Re-check Mimpi supplier rate; target within 10% of the published RM1,130 agency price",
+      "Sell value beyond the room: jetty transfer from Kota Bharu/Kuala Besut, halal assurance, single contact",
+      "Publish season-split prices (low/shoulder/peak) like competitors before the Feb 2027 reopening",
+      "Push Perhentian mainly as 10+ pax group trips, where ARBA's tiers drop to RM747 or lower"
+     ],
+     "at": "2026-10-14T11:14:43Z",
+     "by": "claude (web research)"
+    }
+   }
   }
  ]
 }
