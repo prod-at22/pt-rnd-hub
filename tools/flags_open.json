@@ -360,6 +360,16 @@
    "fix": "Enter the Arena excursion costs on the Add On tab.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "LTOBA",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Medan - Lake Toba: CR validity, single and peak costs",
+   "detail": "Emiya / Baim CRs are Jan–Dec 2026 while the catalog is valid to 31 Jan 2027; neither CR prices the single supplement (catalog RM250) or public-holiday / peak dates (catalog RM30 / RM40 per pax per night); Baim's L&D top-up RM120 is an ARBA estimate.",
+   "fix": "Ask Emiya / Baim for the 2027 rates, single supplement and peak surcharge.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

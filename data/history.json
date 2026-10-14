@@ -106083,6 +106083,1755 @@
      "label": "KB maldives › calc › variants › combo › peak › windows › #5 › #1"
     }
    ]
+  },
+  {
+   "v": 93,
+   "at": "2026-10-14T06:45:02Z",
+   "by": "ezie",
+   "note": "Medan - Lake Toba verified (PO ezie 14 Oct 2026; CRs Emiya Parapat / Samosir + Baim already in TO Contract Rate): Option A = Emiya Parapat (checked); Option B now Emiya Samosir (full meals, cheaper than Baim + L&D) as default TO, Baim kept as alternative (3 / 4 pax fixed to CR 650 / 600); TO hotel labels fixed, duplicate Emerald hotel removed; nights 3; add-ons: duplicates removed (drone, Samosir add-on = Option B uplift), meal cost RM15 (CR), TripCare per pair / family; KB: 8–15 Mar 2027 +RM90 surcharge removed (not in the catalog). Flag: CR validity / single / peak costs. Catalog unchanged; Flags / History from v93.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "nights"
+     ],
+     "from": 0,
+     "to": 3,
+     "label": "Medan - Lake Toba › Nights"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "note"
+     ],
+     "from": "",
+     "to": "Option A (Parapat) = CR Emiya Parapat; Option B (Samosir) = CR Emiya Samosir (default, full meals) or Baim (alternative, breakfast only + L&D estimate RM120). Both CRs Jan–Dec 2026 in RM; +RM25 Berastagi 4★ = Free Gift promo; catalog Option B sells +RM50. Costing 2–30 pax.",
+     "label": "Medan - Lake Toba › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "EMIYA__Ground-Cost",
+       "label": "EMIYA · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 755,
+        "3": 650,
+        "4": 560,
+        "5": 555,
+        "6": 595,
+        "7": 565,
+        "8": 540,
+        "9": 525,
+        "10": 510,
+        "11": 510,
+        "12": 540,
+        "13": 530,
+        "14": 520,
+        "15": 510,
+        "16": 540,
+        "17": 530,
+        "18": 520,
+        "19": 510,
+        "20": 500,
+        "21": 500,
+        "22": 500,
+        "23": 500,
+        "24": 500,
+        "25": 500,
+        "26": 500,
+        "27": 500,
+        "28": 500,
+        "29": 500,
+        "30": 500,
+        "31": 500,
+        "32": 500,
+        "33": 500,
+        "34": 500,
+        "35": 500,
+        "36": 500,
+        "37": 500,
+        "38": 500,
+        "39": 500,
+        "40": 500
+       }
+      },
+      {
+       "id": "EMIYA__Tipping",
+       "label": "EMIYA · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 20,
+        "8": 20,
+        "9": 20,
+        "10": 20,
+        "11": 20,
+        "12": 20,
+        "13": 20,
+        "14": 20,
+        "15": 20,
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 20,
+        "23": 20,
+        "24": 20,
+        "25": 20,
+        "26": 20,
+        "27": 20,
+        "28": 20,
+        "29": 20,
+        "30": 20,
+        "31": 20,
+        "32": 20,
+        "33": 20,
+        "34": 20,
+        "35": 20,
+        "36": 20,
+        "37": 20,
+        "38": 20,
+        "39": 20,
+        "40": 20
+       }
+      },
+      {
+       "id": "EMIYA__4-Berastagi-Upgrade-MYR",
+       "label": "EMIYA · 4★ Berastagi Upgrade",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 25,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 25,
+        "12": 25,
+        "13": 25,
+        "14": 25,
+        "15": 25,
+        "16": 25,
+        "17": 25,
+        "18": 25,
+        "19": 25,
+        "20": 25,
+        "21": 25,
+        "22": 25,
+        "23": 25,
+        "24": 25,
+        "25": 25,
+        "26": 25,
+        "27": 25,
+        "28": 25,
+        "29": 25,
+        "30": 25,
+        "31": 25,
+        "32": 25,
+        "33": 25,
+        "34": 25,
+        "35": 25,
+        "36": 25,
+        "37": 25,
+        "38": 25,
+        "39": 25,
+        "40": 25
+       }
+      },
+      {
+       "id": "EMIYA__L-D-Top-up-MYR",
+       "label": "EMIYA · L&D Top-up",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+       }
+      },
+      {
+       "id": "BAIM__Ground-Cost",
+       "label": "BAIM · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 780,
+        "3": 660,
+        "4": 650,
+        "5": 550,
+        "6": 650,
+        "7": 600,
+        "8": 550,
+        "9": 530,
+        "10": 500,
+        "11": 500,
+        "12": 500,
+        "13": 500,
+        "14": 500,
+        "15": 500,
+        "16": 500,
+        "17": 500,
+        "18": 500,
+        "19": 500,
+        "20": 500,
+        "21": 500,
+        "22": 500,
+        "23": 500,
+        "24": 500,
+        "25": 500,
+        "26": 500,
+        "27": 500,
+        "28": 500,
+        "29": 500,
+        "30": 500,
+        "31": 500,
+        "32": 500,
+        "33": 500,
+        "34": 500,
+        "35": 500,
+        "36": 500,
+        "37": 500,
+        "38": 500,
+        "39": 500,
+        "40": 500
+       }
+      },
+      {
+       "id": "BAIM__Tipping",
+       "label": "BAIM · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 20,
+        "8": 20,
+        "9": 20,
+        "10": 20,
+        "11": 20,
+        "12": 20,
+        "13": 20,
+        "14": 20,
+        "15": 20,
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 20,
+        "23": 20,
+        "24": 20,
+        "25": 20,
+        "26": 20,
+        "27": 20,
+        "28": 20,
+        "29": 20,
+        "30": 20,
+        "31": 20,
+        "32": 20,
+        "33": 20,
+        "34": 20,
+        "35": 20,
+        "36": 20,
+        "37": 20,
+        "38": 20,
+        "39": 20,
+        "40": 20
+       }
+      },
+      {
+       "id": "BAIM__4-Berastagi-Upgrade-MYR",
+       "label": "BAIM · 4★ Berastagi Upgrade",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+       }
+      },
+      {
+       "id": "BAIM__L-D-Top-up-MYR",
+       "label": "BAIM · L&D Top-up",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 120,
+        "3": 120,
+        "4": 120,
+        "5": 120,
+        "6": 120,
+        "7": 120,
+        "8": 120,
+        "9": 120,
+        "10": 120,
+        "11": 120,
+        "12": 120,
+        "13": 120,
+        "14": 120,
+        "15": 120,
+        "16": 120,
+        "17": 120,
+        "18": 120,
+        "19": 120,
+        "20": 120,
+        "21": 120,
+        "22": 120,
+        "23": 120,
+        "24": 120,
+        "25": 120,
+        "26": 120,
+        "27": 120,
+        "28": 120,
+        "29": 120,
+        "30": 120,
+        "31": 120,
+        "32": 120,
+        "33": 120,
+        "34": 120,
+        "35": 120,
+        "36": 120,
+        "37": 120,
+        "38": 120,
+        "39": 120,
+        "40": 120
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "EMIYA__Ground-Cost",
+       "label": "EMIYA · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 755,
+        "3": 650,
+        "4": 560,
+        "5": 555,
+        "6": 595,
+        "7": 565,
+        "8": 540,
+        "9": 525,
+        "10": 510,
+        "11": 510,
+        "12": 540,
+        "13": 530,
+        "14": 520,
+        "15": 510,
+        "16": 540,
+        "17": 530,
+        "18": 520,
+        "19": 510,
+        "20": 500,
+        "21": 500,
+        "22": 500,
+        "23": 500,
+        "24": 500,
+        "25": 500,
+        "26": 500,
+        "27": 500,
+        "28": 500,
+        "29": 500,
+        "30": 500,
+        "31": 500,
+        "32": 500,
+        "33": 500,
+        "34": 500,
+        "35": 500,
+        "36": 500,
+        "37": 500,
+        "38": 500,
+        "39": 500,
+        "40": 500
+       }
+      },
+      {
+       "id": "EMIYA__Tipping",
+       "label": "EMIYA · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 20,
+        "8": 20,
+        "9": 20,
+        "10": 20,
+        "11": 20,
+        "12": 20,
+        "13": 20,
+        "14": 20,
+        "15": 20,
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 20,
+        "23": 20,
+        "24": 20,
+        "25": 20,
+        "26": 20,
+        "27": 20,
+        "28": 20,
+        "29": 20,
+        "30": 20,
+        "31": 20,
+        "32": 20,
+        "33": 20,
+        "34": 20,
+        "35": 20,
+        "36": 20,
+        "37": 20,
+        "38": 20,
+        "39": 20,
+        "40": 20
+       }
+      },
+      {
+       "id": "EMIYA__4-Berastagi-Upgrade-MYR",
+       "label": "EMIYA · 4★ Berastagi Upgrade",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 25,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 25,
+        "12": 25,
+        "13": 25,
+        "14": 25,
+        "15": 25,
+        "16": 25,
+        "17": 25,
+        "18": 25,
+        "19": 25,
+        "20": 25,
+        "21": 25,
+        "22": 25,
+        "23": 25,
+        "24": 25,
+        "25": 25,
+        "26": 25,
+        "27": 25,
+        "28": 25,
+        "29": 25,
+        "30": 25,
+        "31": 25,
+        "32": 25,
+        "33": 25,
+        "34": 25,
+        "35": 25,
+        "36": 25,
+        "37": 25,
+        "38": 25,
+        "39": 25,
+        "40": 25
+       }
+      },
+      {
+       "id": "EMIYA__L-D-Top-up-MYR",
+       "label": "EMIYA · L&D Top-up",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+       }
+      },
+      {
+       "id": "BAIM__Ground-Cost",
+       "label": "BAIM · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 780,
+        "3": 650,
+        "4": 600,
+        "5": 550,
+        "6": 650,
+        "7": 600,
+        "8": 550,
+        "9": 530,
+        "10": 500,
+        "11": 500,
+        "12": 500,
+        "13": 500,
+        "14": 500,
+        "15": 500,
+        "16": 500,
+        "17": 500,
+        "18": 500,
+        "19": 500,
+        "20": 500,
+        "21": 500,
+        "22": 500,
+        "23": 500,
+        "24": 500,
+        "25": 500,
+        "26": 500,
+        "27": 500,
+        "28": 500,
+        "29": 500,
+        "30": 500,
+        "31": 500,
+        "32": 500,
+        "33": 500,
+        "34": 500,
+        "35": 500,
+        "36": 500,
+        "37": 500,
+        "38": 500,
+        "39": 500,
+        "40": 500
+       }
+      },
+      {
+       "id": "BAIM__Tipping",
+       "label": "BAIM · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 20,
+        "8": 20,
+        "9": 20,
+        "10": 20,
+        "11": 20,
+        "12": 20,
+        "13": 20,
+        "14": 20,
+        "15": 20,
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 20,
+        "23": 20,
+        "24": 20,
+        "25": 20,
+        "26": 20,
+        "27": 20,
+        "28": 20,
+        "29": 20,
+        "30": 20,
+        "31": 20,
+        "32": 20,
+        "33": 20,
+        "34": 20,
+        "35": 20,
+        "36": 20,
+        "37": 20,
+        "38": 20,
+        "39": 20,
+        "40": 20
+       }
+      },
+      {
+       "id": "BAIM__4-Berastagi-Upgrade-MYR",
+       "label": "BAIM · 4★ Berastagi Upgrade",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+       }
+      },
+      {
+       "id": "BAIM__L-D-Top-up-MYR",
+       "label": "BAIM · L&D Top-up",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "BAIM",
+       "values": {
+        "2": 120,
+        "3": 120,
+        "4": 120,
+        "5": 120,
+        "6": 120,
+        "7": 120,
+        "8": 120,
+        "9": 120,
+        "10": 120,
+        "11": 120,
+        "12": 120,
+        "13": 120,
+        "14": 120,
+        "15": 120,
+        "16": 120,
+        "17": 120,
+        "18": 120,
+        "19": 120,
+        "20": 120,
+        "21": 120,
+        "22": 120,
+        "23": 120,
+        "24": 120,
+        "25": 120,
+        "26": 120,
+        "27": 120,
+        "28": 120,
+        "29": 120,
+        "30": 120,
+        "31": 120,
+        "32": 120,
+        "33": 120,
+        "34": 120,
+        "35": 120,
+        "36": 120,
+        "37": 120,
+        "38": 120,
+        "39": 120,
+        "40": 120
+       }
+      },
+      {
+       "id": "EMIYA-SAMOSIR__Ground-Cost",
+       "label": "EMIYA-SAMOSIR · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA-SAMOSIR",
+       "values": {
+        "2": 855,
+        "3": 700,
+        "4": 615,
+        "5": 585,
+        "6": 630,
+        "7": 595,
+        "8": 570,
+        "9": 550,
+        "10": 535,
+        "11": 525,
+        "12": 515,
+        "13": 520,
+        "14": 520,
+        "15": 520,
+        "16": 520,
+        "17": 520,
+        "18": 520,
+        "19": 520,
+        "20": 520,
+        "21": 520,
+        "22": 520,
+        "23": 520,
+        "24": 520,
+        "25": 520,
+        "26": 520,
+        "27": 520,
+        "28": 520,
+        "29": 520,
+        "30": 520,
+        "31": 520,
+        "32": 520,
+        "33": 520,
+        "34": 520,
+        "35": 520,
+        "36": 520,
+        "37": 520,
+        "38": 520,
+        "39": 520,
+        "40": 520
+       }
+      },
+      {
+       "id": "EMIYA-SAMOSIR__Tipping",
+       "label": "EMIYA-SAMOSIR · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA-SAMOSIR",
+       "values": {
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 20,
+        "8": 20,
+        "9": 20,
+        "10": 20,
+        "11": 20,
+        "12": 20,
+        "13": 20,
+        "14": 20,
+        "15": 20,
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 20,
+        "23": 20,
+        "24": 20,
+        "25": 20,
+        "26": 20,
+        "27": 20,
+        "28": 20,
+        "29": 20,
+        "30": 20,
+        "31": 20,
+        "32": 20,
+        "33": 20,
+        "34": 20,
+        "35": 20,
+        "36": 20,
+        "37": 20,
+        "38": 20,
+        "39": 20,
+        "40": 20
+       }
+      },
+      {
+       "id": "EMIYA-SAMOSIR__4-Berastagi-Upgrade-MYR",
+       "label": "EMIYA-SAMOSIR · 4★ Berastagi (Free Gift promo)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "EMIYA-SAMOSIR",
+       "values": {
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 25,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 25,
+        "12": 25,
+        "13": 25,
+        "14": 25,
+        "15": 25,
+        "16": 25,
+        "17": 25,
+        "18": 25,
+        "19": 25,
+        "20": 25,
+        "21": 25,
+        "22": 25,
+        "23": 25,
+        "24": 25,
+        "25": 25,
+        "26": 25,
+        "27": 25,
+        "28": 25,
+        "29": 25,
+        "30": 25,
+        "31": 25,
+        "32": 25,
+        "33": 25,
+        "34": 25,
+        "35": 25,
+        "36": 25,
+        "37": 25,
+        "38": 25,
+        "39": 25,
+        "40": 25
+       }
+      }
+     ],
+     "label": "Medan - Lake Toba › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "EMIYA",
+       "label": "Emiya",
+       "supplier": "TO EMIYA — Medan-Parapat-Berastagi-Medan (Full Meals + Ferry + Hotel 3★)",
+       "paxMin": 2,
+       "paxMax": 40,
+       "hotel": "Niagara / Sibayak Intl / Emerald or similar · Avanza/Rush",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['EMIYA__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['EMIYA__Tipping']"
+        },
+        {
+         "key": "4-berastagi-upgrade-myr",
+         "label": "4★ Berastagi Upgrade",
+         "per": "pax",
+         "expr": "T['EMIYA__4-Berastagi-Upgrade-MYR']"
+        },
+        {
+         "key": "l-d-top-up-myr",
+         "label": "L&D Top-up",
+         "per": "pax",
+         "expr": "T['EMIYA__L-D-Top-up-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "BAIM",
+       "label": "Baim",
+       "supplier": "TO BAIM — Medan-Samosir-Berastagi-Medan (BREAKFAST ONLY · L&D EXCLUDED · See DIF",
+       "paxMin": 2,
+       "paxMax": 40,
+       "hotel": "Atsari / Uluna / MBS or similar",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['BAIM__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['BAIM__Tipping']"
+        },
+        {
+         "key": "4-berastagi-upgrade-myr",
+         "label": "4★ Berastagi Upgrade",
+         "per": "pax",
+         "expr": "T['BAIM__4-Berastagi-Upgrade-MYR']"
+        },
+        {
+         "key": "l-d-top-up-myr",
+         "label": "L&D Top-up",
+         "per": "pax",
+         "expr": "T['BAIM__L-D-Top-up-MYR']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "EMIYA",
+       "label": "Emiya",
+       "supplier": "TO EMIYA — Medan-Parapat-Berastagi-Medan (CR Jan–Dec 2026: full meals, ferry, hotel 3★)",
+       "paxMin": 2,
+       "paxMax": 40,
+       "hotel": "3★ Atsari (Parapat) · Uluna (Berastagi) · Grand Impression / MBS (Medan) or similar",
+       "notes": "CR Emiya Parapat 4D3N: Avanza 2–4, Innova 5, Hiace 6–11, Hiace + car 12–15, 2 Hiace 16–20; tipping RM20 excluded; +RM25 = Sibayak Intl 4★ at Berastagi (Free Gift promo 'Free Upgrade to 4 Star Hotel at Berastagi'). CWB 85 % / CNB 70 %, infant free.",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['EMIYA__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['EMIYA__Tipping']"
+        },
+        {
+         "key": "4-berastagi-upgrade-myr",
+         "label": "4★ Berastagi Upgrade",
+         "per": "pax",
+         "expr": "T['EMIYA__4-Berastagi-Upgrade-MYR']"
+        },
+        {
+         "key": "l-d-top-up-myr",
+         "label": "L&D Top-up",
+         "per": "pax",
+         "expr": "T['EMIYA__L-D-Top-up-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "BAIM",
+       "label": "Baim",
+       "supplier": "TO BAIM — Medan-Samosir-Berastagi-Medan (breakfast only; L&D top-up RM120 is an ARBA estimate)",
+       "paxMin": 2,
+       "paxMax": 40,
+       "hotel": "3★ Samosir / Berastagi / Medan (Baim, breakfast only)",
+       "notes": "",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['BAIM__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['BAIM__Tipping']"
+        },
+        {
+         "key": "4-berastagi-upgrade-myr",
+         "label": "4★ Berastagi Upgrade",
+         "per": "pax",
+         "expr": "T['BAIM__4-Berastagi-Upgrade-MYR']"
+        },
+        {
+         "key": "l-d-top-up-myr",
+         "label": "L&D Top-up",
+         "per": "pax",
+         "expr": "T['BAIM__L-D-Top-up-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "EMIYA-SAMOSIR",
+       "label": "Emiya",
+       "supplier": "TO EMIYA — Medan-Samosir-Berastagi-Medan (CR Jan–Dec 2026: full meals, ferry, Samosir Villa)",
+       "paxMin": 2,
+       "paxMax": 40,
+       "hotel": "Samosir Villa Resort (Samosir) · Green Garden / Rudang (Berastagi) · Grand Impression / M Hotel (Medan) or similar",
+       "notes": "CR Emiya Samosir 4D3N: Avanza 2–4, Innova 5 (RM585), Hiace 6–11, Elf 14-seat 12–13; 14+ held at the 13-pax rate (quote). Tipping RM20; +RM25 Sibayak 4★ promo. CWB 85 % / CNB 70 %.",
+       "components": [
+        {
+         "key": "ground-cost",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['EMIYA-SAMOSIR__Ground-Cost']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['EMIYA-SAMOSIR__Tipping']"
+        },
+        {
+         "key": "4-berastagi-upgrade-myr",
+         "label": "4★ Berastagi (promo)",
+         "per": "pax",
+         "expr": "T['EMIYA-SAMOSIR__4-Berastagi-Upgrade-MYR']"
+        }
+       ]
+      }
+     ],
+     "label": "Medan - Lake Toba › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "packages",
+      "baim",
+      "assign",
+      0,
+      "variant"
+     ],
+     "from": "BAIM",
+     "to": "EMIYA-SAMOSIR",
+     "label": "Medan - Lake Toba › Medan - Lake Toba 4D3N · Samosir › TO assignment › 0 › variant"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "packages",
+      "baim",
+      "alsoVariants"
+     ],
+     "from": null,
+     "to": [
+      "BAIM"
+     ],
+     "label": "Medan - Lake Toba › Medan - Lake Toba 4D3N · Samosir › alsoVariants"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "ltoba-a01",
+       "category": "Activity",
+       "label": "Drone Shooting (Option B only)",
+       "cost": 0,
+       "selling": 47,
+       "per": "pax",
+       "notes": "Option B Day 1 sahaja"
+      },
+      {
+       "id": "ltoba-a02",
+       "category": "Activity",
+       "label": "Samosir Island Add-on (Option B)",
+       "cost": 0,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Option B Day 1 sahaja"
+      },
+      {
+       "id": "ltoba-a03",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 30,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a04",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a05",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 30,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a06",
+       "category": "Accom",
+       "label": "Tambah 1 malam — 3 Star",
+       "cost": 80,
+       "selling": 200,
+       "per": "pax/malam",
+       "notes": "Niagara/Sibayak/Emerald"
+      },
+      {
+       "id": "ltoba-a07",
+       "category": "Accom",
+       "label": "Upgrade ke 4 Star",
+       "cost": 80,
+       "selling": 100,
+       "per": "pax/malam",
+       "notes": "Atsari/Uluna/MBS"
+      },
+      {
+       "id": "ltoba-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa, Area 2"
+      },
+      {
+       "id": "ltoba-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a16",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a17",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a18",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a19",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-k001",
+       "category": "Additional Activities",
+       "label": "Drone Shooting (Option B only)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Drone, Drone Pilot, Raw Footage, Edited Footage",
+       "duration": "The Whole Trip",
+       "price_lines": [
+        "RM47/pax"
+       ],
+       "catalogs": {
+        "medan-lake-toba": 1
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "ltoba-a03",
+       "category": "Meals",
+       "label": "Tambah Sarapan",
+       "cost": 30,
+       "selling": 40,
+       "per": "pax/meal",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a04",
+       "category": "Meals",
+       "label": "Tambah Lunch",
+       "cost": 15,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": "CR Emiya: tolak L&D RM90/pax untuk 3 lunch + 3 dinner ≈ RM15/meal"
+      },
+      {
+       "id": "ltoba-a05",
+       "category": "Meals",
+       "label": "Tambah Dinner",
+       "cost": 15,
+       "selling": 50,
+       "per": "pax/meal",
+       "notes": "CR Emiya: tolak L&D RM90/pax untuk 3 lunch + 3 dinner ≈ RM15/meal"
+      },
+      {
+       "id": "ltoba-a06",
+       "category": "Accom",
+       "label": "Tambah 1 malam — 3 Star",
+       "cost": 80,
+       "selling": 200,
+       "per": "pax/malam",
+       "notes": "Niagara/Sibayak/Emerald"
+      },
+      {
+       "id": "ltoba-a07",
+       "category": "Accom",
+       "label": "Upgrade ke 4 Star",
+       "cost": 80,
+       "selling": 100,
+       "per": "pax/malam",
+       "notes": "Atsari/Uluna/MBS"
+      },
+      {
+       "id": "ltoba-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa, Area 2"
+      },
+      {
+       "id": "ltoba-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a16",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a17",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a18",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-a19",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "ltoba-k001",
+       "category": "Additional Activities",
+       "label": "Drone Shooting (Option B only)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": "Option B sahaja; kos drone tiada dalam CR (Baim sebut 'dokumentasi photo, video')",
+       "includes": "Drone, Drone Pilot, Raw Footage, Edited Footage",
+       "duration": "The Whole Trip",
+       "price_lines": [
+        "RM47/pax"
+       ],
+       "catalogs": {
+        "medan-lake-toba": 1
+       }
+      }
+     ],
+     "label": "Medan - Lake Toba › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "hotels"
+     ],
+     "from": [
+      {
+       "id": "ltoba-h01",
+       "city": "Parapat",
+       "name": "Atsari",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 1
+        }
+       },
+       "roomNote": "Twin/triple sharing"
+      },
+      {
+       "id": "ltoba-h02",
+       "city": "Samosir",
+       "name": "Samosir Villa",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 2
+        }
+       }
+      },
+      {
+       "id": "ltoba-h03",
+       "city": "Berastagi",
+       "name": "Uluna Hotel",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 3
+        }
+       }
+      },
+      {
+       "id": "ltoba-h04",
+       "city": "Medan",
+       "name": "MBS Hotel",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 4
+        }
+       }
+      },
+      {
+       "id": "ltoba-h05",
+       "type": "3 Star Hotel",
+       "name": "Parapat: Atsari · Samosir: Samosir Villa · Berastagi: Uluna Hotel · Medan: MBS Hotel",
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM30/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "ltoba-h06",
+       "type": "4 Star Hotel",
+       "name": "Parapat: Niagara · Berastagi: Sibayak International Hotel · Medan: Emeral",
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "sur": 2,
+         "amounts": [
+          "RM100/pax/night",
+          "RM40/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "ltoba-h07",
+       "name": "Emerald Garden Hotel",
+       "similar": true,
+       "catalogs": {}
+      }
+     ],
+     "to": [
+      {
+       "id": "ltoba-h01",
+       "city": "Parapat",
+       "name": "Atsari",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 1
+        }
+       },
+       "roomNote": "Twin/triple sharing"
+      },
+      {
+       "id": "ltoba-h02",
+       "city": "Samosir",
+       "name": "Samosir Villa",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 2
+        }
+       }
+      },
+      {
+       "id": "ltoba-h03",
+       "city": "Berastagi",
+       "name": "Uluna Hotel",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 3
+        }
+       }
+      },
+      {
+       "id": "ltoba-h04",
+       "city": "Medan",
+       "name": "MBS Hotel",
+       "stars": 3,
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "acc": 4
+        }
+       }
+      },
+      {
+       "id": "ltoba-h05",
+       "type": "3 Star Hotel",
+       "name": "Parapat: Atsari · Samosir: Samosir Villa · Berastagi: Uluna Hotel · Medan: MBS Hotel",
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "sur": 1,
+         "amounts": [
+          "-",
+          "RM30/pax/night"
+         ]
+        }
+       }
+      },
+      {
+       "id": "ltoba-h06",
+       "type": "4 Star Hotel",
+       "name": "Parapat: Niagara · Berastagi: Sibayak International Hotel · Medan: Emeral",
+       "similar": true,
+       "catalogs": {
+        "medan-lake-toba": {
+         "sur": 2,
+         "amounts": [
+          "RM100/pax/night",
+          "RM40/pax/night"
+         ]
+        }
+       }
+      }
+     ],
+     "label": "Medan - Lake Toba › hotels"
+    },
+    {
+     "path": [
+      "destinations",
+      "LTOBA",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 93,
+     "label": "Medan - Lake Toba › historyFrom"
+    },
+    {
+     "path": [
+      "kb",
+      "medan-lake-toba",
+      "content",
+      "blocks",
+      "surcharge"
+     ],
+     "from": "<div class=\"custblk\">\n  <h3>Travel Date 2027 (di luar tempoh sah katalog)</h3>\n  <table class=\"ctbl\"><thead><tr><th>Tarikh perjalanan</th><th>Caj tambahan</th><th>Nota</th></tr></thead><tbody>\n    <tr><td class=\"it\">8-15 Mac 2027</td><td class=\"add\">+RM 90/pax</td><td>Dikira atas harga pakej, tambahan kepada peak season jika bertindih</td></tr>\n  </tbody></table>\n  <p class=\"custnote\">Sumber: 2026 / 2027 Date Surcharge (baris MEDAN 4D3N) — tiada dalam katalog. Katalog v3 sah untuk tempoh perjalanan hingga 31 Januari 2027 sahaja.</p>\n</div>",
+     "to": "",
+     "label": "KB medan-lake-toba › content › blocks › surcharge"
+    },
+    {
+     "path": [
+      "kb",
+      "medan-lake-toba",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Travel date surcharge 8&ndash;15 Mac 2027",
+       "dateIn": [
+        "2027-03-08",
+        "2027-03-15"
+       ],
+       "perPax": 90
+      }
+     ],
+     "to": [],
+     "label": "KB medan-lake-toba › calc › extraSurcharge"
+    }
+   ]
   }
  ]
 }

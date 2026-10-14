@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-14T14:29:24+08:00",
- "dataVersion": 92,
+ "generatedAt": "2026-10-14T14:45:31+08:00",
+ "dataVersion": 93,
  "flags": [
   {
    "code": "HND",
@@ -736,11 +736,21 @@
    "code": "LTOBA",
    "package": null,
    "severity": "low",
+   "area": "Cost",
+   "title": "Medan - Lake Toba: CR validity, single and peak costs",
+   "detail": "Emiya / Baim CRs are Jan–Dec 2026 while the catalog is valid to 31 Jan 2027; neither CR prices the single supplement (catalog RM250) or public-holiday / peak dates (catalog RM30 / RM40 per pax per night); Baim's L&D top-up RM120 is an ARBA estimate. (noted by ezie, 2026-10-14)",
+   "fix": "Ask Emiya / Baim for the 2027 rates, single supplement and peak surcharge.",
+   "id": 74
+  },
+  {
+   "code": "LTOBA",
+   "package": null,
+   "severity": "low",
    "area": "Coverage",
    "title": "Medan - Lake Toba: 1 package(s) without their own catalog",
    "detail": "Medan - Lake Toba 4D3N · Samosir. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 74
+   "id": 75
   },
   {
    "code": "MLE",
@@ -750,7 +760,7 @@
    "title": "Maldives 4 Star: Kaani estimates and peak",
    "detail": "Kaani package is breakfast + dinner with one excursion; the hub adds estimates for lunch D3 ($15), Real Break ($90, Kaani menu 2026), green tax ($12 × 3 — the package says 'inclusive of taxes') and tipping (RM50). Kaani does not sell the package 21 Dec–10 Jan; the catalog sells Peak +RM300 with no 4 Star peak costing. (noted by ezie, 2026-10-14)",
    "fix": "Confirm with Kaani whether green tax is inside the package and the peak (festive) package rate.",
-   "id": 75
+   "id": 76
   },
   {
    "code": "MLE",
@@ -760,7 +770,7 @@
    "title": "Maldives: Arena excursion costs unknown",
    "detail": "Arena Full Day Adventure / Shark Bay / Whale Shark / Private Island (4 Star catalog add-ons) have no cost — the Arena rate PDF is image-only and was not read into the hub. (noted by ezie, 2026-10-14)",
    "fix": "Enter the Arena excursion costs on the Add On tab.",
-   "id": 76
+   "id": 77
   },
   {
    "code": "MLE",
@@ -770,7 +780,7 @@
    "title": "Maldives: 8 package(s) without their own catalog",
    "detail": "Maldives Basic 4D3N · High Season; Maldives Basic 4D3N · Peak Season; Maldives Combo Island 4D3N · High Season; Maldives Combo Island 4D3N · Peak Season; Maldives Combo Island 4D3N · Shoulder Season; Maldives Water Villa 4D3N · High Season; Maldives Water Villa 4D3N · Peak Season; Maldives 4 Star 4D3N · High Season. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 77
+   "id": 78
   },
   {
    "code": "MLE",
@@ -780,7 +790,7 @@
    "title": "Maldives: New PO is blank in the Project PT sheet",
    "detail": "The hub shows PO Acap.",
    "fix": "Fill New PO in the Project PT sheet (and change it on the page).",
-   "id": 78
+   "id": 79
   },
   {
    "code": "NSNZ",
@@ -790,7 +800,7 @@
    "title": "New Zealand: 1 package(s) without their own catalog",
    "detail": "New Zealand North 6D5N. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 79
+   "id": 80
   },
   {
    "code": "PDG",
@@ -800,7 +810,7 @@
    "title": "Padang - Bukittinggi: 1 package(s) without their own catalog",
    "detail": "Padang - Bukittinggi 4D3N · 4★. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 80
+   "id": 81
   },
   {
    "code": "PHT",
@@ -810,7 +820,7 @@
    "title": "Perhentian: 5 add-on(s) without cost",
    "detail": "Private Boat Transfer Return; Private Boat Island Hopping (5 snorkel pts); Single Supplement (BASIC); Single Supplement (STANDARD); Late Booking Surcharge",
    "fix": "Fill the cost on the Add-ons tab.",
-   "id": 81
+   "id": 82
   },
   {
    "code": "PHU",
@@ -820,7 +830,7 @@
    "title": "Phuket: 8 package(s) without their own catalog",
    "detail": "Phuket Standard 4D3N · Marina 4★ · Low Season; Phuket Standard 4D3N · Ibis 3★ · High Season Jan–Apr; Phuket Standard 4D3N · Marina 4★ · High Season Jan–Apr; Phuket Standard 4D3N · Ibis 3★ · High Season Nov–Dec; Phuket Standard 4D3N · Marina 4★ · High Season Nov–Dec; Phuket Basic 4D3N (Phi Phi) · Marina 4★ · Low Season; Phuket Basic 4D3N (James Bond) · Ibis 3★ · Low Season; Phuket Basic 4D3N (James Bond) · Marina 4★ · Low Season. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 82
+   "id": 83
   },
   {
    "code": "PHU",
@@ -830,7 +840,7 @@
    "title": "Phuket: New PO is blank in the Project PT sheet",
    "detail": "The hub shows PO Fyka.",
    "fix": "Fill New PO in the Project PT sheet (and change it on the page).",
-   "id": 83
+   "id": 84
   },
   {
    "code": "SEL",
@@ -840,7 +850,7 @@
    "title": "Seoul: 15 add-on(s) without cost",
    "detail": "Hanbok Rental @ Gyeongbok Palace; Airport transfer Hotel/ICN ↔ Gimpo (7–9 pax); Malay student guide (F&E day); Driving outskirt Busan–Seoul (Solati 10–13 pax); Driver only — Seoul; Driver only — Nami …",
    "fix": "Fill the cost on the Add-ons tab.",
-   "id": 84
+   "id": 85
   },
   {
    "code": "SEL",
@@ -850,7 +860,7 @@
    "title": "Seoul: 1 package(s) without their own catalog",
    "detail": "Seoul Self Tour 5D4N. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 85
+   "id": 86
   },
   {
    "code": "SEM",
@@ -860,7 +870,7 @@
    "title": "Semporna: 6 package(s) without their own catalog",
    "detail": "Semporna Basic 3D2N · 2★ Water Chalet; Semporna Basic 3D2N · 3★ Mabul; Semporna Standard 4D3N · 2★ Water Chalet; Semporna Standard 4D3N · 3★ Singamata; Semporna Honeymoon · 1★ Water Chalet; Semporna Honeymoon · 2★ Water Chalet. Usually a hotel-tier upgrade, season or self-tour variant of a catalog package.",
    "fix": "If sold, add it to a catalog (or note it as an upgrade of the base package); otherwise remove it from the hub.",
-   "id": 86
+   "id": 87
   },
   {
    "code": "SUBB",
@@ -870,7 +880,7 @@
    "title": "Surabaya - Bromo - Malang: 8 add-on(s) without cost",
    "detail": "Water Fall Tumpak Sewu + Goa Tetes + Kapas Biru; Local Guide Tumpak Sewu; Kawah Ijen Tour; Semeru Lava Tour; ATV Semeru Rental (1 hour); Panorama Kapas Biru …",
    "fix": "Fill the cost on the Add-ons tab.",
-   "id": 87
+   "id": 88
   },
   {
    "code": "SUBB",
@@ -880,7 +890,7 @@
    "title": "Surabaya - Bromo - Malang: New PO is blank in the Project PT sheet",
    "detail": "The hub shows PO Aiman.",
    "fix": "Fill New PO in the Project PT sheet (and change it on the page).",
-   "id": 88
+   "id": 89
   },
   {
    "code": "TUR",
@@ -890,7 +900,7 @@
    "title": "Turki Klasik: single supplement cost unknown",
    "detail": "Catalog single supplement RM1,000/person; the MyTrip CR has no single rate. (noted by ezie, 2026-10-14)",
    "fix": "Ask MyTrip for the single supplement.",
-   "id": 89
+   "id": 90
   }
  ],
  "verified": [

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 92,
- "updatedAt": "2026-10-14T06:28:39Z",
+ "version": 93,
+ "updatedAt": "2026-10-14T06:45:02Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -14578,10 +14578,10 @@
    "name": "Medan - Lake Toba",
    "country": "Indonesia",
    "duration": "4D3N",
-   "nights": 0,
+   "nights": 3,
    "po": "Fyka",
    "source": "hub",
-   "note": "",
+   "note": "Option A (Parapat) = CR Emiya Parapat; Option B (Samosir) = CR Emiya Samosir (default, full meals) or Baim (alternative, breakfast only + L&D estimate RM120). Both CRs Jan–Dec 2026 in RM; +RM25 Berastagi 4★ = Free Gift promo; catalog Option B sells +RM50. Costing 2–30 pax.",
    "fx": [
     {
      "id": "MYR",
@@ -14792,8 +14792,8 @@
      "group": "BAIM",
      "values": {
       "2": 780,
-      "3": 660,
-      "4": 650,
+      "3": 650,
+      "4": 600,
       "5": 550,
       "6": 650,
       "7": 600,
@@ -14975,17 +14975,161 @@
       "39": 120,
       "40": 120
      }
+    },
+    {
+     "id": "EMIYA-SAMOSIR__Ground-Cost",
+     "label": "EMIYA-SAMOSIR · Ground Cost",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "EMIYA-SAMOSIR",
+     "values": {
+      "2": 855,
+      "3": 700,
+      "4": 615,
+      "5": 585,
+      "6": 630,
+      "7": 595,
+      "8": 570,
+      "9": 550,
+      "10": 535,
+      "11": 525,
+      "12": 515,
+      "13": 520,
+      "14": 520,
+      "15": 520,
+      "16": 520,
+      "17": 520,
+      "18": 520,
+      "19": 520,
+      "20": 520,
+      "21": 520,
+      "22": 520,
+      "23": 520,
+      "24": 520,
+      "25": 520,
+      "26": 520,
+      "27": 520,
+      "28": 520,
+      "29": 520,
+      "30": 520,
+      "31": 520,
+      "32": 520,
+      "33": 520,
+      "34": 520,
+      "35": 520,
+      "36": 520,
+      "37": 520,
+      "38": 520,
+      "39": 520,
+      "40": 520
+     }
+    },
+    {
+     "id": "EMIYA-SAMOSIR__Tipping",
+     "label": "EMIYA-SAMOSIR · Tipping",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "EMIYA-SAMOSIR",
+     "values": {
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20,
+      "6": 20,
+      "7": 20,
+      "8": 20,
+      "9": 20,
+      "10": 20,
+      "11": 20,
+      "12": 20,
+      "13": 20,
+      "14": 20,
+      "15": 20,
+      "16": 20,
+      "17": 20,
+      "18": 20,
+      "19": 20,
+      "20": 20,
+      "21": 20,
+      "22": 20,
+      "23": 20,
+      "24": 20,
+      "25": 20,
+      "26": 20,
+      "27": 20,
+      "28": 20,
+      "29": 20,
+      "30": 20,
+      "31": 20,
+      "32": 20,
+      "33": 20,
+      "34": 20,
+      "35": 20,
+      "36": 20,
+      "37": 20,
+      "38": 20,
+      "39": 20,
+      "40": 20
+     }
+    },
+    {
+     "id": "EMIYA-SAMOSIR__4-Berastagi-Upgrade-MYR",
+     "label": "EMIYA-SAMOSIR · 4★ Berastagi (Free Gift promo)",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "EMIYA-SAMOSIR",
+     "values": {
+      "2": 25,
+      "3": 25,
+      "4": 25,
+      "5": 25,
+      "6": 25,
+      "7": 25,
+      "8": 25,
+      "9": 25,
+      "10": 25,
+      "11": 25,
+      "12": 25,
+      "13": 25,
+      "14": 25,
+      "15": 25,
+      "16": 25,
+      "17": 25,
+      "18": 25,
+      "19": 25,
+      "20": 25,
+      "21": 25,
+      "22": 25,
+      "23": 25,
+      "24": 25,
+      "25": 25,
+      "26": 25,
+      "27": 25,
+      "28": 25,
+      "29": 25,
+      "30": 25,
+      "31": 25,
+      "32": 25,
+      "33": 25,
+      "34": 25,
+      "35": 25,
+      "36": 25,
+      "37": 25,
+      "38": 25,
+      "39": 25,
+      "40": 25
+     }
     }
    ],
    "variants": [
     {
      "id": "EMIYA",
      "label": "Emiya",
-     "supplier": "TO EMIYA — Medan-Parapat-Berastagi-Medan (Full Meals + Ferry + Hotel 3★)",
+     "supplier": "TO EMIYA — Medan-Parapat-Berastagi-Medan (CR Jan–Dec 2026: full meals, ferry, hotel 3★)",
      "paxMin": 2,
      "paxMax": 40,
-     "hotel": "Niagara / Sibayak Intl / Emerald or similar · Avanza/Rush",
-     "notes": "",
+     "hotel": "3★ Atsari (Parapat) · Uluna (Berastagi) · Grand Impression / MBS (Medan) or similar",
+     "notes": "CR Emiya Parapat 4D3N: Avanza 2–4, Innova 5, Hiace 6–11, Hiace + car 12–15, 2 Hiace 16–20; tipping RM20 excluded; +RM25 = Sibayak Intl 4★ at Berastagi (Free Gift promo 'Free Upgrade to 4 Star Hotel at Berastagi'). CWB 85 % / CNB 70 %, infant free.",
      "components": [
       {
        "key": "ground-cost",
@@ -15016,10 +15160,10 @@
     {
      "id": "BAIM",
      "label": "Baim",
-     "supplier": "TO BAIM — Medan-Samosir-Berastagi-Medan (BREAKFAST ONLY · L&D EXCLUDED · See DIF",
+     "supplier": "TO BAIM — Medan-Samosir-Berastagi-Medan (breakfast only; L&D top-up RM120 is an ARBA estimate)",
      "paxMin": 2,
      "paxMax": 40,
-     "hotel": "Atsari / Uluna / MBS or similar",
+     "hotel": "3★ Samosir / Berastagi / Medan (Baim, breakfast only)",
      "notes": "",
      "components": [
       {
@@ -15045,6 +15189,35 @@
        "label": "L&D Top-up",
        "per": "pax",
        "expr": "T['BAIM__L-D-Top-up-MYR']"
+      }
+     ]
+    },
+    {
+     "id": "EMIYA-SAMOSIR",
+     "label": "Emiya",
+     "supplier": "TO EMIYA — Medan-Samosir-Berastagi-Medan (CR Jan–Dec 2026: full meals, ferry, Samosir Villa)",
+     "paxMin": 2,
+     "paxMax": 40,
+     "hotel": "Samosir Villa Resort (Samosir) · Green Garden / Rudang (Berastagi) · Grand Impression / M Hotel (Medan) or similar",
+     "notes": "CR Emiya Samosir 4D3N: Avanza 2–4, Innova 5 (RM585), Hiace 6–11, Elf 14-seat 12–13; 14+ held at the 13-pax rate (quote). Tipping RM20; +RM25 Sibayak 4★ promo. CWB 85 % / CNB 70 %.",
+     "components": [
+      {
+       "key": "ground-cost",
+       "label": "Ground Cost",
+       "per": "pax",
+       "expr": "T['EMIYA-SAMOSIR__Ground-Cost']"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "pax",
+       "expr": "T['EMIYA-SAMOSIR__Tipping']"
+      },
+      {
+       "key": "4-berastagi-upgrade-myr",
+       "label": "4★ Berastagi (promo)",
+       "per": "pax",
+       "expr": "T['EMIYA-SAMOSIR__4-Berastagi-Upgrade-MYR']"
       }
      ]
     }
@@ -15182,7 +15355,7 @@
       {
        "from": 2,
        "to": 30,
-       "variant": "BAIM"
+       "variant": "EMIYA-SAMOSIR"
       }
      ],
      "pricing": {
@@ -15296,28 +15469,13 @@
        "type": "flat",
        "value": 0
       }
-     }
+     },
+     "alsoVariants": [
+      "BAIM"
+     ]
     }
    ],
    "addons": [
-    {
-     "id": "ltoba-a01",
-     "category": "Activity",
-     "label": "Drone Shooting (Option B only)",
-     "cost": 0.0,
-     "selling": 47.0,
-     "per": "pax",
-     "notes": "Option B Day 1 sahaja"
-    },
-    {
-     "id": "ltoba-a02",
-     "category": "Activity",
-     "label": "Samosir Island Add-on (Option B)",
-     "cost": 0.0,
-     "selling": 50.0,
-     "per": "pax",
-     "notes": "Option B Day 1 sahaja"
-    },
     {
      "id": "ltoba-a03",
      "category": "Meals",
@@ -15331,19 +15489,19 @@
      "id": "ltoba-a04",
      "category": "Meals",
      "label": "Tambah Lunch",
-     "cost": 30.0,
+     "cost": 15.0,
      "selling": 50.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "CR Emiya: tolak L&D RM90/pax untuk 3 lunch + 3 dinner ≈ RM15/meal"
     },
     {
      "id": "ltoba-a05",
      "category": "Meals",
      "label": "Tambah Dinner",
-     "cost": 30.0,
+     "cost": 15.0,
      "selling": 50.0,
      "per": "pax/meal",
-     "notes": null
+     "notes": "CR Emiya: tolak L&D RM90/pax untuk 3 lunch + 3 dinner ≈ RM15/meal"
     },
     {
      "id": "ltoba-a06",
@@ -15387,7 +15545,7 @@
      "label": "TripCare 360 — Couple (1-5 hari)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -15396,7 +15554,7 @@
      "label": "TripCare 360 — Couple (6-10 hari)",
      "cost": 122.87,
      "selling": 160.5,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -15405,7 +15563,7 @@
      "label": "TripCare 360 — Family (1-5 hari)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -15414,7 +15572,7 @@
      "label": "TripCare 360 — Family (6-10 hari)",
      "cost": 153.62,
      "selling": 201.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -15478,7 +15636,7 @@
      "per": "",
      "cost": null,
      "selling": null,
-     "notes": null,
+     "notes": "Option B sahaja; kos drone tiada dalam CR (Baim sebut 'dokumentasi photo, video')",
      "includes": "Drone, Drone Pilot, Raw Footage, Edited Footage",
      "duration": "The Whole Trip",
      "price_lines": [
@@ -15606,14 +15764,9 @@
        ]
       }
      }
-    },
-    {
-     "id": "ltoba-h07",
-     "name": "Emerald Garden Hotel",
-     "similar": true,
-     "catalogs": {}
     }
-   ]
+   ],
+   "historyFrom": 93
   },
   {
    "code": "PDG",
