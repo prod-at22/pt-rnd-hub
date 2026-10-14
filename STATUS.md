@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v92 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v92, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v93 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v93, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -233,10 +233,15 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   child rate → CWB / CNB below cost (flag, PO: flag only). TO names ICOM / Island Life (operator-name open item done). Add-ons costed from ICOM / Velana / Kaani;
   Kaani Full Day + Real Break removed from the 4 Star catalog add-ons (included); R&D duplicates removed; Arena costs open (image-only PDF). KB: 2027 +RM200 and
   Basic 2025 window removed, Combo Super Peak from 1 Nov (= catalog), upgrade RM400 only, Combo / WV last-minute row removed. Costing 2–30 kept (PO).
+  **Medan - Lake Toba (v93, PO ezie 14 Oct; CRs already in TO Contract Rate ltoba):** Option A (Parapat) = Emiya Parapat CR (checked, 2–20 pax); Option B (Samosir) default TO
+  now **Emiya Samosir** (CR 855 / 700 / 615 / 585 / 630 … 520, full meals, Samosir Villa; 14+ held at the 13-pax rate) with Baim as alternative (alsoVariants; 3 / 4 pax fixed to CR
+  650 / 600; breakfast only + L&D estimate RM120) → Option B margin 25–40 % (was 21–32 %). +RM25 in both Emiya costs = Sibayak 4★ Berastagi (KB Free Gift promo). TO hotel
+  labels fixed; duplicate Emerald hotel removed; nights 3; add-on duplicates removed, meal cost RM15 (CR L&D −RM90), TripCare pair / family; KB 8–15 Mar 2027 +RM90 removed.
+  Not added (PO): Emiya optional programs (Sibayak hike, Tero-Tero rafting, Sikulikap). Open: CR validity (Dec 2026 vs catalog Jan 2027), single / peak costs.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 7 destinations** (costs stored in MYR): JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Surabaya was mentioned by the PO).
+- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
@@ -311,7 +316,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 2. Korea CR: Basic 16 pax 406,193 KRW looks wrong; no rate 26–30 pax (except Standard); CR seasonal ±RM150–300 not applied;
    2-pax margin thin on Seoul-Jeju / Jeju-Udo.
 3. Done (v92): Maldives TO names ICOM / Island Life / Kaani Palm Beach.
-4. Confirm guessed package names: Lake Toba Emiya = Parapat, Baim = Samosir; Perhentian Basic = Shari-La, Standard = Mimpi.
+4. Lake Toba names confirmed by the CRs (Emiya Parapat / Emiya Samosir / Baim Samosir, v93). Still to confirm: Perhentian Basic = Shari-La, Standard = Mimpi.
 5. One FX per currency (THB 0.131 vs 0.122; IDR; USD 3.97 vs 4.0295; RMB 0.65 vs 0.58; AUD).
 6. Done (v29, 8 Oct): the catalog is the source for prices — Costing catalog prices of the 13 catalogs that differed were set to the published catalogs.
    /flags/ regenerated 7 Oct on data v25 (95 flags: 29 high · 37 medium · 29 low). New since v6: KK margin
