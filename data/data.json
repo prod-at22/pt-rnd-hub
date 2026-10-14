@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 89,
- "updatedAt": "2026-10-14T03:58:49Z",
+ "version": 90,
+ "updatedAt": "2026-10-14T04:14:53Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -5002,7 +5002,7 @@
    "duration": "5D4N",
    "nights": 4,
    "source": "hub",
-   "note": "Standard: Qayyum for 2–7 pax, WIF for 8+. JPY rates convert at their supplier FX; accommodation is in MYR.",
+   "note": "Standard: Qayyum 2–7 pax (bundled driving guide, FX 0.026), WIF 8+ (driver only + guide + service charge, FX 0.029). Basic: WIF airport + public transport + guide (incl. the guide's highway bus and ropeway). Big groups = WIF CR vehicles: airport Coaster ¥80k (9/10–18 pax) / Bus ¥130k (19+); Standard tours 14-seater 10–14, Coaster 15–18, Bus 19–30. Accommodation RM250/pax/night (ARBA books the hotel / apartment itself). Costing 2–30 pax. Self Tour kept for reference (no catalog; cost estimate).",
    "fx": [
     {
      "id": "MYR",
@@ -5043,17 +5043,17 @@
      "group": "1. Airport transfer"
     },
     {
-     "id": "hnd14",
-     "label": "Haneda 14-seater (WIF)",
-     "value": 25000,
+     "id": "hndBig",
+     "label": "Haneda Coaster 16–18 seat (WIF CR)",
+     "value": 80000,
      "fx": "WIF",
      "unit": "JPY/way",
      "group": "1. Airport transfer"
     },
     {
-     "id": "hndBig",
-     "label": "Haneda (big group) (WIF)",
-     "value": 37000,
+     "id": "hndBus",
+     "label": "Haneda Bus 30 seat (WIF CR)",
+     "value": 130000,
      "fx": "WIF",
      "unit": "JPY/way",
      "group": "1. Airport transfer"
@@ -5084,7 +5084,7 @@
     },
     {
      "id": "wCity89",
-     "label": "Tokyo City Tour (WIF)",
+     "label": "Tokyo City Tour 10-seater (WIF)",
      "value": 60000,
      "fx": "WIF",
      "unit": "JPY/trip",
@@ -5092,7 +5092,7 @@
     },
     {
      "id": "wCity1012",
-     "label": "Tokyo City Tour (WIF)",
+     "label": "Tokyo City Tour 14-seater (WIF)",
      "value": 65000,
      "fx": "WIF",
      "unit": "JPY/trip",
@@ -5100,7 +5100,7 @@
     },
     {
      "id": "wFuji89",
-     "label": "Fuji Tour (WIF)",
+     "label": "Fuji Tour 10-seater (WIF)",
      "value": 70000,
      "fx": "WIF",
      "unit": "JPY/trip",
@@ -5108,8 +5108,40 @@
     },
     {
      "id": "wFuji1012",
-     "label": "Fuji Tour (WIF)",
+     "label": "Fuji Tour 14-seater (WIF)",
      "value": 80000,
+     "fx": "WIF",
+     "unit": "JPY/trip",
+     "group": "2. Tour transport"
+    },
+    {
+     "id": "wCityCo",
+     "label": "Tokyo City Tour Coaster 16–18 seat (WIF CR)",
+     "value": 160000,
+     "fx": "WIF",
+     "unit": "JPY/trip",
+     "group": "2. Tour transport"
+    },
+    {
+     "id": "wCityBus",
+     "label": "Tokyo City Tour Bus 30 seat (WIF CR)",
+     "value": 200000,
+     "fx": "WIF",
+     "unit": "JPY/trip",
+     "group": "2. Tour transport"
+    },
+    {
+     "id": "wFujiCo",
+     "label": "Fuji Tour Coaster 16–18 seat (WIF CR)",
+     "value": 180000,
+     "fx": "WIF",
+     "unit": "JPY/trip",
+     "group": "2. Tour transport"
+    },
+    {
+     "id": "wFujiBus",
+     "label": "Fuji Tour Bus 30 seat (WIF CR)",
+     "value": 220000,
      "fx": "WIF",
      "unit": "JPY/trip",
      "group": "2. Tour transport"
@@ -5230,7 +5262,7 @@
        "key": "airport",
        "label": "Airport Haneda",
        "per": "group",
-       "expr": "2*band(pax,[4,R.hnd7],[8,R.hnd10],[999,R.hndBig])"
+       "expr": "2*band(pax,[4,R.hnd7],[8,R.hnd10],[18,R.hndBig],[999,R.hndBus])"
       },
       {
        "key": "transport",
@@ -5260,7 +5292,7 @@
        "key": "guide",
        "label": "Tour guide (½ day + 4 full days)",
        "per": "group",
-       "expr": "(R.gHalf+R.gAcc+R.gMeal+R.gTrn)+(R.gFull+R.gAcc+R.gMeal+R.gTrn)*4"
+       "expr": "(R.gHalf+R.gAcc+R.gMeal+R.gTrn)+(R.gFull+R.gAcc+R.gMeal+R.gTrn)*4+R.hwBus*2+R.kachi"
       },
       {
        "key": "charge",
@@ -5318,13 +5350,13 @@
        "key": "airport",
        "label": "Airport Haneda",
        "per": "group",
-       "expr": "2*band(pax,[9,R.hnd10],[999,R.hndBig])"
+       "expr": "2*band(pax,[9,R.hnd10],[18,R.hndBig],[999,R.hndBus])"
       },
       {
        "key": "transport",
        "label": "Private transport (Fuji + 3× city)",
        "per": "group",
-       "expr": "band(pax,[9,R.wFuji89+R.wCity89*3],[999,R.wFuji1012+R.wCity1012*3])"
+       "expr": "band(pax,[9,R.wFuji89+R.wCity89*3],[14,R.wFuji1012+R.wCity1012*3],[18,R.wFujiCo+R.wCityCo*3],[999,R.wFujiBus+R.wCityBus*3])"
       },
       {
        "key": "entrance",
@@ -5365,7 +5397,7 @@
        "key": "airport",
        "label": "Airport Haneda",
        "per": "group",
-       "expr": "2*band(pax,[3,R.hnd7],[7,R.hnd10],[999,R.hnd14])"
+       "expr": "2*band(pax,[3,R.hnd7],[7,R.hnd10],[18,R.hndBig],[999,R.hndBus])"
       },
       {
        "key": "accomm",
@@ -5401,7 +5433,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 40,
+       "to": 30,
        "variant": "WIF-BSC"
       }
      ],
@@ -5537,7 +5569,7 @@
       },
       {
        "from": 8,
-       "to": 40,
+       "to": 30,
        "variant": "WIF-STD"
       }
      ],
@@ -5661,7 +5693,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 40,
+       "to": 30,
        "variant": "WIF-ST"
       }
      ],
@@ -5808,6 +5840,15 @@
      "notes": null
     },
     {
+     "id": "hnd-a37",
+     "category": "Activity",
+     "label": "Disneyland / DisneySea ticket (D4, ganti Odaiba)",
+     "cost": 316.1,
+     "selling": 300.0,
+     "per": "pax",
+     "notes": "Katalog itinerary D4: add on RM300/pax untuk tiket (PO 14 Oct 2026). Kos tiket ≈ ¥10,900 × 0.029 (ProdReq §5.12) — harga tiket ikut tarikh"
+    },
+    {
      "id": "hnd-a04",
      "category": "Activity",
      "label": "Gala Yuzawa Ski (2 pax)",
@@ -5910,10 +5951,10 @@
      "id": "hnd-a15",
      "category": "Wifi",
      "label": "Pocket Wifi 10GB 5G Daily",
-     "cost": 40.0,
+     "cost": 58.0,
      "selling": 70.0,
      "per": "day",
-     "notes": null
+     "notes": "WIF CR Pocket Wifi ¥2,000/hari × 0.029"
     },
     {
      "id": "hnd-a16",
@@ -5939,7 +5980,7 @@
      "label": "TripCare 360 — Couple (1-5 hari)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -5948,7 +5989,7 @@
      "label": "TripCare 360 — Couple (6-10 hari)",
      "cost": 122.87,
      "selling": 160.5,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -5957,7 +5998,7 @@
      "label": "TripCare 360 — Family (1-5 hari)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -5966,7 +6007,7 @@
      "label": "TripCare 360 — Family (6-10 hari)",
      "cost": 153.62,
      "selling": 201.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -6027,55 +6068,28 @@
      "id": "hnd-a28",
      "category": "Meals",
      "label": "Breakfast — Tambah",
-     "cost": 87.0,
+     "cost": 43.5,
      "selling": 116.0,
      "per": "meal/pax",
-     "notes": "From WIF B2B ¥3000/breakfast × FX"
-    },
-    {
-     "id": "hnd-a29",
-     "category": "Meals",
-     "label": "Breakfast — Tolak",
-     "cost": -87.0,
-     "selling": -116.0,
-     "per": "meal/pax",
-     "notes": "Refund 1 breakfast (jika Customer skip)"
+     "notes": "WIF CR Customer Meals breakfast ¥1,500 × 0.029"
     },
     {
      "id": "hnd-a30",
      "category": "Meals",
      "label": "Lunch — Tambah",
-     "cost": 116.0,
+     "cost": 58.0,
      "selling": 187.0,
      "per": "meal/pax",
-     "notes": "¥4000/lunch × FX. Halal-approved restaurant"
-    },
-    {
-     "id": "hnd-a31",
-     "category": "Meals",
-     "label": "Lunch — Tolak",
-     "cost": -116.0,
-     "selling": -187.0,
-     "per": "meal/pax",
-     "notes": "Refund 1 lunch (Customer skip)"
+     "notes": "WIF CR Customer Meals lunch ¥2,000 × 0.029. Halal-approved restaurant"
     },
     {
      "id": "hnd-a32",
      "category": "Meals",
      "label": "Dinner — Tambah",
-     "cost": 116.0,
+     "cost": 58.0,
      "selling": 187.0,
      "per": "meal/pax",
-     "notes": "¥4000/dinner × FX"
-    },
-    {
-     "id": "hnd-a33",
-     "category": "Meals",
-     "label": "Dinner — Tolak",
-     "cost": -116.0,
-     "selling": -187.0,
-     "per": "meal/pax",
-     "notes": "Refund 1 dinner"
+     "notes": "WIF CR Customer Meals dinner ¥2,000 × 0.029"
     },
     {
      "id": "hnd-a34",
@@ -6108,10 +6122,10 @@
      "id": "hnd-k001",
      "category": "Add On Accommodation",
      "label": "Apartment / 3 Star Hotel",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax/night",
+     "cost": 250.0,
+     "selling": 300.0,
+     "notes": "Kos = accommodation Costing RM250/pax/malam (ARBA tempah sendiri)",
      "price_lines": [
       "RM300/Night/Pax"
      ],
@@ -6124,10 +6138,10 @@
      "id": "hnd-k002",
      "category": "Upgrade to Private Transport",
      "label": "Tokyo City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 609.0,
+     "selling": 1097.0,
+     "notes": "Band 2 pax · kos = kenderaan WIF (driver sahaja, guide sudah dalam Basic) ÷ pax − public pass ¥1,500; band paling mahal",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -6143,13 +6157,49 @@
      }
     },
     {
+     "id": "hnd-k002-b",
+     "category": "Upgrade to Private Transport",
+     "label": "Tokyo City Tour — 3 pax",
+     "cost": 391.5,
+     "selling": 797.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF (driver sahaja, guide sudah dalam Basic) ÷ pax − public pass ¥1,500; band paling mahal"
+    },
+    {
+     "id": "hnd-k002-c",
+     "category": "Upgrade to Private Transport",
+     "label": "Tokyo City Tour — 4 pax",
+     "cost": 282.75,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF (driver sahaja, guide sudah dalam Basic) ÷ pax − public pass ¥1,500; band paling mahal"
+    },
+    {
+     "id": "hnd-k002-d",
+     "category": "Upgrade to Private Transport",
+     "label": "Tokyo City Tour — 5–9 pax",
+     "cost": 217.5,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF (driver sahaja, guide sudah dalam Basic) ÷ pax − public pass ¥1,500; band paling mahal"
+    },
+    {
+     "id": "hnd-k002-e",
+     "category": "Upgrade to Private Transport",
+     "label": "Tokyo City Tour — 10–12 pax",
+     "cost": 145.0,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF (driver sahaja, guide sudah dalam Basic) ÷ pax − public pass ¥1,500; band paling mahal"
+    },
+    {
      "id": "hnd-k003",
      "category": "Upgrade to Private Transport",
      "label": "Fuji Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 577.1,
+     "selling": 1197.0,
+     "notes": "Band 2 pax · kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -6166,13 +6216,58 @@
      }
     },
     {
+     "id": "hnd-k003-b",
+     "category": "Upgrade to Private Transport",
+     "label": "Fuji Day Tour — 3 pax",
+     "cost": 327.7,
+     "selling": 797.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal"
+    },
+    {
+     "id": "hnd-k003-c",
+     "category": "Upgrade to Private Transport",
+     "label": "Fuji Day Tour — 4 pax",
+     "cost": 203.0,
+     "selling": 697.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal"
+    },
+    {
+     "id": "hnd-k003-d",
+     "category": "Upgrade to Private Transport",
+     "label": "Fuji Day Tour — 5–7 pax",
+     "cost": 128.18,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal"
+    },
+    {
+     "id": "hnd-k003-e",
+     "category": "Upgrade to Private Transport",
+     "label": "Fuji Day Tour — 8–10 pax",
+     "cost": 66.7,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal"
+    },
+    {
+     "id": "hnd-k003-f",
+     "category": "Upgrade to Private Transport",
+     "label": "Fuji Day Tour — 11–12 pax",
+     "cost": 28.21,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "kos = kenderaan WIF ÷ pax − pass ¥1,500 − highway bus ¥4,400 (customer + guide); band paling mahal"
+    },
+    {
      "id": "hnd-k004",
      "category": "Add On Public Transport",
      "label": "Tokyo City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 442.25,
+     "selling": 697.0,
+     "notes": "Band 2 pax · kos = public pass ¥1,500 + guide WIF 1 hari ¥27,500 ÷ pax; band paling mahal",
      "includes": "Public Transport Card, Tour Guide (10 Hours Basis)",
      "excludes": "Meals, Personal Expenses",
      "duration": "From 9am to 7pm",
@@ -6190,13 +6285,49 @@
      }
     },
     {
+     "id": "hnd-k004-b",
+     "category": "Add On Public Transport",
+     "label": "Tokyo City Tour — 3 pax",
+     "cost": 309.33,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "kos = public pass ¥1,500 + guide WIF 1 hari ¥27,500 ÷ pax; band paling mahal"
+    },
+    {
+     "id": "hnd-k004-c",
+     "category": "Add On Public Transport",
+     "label": "Tokyo City Tour — 4 pax",
+     "cost": 242.88,
+     "selling": 497.0,
+     "per": "pax",
+     "notes": "kos = public pass ¥1,500 + guide WIF 1 hari ¥27,500 ÷ pax; band paling mahal"
+    },
+    {
+     "id": "hnd-k004-d",
+     "category": "Add On Public Transport",
+     "label": "Tokyo City Tour — 5–9 pax",
+     "cost": 203.0,
+     "selling": 397.0,
+     "per": "pax",
+     "notes": "kos = public pass ¥1,500 + guide WIF 1 hari ¥27,500 ÷ pax; band paling mahal"
+    },
+    {
+     "id": "hnd-k004-e",
+     "category": "Add On Public Transport",
+     "label": "Tokyo City Tour — 10–12 pax",
+     "cost": 123.25,
+     "selling": 297.0,
+     "per": "pax",
+     "notes": "kos = public pass ¥1,500 + guide WIF 1 hari ¥27,500 ÷ pax; band paling mahal"
+    },
+    {
      "id": "hnd-k005",
      "category": "Add On Public Transport",
      "label": "Fuji Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 648.15,
+     "selling": 1197.0,
+     "notes": "Band 2 pax · kos = pass + highway bus ¥4,400 + ropeway + guide ¥27,500 + bas guide, ÷ pax; band paling mahal",
      "includes": "Public Transport Card, Tour Guide (10 Hours Basis)",
      "excludes": "Meals, Personal Expenses",
      "duration": "From 9am to 7pm",
@@ -6213,13 +6344,40 @@
      }
     },
     {
+     "id": "hnd-k005-b",
+     "category": "Add On Public Transport",
+     "label": "Fuji Day Tour — 3–4 pax",
+     "cost": 489.13,
+     "selling": 797.0,
+     "per": "pax",
+     "notes": "kos = pass + highway bus ¥4,400 + ropeway + guide ¥27,500 + bas guide, ÷ pax; band paling mahal"
+    },
+    {
+     "id": "hnd-k005-c",
+     "category": "Add On Public Transport",
+     "label": "Fuji Day Tour — 5–9 pax",
+     "cost": 361.92,
+     "selling": 697.0,
+     "per": "pax",
+     "notes": "kos = pass + highway bus ¥4,400 + ropeway + guide ¥27,500 + bas guide, ÷ pax; band paling mahal"
+    },
+    {
+     "id": "hnd-k005-d",
+     "category": "Add On Public Transport",
+     "label": "Fuji Day Tour — 10–12 pax",
+     "cost": 266.51,
+     "selling": 597.0,
+     "per": "pax",
+     "notes": "kos = pass + highway bus ¥4,400 + ropeway + guide ¥27,500 + bas guide, ÷ pax; band paling mahal"
+    },
+    {
      "id": "hnd-k006",
      "category": "Add On Private Transport",
      "label": "Tokyo City Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "trip",
+     "cost": 1976.0,
+     "selling": 3000.0,
+     "notes": "Band 1–7 pax · 1–7 Qayyum ¥76,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -6234,13 +6392,31 @@
      }
     },
     {
+     "id": "hnd-k006-b",
+     "category": "Add On Private Transport",
+     "label": "Tokyo City Tour — 8 pax",
+     "cost": 2537.5,
+     "selling": 4300.0,
+     "per": "trip",
+     "notes": "1–7 Qayyum ¥76,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide"
+    },
+    {
+     "id": "hnd-k006-c",
+     "category": "Add On Private Transport",
+     "label": "Tokyo City Tour — 9–12 pax",
+     "cost": 2682.5,
+     "selling": 4600.0,
+     "per": "trip",
+     "notes": "1–7 Qayyum ¥76,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide"
+    },
+    {
      "id": "hnd-k007",
      "category": "Add On Private Transport",
      "label": "Fuji Day Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "trip",
+     "cost": 2106.0,
+     "selling": 3000.0,
+     "notes": "Band 1–7 pax · 1–7 Qayyum ¥81,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide",
      "includes": "Private Transport, Tour Guide (10 hours basis)",
      "excludes": "Meals, Personal Expenses, Entrance Fee",
      "duration": "From 9am to 7pm",
@@ -6253,6 +6429,24 @@
       "tokyo-basic": 7,
       "tokyo-standard": 3
      }
+    },
+    {
+     "id": "hnd-k007-b",
+     "category": "Add On Private Transport",
+     "label": "Fuji Day Tour — 8 pax",
+     "cost": 2827.5,
+     "selling": 4300.0,
+     "per": "trip",
+     "notes": "1–7 Qayyum ¥81,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide"
+    },
+    {
+     "id": "hnd-k007-c",
+     "category": "Add On Private Transport",
+     "label": "Fuji Day Tour — 9–12 pax",
+     "cost": 3117.5,
+     "selling": 4600.0,
+     "per": "trip",
+     "notes": "1–7 Qayyum ¥81,000 (bundled guide); 8 WIF 10-seater + guide; 9–12 WIF 14-seater + guide"
     }
    ],
    "po": "Thania",

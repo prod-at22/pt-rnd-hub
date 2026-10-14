@@ -280,6 +280,26 @@
    "fix": "Confirm the source rate card and its currency before Sales quote custom itineraries.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "HND",
+   "severity": "medium",
+   "area": "Add-ons",
+   "title": "Tokyo: R&D add-ons with doubtful costs",
+   "detail": "Copied from the R&D Add-Ons tab: Fuji Tour 2 pax (cost RM215 / sell RM849 per pax), Tokyo + Ghibli / Hello Kitty / HP (RM44 / RM678), Tokyo City Day Tour 2 pax / 4–6 pax (RM648 / RM324 'per transport'), Disneyland 800 / 700 / 600 per trip (R&D tiering; the catalog sells the ticket at RM300/pax), 1 Day Tokyo Train Experience. They overlap the catalog add-ons.",
+   "fix": "Decide per item: remove, or re-cost from the WIF / Qayyum rates (PO flagged 14 Oct 2026).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "HND",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Tokyo: thin margins at 2–4 pax",
+   "detail": "Standard 2 pax adult ≈6.6 % (CWB ≈3.3 %), 3 pax ≈13 %; Basic 3–4 pax ≈17–19 % (CWB 12–14 %) at catalog − RM200 (Qayyum FX 0.026, accommodation RM250).",
+   "fix": "Accept, or review the 2–4 pax catalog prices.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
