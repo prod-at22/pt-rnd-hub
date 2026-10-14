@@ -1350,45 +1350,52 @@ function cmpMd(t) {
   return out + (list ? "</ul>" : "");
 }
 function competitorTab(d) {
-  const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), cols = cmpCols(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"];
-  const txt = (path, v) => E ? `<textarea class="ed cmp-in${JSON.stringify(getPath(BASE, path) ?? "") !== JSON.stringify(v ?? "") ? " chg" : ""}" rows="2" data-path="${esc(JSON.stringify(path))}" data-kind="text">${esc(v ?? "")}</textarea>` : esc(v || "") || '<span class="muted">—</span>';
+  const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), cols = cmpCols(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"], n = cols.length + 1;
+  const chg = (path, v) => JSON.stringify(getPath(BASE, path) ?? "") !== JSON.stringify(v ?? "") ? " chg" : "";
+  const txt = (path, v) => E ? `<textarea class="ed cmp-in${chg(path, v)}" rows="1" data-path="${esc(JSON.stringify(path))}" data-kind="text">${esc(v ?? "")}</textarea>` : esc(v || "") || '<span class="muted">—</span>';
   const attrPath = (col, k) => col.arba ? [...base, "arba", col.pkg.id, k] : [...base, "items", col.c.id, "attrs", k];
   const attrVal = (col, k) => col.arba ? ((C.arba || {})[col.pkg.id] || {})[k] : (col.c.attrs || {})[k];
-  const adult = (p, n) => { const v = p.pricing.adult[String(n)]; return v == null || v === "" ? NaN : +v; };
+  const adult = (p, x) => { const v = p.pricing.adult[String(x)]; return v == null || v === "" ? NaN : +v; };
   const aiOk = E && SESSION && SESSION.aiKey;
-  const aiBtn = (act, label, extra = "") => E ? `<button class="btn${act === "cmpAnalyse" ? " primary" : ""}" data-act="${act}"${extra}${aiOk ? "" : ` disabled title="Admin: Account → Claude API key"`}>✦ ${label}</button>` : "";
-  const head = `<h2>Competitor Analysis · ${esc(d.name)} <span class="sub">ARBA vs pesaing · harga ARBA = Catalog Price (tab Costing)</span>
-    <span class="right">${aiBtn("cmpAI", "Tambah pesaing (AI)")} ${cols.length ? aiBtn("cmpAnalyse", "Analisis AI") : ""}</span></h2>`;
-  const addRow = E ? `<div class="body cmp-add"><b>Tambah manual</b>
-      <input id="cmpName" placeholder="nama pesaing + pakej, cth. Lurima Lite">
-      <label class="small">lawan <select id="cmpVs">${d.packages.map(p => `<option value="${esc(p.id)}">${esc(p.label)}</option>`).join("")}</select></label>
-      <button class="btn" data-act="cmpAdd">Tambah</button>
-      <span class="small muted">Pax harga: <input id="cmpPax" class="ed txt" style="width:110px;text-align:left" value="${esc(pax.join(", "))}" title="senarai pax untuk baris harga, cth. 3, 4, 6, 8"></span>
-      ${aiOk ? "" : `<span class="small muted">AI perlu Claude API key (admin: Account → Claude API key).</span>`}</div>` : "";
-  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${addRow}<div class="empty">Belum ada pesaing untuk ${esc(d.name)}.${E ? " Tambah pesaing di atas — atau guna ✦ AI dengan teks, screenshot, PDF atau URL pesaing." : " Log masuk dan Edit costs untuk menambah."}</div></div>`;
-  const th = cols.map(col => `<th class="${col.arba ? "cmp-arba" : "cmp-comp"}">${col.arba ? esc(col.pkg.label) : E ? `<input class="ed txt cmp-name" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "name"]))}" data-kind="text" value="${esc(col.c.name)}">` : esc(col.c.name)}
-      ${col.arba ? `<div class="cmp-tag">ARBA</div>` : `<div class="cmp-tag">vs ${esc(col.pkg.label)}${E ? ` <button class="btn mini" data-act="cmpAI" data-id="${esc(col.c.id)}" ${aiOk ? "" : "disabled"} title="Kemas kini dengan AI">✦</button> <button class="btn mini danger" data-act="cmpDel" data-id="${esc(col.c.id)}" title="Buang">×</button>` : ""}</div>`}</th>`).join("");
-  const rowA = ([k, l]) => `<tr><th class="l cmp-asp">${esc(l)}</th>${cols.map(col => `<td class="${col.arba ? "cmp-arba" : ""}">${txt(attrPath(col, k), attrVal(col, k))}</td>`).join("")}</tr>`;
-  const rowP = n => `<tr><th class="l cmp-asp">Price (${n} pax)</th>${cols.map(col => {
-    const a = adult(col.pkg, n);
-    if (col.arba) return `<td class="cmp-arba num"><b>${rm(a)}</b></td>`;
-    const v = (col.c.prices || {})[String(n)], x = num(+v) && v !== "" && v != null ? +v : NaN, dlt = x - a, ex = +col.c.extra || 0;
-    const cell = E ? ed([...base, "items", col.c.id, "prices", String(n)], num(x) ? x : undefined) : num(x) ? rm(x) : '<span class="muted">—</span>';
-    const gap = num(dlt) ? `<div class="cmp-gap ${dlt < 0 ? "m-bad" : "m-ok"}" title="${dlt < 0 ? "pesaing lebih murah" : "ARBA lebih murah"} daripada ${esc(col.pkg.label)}">${dlt < 0 ? "▼" : dlt > 0 ? "▲" : "="} ${rm(Math.abs(dlt))} (${pct(Math.abs(dlt) / a)})</div>` : "";
-    const eq = ex && num(x) ? `<div class="cmp-gap" title="${esc(col.c.extraNote || "")}">setara ${rm(x + ex)} ${x + ex < a ? '<span class="m-bad">▼</span>' : '<span class="m-ok">▲</span>'}</div>` : "";
-    return `<td class="num">${cell}${gap}${eq}</td>`;
+  const aiBtn = (act, label, cls = "") => E ? `<button class="btn${cls}" data-act="${act}"${aiOk ? "" : ` disabled title="Perlu Claude API key — admin: Account → Claude API key"`}>✦ ${label}</button>` : "";
+  const head = `<h2>Competitor Analysis · ${esc(d.name)} <span class="sub">ARBA lawan pesaing · harga ARBA = Catalog Price</span>
+    <span class="right">${aiBtn("cmpAI", "Tambah pesaing")}${cols.length ? aiBtn("cmpAnalyse", "Analisis AI", " primary") : ""}</span></h2>`;
+  const bar = E ? `<div class="cmp-bar">
+      <input id="cmpName" placeholder="Nama pesaing, cth. Lurima Lite">
+      <select id="cmpVs" title="Pakej ARBA untuk dibandingkan">${d.packages.map(p => `<option value="${esc(p.id)}">lawan ${esc(p.label)}</option>`).join("")}</select>
+      <button class="btn" data-act="cmpAdd">+ Tambah manual</button>
+      <label class="cmp-paxin">Pax harga <input id="cmpPax" value="${esc(pax.join(", "))}" title="cth. 3, 4, 6, 8"></label>
+      ${aiOk ? "" : `<span class="cmp-hint">✦ AI perlu Claude API key (admin: Account)</span>`}</div>` : "";
+  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${bar}<div class="empty">Belum ada pesaing untuk ${esc(d.name)}.${E ? " Tambah di atas, atau ✦ Tambah pesaing dengan teks, screenshot, PDF atau URL." : " Log masuk dan Edit costs untuk menambah."}</div></div>`;
+  const th = cols.map(col => {
+    if (col.arba) return `<th class="cmp-arba"><div class="cmp-h">${esc(col.pkg.label)}</div><div class="cmp-tag">ARBA</div></th>`;
+    const c = col.c, tip = [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ");
+    return `<th class="cmp-comp"${tip ? ` title="${esc(tip)}"` : ""}>${E ? `<input class="cmp-name${chg([...base, "items", c.id, "name"], c.name)}" data-path="${esc(JSON.stringify([...base, "items", c.id, "name"]))}" data-kind="text" value="${esc(c.name)}">` : `<div class="cmp-h">${esc(c.name)}</div>`}
+      <div class="cmp-tag">lawan ${esc(col.pkg.label)}</div>${E ? `<div class="cmp-act"><button class="lnk" data-act="cmpAI" data-id="${esc(c.id)}"${aiOk ? "" : " disabled"}>✦ kemas kini</button><button class="lnk bad-t" data-act="cmpDel" data-id="${esc(c.id)}">buang</button></div>` : ""}</th>`;
+  }).join("");
+  const grp = l => `<tr class="cmp-grp"><td colspan="${n}">${l}</td></tr>`;
+  const rowA = ([k, l]) => `<tr><th class="cmp-asp">${esc(l)}</th>${cols.map(col => `<td class="${col.arba ? "cmp-arba" : ""}">${txt(attrPath(col, k), attrVal(col, k))}</td>`).join("")}</tr>`;
+  const rowP = x => `<tr class="cmp-pr"><th class="cmp-asp">${x} pax</th>${cols.map(col => {
+    const a = adult(col.pkg, x);
+    if (col.arba) return `<td class="cmp-arba"><b>${rm(a)}</b></td>`;
+    const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN, dl = p - a, ex = +col.c.extra || 0;
+    const cell = E ? ed([...base, "items", col.c.id, "prices", String(x)], num(p) ? p : undefined) : num(p) ? rm(p) : '<span class="muted">—</span>';
+    const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "▼" : dl > 0 ? "▲" : "="} ${pct(Math.abs(dl) / a)}</span>` : "";
+    const eq = ex && num(p) ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : "";
+    return `<td><span class="cmp-pv">${cell}${gap}</span>${eq}</td>`;
   }).join("")}</tr>`;
-  const extraRow = E || cols.some(c => !c.arba && +c.c.extra) ? `<tr><th class="l cmp-asp" title="RM/pax untuk jadikan harga pesaing setara ARBA (cth. hotel / K-ETA yang dikecualikan)">Tambahan untuk setara (RM/pax)</th>${cols.map(col => col.arba ? `<td class="cmp-arba muted small">—</td>` :
-    `<td class="num">${E ? ed([...base, "items", col.c.id, "extra"], col.c.extra) : +col.c.extra ? rm(+col.c.extra) : "—"}<div class="small muted cmp-wrap">${E ? `<input class="ed txt" style="width:100%;text-align:left" placeholder="cth. hotel RM980 + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}">` : esc(col.c.extraNote || "")}</div></td>`).join("")}</tr>` : "";
-  const src = cols.filter(c => !c.arba && (c.c.source || c.c.updated)).map(c => `<b>${esc(c.c.name)}</b>: ${esc([c.c.source, c.c.updated && "dikemas kini " + c.c.updated].filter(Boolean).join(" · "))}`).join(" · ");
+  const anyEx = cols.some(c => !c.arba && +c.c.extra);
+  const exRow = E || anyEx ? `<tr><th class="cmp-asp" title="RM seorang untuk jadikan harga pesaing setanding ARBA (cth. hotel / K-ETA yang dikecualikan)">Tambahan setara</th>${cols.map(col => col.arba ? `<td class="cmp-arba"></td>` :
+    `<td>${E ? `${ed([...base, "items", col.c.id, "extra"], col.c.extra)}<input class="ed txt cmp-exn${chg([...base, "items", col.c.id, "extraNote"], col.c.extraNote)}" placeholder="cth. hotel + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}">`
+      : +col.c.extra ? `${rm(+col.c.extra)}<div class="cmp-eq">${esc(col.c.extraNote || "")}</div>` : '<span class="muted">—</span>'}</td>`).join("")}</tr>` : "";
   const A = C.analysis;
   const ana = A && (A.text || (A.actions || []).length) ? `<div class="card full cmp-ana"><h2>✦ Analisis AI <span class="sub">${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</span></h2>
       <div class="body cmp-md">${cmpMd(A.text)}${(A.actions || []).length ? `<h4>Cadangan tindakan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
-      <div class="note">Dijana oleh Claude daripada jadual di atas dan katalog ARBA. Semak sebelum guna untuk keputusan harga.</div></div>` : "";
-  return `<div class="card full" id="cmpCard">${head}${addRow}
-    <div class="scroll"><table class="cmp-t"><thead><tr><th class="l cmp-asp">Aspect</th>${th}</tr></thead>
-    <tbody>${cmpAspects(d).map(rowA).join("")}${pax.map(rowP).join("")}${extraRow}${CMP_SW.map(rowA).join("")}</tbody></table></div>
-    <div class="note">▼ pesaing lebih murah, ▲ ARBA lebih murah (beza vs pakej ARBA di sebelahnya, harga katalog dewasa). ${src ? "Sumber — " + src : ""}</div></div>${ana}`;
+      <div class="note">Dijana oleh Claude daripada jadual dan katalog ARBA — semak sebelum buat keputusan harga.</div></div>` : "";
+  return `<div class="card full" id="cmpCard">${head}${bar}
+    <div class="scroll"><table class="cmp-t${E ? " cmp-e" : ""}"><thead><tr><th class="cmp-asp"></th>${th}</tr></thead>
+    <tbody>${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${grp("Harga dewasa seorang")}${pax.map(rowP).join("")}${exRow}${grp("Penilaian")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
+    <div class="note"><span class="cmp-gap dn">▼</span> pesaing lebih murah · <span class="cmp-gap up">▲</span> ARBA lebih murah — beza % berbanding pakej ARBA yang dilawan. Tuding nama pesaing untuk sumber.</div></div>${ana}`;
 }
 
 /* ---------- Claude (browser, API key from the vault) */
