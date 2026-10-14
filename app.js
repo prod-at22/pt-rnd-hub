@@ -1349,6 +1349,22 @@ function cmpMd(t) {
   }
   return out + (list ? "</ul>" : "");
 }
+// A competitor's value vs ARBA's for the same aspect: "red" = competitor gives more (threat), "green" = ARBA gives more,
+// "yel" = different but not clearly better or worse, "" = same. Strength / weakness are not compared.
+function cmpDiff(k, a, c) {
+  const n = x => String(x || "").trim().toLowerCase();
+  if (!n(c) || n(a) === n(c)) return "";
+  const cls = x => /tidak dinyatakan|tak dinyatakan|not stated|tak jelas/.test(n(x)) ? "na" : /^(excluded|exclude|tidak termasuk|tak termasuk|not included|no\b|tiada|none)/.test(n(x)) ? "exc" : /^(included|include|termasuk|ya\b|yes\b)/.test(n(x)) ? "inc" : "txt";
+  if (k === "hours") { const h = x => { const m = n(x).match(/(\d+(?:\.\d+)?)\s*jam/) || n(x).match(/(\d+(?:\.\d+)?)/); return m ? +m[1] : NaN; }, x = h(a), y = h(c);
+    if (num(x) && num(y)) return y > x ? "red" : y < x ? "green" : ""; }
+  if (k === "meals") { const lvl = x => cls(x) === "exc" || /^no meal/.test(n(x)) ? 0 : /full.?board|ikut aturcara|lunch|dinner|tengah hari|malam|makan halal/.test(n(x)) ? 2 : /breakfast|sarapan/.test(n(x)) ? 1 : NaN, x = lvl(a), y = lvl(c);
+    if (num(x) && num(y)) return y > x ? "red" : y < x ? "green" : ""; }
+  const x = cls(a), y = cls(c);
+  if (x === "inc" && y === "exc") return "green";
+  if (x === "exc" && y === "inc") return "red";
+  if (x === y && x !== "txt") return "";   // e.g. "Included" vs "Included (3★, …)"
+  return "yel";
+}
 // View mode of Competitor Analysis: one row per category, one card per column, bullet points (Edit costs keeps the table).
 const CMP_CATS = [["Harga seorang", null], ["Pakej", ["days", "packaging", "hours"]], ["Guide & USP", ["guide", "usp"]], ["Inklusi", ["accommodation", "meals", "tipping", "visa"]], ["Kekuatan", ["strength"]], ["Kelemahan", ["weakness"]]];
 function cmpGrid(d, pkg, cols, pax, adult) {
@@ -1364,14 +1380,17 @@ function cmpGrid(d, pkg, cols, pax, adult) {
     }).filter(Boolean));
     const one = keys.length === 1;
     return bullets(keys.flatMap(k => { const v = val(col, k); if (!v || v === "-") return [];
-      return one ? v.split(/\s*;\s*/).filter(Boolean).map(x => `<li>${esc(x)}</li>`) : [`<li>${["days", "packaging", "usp"].includes(k) ? "" : `<span class="cmp-k">${esc(lbl[k] || k)}:</span> `}${esc(v)}</li>`]; }));
+      if (one) return v.split(/\s*;\s*/).filter(Boolean).map(x => `<li>${esc(x)}</li>`);
+      const f = col.arba ? "" : cmpDiff(k, val({ arba: true }, k), v), arb = val({ arba: true }, k);
+      return [`<li${f ? ` class="df ${f}" title="ARBA: ${esc(arb || "—")}"` : ""}>${["days", "packaging", "usp"].includes(k) ? "" : `<span class="cmp-k">${esc(lbl[k] || k)}:</span> `}<span class="dv">${esc(v)}</span></li>`]; }));
   };
   const head = cols.map(col => {
     const c = col.c, tip = c ? [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ") : "";
     return `<div class="cg-head${col.arba ? " arba" : ""}"${tip ? ` title="${esc(tip)}"` : ""}>${col.arba ? `ARBA<small>${esc(pkg.label)}</small>` : esc(c.name)}</div>`;
   }).join("");
   const rows = CMP_CATS.map(([l, keys]) => `<div class="cg-cat">${esc(l)}</div>${cols.map(col => `<div class="cg-cell${col.arba ? " arba" : ""}">${cell(col, keys)}</div>`).join("")}`).join("");
-  return `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
+  const legend = `<div class="cmp-legend">Berbanding ARBA: <span class="df red"><span class="dv">merah</span></span> pesaing lebih baik · <span class="df green"><span class="dv">hijau</span></span> ARBA lebih baik · <span class="df yel"><span class="dv">kuning</span></span> berbeza (tuding untuk nilai ARBA)</div>`;
+  return legend + `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
 }
 // Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
 function competitorTab(d) {

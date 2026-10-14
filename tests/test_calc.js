@@ -915,6 +915,14 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(heads().split("|").length === 4 && heads().includes("Jeju Muslim|Selamat Bercuti|Sedunia Travel") && pg.doc.querySelector("#selPkg").value === "atk-std" && h[0].textContent.includes("RM3,697") && h[2].querySelector("li .cmp-gap.up").textContent === "+59.3%", "link switches the Package to Seoul Standard: 3 competitors, Selamat Bercuti +59.3% (green)");
     ok(/K-ETA:\s*Excluded/.test(cells("Inklusi")[2].textContent) && cells("Kelemahan")[2].querySelectorAll("li").length === 3, "Inklusi bullets 'K-ETA: Excluded'; weaknesses split into bullets");
     ok($p(".cmp-ana h4").textContent === "Cadangan" && $p(".cmp-ana details summary").textContent === "Analisis penuh", "analysis: actions shown, full text folded");
+    {
+      const li = (col, l, re) => [...cells(l)[col].querySelectorAll("li")].find(x => re.test(x.textContent));
+      const jm = li(1, "Inklusi", /Meals/), sk = li(2, "Inklusi", /K-ETA/), jh = li(1, "Pakej", /Hours/), jt = li(1, "Inklusi", /Tipping/), ja = li(1, "Inklusi", /Accommodation/);
+      ok(jm.classList.contains("red") && jm.title === "ARBA: Breakfast", "differs from ARBA: Jeju meals 'ikut aturcara' > Breakfast → red (title shows ARBA value)");
+      ok(sk.classList.contains("green") && jh.classList.contains("green"), "ARBA better: Selamat Bercuti K-ETA Excluded, Jeju 9 jam < 10 jam → green");
+      ok(jt.classList.contains("yel") && !ja.classList.contains("df") && !li(1, "Pakej", /5D4N/).classList.contains("df"), "unclear difference → yellow (tipping 'Tidak dinyatakan'); same → no mark (Included (3★…), 5D4N)");
+      ok(!cells("Kekuatan")[1].querySelector(".df") && $p(".cmp-legend").textContent.includes("kuning"), "strengths not compared; legend explains merah / hijau / kuning");
+    }
     ok(!$p('[data-act="cmpAI"]') && !$p(".cmp-bar"), "view mode: no AI / edit controls");
     P2.SESSION = { u: "aiman", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => $p(".cmp-t textarea"));
     ok($p('[data-act="cmpAnalyse"]').disabled && $p('[data-act="cmpAI"]').disabled, "AI buttons disabled without a Claude API key");
