@@ -380,6 +380,36 @@
    "fix": "Get WAE day-tour rates per vehicle, then set cost (and decide whether the catalog price should vary by vehicle).",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "NSNZ",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "New Zealand: 9–10 pax transport + driving guide is an R&D estimate",
+   "detail": "The R&D sheet (PO Acap) has no 12-seater / 9–10 pax vehicle rate; TRANS/DG is a flat RM3,800 / RM3,500 per pax (10D9N) and RM3,100 / RM2,800 (South 8D7N). Margins at 9–10 pax: 10D9N 14.9 / 16.3 %, South 21.4 / 25.4 %.",
+   "fix": "Get a 12-seater (or 2-vehicle) rate and cost 9–10 pax from it.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "NSNZ",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "New Zealand: Self Drive 9D8N costs have no source",
+   "detail": "ST North & South 9D8N (3★ / Apartment) costs are MYR figures kept from the old import; the R&D sheet does not cost the self-drive packages (car rental rates only). The margin is ~22.6 % at every pax, which suggests the costs were back-calculated from the selling price.",
+   "fix": "Cost ST 9D8N from car rental + hotel / apartment + domestic flights + NZeTA (NZD), then replace the Ground Cost table.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "NSNZ",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "New Zealand: catalog add-ons without cost / doubtful price",
+   "detail": "No cost for Agrodome Farm & Animal Show, Hamilton Garden, Shotover Jet, Fruit Picking (Jackson's Orchard), Milford Sound Coach + Cruise ex-Te Anau (RM550) or any child / youth price. Fruit Picking prints the same prices as Shotover Jet (RM480 / RM120) in the South catalog and the KB — looks copied.",
+   "fix": "Get the costs (and the real Fruit Picking price) and fill them in Add On.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

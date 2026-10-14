@@ -11,7 +11,7 @@
   "basis": "Ground · Self Tour",
   "valid_until": "31 March 2027",
   "version": "v3",
-  "updated": "2026-03-12",
+  "updated": "2026-10-14",
   "kb_url": "https://prod-at22.github.io/arba-newzealand-kb/",
   "po": "Acap",
   "ops": "ATIQAH",
@@ -74,7 +74,7 @@
         "Rental Vehicle with GPS",
         "Full Comprehensive Car Insurance",
         "24/7 Roadside Assistance",
-        "8 Nights Accomodation in Apartment/Airbnb",
+        "8 Nights Accommodation in Apartment/Airbnb",
         "Online Trip Assistance",
         "Online Pre Trip Consultation",
         "NZ-ETA Application for 1st Application",
@@ -89,7 +89,7 @@
         "Personal Expenses, Fuels, Parking & Traffic Summon",
         "Personal Travel Insurance",
         "NZ-ETA Re-application",
-        "Pocket Wifi or Internet Acccess"
+        "Pocket Wifi or Internet Access"
       ]
     }
   ],
@@ -176,7 +176,7 @@
         "Lindis Pass Photostop",
         "Wanaka Lake",
         "Transfer to Te Anau (2 hours)",
-        "Sourvenir Shopping in Te Anau",
+        "Souvenir Shopping in Te Anau",
         "Check-in Hotel in Te Anau"
       ],
       "transport": "Self Drive + Car Rental",
@@ -324,5 +324,5 @@
       "title": "Additional Tour or Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 97
 }

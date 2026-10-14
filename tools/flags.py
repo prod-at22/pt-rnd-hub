@@ -34,7 +34,7 @@ MAP = {
     "maldives-combo": ("MLE", "mle-combo-low"), "maldives-water-villa": ("MLE", "mle-water-low"),
     "medan-lake-toba": ("LTOBA", "emiya"), "melbourne-basic": ("MEL", "wae-basic"),
     "melbourne-standard": ("MEL", "wae-standard"), "nz-north-south": ("NSNZ", "arba-to-10d9n-n-s"),
-    "nz-south-only": ("NSNZ", "arba-to-8d7n-south"), "nz-north-only": ("NSNZ", "arba-to-6d5n-north-st"),
+    "nz-south-only": ("NSNZ", "arba-to-8d7n-south"),
     "nz-north-south-apartment": ("NSNZ", "arba-to-9d8n-apt"), "nz-north-south-standard": ("NSNZ", "arba-to-9d8n-std"),
     "osaka-basic": ("OSK", "wif-basic"), "osaka-standard": ("OSK", "ucop-std-wif-std"),
     "padang-bukittinggi": ("PDG", "herman"), "perhentian-basic": ("PHT", "shari-la"), "perhentian-standard": ("PHT", "mimpi"),

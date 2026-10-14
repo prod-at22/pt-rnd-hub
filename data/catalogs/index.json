@@ -278,15 +278,6 @@
   "updated": "2026-03-12",
   "url": "https://prod-at22.github.io/catalog-pt-public/melbourne-standard.html"
  },
- "nz-north-only": {
-  "code": "NSNZ",
-  "package": "arba-to-6d5n-north-st",
-  "title": "SELF TOUR NEW ZEALAND NORTH ISLAND",
-  "duration": "6D5N",
-  "version": "v3",
-  "updated": "2026-03-12",
-  "url": "https://prod-at22.github.io/catalog-pt-public/nz-north-only.html"
- },
  "nz-north-south": {
   "code": "NSNZ",
   "package": "arba-to-10d9n-n-s",
@@ -302,7 +293,7 @@
   "title": "SELF TOUR (MPV) NEW ZEALAND NORTH & SOUTH ISLAND (APARTMENT)",
   "duration": "9D8N",
   "version": "v3",
-  "updated": "2026-03-12",
+  "updated": "2026-10-14",
   "url": "https://prod-at22.github.io/catalog-pt-public/nz-north-south-apartment.html"
  },
  "nz-north-south-standard": {
@@ -311,7 +302,7 @@
   "title": "SELF TOUR (MPV) NEW ZEALAND NORTH & SOUTH ISLAND",
   "duration": "9D8N",
   "version": "v3",
-  "updated": "2026-03-12",
+  "updated": "2026-10-14",
   "url": "https://prod-at22.github.io/catalog-pt-public/nz-north-south-standard.html"
  },
  "nz-south-only": {
@@ -320,7 +311,7 @@
   "title": "PRIVATE TOUR NEW ZEALAND SOUTH ISLAND",
   "duration": "8D7N",
   "version": "v3",
-  "updated": "2026-03-05",
+  "updated": "2026-10-14",
   "url": "https://prod-at22.github.io/catalog-pt-public/nz-south-only.html"
  },
  "osaka-basic": {

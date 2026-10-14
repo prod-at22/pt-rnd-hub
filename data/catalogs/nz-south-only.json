@@ -11,7 +11,7 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 March 2027",
   "version": "v3",
-  "updated": "2026-03-05",
+  "updated": "2026-10-14",
   "kb_url": "https://prod-at22.github.io/arba-newzealand-kb/",
   "po": "Acap",
   "ops": "ATIQAH",
@@ -175,8 +175,8 @@
       "activities": [
         "Check-out Hotel",
         "Skyline Gondola at Queenstown (Optional)",
-        "Transfer to Dunedine",
-        "Larnach Castle (Add On)",
+        "Transfer to Dunedin",
+        "Larnach Castle (Optional)",
         "Check-in Hotel in Dunedin & rest"
       ],
       "transport": "Private Transport + Driver Guide",
@@ -185,7 +185,7 @@
     },
     {
       "day": 7,
-      "title": "Dunedine - Timaru - Christchurch",
+      "title": "Dunedin - Timaru - Christchurch",
       "activities": [
         "Check-out Hotel",
         "Transfer to Timaru",
@@ -311,5 +311,5 @@
       ]
     }
   ],
-  "hub_version": 30
+  "hub_version": 97
 }
