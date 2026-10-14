@@ -327,3 +327,14 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .cmp-by{margin-top:10px;font-size:11px;color:var(--muted)}
 .cmp-prev table{width:100%;margin-top:6px} .cmp-prev th{text-transform:none;letter-spacing:0;font-size:12px;width:150px}
 #cmpCard .cmp-ana,#cmpCard .cmp-other,#cmpCard .empty{width:0;min-width:calc(100% - 28px)}
+/* Competitor Analysis view: category cards with bullets (monochrome; colour only on the price difference) */
+.cmp-grid{display:grid;gap:8px;padding:14px;width:max-content}
+.cg-head{border:1px solid var(--ink);border-radius:8px;padding:8px 10px;text-align:center;font-weight:700;font-size:13.5px;align-self:end}
+.cg-head small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:1px}
+.cg-head.arba{background:var(--ink);color:#fff} .cg-head.arba small{color:#d5dae0}
+.cg-cat{background:#f3f5f7;border-radius:8px;padding:10px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:600;font-size:12.5px;color:var(--ink-soft)}
+.cg-cell{border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:12.5px;line-height:1.45}
+.cg-cell.arba{border-color:var(--ink)}
+.cg-cell ul{margin:0;padding-left:16px} .cg-cell li{margin:2px 0}
+.cg-cell .cmp-k{color:var(--muted)}
+.cg-cell .cmp-eq{margin-top:0}

@@ -1349,6 +1349,30 @@ function cmpMd(t) {
   }
   return out + (list ? "</ul>" : "");
 }
+// View mode of Competitor Analysis: one row per category, one card per column, bullet points (Edit costs keeps the table).
+const CMP_CATS = [["Harga seorang", null], ["Pakej", ["days", "packaging", "hours"]], ["Guide & USP", ["guide", "usp"]], ["Inklusi", ["accommodation", "meals", "tipping", "visa"]], ["Kekuatan", ["strength"]], ["Kelemahan", ["weakness"]]];
+function cmpGrid(d, pkg, cols, pax, adult) {
+  const lbl = Object.fromEntries(cmpAspects(d)), C = d.competitors || {};
+  const val = (col, k) => String((col.arba ? ((C.arba || {})[pkg.id] || {})[k] : (col.c.attrs || {})[k]) || "").trim();
+  const bullets = items => items.length ? `<ul>${items.join("")}</ul>` : '<span class="muted">—</span>';
+  const cell = (col, keys) => {
+    if (!keys) return bullets(pax.map(x => {
+      const a = adult(x); if (col.arba) return num(a) ? `<li>${x} pax <b>${rm(a)}</b></li>` : "";
+      const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN; if (!num(p)) return "";
+      const dl = p - a, ex = +col.c.extra || 0;
+      return `<li>${x} pax <b>${rm(p)}</b>${num(dl) && a ? ` <span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : ""}${ex ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : ""}</li>`;
+    }).filter(Boolean));
+    const one = keys.length === 1;
+    return bullets(keys.flatMap(k => { const v = val(col, k); if (!v || v === "-") return [];
+      return one ? v.split(/\s*;\s*/).filter(Boolean).map(x => `<li>${esc(x)}</li>`) : [`<li>${["days", "packaging", "usp"].includes(k) ? "" : `<span class="cmp-k">${esc(lbl[k] || k)}:</span> `}${esc(v)}</li>`]; }));
+  };
+  const head = cols.map(col => {
+    const c = col.c, tip = c ? [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ") : "";
+    return `<div class="cg-head${col.arba ? " arba" : ""}"${tip ? ` title="${esc(tip)}"` : ""}>${col.arba ? `ARBA<small>${esc(pkg.label)}</small>` : esc(c.name)}</div>`;
+  }).join("");
+  const rows = CMP_CATS.map(([l, keys]) => `<div class="cg-cat">${esc(l)}</div>${cols.map(col => `<div class="cg-cell${col.arba ? " arba" : ""}">${cell(col, keys)}</div>`).join("")}`).join("");
+  return `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
+}
 // Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
 function competitorTab(d) {
   const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), pkg = curPkg(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"];
@@ -1390,6 +1414,7 @@ function competitorTab(d) {
   const ana = A && (A.text || (A.actions || []).length) ? `<div class="cmp-ana">${(A.actions || []).length ? `<h4>Cadangan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       ${A.text ? `<details><summary>Analisis penuh</summary><div class="cmp-md">${cmpMd(A.text)}</div></details>` : ""}
       <div class="cmp-by">✦ ${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</div></div>` : "";
+  if (!E) return `<div class="card full" id="cmpCard">${head}${cmpGrid(d, pkg, cols, pax, adult)}${elsewhere}${ana}</div>`;   // view: category cards with bullets; Edit costs: the table below
   return `<div class="card full" id="cmpCard">${head}${bar}
     <div class="scroll"><table class="cmp-t${E ? " cmp-e" : ""}"><thead><tr><th class="cmp-asp"></th>${th}</tr></thead>
     <tbody>${grp("Harga seorang")}${pax.map(rowP).join("")}${exRow}${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
