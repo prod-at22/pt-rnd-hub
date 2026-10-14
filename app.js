@@ -1698,7 +1698,7 @@ function quotesTab(d) {
 // Fill fields from a pasted Telegram request / quotation (PT … / Pax / Date / Price / Customer / phone).
 function qtParse(t) {
   const o = {}, s = String(t || "");
-  const ph = s.match(/(?:\+?6?0)1\d[\s-]?\d{3,4}[\s-]?\d{3,4}/); if (ph) o.phone = ph[0].trim();
+  const ph = s.match(/(?:\+?6\s?0|0)\s?1\d[\s-]?\d{3,4}[\s-]?\d{3,4}/); if (ph) o.phone = ph[0].trim();
   const cu = s.match(/(?:Customer|Cust|Nama)\s*:\s*([^\n(]+)/i) || s.match(/^\s*((?:Puan|Pn\.?|Encik|En\.?|Tuan|Dato'?|Datin|Cik|Mr\.?|Mrs\.?|Ms\.?)\s+[^\n(]+)/im); if (cu) o.customer = cu[1].trim();
   const pax = s.match(/(\d+)\s*Adults?/i); if (pax) o.adult = +pax[1];
   const cwb = s.match(/(\d+)\s*CWB/i); if (cwb) o.cwb = +cwb[1];
@@ -1738,9 +1738,9 @@ function openQuote(d, id, vi, isNew) {
     <tr><th class="l">Margin / pax</th>${QT_CAT.map(([k]) => `<td id="qM_${k}">—</td>`).join("")}</tr></tbody></table></div>
     <div class="small" id="qTot"></div>`;
   modal(q ? `Quotation · ${q.customer || q.id}` : "New quotation · " + d.name, `${chips}
-    <div class="small muted">Paste the TC's request and/or your quotation from Telegram, then <b>Fill from text</b> (a quoted price is taken as T1, so T2 = price − RM${QT_T1_ADD}). Phone number is required for CRM tracking.</div>
+    <div class="small muted">Paste the TC's request and/or your quotation from Telegram, then <b>Fill from text</b> (a quoted price is taken as T1, so T2 = price − RM${QT_T1_ADD}). An empty <b>Quotation sent</b> is then written for you — prices in T1 — or press <b>Write quotation</b> after changing prices. Phone number is required for CRM tracking.</div>
     <div class="qt-g2">${f("TC request (from Telegram)", `<textarea id="qRequest" rows="5">${esc(v.request || "")}</textarea>`)}${f("Quotation sent (your reply)", `<textarea id="qQuote" rows="5">${esc(v.quote || "")}</textarea>`)}</div>
-    <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qSuggest" title="Cost and Selling Price (T2) from Costing for this package and pax">Use Costing prices</button></div>
+    <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qWrite" title="Write the quotation (T1 prices, itinerary, inclusions / exclusions from the catalog) into 'Quotation sent'">Write quotation</button> <button class="btn" id="qSuggest" title="Cost and Selling Price (T2) from Costing for this package and pax">Use Costing prices</button></div>
     <div class="qt-g4">
       ${f("Requested at", `<input id="qReq" type="datetime-local" value="${loc(v.requestedAt)}">`)}
       ${f("TC", `<input id="qTc" list="qTcs" value="${esc(v.tc || "")}"><datalist id="qTcs">${tcs.map(t => `<option value="${esc(t)}">`).join("")}</datalist>`)}
@@ -1760,6 +1760,53 @@ function openQuote(d, id, vi, isNew) {
     <div class="err-t"></div>`,
     `${q ? `<button class="btn danger" data-qt="delete" data-id="${esc(q.id)}">Delete</button>` : ""}<button class="btn" data-close>Cancel</button><button class="btn primary" data-qt="save">Save</button>`, true);
   qtCalc();
+}
+// Quotation text in the PO's Telegram format, from the form + the package's catalog (itinerary, includes / excludes).
+// Prices are T1 (what the TC sends the customer); the T2 discount is noted for the TC.
+const QT_MON = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+function qtStart(t) {
+  const m = String(t || "").match(/(\d{1,2})\s*(?:[-–]\s*\d{1,2}\s*)?([A-Za-z]{3,})\s*(20\d\d)/), mo = m ? QT_MON.findIndex(x => m[2].toLowerCase().startsWith(x) || (x === "may" && /^mei/i.test(m[2])) || (x === "aug" && /^ogo/i.test(m[2])) || (x === "oct" && /^okt/i.test(m[2])) || (x === "dec" && /^dis/i.test(m[2]))) : -1;
+  return mo >= 0 ? new Date(+m[3], mo, +m[1]) : null;
+}
+async function qtCatalog(code, pkgId) {
+  if (!CAT.index) CAT.index = await fetchJson(PATHS.catalogs + "index.json");
+  const sl = Object.keys(CAT.index).find(s => CAT.index[s].code === code && CAT.index[s].package === pkgId);
+  if (!sl) return null;
+  return CAT.edit[sl] || CAT.docs[sl] || (CAT.docs[sl] = await fetchJson(PATHS.catalogs + sl + ".json"));
+}
+async function qtWrite(d) {
+  const g = id => $("#" + id).value.trim(), N = k => +g("qN_" + k) || 0, T2 = k => g("qT_" + k) === "" ? NaN : +g("qT_" + k);
+  const pkgId = g("qPkg"), p = d.packages.find(x => x.id === pkgId), c = pkgId ? await qtCatalog(d.code, pkgId).catch(() => null) : null;
+  const money = v => "RM " + Math.round(v).toLocaleString("en-US");
+  const title = c ? "PT " + c.title.replace(/^PRIVATE TOUR\s*/i, "") + " " + c.duration : "PT " + (p ? p.label : d.name).toUpperCase();
+  const cats = QT_CAT.filter(([k]) => N(k));
+  const L = [title];
+  if (g("qCust")) L.push(`Customer: ${g("qCust")}${normPhone(g("qPhone")) ? ` (${g("qPhone")})` : ""}`);
+  if (cats.length) L.push(`Pax: ${cats.map(([k, l]) => N(k) + " " + (k === "adult" ? "Adult" : l)).join(" + ")}${cats.length > 1 ? ` (${cats.reduce((a, [k]) => a + N(k), 0)} pax)` : ""}`);
+  if (g("qTravel")) L.push(`Date: ${g("qTravel")}`);
+  const priced = cats.filter(([k]) => num(T2(k)));
+  if (priced.length) {
+    L.push("", "Price:"); for (const [k, l] of priced) L.push(`${k === "adult" ? "Adult" : l}: ${qtT1(k, T2(k)) ? money(qtT1(k, T2(k))) + " per pax" : "FOC"}`);
+    L.push(`Total: ${money(priced.reduce((a, [k]) => a + N(k) * qtT1(k, T2(k)), 0))}`, `*boleh discount RM${QT_T1_ADD}/pax`);
+  }
+  if (c && (c.itinerary || []).length) {
+    const st = qtStart(g("qTravel")), day = i => st ? " (" + new Date(st.getTime() + i * 864e5).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) + ")" : "";
+    L.push("", "Itinerary:");
+    c.itinerary.forEach((x, i) => { L.push("", `Day ${x.day || i + 1}: ${x.title}${day(i)}`); for (const a of x.activities || []) L.push("-" + (typeof a === "string" ? a : a.text)); });
+  }
+  const blk = (c && (c.price_blocks || [])[0]) || {}, items = a => (a || []).flatMap(x => typeof x === "string" ? ["- " + x] : ["- " + x.text, ...(x.sub || []).map(y => "  • " + y)]);
+  if ((blk.includes || []).length || (blk.excludes || []).length) L.push("", "---", "INCLUSIONS:", ...items(blk.includes), "", "EXCLUSIONS:", ...items(blk.excludes));
+  if (g("qNote")) L.push("", "Notes:", "- " + g("qNote"));
+  return L.join("\n");
+}
+// Cost + Selling T2 per category from the Costing tab for the chosen package and pax (adults + children).
+function qtCosting(d) {
+  const p = d.packages.find(x => x.id === $("#qPkg").value), N = k => +$("#qN_" + k).value || 0;
+  if (!p || !N("adult")) return { ok: false, msg: "Pick a package and the number of adults first." };
+  const n = Math.max(2, N("adult") + N("cwb") + N("cnb")); if (p.pricing.adult[String(n)] == null) return { ok: false, msg: `No Costing price for ${n} pax in ${p.label}.` };
+  const r = priceRow(d, p, activeVariantId(p, n), n);
+  for (const [k] of QT_CAT) { if (num(r[k].cost)) $("#qC_" + k).value = Math.round(r[k].cost); if (num(r[k].selling)) $("#qT_" + k).value = Math.round(r[k].selling); }
+  qtCalc(); return { ok: true, msg: `Cost and Selling Price (T2) from Costing: ${p.label}, ${n} pax.` };
 }
 // Live T1 / margin / totals in the form.
 function qtCalc() {
@@ -2255,14 +2302,13 @@ document.addEventListener("click", async e => {
     for (const [k] of QT_CAT) if (o["p_" + k] != null) o["t2_" + k] = o["p_" + k] - (k === "infant" ? 0 : QT_T1_ADD), m["t2_" + k] = "qT_" + k;   // quoted price = T1
     let n = 0; for (const [k, id] of Object.entries(m)) if (o[k] != null && o[k] !== "" && !$("#" + id).value) { $("#" + id).value = o[k]; n++; }
     qtCalc();
+    if (!$("#qQuote").value.trim()) { const d = DATA.destinations.find(x => x.code === PAGE_DEST); if (!$("#qT_adult").value) qtCosting(d); $("#qQuote").value = await qtWrite(d); n++; }   // no price yet → Costing T2, then write it in T1
     if ($("#qQuote").value.trim() && $("#qStatus").value === "Pending") $("#qStatus").value = "Quoted";
     mErr(n ? `Filled ${n} field${n > 1 ? "s" : ""} — check them before saving.` : "Nothing new found in the text."); return; }
-  if (t.id === "qSuggest") { const d = DATA.destinations.find(x => x.code === PAGE_DEST), p = d.packages.find(x => x.id === $("#qPkg").value), N = k => +$("#qN_" + k).value || 0;
-    if (!p || !N("adult")) return mErr("Pick a package and the number of adults first.");
-    const n = Math.max(2, N("adult") + N("cwb") + N("cnb")); if (p.pricing.adult[String(n)] == null) return mErr(`No Costing price for ${n} pax in ${p.label}.`);
-    const r = priceRow(d, p, activeVariantId(p, n), n);
-    for (const [k] of QT_CAT) { if (num(r[k].cost)) $("#qC_" + k).value = Math.round(r[k].cost); if (num(r[k].selling)) $("#qT_" + k).value = Math.round(r[k].selling); }
-    qtCalc(); mErr(`Cost and Selling Price (T2) from Costing: ${p.label}, ${n} pax.`); return; }
+  if (t.id === "qWrite") { const d = DATA.destinations.find(x => x.code === PAGE_DEST);
+    if ($("#qQuote").value.trim() && !confirm("Replace the text in 'Quotation sent'?")) return;
+    $("#qQuote").value = await qtWrite(d); if ($("#qStatus").value === "Pending") $("#qStatus").value = "Quoted"; mErr("Quotation written (T1 prices) — check it, then Save."); return; }
+  if (t.id === "qSuggest") { const r = qtCosting(DATA.destinations.find(x => x.code === PAGE_DEST)); mErr(r.msg); return; }
   if (t.id === "doCrm") { if (USERS.crm && !confirm("Replace the CRM key? The daily sync must run again before CRM status shows.")) return; return acct(crmSetup, "CRM link key saved"); }
   if (t.dataset.cmppkg) { SEL.pkg = t.dataset.cmppkg; SEL.variant = "auto"; return render(); }
   if (t.dataset.act === "cmpAdd") {

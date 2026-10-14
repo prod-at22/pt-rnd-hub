@@ -1000,6 +1000,17 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
       ok(await until(() => $p("#qtCard .qt-closed")), "CRM lead with the same phone, closed after the request → Closed");
       ok($p("#qtCard .sub").textContent.includes("CRM synced"), "CRM sync time shown");
     }
+    {   // TC request only → Fill from text writes the quotation (T1 prices + catalog itinerary / inclusions)
+      click(W, $p('[data-qt="new"]')); await until(() => $p("#qQuote"));
+      pg.doc.querySelector("#qPkg").value = "atk-bsc";
+      $p("#qRequest").value = "Seoul\n6-10 November 2026\n2 Adult 1 CWB\nPuan Aminah\n+60 13-555 1234";
+      click(W, $p("#qParse")); await until(() => $p("#qQuote").value);
+      const txt = $p("#qQuote").value, t2 = +$p("#qT_adult").value, c2 = +$p("#qT_cwb").value;
+      ok(/^PT SEOUL BASIC 5D4N/.test(txt) && txt.includes("Pax: 2 Adult + 1 CWB (3 pax)") && txt.includes("Date: 6-10 November 2026") && txt.includes("Customer: Puan Aminah (+60 13-555 1234)"), "Write quotation: title from catalog, pax, date, customer + phone");
+      ok(txt.includes("Adult: RM " + (t2 + 200).toLocaleString("en-US") + " per pax") && txt.includes("CWB: RM " + (c2 + 200).toLocaleString("en-US") + " per pax") && txt.includes("Total: RM " + (2 * (t2 + 200) + (c2 + 200)).toLocaleString("en-US")) && txt.includes("*boleh discount RM200/pax"), "prices sent are T1 (T2 + 200), total in T1, T2 discount noted");
+      ok(/Day 1: Nami Island \(6 Nov\)/.test(txt) && /Day 2: [^\n]+\(7 Nov\)/.test(txt) && txt.includes("INCLUSIONS:") && txt.includes("EXCLUSIONS:") && $p("#qStatus").value === "Quoted", "itinerary with dates from the travel date, inclusions / exclusions from the catalog; status Quoted");
+      click(W, $p("[data-close]"));
+    }
     P2.SESSION = { u: "thania", role: "editor", token: "tok-valid", vaultRaw }; W.eval("QT.list = null"); P2.render();
     ok(await until(() => $p("#qtCard")) && !$p("#qtCard tbody").textContent.includes("Kamariah") && !$p("#qtPo"), "another PO sees only their own quotations (no PO switch for editors)");
     ok(pg.errors.length === 0, "quotation errors: " + pg.errors.join("|"));
