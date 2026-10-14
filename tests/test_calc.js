@@ -903,12 +903,12 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const P2 = pg.w.PTCALC, D2 = () => P2.DATA.destinations.find(x => x.code === "SEL"), V = P2.BASE.version, $p = s => pg.doc.querySelector(s);
     ok($p('[data-tabmain="competitor"]').textContent === "Competitor Analysis" && $p('[data-tabmain="kbcalc"]').nextElementSibling.dataset.tabmain === "competitor", "Competitor Analysis tab sits next to Simple Calculator");
     const heads = [...pg.doc.querySelectorAll(".cmp-t thead th")].map(x => x.textContent.trim().split(/\s+/).slice(0, 2).join(" "));
-    ok(heads.join("|") === "|Seoul Basic|Lurima Lite|Seoul Standard|Lurima Dream", "columns: ARBA Basic, Lurima Lite, ARBA Standard, Lurima Dream (" + heads.join("|") + ")");
+    ok(heads.join("|") === "|Seoul Basic|Lurima Travel|Seoul Standard|Jeju Muslim|Selamat Bercuti|Sedunia Travel", "columns: ARBA Basic + Lurima, ARBA Standard + Jeju Muslim, Selamat Bercuti, Sedunia (" + heads.join("|") + ")");
     const row = l => [...pg.doc.querySelectorAll(".cmp-t tbody tr")].find(r => r.querySelector("th") && r.querySelector("th").textContent === l);
     const r3 = row("3 pax").querySelectorAll("td");
-    ok(r3[0].textContent.includes("RM2,997") && r3[1].textContent.includes("RM2,513") && r3[1].querySelector(".cmp-gap.dn").textContent === "−16.1%" && r3[1].querySelector(".cmp-gap").title.includes("RM484") && r3[2].textContent.includes("RM3,697") && r3[3].querySelector(".cmp-gap.up").textContent === "+3.9%", "3 pax: ARBA prices from Costing, gap vs ARBA (Lite −16.1% = RM484, Dream +3.9%)");
+    ok(r3[0].textContent.includes("RM2,997") && r3[1].textContent.includes("RM1,750") && r3[1].querySelector(".cmp-gap.dn").textContent === "−41.6%" && r3[1].querySelector(".cmp-gap").title.includes("RM1,247") && r3[1].textContent.includes("setara RM2,800") && r3[2].textContent.includes("RM3,697") && r3[4].querySelector(".cmp-gap.up").textContent === "+59.3%", "3 pax: ARBA prices from Costing, gap vs ARBA (Lurima −41.6% = RM1,247, setara RM2,800; Selamat Bercuti +59.3%)");
     ok([...pg.doc.querySelectorAll(".cmp-grp")].map(x => x.textContent).join("|") === "Pakej|Harga dewasa seorang|Penilaian", "rows grouped: Pakej, Harga dewasa seorang, Penilaian");
-    ok(row("K-ETA").querySelectorAll("td")[1].textContent === "Excluded" && row("Strength") && row("Weakness"), "aspects incl. K-ETA, Strength, Weakness");
+    ok(row("K-ETA").querySelectorAll("td")[4].textContent === "Excluded" && row("Strength") && row("Weakness"), "aspects incl. K-ETA, Strength, Weakness");
     ok(!$p('[data-act="cmpAI"]') && !$p(".cmp-t textarea") && !$p(".cmp-bar"), "view mode: no AI / edit controls");
     P2.SESSION = { u: "aiman", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => $p(".cmp-t textarea"));
     ok($p('[data-act="cmpAnalyse"]').disabled && $p('[data-act="cmpAI"]').disabled, "AI buttons disabled without a Claude API key");
@@ -928,7 +928,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     click(pg.w, $p("#btnSave")); await tick(5); $p("#saveNote").value = "Competitor ujian";
     click(pg.w, $p("#doSave")); ok(await until(() => P2.BASE.version === V + 1), "saved as one version");
     const saved = JSON.parse(repo.files(repo.head)["data/data.json"]).destinations.find(x => x.code === "SEL").competitors;
-    ok(saved.items.some(c => c.id === "pesaing-ujian" && c.prices["4"] === 1999) && saved.analysis.by === "aiman" && saved.items.find(c => c.id === "lurima-lite").prices["3"] === 2513, "data.json has the competitor, price and analysis");
+    ok(saved.items.some(c => c.id === "pesaing-ujian" && c.prices["4"] === 1999) && saved.analysis.by === "aiman" && saved.items.find(c => c.id === "lurima-seoul-lite").prices["3"] === 1750, "data.json has the competitor, price and analysis");
     ok(pg.errors.length === 0, "competitor errors: " + pg.errors.join("|"));
   }
 
