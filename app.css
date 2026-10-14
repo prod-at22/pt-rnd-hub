@@ -355,3 +355,6 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .qt-pax{display:flex;gap:4px} .qt-pax input{width:100%;min-width:0}
 @media (max-width:700px){.qt-g2,.qt-g4{grid-template-columns:1fr 1fr}}
 .bad-t{color:var(--bad)}
+.qt-pt{width:100%;border-collapse:collapse;margin-top:4px} .qt-pt th,.qt-pt td{padding:4px 6px;font-size:12.5px;text-transform:none;letter-spacing:0;border-bottom:1px solid var(--line)}
+.qt-pt input{width:100%;min-width:64px;box-sizing:border-box;text-align:right} .qt-pt th.l{white-space:nowrap} .qt-pt .qt-t1 td{font-weight:600}
+.qt-vers{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--line)}

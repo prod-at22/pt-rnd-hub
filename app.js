@@ -1598,10 +1598,16 @@ function cmpNewId(d, name) {
    with the CRM public key (users.json crm.pub); the private key is in users.json crm.priv, encrypted with the vault key.
    A quote whose phone matches a CRM lead closed after the request shows as Closed. A PO can also mark Closed / Lost. */
 const QT = { list: null, err: null, busy: false, crm: null, crmAt: null, crmErr: null, edit: null, poView: null, filter: "open" };
-const QT_STATUS = ["Pending", "Quoted", "Answered"];
+const QT_STATUS = ["Pending", "Quoted"];
 const normPhone = p => { let s = String(p || "").replace(/\D/g, ""); if (s.startsWith("60")) s = s.slice(1); else if (s.startsWith("1") && s.length >= 9) s = "0" + s; return s.length >= 9 ? s : ""; };
 const qtDate = iso => iso ? new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
-const qtHours = q => q.respondedAt && q.requestedAt ? (new Date(q.respondedAt) - new Date(q.requestedAt)) / 36e5 : NaN;
+// Versions: a customer change makes a new version (v2, v3, …) of the same request; the earlier ones are kept.
+// Per version: package, travel date, pax, cost, Selling T2, the quotation text, note and when it was quoted.
+const QT_VF = ["pkg", "pkgLabel", "travel", "adult", "cwb", "cnb", "infant", "cost", "t2", "quote", "note", "respondedAt"];
+const qtVers = q => q.versions && q.versions.length ? q.versions : [{ v: 1, ...Object.fromEntries(QT_VF.filter(k => q[k] !== undefined).map(k => [k, q[k]])) }];
+const qtView = q => ({ ...q, ...qtVers(q)[qtVers(q).length - 1], nv: qtVers(q).length });   // the request with its latest version
+// TAT = request → first quotation (v1)
+const qtHours = q => { const r = qtVers(q)[0].respondedAt; return r && q.requestedAt ? (new Date(r) - new Date(q.requestedAt)) / 36e5 : NaN; };
 const median = a => { const s = a.filter(num).sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : NaN; };
 async function qtVaultKey() { return crypto.subtle.importKey("raw", SESSION.vaultRaw, "AES-GCM", false, ["encrypt", "decrypt"]); }
 async function qtRead(head) {
@@ -1657,35 +1663,36 @@ function quotesTab(d) {
   const mine = QT.list.filter(q => !view || (q.po || "").toLowerCase() === view);
   const here = mine.filter(q => q.code === d.code);
   // KPIs: this PO across all destinations (their own workload)
-  const quoted = mine.filter(q => q.type !== "Availability" && q.status !== "Pending");
+  const quoted = mine.filter(q => q.status !== "Pending");
   const closed = mine.filter(q => qtFinal(q) === "Closed").length, pend = mine.filter(q => q.status === "Pending" && !q.outcome).length;
-  const tat = median(mine.filter(q => q.type !== "Availability").map(qtHours));
+  const tat = median(mine.map(qtHours));
   const noPhone = mine.filter(q => !normPhone(q.phone)).length;
   const kpi = (l, v, s) => `<div class="qt-k"><div class="l">${l}</div><div class="v">${v}</div>${s ? `<div class="s">${s}</div>` : ""}</div>`;
   const pos = [...new Set(QT.list.map(q => (q.po || "").toLowerCase()).filter(Boolean))].sort();
   const F = QT.filter, shown = here.filter(q => F === "all" || (F === "open" ? !["Closed", "Lost"].includes(qtFinal(q)) : qtFinal(q) === F)).sort((a, b) => String(b.requestedAt).localeCompare(String(a.requestedAt)));
   const chip = (k, l) => `<button class="tab${F === k ? " on" : ""}" data-qtf="${k}">${l}</button>`;
   const crmNote = !USERS.crm ? "CRM link not set up (admin: Account → CRM link)" : QT.crmErr ? QT.crmErr : QT.crmAt ? "CRM synced " + qtDate(QT.crmAt) : "Loading CRM…";
-  const row = q => {
-    const c = qtCrm(q), fin = qtFinal(q), h = qtHours(q), pk = d.packages.find(p => p.id === q.pkg);
-    const pax = [q.adult && q.adult + "A", q.child && q.child + "C", q.infant && q.infant + "I"].filter(Boolean).join(" ") || "—";
+  const row = q0 => {
+    const q = qtView(q0), c = qtCrm(q), fin = qtFinal(q), h = qtHours(q0), pk = d.packages.find(p => p.id === q.pkg);
+    const pax = [q.adult && q.adult + " Adult", q.cwb && q.cwb + " CWB", q.cnb && q.cnb + " CNB", q.infant && q.infant + " Inf"].filter(Boolean).join(" · ") || "—", tt = qtTotals(q), a2 = +((q.t2 || {}).adult);
     const can = admin || (q.po || "").toLowerCase() === me;
-    return `<tr><td class="l">${esc(qtDate(q.requestedAt))}<div class="muted small">${esc(q.type || "Quotation")}</div></td>
+    return `<tr><td class="l">${esc(qtDate(q.requestedAt))}</td>
       <td class="l">${esc(q.tc || "—")}</td>
       <td class="l"><b>${esc(q.customer || "—")}</b><div class="${normPhone(q.phone) ? "muted" : "bad-t"} small">${normPhone(q.phone) ? esc(q.phone) : "No phone"}</div></td>
-      <td class="l">${esc(pk ? pk.label : q.pkgLabel || "Custom")}<div class="muted small">${esc(pax)} · ${esc(q.travel || "—")}</div></td>
-      <td>${num(+q.price) && +q.price ? rm(+q.price) : "—"}<div class="muted small">${num(+q.total) && +q.total ? "total " + rm(+q.total) : ""}</div></td>
+      <td class="l">${esc(pk ? pk.label : q.pkgLabel || "Custom")}${q.nv > 1 ? ` <span class="pill grey" title="${q.nv} versions — customer changes">v${q.nv}</span>` : ""}<div class="muted small">${esc(pax)} · ${esc(q.travel || "—")}</div></td>
+      <td>${a2 ? `T1 ${rm(qtT1("adult", a2))}<div class="muted small">T2 ${rm(a2)}</div>` : "—"}</td>
+      <td>${tt ? `${rm(tt.T2)}${num(tt.margin) ? `<div class="small ${marginClass(tt.margin)}">${rm(tt.margin)} · ${pct(tt.margin / tt.T2)}</div>` : ""}` : "—"}</td>
       <td><span class="qt-st qt-${fin.toLowerCase()}">${esc(fin)}</span>${q.outcome ? `<div class="muted small">by PO</div>` : ""}</td>
       <td class="l small">${c ? `${esc(c.status)}${c.at ? `<div class="muted">${esc(String(c.at).slice(0, 10))}</div>` : ""}` : `<span class="muted">—</span>`}</td>
       <td class="small">${num(h) ? h.toFixed(1) + " h" : "—"}</td>
-      <td class="qt-act">${can ? `<button class="lnk" data-qt="edit" data-id="${esc(q.id)}">edit</button>` : ""}${q.quote ? `<button class="lnk" data-qt="copy" data-id="${esc(q.id)}">copy</button>` : ""}</td></tr>`;
+      <td class="qt-act">${can ? `<button class="lnk" data-qt="edit" data-id="${esc(q.id)}">edit</button>` : ""}${q.quote ? `<button class="lnk" data-qt="copy" data-id="${esc(q.id)}" title="copy the v${q.nv} quotation">copy</button>` : ""}</td></tr>`;
   };
   return `<div class="card full" id="qtCard"><h2>Quotations · ${esc(d.name)} <span class="sub">${view ? "PO " + esc(view) : "all POs"} · ${esc(crmNote)}</span>
       <span class="right">${admin ? `<select id="qtPo" class="qt-po"><option value="">All POs</option>${[...new Set([me, ...pos])].map(p => `<option value="${esc(p)}"${view === p ? " selected" : ""}>${esc(p)}</option>`).join("")}</select>` : ""}<button class="btn primary" data-qt="new">+ New quotation</button></span></h2>
     <div class="qt-kpis">${kpi("My requests", mine.length, "all destinations")}${kpi("Pending", pend, pend ? "waiting for a price" : "")}${kpi("Quoted", quoted.length)}${kpi("Closed", closed, quoted.length ? pct(closed / quoted.length) + " of quoted" : "")}${kpi("Median TAT", num(tat) ? tat.toFixed(1) + " h" : "—", "request → quote")}${kpi("No phone", noPhone, noPhone ? "ask TC for the number" : "")}</div>
     <div class="body qt-bar">${chip("open", "Open")}${chip("Pending", "Pending")}${chip("Quoted", "Quoted")}${chip("Closed", "Closed")}${chip("Lost", "Lost")}${chip("all", "All")}<span class="muted small" style="margin-left:auto">${here.length} for ${esc(d.name)}</span></div>
-    <div class="scroll"><table class="qt-t"><thead><tr><th class="l">Requested</th><th class="l">TC</th><th class="l">Customer</th><th class="l">Package</th><th>Price / pax</th><th>Status</th><th class="l">CRM</th><th>TAT</th><th></th></tr></thead>
-    <tbody>${shown.map(row).join("") || `<tr><td colspan="9" class="muted">No quotations${F === "all" ? "" : " in this view"}.</td></tr>`}</tbody></table></div>
+    <div class="scroll"><table class="qt-t"><thead><tr><th class="l">Requested</th><th class="l">TC</th><th class="l">Customer</th><th class="l">Package</th><th>Adult / pax</th><th>Total T2 · margin</th><th>Status</th><th class="l">CRM</th><th>TAT</th><th></th></tr></thead>
+    <tbody>${shown.map(row).join("") || `<tr><td colspan="10" class="muted">No quotations${F === "all" ? "" : " in this view"}.</td></tr>`}</tbody></table></div>
     <div class="note">Closed = the customer's phone has a closed PT booking in the CRM after the request (synced daily), or marked Closed by the PO. Data is encrypted; only logged-in users can read it.</div></div>`;
 }
 // Fill fields from a pasted Telegram request / quotation (PT … / Pax / Date / Price / Customer / phone).
@@ -1694,53 +1701,95 @@ function qtParse(t) {
   const ph = s.match(/(?:\+?6?0)1\d[\s-]?\d{3,4}[\s-]?\d{3,4}/); if (ph) o.phone = ph[0].trim();
   const cu = s.match(/(?:Customer|Cust|Nama)\s*:\s*([^\n(]+)/i) || s.match(/^\s*((?:Puan|Pn\.?|Encik|En\.?|Tuan|Dato'?|Datin|Cik|Mr\.?|Mrs\.?|Ms\.?)\s+[^\n(]+)/im); if (cu) o.customer = cu[1].trim();
   const pax = s.match(/(\d+)\s*Adults?/i); if (pax) o.adult = +pax[1];
-  const ch = s.match(/(\d+)\s*(?:CWB|CNB|Child)/gi); if (ch) o.child = ch.reduce((a, x) => a + parseInt(x), 0);
+  const cwb = s.match(/(\d+)\s*CWB/i); if (cwb) o.cwb = +cwb[1];
+  const cnb = s.match(/(\d+)\s*CNB/i); if (cnb) o.cnb = +cnb[1];
+  for (const k of ["CWB", "CNB", "Infant"]) { const m = s.match(new RegExp(k + "\\s*:\\s*RM\\s*([\\d,]+)", "i")); if (m) o["p_" + k.toLowerCase()] = +m[1].replace(/,/g, ""); }
   const inf = s.match(/(\d+)\s*Infants?/i); if (inf) o.infant = +inf[1];
   const dt = s.match(/Date\s*:\s*([^\n]+)/i) || s.match(/🗓\s*([^\n]+)/) || s.match(/(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-Z][a-z]+\s+20\d\d)/); if (dt) o.travel = dt[1].trim();
-  const pr = s.match(/Adult\s*:\s*RM\s*([\d,]+)/i) || s.match(/RM\s*([\d,]+)\s*(?:\/\s*pax|per pax)/i) || s.match(/Price\s*:\s*RM\s*([\d,]+)/i); if (pr) o.price = +pr[1].replace(/,/g, "");
-  const tot = s.match(/Total[^:\n]*:\s*RM\s*([\d,]+)/i); if (tot) o.total = +tot[1].replace(/,/g, "");
+  const pr = s.match(/Adult\s*:\s*RM\s*([\d,]+)/i) || s.match(/RM\s*([\d,]+)\s*(?:\/\s*pax|per pax)/i) || s.match(/Price\s*:\s*RM\s*([\d,]+)/i); if (pr) o.p_adult = +pr[1].replace(/,/g, "");
   return o;
 }
-function openQuote(d, id) {
-  const q = id ? QT.list.find(x => x.id === id) : null, v = q || { requestedAt: new Date().toISOString(), status: "Pending", type: "Quotation", pkg: curPkg(d).id, po: SESSION.u };
-  QT.edit = { id: q ? q.id : null };
+// Prices per category: cost, Selling Price T2 (what the PO enters) and T1 = T2 + RM200/pax (infant: no discount, T1 = T2).
+const QT_CAT = [["adult", "Adult"], ["cwb", "CWB"], ["cnb", "CNB"], ["infant", "Infant"]];
+const QT_T1_ADD = 200;
+const qtT1 = (k, v) => num(v) ? v + (k === "infant" ? 0 : QT_T1_ADD) : NaN;
+const qtPax = q => ({ adult: +q.adult || 0, cwb: +q.cwb || 0, cnb: +q.cnb || 0, infant: +q.infant || 0 });
+function qtTotals(q) {
+  const n = qtPax(q), t2 = q.t2 || {}, c = q.cost || {}; let T1 = 0, T2 = 0, C = 0, ok = false;
+  for (const [k] of QT_CAT) if (n[k]) { if (num(+t2[k]) && t2[k] !== null && t2[k] !== "") { T2 += n[k] * t2[k]; T1 += n[k] * qtT1(k, +t2[k]); ok = true; } if (num(+c[k]) && c[k] !== null && c[k] !== "") C += n[k] * c[k]; }
+  return ok ? { T1, T2, C, margin: C ? T2 - C : NaN } : null;
+}
+function openQuote(d, id, vi, isNew) {
+  const q = id ? QT.list.find(x => x.id === id) : null, vs = q ? qtVers(q) : [];
+  if (vi == null) vi = isNew ? vs.length : Math.max(0, vs.length - 1);
+  const ver = isNew ? { ...vs[vs.length - 1], quote: "", note: "", respondedAt: null } : vs[vi] || {};
+  const v = q ? { ...q, ...ver } : { requestedAt: new Date().toISOString(), status: "Pending", pkg: curPkg(d).id, po: SESSION.u };
+  QT.edit = { id: q ? q.id : null, vi: q ? vi : 0 };
+  const chips = q ? `<div class="qt-vers">${vs.map((x, i) => `<button class="tab${!isNew && i === vi ? " on" : ""}" data-qt="ver" data-id="${esc(q.id)}" data-vi="${i}" title="${esc(x.at ? "saved " + fmtDate(x.at) + (x.by ? " by " + x.by : "") : "")}">v${i + 1}</button>`).join("")}${isNew ? `<button class="tab on">v${vs.length + 1} (new)</button>` : `<button class="btn" data-qt="newver" data-id="${esc(q.id)}">+ New version (customer change)</button>`}
+    <span class="muted small">${isNew ? "Copied from v" + vs.length + " — change what the customer asked, paste the new quotation, Save." : vi < vs.length - 1 ? "Older version — kept for reference." : ""}</span></div>` : "";
   const loc = iso => { const t = new Date(iso || Date.now()); return new Date(t - t.getTimezoneOffset() * 6e4).toISOString().slice(0, 16); };
   const tcs = [...new Set(QT.list.map(x => x.tc).filter(Boolean))].sort();
-  const f = (l, h) => `<label>${l}${h}</label>`;
-  modal(q ? "Edit quotation" : "New quotation · " + d.name, `
-    <div class="small muted">Paste the TC's request and/or your quotation from Telegram, then <b>Fill from text</b>. Phone number is required for CRM tracking.</div>
+  const f = (l, h) => `<label>${l}${h}</label>`, val = x => x == null ? "" : x;
+  const grid = `<div class="scroll"><table class="qt-pt"><thead><tr><th class="l"></th>${QT_CAT.map(([, l]) => `<th>${l}</th>`).join("")}</tr></thead><tbody>
+    <tr><th class="l">Pax</th>${QT_CAT.map(([k]) => `<td><input id="qN_${k}" type="number" min="0" value="${val(v[k])}"></td>`).join("")}</tr>
+    <tr><th class="l">Cost / pax</th>${QT_CAT.map(([k]) => `<td><input id="qC_${k}" type="number" value="${val((v.cost || {})[k])}"></td>`).join("")}</tr>
+    <tr><th class="l">Selling T2 / pax</th>${QT_CAT.map(([k]) => `<td><input id="qT_${k}" type="number" value="${val((v.t2 || {})[k])}"></td>`).join("")}</tr>
+    <tr class="qt-t1"><th class="l" title="T2 + RM${QT_T1_ADD} (infant: same as T2)">Selling T1 / pax</th>${QT_CAT.map(([k]) => `<td id="qT1_${k}">—</td>`).join("")}</tr>
+    <tr><th class="l">Margin / pax</th>${QT_CAT.map(([k]) => `<td id="qM_${k}">—</td>`).join("")}</tr></tbody></table></div>
+    <div class="small" id="qTot"></div>`;
+  modal(q ? `Quotation · ${q.customer || q.id}` : "New quotation · " + d.name, `${chips}
+    <div class="small muted">Paste the TC's request and/or your quotation from Telegram, then <b>Fill from text</b> (a quoted price is taken as T1, so T2 = price − RM${QT_T1_ADD}). Phone number is required for CRM tracking.</div>
     <div class="qt-g2">${f("TC request (from Telegram)", `<textarea id="qRequest" rows="5">${esc(v.request || "")}</textarea>`)}${f("Quotation sent (your reply)", `<textarea id="qQuote" rows="5">${esc(v.quote || "")}</textarea>`)}</div>
-    <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qSuggest" title="Selling Price from Costing for this package and adult pax">Use Selling Price</button></div>
+    <div><button class="btn" id="qParse">Fill from text</button> <button class="btn" id="qSuggest" title="Cost and Selling Price (T2) from Costing for this package and pax">Use Costing prices</button></div>
     <div class="qt-g4">
       ${f("Requested at", `<input id="qReq" type="datetime-local" value="${loc(v.requestedAt)}">`)}
       ${f("TC", `<input id="qTc" list="qTcs" value="${esc(v.tc || "")}"><datalist id="qTcs">${tcs.map(t => `<option value="${esc(t)}">`).join("")}</datalist>`)}
       ${f("Customer", `<input id="qCust" value="${esc(v.customer || "")}">`)}
       ${f("Phone (required)", `<input id="qPhone" value="${esc(v.phone || "")}" placeholder="012-345 6789">`)}
       ${f("Package", `<select id="qPkg">${d.packages.map(p => `<option value="${esc(p.id)}"${v.pkg === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}<option value=""${v.pkg === "" ? " selected" : ""}>Custom / other</option></select>`)}
-      ${f("Adult / Child / Infant", `<span class="qt-pax"><input id="qA" type="number" min="0" value="${v.adult ?? ""}"><input id="qC" type="number" min="0" value="${v.child ?? ""}"><input id="qI" type="number" min="0" value="${v.infant ?? ""}"></span>`)}
       ${f("Travel date", `<input id="qTravel" value="${esc(v.travel || "")}" placeholder="6–10 Nov 2026">`)}
-      ${f("Type", `<select id="qType">${["Quotation", "Availability"].map(t => `<option${v.type === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
-      ${f("Price / adult (RM)", `<input id="qPrice" type="number" value="${v.price ?? ""}">`)}
-      ${f("Total (RM)", `<input id="qTotal" type="number" value="${v.total ?? ""}">`)}
       ${f("Status", `<select id="qStatus">${QT_STATUS.map(t => `<option${v.status === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
       ${f("Quoted at", `<input id="qResp" type="datetime-local" value="${v.respondedAt ? loc(v.respondedAt) : ""}">`)}
+    </div>
+    ${grid}
+    <div class="qt-g4">
       ${f("Outcome (PO)", `<select id="qOut"><option value="">— (CRM decides)</option>${["Closed", "Lost"].map(t => `<option${v.outcome === t ? " selected" : ""}>${t}</option>`).join("")}</select>`)}
-      ${f("Note", `<input id="qNote" value="${esc(v.note || "")}" placeholder="e.g. discount RM200/pax offered">`)}
+      <label style="grid-column:span 3">Note<input id="qNote" value="${esc(v.note || "")}" placeholder="e.g. single supplement RM450 / pax"></label>
     </div>
     <label class="small" style="flex-direction:row;display:flex;gap:6px;align-items:center"><input type="checkbox" id="qNoPhone"${q && !normPhone(q.phone) ? " checked" : ""}> TC has not given the phone yet (record is flagged "No phone")</label>
     <div class="err-t"></div>`,
     `${q ? `<button class="btn danger" data-qt="delete" data-id="${esc(q.id)}">Delete</button>` : ""}<button class="btn" data-close>Cancel</button><button class="btn primary" data-qt="save">Save</button>`, true);
+  qtCalc();
+}
+// Live T1 / margin / totals in the form.
+function qtCalc() {
+  if (!$("#qTot")) return;
+  const g = (p, k) => { const x = $("#" + p + k).value.trim(); return x === "" ? null : +x; };
+  const q = { cost: {}, t2: {} };
+  for (const [k] of QT_CAT) {
+    q[k] = g("qN_", k); q.cost[k] = g("qC_", k); q.t2[k] = g("qT_", k);
+    $("#qT1_" + k).textContent = q.t2[k] == null ? "—" : rm(qtT1(k, q.t2[k])).replace(/<[^>]+>/g, "");
+    const m = q.t2[k] != null && q.cost[k] != null ? q.t2[k] - q.cost[k] : NaN;
+    $("#qM_" + k).innerHTML = num(m) ? `<span class="${marginClass(m)}">${rm(m)}</span> <span class="muted">${q.t2[k] ? pct(m / q.t2[k]) : ""}</span>` : "—";
+  }
+  const t = qtTotals(q);
+  $("#qTot").innerHTML = t ? `Total T1 <b>${rm(t.T1)}</b> · Total T2 <b>${rm(t.T2)}</b>${num(t.margin) ? ` · Margin (T2 − cost) <b class="${marginClass(t.margin)}">${rm(t.margin)}</b>` : ""}` : "";
 }
 async function qtSubmit(d) {
   const $v = id => $("#" + id).value.trim(), n = id => $v(id) === "" ? null : +$v(id);
   const phone = $v("qPhone");
   if (!normPhone(phone) && !$("#qNoPhone").checked) return mErr("Phone number is required (or tick 'TC has not given the phone yet').");
   const old = QT.edit.id ? QT.list.find(q => q.id === QT.edit.id) : null, now = new Date().toISOString();
-  const status = $v("qStatus"), resp = $v("qResp") ? new Date($v("qResp")).toISOString() : (status !== "Pending" ? (old && old.respondedAt) || now : null);
-  const rec = { ...(old || {}), id: old ? old.id : "Q" + Date.now().toString(36).toUpperCase(), code: d.code, pkg: $v("qPkg"), pkgLabel: $("#qPkg").selectedOptions[0].textContent,
-    requestedAt: $v("qReq") ? new Date($v("qReq")).toISOString() : now, tc: $v("qTc"), customer: $v("qCust"), phone, adult: n("qA"), child: n("qC"), infant: n("qI"),
-    travel: $v("qTravel"), type: $v("qType"), price: n("qPrice"), total: n("qTotal"), status, respondedAt: resp, outcome: $v("qOut") || null, note: $v("qNote"),
-    request: $("#qRequest").value, quote: $("#qQuote").value, po: old ? old.po : SESSION.u, updatedAt: now, updatedBy: SESSION.u, ...(old ? {} : { createdAt: now }) };
+  const status = $v("qStatus"), prev = old ? (qtVers(old)[QT.edit.vi || 0] || {}).respondedAt : null, resp = $v("qResp") ? new Date($v("qResp")).toISOString() : (status !== "Pending" && $("#qQuote").value.trim() ? prev || now : prev || null);
+  const cost = {}, t2 = {}, pax = {};
+  for (const [k] of QT_CAT) { pax[k] = n("qN_" + k); cost[k] = n("qC_" + k); t2[k] = n("qT_" + k); }
+  const vi = QT.edit.vi || 0, vs = old ? qtVers(old).map(x => ({ ...x })) : [];
+  vs[vi] = { v: vi + 1, pkg: $v("qPkg"), pkgLabel: $("#qPkg").selectedOptions[0].textContent, travel: $v("qTravel"), ...pax, cost, t2, quote: $("#qQuote").value, note: $v("qNote"),
+    respondedAt: resp, at: (vs[vi] && vs[vi].at) || now, by: (vs[vi] && vs[vi].by) || SESSION.u, ...(vs[vi] ? { editedAt: now, editedBy: SESSION.u } : {}) };
+  const rec = { ...(old || {}), id: old ? old.id : "Q" + Date.now().toString(36).toUpperCase(), code: d.code,
+    requestedAt: $v("qReq") ? new Date($v("qReq")).toISOString() : now, tc: $v("qTc"), customer: $v("qCust"), phone,
+    status, outcome: $v("qOut") || null, request: $("#qRequest").value, versions: vs, po: old ? old.po : SESSION.u, updatedAt: now, updatedBy: SESSION.u, ...(old ? {} : { createdAt: now }) };
+  for (const k of [...QT_VF, "type", "child", "price", "total"]) delete rec[k];   // version fields live in versions[]
   mErr("Saving…");
   try { await qtSave(rec); closeModal(); toast("Quotation saved"); render(); } catch (e) { mErr("Save failed: " + e.message); }
 }
@@ -2198,18 +2247,22 @@ document.addEventListener("click", async e => {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), a = t.dataset.qt;
     if (a === "new" || a === "edit") return openQuote(d, t.dataset.id);
     if (a === "save") return qtSubmit(d);
-    if (a === "copy") { const q = QT.list.find(x => x.id === t.dataset.id); try { await navigator.clipboard.writeText(q.quote); toast("Quotation copied"); } catch (_) { toast("Copy failed"); } return; }
+    if (a === "ver" || a === "newver") return openQuote(d, t.dataset.id, a === "ver" ? +t.dataset.vi : null, a === "newver");
+    if (a === "copy") { const q = qtView(QT.list.find(x => x.id === t.dataset.id)); try { await navigator.clipboard.writeText(q.quote); toast("Quotation copied"); } catch (_) { toast("Copy failed"); } return; }
     if (a === "delete") { const q = QT.list.find(x => x.id === t.dataset.id); if (!q || !confirm("Delete this quotation?")) return; mErr("Deleting…"); try { await qtSave(q, true); closeModal(); toast("Quotation deleted"); render(); } catch (e) { mErr(e.message); } return; }
   }
-  if (t.id === "qParse") { const o = { ...qtParse($("#qRequest").value), ...qtParse($("#qQuote").value) }, m = { phone: "qPhone", customer: "qCust", adult: "qA", child: "qC", infant: "qI", travel: "qTravel", price: "qPrice", total: "qTotal" };
+  if (t.id === "qParse") { const o = { ...qtParse($("#qRequest").value), ...qtParse($("#qQuote").value) }, m = { phone: "qPhone", customer: "qCust", adult: "qN_adult", cwb: "qN_cwb", cnb: "qN_cnb", infant: "qN_infant", travel: "qTravel" };
+    for (const [k] of QT_CAT) if (o["p_" + k] != null) o["t2_" + k] = o["p_" + k] - (k === "infant" ? 0 : QT_T1_ADD), m["t2_" + k] = "qT_" + k;   // quoted price = T1
     let n = 0; for (const [k, id] of Object.entries(m)) if (o[k] != null && o[k] !== "" && !$("#" + id).value) { $("#" + id).value = o[k]; n++; }
+    qtCalc();
     if ($("#qQuote").value.trim() && $("#qStatus").value === "Pending") $("#qStatus").value = "Quoted";
     mErr(n ? `Filled ${n} field${n > 1 ? "s" : ""} — check them before saving.` : "Nothing new found in the text."); return; }
-  if (t.id === "qSuggest") { const d = DATA.destinations.find(x => x.code === PAGE_DEST), p = d.packages.find(x => x.id === $("#qPkg").value), a = +$("#qA").value || 0, c = +$("#qC").value || 0;
-    if (!p || !a) return mErr("Pick a package and the number of adults first.");
-    const n = Math.max(2, a + c), r = p.pricing.adult[String(n)] == null ? null : priceRow(d, p, activeVariantId(p, n), n).adult.selling;
-    if (!num(r)) return mErr(`No Selling Price for ${n} pax in ${p.label}.`);
-    $("#qPrice").value = Math.round(r); if (!$("#qTotal").value) $("#qTotal").value = Math.round(r * a); mErr(`Selling Price ${p.label}, ${n} pax: ${rm(r)} / adult (children not priced).`); return; }
+  if (t.id === "qSuggest") { const d = DATA.destinations.find(x => x.code === PAGE_DEST), p = d.packages.find(x => x.id === $("#qPkg").value), N = k => +$("#qN_" + k).value || 0;
+    if (!p || !N("adult")) return mErr("Pick a package and the number of adults first.");
+    const n = Math.max(2, N("adult") + N("cwb") + N("cnb")); if (p.pricing.adult[String(n)] == null) return mErr(`No Costing price for ${n} pax in ${p.label}.`);
+    const r = priceRow(d, p, activeVariantId(p, n), n);
+    for (const [k] of QT_CAT) { if (num(r[k].cost)) $("#qC_" + k).value = Math.round(r[k].cost); if (num(r[k].selling)) $("#qT_" + k).value = Math.round(r[k].selling); }
+    qtCalc(); mErr(`Cost and Selling Price (T2) from Costing: ${p.label}, ${n} pax.`); return; }
   if (t.id === "doCrm") { if (USERS.crm && !confirm("Replace the CRM key? The daily sync must run again before CRM status shows.")) return; return acct(crmSetup, "CRM link key saved"); }
   if (t.dataset.cmppkg) { SEL.pkg = t.dataset.cmppkg; SEL.variant = "auto"; return render(); }
   if (t.dataset.act === "cmpAdd") {
@@ -2419,6 +2472,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "Enter" && $("#lp") && document.activeElement && ["lu", "lp"].includes(document.activeElement.id)) doLogin();
 });
 document.addEventListener("input", e => {
+  if (e.target.id && /^q[NCT]_/.test(e.target.id)) qtCalc();
   if (e.target.id === "hubSearch") { SEL.hubQ = e.target.value; filterHub(); }
   if (e.target.id === "kbq") { KB.q = e.target.value; kbFilter(); }
   if (e.target.id === "flagQ") { SEL.flagQ = e.target.value; render(); const i = $("#flagQ"); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }

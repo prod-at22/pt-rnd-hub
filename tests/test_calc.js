@@ -959,7 +959,10 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     $p("#qRequest").value = "Seoul\n6-10 November 2026\n3 Adult\nPuan Kamariah Moksin";
     $p("#qQuote").value = "PT SEOUL 5D4N\nPax: 3 Adult\nDate: 6-10 November 2026\nPrice: RM 4,197 per pax\nTotal 3 pax: RM 12,641\nPuan Kamariah Moksin";
     click(W, $p("#qParse")); await tick(5);
-    ok($p("#qA").value === "3" && $p("#qPrice").value === "4197" && $p("#qTotal").value === "12641" && $p("#qCust").value === "Puan Kamariah Moksin" && $p("#qTravel").value === "6-10 November 2026" && $p("#qStatus").value === "Quoted", "Fill from text: pax, price, total, customer, travel date; status Quoted");
+    ok($p("#qN_adult").value === "3" && $p("#qT_adult").value === "3997" && $p("#qT1_adult").textContent === "RM4,197" && $p("#qCust").value === "Puan Kamariah Moksin" && $p("#qTravel").value === "6-10 November 2026" && $p("#qStatus").value === "Quoted" && !$p("#qType"), "Fill from text: pax, quoted price = T1 (T2 = 4,197 − 200 = 3,997), customer, travel date; status Quoted; no Type field");
+    click(W, $p("#qSuggest")); await tick(5);
+    { const P = P2.DATA.destinations.find(x => x.code === "SEL").packages.find(x => x.id === $p("#qPkg").value), r = P2.priceRow(P2.DATA.destinations.find(x => x.code === "SEL"), P, "ATK-BSC", 3);
+      ok($p("#qC_adult").value === String(Math.round(r.adult.cost)) && $p("#qT_adult").value === String(Math.round(r.adult.selling)) && $p("#qT1_adult").textContent === "RM" + Math.round(r.adult.selling + 200).toLocaleString("en-MY") && /Total T1/.test($p("#qTot").textContent) && /Margin/.test($p("#qTot").textContent), "Use Costing prices: cost + Selling T2 per category from Costing (3 pax), T1 = T2 + 200, totals and margin"); }
     click(W, $p('[data-qt="save"]')); await tick(10);
     ok($p("#modalRoot .err-t").textContent.includes("Phone number is required"), "phone is required");
     $p("#qPhone").value = "+60 12-368 2424"; click(W, $p('[data-qt="save"]'));
@@ -967,6 +970,20 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const enc = repo.files(repo.head)["data/quotes.enc.json"];
     ok(!enc.includes("Kamariah") && !enc.includes("2424") && /"ct"/.test(enc) && /quotes: aiman added Q/.test(repo.log[repo.log.length - 1]) && !repo.log[repo.log.length - 1].includes("Kamariah"), "file and commit message carry no customer data (encrypted)");
     ok(await until(() => $p("#qtCard tbody").textContent.includes("Puan Kamariah Moksin")), "quotation listed for this destination");
+    {   // customer change → v2; v1 kept
+      click(W, $p('[data-qt="edit"]')); await until(() => $p('[data-qt="newver"]'));
+      const v1T2 = $p("#qT_adult").value;
+      click(W, $p('[data-qt="newver"]')); await until(() => /v2 \(new\)/.test($p(".qt-vers").textContent));
+      ok($p("#qT_adult").value === v1T2 && $p("#qQuote").value === "" && $p("#qCust").value === "Puan Kamariah Moksin", "New version copies v1 (prices, customer) with an empty quotation text");
+      setVal(W, $p("#qN_adult"), "4"); $p("#qT_adult").value = "3797"; $p("#qQuote").value = "PT SEOUL 5D4N v2\nPax: 4 Adult"; click(W, $p('[data-qt="save"]'));
+      ok(await until(() => !$p("#qQuote") && /v2/.test($p("#qtCard tbody").textContent)), "saved: list shows v2");
+      const q = W.eval("QT.list[0]");
+      ok(q.versions.length === 2 && q.versions[0].t2.adult === +v1T2 && q.versions[1].t2.adult === 3797 && q.versions[1].adult === 4 && !("t2" in q) && q.customer === "Puan Kamariah Moksin", "versions[]: v1 unchanged, v2 with the new pax / price; customer & phone shared");
+      ok($p("#qtCard tbody").textContent.includes("RM3,997") && $p("#qtCard tbody").textContent.includes("RM3,797"), "list shows the latest version (T1 3,997 / T2 3,797)");
+      click(W, $p('[data-qt="edit"]')); await until(() => $p('[data-qt="ver"][data-vi="0"]'));
+      click(W, $p('[data-qt="ver"][data-vi="0"]')); await until(() => /Older version/.test($p(".qt-vers").textContent));
+      ok($p("#qT_adult").value === v1T2, "v1 can be opened again (kept for reference)"); click(W, $p("[data-close]"));
+    }
     ok([...pg.doc.querySelectorAll(".qt-k")].find(k => k.textContent.includes("My requests")).textContent.includes("1"), "KPI: the PO's own requests");
     // CRM: a closed PT lead for the same phone (stored as 60123682424) → Closed
     {
