@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v88 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v88, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v90 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v90, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -209,10 +209,18 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   label unchanged so the catalog stays identical; open flag removed). KB turki: Klasik peaks 21–24 Aug / 20 Dec–1 Jan and 2027 +RM300 removed (Cappadocia keeps 2027),
   Std quotation meals 7B·6L·7D, '4★ upgrade +~RM1,800' note removed. Margins (USD 4.085): Std adult 9.5–24.6 %, Basic 9.6–22.2 %. Open (flags_open): Basic rate, child rates,
   single supplement, KB transport rate card amounts (Istanbul ↔ Ankara Sprinter 'RM37,000' — currency?). Catalogs unchanged; Flags / History from v87.
+  **Tokyo Basic + Standard (v89–v90, PO ezie 14 Oct; WIF CR 2026 + Qayyum internal rate sheet; R&D TOKYO folder read with PO OK):** catalog v1 is current (Std 2 pax
+  RM6,197; unpublished 'v2' tables removed from the local ProdReq Jepun skill + stored KB tiers, v89 — the anthropic-skills plugin copy may still hold v2). WIF / Qayyum rates
+  checked; big groups now on WIF CR vehicles (K2): airport Coaster ¥80k (9/10–18) / Bus ¥130k (19+) — the R&D ¥37k / ¥25k had no CR source; Std tours 14-seater 10–14,
+  Coaster 15–18, Bus 19–30; Costing 2–30 (K3); Basic includes the guide's highway bus + ropeway (K13); accommodation RM250 kept (ARBA books it, K4); catalog add-ons
+  costed per band (catalog item = first band + extra band items, K5); Disneyland ticket RM300/pax = catalog D4 (cost ≈RM316 → flag, K9); meal cost = WIF CR, Tolak meals
+  removed (K7); TripCare pair / family, wifi ¥2,000/day (K10); hotel-night add-ons kept (K8); Self Tour kept for reference (K11). Flags: R&D add-ons with doubtful costs
+  (K6), 2–4 pax margins (K12), Std 15–21 pax margin 3.7–8 % / CWB below cost at 15 & 19 (catalog 13–30 prices are extrapolated). tests/test_calc.js rate codes updated.
+  Catalogs and KB unchanged. **Pending (PO):** KB jepun 2027 peak windows + 'Travel date 2027 +RM200' (not in the catalogs) — remove for Tokyo only or all Japan?
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 8 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Yunnan done 14 Oct, v86).
+- **Next:** Tokyo pending item (2027 surcharge scope), then ask the PO which destination to verify next.
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
