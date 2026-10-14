@@ -1380,7 +1380,7 @@ function competitorTab(d) {
     if (col.arba) return `<td class="cmp-arba"><b>${rm(a)}</b></td>`;
     const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN, dl = p - a, ex = +col.c.extra || 0;
     const cell = E ? ed([...base, "items", col.c.id, "prices", String(x)], num(p) ? p : undefined) : num(p) ? rm(p) : '<span class="muted">—</span>';
-    const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "▼" : dl > 0 ? "▲" : "="} ${pct(Math.abs(dl) / a)}</span>` : "";
+    const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : "";
     const eq = ex && num(p) ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : "";
     return `<td><span class="cmp-pv">${cell}${gap}</span>${eq}</td>`;
   }).join("")}</tr>`;
@@ -1395,7 +1395,7 @@ function competitorTab(d) {
   return `<div class="card full" id="cmpCard">${head}${bar}
     <div class="scroll"><table class="cmp-t${E ? " cmp-e" : ""}"><thead><tr><th class="cmp-asp"></th>${th}</tr></thead>
     <tbody>${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${grp("Harga dewasa seorang")}${pax.map(rowP).join("")}${exRow}${grp("Penilaian")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
-    <div class="note"><span class="cmp-gap dn">▼</span> pesaing lebih murah · <span class="cmp-gap up">▲</span> ARBA lebih murah — beza % berbanding pakej ARBA yang dilawan. Tuding nama pesaing untuk sumber.</div></div>${ana}`;
+    <div class="note">% = beza harga pesaing berbanding pakej ARBA yang dilawan (− lebih murah, + lebih mahal). Tuding untuk RM dan sumber.</div></div>${ana}`;
 }
 
 /* ---------- Claude (browser, API key from the vault) */

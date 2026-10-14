@@ -906,7 +906,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(heads.join("|") === "|Seoul Basic|Lurima Lite|Seoul Standard|Lurima Dream", "columns: ARBA Basic, Lurima Lite, ARBA Standard, Lurima Dream (" + heads.join("|") + ")");
     const row = l => [...pg.doc.querySelectorAll(".cmp-t tbody tr")].find(r => r.querySelector("th") && r.querySelector("th").textContent === l);
     const r3 = row("3 pax").querySelectorAll("td");
-    ok(r3[0].textContent.includes("RM2,997") && r3[1].textContent.includes("RM2,513") && r3[1].querySelector(".cmp-gap.dn").textContent === "▼ 16.1%" && r3[1].querySelector(".cmp-gap").title.includes("RM484") && r3[2].textContent.includes("RM3,697") && r3[3].querySelector(".cmp-gap.up").textContent === "▲ 3.9%", "3 pax: ARBA prices from Costing, gap vs ARBA (Lite ▼16.1% = RM484, Dream ▲3.9%)");
+    ok(r3[0].textContent.includes("RM2,997") && r3[1].textContent.includes("RM2,513") && r3[1].querySelector(".cmp-gap.dn").textContent === "−16.1%" && r3[1].querySelector(".cmp-gap").title.includes("RM484") && r3[2].textContent.includes("RM3,697") && r3[3].querySelector(".cmp-gap.up").textContent === "+3.9%", "3 pax: ARBA prices from Costing, gap vs ARBA (Lite −16.1% = RM484, Dream +3.9%)");
     ok([...pg.doc.querySelectorAll(".cmp-grp")].map(x => x.textContent).join("|") === "Pakej|Harga dewasa seorang|Penilaian", "rows grouped: Pakej, Harga dewasa seorang, Penilaian");
     ok(row("K-ETA").querySelectorAll("td")[1].textContent === "Excluded" && row("Strength") && row("Weakness"), "aspects incl. K-ETA, Strength, Weakness");
     ok(!$p('[data-act="cmpAI"]') && !$p(".cmp-t textarea") && !$p(".cmp-bar"), "view mode: no AI / edit controls");
