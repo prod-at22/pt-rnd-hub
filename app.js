@@ -1349,53 +1349,51 @@ function cmpMd(t) {
   }
   return out + (list ? "</ul>" : "");
 }
+// Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
 function competitorTab(d) {
-  const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), cols = cmpCols(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"], n = cols.length + 1;
+  const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), pkg = curPkg(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"];
+  const cols = cmpCols(d).filter(c => c.pkg.id === pkg.id), n = cols.length + 1;
   const chg = (path, v) => JSON.stringify(getPath(BASE, path) ?? "") !== JSON.stringify(v ?? "") ? " chg" : "";
   const txt = (path, v) => E ? `<textarea class="ed cmp-in${chg(path, v)}" rows="1" data-path="${esc(JSON.stringify(path))}" data-kind="text">${esc(v ?? "")}</textarea>` : esc(v || "") || '<span class="muted">—</span>';
   const attrPath = (col, k) => col.arba ? [...base, "arba", col.pkg.id, k] : [...base, "items", col.c.id, "attrs", k];
   const attrVal = (col, k) => col.arba ? ((C.arba || {})[col.pkg.id] || {})[k] : (col.c.attrs || {})[k];
-  const adult = (p, x) => { const v = p.pricing.adult[String(x)]; return v == null || v === "" ? NaN : +v; };
-  const aiOk = E && SESSION && SESSION.aiKey;
-  const aiBtn = (act, label, cls = "") => E ? `<button class="btn${cls}" data-act="${act}"${aiOk ? "" : ` disabled title="Perlu Claude API key — admin: Account → Claude API key"`}>✦ ${label}</button>` : "";
-  const head = `<h2>Competitor Analysis · ${esc(d.name)} <span class="sub">ARBA lawan pesaing · harga ARBA = Catalog Price</span>
-    <span class="right">${aiBtn("cmpAI", "Tambah pesaing")}${cols.length ? aiBtn("cmpAnalyse", "Analisis AI", " primary") : ""}</span></h2>`;
-  const bar = E ? `<div class="cmp-bar">
-      <input id="cmpName" placeholder="Nama pesaing, cth. Lurima Lite">
-      <select id="cmpVs" title="Pakej ARBA untuk dibandingkan">${d.packages.map(p => `<option value="${esc(p.id)}">lawan ${esc(p.label)}</option>`).join("")}</select>
-      <button class="btn" data-act="cmpAdd">+ Tambah manual</button>
-      <label class="cmp-paxin">Pax harga <input id="cmpPax" value="${esc(pax.join(", "))}" title="cth. 3, 4, 6, 8"></label>
-      ${aiOk ? "" : `<span class="cmp-hint">✦ AI perlu Claude API key (admin: Account)</span>`}</div>` : "";
-  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${bar}<div class="empty">Belum ada pesaing untuk ${esc(d.name)}.${E ? " Tambah di atas, atau ✦ Tambah pesaing dengan teks, screenshot, PDF atau URL." : " Log masuk dan Edit costs untuk menambah."}</div></div>`;
+  const adult = x => { const v = pkg.pricing.adult[String(x)]; return v == null || v === "" ? NaN : +v; };
+  const aiOk = E && SESSION && SESSION.aiKey, dis = aiOk ? "" : ` disabled title="Perlu Claude API key — admin: Account → Claude API key"`;
+  const others = d.packages.filter(p => p.id !== pkg.id && (C.items || []).some(c => c.vs === p.id));
+  const head = `<h2>Competitor Analysis <span class="sub">${esc(pkg.label)} lawan ${cols.length - 1 || "tiada"} pesaing</span>
+    ${E ? `<span class="right"><button class="btn" data-act="cmpAI"${dis}>✦ Tambah pesaing</button>${cols.length ? `<button class="btn" data-act="cmpAnalyse"${dis}>✦ Analisis</button>` : ""}</span>` : ""}</h2>`;
+  const bar = E ? `<div class="cmp-bar"><input id="cmpName" placeholder="Nama pesaing"><input type="hidden" id="cmpVs" value="${esc(pkg.id)}"><button class="btn" data-act="cmpAdd">+ Manual</button>
+      <label class="cmp-paxin">Pax <input id="cmpPax" value="${esc(pax.join(", "))}"></label></div>` : "";
+  const elsewhere = others.length ? `<div class="cmp-other">Pesaing juga ada untuk ${others.map(p => `<button class="lnk" data-cmppkg="${esc(p.id)}">${esc(p.label)}</button>`).join(", ")}</div>` : "";
+  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${bar}<div class="empty">Tiada pesaing untuk ${esc(pkg.label)}.${E ? " Tambah di atas." : ""}</div>${elsewhere}</div>`;
   const th = cols.map(col => {
-    if (col.arba) return `<th class="cmp-arba"><div class="cmp-h">${esc(col.pkg.label)}</div><div class="cmp-tag">ARBA</div></th>`;
+    if (col.arba) return `<th class="cmp-arba"><div class="cmp-h">ARBA</div>
+      <div class="cmp-tag">${esc(pkg.label)}</div></th>`;
     const c = col.c, tip = [c.source, c.updated && "dikemas kini " + c.updated].filter(Boolean).join(" · ");
-    return `<th class="cmp-comp"${tip ? ` title="${esc(tip)}"` : ""}>${E ? `<input class="cmp-name${chg([...base, "items", c.id, "name"], c.name)}" data-path="${esc(JSON.stringify([...base, "items", c.id, "name"]))}" data-kind="text" value="${esc(c.name)}">` : `<div class="cmp-h">${esc(c.name)}</div>`}
-      <div class="cmp-tag">lawan ${esc(col.pkg.label)}</div>${E ? `<div class="cmp-act"><button class="lnk" data-act="cmpAI" data-id="${esc(c.id)}"${aiOk ? "" : " disabled"}>✦ kemas kini</button><button class="lnk bad-t" data-act="cmpDel" data-id="${esc(c.id)}">buang</button></div>` : ""}</th>`;
+    return `<th${tip ? ` title="${esc(tip)}"` : ""}>${E ? `<input class="cmp-name${chg([...base, "items", c.id, "name"], c.name)}" data-path="${esc(JSON.stringify([...base, "items", c.id, "name"]))}" data-kind="text" value="${esc(c.name)}">` : `<div class="cmp-h">${esc(c.name)}</div>`}
+      ${E ? `<div class="cmp-act"><button class="lnk" data-act="cmpAI" data-id="${esc(c.id)}"${aiOk ? "" : " disabled"}>✦ kemas kini</button><button class="lnk" data-act="cmpDel" data-id="${esc(c.id)}">buang</button></div>` : ""}</th>`;
   }).join("");
   const grp = l => `<tr class="cmp-grp"><td colspan="${n}">${l}</td></tr>`;
   const rowA = ([k, l]) => `<tr><th class="cmp-asp">${esc(l)}</th>${cols.map(col => `<td class="${col.arba ? "cmp-arba" : ""}">${txt(attrPath(col, k), attrVal(col, k))}</td>`).join("")}</tr>`;
   const rowP = x => `<tr class="cmp-pr"><th class="cmp-asp">${x} pax</th>${cols.map(col => {
-    const a = adult(col.pkg, x);
-    if (col.arba) return `<td class="cmp-arba"><b>${rm(a)}</b></td>`;
+    const a = adult(x);
+    if (col.arba) return `<td class="cmp-arba">${rm(a)}</td>`;
     const v = (col.c.prices || {})[String(x)], p = v != null && v !== "" && num(+v) ? +v : NaN, dl = p - a, ex = +col.c.extra || 0;
     const cell = E ? ed([...base, "items", col.c.id, "prices", String(x)], num(p) ? p : undefined) : num(p) ? rm(p) : '<span class="muted">—</span>';
     const gap = num(dl) && a ? `<span class="cmp-gap ${dl < 0 ? "dn" : "up"}" title="${dl < 0 ? "Pesaing lebih murah" : "ARBA lebih murah"} ${rm(Math.abs(dl))}">${dl < 0 ? "−" : dl > 0 ? "+" : "±"}${pct(Math.abs(dl) / a)}</span>` : "";
     const eq = ex && num(p) ? `<div class="cmp-eq" title="${esc(col.c.extraNote || "")}">setara ${rm(p + ex)}</div>` : "";
     return `<td><span class="cmp-pv">${cell}${gap}</span>${eq}</td>`;
   }).join("")}</tr>`;
-  const anyEx = cols.some(c => !c.arba && +c.c.extra);
-  const exRow = E || anyEx ? `<tr><th class="cmp-asp" title="RM seorang untuk jadikan harga pesaing setanding ARBA (cth. hotel / K-ETA yang dikecualikan)">Tambahan setara</th>${cols.map(col => col.arba ? `<td class="cmp-arba"></td>` :
-    `<td>${E ? `${ed([...base, "items", col.c.id, "extra"], col.c.extra)}<input class="ed txt cmp-exn${chg([...base, "items", col.c.id, "extraNote"], col.c.extraNote)}" placeholder="cth. hotel + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}">`
-      : +col.c.extra ? `${rm(+col.c.extra)}<div class="cmp-eq">${esc(col.c.extraNote || "")}</div>` : '<span class="muted">—</span>'}</td>`).join("")}</tr>` : "";
+  const exRow = E ? `<tr><th class="cmp-asp" title="RM seorang untuk jadikan harga pesaing setanding ARBA">Tambahan setara</th>${cols.map(col => col.arba ? `<td class="cmp-arba"></td>` :
+    `<td>${ed([...base, "items", col.c.id, "extra"], col.c.extra)}<input class="ed txt cmp-exn${chg([...base, "items", col.c.id, "extraNote"], col.c.extraNote)}" placeholder="cth. hotel + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}"></td>`).join("")}</tr>` : "";
   const A = C.analysis;
-  const ana = A && (A.text || (A.actions || []).length) ? `<div class="card full cmp-ana"><h2>✦ Analisis AI <span class="sub">${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</span></h2>
-      <div class="body cmp-md">${cmpMd(A.text)}${(A.actions || []).length ? `<h4>Cadangan tindakan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
-      <div class="note">Dijana oleh Claude daripada jadual dan katalog ARBA — semak sebelum buat keputusan harga.</div></div>` : "";
+  const ana = A && (A.text || (A.actions || []).length) ? `<div class="cmp-ana">${(A.actions || []).length ? `<h4>Cadangan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+      ${A.text ? `<details><summary>Analisis penuh</summary><div class="cmp-md">${cmpMd(A.text)}</div></details>` : ""}
+      <div class="cmp-by">✦ ${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</div></div>` : "";
   return `<div class="card full" id="cmpCard">${head}${bar}
     <div class="scroll"><table class="cmp-t${E ? " cmp-e" : ""}"><thead><tr><th class="cmp-asp"></th>${th}</tr></thead>
-    <tbody>${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${grp("Harga dewasa seorang")}${pax.map(rowP).join("")}${exRow}${grp("Penilaian")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
-    <div class="note">% = beza harga pesaing berbanding pakej ARBA yang dilawan (− lebih murah, + lebih mahal). Tuding untuk RM dan sumber.</div></div>${ana}`;
+    <tbody>${grp("Harga seorang")}${pax.map(rowP).join("")}${exRow}${grp("Pakej")}${cmpAspects(d).map(rowA).join("")}${CMP_SW.map(rowA).join("")}</tbody></table></div>
+    ${elsewhere}${ana}</div>`;
 }
 
 /* ---------- Claude (browser, API key from the vault) */
@@ -1527,6 +1525,7 @@ function applyCmpAI(d) {
     const fields = { name: r.name || $("#aiName").value.trim() || "Pesaing", vs: x.vs, attrs: r.attrs, prices, extra: Math.round(+r.extra_rm_per_pax || 0), extraNote: r.extra_note || "", source: r.source_note || "", updated: today };
     if (x.id) Object.assign(items.find(c => c.id === x.id), fields);
     else items.push({ id: cmpNewId(d, fields.name), ...fields });
+    SEL.pkg = x.vs;
   } else {
     const over = $("#aiOverwrite") && $("#aiOverwrite").checked, put = (o, k, v) => { if (v && (over || !o[k] || o[k] === "-")) o[k] = v; };
     const A = C.arba ||= {};
@@ -1983,11 +1982,12 @@ document.addEventListener("click", async e => {
   if (t.id === "aiRun") return runCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST), t.dataset.id || null);
   if (t.id === "aiApply") return applyCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST));
   if (t.dataset.act === "cmpAnalyse") return runCmpAnalyse(DATA.destinations.find(x => x.code === PAGE_DEST));
+  if (t.dataset.cmppkg) { SEL.pkg = t.dataset.cmppkg; SEL.variant = "auto"; return render(); }
   if (t.dataset.act === "cmpAdd") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), name = $("#cmpName").value.trim();
     if (!name) return toast("Isi nama pesaing");
     const C = d.competitors ||= { pax: CMP_PAX.slice(), items: [] };
-    (C.items ||= []).push({ id: cmpNewId(d, name), name, vs: $("#cmpVs").value, attrs: {}, prices: {} });
+    (C.items ||= []).push({ id: cmpNewId(d, name), name, vs: $("#cmpVs").value, attrs: {}, prices: {} }); SEL.pkg = $("#cmpVs").value;
     toast(`Ditambah "${name}" — isi sel kuning, kemudian Save`); return render();
   }
   if (t.dataset.act === "cmpDel") {
