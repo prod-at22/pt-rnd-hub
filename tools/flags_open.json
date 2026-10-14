@@ -180,6 +180,46 @@
    "fix": "Raise the KB price (e.g. RM400 = hub) or confirm the CTRANS cost.",
    "by": "ezie",
    "at": "2026-10-13"
+  },
+  {
+   "code": "KBV",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Krabi: KTT 2027 rates not in the Costing",
+   "detail": "KTT sent the 2027 high-season rates (11 Jan–30 Apr 2027, Krabi + Honeymoon A/B/C, 17 hotels; new: Andaman Pearl, Aonang Viva, The Phu Beach, Navinda, Chada Thai Village, Krabi La Playa, Apasari Krabi Hotel; Ananta Burin gone). PDFs are in TO Contract Rate.",
+   "fix": "PO to decide how 2027 enters the Costing (new season / new catalog 2027).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "KBV",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Krabi: no KTT rate for 1 Nov 2026 – 10 Jan 2027",
+   "detail": "The KTT CR 2026 covers 11 Jan–30 Apr (High) and 1 May–31 Oct (Low) only; the catalog sells Nov–Dec 2026 with a RM300 peak surcharge. (Drive also has 3D2N files for 1 Nov–20 Dec 2026, no 4D3N.)",
+   "fix": "Ask KTT for the 4D3N rates 1 Nov 2026 – 10 Jan 2027.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "KBV",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Krabi: Honeymoon 'High' rates are the Normal rates",
+   "detail": "No KTT honeymoon file for 11 Jan–30 Apr 2026 (A / C); the hub uses the Low-season honeymoon rates for High.",
+   "fix": "Get the honeymoon High rates from KTT (2027 file has them for 2027).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "KBV",
+   "severity": "low",
+   "area": "Sheet",
+   "title": "Krabi CR 2026: possible typos",
+   "detail": "Low HNY C lists Aonang Buri at THB 7,900 (other Low files put it with Apasari / Cha-Da = 7,500) and a stray Silver Orchid 11 Jan–30 Apr line; Blue Tara is 3★ in the High files and 4★ in the Low files; the 'HNY B' High file is a standard Package B.",
+   "fix": "Confirm with KTT.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }

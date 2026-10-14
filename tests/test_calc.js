@@ -587,6 +587,9 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(kb.doc.querySelector("#controls").textContent.includes("catalog +RM250") && kb.doc.querySelector("#costPax").textContent !== before4, "4★ hotel adds RM250 to the Standard catalog and changes the costing");
     const seasonSel = kb.doc.querySelector("#opt_season"); seasonSel.value = "High"; seasonSel.dispatchEvent(new kb.w.Event("change", { bubbles: true })); await tick(5);
     ok(kb.doc.querySelector("#opt_season").value === "High" && kb.errors.length === 0, "season selector works " + kb.errors.join("|"));
+    { const K = byCode(P.DATA, "KBV"), st = K.packages.find(p => p.id === "standard");
+      const a = P.priceRow(K, st, "std-emerald", 2), c = P.priceRow(K, st, "std-phiphi", 2);
+      ok(c.adult.selling === a.adult.selling + 100 && c.cwb.selling === a.cwb.selling + 100, "Krabi Day 3 Phi Phi sells +RM100 (variants[].sellingUpgrade, catalog)"); }
     const fp = await boot(repo, "flags/");
     const nF = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "flags.json"), "utf8")).flags;
     ok(fp.doc.querySelectorAll(".flags tbody tr").length === nF.filter(f => f.severity !== "low").length, "flags page: high + medium shown by default");

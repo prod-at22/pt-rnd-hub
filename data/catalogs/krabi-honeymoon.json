@@ -11,7 +11,7 @@
   "basis": "Ground Only (Boat Sharing Basis)",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-08-07",
+  "updated": "2026-10-14",
   "kb_url": "https://prod-at22.github.io/arba-krabi-kb/",
   "po": "Fyka",
   "ops": "CIK IWAN",
@@ -220,5 +220,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 84
 }

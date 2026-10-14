@@ -113,7 +113,7 @@ function describe(snap, path) {
   const parts = []; let cur = snap;
   const LBL = { value: "", rates: "Rate", fx: "FX", tables: "Table", packages: "", variants: "TO", pricing: "", rules: "Rule",
     adult: "Adult catalog", cwb: "CWB catalog", cnb: "CNB catalog", infant: "Infant price", discountTier2: "Discount tier 2",
-    tierUpgrade: "Tier upgrade", cwbCost: "CWB cost", cnbCost: "CNB cost", infantCost: "Infant cost", type: "type",
+    tierUpgrade: "Tier upgrade", sellingUpgrade: "Selling upgrade (RM/pax)", cwbCost: "CWB cost", cnbCost: "CNB cost", infantCost: "Infant cost", type: "type",
     components: "Component", expr: "formula", values: "", settings: "Settings", marginWarnPct: "Margin warn %", marginDangerPct: "Margin danger %", sellingDiscount: "Selling discount (RM/pax)",
     destinations: "", nights: "Nights", po: "PO", assign: "TO assignment", contracts: "TO Contract Rate" };
   for (let i = 0; i < path.length; i++) {
@@ -226,7 +226,8 @@ function priceRow(d, pkg, variantId, pax, opts) {
   const adultCost = cost ? cost.total : NaN, r = pkg.rules;
   // Selling = Catalog Price (+ tier / option upgrade) − RM200 for every package (settings.sellingDiscount);
   // the infant flat price has no upgrade and no discount. rules.discountTier2 (from the old import) is not used.
-  const up = (+r.tierUpgrade || 0) + optionUpgrade(d, pkg, O), disc = sellDisc(pkg);
+  // variants[].sellingUpgrade: RM/pax a TO adds to the catalog price (Krabi Day 3 Phi Phi +RM100, catalog; PO 14 Oct 2026)
+  const up = (+r.tierUpgrade || 0) + optionUpgrade(d, pkg, O) + (+(v && v.sellingUpgrade) || 0), disc = sellDisc(pkg);
   const mk = (costV, catV, infant) => {
     const catalog = num(catV) ? catV + (infant ? 0 : up) : NaN;
     const selling = num(catalog) ? catalog - (infant ? 0 : disc) : NaN;

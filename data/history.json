@@ -84879,6 +84879,3441 @@
    "kb": [
     "KB kk-kundasang: 5 changes"
    ]
+  },
+  {
+   "v": 84,
+   "at": "2026-10-14T02:03:12Z",
+   "by": "system",
+   "note": "Krabi cross-check (PO ezie 14 Oct 2026): KTT CR 2026 (Drive CR KRABI, 9 PDFs: High 11 Jan–30 Apr 2026, Low 1 May–31 Oct 2026) and CR 2027 (6 PDFs, 11 Jan–30 Apr 2027) added to TO Contract Rate; 88 of 110 hub rates = CR 2026 exactly (22 honeymoon High rates have no CR — flag); Day 3 Phi Phi sells +RM100/pax (catalog; new variants[].sellingUpgrade in app.js); Honeymoon 4★ upgrade RM225/pax = RM450/couple (catalog; 4★+ 525); Costing 2–10 pax (= catalog); add-ons: Kayaking / 7-Islands catalog items with cost, duplicates and 'Thailand Visa' removed, TripCare = Etiqa Area 1; KB: Standard year-end peak from 1 Nov (= catalog), FAQ 4★ +RM250 / honeymoon +RM450 per couple, CNB = adult − RM300. 2027 rates not in the Costing yet (flag, PO). Catalog prices unchanged.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "note"
+     ],
+     "from": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax. Hotel tier adds the catalog upgrade. Standard and Honeymoon sell at the same price for either Day 3; the Tour operator box picks Day 3.",
+     "to": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax (KTT CR 2026: Normal = 1 May–31 Oct 2026, High = 11 Jan–30 Apr 2026, highest range). Hotel tier adds the catalog upgrade (4★ RM250/pax; Honeymoon RM450/couple). Day 3 Phi Phi sells +RM100/pax (catalog). Costing 2–10 pax (= catalog). KTT 2027 rates (11 Jan–30 Apr 2027) are in TO Contract Rate but not in the Costing yet (PO decision).",
+     "label": "Krabi › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "krabi-cha-da-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › krabi-cha-da-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "blue-tara-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › blue-tara-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "aonang-buri-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › aonang-buri-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "ava-sea-aonang-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › ava-sea-aonang-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "ananta-burin-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › ananta-burin-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "krabi-heritage-hotel",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › krabi-heritage-hotel › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "aonang-princeville-resort",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 598,
+     "to": 525,
+     "label": "Krabi › options › hotel › choices › aonang-princeville-resort › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "bluesotel-krabi-hotel",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › bluesotel-krabi-hotel › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "options",
+      "hotel",
+      "choices",
+      "bluesotel-smart-hotel",
+      "upgrade",
+      "honeymoon"
+     ],
+     "from": 298,
+     "to": 225,
+     "label": "Krabi › options › hotel › choices › bluesotel-smart-hotel › upgrade › honeymoon"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "budget",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › TO › TO KTT › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "std-emerald",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › TO › TO KTT · Day 3 Emerald Pool + Tiger Cave › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "std-phiphi",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › TO › TO KTT · Day 3 Phi Phi + Maya Bay › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "std-phiphi",
+      "sellingUpgrade"
+     ],
+     "from": null,
+     "to": 100,
+     "label": "Krabi › TO › TO KTT · Day 3 Phi Phi + Maya Bay › Selling upgrade (RM/pax)"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "hny-emerald",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › TO › TO KTT · Day 3 Emerald Pool + Tiger Cave › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "hny-phiphi",
+      "paxMax"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › TO › TO KTT · Day 3 Phi Phi + Maya Bay › paxMax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "variants",
+      "hny-phiphi",
+      "sellingUpgrade"
+     ],
+     "from": null,
+     "to": 100,
+     "label": "Krabi › TO › TO KTT · Day 3 Phi Phi + Maya Bay › Selling upgrade (RM/pax)"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › Krabi Basic 4D3N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "11"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "12"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "13"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "14"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "11"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "12"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "13"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "14"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "11"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "12"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "13"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "14"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 847,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 847,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 847,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 847,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 847,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 797,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 797,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 797,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 797,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "budget",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 797,
+     "to": null,
+     "label": "Krabi › Krabi Basic 4D3N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › Krabi Standard 4D3N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "11"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "12"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "13"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "14"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "11"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "12"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "13"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "14"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "11"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "12"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "13"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "14"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 947,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "standard",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 897,
+     "to": null,
+     "label": "Krabi › Krabi Standard 4D3N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 10,
+     "label": "Krabi › Krabi Honeymoon 4D3N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "11"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "12"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "13"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "14"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "15"
+     ],
+     "from": 1547,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 1497,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 1497,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 1497,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 1497,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 1497,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 1447,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 1397,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "11"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "12"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "13"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "14"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "15"
+     ],
+     "from": 1347,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 1297,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1247,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1197,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "11"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @11 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "12"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @12 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "13"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @13 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "14"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @14 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "15"
+     ],
+     "from": 1147,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @15 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 1097,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1047,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "packages",
+      "honeymoon",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 997,
+     "to": null,
+     "label": "Krabi › Krabi Honeymoon 4D3N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "kbv-a01",
+       "category": "Activity",
+       "label": "Kayaking Tour at Hong Island (BUDGET D3) — Adult",
+       "cost": 50,
+       "selling": 70,
+       "per": "pax",
+       "notes": "BUDGET variant only"
+      },
+      {
+       "id": "kbv-a02",
+       "category": "Activity",
+       "label": "Kayaking Tour at Hong Island (BUDGET D3) — Child",
+       "cost": 35,
+       "selling": 50,
+       "per": "child",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a03",
+       "category": "Activity",
+       "label": "7 Islands Sunset + Plankton (1pm-8pm) Full",
+       "cost": 150,
+       "selling": 250,
+       "per": "pax",
+       "notes": "Land transfer + Longtail + Guide + Snorkel + BBQ Dinner"
+      },
+      {
+       "id": "kbv-a04",
+       "category": "Activity",
+       "label": "Upgrade 4-Islands → 7-Islands + Plankton (D2)",
+       "cost": 50,
+       "selling": 80,
+       "per": "pax",
+       "notes": "STANDARD/BUDGET D2 add-on"
+      },
+      {
+       "id": "kbv-a05",
+       "category": "Activity",
+       "label": "STANDARD D3 Phi Phi Island Tour (instead of Emerald Pool)",
+       "cost": 60,
+       "selling": 100,
+       "per": "pax",
+       "notes": "STANDARD variant only"
+      },
+      {
+       "id": "kbv-a06",
+       "category": "Visa",
+       "label": "Thailand Visa",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "Malaysian — visa exempt"
+      },
+      {
+       "id": "kbv-a07",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari) Area 2",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2 (ASEAN)"
+      },
+      {
+       "id": "kbv-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari) Area 2",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kbv-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari) Area 2",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pair",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 hari) Area 2",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pair",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari) Area 2",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "family",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 hari) Area 2",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "family",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari) Area 2",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 hari) Area 2",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a15",
+       "category": "Wifi",
+       "label": "Pocket WiFi (RoamingMan) 3GB 4G — 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "Thailand coverage"
+      },
+      {
+       "id": "kbv-a16",
+       "category": "Wifi",
+       "label": "Pocket WiFi 10GB 5G — 4D3N",
+       "cost": 48,
+       "selling": 120,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a17",
+       "category": "Wifi",
+       "label": "Pocket WiFi 3GB 4G — 5D4N",
+       "cost": 35,
+       "selling": 100,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a18",
+       "category": "Wifi",
+       "label": "Pocket WiFi 10GB 5G — 5D4N",
+       "cost": 48,
+       "selling": 150,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-k001",
+       "category": "Additional Activities",
+       "label": "Add on Kayaking Tour at Hong Island (on Day 3)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM70/adult",
+        "RM50/child"
+       ],
+       "catalogs": {
+        "krabi-basic": 1
+       }
+      },
+      {
+       "id": "kbv-k002",
+       "category": "Additional Activities",
+       "label": "Day 2 Upgrade from 4 Islands tour to 7 Islands Sunset Cruise + Plankton (1pm-8pm)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Yawasom Island, Chicken Island, Tup Island, Mor Island, Sunset Dinner at Poda Island, night snorkeling with bioluminescent plankton at Koh Raeng; Land Transfer & Longtail boat (SIC basis), guide, snorkeling equipment, BBQ dinner",
+       "price_lines": [
+        "RM80/person"
+       ],
+       "catalogs": {
+        "krabi-basic": 2,
+        "krabi-honeymoon": 1,
+        "krabi-standard": 1
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "kbv-a03",
+       "category": "Activity",
+       "label": "7 Islands Sunset + Plankton (1pm-8pm) Full",
+       "cost": 150,
+       "selling": 250,
+       "per": "pax",
+       "notes": "Land transfer + Longtail + Guide + Snorkel + BBQ Dinner"
+      },
+      {
+       "id": "kbv-a05",
+       "category": "Activity",
+       "label": "STANDARD D3 Phi Phi Island Tour (instead of Emerald Pool)",
+       "cost": 60,
+       "selling": 100,
+       "per": "pax",
+       "notes": "STANDARD variant only"
+      },
+      {
+       "id": "kbv-a07",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 hari) Area 1",
+       "cost": 28,
+       "selling": 45,
+       "per": "pax",
+       "notes": "Etiqa Area 1 (ASEAN, = Bangkok)"
+      },
+      {
+       "id": "kbv-a08",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 hari) Area 1",
+       "cost": 41,
+       "selling": 62,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "kbv-a09",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 hari) Area 1",
+       "cost": 54,
+       "selling": 80,
+       "per": "pair",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a10",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 hari) Area 1",
+       "cost": 86,
+       "selling": 113,
+       "per": "pair",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a11",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 hari) Area 1",
+       "cost": 70,
+       "selling": 100,
+       "per": "family",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a12",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 hari) Area 1",
+       "cost": 108,
+       "selling": 142,
+       "per": "family",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a13",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 hari) Area 1",
+       "cost": 99,
+       "selling": 130,
+       "per": "pax",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 hari) Area 1",
+       "cost": 141,
+       "selling": 186,
+       "per": "pax",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a15",
+       "category": "Wifi",
+       "label": "Pocket WiFi (RoamingMan) 3GB 4G — 4D3N",
+       "cost": 28,
+       "selling": 80,
+       "per": "trip",
+       "notes": "Thailand coverage"
+      },
+      {
+       "id": "kbv-a16",
+       "category": "Wifi",
+       "label": "Pocket WiFi 10GB 5G — 4D3N",
+       "cost": 48,
+       "selling": 120,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a17",
+       "category": "Wifi",
+       "label": "Pocket WiFi 3GB 4G — 5D4N",
+       "cost": 35,
+       "selling": 100,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a18",
+       "category": "Wifi",
+       "label": "Pocket WiFi 10GB 5G — 5D4N",
+       "cost": 48,
+       "selling": 150,
+       "per": "trip",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a19",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a20",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a21",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": "—"
+      },
+      {
+       "id": "kbv-k001",
+       "category": "Additional Activities",
+       "label": "Add on Kayaking Tour at Hong Island (on Day 3)",
+       "per": "adult",
+       "cost": 50,
+       "selling": 70,
+       "notes": "Kos dewasa RM50 / anak RM35; jual katalog RM70 dewasa / RM50 anak",
+       "price_lines": [
+        "RM70/adult",
+        "RM50/child"
+       ],
+       "catalogs": {
+        "krabi-basic": 1
+       }
+      },
+      {
+       "id": "kbv-k002",
+       "category": "Additional Activities",
+       "label": "Day 2 Upgrade from 4 Islands tour to 7 Islands Sunset Cruise + Plankton (1pm-8pm)",
+       "per": "pax",
+       "cost": 50,
+       "selling": 80,
+       "notes": "Kos RM50; jual = katalog RM80",
+       "includes": "Yawasom Island, Chicken Island, Tup Island, Mor Island, Sunset Dinner at Poda Island, night snorkeling with bioluminescent plankton at Koh Raeng; Land Transfer & Longtail boat (SIC basis), guide, snorkeling equipment, BBQ dinner",
+       "price_lines": [
+        "RM80/person"
+       ],
+       "catalogs": {
+        "krabi-basic": 2,
+        "krabi-honeymoon": 1,
+        "krabi-standard": 1
+       }
+      }
+     ],
+     "label": "Krabi › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "KBV",
+      "contracts"
+     ],
+     "from": null,
+     "to": [
+      {
+       "id": "1a13825d203",
+       "name": "ARBA__Krabi_4D3N_Package A_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d203-ARBA__Krabi_4D3N_Package_A_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+       "size": 4926926,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d204",
+       "name": "ARBA__Krabi_4D3N_Package.B_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d204-ARBA__Krabi_4D3N_Package.B_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+       "size": 4876394,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d205",
+       "name": "ARBA__Krabi_4D3N_Package.C_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d205-ARBA__Krabi_4D3N_Package.C_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+       "size": 4925129,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d206",
+       "name": "ARBA__Krabi_4D3N_Package A__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d206-ARBA__Krabi_4D3N_Package_A__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1168510,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d207",
+       "name": "ARBA__Krabi_4D3N_Package.B__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d207-ARBA__Krabi_4D3N_Package.B__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1143750,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d208",
+       "name": "ARBA__Krabi_4D3N_Package.C__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d208-ARBA__Krabi_4D3N_Package.C__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1167371,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d209",
+       "name": "ARBA__Honeymoon 4D3N Package A__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d209-ARBA__Honeymoon_4D3N_Package_A__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1169178,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20a",
+       "name": "ARBA__Honeymoon 4D3N Package B__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d20a-ARBA__Honeymoon_4D3N_Package_B__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1143822,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20b",
+       "name": "ARBA__Honeymoon 4D3N Package C__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+       "file": "contracts/kbv/1a13825d20b-ARBA__Honeymoon_4D3N_Package_C__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+       "to": "KTT",
+       "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+       "size": 1173460,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20c",
+       "name": "ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d20c-ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5466790,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20d",
+       "name": "ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d20d-ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5459381,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20e",
+       "name": "ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d20e-ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5484207,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d20f",
+       "name": "ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d20f-ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5468314,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d210",
+       "name": "ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d210-ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5460959,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      },
+      {
+       "id": "1a13825d211",
+       "name": "ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "file": "contracts/kbv/1a13825d211-ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+       "to": "KTT",
+       "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+       "size": 5485539,
+       "at": "2026-10-14T02:02:45Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Krabi › TO Contract Rate"
+    },
+    {
+     "path": [
+      "kb",
+      "krabi",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Krabi — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*3 varian: **Budget** (4-Islands + Hong Island), **Standard** (4-Islands + Emerald Pool/Phi Phi), **Honeymoon** (Standard + candlelight dinner, bouquet, room deco, fullboard). Semua 4D3N, ground-only, 3★ Aonang.*\n\n- CWB = Adult − RM200 · CNB = Adult − RM400 · Infant (<3 thn) FOC. Umur: Adult ≥12, CWB 3–11, CNB 3–7.\n- Pakej **ground-only** — tiket penerbangan tidak termasuk (ARBA boleh uruskan).\n- Meals: **halfboard** (3B + 2L); dinner own expense kecuali **Honeymoon** (fullboard).\n- Budget Day 3 = Hong Island; **tiada** pilihan Emerald/Phi Phi. Standard/Honeymoon Day 3 = Emerald Pool (default) atau Phi Phi (+RM100/pax).\n- Itinerari & hotel difinalkan **15 hari** sebelum trip.\n- Private transport 10 jam basis (extra hour cash to driver).\n- Passport sah minimum **6 bulan**; Malaysia **visa-free 30 hari** (isi TDAC sebelum tiba).\n- Island hopping tidak digalakkan untuk warga emas / wanita mengandung — bot mencabar. Musim terbaik **Nov–Apr**.\n- Muslim-friendly (halal, surau/masjid) baseline — Krabi komuniti Muslim besar, halal mudah di Aonang. Awas monyet di Phra Nang Cave & pantai.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa yang best di Krabi?**\nKrabi destinasi mesra Muslim — mudah cari makanan halal & masjid. Terkenal dengan alam & jungle: tebing batu kapur, lagun tersembunyi, emerald pool dan island hopping long-tail boat. Bandar kecil santai berbanding Phuket.\n\n**Beza Budget, Standard dan Honeymoon?**\nBudget: 4-Islands + Hong Island. Standard: 4-Islands + Day 3 pilihan Emerald Pool atau Phi Phi (+RM100). Honeymoon: sama Standard + candlelight dinner, bouquet, hiasan bilik & fullboard.\n\n**Ada aktiviti snorkeling?**\nYa — island hopping & snorkeling aktiviti utama Day 2 (4-Islands) dan Day 3 (Hong Island / Phi Phi). Air laut jernih, boleh lihat terumbu karang.\n\n**Pakej termasuk tiket flight?**\nBelum. Private ground-only. Book sendiri (AirAsia AK868 / Firefly FY3610) atau minta ARBA belikan.\n\n**Boleh customize itinerari?**\nBoleh — Private Tour fleksibel. Contoh add-on: Phi Phi (+RM100), 7-Islands + Plankton (+RM80 upgrade / RM250 full), kayaking Hong Island (RM70/50).\n\n**Berapa lama transport tiap hari?**\nPrivate transport 10 jam basis (D1 & D4). Extra hour dikenakan cash to driver.\n\n### B. Halal, Makanan & Solat\n\n**Senang dapat makanan halal di Krabi?**\nSangat mudah, terutama Aonang — komuniti Muslim besar, banyak restoran Thai-Muslim, seafood halal & gerai berhampiran masjid (Jame Food Centre, Madina).\n\n**Macam mana ARBA pastikan halal?**\nTeam ARBA pergi ke Krabi untuk pastikan operator pilih restoran yang menepati kriteria halal / Muslim-friendly.\n\n**Ada masjid / surau untuk solat?**\nYa — Masjid Nurul Islam / Ao Nang Mosque untuk solat harian & Jumaat. Di pulau tiada surau — solat jamak-qasar di hotel.\n\n**Akan makan apa?**\nHalfboard: 3 sarapan + 2 makan tengahari (dinner own expense). Honeymoon: fullboard (semua meals). Lunch island tour sharing buffet.\n\n### C. Visa & Passport\n\n**Perlu visa ke Thailand?**\nTidak. Rakyat Malaysia visa-exempt 30 hari. Perlu bukti perjalanan pulang.\n\n**Perlu isi apa-apa sebelum masuk?**\nYa — Thailand Digital Arrival Card (TDAC) dalam talian sebelum tiba.\n\n**Passport sah berapa lama?**\nMinimum 6 bulan dari tarikh berlepas.\n\n### D. Flight & Airport\n\n**Berapa lama flight KL–Krabi?**\nDirect ~1 jam 25 minit ke Krabi International Airport (KBV). AirAsia X (AK868) & Firefly (FY3610) — Batik Air Malaysia juga terbang laluan ini.\n\n**Anggaran harga tiket?**\nRate card: AK868 RM320–380 (Mon/Wed NA), FY3610 RM360–400 (daily) round-trip. Harga berubah — sahkan semasa booking.\n\n**Transfer dari airport macam mana?**\nPrivate transport disediakan Day 1 & Day 4 (airport ⇄ hotel).\n\n### E. Hotel & Bilik\n\n**Boleh upgrade hotel?**\nBoleh — 4★ +RM240/pax (Krabi Cha-Da / Heritage / Blue Tara / Aonang Buri / AVA Sea / Ananta Burin / Bluesotel). 4★+ Aonang Princeville sebut harga.\n\n**Berapa orang sebilik?**\n2–3 orang sebilik. Single occupancy +RM450/pax.\n\n**Sesuai honeymoon?**\nYa — varian Honeymoon ada candlelight dinner, sejambak bunga & hiasan bilik.\n\n### F. Cuaca & Musim\n\n**Bila waktu terbaik?**\nNovember–April (musim kering) — laut tenang, cuaca cerah, sesuai island hopping. Suhu 22–32°C.\n\n**Macam mana Mei–Oktober?**\nMusim hujan (monsoon) — hujan lebat & ribut petir boleh jejas aktiviti laut. Kelebihan: harga lebih murah, kurang orang.\n\n### G. Shopping & Duit\n\n**Mata wang apa?**\nThai Baht (THB). Kad OK di hotel & restoran besar; tunai THB perlu untuk pasar, kedai kecil & add-on on-site.\n\n**Cash poket berapa?**\nCadangan RM500–1,500 per orang bergantung tabiat membeli-belah & optional activities.\n\n### H. Payment & Refund\n\n**Bila itinerari difinalkan?**\n15 hari sebelum trip. Harga quotation sah 24 jam. Pakej sah travel hingga 31 Dec 2026.\n\n### I. Add-ons & Customization\n\n**Apa boleh tambah?**\nPhi Phi D3 (+RM100), upgrade 7-Islands + Plankton (+RM80 / RM250 full), kayaking Hong Island (RM70/50), Pocket WiFi (RM80/120), takaful TripCare 360, luggage tracker.\n\n**Free gift promo?**\nKrabi: Upgrade to 7 Islands + Sunset BBQ + Plankton (kod FKBV2). Bullet (BRB Luggage Tag / Pocket WiFi 4G) — wajib tanya PO/Leader; sahkan jika di luar waktu Promo.\n\n### J. Kesihatan & Keselamatan\n\n**Island hopping sesuai untuk semua?**\nSesuai untuk kebanyakan orang, TAPI tidak digalakkan untuk warga emas, wanita mengandung atau yang ada masalah kesihatan — perjalanan bot mencabar. Pakai life jacket.\n\n**Awas apa-apa?**\nMonyet di Phra Nang Cave & pantai — jangan tunjuk makanan, tutup beg. Ambil takaful perjalanan (aktiviti laut ada risiko).\n\n### K. Praktikal (SIM / Socket / Toilet)\n\n**Internet macam mana?**\nPocket WiFi RoamingMan (3GB 4G RM80 / 10GB 5G RM120 untuk 4D3N) atau roaming/eSIM sendiri. Liputan baik di Aonang & Krabi Town.\n\n**Socket & plug?**\nThailand Type A/B/C, 220V. Bawa universal adapter.\n\n### L. Packing\n\n**Apa perlu bawa?**\nBaju ringan cepat kering, swimwear muslim-friendly, sunblock, topi, kasut air, telekung/sejadah ringkas, bekal snek halal, dan cash THB.\n",
+     "to": "# PT Krabi — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*3 varian: **Budget** (4-Islands + Hong Island), **Standard** (4-Islands + Emerald Pool/Phi Phi), **Honeymoon** (Standard + candlelight dinner, bouquet, room deco, fullboard). Semua 4D3N, ground-only, 3★ Aonang.*\n\n- CWB = Adult − RM200 · CNB = Adult − RM300 · Infant (<3 thn) FOC. Umur: Adult ≥12, CWB 3–11, CNB 3–7.\n- Pakej **ground-only** — tiket penerbangan tidak termasuk (ARBA boleh uruskan).\n- Meals: **halfboard** (3B + 2L); dinner own expense kecuali **Honeymoon** (fullboard).\n- Budget Day 3 = Hong Island; **tiada** pilihan Emerald/Phi Phi. Standard/Honeymoon Day 3 = Emerald Pool (default) atau Phi Phi (+RM100/pax).\n- Itinerari & hotel difinalkan **15 hari** sebelum trip.\n- Private transport 10 jam basis (extra hour cash to driver).\n- Passport sah minimum **6 bulan**; Malaysia **visa-free 30 hari** (isi TDAC sebelum tiba).\n- Island hopping tidak digalakkan untuk warga emas / wanita mengandung — bot mencabar. Musim terbaik **Nov–Apr**.\n- Muslim-friendly (halal, surau/masjid) baseline — Krabi komuniti Muslim besar, halal mudah di Aonang. Awas monyet di Phra Nang Cave & pantai.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa yang best di Krabi?**\nKrabi destinasi mesra Muslim — mudah cari makanan halal & masjid. Terkenal dengan alam & jungle: tebing batu kapur, lagun tersembunyi, emerald pool dan island hopping long-tail boat. Bandar kecil santai berbanding Phuket.\n\n**Beza Budget, Standard dan Honeymoon?**\nBudget: 4-Islands + Hong Island. Standard: 4-Islands + Day 3 pilihan Emerald Pool atau Phi Phi (+RM100). Honeymoon: sama Standard + candlelight dinner, bouquet, hiasan bilik & fullboard.\n\n**Ada aktiviti snorkeling?**\nYa — island hopping & snorkeling aktiviti utama Day 2 (4-Islands) dan Day 3 (Hong Island / Phi Phi). Air laut jernih, boleh lihat terumbu karang.\n\n**Pakej termasuk tiket flight?**\nBelum. Private ground-only. Book sendiri (AirAsia AK868 / Firefly FY3610) atau minta ARBA belikan.\n\n**Boleh customize itinerari?**\nBoleh — Private Tour fleksibel. Contoh add-on: Phi Phi (+RM100), 7-Islands + Plankton (+RM80 upgrade / RM250 full), kayaking Hong Island (RM70/50).\n\n**Berapa lama transport tiap hari?**\nPrivate transport 10 jam basis (D1 & D4). Extra hour dikenakan cash to driver.\n\n### B. Halal, Makanan & Solat\n\n**Senang dapat makanan halal di Krabi?**\nSangat mudah, terutama Aonang — komuniti Muslim besar, banyak restoran Thai-Muslim, seafood halal & gerai berhampiran masjid (Jame Food Centre, Madina).\n\n**Macam mana ARBA pastikan halal?**\nTeam ARBA pergi ke Krabi untuk pastikan operator pilih restoran yang menepati kriteria halal / Muslim-friendly.\n\n**Ada masjid / surau untuk solat?**\nYa — Masjid Nurul Islam / Ao Nang Mosque untuk solat harian & Jumaat. Di pulau tiada surau — solat jamak-qasar di hotel.\n\n**Akan makan apa?**\nHalfboard: 3 sarapan + 2 makan tengahari (dinner own expense). Honeymoon: fullboard (semua meals). Lunch island tour sharing buffet.\n\n### C. Visa & Passport\n\n**Perlu visa ke Thailand?**\nTidak. Rakyat Malaysia visa-exempt 30 hari. Perlu bukti perjalanan pulang.\n\n**Perlu isi apa-apa sebelum masuk?**\nYa — Thailand Digital Arrival Card (TDAC) dalam talian sebelum tiba.\n\n**Passport sah berapa lama?**\nMinimum 6 bulan dari tarikh berlepas.\n\n### D. Flight & Airport\n\n**Berapa lama flight KL–Krabi?**\nDirect ~1 jam 25 minit ke Krabi International Airport (KBV). AirAsia X (AK868) & Firefly (FY3610) — Batik Air Malaysia juga terbang laluan ini.\n\n**Anggaran harga tiket?**\nRate card: AK868 RM320–380 (Mon/Wed NA), FY3610 RM360–400 (daily) round-trip. Harga berubah — sahkan semasa booking.\n\n**Transfer dari airport macam mana?**\nPrivate transport disediakan Day 1 & Day 4 (airport ⇄ hotel).\n\n### E. Hotel & Bilik\n\n**Boleh upgrade hotel?**\nBoleh — 4★ +RM250/pax Basic / Standard, Honeymoon +RM450/couple (Krabi Cha-Da / Heritage / Blue Tara / Aonang Buri / AVA Sea / Ananta Burin / Bluesotel). 4★+ Aonang Princeville sebut harga.\n\n**Berapa orang sebilik?**\n2–3 orang sebilik. Single occupancy +RM450/pax.\n\n**Sesuai honeymoon?**\nYa — varian Honeymoon ada candlelight dinner, sejambak bunga & hiasan bilik.\n\n### F. Cuaca & Musim\n\n**Bila waktu terbaik?**\nNovember–April (musim kering) — laut tenang, cuaca cerah, sesuai island hopping. Suhu 22–32°C.\n\n**Macam mana Mei–Oktober?**\nMusim hujan (monsoon) — hujan lebat & ribut petir boleh jejas aktiviti laut. Kelebihan: harga lebih murah, kurang orang.\n\n### G. Shopping & Duit\n\n**Mata wang apa?**\nThai Baht (THB). Kad OK di hotel & restoran besar; tunai THB perlu untuk pasar, kedai kecil & add-on on-site.\n\n**Cash poket berapa?**\nCadangan RM500–1,500 per orang bergantung tabiat membeli-belah & optional activities.\n\n### H. Payment & Refund\n\n**Bila itinerari difinalkan?**\n15 hari sebelum trip. Harga quotation sah 24 jam. Pakej sah travel hingga 31 Dec 2026.\n\n### I. Add-ons & Customization\n\n**Apa boleh tambah?**\nPhi Phi D3 (+RM100), upgrade 7-Islands + Plankton (+RM80 / RM250 full), kayaking Hong Island (RM70/50), Pocket WiFi (RM80/120), takaful TripCare 360, luggage tracker.\n\n**Free gift promo?**\nKrabi: Upgrade to 7 Islands + Sunset BBQ + Plankton (kod FKBV2). Bullet (BRB Luggage Tag / Pocket WiFi 4G) — wajib tanya PO/Leader; sahkan jika di luar waktu Promo.\n\n### J. Kesihatan & Keselamatan\n\n**Island hopping sesuai untuk semua?**\nSesuai untuk kebanyakan orang, TAPI tidak digalakkan untuk warga emas, wanita mengandung atau yang ada masalah kesihatan — perjalanan bot mencabar. Pakai life jacket.\n\n**Awas apa-apa?**\nMonyet di Phra Nang Cave & pantai — jangan tunjuk makanan, tutup beg. Ambil takaful perjalanan (aktiviti laut ada risiko).\n\n### K. Praktikal (SIM / Socket / Toilet)\n\n**Internet macam mana?**\nPocket WiFi RoamingMan (3GB 4G RM80 / 10GB 5G RM120 untuk 4D3N) atau roaming/eSIM sendiri. Liputan baik di Aonang & Krabi Town.\n\n**Socket & plug?**\nThailand Type A/B/C, 220V. Bawa universal adapter.\n\n### L. Packing\n\n**Apa perlu bawa?**\nBaju ringan cepat kering, swimwear muslim-friendly, sunblock, topi, kasut air, telekung/sejadah ringkas, bekal snek halal, dan cash THB.\n",
+     "label": "KB krabi › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "krabi",
+      "calc",
+      "variants",
+      "std",
+      "peak",
+      "windows",
+      1,
+      0
+     ],
+     "from": "2026-12-01",
+     "to": "2026-11-01",
+     "label": "KB krabi › calc › variants › std › peak › windows › #2 › #1"
+    }
+   ],
+   "catalogs": [
+    "Catalog krabi-basic: prices + add-ons from v84",
+    "Catalog krabi-standard: prices + add-ons from v84",
+    "Catalog krabi-honeymoon: prices + add-ons from v84"
+   ],
+   "kb": [
+    "KB krabi: 2 changes"
+   ]
   }
  ]
 }

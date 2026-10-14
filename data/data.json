@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 83,
- "updatedAt": "2026-10-13T14:14:35Z",
+ "version": 84,
+ "updatedAt": "2026-10-14T02:03:12Z",
  "updatedBy": "system",
  "settings": {
   "marginWarnPct": 0.15,
@@ -34419,7 +34419,7 @@
    "nights": 3,
    "po": "Fyka",
    "source": "hub",
-   "note": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax. Hotel tier adds the catalog upgrade. Standard and Honeymoon sell at the same price for either Day 3; the Tour operator box picks Day 3.",
+   "note": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax (KTT CR 2026: Normal = 1 May–31 Oct 2026, High = 11 Jan–30 Apr 2026, highest range). Hotel tier adds the catalog upgrade (4★ RM250/pax; Honeymoon RM450/couple). Day 3 Phi Phi sells +RM100/pax (catalog). Costing 2–10 pax (= catalog). KTT 2027 rates (11 Jan–30 Apr 2027) are in TO Contract Rate but not in the Costing yet (PO decision).",
    "options": [
     {
      "id": "hotel",
@@ -34445,7 +34445,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34456,7 +34456,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34467,7 +34467,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34478,7 +34478,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34489,7 +34489,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34500,7 +34500,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34511,7 +34511,7 @@
        "upgrade": {
         "budget": 550,
         "standard": 550,
-        "honeymoon": 598
+        "honeymoon": 525
        }
       },
       {
@@ -34522,7 +34522,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       },
       {
@@ -34533,7 +34533,7 @@
        "upgrade": {
         "budget": 250,
         "standard": 250,
-        "honeymoon": 298
+        "honeymoon": 225
        }
       }
      ]
@@ -35458,7 +35458,7 @@
      "label": "KTT",
      "supplier": "KTT Travels",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Selected hotel",
      "notes": "",
      "components": [
@@ -35475,7 +35475,7 @@
      "label": "KTT · Day 3 Emerald Pool + Tiger Cave",
      "supplier": "KTT Travels",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Selected hotel",
      "notes": "",
      "components": [
@@ -35492,7 +35492,7 @@
      "label": "KTT · Day 3 Phi Phi + Maya Bay",
      "supplier": "KTT Travels",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Selected hotel",
      "notes": "",
      "components": [
@@ -35502,14 +35502,15 @@
        "per": "pax",
        "expr": "R[O.hotel+'|'+O.season+'|stdC']"
       }
-     ]
+     ],
+     "sellingUpgrade": 100
     },
     {
      "id": "hny-emerald",
      "label": "KTT · Day 3 Emerald Pool + Tiger Cave",
      "supplier": "KTT Travels",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Selected hotel",
      "notes": "",
      "components": [
@@ -35526,7 +35527,7 @@
      "label": "KTT · Day 3 Phi Phi + Maya Bay",
      "supplier": "KTT Travels",
      "paxMin": 2,
-     "paxMax": 30,
+     "paxMax": 10,
      "hotel": "Selected hotel",
      "notes": "",
      "components": [
@@ -35536,7 +35537,8 @@
        "per": "pax",
        "expr": "R[O.hotel+'|'+O.season+'|hnyC']"
       }
-     ]
+     ],
+     "sellingUpgrade": 100
     }
    ],
    "packages": [
@@ -35547,7 +35549,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "budget"
       }
      ],
@@ -35561,27 +35563,7 @@
        "7": 1297,
        "8": 1297,
        "9": 1297,
-       "10": 1297,
-       "11": 1247,
-       "12": 1247,
-       "13": 1247,
-       "14": 1247,
-       "15": 1247,
-       "16": 1197,
-       "17": 1197,
-       "18": 1197,
-       "19": 1197,
-       "20": 1197,
-       "21": 1147,
-       "22": 1147,
-       "23": 1147,
-       "24": 1147,
-       "25": 1147,
-       "26": 1097,
-       "27": 1097,
-       "28": 1097,
-       "29": 1097,
-       "30": 1097
+       "10": 1297
       },
       "cwb": {
        "2": 1097,
@@ -35592,27 +35574,7 @@
        "7": 1097,
        "8": 1097,
        "9": 1097,
-       "10": 1097,
-       "11": 1047,
-       "12": 1047,
-       "13": 1047,
-       "14": 1047,
-       "15": 1047,
-       "16": 997,
-       "17": 997,
-       "18": 997,
-       "19": 997,
-       "20": 997,
-       "21": 947,
-       "22": 947,
-       "23": 947,
-       "24": 947,
-       "25": 947,
-       "26": 897,
-       "27": 897,
-       "28": 897,
-       "29": 897,
-       "30": 897
+       "10": 1097
       },
       "cnb": {
        "2": 997,
@@ -35623,27 +35585,7 @@
        "7": 997,
        "8": 997,
        "9": 997,
-       "10": 997,
-       "11": 947,
-       "12": 947,
-       "13": 947,
-       "14": 947,
-       "15": 947,
-       "16": 897,
-       "17": 897,
-       "18": 897,
-       "19": 897,
-       "20": 897,
-       "21": 847,
-       "22": 847,
-       "23": 847,
-       "24": 847,
-       "25": 847,
-       "26": 797,
-       "27": 797,
-       "28": 797,
-       "29": 797,
-       "30": 797
+       "10": 997
       },
       "infant": 0
      },
@@ -35671,7 +35613,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "std-emerald"
       }
      ],
@@ -35685,27 +35627,7 @@
        "7": 1497,
        "8": 1497,
        "9": 1497,
-       "10": 1497,
-       "11": 1447,
-       "12": 1447,
-       "13": 1447,
-       "14": 1447,
-       "15": 1447,
-       "16": 1397,
-       "17": 1397,
-       "18": 1397,
-       "19": 1397,
-       "20": 1397,
-       "21": 1347,
-       "22": 1347,
-       "23": 1347,
-       "24": 1347,
-       "25": 1347,
-       "26": 1297,
-       "27": 1297,
-       "28": 1297,
-       "29": 1297,
-       "30": 1297
+       "10": 1497
       },
       "cwb": {
        "2": 1297,
@@ -35716,27 +35638,7 @@
        "7": 1297,
        "8": 1297,
        "9": 1297,
-       "10": 1297,
-       "11": 1247,
-       "12": 1247,
-       "13": 1247,
-       "14": 1247,
-       "15": 1247,
-       "16": 1197,
-       "17": 1197,
-       "18": 1197,
-       "19": 1197,
-       "20": 1197,
-       "21": 1147,
-       "22": 1147,
-       "23": 1147,
-       "24": 1147,
-       "25": 1147,
-       "26": 1097,
-       "27": 1097,
-       "28": 1097,
-       "29": 1097,
-       "30": 1097
+       "10": 1297
       },
       "cnb": {
        "2": 1097,
@@ -35747,27 +35649,7 @@
        "7": 1097,
        "8": 1097,
        "9": 1097,
-       "10": 1097,
-       "11": 1047,
-       "12": 1047,
-       "13": 1047,
-       "14": 1047,
-       "15": 1047,
-       "16": 997,
-       "17": 997,
-       "18": 997,
-       "19": 997,
-       "20": 997,
-       "21": 947,
-       "22": 947,
-       "23": 947,
-       "24": 947,
-       "25": 947,
-       "26": 897,
-       "27": 897,
-       "28": 897,
-       "29": 897,
-       "30": 897
+       "10": 1097
       },
       "infant": 0
      },
@@ -35798,7 +35680,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 10,
        "variant": "hny-emerald"
       }
      ],
@@ -35812,27 +35694,7 @@
        "7": 1449,
        "8": 1449,
        "9": 1449,
-       "10": 1449,
-       "11": 1547,
-       "12": 1547,
-       "13": 1547,
-       "14": 1547,
-       "15": 1547,
-       "16": 1497,
-       "17": 1497,
-       "18": 1497,
-       "19": 1497,
-       "20": 1497,
-       "21": 1447,
-       "22": 1447,
-       "23": 1447,
-       "24": 1447,
-       "25": 1447,
-       "26": 1397,
-       "27": 1397,
-       "28": 1397,
-       "29": 1397,
-       "30": 1397
+       "10": 1449
       },
       "cwb": {
        "2": 1397,
@@ -35843,27 +35705,7 @@
        "7": 1397,
        "8": 1397,
        "9": 1397,
-       "10": 1397,
-       "11": 1347,
-       "12": 1347,
-       "13": 1347,
-       "14": 1347,
-       "15": 1347,
-       "16": 1297,
-       "17": 1297,
-       "18": 1297,
-       "19": 1297,
-       "20": 1297,
-       "21": 1247,
-       "22": 1247,
-       "23": 1247,
-       "24": 1247,
-       "25": 1247,
-       "26": 1197,
-       "27": 1197,
-       "28": 1197,
-       "29": 1197,
-       "30": 1197
+       "10": 1397
       },
       "cnb": {
        "2": 1197,
@@ -35874,27 +35716,7 @@
        "7": 1197,
        "8": 1197,
        "9": 1197,
-       "10": 1197,
-       "11": 1147,
-       "12": 1147,
-       "13": 1147,
-       "14": 1147,
-       "15": 1147,
-       "16": 1097,
-       "17": 1097,
-       "18": 1097,
-       "19": 1097,
-       "20": 1097,
-       "21": 1047,
-       "22": 1047,
-       "23": 1047,
-       "24": 1047,
-       "25": 1047,
-       "26": 997,
-       "27": 997,
-       "28": 997,
-       "29": 997,
-       "30": 997
+       "10": 1197
       },
       "infant": 0
      },
@@ -35921,24 +35743,6 @@
    ],
    "addons": [
     {
-     "id": "kbv-a01",
-     "category": "Activity",
-     "label": "Kayaking Tour at Hong Island (BUDGET D3) — Adult",
-     "cost": 50.0,
-     "selling": 70.0,
-     "per": "pax",
-     "notes": "BUDGET variant only"
-    },
-    {
-     "id": "kbv-a02",
-     "category": "Activity",
-     "label": "Kayaking Tour at Hong Island (BUDGET D3) — Child",
-     "cost": 35.0,
-     "selling": 50.0,
-     "per": "child",
-     "notes": "—"
-    },
-    {
      "id": "kbv-a03",
      "category": "Activity",
      "label": "7 Islands Sunset + Plankton (1pm-8pm) Full",
@@ -35946,15 +35750,6 @@
      "selling": 250.0,
      "per": "pax",
      "notes": "Land transfer + Longtail + Guide + Snorkel + BBQ Dinner"
-    },
-    {
-     "id": "kbv-a04",
-     "category": "Activity",
-     "label": "Upgrade 4-Islands → 7-Islands + Plankton (D2)",
-     "cost": 50.0,
-     "selling": 80.0,
-     "per": "pax",
-     "notes": "STANDARD/BUDGET D2 add-on"
     },
     {
      "id": "kbv-a05",
@@ -35966,83 +35761,74 @@
      "notes": "STANDARD variant only"
     },
     {
-     "id": "kbv-a06",
-     "category": "Visa",
-     "label": "Thailand Visa",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "Malaysian — visa exempt"
-    },
-    {
      "id": "kbv-a07",
      "category": "Takaful",
-     "label": "TripCare 360 Individual (1-5 hari) Area 2",
-     "cost": 40.5,
-     "selling": 64.0,
+     "label": "TripCare 360 Individual (1-5 hari) Area 1",
+     "cost": 28.0,
+     "selling": 45.0,
      "per": "pax",
-     "notes": "Etiqa Area 2 (ASEAN)"
+     "notes": "Etiqa Area 1 (ASEAN, = Bangkok)"
     },
     {
      "id": "kbv-a08",
      "category": "Takaful",
-     "label": "TripCare 360 Individual (6-10 hari) Area 2",
-     "cost": 58.87,
-     "selling": 88.5,
+     "label": "TripCare 360 Individual (6-10 hari) Area 1",
+     "cost": 41.0,
+     "selling": 62.0,
      "per": "pax",
      "notes": "Etiqa Area 2"
     },
     {
      "id": "kbv-a09",
      "category": "Takaful",
-     "label": "TripCare 360 Couple (1-5 hari) Area 2",
-     "cost": 77.25,
-     "selling": 113.0,
+     "label": "TripCare 360 Couple (1-5 hari) Area 1",
+     "cost": 54.0,
+     "selling": 80.0,
      "per": "pair",
      "notes": "—"
     },
     {
      "id": "kbv-a10",
      "category": "Takaful",
-     "label": "TripCare 360 Couple (6-10 hari) Area 2",
-     "cost": 122.87,
-     "selling": 160.5,
+     "label": "TripCare 360 Couple (6-10 hari) Area 1",
+     "cost": 86.0,
+     "selling": 113.0,
      "per": "pair",
      "notes": "—"
     },
     {
      "id": "kbv-a11",
      "category": "Takaful",
-     "label": "TripCare 360 Family (1-5 hari) Area 2",
-     "cost": 100.12,
-     "selling": 143.5,
+     "label": "TripCare 360 Family (1-5 hari) Area 1",
+     "cost": 70.0,
+     "selling": 100.0,
      "per": "family",
      "notes": "—"
     },
     {
      "id": "kbv-a12",
      "category": "Takaful",
-     "label": "TripCare 360 Family (6-10 hari) Area 2",
-     "cost": 153.62,
-     "selling": 201.5,
+     "label": "TripCare 360 Family (6-10 hari) Area 1",
+     "cost": 108.0,
+     "selling": 142.0,
      "per": "family",
      "notes": "—"
     },
     {
      "id": "kbv-a13",
      "category": "Takaful",
-     "label": "TripCare 360 Senior (1-5 hari) Area 2",
-     "cost": 141.62,
-     "selling": 185.5,
+     "label": "TripCare 360 Senior (1-5 hari) Area 1",
+     "cost": 99.0,
+     "selling": 130.0,
      "per": "pax",
      "notes": "—"
     },
     {
      "id": "kbv-a14",
      "category": "Takaful",
-     "label": "TripCare 360 Senior (6-10 hari) Area 2",
-     "cost": 201.62,
-     "selling": 265.5,
+     "label": "TripCare 360 Senior (6-10 hari) Area 1",
+     "cost": 141.0,
+     "selling": 186.0,
      "per": "pax",
      "notes": "—"
     },
@@ -36122,10 +35908,10 @@
      "id": "kbv-k001",
      "category": "Additional Activities",
      "label": "Add on Kayaking Tour at Hong Island (on Day 3)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "adult",
+     "cost": 50.0,
+     "selling": 70.0,
+     "notes": "Kos dewasa RM50 / anak RM35; jual katalog RM70 dewasa / RM50 anak",
      "price_lines": [
       "RM70/adult",
       "RM50/child"
@@ -36138,10 +35924,10 @@
      "id": "kbv-k002",
      "category": "Additional Activities",
      "label": "Day 2 Upgrade from 4 Islands tour to 7 Islands Sunset Cruise + Plankton (1pm-8pm)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 50.0,
+     "selling": 80.0,
+     "notes": "Kos RM50; jual = katalog RM80",
      "includes": "Yawasom Island, Chicken Island, Tup Island, Mor Island, Sunset Dinner at Poda Island, night snorkeling with bioluminescent plankton at Koh Raeng; Land Transfer & Longtail boat (SIC basis), guide, snorkeling equipment, BBQ dinner",
      "price_lines": [
       "RM80/person"
@@ -36260,6 +36046,158 @@
      "id": "kbv-h10",
      "name": "Aonang Princeville Resort & Spa",
      "catalogs": {}
+    }
+   ],
+   "contracts": [
+    {
+     "id": "1a13825d203",
+     "name": "ARBA__Krabi_4D3N_Package A_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d203-ARBA__Krabi_4D3N_Package_A_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+     "size": 4926926,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d204",
+     "name": "ARBA__Krabi_4D3N_Package.B_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d204-ARBA__Krabi_4D3N_Package.B_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+     "size": 4876394,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d205",
+     "name": "ARBA__Krabi_4D3N_Package.C_11 JAN 2026 - 30 APRIL 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d205-ARBA__Krabi_4D3N_Package.C_11_JAN_2026_-_30_APRIL_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 High (11 Jan–30 Apr 2026) = Costing High",
+     "size": 4925129,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d206",
+     "name": "ARBA__Krabi_4D3N_Package A__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d206-ARBA__Krabi_4D3N_Package_A__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1168510,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d207",
+     "name": "ARBA__Krabi_4D3N_Package.B__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d207-ARBA__Krabi_4D3N_Package.B__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1143750,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d208",
+     "name": "ARBA__Krabi_4D3N_Package.C__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d208-ARBA__Krabi_4D3N_Package.C__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1167371,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d209",
+     "name": "ARBA__Honeymoon 4D3N Package A__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d209-ARBA__Honeymoon_4D3N_Package_A__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1169178,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20a",
+     "name": "ARBA__Honeymoon 4D3N Package B__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d20a-ARBA__Honeymoon_4D3N_Package_B__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1143822,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20b",
+     "name": "ARBA__Honeymoon 4D3N Package C__01 MAY 2026 - 31 OCT 2026__Updated.pdf",
+     "file": "contracts/kbv/1a13825d20b-ARBA__Honeymoon_4D3N_Package_C__01_MAY_2026_-_31_OCT_2026__Updated.pdf",
+     "to": "KTT",
+     "note": "2026 Low (1 May–31 Oct 2026) = Costing Normal",
+     "size": 1173460,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20c",
+     "name": "ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d20c-ARBA_Honeymoon_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5466790,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20d",
+     "name": "ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d20d-ARBA_Honeymoon_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5459381,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20e",
+     "name": "ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d20e-ARBA_Honeymoon_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5484207,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d20f",
+     "name": "ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d20f-ARBA_Krabi_4D3N_Package_A_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5468314,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d210",
+     "name": "ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d210-ARBA_Krabi_4D3N_Package_B_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5460959,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
+    },
+    {
+     "id": "1a13825d211",
+     "name": "ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "file": "contracts/kbv/1a13825d211-ARBA_Krabi_4D3N_Package_C_11_JAN_2027_30_APRIL_2027_Updated.pdf",
+     "to": "KTT",
+     "note": "2027 High (11 Jan–30 Apr 2027) — not in Costing yet",
+     "size": 5485539,
+     "at": "2026-10-14T02:02:45Z",
+     "by": "ezie"
     }
    ]
   },
