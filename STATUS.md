@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v86 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v86, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v87 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v87, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -201,8 +201,16 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   On hold (PO): KB Transport tab 10–15 / 16+ pax rows (CR / catalog stop at 14). Margins (FX 0.6104): 3W adult 11–29 %, CWB 7.3 % at 2–3 pax; 4W adult 8.8 % at 2–3 pax, 26–30 pax
   adult 9.1 % / CWB 2.9 % (flag). Open (flags_open): 4W single RM700 vs CR RMB1,120 ≈ RM684; add-on costs unknown (airport, train upgrades, luggage van, Indian/Arabic, day tour); 3W tipping days.
   Catalogs unchanged (mirror: nothing to render); Flags / History from v86.
+  **Turki Klasik (v87, PO ezie 14 Oct; MyTrip CR = contracts/tur (same file as istbur and R&D TURKEY 'PT MyTrip Turki CR.pdf'); R&D TURKEY folder read with PO OK):**
+  cost now USD × live FX (was MYR at fixed 3.97): Standard = CR row '8D7N Classic Turki Tour' ($1,550 … $550, 11 bands) — checked; Basic = CR − $200/pax (ARBA estimate in the
+  R&D sheet, not in the CR → flag); tipping $5 × 8 days from 7 pax (CR TNI; 2–6 pax TI); Costing 2–24 pax (= CR; catalogs print 2–9); child cost 100 % kept (ARBA May 2026, CR has
+  no child rate → flag: Basic CNB ≈0–4 % at 10–24 pax, Std CNB 4–6 % at 2–6 pax); nights 7; package names 'Turki Klasik Standard / Basic 8D7N' (names.json). Add-ons: catalog items
+  take the MyTrip costs (= Istanbul), duplicates removed, TripCare per pair / family; Istanbul-Bursa Uludag cost 723 / 570 / 494 (catalog item = 2 pax + new 3 / 4+ pax items;
+  label unchanged so the catalog stays identical; open flag removed). KB turki: Klasik peaks 21–24 Aug / 20 Dec–1 Jan and 2027 +RM300 removed (Cappadocia keeps 2027),
+  Std quotation meals 7B·6L·7D, '4★ upgrade +~RM1,800' note removed. Margins (USD 4.085): Std adult 9.5–24.6 %, Basic 9.6–22.2 %. Open (flags_open): Basic rate, child rates,
+  single supplement, KB transport rate card amounts (Istanbul ↔ Ankara Sprinter 'RM37,000' — currency?). Catalogs unchanged; Flags / History from v87.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 10 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, PHU, SWS —
+- **Live FX not used by 7 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Yunnan done 14 Oct, v86).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
