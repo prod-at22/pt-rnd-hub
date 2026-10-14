@@ -281,7 +281,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
 - Phase 1 report: https://claude.ai/code/artifact/76a209fd-7a4c-47cf-bc86-71f02a28793b
 
 ## Open — waiting on the PO
-1. Tokyo (on hold by PO): catalog JSON Tokyo Standard (2 pax RM6,197) ≠ ProdReq "catalog v2" (RM6,997) — which is current?
+1. Tokyo: RESOLVED (PO 14 Oct, v89) — catalog v1 (Tokyo Standard 2 pax RM6,197) is current; the unpublished "v2" price tables were removed from
+   the local ProdReq Jepun skill (§10 + SKILL.md) and from the stored KB jepun tiers. Tokyo check in progress (K1–K13 on hold by PO).
    Qayyum open items: tolls/parking/fuel inside the rate? guide's own entrance? Iyashi entrance still on WIF FX 0.029.
 2. Korea CR: Basic 16 pax 406,193 KRW looks wrong; no rate 26–30 pax (except Standard); CR seasonal ±RM150–300 not applied;
    2-pax margin thin on Seoul-Jeju / Jeju-Udo.

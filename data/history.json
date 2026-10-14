@@ -93380,6 +93380,464 @@
      "label": "Turki Klasik › TO › TO MyTrip › Component"
     }
    ]
+  },
+  {
+   "v": 89,
+   "at": "2026-10-14T03:58:49Z",
+   "by": "ezie",
+   "note": "Tokyo Standard (PO ezie 14 Oct 2026): catalog v1 (2 pax RM6,197) is current; the unpublished 'v2' price info removed — stored KB jepun tiers for Tokyo Standard and Tokyo-Osaka Standard (6,997 / 8,997 …) now = hub Costing (the built KB already showed these). No live change.",
+   "changes": [
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      0,
+      "a"
+     ],
+     "from": 6997,
+     "to": 6197,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #1 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      0,
+      "c"
+     ],
+     "from": 6797,
+     "to": 5997,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #1 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      0,
+      "n"
+     ],
+     "from": 6597,
+     "to": 5797,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #1 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      1,
+      "a"
+     ],
+     "from": 5697,
+     "to": 4897,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #2 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      1,
+      "c"
+     ],
+     "from": 5497,
+     "to": 4697,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #2 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      1,
+      "n"
+     ],
+     "from": 5297,
+     "to": 4497,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #2 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      2,
+      "a"
+     ],
+     "from": 4797,
+     "to": 4297,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #3 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      2,
+      "c"
+     ],
+     "from": 4597,
+     "to": 4097,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #3 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      2,
+      "n"
+     ],
+     "from": 4397,
+     "to": 3897,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #3 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      3,
+      "a"
+     ],
+     "from": 4297,
+     "to": 4097,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #4 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      3,
+      "c"
+     ],
+     "from": 4097,
+     "to": 3897,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #4 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      3,
+      "n"
+     ],
+     "from": 3897,
+     "to": 3697,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #4 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      4,
+      "a"
+     ],
+     "from": 3897,
+     "to": 3797,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #5 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      4,
+      "c"
+     ],
+     "from": 3697,
+     "to": 3597,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #5 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tokyos",
+      "tiers",
+      4,
+      "n"
+     ],
+     "from": 3497,
+     "to": 3397,
+     "label": "KB jepun › calc › variants › tokyos › tiers › #5 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      0,
+      "a"
+     ],
+     "from": 8997,
+     "to": 8197,
+     "label": "KB jepun › calc › variants › tobas › tiers › #1 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      0,
+      "c"
+     ],
+     "from": 8797,
+     "to": 7997,
+     "label": "KB jepun › calc › variants › tobas › tiers › #1 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      0,
+      "n"
+     ],
+     "from": 8597,
+     "to": 7797,
+     "label": "KB jepun › calc › variants › tobas › tiers › #1 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      1,
+      "a"
+     ],
+     "from": 7197,
+     "to": 6597,
+     "label": "KB jepun › calc › variants › tobas › tiers › #2 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      1,
+      "c"
+     ],
+     "from": 6997,
+     "to": 6397,
+     "label": "KB jepun › calc › variants › tobas › tiers › #2 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      1,
+      "n"
+     ],
+     "from": 6797,
+     "to": 6197,
+     "label": "KB jepun › calc › variants › tobas › tiers › #2 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      2,
+      "a"
+     ],
+     "from": 5997,
+     "to": 5797,
+     "label": "KB jepun › calc › variants › tobas › tiers › #3 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      2,
+      "c"
+     ],
+     "from": 5797,
+     "to": 5597,
+     "label": "KB jepun › calc › variants › tobas › tiers › #3 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      2,
+      "n"
+     ],
+     "from": 5597,
+     "to": 5397,
+     "label": "KB jepun › calc › variants › tobas › tiers › #3 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      3,
+      "a"
+     ],
+     "from": 5797,
+     "to": 5597,
+     "label": "KB jepun › calc › variants › tobas › tiers › #4 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      3,
+      "c"
+     ],
+     "from": 5597,
+     "to": 5397,
+     "label": "KB jepun › calc › variants › tobas › tiers › #4 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      3,
+      "n"
+     ],
+     "from": 5397,
+     "to": 5197,
+     "label": "KB jepun › calc › variants › tobas › tiers › #4 › n"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      4,
+      "a"
+     ],
+     "from": 5497,
+     "to": 5197,
+     "label": "KB jepun › calc › variants › tobas › tiers › #5 › a"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      4,
+      "c"
+     ],
+     "from": 5297,
+     "to": 4997,
+     "label": "KB jepun › calc › variants › tobas › tiers › #5 › c"
+    },
+    {
+     "path": [
+      "kb",
+      "jepun",
+      "calc",
+      "variants",
+      "tobas",
+      "tiers",
+      4,
+      "n"
+     ],
+     "from": 5097,
+     "to": 4797,
+     "label": "KB jepun › calc › variants › tobas › tiers › #5 › n"
+    }
+   ]
   }
  ]
 }
