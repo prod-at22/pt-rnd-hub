@@ -300,6 +300,26 @@
    "fix": "Accept, or review the 2–4 pax catalog prices.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "HND",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "KB jepun: 2027 surcharges not in the catalogs",
+   "detail": "KB jepun calculator has 4 peak windows for 2027 (28 Mar–15 Apr, 29 Apr–6 May, 13–16 Aug, 30 Dec 2027–3 Jan 2028) and 'Travel date 2027 (1 Jan–30 Jun 2027) +RM200/pax' for Tokyo, Osaka and Tokyo-Osaka; the Important Notes repeat the +RM200 ('tiada dalam katalog'). No Japan catalog carries them (only 5 windows, the last 30 Dec 2026–3 Jan 2027) and ProdReq §4C says not to project 2026 dates into 2027. Change prepared and checked (verify / smoke 28/28) but not applied.",
+   "fix": "Remove the 2027 windows and the +RM200 from KB jepun (all Japan except Hokkaido), or add them to the catalogs (PO hold 14 Oct 2026).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "HND",
+   "severity": "medium",
+   "area": "Margin",
+   "title": "Tokyo 13–30 pax prices below the ProdReq margin rule",
+   "detail": "Costing prices 13–30 pax are extrapolations (catalog prints 2–12). With the Coaster / Bus costs (v90), Standard 15–21 pax earns 3.7–13.7 % (CWB below cost at 15 and 19); ProdReq §4 (cost + RM700 + RM200, round up to RM_,_97) gives Standard 15–21 = 4,097–3,797 (now 3,397–3,297), 22–30 = 3,797–3,397; Basic 13–30 = 3,197–2,897 (now 2,797–2,647). Not shown in the catalog or the KB calculator (stops at 12).",
+   "fix": "Set the 13–30 pax Costing prices from the ProdReq formula, or accept (PO hold 14 Oct 2026).",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
