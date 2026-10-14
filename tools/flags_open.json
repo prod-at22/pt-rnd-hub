@@ -124,16 +124,6 @@
   {
    "code": "ISTBUR",
    "severity": "low",
-   "area": "Add-ons",
-   "title": "Istanbul - Bursa: Uludag Snow Park has no cost",
-   "detail": "Catalog sells 2 pax RM800 · 3 pax RM600 · 4+ pax RM500 per pax; MyTrip cost unknown.",
-   "fix": "Get the MyTrip cost and enter it on the Add On tab.",
-   "by": "ezie",
-   "at": "2026-10-13"
-  },
-  {
-   "code": "ISTBUR",
-   "severity": "low",
    "area": "Sheet",
    "title": "Istanbul - Bursa catalog: 5x lunch in includes, 3 in the itinerary",
    "detail": "Includes say '4x International Breakfast, 5x Lunch, 4x Dinner'; the itinerary has lunch on Day 2–4 only (KB food block also says 5 lunch). PO 13 Oct: keep the catalog text for now.",
@@ -248,6 +238,46 @@
    "title": "Yunnan 3 + 4 Wilayah: add-on costs unknown",
    "detail": "Airport transfer (MPV / Small Bus / Big Bus), bullet train 1st / Business class upgrade, luggage van, Indian/Arabic meal and One Day Tour have cost RM0 in both KMGDL and KMGDLS (not in the Tourdechina CRs). Extra lunch / dinner cost RM61 = CR meal budget at 2–3 pax (sold at RM60).",
    "fix": "Ask Tourdechina for these rates, then fill the costs on the Add On tab (both packages).",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "TUR",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Turki Klasik Basic: cost = CR − $200 (not in the CR)",
+   "detail": "The MyTrip CR has one '8D7N Classic Turki Tour' rate (= Standard: full board, Viva Deluxe). Basic (breakfast only, Ramada Pera) is costed at that rate − $200/pax, an ARBA estimate from the R&D sheet (May 2026).",
+   "fix": "Ask MyTrip for a Basic (breakfast-only) rate, then update the 'Basic −$200' rate.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "TUR",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Turki Klasik: child cost 100 % — CNB margin thin",
+   "detail": "The CR has no child rate, so CWB / CNB cost = adult (ARBA May 2026). CNB sells RM400 below adult: Standard CNB margin ≈4–6 % at 2–6 pax, Basic CNB ≈0–4 % at 10–24 pax (FX 4.086).",
+   "fix": "Ask MyTrip for child-with-bed / no-bed rates, or review the CNB catalog price.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "TUR",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Turki Klasik: single supplement cost unknown",
+   "detail": "Catalog single supplement RM1,000/person; the MyTrip CR has no single rate.",
+   "fix": "Ask MyTrip for the single supplement.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "TUR",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "KB turki: transport rate card amounts look too high for RM",
+   "detail": "Simple Customisation 'Raw Costing — Rate Card Operator' (all 4 Turki packages): e.g. Istanbul ↔ Ankara Sprinter RM37,000, Vito RM7,000, Pamukkale ↔ Istanbul RM12,700 per vehicle. They may be in another currency (TRY?).",
+   "fix": "Confirm the source rate card and its currency before Sales quote custom itineraries.",
    "by": "ezie",
    "at": "2026-10-14"
   }

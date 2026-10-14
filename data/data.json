@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 86,
- "updatedAt": "2026-10-14T02:40:55Z",
+ "version": 87,
+ "updatedAt": "2026-10-14T03:12:05Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -3109,10 +3109,10 @@
    "name": "Turki Klasik",
    "country": "Turki",
    "duration": "8D7N",
-   "nights": 0,
+   "nights": 7,
    "po": "Acap",
    "source": "hub",
-   "note": "",
+   "note": "Kos = MyTrip CR (TO Contract Rate) '8D7N Classic Turki Tour' USD × FX live (dulu MYR tetap 3.97); Basic = CR − $200/pax (ARBA, bukan CR). Tipping $5 × 8 hari dari 7 pax (CR TNI). Costing 2–24 pax (= CR; katalog cetak 2–9). CWB / CNB 100 % (CR tiada kadar anak).",
    "fx": [
     {
      "id": "MYR",
@@ -3129,222 +3129,134 @@
      "live": "USD"
     }
    ],
-   "rates": [],
-   "tables": [
+   "rates": [
     {
-     "id": "MYTRIP-STD-3STAR__Ground-Cost-MYR",
-     "label": "MYTRIP STD 3STAR · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MYTRIP STD 3STAR",
-     "values": {
-      "2": 6153.5,
-      "3": 5478.6,
-      "4": 5359.5,
-      "5": 5121.3,
-      "6": 3771.5,
-      "7": 3136.3,
-      "8": 2977.5,
-      "9": 2659.9,
-      "10": 2501.1,
-      "11": 2501.1,
-      "12": 2501.1,
-      "13": 2501.1,
-      "14": 2501.1,
-      "15": 2382,
-      "16": 2382,
-      "17": 2382,
-      "18": 2382,
-      "19": 2382,
-      "20": 2183.5,
-      "21": 2183.5,
-      "22": 2183.5,
-      "23": 2183.5,
-      "24": 2183.5,
-      "25": 2183.5,
-      "26": 2183.5,
-      "27": 2183.5,
-      "28": 2183.5,
-      "29": 2183.5,
-      "30": 2183.5,
-      "31": 2183.5,
-      "32": 2183.5,
-      "33": 2183.5,
-      "34": 2183.5,
-      "35": 2183.5,
-      "36": 2183.5,
-      "37": 2183.5,
-      "38": 2183.5,
-      "39": 2183.5,
-      "40": 2183.5
-     }
+     "id": "f2",
+     "label": "Tour fare 2 pax (MyTrip)",
+     "value": 1550,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
     },
     {
-     "id": "MYTRIP-STD-3STAR__Tipping-MYR",
-     "label": "MYTRIP STD 3STAR · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MYTRIP STD 3STAR",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 158.8,
-      "8": 158.8,
-      "9": 158.8,
-      "10": 158.8,
-      "11": 158.8,
-      "12": 158.8,
-      "13": 158.8,
-      "14": 158.8,
-      "15": 158.8,
-      "16": 158.8,
-      "17": 158.8,
-      "18": 158.8,
-      "19": 158.8,
-      "20": 158.8,
-      "21": 158.8,
-      "22": 158.8,
-      "23": 158.8,
-      "24": 158.8,
-      "25": 158.8,
-      "26": 158.8,
-      "27": 158.8,
-      "28": 158.8,
-      "29": 158.8,
-      "30": 158.8,
-      "31": 158.8,
-      "32": 158.8,
-      "33": 158.8,
-      "34": 158.8,
-      "35": 158.8,
-      "36": 158.8,
-      "37": 158.8,
-      "38": 158.8,
-      "39": 158.8,
-      "40": 158.8
-     }
+     "id": "f3",
+     "label": "Tour fare 3 pax (MyTrip)",
+     "value": 1380,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
     },
     {
-     "id": "MYTRIP-BSC-3STAR__Ground-Cost-MYR",
-     "label": "MYTRIP BSC 3STAR · Ground Cost",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MYTRIP BSC 3STAR",
-     "values": {
-      "2": 5359.5,
-      "3": 4684.6,
-      "4": 4565.5,
-      "5": 4327.3,
-      "6": 2977.5,
-      "7": 2342.3,
-      "8": 2183.5,
-      "9": 1865.9,
-      "10": 1707.1,
-      "11": 1707.1,
-      "12": 1707.1,
-      "13": 1707.1,
-      "14": 1707.1,
-      "15": 1588,
-      "16": 1588,
-      "17": 1588,
-      "18": 1588,
-      "19": 1588,
-      "20": 1389.5,
-      "21": 1389.5,
-      "22": 1389.5,
-      "23": 1389.5,
-      "24": 1389.5,
-      "25": 1389.5,
-      "26": 1389.5,
-      "27": 1389.5,
-      "28": 1389.5,
-      "29": 1389.5,
-      "30": 1389.5,
-      "31": 1389.5,
-      "32": 1389.5,
-      "33": 1389.5,
-      "34": 1389.5,
-      "35": 1389.5,
-      "36": 1389.5,
-      "37": 1389.5,
-      "38": 1389.5,
-      "39": 1389.5,
-      "40": 1389.5
-     }
+     "id": "f4",
+     "label": "Tour fare 4 pax (MyTrip)",
+     "value": 1350,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
     },
     {
-     "id": "MYTRIP-BSC-3STAR__Tipping-MYR",
-     "label": "MYTRIP BSC 3STAR · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MYTRIP BSC 3STAR",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 158.8,
-      "8": 158.8,
-      "9": 158.8,
-      "10": 158.8,
-      "11": 158.8,
-      "12": 158.8,
-      "13": 158.8,
-      "14": 158.8,
-      "15": 158.8,
-      "16": 158.8,
-      "17": 158.8,
-      "18": 158.8,
-      "19": 158.8,
-      "20": 158.8,
-      "21": 158.8,
-      "22": 158.8,
-      "23": 158.8,
-      "24": 158.8,
-      "25": 158.8,
-      "26": 158.8,
-      "27": 158.8,
-      "28": 158.8,
-      "29": 158.8,
-      "30": 158.8,
-      "31": 158.8,
-      "32": 158.8,
-      "33": 158.8,
-      "34": 158.8,
-      "35": 158.8,
-      "36": 158.8,
-      "37": 158.8,
-      "38": 158.8,
-      "39": 158.8,
-      "40": 158.8
-     }
+     "id": "f5",
+     "label": "Tour fare 5 pax (MyTrip)",
+     "value": 1290,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f6",
+     "label": "Tour fare 6 pax (MyTrip)",
+     "value": 950,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f7",
+     "label": "Tour fare 7 pax (MyTrip)",
+     "value": 790,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f8",
+     "label": "Tour fare 8 pax (MyTrip)",
+     "value": 750,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f9",
+     "label": "Tour fare 9 pax (MyTrip)",
+     "value": 670,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f10",
+     "label": "Tour fare 10–14 pax (MyTrip)",
+     "value": 630,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f15",
+     "label": "Tour fare 15–19 pax (MyTrip)",
+     "value": 600,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "f20",
+     "label": "Tour fare 20–24 pax (MyTrip)",
+     "value": 550,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "MyTrip CR — 8D7N Classic Turki Tour (USD/pax)"
+    },
+    {
+     "id": "tip",
+     "label": "Tipping 7+ pax (TNI), tidak termasuk dalam tour fare (MyTrip)",
+     "value": 5,
+     "fx": "USD",
+     "unit": "USD/pax/hari",
+     "group": "Tipping"
+    },
+    {
+     "id": "bsc",
+     "label": "Basic: tolak lunch/dinner + hotel Istanbul New City (anggaran ARBA, bukan CR)",
+     "value": -200,
+     "fx": "USD",
+     "unit": "USD/pax",
+     "group": "Basic (ARBA)"
     }
    ],
+   "tables": [],
    "variants": [
     {
      "id": "MYTRIP-STD-3STAR",
      "label": "MyTrip",
      "supplier": "TO MYTRIP STD 3STAR — Standard (Viva Deluxe Istanbul + meals included)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 24,
      "hotel": "3★ (Viva Deluxe/My Cave/Mellrose/Kervansaray) + Meals",
-     "notes": "",
+     "notes": "MyTrip CR baris '8D7N Classic Turki Tour' (USD/pax): 2–6 pax termasuk tipping (TI); 7+ pax tipping $5/pax/hari × 8 hari (TNI). Hotel 3★ + halal full board 7B·6L·7D. Tiada kadar anak dalam CR (CWB / CNB 100 %, ARBA Mei 2026).",
      "components": [
       {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['MYTRIP-STD-3STAR__Ground-Cost-MYR']"
+       "key": "fare",
+       "label": "Tour fare (MyTrip)",
+       "per": "group",
+       "expr": "band(pax,[2,R.f2],[3,R.f3],[4,R.f4],[5,R.f5],[6,R.f6],[7,R.f7],[8,R.f8],[9,R.f9],[14,R.f10],[19,R.f15],[999,R.f20])*pax"
       },
       {
-       "key": "tipping-myr",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['MYTRIP-STD-3STAR__Tipping-MYR']"
+       "key": "tipping",
+       "label": "Tipping × 8 hari (7+ pax)",
+       "per": "group",
+       "expr": "band(pax,[6,0],[999,R.tip*8])*pax"
       }
      ]
     },
@@ -3353,21 +3265,27 @@
      "label": "MyTrip",
      "supplier": "TO MYTRIP BSC 3STAR — Basic (Ramada Pera Istanbul, breakfast only)",
      "paxMin": 2,
-     "paxMax": 40,
+     "paxMax": 24,
      "hotel": "3★ (Ramada Pera Istanbul + others) + Breakfast only",
-     "notes": "",
+     "notes": "Kos = baris CR Classic − $200/pax (anggaran ARBA untuk breakfast sahaja + Ramada Pera; CR tiada kadar Basic — flag). 2–6 pax termasuk tipping; 7+ pax tipping $5/pax/hari × 8 hari.",
      "components": [
       {
-       "key": "ground-cost-myr",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['MYTRIP-BSC-3STAR__Ground-Cost-MYR']"
+       "key": "fare",
+       "label": "Tour fare (MyTrip)",
+       "per": "group",
+       "expr": "band(pax,[2,R.f2],[3,R.f3],[4,R.f4],[5,R.f5],[6,R.f6],[7,R.f7],[8,R.f8],[9,R.f9],[14,R.f10],[19,R.f15],[999,R.f20])*pax"
       },
       {
-       "key": "tipping-myr",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['MYTRIP-BSC-3STAR__Tipping-MYR']"
+       "key": "basic",
+       "label": "Basic −$200 (ARBA)",
+       "per": "group",
+       "expr": "R.bsc*pax"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping × 8 hari (7+ pax)",
+       "per": "group",
+       "expr": "band(pax,[6,0],[999,R.tip*8])*pax"
       }
      ]
     }
@@ -3375,12 +3293,12 @@
    "packages": [
     {
      "id": "mytrip-std-3star",
-     "label": "Turki Classic Standard 8D7N",
+     "label": "Turki Klasik Standard 8D7N",
      "catalog": null,
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 24,
        "variant": "MYTRIP-STD-3STAR"
       }
      ],
@@ -3408,13 +3326,7 @@
        "21": 3397,
        "22": 3397,
        "23": 3397,
-       "24": 3397,
-       "25": 3197,
-       "26": 3197,
-       "27": 3197,
-       "28": 3197,
-       "29": 3197,
-       "30": 3197
+       "24": 3397
       },
       "cwb": {
        "2": 6997,
@@ -3439,13 +3351,7 @@
        "21": 3197,
        "22": 3197,
        "23": 3197,
-       "24": 3197,
-       "25": 2997,
-       "26": 2997,
-       "27": 2997,
-       "28": 2997,
-       "29": 2997,
-       "30": 2997
+       "24": 3197
       },
       "cnb": {
        "2": 6797,
@@ -3470,13 +3376,7 @@
        "21": 2997,
        "22": 2997,
        "23": 2997,
-       "24": 2997,
-       "25": 2797,
-       "26": 2797,
-       "27": 2797,
-       "28": 2797,
-       "29": 2797,
-       "30": 2797
+       "24": 2997
       },
       "infant": 200
      },
@@ -3499,12 +3399,12 @@
     },
     {
      "id": "mytrip-bsc-3star",
-     "label": "Turki Classic Basic 8D7N",
+     "label": "Turki Klasik Basic 8D7N",
      "catalog": null,
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 24,
        "variant": "MYTRIP-BSC-3STAR"
       }
      ],
@@ -3532,13 +3432,7 @@
        "21": 2197,
        "22": 2197,
        "23": 2197,
-       "24": 2197,
-       "25": 2197,
-       "26": 2197,
-       "27": 2197,
-       "28": 2197,
-       "29": 2197,
-       "30": 2197
+       "24": 2197
       },
       "cwb": {
        "2": 6097,
@@ -3563,13 +3457,7 @@
        "21": 1997,
        "22": 1997,
        "23": 1997,
-       "24": 1997,
-       "25": 1997,
-       "26": 1997,
-       "27": 1997,
-       "28": 1997,
-       "29": 1997,
-       "30": 1997
+       "24": 1997
       },
       "cnb": {
        "2": 5897,
@@ -3594,13 +3482,7 @@
        "21": 1797,
        "22": 1797,
        "23": 1797,
-       "24": 1797,
-       "25": 1797,
-       "26": 1797,
-       "27": 1797,
-       "28": 1797,
-       "29": 1797,
-       "30": 1797
+       "24": 1797
       },
       "infant": 200
      },
@@ -3651,15 +3533,6 @@
      "notes": null
     },
     {
-     "id": "tur-a04",
-     "category": "Activity",
-     "label": "Hot Air Balloon",
-     "cost": 1225.0,
-     "selling": 1275.0,
-     "per": "pax",
-     "notes": "Cappadocia"
-    },
-    {
      "id": "tur-a05",
      "category": "Activity",
      "label": "Balloon Watching",
@@ -3676,78 +3549,6 @@
      "selling": 550.0,
      "per": "pax",
      "notes": null
-    },
-    {
-     "id": "tur-a07",
-     "category": "Activity",
-     "label": "ATV",
-     "cost": 326.0,
-     "selling": 351.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a08",
-     "category": "Activity",
-     "label": "Jeep Tour (min 2 pax)",
-     "cost": 238.0,
-     "selling": 257.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a09",
-     "category": "Activity",
-     "label": "ATV Tour",
-     "cost": 199.0,
-     "selling": 227.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a10",
-     "category": "Activity",
-     "label": "Whirling Dervishes",
-     "cost": 199.0,
-     "selling": 227.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a11",
-     "category": "Activity",
-     "label": "Turkish Night",
-     "cost": 278.0,
-     "selling": 297.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a12",
-     "category": "Activity",
-     "label": "Horse Riding",
-     "cost": 238.0,
-     "selling": 257.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a13",
-     "category": "Activity",
-     "label": "Bosphorus Dinner Cruise",
-     "cost": 278.0,
-     "selling": 297.0,
-     "per": "pax",
-     "notes": null
-    },
-    {
-     "id": "tur-a14",
-     "category": "Activity",
-     "label": "Topkapi Palace Entrance",
-     "cost": 250.0,
-     "selling": 277.0,
-     "per": "pax",
-     "notes": "Optional"
     },
     {
      "id": "tur-a15",
@@ -3791,7 +3592,7 @@
      "label": "TripCare 360 — Couple (1-5 hari)",
      "cost": 77.25,
      "selling": 113.0,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -3800,7 +3601,7 @@
      "label": "TripCare 360 — Couple (6-10 hari)",
      "cost": 122.87,
      "selling": 160.5,
-     "per": "pax",
+     "per": "pair",
      "notes": null
     },
     {
@@ -3809,7 +3610,7 @@
      "label": "TripCare 360 — Family (1-5 hari)",
      "cost": 100.12,
      "selling": 143.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -3818,7 +3619,7 @@
      "label": "TripCare 360 — Family (6-10 hari)",
      "cost": 153.62,
      "selling": 201.5,
-     "per": "pax",
+     "per": "family",
      "notes": null
     },
     {
@@ -3879,10 +3680,10 @@
      "id": "tur-k001",
      "category": "Additional Activities",
      "label": "Jeep Tour (min 2 pax)",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 238.0,
+     "selling": 257.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Jeep tour, professional guide",
      "excludes": "Other activities, personal expenses",
      "duration": "Typically 3-4 hours",
@@ -3898,10 +3699,10 @@
      "id": "tur-k002",
      "category": "Additional Activities",
      "label": "ATV Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 199.0,
+     "selling": 227.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "ATV ride, guide",
      "excludes": "Other activities, personal expenses",
      "duration": "Typically 1-2 hours",
@@ -3917,10 +3718,10 @@
      "id": "tur-k003",
      "category": "Additional Activities",
      "label": "Whirling Dervishes",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 199.0,
+     "selling": 227.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Entrance, performance show",
      "excludes": "Other activities, personal expenses",
      "duration": "1 hour show",
@@ -3936,10 +3737,10 @@
      "id": "tur-k004",
      "category": "Additional Activities",
      "label": "Turkish Night",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 278.0,
+     "selling": 297.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Dinner, cultural performance (dance, music)",
      "excludes": "Alcoholic beverages, personal expenses",
      "duration": "3-4 hours",
@@ -3955,10 +3756,10 @@
      "id": "tur-k005",
      "category": "Additional Activities",
      "label": "Horse Riding",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 238.0,
+     "selling": 257.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Horse ride, instructor",
      "excludes": "Other activities, personal expenses",
      "duration": "1-2 hours",
@@ -3974,10 +3775,10 @@
      "id": "tur-k006",
      "category": "Additional Activities",
      "label": "Bosphorus Dinner Cruise",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 278.0,
+     "selling": 297.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Dinner, cruise along the Bosphorus, entertainment",
      "excludes": "Alcoholic drinks, personal expenses",
      "duration": "2-3 hours",
@@ -3993,10 +3794,10 @@
      "id": "tur-k007",
      "category": "Additional Activities",
      "label": "Hot Air Balloon Tour",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 1225.0,
+     "selling": 1275.0,
+     "notes": "Cappadocia · kos MyTrip (= Istanbul); jual = KB, katalog tulis 'Price varies seasonally'",
      "includes": "Balloon ride, guide, insurance",
      "excludes": "Other activities, personal expenses",
      "duration": "1 hour flight (additional time for preparation)",
@@ -4013,10 +3814,10 @@
      "id": "tur-k008",
      "category": "Additional Activities",
      "label": "Topkapi Palace Entrance",
-     "per": "",
-     "cost": null,
-     "selling": null,
-     "notes": null,
+     "per": "pax",
+     "cost": 250.0,
+     "selling": 277.0,
+     "notes": "Kos MyTrip (= Istanbul); jual = katalog",
      "includes": "Main Palace, Harem section, and Hagia Irene Church",
      "excludes": "Guided tour, food/drinks, and personal expenses",
      "duration": "3-4 hours (recommended)",
@@ -4130,7 +3931,8 @@
       }
      }
     }
-   ]
+   ],
+   "historyFrom": 87
   },
   {
    "code": "ISTBUR",
@@ -4363,9 +4165,9 @@
      "category": "Additional Activities",
      "label": "Uludag Snow Park (1D1N)",
      "per": "pax",
-     "cost": null,
-     "selling": null,
-     "notes": "Jual ikut katalog (2 pax RM800 · 3 pax RM600 · 4+ pax RM500); kos MyTrip belum diketahui",
+     "cost": 723.0,
+     "selling": 800.0,
+     "notes": "Jual ikut katalog (2 pax RM800 · 3 pax RM600 · 4+ pax RM500); kos/jual di sini = 2 pax; 3 / 4+ pax = item bawah (kos dari item Uludag TUR 723 / 570 / 494)",
      "includes": "Private Transport, Accommodation (Bursa City), Meals and Guide",
      "excludes": "Ski Activities, Personal Expenses",
      "price_lines": [
@@ -4376,6 +4178,24 @@
      "catalogs": {
       "istanbul-bursa": 1
      }
+    },
+    {
+     "id": "istbur-k001b",
+     "category": "Additional Activities",
+     "label": "Uludag Snow Park (1D1N) — 3 pax",
+     "cost": 570.0,
+     "selling": 600.0,
+     "per": "pax",
+     "notes": "Kos = item Uludag TUR"
+    },
+    {
+     "id": "istbur-k001c",
+     "category": "Additional Activities",
+     "label": "Uludag Snow Park (1D1N) — 4+ pax",
+     "cost": 494.0,
+     "selling": 500.0,
+     "per": "pax",
+     "notes": "Kos = item Uludag TUR"
     },
     {
      "id": "istbur-k002",

@@ -5,7 +5,7 @@
  "SELJJU": {"packages": {"atk-std": "Seoul - Jeju Standard 6D5N"}, "variants": {"ATK-STD": "ATK"}},
  "JJU": {"packages": {"atk-pt": "Jeju Standard 4D3N", "atk-st": "Jeju Self Tour 4D3N"}, "variants": {"ATK-PT": "ATK", "ATK-ST": "ATK"}},
  "JJUO": {"packages": {"atk-std": "Jeju - Udo Standard 5D4N"}, "variants": {"ATK-STD": "ATK"}},
- "TUR": {"packages": {"mytrip-std-3star": "Turki Classic Standard 8D7N", "mytrip-bsc-3star": "Turki Classic Basic 8D7N"},
+ "TUR": {"packages": {"mytrip-std-3star": "Turki Klasik Standard 8D7N", "mytrip-bsc-3star": "Turki Klasik Basic 8D7N"},
          "variants": {"MYTRIP-STD-3STAR": "MyTrip", "MYTRIP-BSC-3STAR": "MyTrip"}},
  "ISTBUR": {"packages": {"mytrip-3s": "Istanbul - Bursa 5D4N"}, "variants": {"MYTRIP-3S": "MyTrip"}},
  "ISTCAP": {"packages": {"mytrip-pt-3star": "Istanbul - Cappadocia 6D5N", "mytrip-arbato-st": "Istanbul - Cappadocia Self Tour 6D5N"},

@@ -121,7 +121,7 @@
     "emoji": "⭐",
     "img": "@cappadocia",
     "intro": "Pakej flagship — grand tour 7 bandar dengan Halal full-board (7x Breakfast, 6x Lunch, 7x Dinner), hotel Istanbul di Old City (Viva Deluxe) dan tiket Topkapi Palace PERCUMA. Pengalaman Turki paling lengkap untuk keluarga & group.",
-    "note": "Peak +10%/pax (1 Sept–30 Nov 2026). Deposit RM500/pax. Single supplement +RM1,000/pax. Upgrade 4★ +~RM1,800/pax (verify MyTrip)."
+    "note": "Peak +10%/pax (1 Sept–30 Nov 2026). Deposit RM500/pax. Single supplement +RM1,000/pax."
    }
   ],
   "itineraries": [
@@ -364,28 +364,8 @@
      "klasikbasic"
     ],
     [
-     "2026-08-21",
-     "2026-08-24",
-     "klasikbasic"
-    ],
-    [
-     "2026-12-20",
-     "2027-01-01",
-     "klasikbasic"
-    ],
-    [
      "2026-09-01",
      "2026-11-30",
-     "klasikstd"
-    ],
-    [
-     "2026-08-21",
-     "2026-08-24",
-     "klasikstd"
-    ],
-    [
-     "2026-12-20",
-     "2027-01-01",
      "klasikstd"
     ],
     [
@@ -404,8 +384,6 @@
     ],
     "perPax": 300,
     "variants": [
-     "klasikbasic",
-     "klasikstd",
      "istcap"
     ]
    },
@@ -1374,7 +1352,7 @@
      "Tour guide (English speaking)",
      "Entrance fees as per itinerary",
      "Tipping fee for driver and tour guide",
-     "{nights} breakfasts",
+     "Meals (7x International Breakfast, 6x Lunch, 7x Dinner)",
      "Cotton Castle",
      "Bosphorus Cruise",
      "Topkapi Palace Tour"
