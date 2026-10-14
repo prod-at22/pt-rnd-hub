@@ -320,6 +320,16 @@
    "fix": "Set the 13–30 pax Costing prices from the ProdReq formula, or accept (PO hold 14 Oct 2026).",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "LOP",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Lombok: 3★ extra-night cost not in the Anang rate card",
+   "detail": "Extra night 3★ sells RM85/pax (KB, PO 14 Oct 2026) but the hub cost is RM120 (old R&D); the Anang rate card has only 4★ (Mataram / Senggigi) and Sembalun 3★ hotel rates.",
+   "fix": "Ask Pak Anang for the 3★ Mataram / Senggigi room rate.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
