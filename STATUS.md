@@ -195,7 +195,15 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (same method: R&D hub × catalog × KB × CR, mirrors, live-text diff, "ok push").
+- **Next (PO ezie 14 Oct): Yunnan 3 Wilayah (KMGDL, catalog yunnan-3-wilayah-6d5n) + Yunnan 4 Wilayah (KMGDLS, catalog yunnan-4-wilayah)** — PO Amirul, TO Tourdechina
+  (RMB), one KB `yunnan` for both. KMGDL has no TO Contract Rate file; KMGDLS has the Tourdechina 4W 8D6N 2026 .doc. R&D folders: ~/Downloads/PT DESTINASI R&D REFORMAT/
+  YUNNAN 3 WILAYAH, YUNNAN 4 WILAYAH, GT Yunan 3 wilayah (ask the PO before using). Same method as every check above.
+- **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
+  separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
+  Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
+  explicitly. Large CR uploads: `git -c http.postBuffer=524288000 push`; check PDFs for embedded whole fonts (Krabi 2027: Segoe UI Emoji 8 MB) and subset them (PyMuPDF +
+  fontTools) before uploading. New app.js field (v84): variants[].sellingUpgrade (RM/pax added to the catalog price for that TO). PO asks for open items to go into
+  tools/flags_open.json (use area "Cost", not "Margin", for items without a package — Margin items are merged per package). Removed packages need tests/test_calc.js updates.
 - Done 9–10 Oct: v41 Info KB tidy · v42 Bangkok 4★/5★ removed · v43–v44 Bangkok Costing rate by rate (sheet COSTING BKK, no meals) ·
   v45 Bangkok Flags/History hidden (destinations[].hideTabs), Show calculation folds pax-only parts · v46 Beijing from the Tourdechina CR (RMB) ·
   v47 KB Accommodation from the hub + roomNote · v48 Beijing Flags/History hidden · v49 live FX for every destination except Jepun ·
