@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v100 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v100, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v102 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v102, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -263,10 +263,20 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   add-ons without cost (Agrodome, Hamilton Garden, Shotover, Fruit Picking — prints Shotover's prices, Milford ex-Te Anau, child prices).
   **Raw costing (v100, PO):** MEL and NSNZ PT 10D9N / South 8D7N cost tables replaced by raw rates + formulas (d.rates, R.* with band(pax,…)) — Show rate reference / Show
   calculation now work there like Tokyo; costs unchanged. NB: other sessions pushed v95 / v96 / v98 / v99 (Competitor Analysis) in parallel — always pull before building a version.
+  **Osaka (v102, PO ezie 14 Oct; sources = contracts/osk WIF CR 2026 + Google Sheet 'PT Japan R&D 2024' (1RAAurSLF2S9ILdl898sQDD3xWARdzifZT0y4EXlgdks) tabs COSTING - OSK BSC /
+  COSTING - OSK STD, compiled block by block into contracts/osk 'OSAKA COSTING RATE WIF UCOP 2026.pdf'):** rates renamed (kix7 … ucopStd …). Basic = public pass ¥1,500 × N + JR Osaka–Kyoto
+  ¥580 each way (was RM200/way — the sheet's Tokyo–Kyoto shinkansen rate) + Kintetsu ¥1,900 + hotel RM250 + guide 4 days per CR (+ own Kyoto / Nara fares) + WIF ¥6,000; airport Kansai per CR
+  (7-seater 1–4 ¥20k · 10-seater 5–8 ¥25k · 14-seater 9–14 ¥30k · Coaster 15–18 ¥80k · Bus 19+ ¥130k; sheet blocks used Haneda rates; OS3 not answered by the PO — applied with OS4).
+  Standard 2–7 Ucop Vellfire (¥18k × 2 + ¥215k) and new variant UCOP-HIACE 8–9 (¥80k + ¥275k) at Ucop FX 0.029 (sheet; was 0.0259), apartment RM250 (PO, sheet has 300); 10+ WIF 14-seater /
+  Coaster / Bus per CR (2× city + Kyoto + Nara) + guide + WIF. Costing 2–30 kept (PO). Margins: Basic 18.7–40.1 %, Std 2–14 22.6–38.1 %, Std 15–30 −1.5 to 18.4 % (flag high: 13–30
+  prices are extrapolated). Add-ons: catalog upgrade / public / private transport items costed per band (Tokyo pattern; private transport = sheet ADD ON table), R&D duplicates +
+  Tokyo+Ghibli removed, meals = WIF CR, Tolak 1 malam −RM250, wifi ¥2,000/day, USJ cost RM249.4 (flag), TripCare pair / family. KB jepun rnd cost formulas for Osaka follow the new
+  rates. tests/test_calc.js: Osaka calc string now 'A × 2 × W|…' and the osk / kix check boots a fresh mock repo (step 6 restores an older version). Catalogs / KB pages unchanged.
+  Open: Std 15–30 below cost, USJ / 5G wifi, KB jepun breakfast RM40 < CR RM43.5; Wagyu cost kept at the CR ¥6,000 (sheet says RM255.2).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 5 destinations** (costs stored in MYR): JOG, PER, MLE, PHU, SWS (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
+- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
