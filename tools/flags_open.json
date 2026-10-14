@@ -330,6 +330,36 @@
    "fix": "Ask Pak Anang for the 3★ Mataram / Senggigi room rate.",
    "by": "ezie",
    "at": "2026-10-14"
+  },
+  {
+   "code": "MLE",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Maldives: infant and child prices below the CR cost",
+   "detail": "Catalog infant RM100 vs Island Life infant RM500 (Combo) / RM550 (Water Villa); Basic CNB sells RM897–1,097 vs ICOM child ≈RM931 (child $30/night + transfer + green tax + Fish Tank); 4 Star CNB below cost (Kaani has no child rate, cost = adult). PO 14 Oct 2026: flag only.",
+   "fix": "Review the infant / CNB catalog prices, or ask Kaani for a package child rate.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "MLE",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Maldives 4 Star: Kaani estimates and peak",
+   "detail": "Kaani package is breakfast + dinner with one excursion; the hub adds estimates for lunch D3 ($15), Real Break ($90, Kaani menu 2026), green tax ($12 × 3 — the package says 'inclusive of taxes') and tipping (RM50). Kaani does not sell the package 21 Dec–10 Jan; the catalog sells Peak +RM300 with no 4 Star peak costing.",
+   "fix": "Confirm with Kaani whether green tax is inside the package and the peak (festive) package rate.",
+   "by": "ezie",
+   "at": "2026-10-14"
+  },
+  {
+   "code": "MLE",
+   "severity": "low",
+   "area": "Cost",
+   "title": "Maldives: Arena excursion costs unknown",
+   "detail": "Arena Full Day Adventure / Shark Bay / Whale Shark / Private Island (4 Star catalog add-ons) have no cost — the Arena rate PDF is image-only and was not read into the hub.",
+   "fix": "Enter the Arena excursion costs on the Add On tab.",
+   "by": "ezie",
+   "at": "2026-10-14"
   }
  ]
 }
