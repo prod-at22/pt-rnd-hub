@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (14 Oct 2026) — v91 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v91, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (14 Oct 2026) — v92 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v92, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -225,10 +225,18 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   half −91/−126/−194, airport −57/−80/−137, Pink Beach boat −285, entrance −11), boats (Teluk Nare, slow boat, SIC, Pink Beach), Cidomo cost RM91 sell RM120
   (hub + KB), extra night sells = KB (3★ RM85, 4★ RM120; 4★ cost RM86), extra hour 150k IDR per vehicle. KB compare tab = Standard 3★ vs 4★. Catalog unchanged.
   Open: 3★ extra-night cost (old RM120 > sell RM85) — ask Pak Anang. Info only: Sembalun 3★ hotels 650k, weekend +150k, peak +200k (in LOP note).
+  **Maldives (v92, PO ezie 14 Oct; CRs from R&D MALDIVES/_extracted + Kaani 2027 agreements (PO, Desktop) — 12 files in TO Contract Rate mle, large PDFs rasterised to
+  ≤4.3 MB):** Basic = ICOM Blue Seaview contract (1 Jan 2026 – 1 Apr 2027) USD × live FX: room $110 low / $150 high ÷ 2 × 3 + speedboat $50 + green tax $18 + Fish Tank $70
+  (hub had PC 8 % + TGST 17 % on top of tax-inclusive rates and green tax once) → low RM1,238 / high-peak RM1,483; child = hotel $30/night (pct on hotel), infant FOC.
+  Combo = Island Life 4CASH-A3 − DTA RM200 (3,180 / 3,580 / 3,350 / 3,250; was 3,000 / 3,740 / 3,500 / 3,350); Water Villa = OBLU − DTA RM250 (checked); child / infant per
+  Island Life (infant RM500 / 550 vs catalog RM100 → flag). 4 Star = Kaani package 2027 ($378 / $416 = 2025 = hub) + Real Break $90 + green $12 (estimates flagged); no
+  child rate → CWB / CNB below cost (flag, PO: flag only). TO names ICOM / Island Life (operator-name open item done). Add-ons costed from ICOM / Velana / Kaani;
+  Kaani Full Day + Real Break removed from the 4 Star catalog add-ons (included); R&D duplicates removed; Arena costs open (image-only PDF). KB: 2027 +RM200 and
+  Basic 2025 window removed, Combo Super Peak from 1 Nov (= catalog), upgrade RM400 only, Combo / WV last-minute row removed. Costing 2–30 kept (PO).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 7 destinations** (costs stored in MYR): JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Surabaya next was mentioned by the PO).
+- **Next:** ask the PO which destination to verify next (Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Surabaya was mentioned by the PO).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
@@ -302,7 +310,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
    Qayyum open items: tolls/parking/fuel inside the rate? guide's own entrance? Iyashi entrance still on WIF FX 0.029.
 2. Korea CR: Basic 16 pax 406,193 KRW looks wrong; no rate 26–30 pax (except Standard); CR seasonal ±RM150–300 not applied;
    2-pax margin thin on Seoul-Jeju / Jeju-Udo.
-3. Maldives operator name unknown (TO box shows "Resort / TO" / "Resort package").
+3. Done (v92): Maldives TO names ICOM / Island Life / Kaani Palm Beach.
 4. Confirm guessed package names: Lake Toba Emiya = Parapat, Baim = Samosir; Perhentian Basic = Shari-La, Standard = Mimpi.
 5. One FX per currency (THB 0.131 vs 0.122; IDR; USD 3.97 vs 4.0295; RMB 0.65 vs 0.58; AUD).
 6. Done (v29, 8 Oct): the catalog is the source for prices — Costing catalog prices of the 13 catalogs that differed were set to the published catalogs.
