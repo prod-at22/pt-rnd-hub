@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 94,
- "updatedAt": "2026-10-14T08:00:00Z",
+ "version": 95,
+ "updatedAt": "2026-10-14T08:25:39Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -1498,7 +1498,135 @@
       }
      }
     }
-   ]
+   ],
+   "competitors": {
+    "pax": [
+     3,
+     4,
+     6,
+     8
+    ],
+    "aspects": [
+     {
+      "id": "days",
+      "label": "Days"
+     },
+     {
+      "id": "accommodation",
+      "label": "Accommodation"
+     },
+     {
+      "id": "guide",
+      "label": "Tour Guide"
+     },
+     {
+      "id": "hours",
+      "label": "Hours"
+     },
+     {
+      "id": "packaging",
+      "label": "Packaging"
+     },
+     {
+      "id": "usp",
+      "label": "USP"
+     },
+     {
+      "id": "meals",
+      "label": "Meals"
+     },
+     {
+      "id": "tipping",
+      "label": "Tipping"
+     },
+     {
+      "id": "visa",
+      "label": "K-ETA"
+     }
+    ],
+    "arba": {
+     "atk-bsc": {
+      "days": "5D4N",
+      "accommodation": "Included",
+      "guide": "Driving guide",
+      "hours": "10 jam",
+      "packaging": "2 hari F&E incl accom",
+      "usp": "Local guide, Gyeongbok, Nami",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Included",
+      "strength": "Halal dijaga, no tourist trap, accom incl",
+      "weakness": "-"
+     },
+     "atk-std": {
+      "days": "5D4N",
+      "accommodation": "Included",
+      "guide": "Driving guide",
+      "hours": "10 jam",
+      "packaging": "Full tour Seoul City",
+      "usp": "+ Namsan Cable Car",
+      "meals": "Breakfast",
+      "tipping": "Included",
+      "visa": "Included",
+      "strength": "Full guided + Cable Car",
+      "weakness": "-"
+     }
+    },
+    "items": [
+     {
+      "id": "lurima-lite",
+      "name": "Lurima Lite",
+      "vs": "atk-bsc",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Excluded (add RM980)",
+       "guide": "Driving guide",
+       "hours": "10 jam",
+       "packaging": "2 hari F&E excl accom",
+       "usp": "Malaysian guide, Gyeongbok, Nami",
+       "meals": "No Meals",
+       "tipping": "Included",
+       "visa": "Excluded",
+       "strength": "Murah (excl accom)",
+       "weakness": "Accom + K-ETA excluded"
+      },
+      "prices": {
+       "3": 2513,
+       "4": 1893,
+       "6": 1285,
+       "8": 1298
+      },
+      "source": "Competitor analysis sheet (PO)",
+      "updated": "2026-10-14"
+     },
+     {
+      "id": "lurima-dream",
+      "name": "Lurima Dream",
+      "vs": "atk-std",
+      "attrs": {
+       "days": "5D4N",
+       "accommodation": "Included",
+       "guide": "Driving guide",
+       "hours": "9 jam",
+       "packaging": "Full tour Seoul City",
+       "usp": "+ Namsan Cable Car",
+       "meals": "No Meals",
+       "tipping": "Included",
+       "visa": "Excluded",
+       "strength": "Cable Car, branding",
+       "weakness": "No meal, K-ETA excl"
+      },
+      "prices": {
+       "3": 3840,
+       "4": 3310,
+       "6": 2770,
+       "8": 2900
+      },
+      "source": "Competitor analysis sheet (PO)",
+      "updated": "2026-10-14"
+     }
+    ]
+   }
   },
   {
    "code": "SELJJU",

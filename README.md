@@ -80,6 +80,7 @@ tour operator (/ hotel, season) selectors, then tabs:
 | **Add On** | cost / selling / margin; tick *In catalog* to print an add-on in the package's catalog; **Add item** / **Delete** (Edit costs) add or remove an add-on (Delete warns when it is printed in a catalog); Add item adds a new add-on (category, name, per, cost, selling; ticked for the catalog by default, price text = selling/per); a qty totals the selected add-ons |
 | **Info KB** | only what the KB has and no other tab has (Bahasa Melayu): attractions with Muslim-friendly info, FAQ / Important Notes (searchable), the KB's tab blocks (transport, halal, solat, flight, visa, free gift …), packages without a catalog, marketing. Prices, itinerary, includes / excludes (Costing / Itinerary tabs) and hotels (Accommodation tab) are not repeated here. Edit costs edits every field (images stay in pt-kb-house) — saved to `data/kb/<slug>.json` |
 | **Simple Calculator** | R&D builder behind the Sales calculator in the KB: one row per price Sales can quote (package tiers, named rates by pax band × normal / peak, option prices, add-ons, peak / surcharges, single, infant) with its **cost and margin** and a status (Rugi / Bawah min / Tiada kos / OK / Potongan). Tier cost from Costing (auto); other rows linked to a hub add-on or a manual RM cost (`data/kb/<slug>.json` `rnd.cost`, not published); add-ons with a matching hub name link automatically. Minimum margin per KB (`rnd.minMargin`, default 10%). Sales prices are edited in place; the full Sales calculator config (tables, .md, JSON) is below |
+| **Competitor Analysis** | ARBA vs competitors, one table per destination (`data.json` `destinations[].competitors`): a column per ARBA package that has a competitor, then its competitors (`vs`); rows = aspects (Days, Accommodation, Tour Guide, Hours, Packaging, USP, Meals, Tipping, Visa — `aspects` can rename, e.g. K-ETA for Seoul), price per pax (`pax`, e.g. 3 / 4 / 6 / 8; ARBA = Catalog Price from Costing, competitor gap ▼/▲ RM and %), *Tambahan untuk setara* (RM/pax to make a competitor like-for-like), Strength, Weakness. **AI (Claude)**: *✦ Tambah pesaing (AI)* reads pasted text, screenshots / PDF or a URL (web fetch) and fills every aspect and price; *✦ Analisis AI* fills empty ARBA cells from the catalog, writes strengths / weaknesses and a summary + actions (`competitors.analysis`). AI results go into the table as unsaved edits — Save as usual. Needs Edit costs and the Claude API key (below) |
 | Flags | this destination's cross-check flags |
 | History | versions that touched this destination |
 
@@ -214,6 +215,14 @@ TO formulas (in `data.json`) use `R.id` (a rate, already converted to MYR at its
   **Replace GitHub token**. Passwords don't change.
 - Costs and margins are readable by anyone with the link (public repo). The page is marked
   `noindex` but that is not access control.
+
+### Claude API key (Competitor Analysis AI)
+
+An admin pastes a Claude API key once: **Account → Claude API key** (create it at platform.claude.com → API keys, ideally in its
+own workspace with a monthly spend limit). It is checked, then stored in `users.json` `ai`, encrypted with the vault key exactly like
+the GitHub token, so every logged-in user can use the AI and nobody else can. The page calls the Claude API straight from the
+browser (`@anthropic-ai/sdk` from jsdelivr, model `claude-opus-5-5`, structured JSON output, web fetch for competitor URLs).
+Remove or replace the key in the same place; replace it if a removed user may have copied it.
 
 ## Adding the next destination
 

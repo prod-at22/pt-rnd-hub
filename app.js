@@ -22,7 +22,7 @@ let SESSION = null;   // {u, role, token, key}
 let EDIT = false;
 let VIEW = null;      // {v, data} when viewing an older version
 const SEL = { dest: null, pkg: new URLSearchParams(location.search).get("pkg"), variant: "auto", pax: 2, paxTab: "adult", showCalc: false, showRef: false, addonQty: {}, opt: {}, tab: (location.hash || "#costing").slice(1), flagSev: { high: true, medium: true, low: false }, flagArea: "", flagPO: "", flagQ: "" };
-const TABS = [["costing", "Costing"], ["contracts", "TO Contract Rate"], ["itinerary", "Itinerary"], ["surcharge", "Surcharge"], ["accommodation", "Accommodation"], ["addons", "Add On"], ["expect", "What to Expect"], ["policy", "Policy"], ["kbinfo", "Info KB"], ["kbcalc", "Simple Calculator"], ["flags", "Flags"], ["history", "History"]];
+const TABS = [["costing", "Costing"], ["contracts", "TO Contract Rate"], ["itinerary", "Itinerary"], ["surcharge", "Surcharge"], ["accommodation", "Accommodation"], ["addons", "Add On"], ["expect", "What to Expect"], ["policy", "Policy"], ["kbinfo", "Info KB"], ["kbcalc", "Simple Calculator"], ["competitor", "Competitor Analysis"], ["flags", "Flags"], ["history", "History"]];
 // each catalog section comes from its own tab: price = Costing, itinerary + includes/excludes = Itinerary, …
 // A destination can hide tabs (data.json destinations[].hideTabs, e.g. ["flags", "history"] for Bangkok, PO 10 Oct 2026).
 const tabsFor = d => TABS.filter(([id]) => !((d && d.hideTabs) || []).includes(id));
@@ -115,13 +115,14 @@ function describe(snap, path) {
     adult: "Adult catalog", cwb: "CWB catalog", cnb: "CNB catalog", infant: "Infant price", discountTier2: "Discount tier 2",
     tierUpgrade: "Tier upgrade", sellingUpgrade: "Selling upgrade (RM/pax)", cwbCost: "CWB cost", cnbCost: "CNB cost", infantCost: "Infant cost", type: "type",
     components: "Component", expr: "formula", values: "", settings: "Settings", marginWarnPct: "Margin warn %", marginDangerPct: "Margin danger %", sellingDiscount: "Selling discount (RM/pax)",
-    destinations: "", nights: "Nights", po: "PO", assign: "TO assignment", contracts: "TO Contract Rate" };
+    destinations: "", nights: "Nights", po: "PO", assign: "TO assignment", contracts: "TO Contract Rate", competitors: "Competitor Analysis", arba: "ARBA", attrs: "", prices: "Price" };
   for (let i = 0; i < path.length; i++) {
     const seg = path[i], prev = path[i - 1];
     cur = step(cur, seg);
     if (prev === "destinations") parts.push(cur?.name ?? seg);
     else if (["rates", "fx", "tables", "packages", "variants", "components"].includes(prev)) parts.push((LBL[prev] ? LBL[prev] + " " : "") + (cur?.label ?? seg));
-    else if (["adult", "cwb", "cnb"].includes(prev) || prev === "values") parts.push("@" + seg + " pax");
+    else if (["adult", "cwb", "cnb"].includes(prev) || prev === "values" || (prev === "prices" && path[2] === "competitors")) parts.push("@" + seg + " pax");
+    else if (path[2] === "competitors" && (prev === "items" || prev === "arba")) parts.push(cur?.name ?? (prev === "arba" ? (step(step(snap.destinations, path[1]), "packages") || []).find(p => p.id === seg)?.label : null) ?? seg);
     else if (LBL[seg] !== undefined) { if (LBL[seg]) parts.push(LBL[seg]); }
     else parts.push(String(seg));
   }
@@ -453,6 +454,7 @@ function renderMain(d, pkg) {
   else if (T === "accommodation") $("#grid").innerHTML = accommodationCard(d);
   else if (T === "kbinfo") { $("#grid").innerHTML = kbInfoTab(d); kbFilter(); }
   else if (T === "kbcalc") $("#grid").innerHTML = simpleCalcTab(d);
+  else if (T === "competitor") $("#grid").innerHTML = competitorTab(d);
   else if (T === "contracts") $("#grid").innerHTML = contractCard(d);
   else if (T === "addons") $("#grid").innerHTML = addonCard(d, pkg) || `<div class="card full"><div class="empty">No add-ons for ${esc(d.name)} yet.</div></div>`;
   else if (T === "flags") $("#grid").innerHTML = flagList(flagsFor(d.code), false);
@@ -1314,6 +1316,229 @@ function simpleCalcTab(d) {
     <div class="note">Pakej: harga (Catalog Price) dan kos dari tab Costing; ubah di sana. Harga lain dalam senarai ini terus ke kalkulator Sales di KB selepas Save. Lain-lain: isi kos RM, atau formula atas kadar Costing (Rate reference, FX live), cth. <code>qCity</code> atau <code>wCity89 + gFull</code>. Tuding kos untuk lihat kadar &amp; FX.</div></div>
     ${kbCalcConfig(d)}`;
 }
+/* ============================================================ Competitor Analysis (AI)
+   data.json destinations[].competitors = { pax: [3, 4, 6, 8], aspects?: [{id, label}], arba: {pkgId: {aspect: text}},
+   items: [{id, name, vs: pkgId, attrs: {aspect: text}, prices: {pax: RM}, extra, extraNote, source, updated}], analysis?: {text, actions, at, by} }.
+   One column per ARBA package that has a competitor, followed by its competitors (vs). ARBA prices = Catalog Price on
+   the Costing tab; everything else is edited in Edit costs and saved like any other cell (one version in History).
+   AI (Claude) fills a competitor from pasted text / screenshots / PDF / a URL, and writes strengths, weaknesses and a
+   summary. The Claude API key is stored once in users.json, encrypted with the vault key like the GitHub token. */
+const CMP_ASPECTS = [["days", "Days"], ["accommodation", "Accommodation"], ["guide", "Tour Guide"], ["hours", "Hours"], ["packaging", "Packaging"], ["usp", "USP"], ["meals", "Meals"], ["tipping", "Tipping"], ["visa", "Visa / Entry"]];
+const CMP_SW = [["strength", "Strength"], ["weakness", "Weakness"]];
+const CMP_PAX = [2, 4, 6, 8];
+const AI_MODEL = "claude-opus-5-5";
+const AI_SDK = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.129.0/+esm";
+let CMP_AI = null;   // last AI result waiting for "Guna" in the modal
+const cmpAspects = d => { const A = (d.competitors || {}).aspects; return A && A.length ? A.map(a => [a.id, a.label]) : CMP_ASPECTS; };
+const cmpPax = d => { const p = (d.competitors || {}).pax; return p && p.length ? p : CMP_PAX; };
+// Columns: each ARBA package with competitors (package order), then its competitors.
+function cmpCols(d) {
+  const C = d.competitors || {}, items = C.items || [];
+  return d.packages.filter(p => items.some(c => c.vs === p.id)).flatMap(p => [{ arba: true, pkg: p, id: p.id }, ...items.filter(c => c.vs === p.id).map(c => ({ arba: false, pkg: p, c, id: c.id }))]);
+}
+// Minimal markdown (## heading, - list, **bold**) for the AI summary; everything is escaped first.
+function cmpMd(t) {
+  const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+  let out = "", list = false;
+  for (const raw of String(t || "").split("\n")) {
+    const l = raw.trim(), li = /^[-*•]\s+(.*)$/.exec(l), h = /^#{1,4}\s+(.*)$/.exec(l);
+    if (!li && list) { out += "</ul>"; list = false; }
+    if (li) { if (!list) { out += "<ul>"; list = true; } out += `<li>${inl(li[1])}</li>`; }
+    else if (h) out += `<h4>${inl(h[1])}</h4>`;
+    else if (l) out += `<p>${inl(l)}</p>`;
+  }
+  return out + (list ? "</ul>" : "");
+}
+function competitorTab(d) {
+  const C = d.competitors || {}, E = EDIT && !VIEW && ownsDest(d.code), cols = cmpCols(d), pax = cmpPax(d), base = ["destinations", d.code, "competitors"];
+  const txt = (path, v) => E ? `<textarea class="ed cmp-in${JSON.stringify(getPath(BASE, path) ?? "") !== JSON.stringify(v ?? "") ? " chg" : ""}" rows="2" data-path="${esc(JSON.stringify(path))}" data-kind="text">${esc(v ?? "")}</textarea>` : esc(v || "") || '<span class="muted">—</span>';
+  const attrPath = (col, k) => col.arba ? [...base, "arba", col.pkg.id, k] : [...base, "items", col.c.id, "attrs", k];
+  const attrVal = (col, k) => col.arba ? ((C.arba || {})[col.pkg.id] || {})[k] : (col.c.attrs || {})[k];
+  const adult = (p, n) => { const v = p.pricing.adult[String(n)]; return v == null || v === "" ? NaN : +v; };
+  const aiOk = E && SESSION && SESSION.aiKey;
+  const aiBtn = (act, label, extra = "") => E ? `<button class="btn${act === "cmpAnalyse" ? " primary" : ""}" data-act="${act}"${extra}${aiOk ? "" : ` disabled title="Admin: Account → Claude API key"`}>✦ ${label}</button>` : "";
+  const head = `<h2>Competitor Analysis · ${esc(d.name)} <span class="sub">ARBA vs pesaing · harga ARBA = Catalog Price (tab Costing)</span>
+    <span class="right">${aiBtn("cmpAI", "Tambah pesaing (AI)")} ${cols.length ? aiBtn("cmpAnalyse", "Analisis AI") : ""}</span></h2>`;
+  const addRow = E ? `<div class="body cmp-add"><b>Tambah manual</b>
+      <input id="cmpName" placeholder="nama pesaing + pakej, cth. Lurima Lite">
+      <label class="small">lawan <select id="cmpVs">${d.packages.map(p => `<option value="${esc(p.id)}">${esc(p.label)}</option>`).join("")}</select></label>
+      <button class="btn" data-act="cmpAdd">Tambah</button>
+      <span class="small muted">Pax harga: <input id="cmpPax" class="ed txt" style="width:110px;text-align:left" value="${esc(pax.join(", "))}" title="senarai pax untuk baris harga, cth. 3, 4, 6, 8"></span>
+      ${aiOk ? "" : `<span class="small muted">AI perlu Claude API key (admin: Account → Claude API key).</span>`}</div>` : "";
+  if (!cols.length) return `<div class="card full" id="cmpCard">${head}${addRow}<div class="empty">Belum ada pesaing untuk ${esc(d.name)}.${E ? " Tambah pesaing di atas — atau guna ✦ AI dengan teks, screenshot, PDF atau URL pesaing." : " Log masuk dan Edit costs untuk menambah."}</div></div>`;
+  const th = cols.map(col => `<th class="${col.arba ? "cmp-arba" : "cmp-comp"}">${col.arba ? esc(col.pkg.label) : E ? `<input class="ed txt cmp-name" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "name"]))}" data-kind="text" value="${esc(col.c.name)}">` : esc(col.c.name)}
+      ${col.arba ? `<div class="cmp-tag">ARBA</div>` : `<div class="cmp-tag">vs ${esc(col.pkg.label)}${E ? ` <button class="btn mini" data-act="cmpAI" data-id="${esc(col.c.id)}" ${aiOk ? "" : "disabled"} title="Kemas kini dengan AI">✦</button> <button class="btn mini danger" data-act="cmpDel" data-id="${esc(col.c.id)}" title="Buang">×</button>` : ""}</div>`}</th>`).join("");
+  const rowA = ([k, l]) => `<tr><th class="l cmp-asp">${esc(l)}</th>${cols.map(col => `<td class="${col.arba ? "cmp-arba" : ""}">${txt(attrPath(col, k), attrVal(col, k))}</td>`).join("")}</tr>`;
+  const rowP = n => `<tr><th class="l cmp-asp">Price (${n} pax)</th>${cols.map(col => {
+    const a = adult(col.pkg, n);
+    if (col.arba) return `<td class="cmp-arba num"><b>${rm(a)}</b></td>`;
+    const v = (col.c.prices || {})[String(n)], x = num(+v) && v !== "" && v != null ? +v : NaN, dlt = x - a, ex = +col.c.extra || 0;
+    const cell = E ? ed([...base, "items", col.c.id, "prices", String(n)], num(x) ? x : undefined) : num(x) ? rm(x) : '<span class="muted">—</span>';
+    const gap = num(dlt) ? `<div class="cmp-gap ${dlt < 0 ? "m-bad" : "m-ok"}" title="${dlt < 0 ? "pesaing lebih murah" : "ARBA lebih murah"} daripada ${esc(col.pkg.label)}">${dlt < 0 ? "▼" : dlt > 0 ? "▲" : "="} ${rm(Math.abs(dlt))} (${pct(Math.abs(dlt) / a)})</div>` : "";
+    const eq = ex && num(x) ? `<div class="cmp-gap" title="${esc(col.c.extraNote || "")}">setara ${rm(x + ex)} ${x + ex < a ? '<span class="m-bad">▼</span>' : '<span class="m-ok">▲</span>'}</div>` : "";
+    return `<td class="num">${cell}${gap}${eq}</td>`;
+  }).join("")}</tr>`;
+  const extraRow = E || cols.some(c => !c.arba && +c.c.extra) ? `<tr><th class="l cmp-asp" title="RM/pax untuk jadikan harga pesaing setara ARBA (cth. hotel / K-ETA yang dikecualikan)">Tambahan untuk setara (RM/pax)</th>${cols.map(col => col.arba ? `<td class="cmp-arba muted small">—</td>` :
+    `<td class="num">${E ? ed([...base, "items", col.c.id, "extra"], col.c.extra) : +col.c.extra ? rm(+col.c.extra) : "—"}<div class="small muted cmp-wrap">${E ? `<input class="ed txt" style="width:100%;text-align:left" placeholder="cth. hotel RM980 + K-ETA" data-path="${esc(JSON.stringify([...base, "items", col.c.id, "extraNote"]))}" data-kind="text" value="${esc(col.c.extraNote || "")}">` : esc(col.c.extraNote || "")}</div></td>`).join("")}</tr>` : "";
+  const src = cols.filter(c => !c.arba && (c.c.source || c.c.updated)).map(c => `<b>${esc(c.c.name)}</b>: ${esc([c.c.source, c.c.updated && "dikemas kini " + c.c.updated].filter(Boolean).join(" · "))}`).join(" · ");
+  const A = C.analysis;
+  const ana = A && (A.text || (A.actions || []).length) ? `<div class="card full cmp-ana"><h2>✦ Analisis AI <span class="sub">${esc([A.by, A.at && fmtDate(A.at)].filter(Boolean).join(" · "))}</span></h2>
+      <div class="body cmp-md">${cmpMd(A.text)}${(A.actions || []).length ? `<h4>Cadangan tindakan</h4><ul>${A.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
+      <div class="note">Dijana oleh Claude daripada jadual di atas dan katalog ARBA. Semak sebelum guna untuk keputusan harga.</div></div>` : "";
+  return `<div class="card full" id="cmpCard">${head}${addRow}
+    <div class="scroll"><table class="cmp-t"><thead><tr><th class="l cmp-asp">Aspect</th>${th}</tr></thead>
+    <tbody>${cmpAspects(d).map(rowA).join("")}${pax.map(rowP).join("")}${extraRow}${CMP_SW.map(rowA).join("")}</tbody></table></div>
+    <div class="note">▼ pesaing lebih murah, ▲ ARBA lebih murah (beza vs pakej ARBA di sebelahnya, harga katalog dewasa). ${src ? "Sumber — " + src : ""}</div></div>${ana}`;
+}
+
+/* ---------- Claude (browser, API key from the vault) */
+async function aiCall({ system, content, schema, web }) {
+  if (!SESSION || !SESSION.aiKey) throw new Error("Claude API key belum ditetapkan. Admin: Account → Claude API key.");
+  const sdk = await import(AI_SDK), Anthropic = sdk.default;
+  const client = new Anthropic({ apiKey: SESSION.aiKey, dangerouslyAllowBrowser: true });
+  const messages = [{ role: "user", content }];
+  try {
+    for (let turn = 0; turn < 5; turn++) {
+      const msg = await client.beta.messages.stream({
+        model: AI_MODEL, max_tokens: 32000, system, messages,
+        betas: ["server-side-fallback-2026-07-01"], fallbacks: "default",
+        thinking: { type: "adaptive" },
+        output_config: { effort: "medium", format: { type: "json_schema", schema } },
+        ...(web ? { tools: [{ type: "web_fetch_20260209", name: "web_fetch", max_uses: 6 }] } : {}),
+      }).finalMessage();
+      if (msg.stop_reason === "pause_turn") { messages.push({ role: "assistant", content: msg.content }); continue; }   // server tool still working: continue the same turn
+      if (msg.stop_reason === "refusal") throw new Error("Claude tidak dapat memproses permintaan ini.");
+      if (msg.stop_reason === "max_tokens") throw new Error("Jawapan AI terpotong (terlalu panjang). Cuba dengan input yang lebih ringkas.");
+      const text = msg.content.filter(b => b.type === "text").map(b => b.text).join("").trim();
+      return JSON.parse(text);
+    }
+    throw new Error("AI tidak selesai — cuba lagi.");
+  } catch (e) {
+    if (e instanceof sdk.AuthenticationError) throw new Error("Claude API key ditolak — admin perlu tukar di Account → Claude API key.");
+    if (e instanceof sdk.RateLimitError) throw new Error("Had penggunaan Claude dicapai — cuba sebentar lagi.");
+    if (e instanceof sdk.APIError) throw new Error("Ralat Claude API" + (e.status ? " (" + e.status + ")" : "") + ": " + (e.message || ""));
+    throw e;
+  }
+}
+const sObj = props => ({ type: "object", additionalProperties: false, required: Object.keys(props), properties: props });
+const sStr = d => ({ type: "string", description: d });
+const AI_SYS = "Anda penganalisis produk ARBA Travel (Malaysia): pakej Private Tour (PT) mesra Muslim — makanan halal dijaga, waktu solat, guide sendiri, tiada tourist trap. " +
+  "Bandingkan pakej pesaing dengan pakej ARBA secara adil, like-for-like: perhatikan apa yang termasuk / dikecualikan (hotel, makan, visa / K-ETA, tipping, tiket), jam guide, jenis guide, dan harga RM seorang dewasa ikut bilangan pax. " +
+  "Tulis dalam Bahasa Melayu ringkas seperti jadual dalaman (frasa pendek, campur istilah Inggeris biasa seperti driving guide, F&E, USP). Jangan reka fakta: jika maklumat tiada dalam sumber, tulis \"-\" atau \"tidak dinyatakan\". " +
+  "Harga mata wang asing: tukar ke RM dan sebut kadar dalam nota.";
+async function cmpArbaContext(d, pkgIds) {
+  let idx = CAT.index; if (!idx) { try { idx = CAT.index = await fetchJson(PATHS.catalogs + "index.json"); } catch (_) { idx = {}; } }
+  const out = [];
+  for (const id of pkgIds) {
+    const p = d.packages.find(x => x.id === id); if (!p) continue;
+    const sl = Object.keys(idx).find(s => idx[s].code === d.code && idx[s].package === id);
+    let c = sl && CAT.docs[sl]; if (sl && !c) { try { c = CAT.docs[sl] = await fetchJson(PATHS.catalogs + sl + ".json"); } catch (_) { c = null; } }
+    const prices = Object.fromEntries(cmpPax(d).map(n => [n, p.pricing.adult[String(n)] ?? null]));
+    out.push({ id, package: p.label, catalog_price_rm_per_adult_by_pax: prices, attrs_now: ((d.competitors || {}).arba || {})[id] || {},
+      catalog: c ? { title: c.title, duration: c.duration, route: c.route, basis: c.basis, highlights: c.highlights, itinerary: (c.itinerary || []).map(x => ({ day: x.day, title: x.title, activities: x.activities, meals: x.meals, transport: x.transport, hotel: x.hotel })), includes: c.includes, excludes: c.excludes } : null });
+  }
+  return out;
+}
+async function fileBlock(f) {
+  const data = b64big(await f.arrayBuffer());
+  if (f.type === "application/pdf") return { type: "document", source: { type: "base64", media_type: "application/pdf", data } };
+  if (/^image\/(png|jpeg|gif|webp)$/.test(f.type)) return { type: "image", source: { type: "base64", media_type: f.type, data } };
+  if (/^text\//.test(f.type) || /\.(txt|md|csv)$/i.test(f.name)) return { type: "text", text: `Fail ${f.name}:\n` + await f.text() };
+  throw new Error(`${f.name}: jenis fail tidak disokong (guna gambar PNG/JPG/WebP, PDF atau teks).`);
+}
+function openCmpAI(d, id) {
+  const c = id && ((d.competitors || {}).items || []).find(x => x.id === id);
+  CMP_AI = null;
+  modal(c ? `✦ Kemas kini ${c.name} dengan AI` : "✦ Tambah pesaing dengan AI", `
+    <div class="small">Beri apa-apa sumber pesaing: tampal teks iklan / WhatsApp, upload screenshot atau PDF katalog, atau URL halaman pakej. Claude akan isi semua aspek dan harga ikut pax.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <label>Nama pesaing (pilihan)<input id="aiName" value="${esc(c ? c.name : "")}" placeholder="cth. Lurima Lite"></label>
+      <label>Bandingkan dengan pakej ARBA<select id="aiVs">${d.packages.map(p => `<option value="${esc(p.id)}"${(c ? c.vs : (curPkg(d) || {}).id) === p.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}</select></label></div>
+    <label>URL pakej pesaing (pilihan, satu setiap baris)<textarea id="aiUrl" rows="2" placeholder="https://…">${esc(c && /^https?:/.test(c.source || "") ? c.source : "")}</textarea></label>
+    <label>Teks (pilihan)<textarea id="aiText" rows="6" placeholder="Tampal maklumat pakej pesaing di sini"></textarea></label>
+    <label>Screenshot / PDF (pilihan)<input id="aiFiles" type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif,application/pdf,.txt,.md,.csv"></label>
+    <div class="err-t"></div><div id="aiOut"></div>`,
+    `<button class="btn" data-close>Batal</button><button class="btn primary" id="aiRun" data-id="${esc(id || "")}">✦ Jana dengan AI</button>`, true);
+}
+async function runCmpAI(d, id) {
+  const urls = $("#aiUrl").value.split(/\s+/).filter(u => /^https?:\/\//i.test(u)), text = $("#aiText").value.trim(), files = [...$("#aiFiles").files], name = $("#aiName").value.trim(), vs = $("#aiVs").value;
+  if (!urls.length && !text && !files.length) return mErr("Beri sekurang-kurangnya satu sumber: URL, teks atau fail.");
+  const asp = [...cmpAspects(d), ...CMP_SW], pax = cmpPax(d), old = id && d.competitors.items.find(x => x.id === id);
+  const schema = sObj({
+    name: sStr("Nama pesaing + nama pakej, ringkas, cth. 'Lurima Lite'"),
+    attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l + (k === "strength" || k === "weakness" ? " — berbanding pakej ARBA yang dibandingkan" : ""))]))),
+    prices: { type: "array", description: `Harga RM seorang dewasa ikut pax. Wajib untuk pax ${pax.join(", ")} jika boleh dikira daripada sumber; tambah pax lain jika ada.`, items: sObj({ pax: { type: "integer" }, price_rm: { type: "number" } }) },
+    extra_rm_per_pax: { type: "number", description: "Anggaran RM seorang untuk jadikan harga pesaing setara ARBA (perkara yang ARBA sertakan tetapi pesaing kecualikan). 0 jika tiada." },
+    extra_note: sStr("Apa yang dikira dalam extra_rm_per_pax, cth. 'hotel RM980 + K-ETA RM50'"),
+    source_note: sStr("Sumber ringkas, cth. URL atau 'screenshot FB 12 Okt'"),
+  });
+  const content = [];
+  for (const f of files) content.push(await fileBlock(f));
+  const arba = await cmpArbaContext(d, [vs]);
+  content.push({ type: "text", text: `Destinasi: ${d.name}. Pakej ARBA untuk dibandingkan:\n${JSON.stringify(arba[0])}\n\n` +
+    (old ? `Data pesaing sedia ada (kemas kini ikut sumber baharu, kekalkan yang masih betul):\n${JSON.stringify({ name: old.name, attrs: old.attrs, prices: old.prices, extra: old.extra, extraNote: old.extraNote })}\n\n` : "") +
+    (name ? `Nama pesaing: ${name}\n` : "") + (urls.length ? `Baca halaman ini dengan web_fetch:\n${urls.join("\n")}\n` : "") + (text ? `Teks daripada pengguna:\n${text}\n` : "") +
+    `\nIsi semua aspek pesaing dan harga untuk pax ${pax.join(", ")}.` });
+  $("#aiRun").disabled = true; mErr(""); $("#aiOut").innerHTML = `<div class="muted small">✦ Claude sedang membaca sumber… (boleh ambil 20–60 saat)</div>`;
+  try {
+    const r = await aiCall({ system: AI_SYS, content, schema, web: urls.length > 0 });
+    CMP_AI = { kind: "item", id, vs, r };
+    $("#aiOut").innerHTML = `<div class="cmp-prev"><b>${esc(r.name || name)}</b> <span class="muted small">${esc(r.source_note || "")}</span>
+      <table><tbody>${asp.map(([k, l]) => `<tr><th class="l">${esc(l)}</th><td class="l cmp-wrap">${esc(r.attrs[k] || "—")}</td></tr>`).join("")}
+      ${(r.prices || []).sort((a, b) => a.pax - b.pax).map(p => `<tr><th class="l">Price (${p.pax} pax)</th><td class="l">${rm(p.price_rm)}</td></tr>`).join("")}
+      ${r.extra_rm_per_pax ? `<tr><th class="l">Tambahan setara</th><td class="l">${rm(r.extra_rm_per_pax)} · ${esc(r.extra_note)}</td></tr>` : ""}</tbody></table></div>`;
+    $("#aiRun").outerHTML = `<button class="btn primary" id="aiApply">Guna dalam jadual</button>`;
+  } catch (e) { $("#aiOut").innerHTML = ""; mErr(e.message); $("#aiRun").disabled = false; }
+}
+async function runCmpAnalyse(d) {
+  const C = d.competitors, cols = cmpCols(d), asp = cmpAspects(d);
+  const pkgIds = [...new Set(cols.map(c => c.pkg.id))];
+  modal("✦ Analisis AI", `<div class="err-t"></div><div id="aiOut"><div class="muted small">✦ Claude sedang menganalisis ${pkgIds.length} pakej ARBA dan ${cols.length - pkgIds.length} pesaing… (boleh ambil 30–90 saat)</div></div>`, `<button class="btn" data-close>Batal</button>`, true);
+  try {
+    const arba = await cmpArbaContext(d, pkgIds);
+    const comps = C.items.map(c => ({ id: c.id, name: c.name, vs: c.vs, attrs: c.attrs, prices_rm_per_adult_by_pax: c.prices, extra_rm_per_pax: c.extra || 0, extra_note: c.extraNote || "" }));
+    const schema = sObj({
+      arba: { type: "array", description: "Satu entri bagi setiap pakej ARBA: isi aspek daripada katalog.", items: sObj({ id: { type: "string", enum: pkgIds }, attrs: sObj(Object.fromEntries(asp.map(([k, l]) => [k, sStr(l)]))) }) },
+      columns: { type: "array", description: "Satu entri bagi setiap lajur (pakej ARBA dan setiap pesaing).", items: sObj({ id: { type: "string", enum: cols.map(c => c.id) }, strength: sStr("Kekuatan utama, frasa pendek"), weakness: sStr("Kelemahan utama, frasa pendek, '-' jika tiada") }) },
+      summary: sStr("Analisis 150–300 patah perkataan dalam markdown ringkas (## tajuk, - senarai, **tebal**): kedudukan harga ARBA vs pesaing ikut pax (termasuk harga setara), perbezaan inklusi, risiko, dan peluang."),
+      actions: { type: "array", description: "3–6 cadangan tindakan konkrit untuk PO (harga, inklusi, USP, cara Sales pitch).", items: { type: "string" } },
+    });
+    const r = await aiCall({ system: AI_SYS, schema, content: [{ type: "text", text: `Destinasi: ${d.name}. Pax untuk harga: ${cmpPax(d).join(", ")}. Aspek: ${asp.map(a => a[0] + " = " + a[1]).join("; ")}.\n\nPakej ARBA (harga = Catalog Price):\n${JSON.stringify(arba)}\n\nPesaing:\n${JSON.stringify(comps)}\n\nIsi aspek ARBA daripada katalog, tulis kekuatan / kelemahan setiap lajur, ringkasan dan cadangan.` }] });
+    CMP_AI = { kind: "analysis", r };
+    $("#aiOut").innerHTML = `<div class="cmp-md">${cmpMd(r.summary)}${(r.actions || []).length ? `<h4>Cadangan tindakan</h4><ul>${r.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
+      <label class="small" style="display:flex;gap:6px;align-items:center;flex-direction:row"><input type="checkbox" id="aiOverwrite"> Tulis ganti sel yang sudah diisi (aspek ARBA, Strength, Weakness)</label>
+      <div class="small muted">Guna: aspek ARBA yang kosong diisi daripada katalog, Strength / Weakness diisi, ringkasan disimpan di bawah jadual. Tekan Save selepas itu.</div>`;
+    $("#modalRoot .mf").innerHTML = `<button class="btn" data-close>Batal</button><button class="btn primary" id="aiApply">Guna dalam jadual</button>`;
+  } catch (e) { $("#aiOut").innerHTML = ""; mErr(e.message); }
+}
+function applyCmpAI(d) {
+  const x = CMP_AI; if (!x) return;
+  const C = d.competitors ||= { pax: CMP_PAX.slice(), items: [] }, items = C.items ||= [], today = new Date().toISOString().slice(0, 10);
+  if (x.kind === "item") {
+    const r = x.r, prices = {};
+    for (const p of r.prices || []) if (num(p.price_rm) && p.price_rm > 0) prices[String(p.pax)] = Math.round(p.price_rm);
+    const fields = { name: r.name || $("#aiName").value.trim() || "Pesaing", vs: x.vs, attrs: r.attrs, prices, extra: Math.round(+r.extra_rm_per_pax || 0), extraNote: r.extra_note || "", source: r.source_note || "", updated: today };
+    if (x.id) Object.assign(items.find(c => c.id === x.id), fields);
+    else items.push({ id: cmpNewId(d, fields.name), ...fields });
+  } else {
+    const over = $("#aiOverwrite") && $("#aiOverwrite").checked, put = (o, k, v) => { if (v && (over || !o[k] || o[k] === "-")) o[k] = v; };
+    const A = C.arba ||= {};
+    for (const a of x.r.arba || []) { const o = A[a.id] ||= {}; for (const [k, v] of Object.entries(a.attrs || {})) put(o, k, v); }
+    for (const col of x.r.columns || []) {
+      const it = items.find(c => c.id === col.id), o = d.packages.some(p => p.id === col.id) ? (A[col.id] ||= {}) : it ? (it.attrs ||= {}) : null;
+      if (!o) continue;
+      put(o, "strength", col.strength); put(o, "weakness", col.weakness);
+    }
+    C.analysis = { text: x.r.summary || "", actions: x.r.actions || [], at: new Date().toISOString(), by: SESSION.u };
+  }
+  CMP_AI = null; closeModal(); toast("Dimasukkan dalam jadual — tekan Save untuk simpan"); render();
+}
+function cmpNewId(d, name) {
+  const ids = new Set(((d.competitors || {}).items || []).map(c => c.id).concat(d.packages.map(p => p.id)));
+  const b = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 30) || "pesaing";
+  let id = b, n = 2; while (ids.has(id)) id = b + "-" + n++;
+  return id;
+}
 function kbFilter() {
   const q = KB.q.trim().toLowerCase();
   document.querySelectorAll("[data-kbtext]").forEach(el => { const hit = !q || el.dataset.kbtext.includes(q); el.style.display = hit ? "" : "none"; if (el.tagName === "DETAILS") el.open = !!q && hit; });
@@ -1447,7 +1672,7 @@ async function restoreSession() {
   try {
     if (!rec || !USERS.vault || !(Date.now() - s.at < IDLE_LOGOUT_MS)) throw new Error("expired");
     const vaultRaw = unb64(s.vk), vk = await crypto.subtle.importKey("raw", vaultRaw, "AES-GCM", false, ["decrypt"]);
-    SESSION = { u: rec.u, role: rec.role, token: dec.decode(await aesDec(vk, USERS.vault)), vaultRaw };
+    SESSION = { u: rec.u, role: rec.role, token: dec.decode(await aesDec(vk, USERS.vault)), vaultRaw, aiKey: await aiKeyOf(vk) };
     lastActivity = Date.now(); persistSession();
   } catch (_) { SESSION = null; persistSession(); }
 }
@@ -1456,8 +1681,10 @@ async function unlock(user, pw) {
   const vaultRaw = await aesDec(k, user);           // throws on wrong password
   const vk = await crypto.subtle.importKey("raw", vaultRaw, "AES-GCM", false, ["encrypt", "decrypt"]);
   const token = dec.decode(await aesDec(vk, USERS.vault));
-  return { vaultRaw, token };
+  return { vaultRaw, token, aiKey: await aiKeyOf(vk) };
 }
+// Claude API key (Competitor Analysis AI): stored once in users.json `ai`, encrypted with the vault key like the token.
+async function aiKeyOf(vk) { try { return USERS.ai ? dec.decode(await aesDec(vk, USERS.ai)) : null; } catch (_) { return null; } }
 const userNameOk = u => /^[a-z0-9._-]{2,32}$/.test(u);
 
 /* ============================================================ rights
@@ -1662,8 +1889,8 @@ async function doLogin() {
   $("#doLogin").disabled = true; mErr("Checking…");
   try {
     if (!rec) throw new Error("bad");
-    const { vaultRaw, token } = await unlock(rec, p);
-    SESSION = { u, role: rec.role, token, vaultRaw };
+    const { vaultRaw, token, aiKey } = await unlock(rec, p);
+    SESSION = { u, role: rec.role, token, vaultRaw, aiKey };
     lastActivity = Date.now(); persistSession();
     closeModal(); render(); toast("Logged in as " + u);
     GH.head(token).catch(e => toast("Logged in, but GitHub rejected the token (" + e.message + "). Ask an admin to rotate it.", 6000));
@@ -1715,7 +1942,11 @@ function openAccount() {
     <hr style="border:0;border-top:1px solid var(--line);width:100%">
     <b>Replace GitHub token</b><div class="small muted">Use when the token expires. All users keep their passwords.</div>
     <input id="nt" type="password" placeholder="new fine-grained token" autocomplete="off">
-    <div><button class="btn" id="doTok">Replace token</button></div>` : ""}
+    <div><button class="btn" id="doTok">Replace token</button></div>
+    <hr style="border:0;border-top:1px solid var(--line);width:100%">
+    <b>Claude API key (Competitor Analysis AI)</b><div class="small muted">${USERS.ai ? "Ditetapkan. " : "Belum ditetapkan. "}Disimpan terenkripsi dalam users.json seperti token GitHub; semua user yang log masuk boleh guna AI. Buat key di platform.claude.com → API keys (letak had belanja bulanan).</div>
+    <input id="nak" type="password" placeholder="sk-ant-…" autocomplete="off">
+    <div><button class="btn" id="doAiKey">${USERS.ai ? "Tukar key" : "Simpan key"}</button>${USERS.ai ? ` <button class="btn danger" id="doAiDel">Buang key</button>` : ""}</div>` : ""}
     <div class="err-t"></div>`, `<button class="btn" data-close>Close</button>`, isAdmin);
 }
 async function acct(fn, okMsg) { mErr("Saving…"); try { await fn(); mErr(""); toast(okMsg); openAccount(); } catch (e) { mErr(e.message); } }
@@ -1741,6 +1972,22 @@ document.addEventListener("click", async e => {
   if (t.dataset.act === "discard") { if (confirm("Discard all unsaved changes?")) { DATA = clone(BASE); CAT.edit = {}; KB.edit = {}; render(); } return; }
   if (t.dataset.rndf !== undefined) { SEL.rndF = t.dataset.rndf; return render(); }
   if (t.dataset.rndpk) { SEL.rndPk = !SEL.rndPk; return render(); }
+  if (t.dataset.act === "cmpAI") return openCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST), t.dataset.id);
+  if (t.id === "aiRun") return runCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST), t.dataset.id || null);
+  if (t.id === "aiApply") return applyCmpAI(DATA.destinations.find(x => x.code === PAGE_DEST));
+  if (t.dataset.act === "cmpAnalyse") return runCmpAnalyse(DATA.destinations.find(x => x.code === PAGE_DEST));
+  if (t.dataset.act === "cmpAdd") {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), name = $("#cmpName").value.trim();
+    if (!name) return toast("Isi nama pesaing");
+    const C = d.competitors ||= { pax: CMP_PAX.slice(), items: [] };
+    (C.items ||= []).push({ id: cmpNewId(d, name), name, vs: $("#cmpVs").value, attrs: {}, prices: {} });
+    toast(`Ditambah "${name}" — isi sel kuning, kemudian Save`); return render();
+  }
+  if (t.dataset.act === "cmpDel") {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), c = d.competitors.items.find(x => x.id === t.dataset.id);
+    if (!c || !confirm(`Buang "${c.name}" daripada Competitor Analysis?\n\nTiada yang disimpan sehingga anda tekan Save.`)) return;
+    d.competitors.items = d.competitors.items.filter(x => x.id !== c.id); return render();
+  }
   if (t.dataset.act === "calcMd") {
     const x = kbDoc(t.dataset.code); if (!x) return;
     const doc = KB.edit[x.sl] || x.kb, md = calcMd(x.ix.name, doc.calc || {}, (doc.map || {}).variants || {});
@@ -1894,6 +2141,21 @@ document.addEventListener("click", async e => {
     const u = t.dataset.deluser; if (!confirm(`Remove ${u}? They will no longer be able to log in. If you think they copied the token, also replace the token.`)) return;
     return acct(async () => { const next = clone(USERS); next.users = next.users.filter(x => x.u !== u); await saveUsers(next, `users: ${SESSION.u} removed ${u}`); }, "User " + u + " removed");
   }
+  if (t.id === "doAiKey" || t.id === "doAiDel") {
+    const key = t.id === "doAiKey" ? $("#nak").value.trim() : null;
+    if (t.id === "doAiKey" && !key) return mErr("Tampal Claude API key.");
+    if (t.id === "doAiDel" && !confirm("Buang Claude API key? AI dalam Competitor Analysis akan berhenti.")) return;
+    return acct(async () => {
+      if (key) {   // check the key before storing it
+        const sdk = await import(AI_SDK);
+        try { await new sdk.default({ apiKey: key, dangerouslyAllowBrowser: true }).models.retrieve(AI_MODEL); }
+        catch (e) { throw new Error(e instanceof sdk.AuthenticationError ? "Key ditolak oleh Claude API." : "Tidak dapat semak key: " + e.message); }
+      }
+      const vk = await crypto.subtle.importKey("raw", SESSION.vaultRaw, "AES-GCM", false, ["encrypt"]), next = clone(USERS);
+      if (key) next.ai = await aesEnc(vk, enc.encode(key)); else delete next.ai;
+      await saveUsers(next, `users: ${SESSION.u} ${key ? "set" : "removed"} Claude API key`); SESSION.aiKey = key;
+    }, key ? "Claude API key disimpan" : "Claude API key dibuang");
+  }
   if (t.id === "doTok") {
     const tok = $("#nt").value.trim(); if (!tok) return mErr("Paste the new token.");
     return acct(async () => { await GH.head(tok); const vk = await crypto.subtle.importKey("raw", SESSION.vaultRaw, "AES-GCM", false, ["encrypt"]); const next = clone(USERS); next.vault = await aesEnc(vk, enc.encode(tok)); SESSION.token = tok; await saveUsers(next, `users: ${SESSION.u} replaced token`); }, "Token replaced");
@@ -1951,6 +2213,11 @@ document.addEventListener("change", e => {
     (doc.rnd ||= {}).minMargin = Math.round(v) / 100; return render();
   }
   if (t.id && t.id.startsWith("opt_")) { (SEL.opt[SEL.dest] ||= {})[t.id.slice(4)] = t.value; return render(); }
+  if (t.id === "cmpPax") {
+    const d = DATA.destinations.find(x => x.code === PAGE_DEST), v = [...new Set(t.value.split(/[^0-9]+/).filter(Boolean).map(Number).filter(n => n >= 1 && n <= 99))].sort((a, b) => a - b);
+    if (!v.length) { toast("Senarai pax tidak sah"); return render(); }
+    (d.competitors ||= { items: [] }).pax = v; return render();
+  }
   if (t.id === "flagArea") { SEL.flagArea = t.value; return render(); }
   if (t.id === "flagPO") { SEL.flagPO = t.value; return render(); }
   if (t.id === "selPkg") { SEL.pkg = t.value; SEL.variant = "auto"; return render(); }
@@ -2013,6 +2280,10 @@ document.addEventListener("change", e => {
     if (t.dataset.kind === "num") { if (v.trim() === "") return; v = Number(v); if (!isFinite(v)) return toast("Not a number"); }
     if (t.dataset.kind === "lines") v = String(v).split("\n").map(x => x.trim()).filter(Boolean);
     if (t.dataset.kind === "text" && path[path.length - 1] === "expr") { try { compile(v); } catch (err) { toast(err.message, 5000); return; } }
+    if (path[0] === "destinations" && path[2] === "competitors") {   // Competitor Analysis: ARBA / attrs objects are made on first edit
+      let o = getPath(DATA, path.slice(0, 3)); for (const k of path.slice(3, -1)) o = Array.isArray(o) ? o.find(x => keyOf(x) === k) : (o[k] ||= {});
+      if (t.dataset.kind === "text" && !String(v).trim() && path[path.length - 1] !== "name") v = undefined;
+    }
     setPath(DATA, path, v);
     // keep the focus where the user tabbed to after we re-render
     setTimeout(() => {

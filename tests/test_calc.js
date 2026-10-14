@@ -222,7 +222,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok(doc.querySelector("#controls").textContent.includes("Tokyo"), "/hnd/ page is locked to Tokyo");
     ok(doc.querySelector("#costPax") && doc.querySelector(".tabm.on").dataset.tabmain === "costing", "Costing tab opens by default");
     ok(doc.querySelector(".fxbox").textContent.includes("0.029") && doc.querySelector(".fxbox").textContent.includes("0.026"), "FX chips: WIF 0.029, Qayyum 0.026");
-    ok([...doc.querySelectorAll(".tabm")].map(x => x.dataset.tabmain).join() === "costing,contracts,itinerary,surcharge,accommodation,addons,expect,policy,kbinfo,kbcalc,flags,history", "tabs: Costing, TO Contract Rate, Itinerary, Surcharge, Accommodation, Add On, What to Expect, Policy, Info KB, Simple Calculator, TO Contract Rate, Flags, History");
+    ok([...doc.querySelectorAll(".tabm")].map(x => x.dataset.tabmain).join() === "costing,contracts,itinerary,surcharge,accommodation,addons,expect,policy,kbinfo,kbcalc,competitor,flags,history", "tabs: Costing, TO Contract Rate, Itinerary, Surcharge, Accommodation, Add On, What to Expect, Policy, Info KB, Simple Calculator, Competitor Analysis, Flags, History");
     // each catalog section on its own tab (data/catalogs/<slug>.json for the selected package)
     setVal(w, doc.querySelector("#selPkg"), "standard"); await tick(5);
     await tab(w, doc, "itinerary"); await until(() => doc.querySelector("#cat-tokyo-standard"));
@@ -895,6 +895,40 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const rem = JSON.parse(repo.files(repo.head)["data/data.json"]).destinations.find(x => x.code === "ACEH");
     ok(rem.variants.some(v => v.id === "PAK-RAHMAN") && rem.packages[0].alsoVariants.includes("PAK-RAHMAN"), "data.json has the new TO");
     ok(pg.errors.length === 0, "multi-TO errors: " + pg.errors.join("|"));
+  }
+
+  console.log("8y. Competitor Analysis tab: ARBA (Catalog Price) vs competitors, manual edit, AI result applied, saved as one version");
+  {
+    const pg = await boot(repo, "sel/", "#competitor"); await until(() => pg.doc.querySelector("#cmpCard"));
+    const P2 = pg.w.PTCALC, D2 = () => P2.DATA.destinations.find(x => x.code === "SEL"), V = P2.BASE.version, $p = s => pg.doc.querySelector(s);
+    ok($p('[data-tabmain="competitor"]').textContent === "Competitor Analysis" && $p('[data-tabmain="kbcalc"]').nextElementSibling.dataset.tabmain === "competitor", "Competitor Analysis tab sits next to Simple Calculator");
+    const heads = [...pg.doc.querySelectorAll(".cmp-t thead th")].map(x => x.textContent.trim().split(/\s+/).slice(0, 2).join(" "));
+    ok(heads.join("|") === "Aspect|Seoul Basic|Lurima Lite|Seoul Standard|Lurima Dream", "columns: ARBA Basic, Lurima Lite, ARBA Standard, Lurima Dream (" + heads.join("|") + ")");
+    const row = l => [...pg.doc.querySelectorAll(".cmp-t tbody tr")].find(r => r.querySelector("th").textContent === l);
+    const r3 = row("Price (3 pax)").querySelectorAll("td");
+    ok(r3[0].textContent.includes("RM2,997") && r3[1].textContent.includes("RM2,513") && r3[1].textContent.includes("▼ RM484") && r3[2].textContent.includes("RM3,697") && r3[3].textContent.includes("▲ RM143"), "3 pax: ARBA prices from Costing, gap vs ARBA (Lite ▼RM484, Dream ▲RM143)");
+    ok(row("K-ETA").querySelectorAll("td")[1].textContent === "Excluded" && row("Strength") && row("Weakness"), "aspects incl. K-ETA, Strength, Weakness");
+    ok(!$p('[data-act="cmpAI"]') && !$p(".cmp-t textarea"), "view mode: no AI / edit controls");
+    P2.SESSION = { u: "aiman", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => $p(".cmp-t textarea"));
+    ok($p('[data-act="cmpAnalyse"]').disabled && $p('[data-act="cmpAI"]').disabled, "AI buttons disabled without a Claude API key");
+    $p("#cmpName").value = "Pesaing Ujian"; pg.doc.querySelector("#cmpVs").value = "atk-st"; click(pg.w, $p('[data-act="cmpAdd"]')); await tick(20);
+    const nu = D2().competitors.items.find(c => c.name === "Pesaing Ujian");
+    ok(nu && nu.id === "pesaing-ujian" && nu.vs === "atk-st" && [...pg.doc.querySelectorAll(".cmp-t thead th")].some(x => x.textContent.includes("Seoul Self Tour")), "Tambah manual: new competitor vs Self Tour → ARBA Self Tour column appears");
+    const pin = [...pg.doc.querySelectorAll(".cmp-t input.ed")].find(x => x.dataset.path === JSON.stringify(["destinations", "SEL", "competitors", "items", "pesaing-ujian", "prices", "4"]));
+    setVal(pg.w, pin, "1999"); await tick(20);
+    const ta = [...pg.doc.querySelectorAll(".cmp-t textarea")].find(x => x.dataset.path === JSON.stringify(["destinations", "SEL", "competitors", "arba", "atk-st", "meals"]));
+    setVal(pg.w, ta, "Breakfast"); await tick(20);
+    ok(D2().competitors.items.find(c => c.id === "pesaing-ujian").prices["4"] === 1999 && D2().competitors.arba["atk-st"].meals === "Breakfast", "edit a competitor price and a new ARBA package cell");
+    pg.w.eval(`CMP_AI = { kind: "analysis", r: { arba: [{ id: "atk-st", attrs: { days: "5D4N", meals: "Lunch" } }], columns: [{ id: "atk-st", strength: "Harga rendah", weakness: "Tiada guide" }, { id: "pesaing-ujian", strength: "Murah", weakness: "-" }], summary: "## Ringkasan\\n- **ARBA** lebih mahal", actions: ["Semak harga 4 pax"] } }`);
+    click(pg.w, (() => { const b = pg.doc.createElement("button"); b.id = "aiApply"; pg.doc.body.appendChild(b); return b; })()); await tick(20);
+    const A = D2().competitors.arba["atk-st"];
+    ok(A.days === "5D4N" && A.meals === "Breakfast" && A.strength === "Harga rendah" && D2().competitors.items.find(c => c.id === "pesaing-ujian").attrs.strength === "Murah", "AI analysis fills only empty cells (meals kept), strengths / weaknesses");
+    ok($p(".cmp-ana") && $p(".cmp-ana h4").textContent === "Ringkasan" && $p(".cmp-ana b").textContent === "ARBA" && $p(".cmp-ana").textContent.includes("Semak harga 4 pax"), "AI summary + actions shown under the table");
+    click(pg.w, $p("#btnSave")); await tick(5); $p("#saveNote").value = "Competitor ujian";
+    click(pg.w, $p("#doSave")); ok(await until(() => P2.BASE.version === V + 1), "saved as one version");
+    const saved = JSON.parse(repo.files(repo.head)["data/data.json"]).destinations.find(x => x.code === "SEL").competitors;
+    ok(saved.items.some(c => c.id === "pesaing-ujian" && c.prices["4"] === 1999) && saved.analysis.by === "aiman" && saved.items.find(c => c.id === "lurima-lite").prices["3"] === 2513, "data.json has the competitor, price and analysis");
+    ok(pg.errors.length === 0, "competitor errors: " + pg.errors.join("|"));
   }
 
   console.log("9. no runtime errors");
