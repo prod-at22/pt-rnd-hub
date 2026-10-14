@@ -216,11 +216,12 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   costed per band (catalog item = first band + extra band items, K5); Disneyland ticket RM300/pax = catalog D4 (cost ≈RM316 → flag, K9); meal cost = WIF CR, Tolak meals
   removed (K7); TripCare pair / family, wifi ¥2,000/day (K10); hotel-night add-ons kept (K8); Self Tour kept for reference (K11). Flags: R&D add-ons with doubtful costs
   (K6), 2–4 pax margins (K12), Std 15–21 pax margin 3.7–8 % / CWB below cost at 15 & 19 (catalog 13–30 prices are extrapolated). tests/test_calc.js rate codes updated.
-  Catalogs and KB unchanged. **Pending (PO):** KB jepun 2027 peak windows + 'Travel date 2027 +RM200' (not in the catalogs) — remove for Tokyo only or all Japan?
+  Catalogs and KB unchanged. **On hold (PO 14 Oct, flags only):** KB jepun 2027 peak windows + 'Travel date 2027 +RM200' (not in any Japan catalog; ProdReq §4C
+  says no 2027 projection — removal prepared, all Japan except Hokkaido) and Tokyo 13–30 pax prices below the ProdReq rule (Std 15–21 3.7–13.7 %).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 8 destinations** (costs stored in MYR): LOP, JOG, MEL, PER, NSNZ, MLE, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** Tokyo pending item (2027 surcharge scope), then ask the PO which destination to verify next.
+- **Next:** ask the PO which destination to verify next (Tokyo done 14 Oct, v90; two items flagged on hold).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs
