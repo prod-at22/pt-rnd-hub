@@ -338,6 +338,5 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .cg-cell ul{margin:0;padding-left:16px} .cg-cell li{margin:2px 0}
 .cg-cell .cmp-k{color:var(--muted)}
 .cg-cell .cmp-eq{margin-top:0}
-.df .dv{font-weight:600}
-.df.red .dv{color:var(--bad)} .df.green .dv{color:var(--ok)} .df.yel .dv{color:#b7791f}
+
 .cmp-legend{padding:12px 14px 0;font-size:12px;color:var(--muted)}

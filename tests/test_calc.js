@@ -909,10 +909,10 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     ok([...pg.doc.querySelectorAll(".cg-cat")].map(x => x.textContent).join("|") === "Price per pax|Package|Guide & USP|Inclusions|Strengths|Weaknesses", "categories: Price per pax, Package, Guide & USP, Inclusions, Strengths, Weaknesses");
     let h = cells("Price per pax");
     const li3 = h[1].querySelector("li");
-    ok(h[0].querySelector("li").textContent.includes("3 pax RM2,997") && li3.textContent.includes("3 pax RM1,750") && li3.querySelector(".cmp-gap.dn").textContent === "−41.6%" && li3.querySelector(".cmp-gap").title.includes("RM1,247") && li3.textContent.includes("like-for-like RM2,800"), "price bullets: ARBA from Costing, Lurima −41.6% (RM1,247, red), like-for-like RM2,800");
+    ok(h[0].querySelector("li").textContent.includes("3 pax RM2,797") && li3.textContent.includes("3 pax RM1,750") && li3.querySelector(".cmp-gap.dn").textContent === "−37.4%" && li3.querySelector(".cmp-gap").title.includes("RM1,047") && li3.textContent.includes("like-for-like RM2,800"), "price bullets: ARBA = Selling Price (catalog 2,997 − 200), Lurima −37.4% (RM1,047, red), like-for-like RM2,800");
     click(pg.w, $p("[data-cmppkg]")); await tick(20);
     h = cells("Price per pax");
-    ok(heads().split("|").length === 4 && heads().includes("Jeju Muslim|Selamat Bercuti|Sedunia Travel") && pg.doc.querySelector("#selPkg").value === "atk-std" && h[0].textContent.includes("RM3,697") && h[2].querySelector("li .cmp-gap.up").textContent === "+59.3%", "link switches the Package to Seoul Standard: 3 competitors, Selamat Bercuti +59.3% (green)");
+    ok(heads().split("|").length === 4 && heads().includes("Jeju Muslim|Selamat Bercuti|Sedunia Travel") && pg.doc.querySelector("#selPkg").value === "atk-std" && h[0].textContent.includes("RM3,497") && h[2].querySelector("li .cmp-gap.up").textContent === "+68.4%", "link switches the Package to Seoul Standard: 3 competitors, Selamat Bercuti +68.4% vs Selling RM3,497 (green)");
     ok(/K-ETA:\s*Excluded/.test(cells("Inclusions")[2].textContent) && cells("Weaknesses")[2].querySelectorAll("li").length === 3, "Inclusions bullets 'K-ETA: Excluded'; weaknesses split into bullets");
     ok($p(".cmp-ana h4").textContent === "Recommendations" && $p(".cmp-ana details summary").textContent === "Full analysis", "analysis: actions shown, full text folded");
     {
@@ -921,7 +921,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
       ok(jm.classList.contains("red") && jm.title === "ARBA: Breakfast", "differs from ARBA: Jeju meals 'per itinerary' > Breakfast → red (title shows ARBA value)");
       ok(sk.classList.contains("green") && jh.classList.contains("green"), "ARBA better: Selamat Bercuti K-ETA Excluded, Jeju 9 hrs < 10 hrs → green");
       ok(jt.classList.contains("yel") && !ja.classList.contains("df") && !li(1, "Package", /5D4N/).classList.contains("df"), "unclear difference → amber (tipping 'Not stated'); same → no mark (Included (3★…), 5D4N)");
-      ok(!cells("Strengths")[1].querySelector(".df") && $p(".cmp-legend").textContent.includes("amber"), "strengths not compared; legend explains red / green / amber");
+      ok(!cells("Strengths")[1].querySelector(".df") && $p(".cmp-legend").textContent.includes("vs ARBA Selling Price") && !$p(".cmp-legend .df"), "strengths not compared; legend explains the price % colours only");
     }
     ok(!$p('[data-act="cmpAI"]') && !$p(".cmp-bar"), "view mode: no AI / edit controls");
     P2.SESSION = { u: "aiman", role: "editor", token: "tok-valid" }; P2.EDIT = true; P2.render(); await until(() => $p(".cmp-t textarea"));

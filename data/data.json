@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 98,
- "updatedAt": "2026-10-14T10:52:56Z",
+ "version": 99,
+ "updatedAt": "2026-10-14T10:57:38Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -1555,8 +1555,8 @@
       "meals": "Breakfast",
       "tipping": "Included",
       "visa": "Included",
-      "strength": "Halal taken care of; no tourist traps; hotel included",
-      "weakness": "Dearer than Lurima Seoul Lite even after adding its hotel (3–6 pax); local guide, not Malay-speaking"
+      "strength": "Halal taken care of; no tourist traps; hotel, tipping & K-ETA included; cheaper than Lurima like-for-like",
+      "weakness": "Local guide, not Malay-speaking; advertised price looks much higher than Lurima's 'from RM1,190'"
      },
      "atk-std": {
       "days": "5D4N",
@@ -1686,15 +1686,15 @@
     ],
     "analysis": {
      "by": "claude (web research)",
-     "at": "2026-10-14T08:42:10Z",
-     "text": "## Price position\n- **Seoul Basic vs Lurima Seoul Lite:** Lurima looks 42–47% cheaper, but without a hotel. After adding its RM1,020 hotel and K-ETA, Lurima's like-for-like price is RM2,800 (3 pax), RM2,550 (4 pax), RM2,310 (6 pax), RM2,340 (8 pax). ARBA is still **4–7% dearer at 3–6 pax**, and slightly cheaper at 8 pax. Lurima's prices are 2025 — 2026 may be higher.\n- **Seoul Standard vs Muslim full-board packages:** ARBA is **much cheaper** — Jeju Muslim Travel +9% (4 pax) to +34% (6 pax), Selamat Bercuti +31% to +61%, Sedunia +44% to +93%. These competitors include halal lunch / dinner, so part of the gap is the cost of meals.\n\n## Inclusion differences\n- ARBA is the only one that clearly includes **tipping and K-ETA** in both packages.\n- Full-board competitors sell **halal meals included** as their main value; ARBA Standard is breakfast only.\n- Lurima sells a **Malay-speaking guide** living in Korea — a USP ARBA Basic does not have.\n- Selamat Bercuti and Sedunia have **shopping stops** (Sedunia compulsory, skipping costs +RM900) — ARBA can pitch \"no tourist traps\".\n\n## Risks\n- Customers comparing the advertised \"from RM1,190\" will see ARBA Basic as twice the price.\n- For 2–3 pax, Jeju Muslim Travel and Sedunia have no price — room for ARBA.",
+     "at": "2026-10-14T10:57:38Z",
+     "text": "## Price position (ARBA Selling Price)\n- **Seoul Basic vs Lurima Seoul Lite:** Lurima looks 37–43% cheaper, but without a hotel. After adding its RM1,020 hotel and K-ETA, Lurima's like-for-like price is RM2,800 (3 pax), RM2,550 (4 pax), RM2,310 (6 pax), RM2,340 (8 pax) — **ARBA is the same or cheaper at every pax** (RM3 cheaper at 3 pax, RM243 cheaper at 8 pax). Lurima's prices are 2025 — 2026 may be higher still.\n- **Seoul Standard vs Muslim full-board packages:** ARBA is **much cheaper** — Jeju Muslim Travel +16% (4 pax) to +46% (6 pax), Selamat Bercuti +40% to +75%, Sedunia +54% to +110%. These competitors include halal lunch / dinner, so part of the gap is the cost of meals.\n\n## Inclusion differences\n- ARBA is the only one that clearly includes **tipping and K-ETA** in both packages.\n- Full-board competitors sell **halal meals included** as their main value; ARBA Standard is breakfast only.\n- Lurima sells a **Malay-speaking guide** living in Korea — a USP ARBA Basic does not have.\n- Selamat Bercuti and Sedunia have **shopping stops** (Sedunia compulsory, skipping costs +RM900) — ARBA can pitch \"no tourist traps\".\n\n## Risks\n- Customers comparing the advertised \"from RM1,190\" will see ARBA Basic as about twice the price, although like-for-like ARBA is cheaper.\n- For 2–3 pax, Jeju Muslim Travel and Sedunia have no price — room for ARBA.",
      "actions": [
-      "In Seoul Basic ads, show the price as 'incl. hotel, tipping & K-ETA' so it is not compared with Lurima's no-hotel price.",
-      "Review Seoul Basic margin at 3–6 pax: ~RM90–200 lower matches Lurima after its hotel.",
-      "Add a 'halal meals' add-on (lunch + dinner) to Seoul Standard — still cheaper than Jeju Muslim / Selamat Bercuti.",
-      "Sales pitch for Standard: no shopping stops, tipping & K-ETA included, 9–93% cheaper than Muslim full-board packages (mostly 30%+).",
+      "In Seoul Basic ads, show the price as 'incl. hotel, tipping & K-ETA' — like-for-like ARBA is already cheaper than Lurima.",
+      "No need to cut Seoul Basic prices; keep the margin and win on 'all-in' messaging.",
+      "Add a 'halal meals' add-on (lunch + dinner) to Seoul Standard — still well below Jeju Muslim / Selamat Bercuti.",
+      "Sales pitch for Standard: no shopping stops, tipping & K-ETA included, 16–110% cheaper than Muslim full-board packages.",
       "Consider a Malay-speaking guide as an upgrade to compete with Lurima.",
-      "Ask Lurima and Jeju Muslim Travel for 2026 quotes (their pages still show 2025 prices) before changing prices."
+      "Ask Lurima and Jeju Muslim Travel for 2026 quotes (their pages still show 2025 prices)."
      ]
     }
    }

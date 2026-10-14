@@ -1388,7 +1388,7 @@ function cmpGrid(d, pkg, cols, pax, adult) {
     return `<div class="cg-head${col.arba ? " arba" : ""}"${tip ? ` title="${esc(tip)}"` : ""}>${col.arba ? `ARBA<small>${esc(pkg.label)}</small>` : esc(c.name)}</div>`;
   }).join("");
   const rows = CMP_CATS.map(([l, keys]) => `<div class="cg-cat">${esc(l)}</div>${cols.map(col => `<div class="cg-cell${col.arba ? " arba" : ""}">${cell(col, keys)}</div>`).join("")}`).join("");
-  const legend = `<div class="cmp-legend">Compared with ARBA: <span class="df red"><span class="dv">red</span></span> competitor better · <span class="df green"><span class="dv">green</span></span> ARBA better · <span class="df yel"><span class="dv">amber</span></span> different (hover for ARBA's value)</div>`;
+  const legend = `<div class="cmp-legend">Price %: <span class="cmp-gap dn">red</span> competitor cheaper · <span class="cmp-gap up">green</span> ARBA cheaper — vs ARBA Selling Price. Hover a competitor's item for ARBA's value.</div>`;
   return legend + `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
 }
 // Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
@@ -1399,10 +1399,10 @@ function competitorTab(d) {
   const txt = (path, v) => E ? `<textarea class="ed cmp-in${chg(path, v)}" rows="1" data-path="${esc(JSON.stringify(path))}" data-kind="text">${esc(v ?? "")}</textarea>` : esc(v || "") || '<span class="muted">—</span>';
   const attrPath = (col, k) => col.arba ? [...base, "arba", col.pkg.id, k] : [...base, "items", col.c.id, "attrs", k];
   const attrVal = (col, k) => col.arba ? ((C.arba || {})[col.pkg.id] || {})[k] : (col.c.attrs || {})[k];
-  const adult = x => { const v = pkg.pricing.adult[String(x)]; return v == null || v === "" ? NaN : +v; };
+  const adult = x => { const v = pkg.pricing.adult[String(x)]; return v == null || v === "" ? NaN : priceRow(d, pkg, activeVariantId(pkg, x), x).adult.selling; };   // ARBA = Selling Price (catalog − discount)
   const aiOk = E && SESSION && SESSION.aiKey, dis = aiOk ? "" : ` disabled title="Needs a Claude API key — admin: Account → Claude API key"`;
   const others = d.packages.filter(p => p.id !== pkg.id && (C.items || []).some(c => c.vs === p.id));
-  const head = `<h2>Competitor Analysis <span class="sub">${esc(pkg.label)} vs ${cols.length - 1 || "no"} competitor${cols.length === 2 ? "" : "s"}</span>
+  const head = `<h2>Competitor Analysis <span class="sub">${esc(pkg.label)} vs ${cols.length - 1 || "no"} competitor${cols.length === 2 ? "" : "s"} · ARBA price = Selling Price</span>
     ${E ? `<span class="right"><button class="btn" data-act="cmpAI"${dis}>✦ Add competitor</button>${cols.length ? `<button class="btn" data-act="cmpAnalyse"${dis}>✦ Analyse</button>` : ""}</span>` : ""}</h2>`;
   const bar = E ? `<div class="cmp-bar"><input id="cmpName" placeholder="Competitor name"><input type="hidden" id="cmpVs" value="${esc(pkg.id)}"><button class="btn" data-act="cmpAdd">+ Manual</button>
       <label class="cmp-paxin">Pax <input id="cmpPax" value="${esc(pax.join(", "))}"></label></div>` : "";
@@ -1481,8 +1481,8 @@ async function cmpArbaContext(d, pkgIds) {
     const p = d.packages.find(x => x.id === id); if (!p) continue;
     const sl = Object.keys(idx).find(s => idx[s].code === d.code && idx[s].package === id);
     let c = sl && CAT.docs[sl]; if (sl && !c) { try { c = CAT.docs[sl] = await fetchJson(PATHS.catalogs + sl + ".json"); } catch (_) { c = null; } }
-    const prices = Object.fromEntries(cmpPax(d).map(n => [n, p.pricing.adult[String(n)] ?? null]));
-    out.push({ id, package: p.label, catalog_price_rm_per_adult_by_pax: prices, attrs_now: ((d.competitors || {}).arba || {})[id] || {},
+    const prices = Object.fromEntries(cmpPax(d).map(n => { const v = p.pricing.adult[String(n)]; return [n, v == null || v === "" ? null : priceRow(d, p, activeVariantId(p, n), n).adult.selling]; }));
+    out.push({ id, package: p.label, selling_price_rm_per_adult_by_pax: prices, attrs_now: ((d.competitors || {}).arba || {})[id] || {},
       catalog: c ? { title: c.title, duration: c.duration, route: c.route, basis: c.basis, highlights: c.highlights, itinerary: (c.itinerary || []).map(x => ({ day: x.day, title: x.title, activities: x.activities, meals: x.meals, transport: x.transport, hotel: x.hotel })), includes: c.includes, excludes: c.excludes } : null });
   }
   return out;
@@ -1551,7 +1551,7 @@ async function runCmpAnalyse(d) {
       summary: sStr("150–300 word analysis in simple markdown (## heading, - list, **bold**): ARBA's price position vs competitors by pax (incl. like-for-like prices), inclusion differences, risks and opportunities."),
       actions: { type: "array", description: "3–6 concrete recommendations for the PO (price, inclusions, USP, how Sales should pitch).", items: { type: "string" } },
     });
-    const r = await aiCall({ system: AI_SYS, schema, content: [{ type: "text", text: `Destination: ${d.name}. Pax for prices: ${cmpPax(d).join(", ")}. Aspects: ${asp.map(a => a[0] + " = " + a[1]).join("; ")}.\n\nARBA packages (price = Catalog Price):\n${JSON.stringify(arba)}\n\nCompetitors:\n${JSON.stringify(comps)}\n\nFill the ARBA aspects from the catalogue, write strengths / weaknesses for each column, a summary and recommendations.` }] });
+    const r = await aiCall({ system: AI_SYS, schema, content: [{ type: "text", text: `Destination: ${d.name}. Pax for prices: ${cmpPax(d).join(", ")}. Aspects: ${asp.map(a => a[0] + " = " + a[1]).join("; ")}.\n\nARBA packages (price = Selling Price):\n${JSON.stringify(arba)}\n\nCompetitors:\n${JSON.stringify(comps)}\n\nFill the ARBA aspects from the catalogue, write strengths / weaknesses for each column, a summary and recommendations.` }] });
     CMP_AI = { kind: "analysis", r };
     $("#aiOut").innerHTML = `<div class="cmp-md">${cmpMd(r.summary)}${(r.actions || []).length ? `<h4>Recommendations</h4><ul>${r.actions.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
       <label class="small" style="display:flex;gap:6px;align-items:center;flex-direction:row"><input type="checkbox" id="aiOverwrite"> Overwrite cells that are already filled (ARBA aspects, Strength, Weakness)</label>
