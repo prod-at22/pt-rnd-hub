@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (12 Oct 2026) — v83 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v83, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (12 Oct 2026) — v85 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v85, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -185,6 +185,13 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   4D3N and Honeymoon 3D2N removed (PO). Add-ons: catalog items cost from RAW DATA, selling = catalog; Poring + Canopy (20 / 15) and Mari-Mari swap (150 / 120) below cost
   (flag); TripCare Area 2 / second Blue Ribbon set removed. KB: guesthouse texts removed, single 4D3N RM450, last-minute text removed (not in the catalog), upgrade 3.5★
   +RM80 / 4★ +RM150, Van 8-seater 5–8. Child cost kept CWB 85 % / CNB 65 %. CR folder "CR KK Kundasang" in the R&D dir not used (not opened).
+  **Krabi (v84–v85, PO ezie 14 Oct; KTT CR 2026 = Drive "CR PT 2026 (CENTRALIZE)/CR KRABI" (High 11 Jan–30 Apr, Low 1 May–31 Oct 2026) + KTT 2027 (6 PDFs from
+  Telegram, 11 Jan–30 Apr 2027)):** 88 of 110 hub rates = CR 2026 exactly (Normal = Low, High = High highest range); 22 honeymoon High rates have no CR (copied Normal, flag).
+  Day 3 Phi Phi sells +RM100 (catalog) via new app.js field variants[].sellingUpgrade (also in TO Comparison; test added); Honeymoon 4★ upgrade RM225/pax = RM450/couple
+  (catalog; 4★+ 525); Costing 2–10 pax; add-ons: Kayaking / 7-Islands catalog items with cost, TripCare Area 1, visa row removed; KB: Standard year-end peak from 1 Nov,
+  FAQ upgrade / CNB fixed. Flags: 2027 rates not in Costing (PO decision), no KTT 4D3N rate 1 Nov 2026–10 Jan 2027, CR 2026 typos. TO Contract Rate (v85): Low 2026
+  (6) + 2027 (6) PDFs; the 3 High 2026 PDFs removed (PO); 2027 PDFs compressed 5.3 → 1.4 MB (whole Segoe UI Emoji font was embedded; subset with fontTools via
+  PyMuPDF, every page renders identical). Pushing 51 MB needed `git -c http.postBuffer=524288000 push`; the removed / old blobs stay in git history (v84).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 11 destinations** (costs stored in MYR): TUR, ISTBUR, ISTCAP, LOP, JOG, MEL, PER, NSNZ, KMGDLS, PHU, SWS —
   convert each to its currency during its check (confirm the FX each table was made with first).
