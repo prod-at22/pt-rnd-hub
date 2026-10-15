@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v112 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v112, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v113 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v113, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -332,6 +332,10 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Danang catalogs print single RM240 / RM320 (= KB); KB turki Istanbul-Bursa / Cappadocia quotation meals = catalog (deposit Cappadocia already RM1,000 per variant; Travel Map left);
   KB perhentian airport transfer = catalog 'Return RM65/pax' (itinerary leg RM32.50 each way); KB switzerland: Self Tour added (card + variant 'st' → SWS musafir-arbato-st,
   'pass' transport option; KB extension days still priced on the PT van rates — flag).
+  **v113 (PO ezie 15 Oct): bug fixes after the final check** — KB Bali Honeymoon Premium peak 1–5 Jan 2027 RM40 → RM60; KB Switzerland package selector (c_pkg,
+  missing since v112); KB Perhentian peak 21 Mac 2025 → 2026; names.json stale names removed. Checks (scripts in the session scratch, not in the repo): 28 KB calculators end to end,
+  38 hub pages, data integrity, 298 live links — all clean. Open question: Maldives Christmas Eve / NYE (+RM600 / 700) — KB charges only the highest flat surcharge, not on top of Peak +RM200.
+  PO: KB-only surcharges / notes live in the hub (data/kb, Simple Calculator tab) — not added to the catalog Surcharge tab.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 2 destinations** (costs stored in MYR): JOG, MLE (PER v105, PHU v106, SUBB v108, SWS v109 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).

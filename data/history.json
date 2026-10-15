@@ -169956,6 +169956,78 @@
      "label": "KB switzerland › calc › trpOptions"
     }
    ]
+  },
+  {
+   "v": 113,
+   "at": "2026-10-15T17:00:00Z",
+   "by": "ezie",
+   "note": "Bug fixes after the final Hub × KB × catalog check (PO ezie 15 Oct 2026): KB Bali Honeymoon Premium peak 1–5 Jan 2027 charged the Standard rate RM40/pax/night → RM60 (= RM120/couple/night, catalog; the villa night keeps its 'tambah surcaj peak season villa' option +RM65 → RM250/couple); KB Switzerland calculator had no package selector although Self Tour was added in v112 → c_pkg added; KB Perhentian Shari-La peak started 21 Mar 2025 → 21 Mar 2026 (= catalog); tools/names.json: removed names of packages / TOs deleted earlier (Jeju and Cappadocia Self Tour, KK guesthouse + honeymoon 3D2N). Checks run: 28 KB calculators end to end (tier price, peak, extra surcharges), 38 hub pages (every package, no JS error / NaN), data integrity, 298 live links (all 200).",
+   "changes": [
+    {
+     "path": [
+      "kb",
+      "bali",
+      "calc",
+      "variants",
+      "hnyprem",
+      "peak",
+      "windows",
+      5
+     ],
+     "from": [
+      "2027-01-01",
+      "2027-01-05",
+      null,
+      40
+     ],
+     "to": [
+      "2027-01-01",
+      "2027-01-05"
+     ],
+     "label": "KB bali › calc › variants › hnyprem › peak › windows › #6"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season, surcaj travel 2027, last minute dan late booking dikira sendiri. Dalam panel <b>Ubah itinerary</b>, setiap hari boleh ditukar kepada mana-mana blok dalam pustaka (Zurich &middot; Lucerne &middot; Interlaken &middot; Zermatt &middot; panoramic train). Hari yang TC tambah sendiri terus berkos ikut kadar extension; malam lebih atau kurang daripada pakej asal dilaras sendiri. Sumber: katalog PT Switzerland Standard 7D6N 2026 (last updated 8 Dis 2025) dan rate card ARBA. Switzerland <b>tiada ProdReq</b>, jadi kadar transport adalah satu kadar rata seluruh negara &mdash; tiada kadar ikut kawasan.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (7&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;6)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>RM 900 flat, bukan FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>Quoted upon request (katalog) &mdash; minta kadar daripada PO</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (adult)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season, surcaj travel 2027, last minute dan late booking dikira sendiri. Dalam panel <b>Ubah itinerary</b>, setiap hari boleh ditukar kepada mana-mana blok dalam pustaka (Zurich &middot; Lucerne &middot; Interlaken &middot; Zermatt &middot; panoramic train). Hari yang TC tambah sendiri terus berkos ikut kadar extension; malam lebih atau kurang daripada pakej asal dilaras sendiri. Sumber: katalog PT Switzerland Standard 7D6N 2026 (last updated 8 Dis 2025) dan rate card ARBA. Switzerland <b>tiada ProdReq</b>, jadi kadar transport adalah satu kadar rata seluruh negara &mdash; tiada kadar ikut kawasan.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='pkgsel'><label><span class='fl'>Pakej</span><select id='c_pkg'><option value='0'>PT Switzerland Standard 7D6N</option><option value='1'>ST Switzerland Self Tour 7D6N</option></select></label></div><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (7&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;6)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>RM 900 flat, bukan FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>Quoted upon request (katalog) &mdash; minta kadar daripada PO</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (adult)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB switzerland › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "content",
+      "packages",
+      1,
+      "note"
+     ],
+     "from": "Katalog BASIC V3 2026, sah sehingga 15 Oktober 2026. Single supplement +RM500/pax. Peak season +RM50/pax/malam (21 Mac 2025 - 30 September 2026). Surcharge travel date 2027 +RM50/pax/malam (15 Februari - 31 Mac 2027). Deposit RM250/pax; late booking +RM50/booking jika tempah kurang 45 hari sebelum bertolak.",
+     "to": "Katalog BASIC V3 2026, sah sehingga 15 Oktober 2026. Single supplement +RM500/pax. Peak season +RM50/pax/malam (21 Mac 2026 - 30 September 2026). Surcharge travel date 2027 +RM50/pax/malam (15 Februari - 31 Mac 2027). Deposit RM250/pax; late booking +RM50/booking jika tempah kurang 45 hari sebelum bertolak.",
+     "label": "KB perhentian › content › packages › #2 › note"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "calc",
+      "variants",
+      "basic",
+      "peak",
+      "windows",
+      0,
+      0
+     ],
+     "from": "2025-03-21",
+     "to": "2026-03-21",
+     "label": "KB perhentian › calc › variants › basic › peak › windows › #1 › #1"
+    }
+   ]
   }
  ]
 }
