@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-10-12",
+  "updated": "2026-10-15",
   "kb_url": "https://prod-at22.github.io/arba-danang-kb/",
   "po": "Ezie",
   "ops": "ILY",
@@ -224,7 +224,7 @@
       "entries": [
         "All prices are valid for 24 hours after quotation submission.",
         "The price is for 2 to 3 persons per room.",
-        "Single supplement: quoted on request.",
+        "Single supplement: RM240/pax.",
         "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
         "Last Minute Surcharge will be charged if booking is made less than 3 weeks before departure (refer to the Last Minute Surcharge in the Surcharge table).",
         "All itinerary, flight, price or quotation is subject to change.",
@@ -246,5 +246,5 @@
     }
   ],
   "addon_groups": [],
-  "hub_version": 69
+  "hub_version": 112
 }

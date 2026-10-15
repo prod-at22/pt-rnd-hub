@@ -594,11 +594,11 @@
    },
    {
     "v": "kbtrf",
-    "t": "Airport transfer Kota Bharu &harr; Jetty Kuala Besut (sharing, sehala)",
+    "t": "Airport transfer Kota Bharu &harr; Jetty Kuala Besut (sharing, return RM65/pax = RM32.50 sehala)",
     "cost": "zero",
-    "perPax": 65,
+    "perPax": 32.5,
     "lbl": "Airport Transfer (Kota Bharu - Kuala Besut Jetty)",
-    "line": "Airport Transfer on sharing basis (one way)",
+    "line": "Airport Transfer on sharing basis (one way; return RM65/pax)",
     "incl": "Airport Transfer on sharing basis, Kota Bharu Airport to Kuala Besut Jetty ({days})"
    },
    {
@@ -632,15 +632,9 @@
   ],
   "addons": [
    [
-    "Airport Transfer Kota Bharu - Jetty Kuala Besut (sharing, sehala)",
-    65,
-    65,
-    "pax"
-   ],
-   [
     "Airport Transfer Kota Bharu - Jetty Kuala Besut (sharing, return)",
-    130,
-    130,
+    65,
+    65,
     "pax"
    ],
    [

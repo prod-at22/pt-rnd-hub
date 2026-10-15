@@ -168708,6 +168708,1254 @@
      "label": "KB krabi › calc › variants › hny › tiers"
     }
    ]
+  },
+  {
+   "v": 112,
+   "at": "2026-10-15T16:00:00Z",
+   "by": "ezie",
+   "note": "KB / catalog alignment (PO ezie 15 Oct 2026; KB keeps extra surcharges that do not contradict the catalog, e.g. 2027): Danang 4D3N / 5D4N catalogs print the single supplement RM240 / RM320 (= KB, was 'quoted on request'); KB turki quotation meals = catalog for Istanbul-Bursa (4B / 5L / 4D) and Istanbul-Cappadocia (5B / 4L / 5D) — deposit was already RM1,000 for Cappadocia, Travel Map left as is (PO); KB perhentian airport transfer = catalog 'Return RM65/pax' (one-way add-on removed, return add-on RM130 → RM65, itinerary leg RM32.50 each way); KB switzerland: Self Tour 7D6N added (package card, catalog switzerland-self-tour, calculator variant 'st' linked to SWS musafir-arbato-st, Swiss Travel Pass transport option). flags_open: Turki KB meals / Hotel Day 1 items closed, Perhentian and Switzerland items updated.",
+   "changes": [
+    {
+     "path": [
+      "catalogs",
+      "danang-hoi-an-4d3n",
+      "notes",
+      0,
+      "entries",
+      2
+     ],
+     "from": "Single supplement: quoted on request.",
+     "to": "Single supplement: RM240/pax.",
+     "label": "Catalog danang-hoi-an-4d3n › notes › #1 › entries › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "danang-hoi-an-5d4n",
+      "notes",
+      0,
+      "entries",
+      2
+     ],
+     "from": "Single supplement: quoted on request.",
+     "to": "Single supplement: RM320/pax.",
+     "label": "Catalog danang-hoi-an-5d4n › notes › #1 › entries › #3"
+    },
+    {
+     "path": [
+      "kb",
+      "turki",
+      "calc",
+      "variants",
+      "istcap",
+      "inclusions",
+      5
+     ],
+     "from": "{nights} breakfasts",
+     "to": "Meals (5x International Breakfast, 4x Lunch, 5x Dinner)",
+     "label": "KB turki › calc › variants › istcap › inclusions › #6"
+    },
+    {
+     "path": [
+      "kb",
+      "turki",
+      "calc",
+      "variants",
+      "istbur",
+      "inclusions",
+      4
+     ],
+     "from": "{nights} breakfasts",
+     "to": "Meals (4x International Breakfast, 5x Lunch, 4x Dinner)",
+     "label": "KB turki › calc › variants › istbur › inclusions › #5"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "calc",
+      "trpOptions",
+      3,
+      "t"
+     ],
+     "from": "Airport transfer Kota Bharu &harr; Jetty Kuala Besut (sharing, sehala)",
+     "to": "Airport transfer Kota Bharu &harr; Jetty Kuala Besut (sharing, return RM65/pax = RM32.50 sehala)",
+     "label": "KB perhentian › calc › trpOptions › #4 › t"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "calc",
+      "trpOptions",
+      3,
+      "perPax"
+     ],
+     "from": 65,
+     "to": 32.5,
+     "label": "KB perhentian › calc › trpOptions › #4 › perPax"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "calc",
+      "trpOptions",
+      3,
+      "line"
+     ],
+     "from": "Airport Transfer on sharing basis (one way)",
+     "to": "Airport Transfer on sharing basis (one way; return RM65/pax)",
+     "label": "KB perhentian › calc › trpOptions › #4 › line"
+    },
+    {
+     "path": [
+      "kb",
+      "perhentian",
+      "calc",
+      "addons"
+     ],
+     "from": [
+      [
+       "Airport Transfer Kota Bharu - Jetty Kuala Besut (sharing, sehala)",
+       65,
+       65,
+       "pax"
+      ],
+      [
+       "Airport Transfer Kota Bharu - Jetty Kuala Besut (sharing, return)",
+       130,
+       130,
+       "pax"
+      ],
+      [
+       "Private Boat Transfer return - Jetty Kuala Besut ke resort (max 12 pax sebot)",
+       957,
+       0,
+       "unit"
+      ],
+      [
+       "Private Boat Island Hopping 5 snorkelling point (max 12 pax sebot)",
+       957,
+       0,
+       "unit"
+      ],
+      [
+       "Snorkelling Pulau Rawa (sharing boat, minimum 4 pax)",
+       120,
+       120,
+       "pax"
+      ],
+      [
+       "Scuba Diving DSD - termasuk gear & dive master (minimum 1 pax)",
+       300,
+       300,
+       "pax"
+      ],
+      [
+       "Scuba Diving Fun Dive - termasuk gear & dive master (minimum 1 pax)",
+       120,
+       120,
+       "pax"
+      ],
+      [
+       "Honeymoon Package Mimpi - deko bilik + candle light dinner",
+       600,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Ombak - deko bilik + candle light dinner",
+       380,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Shari-la - deko bilik + candle light dinner",
+       280,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Flora Bay - deko bilik + candle light dinner",
+       297,
+       0,
+       "unit"
+      ],
+      [
+       "Picnic Trip",
+       45,
+       45,
+       "pax"
+      ],
+      [
+       "Extra Breakfast",
+       25,
+       25,
+       "pax"
+      ],
+      [
+       "Extra Lunch / Dinner",
+       35,
+       35,
+       "pax"
+      ],
+      [
+       "BBQ Dinner",
+       37,
+       37,
+       "pax"
+      ],
+      [
+       "Kayak - per jam per couple",
+       15,
+       0,
+       "unit"
+      ],
+      [
+       "Takaful TripCare 360 individu 1-5 hari (Area 1 domestik)",
+       50,
+       50,
+       "pax"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Silver",
+       20,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Gold",
+       40,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Platinum",
+       55,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Diamond",
+       70,
+       0,
+       "unit"
+      ]
+     ],
+     "to": [
+      [
+       "Airport Transfer Kota Bharu - Jetty Kuala Besut (sharing, return)",
+       65,
+       65,
+       "pax"
+      ],
+      [
+       "Private Boat Transfer return - Jetty Kuala Besut ke resort (max 12 pax sebot)",
+       957,
+       0,
+       "unit"
+      ],
+      [
+       "Private Boat Island Hopping 5 snorkelling point (max 12 pax sebot)",
+       957,
+       0,
+       "unit"
+      ],
+      [
+       "Snorkelling Pulau Rawa (sharing boat, minimum 4 pax)",
+       120,
+       120,
+       "pax"
+      ],
+      [
+       "Scuba Diving DSD - termasuk gear & dive master (minimum 1 pax)",
+       300,
+       300,
+       "pax"
+      ],
+      [
+       "Scuba Diving Fun Dive - termasuk gear & dive master (minimum 1 pax)",
+       120,
+       120,
+       "pax"
+      ],
+      [
+       "Honeymoon Package Mimpi - deko bilik + candle light dinner",
+       600,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Ombak - deko bilik + candle light dinner",
+       380,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Shari-la - deko bilik + candle light dinner",
+       280,
+       0,
+       "unit"
+      ],
+      [
+       "Honeymoon Package Flora Bay - deko bilik + candle light dinner",
+       297,
+       0,
+       "unit"
+      ],
+      [
+       "Picnic Trip",
+       45,
+       45,
+       "pax"
+      ],
+      [
+       "Extra Breakfast",
+       25,
+       25,
+       "pax"
+      ],
+      [
+       "Extra Lunch / Dinner",
+       35,
+       35,
+       "pax"
+      ],
+      [
+       "BBQ Dinner",
+       37,
+       37,
+       "pax"
+      ],
+      [
+       "Kayak - per jam per couple",
+       15,
+       0,
+       "unit"
+      ],
+      [
+       "Takaful TripCare 360 individu 1-5 hari (Area 1 domestik)",
+       50,
+       50,
+       "pax"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Silver",
+       20,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Gold",
+       40,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Platinum",
+       55,
+       0,
+       "unit"
+      ],
+      [
+       "Luggage Tracker Blue Ribbon Diamond",
+       70,
+       0,
+       "unit"
+      ]
+     ],
+     "label": "KB perhentian › calc › addons"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "map",
+      "variants",
+      "st"
+     ],
+     "from": null,
+     "to": {
+      "code": "SWS",
+      "package": "musafir-arbato-st"
+     },
+     "label": "KB switzerland › map › variants › st"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "map",
+      "packages"
+     ],
+     "from": [
+      {
+       "catalog": "switzerland-standard"
+      }
+     ],
+     "to": [
+      {
+       "catalog": "switzerland-standard"
+      },
+      {
+       "catalog": "switzerland-self-tour"
+      }
+     ],
+     "label": "KB switzerland › map › packages"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "packages"
+     ],
+     "from": [
+      {
+       "n": "PT Switzerland Standard 7D6N",
+       "tag": "SWITZERLAND · 7D6N",
+       "sub": "Private Tour · Zurich–Zermatt–Interlaken · Malaysian driver-cum-guide",
+       "emoji": "🏔️",
+       "img": "@asset:cd6693630614",
+       "intro": "Private tour 7 hari 6 malam merentasi Switzerland — Zurich, Rhine Falls, Lucerne, Bern, Grindelwald, Lauterbrunnen, Zermatt, Blausee & Interlaken. Travel khas untuk family/group anda sahaja dengan van/MPV persendirian dan Malaysian driver-cum-guide (BM/English). Selesa, fleksibel, santai berbanding group tour — dan driver bawa ke stop halal setiap hari.",
+       "note": "Harga Ground & Tipping sahaja — tiket flight TIDAK termasuk. Sah untuk travel period sehingga 31 Dis 2026. Harga based 2–3 orang sebilik. Age based on travel date: Adult 12+, CWB 7–11, CNB 2–6, Infant <2 (RM 900 flat, bukan FOC)."
+      }
+     ],
+     "to": [
+      {
+       "n": "PT Switzerland Standard 7D6N",
+       "tag": "SWITZERLAND · 7D6N",
+       "sub": "Private Tour · Zurich–Zermatt–Interlaken · Malaysian driver-cum-guide",
+       "emoji": "🏔️",
+       "img": "@asset:cd6693630614",
+       "intro": "Private tour 7 hari 6 malam merentasi Switzerland — Zurich, Rhine Falls, Lucerne, Bern, Grindelwald, Lauterbrunnen, Zermatt, Blausee & Interlaken. Travel khas untuk family/group anda sahaja dengan van/MPV persendirian dan Malaysian driver-cum-guide (BM/English). Selesa, fleksibel, santai berbanding group tour — dan driver bawa ke stop halal setiap hari.",
+       "note": "Harga Ground & Tipping sahaja — tiket flight TIDAK termasuk. Sah untuk travel period sehingga 31 Dis 2026. Harga based 2–3 orang sebilik. Age based on travel date: Adult 12+, CWB 7–11, CNB 2–6, Infant <2 (RM 900 flat, bukan FOC)."
+      },
+      {
+       "n": "ST Switzerland Self Tour 7D6N",
+       "tag": "SWITZERLAND · 7D6N · SELF TOUR",
+       "sub": "Self Tour · Swiss Travel Pass · train, tram & bus",
+       "emoji": "🚆",
+       "img": "@asset:cd6693630614",
+       "intro": "Self tour 7 hari 6 malam laluan yang sama (Zurich, Rhine Falls, Lucerne, Bern, Grindelwald, Lauterbrunnen, Murren, Zermatt, Blausee & Interlaken) guna pengangkutan awam Switzerland — Swiss Travel Pass untuk train, tram & bus (D1–D7), termasuk airport transfer dengan train, train Täsch–Zermatt, cable car ke Murren, Lake Blausee, Interlaken Lake Cruise dan Rhine Falls Boat Tour. Tiada driver / guide: sesi konsultasi 14 hari sebelum trip + online trip assistance (waktu pejabat Malaysia).",
+       "note": "Harga Ground Only (self-guided, tiada tipping) — tiket flight TIDAK termasuk. Sah untuk travel period sehingga 31 Dis 2026. Harga based 2–3 orang sebilik. City tax (~CHF3.50/pax/malam) bayar sendiri di hotel. Banyak berjalan & tangga di stesen train."
+      }
+     ],
+     "label": "KB switzerland › content › packages"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "itineraries"
+     ],
+     "from": [
+      null
+     ],
+     "to": [
+      null,
+      null
+     ],
+     "label": "KB switzerland › content › itineraries"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "calc",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "std",
+       "name": "PT Switzerland Standard 7D6N",
+       "pkgLabel": "Zurich - Rhine Falls - Lucerne - Bern - Grindelwald - Lauterbrunnen - Zermatt - Blausee - Interlaken Switzerland Muslim Tour (3/4*)",
+       "pkgType": "Private Tour (Ground Arrangement Only)",
+       "hotelLabel": "3/4-Star Hotel",
+       "days": 7,
+       "nights": 6,
+       "infant": 900,
+       "single": 0,
+       "labelCwb": "Child With Bed (7-11)",
+       "labelCnb": "Child No Bed (2-6)",
+       "lastMinute": {
+        "lt": 21,
+        "rate2": 700,
+        "rate3": 500
+       },
+       "tiers": [
+        {
+         "from": 2,
+         "to": 2,
+         "a": 14997,
+         "c": 14797,
+         "n": 14597
+        },
+        {
+         "from": 3,
+         "to": 3,
+         "a": 11997,
+         "c": 11797,
+         "n": 11597
+        },
+        {
+         "from": 4,
+         "to": 4,
+         "a": 9997,
+         "c": 9797,
+         "n": 9597
+        },
+        {
+         "from": 5,
+         "to": 5,
+         "a": 8997,
+         "c": 8797,
+         "n": 8597
+        },
+        {
+         "from": 6,
+         "to": 7,
+         "a": 7997,
+         "c": 7797,
+         "n": 7597
+        },
+        {
+         "from": 8,
+         "to": 8,
+         "a": 9997,
+         "c": 9797,
+         "n": 9597
+        },
+        {
+         "from": 9,
+         "to": 10,
+         "a": 8997,
+         "c": 8797,
+         "n": 8597
+        },
+        {
+         "from": 11,
+         "to": 14,
+         "a": 7997,
+         "c": 7797,
+         "n": 7597
+        }
+       ],
+       "itin": [
+        {
+         "v": "d1",
+         "t": "KL - Zurich (Ketibaan)",
+         "en": "ZURICH ARRIVAL",
+         "acc": "incl",
+         "meal": "none",
+         "trp": "air",
+         "act": [
+          "Tiba Zurich Airport (ZRH), disambut Malaysian driver-cum-guide",
+          "Transfer ke hotel & check in Zurich",
+          "Free & easy"
+         ],
+         "eact": [
+          "Arrive Zurich Airport (ZRH), met by Malaysian driver-cum-guide",
+          "Transfer to hotel & check in Zurich",
+          "Free & easy"
+         ]
+        },
+        {
+         "v": "d2",
+         "t": "Rhine Falls & Zurich",
+         "en": "RHINE FALLS & ZURICH",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Rhine Falls - air terjun terbesar Eropah (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (lokasi CLOY)",
+          "Burkliplatz - jambatan tertua Zurich (lokasi CLOY)",
+          "Bahnhofstrasse - shopping street"
+         ],
+         "eact": [
+          "Rhine Falls - largest waterfall in Europe (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (CLOY filming location)",
+          "Burkliplatz - oldest bridge in Zurich (CLOY filming location)",
+          "Bahnhofstrasse shopping street"
+         ]
+        },
+        {
+         "v": "d3",
+         "t": "Engelberg - Lucerne - Bern",
+         "en": "ENGELBERG - LUCERNE - BERN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - jambatan kayu lama",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - the famous old wooden bridge",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d4",
+         "t": "Grindelwald - Lauterbrunnen - Murren",
+         "en": "GRINDELWALD - LAUTERBRUNNEN - MURREN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Grindelwald - alpine village dengan pemandangan Alps",
+          "Lauterbrunnen - lembah dengan 72 air terjun",
+          "Staubbach Waterfall",
+          "Murren - alpine village",
+          "Birg & Schilthorn - lokasi filem James Bond (optional)"
+         ],
+         "eact": [
+          "Grindelwald - mountain village with Alpine view",
+          "Lauterbrunnen - fairy-tale valley with 72 waterfalls",
+          "Staubbach Waterfall",
+          "Murren - mountain village with Alpine view",
+          "Birg & Schilthorn - James Bond filming location (optional)"
+         ]
+        },
+        {
+         "v": "d5",
+         "t": "Tasch - Zermatt",
+         "en": "TASCH - ZERMATT",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - gunung 'Toblerone' (optional)",
+          "Gornergrat - pemandangan Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ],
+         "eact": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - the 'Toblerone' mountain (optional)",
+          "Gornergrat - magnificent view of the Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ]
+        },
+        {
+         "v": "d6",
+         "t": "Blausee - Interlaken - Iseltwald",
+         "en": "BLAUSEE - INTERLAKEN - ISELTWALD",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "Lake Blausee - tasik biru turquoise (FREE entry)",
+          "Interlaken West - shopping street",
+          "Interlaken Lake Cruise (optional)",
+          "Iseltwald - lokasi filem CLOY",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Lake Blausee - the famous turquoise-blue lake (FREE entry)",
+          "Interlaken West shopping street",
+          "Interlaken Lake Cruise (optional)",
+          "Iseltwald - CLOY filming location",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d7",
+         "t": "Zurich (Berlepas)",
+         "en": "ZURICH DEPARTURE",
+         "acc": "none",
+         "meal": "b",
+         "trp": "air",
+         "act": [
+          "Check out hotel",
+          "Transfer ke Zurich Airport",
+          "Berlepas - tamat perkhidmatan"
+         ],
+         "eact": [
+          "Check out hotel",
+          "Transfer to Zurich Airport",
+          "Departure - end of service"
+         ]
+        }
+       ],
+       "inclusions": [
+        "{nights} nights accommodation in 3/4-Star hotels including daily breakfast (base package: 2 nights Zurich, 2 nights Bern, 1 night Tasch, 1 night Bern)",
+        "Private Airport Transfer (MPV or Van) on Day 1 & Day {days}",
+        "Transportation in Switzerland via Private Transport (MPV or Van), Day 2 - Day 6",
+        "Intercity transfer via Private Transport",
+        "Malaysian driver-cum-guide (Malay / English speaking)",
+        "FREE panoramic train transfer Tasch to Zermatt",
+        "FREE entry to Lake Blausee",
+        "FREE Rhine Falls Boat Tour",
+        "Tipping for driver-cum-guide"
+       ],
+       "exclusions": [
+        "International flight tickets (return)",
+        "Personal expenses",
+        "Travel insurance"
+       ],
+       "exclusionsTail": [
+        "Fees for other or optional activities not stated above",
+        "City taxes or tourism tax where applicable",
+        "ETIAS travel authorisation (approx. EUR 20 per pax, from Q4 2026)"
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "std",
+       "name": "PT Switzerland Standard 7D6N",
+       "pkgLabel": "Zurich - Rhine Falls - Lucerne - Bern - Grindelwald - Lauterbrunnen - Zermatt - Blausee - Interlaken Switzerland Muslim Tour (3/4*)",
+       "pkgType": "Private Tour (Ground Arrangement Only)",
+       "hotelLabel": "3/4-Star Hotel",
+       "days": 7,
+       "nights": 6,
+       "infant": 900,
+       "single": 0,
+       "labelCwb": "Child With Bed (7-11)",
+       "labelCnb": "Child No Bed (2-6)",
+       "lastMinute": {
+        "lt": 21,
+        "rate2": 700,
+        "rate3": 500
+       },
+       "tiers": [
+        {
+         "from": 2,
+         "to": 2,
+         "a": 14997,
+         "c": 14797,
+         "n": 14597
+        },
+        {
+         "from": 3,
+         "to": 3,
+         "a": 11997,
+         "c": 11797,
+         "n": 11597
+        },
+        {
+         "from": 4,
+         "to": 4,
+         "a": 9997,
+         "c": 9797,
+         "n": 9597
+        },
+        {
+         "from": 5,
+         "to": 5,
+         "a": 8997,
+         "c": 8797,
+         "n": 8597
+        },
+        {
+         "from": 6,
+         "to": 7,
+         "a": 7997,
+         "c": 7797,
+         "n": 7597
+        },
+        {
+         "from": 8,
+         "to": 8,
+         "a": 9997,
+         "c": 9797,
+         "n": 9597
+        },
+        {
+         "from": 9,
+         "to": 10,
+         "a": 8997,
+         "c": 8797,
+         "n": 8597
+        },
+        {
+         "from": 11,
+         "to": 14,
+         "a": 7997,
+         "c": 7797,
+         "n": 7597
+        }
+       ],
+       "itin": [
+        {
+         "v": "d1",
+         "t": "KL - Zurich (Ketibaan)",
+         "en": "ZURICH ARRIVAL",
+         "acc": "incl",
+         "meal": "none",
+         "trp": "air",
+         "act": [
+          "Tiba Zurich Airport (ZRH), disambut Malaysian driver-cum-guide",
+          "Transfer ke hotel & check in Zurich",
+          "Free & easy"
+         ],
+         "eact": [
+          "Arrive Zurich Airport (ZRH), met by Malaysian driver-cum-guide",
+          "Transfer to hotel & check in Zurich",
+          "Free & easy"
+         ]
+        },
+        {
+         "v": "d2",
+         "t": "Rhine Falls & Zurich",
+         "en": "RHINE FALLS & ZURICH",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Rhine Falls - air terjun terbesar Eropah (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (lokasi CLOY)",
+          "Burkliplatz - jambatan tertua Zurich (lokasi CLOY)",
+          "Bahnhofstrasse - shopping street"
+         ],
+         "eact": [
+          "Rhine Falls - largest waterfall in Europe (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (CLOY filming location)",
+          "Burkliplatz - oldest bridge in Zurich (CLOY filming location)",
+          "Bahnhofstrasse shopping street"
+         ]
+        },
+        {
+         "v": "d3",
+         "t": "Engelberg - Lucerne - Bern",
+         "en": "ENGELBERG - LUCERNE - BERN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - jambatan kayu lama",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - the famous old wooden bridge",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d4",
+         "t": "Grindelwald - Lauterbrunnen - Murren",
+         "en": "GRINDELWALD - LAUTERBRUNNEN - MURREN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Grindelwald - alpine village dengan pemandangan Alps",
+          "Lauterbrunnen - lembah dengan 72 air terjun",
+          "Staubbach Waterfall",
+          "Murren - alpine village",
+          "Birg & Schilthorn - lokasi filem James Bond (optional)"
+         ],
+         "eact": [
+          "Grindelwald - mountain village with Alpine view",
+          "Lauterbrunnen - fairy-tale valley with 72 waterfalls",
+          "Staubbach Waterfall",
+          "Murren - mountain village with Alpine view",
+          "Birg & Schilthorn - James Bond filming location (optional)"
+         ]
+        },
+        {
+         "v": "d5",
+         "t": "Tasch - Zermatt",
+         "en": "TASCH - ZERMATT",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - gunung 'Toblerone' (optional)",
+          "Gornergrat - pemandangan Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ],
+         "eact": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - the 'Toblerone' mountain (optional)",
+          "Gornergrat - magnificent view of the Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ]
+        },
+        {
+         "v": "d6",
+         "t": "Blausee - Interlaken - Iseltwald",
+         "en": "BLAUSEE - INTERLAKEN - ISELTWALD",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "incl",
+         "act": [
+          "Check out",
+          "Lake Blausee - tasik biru turquoise (FREE entry)",
+          "Interlaken West - shopping street",
+          "Interlaken Lake Cruise (optional)",
+          "Iseltwald - lokasi filem CLOY",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Lake Blausee - the famous turquoise-blue lake (FREE entry)",
+          "Interlaken West shopping street",
+          "Interlaken Lake Cruise (optional)",
+          "Iseltwald - CLOY filming location",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d7",
+         "t": "Zurich (Berlepas)",
+         "en": "ZURICH DEPARTURE",
+         "acc": "none",
+         "meal": "b",
+         "trp": "air",
+         "act": [
+          "Check out hotel",
+          "Transfer ke Zurich Airport",
+          "Berlepas - tamat perkhidmatan"
+         ],
+         "eact": [
+          "Check out hotel",
+          "Transfer to Zurich Airport",
+          "Departure - end of service"
+         ]
+        }
+       ],
+       "inclusions": [
+        "{nights} nights accommodation in 3/4-Star hotels including daily breakfast (base package: 2 nights Zurich, 2 nights Bern, 1 night Tasch, 1 night Bern)",
+        "Private Airport Transfer (MPV or Van) on Day 1 & Day {days}",
+        "Transportation in Switzerland via Private Transport (MPV or Van), Day 2 - Day 6",
+        "Intercity transfer via Private Transport",
+        "Malaysian driver-cum-guide (Malay / English speaking)",
+        "FREE panoramic train transfer Tasch to Zermatt",
+        "FREE entry to Lake Blausee",
+        "FREE Rhine Falls Boat Tour",
+        "Tipping for driver-cum-guide"
+       ],
+       "exclusions": [
+        "International flight tickets (return)",
+        "Personal expenses",
+        "Travel insurance"
+       ],
+       "exclusionsTail": [
+        "Fees for other or optional activities not stated above",
+        "City taxes or tourism tax where applicable",
+        "ETIAS travel authorisation (approx. EUR 20 per pax, from Q4 2026)"
+       ]
+      },
+      {
+       "id": "st",
+       "name": "ST Switzerland Self Tour 7D6N",
+       "pkgLabel": "Zurich - Rhine Falls - Lucerne - Bern - Grindelwald - Lauterbrunnen - Zermatt - Blausee - Interlaken Switzerland Self Tour (3/4*)",
+       "pkgType": "Self Tour (Ground Arrangement Only)",
+       "hotelLabel": "3/4-Star Hotel",
+       "days": 7,
+       "nights": 6,
+       "infant": 900,
+       "single": 0,
+       "labelCwb": "Child With Bed (7-11)",
+       "labelCnb": "Child No Bed (2-6)",
+       "lastMinute": {
+        "lt": 21,
+        "rate2": 700,
+        "rate3": 500
+       },
+       "tiers": [
+        {
+         "from": 2,
+         "to": 14,
+         "a": 5897,
+         "c": 5697,
+         "n": 5497
+        }
+       ],
+       "itin": [
+        {
+         "v": "d1",
+         "t": "KL - Zurich (Ketibaan)",
+         "en": "ZURICH ARRIVAL",
+         "acc": "incl",
+         "meal": "none",
+         "trp": "pass",
+         "act": [
+          "Tiba Zurich Airport (ZRH)",
+          "Train ke Zurich & check in hotel",
+          "Free & easy"
+         ],
+         "eact": [
+          "Arrive at Zurich Airport (ZRH)",
+          "Train to Zurich & check in hotel",
+          "Free & easy"
+         ]
+        },
+        {
+         "v": "d2",
+         "t": "Rhine Falls & Zurich",
+         "en": "RHINE FALLS & ZURICH",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Rhine Falls - air terjun terbesar Eropah (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (lokasi CLOY)",
+          "Burkliplatz - jambatan tertua Zurich (lokasi CLOY)",
+          "Bahnhofstrasse - shopping street"
+         ],
+         "eact": [
+          "Rhine Falls - largest waterfall in Europe (FREE Boat Tour)",
+          "Zurich Old Town",
+          "Lindenhof (CLOY filming location)",
+          "Burkliplatz - oldest bridge in Zurich (CLOY filming location)",
+          "Bahnhofstrasse shopping street"
+         ]
+        },
+        {
+         "v": "d3",
+         "t": "Engelberg - Lucerne - Bern",
+         "en": "ENGELBERG - LUCERNE - BERN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - jambatan kayu lama",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Engelberg & Mount Titlis - 360 Rotair cable car (optional)",
+          "Lucerne Old Town",
+          "Chapel Bridge - the famous old wooden bridge",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d4",
+         "t": "Grindelwald - Lauterbrunnen - Murren",
+         "en": "GRINDELWALD - LAUTERBRUNNEN - MURREN",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Grindelwald - alpine village dengan pemandangan Alps",
+          "Lauterbrunnen - lembah dengan 72 air terjun",
+          "Staubbach Waterfall",
+          "Murren - alpine village",
+          "Birg & Schilthorn - lokasi filem James Bond (optional)"
+         ],
+         "eact": [
+          "Grindelwald - mountain village with Alpine view",
+          "Lauterbrunnen - fairy-tale valley with 72 waterfalls",
+          "Staubbach Waterfall",
+          "Murren - mountain village with Alpine view",
+          "Birg & Schilthorn - James Bond filming location (optional)"
+         ]
+        },
+        {
+         "v": "d5",
+         "t": "Tasch - Zermatt",
+         "en": "TASCH - ZERMATT",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - gunung 'Toblerone' (optional)",
+          "Gornergrat - pemandangan Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ],
+         "eact": [
+          "Check out",
+          "FREE panoramic train Tasch - Zermatt",
+          "Matterhorn - the 'Toblerone' mountain (optional)",
+          "Gornergrat - magnificent view of the Matterhorn (optional)",
+          "Check in hotel Tasch / Visp"
+         ]
+        },
+        {
+         "v": "d6",
+         "t": "Blausee - Interlaken - Iseltwald",
+         "en": "BLAUSEE - INTERLAKEN - ISELTWALD",
+         "acc": "incl",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Check out",
+          "Lake Blausee - tasik biru turquoise (FREE entry)",
+          "Interlaken West - shopping street",
+          "Interlaken Lake Cruise",
+          "Iseltwald - lokasi filem CLOY",
+          "Check in hotel Bern"
+         ],
+         "eact": [
+          "Check out",
+          "Lake Blausee - the famous turquoise-blue lake (FREE entry)",
+          "Interlaken West shopping street",
+          "Interlaken Lake Cruise",
+          "Iseltwald - CLOY filming location",
+          "Check in hotel Bern"
+         ]
+        },
+        {
+         "v": "d7",
+         "t": "Zurich (Berlepas)",
+         "en": "ZURICH DEPARTURE",
+         "acc": "none",
+         "meal": "b",
+         "trp": "pass",
+         "act": [
+          "Check out hotel",
+          "Train ke Zurich Airport",
+          "Berlepas"
+         ],
+         "eact": [
+          "Check out hotel",
+          "Train to Zurich Airport",
+          "Departure"
+         ]
+        }
+       ],
+       "inclusions": [
+        "{nights} nights accommodation in 3/4-Star hotels including daily breakfast (base package: 2 nights Zurich, 2 nights Bern, 1 night Tasch/Visp, 1 night Bern)",
+        "Airport transfer (local train, tram or bus)",
+        "Swiss Travel Pass - local public transport (train, tram & bus) Day 1 - Day {days}",
+        "Intercity transfer via local train",
+        "Train transfer Tasch to Zermatt",
+        "Cable car to Murren",
+        "Lake Blausee",
+        "Interlaken Lake Cruise",
+        "Rhine Falls Boat Tour",
+        "Consultation session (14 days before the trip)",
+        "Online trip assistance (Malaysia working hours)"
+       ],
+       "exclusions": [
+        "International flight tickets (return)",
+        "Personal expenses",
+        "Lunch & Dinner",
+        "Travel insurance"
+       ],
+       "exclusionsTail": [
+        "Fees for optional activities",
+        "City taxes or tourism tax",
+        "ETIAS travel authorisation (approx. EUR 20 per pax, from Q4 2026)"
+       ]
+      }
+     ],
+     "label": "KB switzerland › calc › variants"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "calc",
+      "trpOptions"
+     ],
+     "from": [
+      {
+       "v": "incl",
+       "t": "Private Transport + Driving Guide (dalam pakej)",
+       "cost": "incl",
+       "guided": true,
+       "lbl": "Private Transport + Guide"
+      },
+      {
+       "v": "air",
+       "t": "Airport Transfer (termasuk pakej)",
+       "cost": "incl",
+       "lbl": "Airport Transfer"
+      },
+      {
+       "v": "ext",
+       "t": "Private Transport + Driving Guide (hari tambahan)",
+       "cost": "day",
+       "guided": true,
+       "lbl": "Private Transport + Guide"
+      },
+      {
+       "v": "feded",
+       "t": "Free & easy - tolak driving guide dari katalog",
+       "cost": "zero",
+       "perVehicleRate": "dayDed",
+       "lbl": "-",
+       "line": "Free & easy (driving guide deducted)"
+      },
+      {
+       "v": "none",
+       "t": "Tiada transport (free & easy dalam pakej)",
+       "cost": "zero",
+       "lbl": "-"
+      }
+     ],
+     "to": [
+      {
+       "v": "incl",
+       "t": "Private Transport + Driving Guide (dalam pakej)",
+       "cost": "incl",
+       "guided": true,
+       "lbl": "Private Transport + Guide"
+      },
+      {
+       "v": "air",
+       "t": "Airport Transfer (termasuk pakej)",
+       "cost": "incl",
+       "lbl": "Airport Transfer"
+      },
+      {
+       "v": "pass",
+       "t": "Swiss Travel Pass - train, tram & bus (dalam pakej Self Tour)",
+       "cost": "incl",
+       "lbl": "Public Transport (Swiss Travel Pass)"
+      },
+      {
+       "v": "ext",
+       "t": "Private Transport + Driving Guide (hari tambahan)",
+       "cost": "day",
+       "guided": true,
+       "lbl": "Private Transport + Guide"
+      },
+      {
+       "v": "feded",
+       "t": "Free & easy - tolak driving guide dari katalog",
+       "cost": "zero",
+       "perVehicleRate": "dayDed",
+       "lbl": "-",
+       "line": "Free & easy (driving guide deducted)"
+      },
+      {
+       "v": "none",
+       "t": "Tiada transport (free & easy dalam pakej)",
+       "cost": "zero",
+       "lbl": "-"
+      }
+     ],
+     "label": "KB switzerland › calc › trpOptions"
+    }
+   ]
   }
  ]
 }
