@@ -570,6 +570,26 @@
    "fix": "Get the missing rates from Pak Jamal; set KB transport prices with a margin over the CR.",
    "by": "ezie",
    "at": "2026-10-15"
+  },
+  {
+   "code": "SWS",
+   "severity": "high",
+   "area": "Cost",
+   "title": "Switzerland: PT margins by CR season, hotel estimate, uncosted FREE items",
+   "detail": "Costs now follow the Musafir Eropah CR by season (default Mid RM3,250/day; Low / Peak / Special as alternative TOs): PT adult margin at Mid 2 pax 1.8 %, 3–4 / 9 / 11 pax 6.5–9.8 %; Peak 2 pax −4.1 %, Special 2 / 3 / 9 / 11 pax below cost. Catalog peak surcharge (+RM200/night) covers 20 Dec–3 Jan, Feb and 15 Jul–15 Aug only; CR Peak = Jun–Aug + Dec, Feb = Low. Hotel RM500/pax/night is an R&D estimate (no hotel contract). Rhine Falls boat and Täsch–Zermatt train (FREE in the catalog) have no rate. CR is an undated WhatsApp image (validity?). Child cost: PT CWB 100 % / CNB − RM600, ST CNB 88.3 % (no source). R&D 'PRICE 2027' proposed 2 pax RM17,997 with transport RM26,250.",
+   "fix": "Decide 2027 / seasonal prices (or a seasonal surcharge matching the CR); get hotel rates, Rhine Falls / Täsch–Zermatt costs and the CR validity from Musafir.",
+   "by": "ezie",
+   "at": "2026-10-15"
+  },
+  {
+   "code": "SWS",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Switzerland: child ticket / Iseltwald costs, TripCare area, KB calculator rates",
+   "detail": "Child ticket costs unknown (R&D has adult CHF only; old duplicates had cost = selling). Iseltwald bridge fee RM67 has no CHF rate. TripCare is Etiqa Area 2 and Couple / Family costs equal Individual — check the area for Europe and the real rates. Reference add-ons (a56–a78) keep the R&D cost at FX 5.0589. Paragliding / Skydiving no rate. KB Simple Calculator: extension day RM3,400 / 3,700 and marginPerPax RM1,300 have no source (CR RM3,000–3,750/day); KB-only add-ons (Jungfraujoch RM1,577, cruise RM327, Murren RM327 …) have no cost link. Self Tour has a catalog but no KB variant.",
+   "fix": "Get child CHF prices and Iseltwald fee; confirm TripCare Europe rates; review the KB calculator rates.",
+   "by": "ezie",
+   "at": "2026-10-15"
   }
  ]
 }

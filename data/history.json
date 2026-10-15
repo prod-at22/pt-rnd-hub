@@ -163500,6 +163500,2360 @@
      "label": "KB surabaya-bromo-malang › calc › variants › sm4 › peak › windows"
     }
    ]
+  },
+  {
+   "v": 109,
+   "at": "2026-10-15T11:00:00Z",
+   "by": "ezie",
+   "note": "Switzerland verified (PO ezie 15 Oct 2026; sources = Musafir Eropah CR image + R&D SWITZERLAND 'PT SWS R&D - reformatupload.xlsx' compiled into TO Contract Rate 'SWITZERLAND COSTING RATE RND.pdf'): cost tables (MYR at fixed CHF 5.0589) → raw rates: hotel RM500/pax/night × 6 (R&D estimate) + Musafir van + driver-guide 7 days (1 van 2–7, 2 vans 8–14) by CR season — default Mid RM3,250/day (was RM20,000 per trip, no source), Low / Peak / Special as alternative TOs (TO Comparison) — + city tax CHF20 + Lake Blausee CHF11; Self Tour = hotel + Swiss Travel Pass 8 days CHF419 (catalog D1–D7; was 6 days) + Blausee; insurance RM58 and 'visa' RM150 / 54 removed (catalog excludes insurance, no Schengen visa), ST city tax removed (customer pays); CHF × live FX; nights 6. Margins adult: PT Mid 1.8 % (2 pax) – 17.9 %, ST 10.2 % — catalog prices unchanged, flagged (PO). Add-ons: 46 duplicates removed (PT / ST copies, second reference set, zero rows), catalog items costed in CHF (Titlis 108 / 60, Gornergrat 132 / 66, Matterhorn 109 / 55, Rigi 78), pocket wifi 3GB / 6GB swapped back, TripCare couple / family per pair / family. Catalogs: expired 2025/2026 peak windows removed, typos, ST basis 'Ground Only', PO Thania, kb_url. KB: peak windows = catalog, single = quoted upon request (was RM2,800), Travel Map nights fixed (Bern on night 6), wifi prices, FAQ CHF rate / 2027 surcharge. Open items in tools/flags_open.json.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "nights"
+     ],
+     "from": 0,
+     "to": 6,
+     "label": "Switzerland › Nights"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "note"
+     ],
+     "from": "",
+     "to": "Cost (v109) = raw rates: hotel RM500/pax/night × 6 (ARBA estimate, R&D — no hotel CR, flag) + Musafir Eropah CR van + Malaysian driver-guide 7–10 days per day × 7 (1 van 2–7 pax, 2 vans 8–14): Mid RM3,250 default TO, Low 3,000 / Peak 3,500 / Special 3,750 as alternative TOs (TO Comparison) + city tax CHF20 + Lake Blausee CHF11 (FREE in the catalog); Self Tour = hotel + Swiss Travel Pass 8 days CHF419 (catalog pass D1–D7) + Blausee CHF11 (city tax excluded in the ST catalog). CHF × live FX. Insurance RM58 / 'visa' RM150 / 54 removed (catalog excludes insurance; no Schengen visa). Rhine Falls boat and Täsch–Zermatt train not costed (no rate, flag). Child: PT CWB 100 % / CNB − RM600, ST CNB 88.3 % kept.",
+     "label": "Switzerland › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "hotelN",
+       "label": "Hotel 3/4★ per pax per night (ARBA estimate, R&D — no hotel CR)",
+       "value": 500,
+       "fx": "MYR",
+       "unit": "RM/pax/night",
+       "group": "1. Hotel (ARBA)"
+      },
+      {
+       "id": "vanLow",
+       "label": "Low season (Jan–Feb) per day",
+       "value": 3000,
+       "fx": "MYR",
+       "unit": "RM/van/day",
+       "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
+      },
+      {
+       "id": "vanMid",
+       "label": "Mid season (Mar, Apr, May, Sep, Oct, Nov) per day",
+       "value": 3250,
+       "fx": "MYR",
+       "unit": "RM/van/day",
+       "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
+      },
+      {
+       "id": "vanPeak",
+       "label": "Peak season (Jun, Jul, Aug, Dec) per day",
+       "value": 3500,
+       "fx": "MYR",
+       "unit": "RM/van/day",
+       "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
+      },
+      {
+       "id": "vanSpec",
+       "label": "Special season (Ramadan, Raya Aidilfitri / Aidiladha, Christmas) per day",
+       "value": 3750,
+       "fx": "MYR",
+       "unit": "RM/van/day",
+       "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
+      },
+      {
+       "id": "cityTax",
+       "label": "City tax (6 nights)",
+       "value": 20,
+       "fx": "CHF",
+       "unit": "CHF/pax",
+       "group": "3. Switzerland fees (CHF, R&D source of ref)"
+      },
+      {
+       "id": "blausee",
+       "label": "Lake Blausee entrance (FREE in the catalogs)",
+       "value": 11,
+       "fx": "CHF",
+       "unit": "CHF/pax",
+       "group": "3. Switzerland fees (CHF, R&D source of ref)"
+      },
+      {
+       "id": "stp8",
+       "label": "Swiss Travel Pass 8 days, 2nd class (Self Tour, pass D1–D7)",
+       "value": 419,
+       "fx": "CHF",
+       "unit": "CHF/pax",
+       "group": "3. Switzerland fees (CHF, R&D source of ref)"
+      }
+     ],
+     "label": "Switzerland › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "MUSAFIR-ARBATO-PT__Hotel-ARBA",
+       "label": "MUSAFIR - ARBATO-PT · Hotel (ARBA)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-PT",
+       "values": {
+        "2": 3000,
+        "3": 3000,
+        "4": 3000,
+        "5": 3000,
+        "6": 3000,
+        "7": 3000,
+        "8": 3000,
+        "9": 3000,
+        "10": 3000,
+        "11": 3000,
+        "12": 3000,
+        "13": 3000,
+        "14": 3000
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-PT__Transport-Pax-Supplier",
+       "label": "MUSAFIR - ARBATO-PT · Transport/Pax (Supplier)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-PT",
+       "values": {
+        "2": 10000,
+        "3": 6666.6667,
+        "4": 5000,
+        "5": 4000,
+        "6": 3333.3333,
+        "7": 2857.1429,
+        "8": 5000,
+        "9": 4444.4444,
+        "10": 4000,
+        "11": 3636.3636,
+        "12": 3333.3333,
+        "13": 3076.9231,
+        "14": 2857.1429
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-PT__Other-Fees",
+       "label": "MUSAFIR - ARBATO-PT · Other Fees",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-PT",
+       "values": {
+        "2": 309.1789,
+        "3": 309.1789,
+        "4": 309.1789,
+        "5": 309.1789,
+        "6": 309.1789,
+        "7": 309.1789,
+        "8": 309.1789,
+        "9": 309.1789,
+        "10": 309.1789,
+        "11": 309.1789,
+        "12": 309.1789,
+        "13": 309.1789,
+        "14": 309.1789
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-PT__Tipping",
+       "label": "MUSAFIR - ARBATO-PT · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-PT",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST__Hotel-ARBA",
+       "label": "MUSAFIR - ARBATO-ST · Hotel (ARBA)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-ST",
+       "values": {
+        "2": 3000,
+        "3": 3000,
+        "4": 3000,
+        "5": 3000,
+        "6": 3000,
+        "7": 3000,
+        "8": 3000,
+        "9": 3000,
+        "10": 3000,
+        "11": 3000,
+        "12": 3000,
+        "13": 3000,
+        "14": 3000
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST__Transport-Pax-Supplier",
+       "label": "MUSAFIR - ARBATO-ST · Transport/Pax (Supplier)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-ST",
+       "values": {
+        "2": 1917.3402,
+        "3": 1917.3402,
+        "4": 1917.3402,
+        "5": 1917.3402,
+        "6": 1917.3402,
+        "7": 1917.3402,
+        "8": 1917.3402,
+        "9": 1917.3402,
+        "10": 1917.3402,
+        "11": 1917.3402,
+        "12": 1917.3402,
+        "13": 1917.3402,
+        "14": 1917.3402
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST__Other-Fees",
+       "label": "MUSAFIR - ARBATO-ST · Other Fees",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-ST",
+       "values": {
+        "2": 213.1789,
+        "3": 213.1789,
+        "4": 213.1789,
+        "5": 213.1789,
+        "6": 213.1789,
+        "7": 213.1789,
+        "8": 213.1789,
+        "9": 213.1789,
+        "10": 213.1789,
+        "11": 213.1789,
+        "12": 213.1789,
+        "13": 213.1789,
+        "14": 213.1789
+       }
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST__Tipping",
+       "label": "MUSAFIR - ARBATO-ST · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "MUSAFIR - ARBATO-ST",
+       "values": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+       }
+      }
+     ],
+     "to": [],
+     "label": "Switzerland › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "MUSAFIR-ARBATO-PT",
+       "label": "Musafir / ARBATO",
+       "supplier": "MUSAFIR - ARBATO-PT",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3000",
+       "notes": "",
+       "components": [
+        {
+         "key": "hotel-arba",
+         "label": "Hotel (ARBA)",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-PT__Hotel-ARBA']"
+        },
+        {
+         "key": "transport-pax-supplier",
+         "label": "Transport/Pax (Supplier)",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-PT__Transport-Pax-Supplier']"
+        },
+        {
+         "key": "other-fees",
+         "label": "Other Fees",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-PT__Other-Fees']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-PT__Tipping']"
+        }
+       ]
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST",
+       "label": "Musafir / ARBATO",
+       "supplier": "Pax",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3000",
+       "notes": "",
+       "components": [
+        {
+         "key": "hotel-arba",
+         "label": "Hotel (ARBA)",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-ST__Hotel-ARBA']"
+        },
+        {
+         "key": "transport-pax-supplier",
+         "label": "Transport/Pax (Supplier)",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-ST__Transport-Pax-Supplier']"
+        },
+        {
+         "key": "other-fees",
+         "label": "Other Fees",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-ST__Other-Fees']"
+        },
+        {
+         "key": "tipping",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['MUSAFIR-ARBATO-ST__Tipping']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "MUSAFIR-ARBATO-PT",
+       "label": "Musafir · Mid season (Mar–May, Sep–Nov)",
+       "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,250/day",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+       "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel (ARBA) 6 nights",
+         "per": "group",
+         "expr": "R.hotelN*N*pax"
+        },
+        {
+         "key": "van",
+         "label": "Van + driver-guide × 7 days",
+         "per": "group",
+         "expr": "band(pax,[7,1],[14,2])*R.vanMid*7"
+        },
+        {
+         "key": "fees",
+         "label": "City tax + Blausee",
+         "per": "group",
+         "expr": "(R.cityTax+R.blausee)*pax"
+        }
+       ]
+      },
+      {
+       "id": "MUSAFIR-PT-LOW",
+       "label": "Musafir · Low season (Jan–Feb)",
+       "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,000/day",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+       "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel (ARBA) 6 nights",
+         "per": "group",
+         "expr": "R.hotelN*N*pax"
+        },
+        {
+         "key": "van",
+         "label": "Van + driver-guide × 7 days",
+         "per": "group",
+         "expr": "band(pax,[7,1],[14,2])*R.vanLow*7"
+        },
+        {
+         "key": "fees",
+         "label": "City tax + Blausee",
+         "per": "group",
+         "expr": "(R.cityTax+R.blausee)*pax"
+        }
+       ]
+      },
+      {
+       "id": "MUSAFIR-PT-PEAK",
+       "label": "Musafir · Peak season (Jun–Aug, Dec)",
+       "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,500/day",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+       "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel (ARBA) 6 nights",
+         "per": "group",
+         "expr": "R.hotelN*N*pax"
+        },
+        {
+         "key": "van",
+         "label": "Van + driver-guide × 7 days",
+         "per": "group",
+         "expr": "band(pax,[7,1],[14,2])*R.vanPeak*7"
+        },
+        {
+         "key": "fees",
+         "label": "City tax + Blausee",
+         "per": "group",
+         "expr": "(R.cityTax+R.blausee)*pax"
+        }
+       ]
+      },
+      {
+       "id": "MUSAFIR-PT-SPECIAL",
+       "label": "Musafir · Special season (Ramadan, Raya, Christmas)",
+       "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,750/day",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+       "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel (ARBA) 6 nights",
+         "per": "group",
+         "expr": "R.hotelN*N*pax"
+        },
+        {
+         "key": "van",
+         "label": "Van + driver-guide × 7 days",
+         "per": "group",
+         "expr": "band(pax,[7,1],[14,2])*R.vanSpec*7"
+        },
+        {
+         "key": "fees",
+         "label": "City tax + Blausee",
+         "per": "group",
+         "expr": "(R.cityTax+R.blausee)*pax"
+        }
+       ]
+      },
+      {
+       "id": "MUSAFIR-ARBATO-ST",
+       "label": "Self Tour · Swiss Travel Pass 8 days",
+       "supplier": "Self Tour — Swiss Travel Pass 8 days (2nd class) + hotel booked by ARBA",
+       "paxMin": 2,
+       "paxMax": 14,
+       "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+       "notes": "Pass covers D1–D7 incl. airport trains, Täsch–Zermatt, Murren cable car, lake cruise; Blausee paid; city tax paid by the customer (catalog).",
+       "components": [
+        {
+         "key": "hotel",
+         "label": "Hotel (ARBA) 6 nights",
+         "per": "group",
+         "expr": "R.hotelN*N*pax"
+        },
+        {
+         "key": "pass",
+         "label": "Swiss Travel Pass 8 days",
+         "per": "group",
+         "expr": "R.stp8*pax"
+        },
+        {
+         "key": "fees",
+         "label": "Lake Blausee",
+         "per": "group",
+         "expr": "R.blausee*pax"
+        }
+       ]
+      }
+     ],
+     "label": "Switzerland › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "packages",
+      "musafir-arbato-pt",
+      "alsoVariants"
+     ],
+     "from": null,
+     "to": [
+      "MUSAFIR-PT-LOW",
+      "MUSAFIR-PT-PEAK",
+      "MUSAFIR-PT-SPECIAL"
+     ],
+     "label": "Switzerland › Switzerland 7D6N › alsoVariants"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "sws-a01",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Adult (16+)",
+       "cost": 549,
+       "selling": 687,
+       "per": "pax",
+       "notes": "(PT) Cable car + Glacier cave + Cliff walk + IceFlyer"
+      },
+      {
+       "id": "sws-a02",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Child (6-15)",
+       "cost": 347,
+       "selling": 347,
+       "per": "pax",
+       "notes": "(PT)"
+      },
+      {
+       "id": "sws-a03",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(PT) FREE"
+      },
+      {
+       "id": "sws-a04",
+       "category": "Iseltwald",
+       "label": "Iseltwald Bridge Fee",
+       "cost": 67,
+       "selling": 67,
+       "per": "pax",
+       "notes": "(All) CLOY Film Location"
+      },
+      {
+       "id": "sws-a05",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Adult (16+)",
+       "cost": 549,
+       "selling": 687,
+       "per": "pax",
+       "notes": "(PT) Cable car + Spy World + Skyline"
+      },
+      {
+       "id": "sws-a06",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Child (6-15)",
+       "cost": 347,
+       "selling": 347,
+       "per": "pax",
+       "notes": "(PT)"
+      },
+      {
+       "id": "sws-a07",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(PT) FREE"
+      },
+      {
+       "id": "sws-a08",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Adult (16+)",
+       "cost": 671,
+       "selling": 837,
+       "per": "pax",
+       "notes": "(PT) Round trip Zermatt-Gornergrat"
+      },
+      {
+       "id": "sws-a09",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Child (6-15)",
+       "cost": 417,
+       "selling": 417,
+       "per": "pax",
+       "notes": "(PT)"
+      },
+      {
+       "id": "sws-a10",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(PT) FREE"
+      },
+      {
+       "id": "sws-a11",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Adult (16+)",
+       "cost": 554,
+       "selling": 687,
+       "per": "pax",
+       "notes": "(PT) Cable car + Ice Palace"
+      },
+      {
+       "id": "sws-a12",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Child (9-15)",
+       "cost": 347,
+       "selling": 347,
+       "per": "pax",
+       "notes": "(PT)"
+      },
+      {
+       "id": "sws-a13",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Child (0-8)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(PT) FREE"
+      },
+      {
+       "id": "sws-a14",
+       "category": "Mount Rigi",
+       "label": "Mount Rigi Pass — Adult (16+)",
+       "cost": 397,
+       "selling": 497,
+       "per": "pax",
+       "notes": "(PT) Train + Cable Car"
+      },
+      {
+       "id": "sws-a15",
+       "category": "Mount Rigi",
+       "label": "Mount Rigi Pass — Child (6-15)",
+       "cost": 357,
+       "selling": 357,
+       "per": "pax",
+       "notes": "(PT)"
+      },
+      {
+       "id": "sws-a16",
+       "category": "Mount Rigi",
+       "label": "Mount Rigi Pass — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(PT) FREE"
+      },
+      {
+       "id": "sws-a17",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4G",
+       "cost": 130,
+       "selling": 200,
+       "per": "trip",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a18",
+       "category": "Wifi",
+       "label": "Pocket Wifi 6GB whole trip",
+       "cost": 100,
+       "selling": 140,
+       "per": "trip",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 54,
+       "selling": 72,
+       "per": "pax",
+       "notes": "(All) Etiqa Area 2"
+      },
+      {
+       "id": "sws-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 78.75,
+       "selling": 115,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (11-18 hari)",
+       "cost": 133,
+       "selling": 174,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 54,
+       "selling": 72,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 78.75,
+       "selling": 115,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (11-18 hari)",
+       "cost": 133,
+       "selling": 174,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 143.5,
+       "selling": 188,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 201.25,
+       "selling": 265,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (11-18 hari)",
+       "cost": 313.75,
+       "selling": 415,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 185.5,
+       "selling": 244,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 265.75,
+       "selling": 351,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (11-18 hari)",
+       "cost": 409.75,
+       "selling": 543,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a37",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Rhine Falls Boat Tour",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "source of ref"
+      },
+      {
+       "id": "sws-a38",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mount Titlis",
+       "cost": 303.54,
+       "selling": 377,
+       "per": "pax",
+       "notes": "60 CHF · source of ref"
+      },
+      {
+       "id": "sws-a39",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Blausee",
+       "cost": 55.65,
+       "selling": 66.78,
+       "per": "pax",
+       "notes": "11 CHF · source of ref"
+      },
+      {
+       "id": "sws-a40",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Schilthorn",
+       "cost": 217.53,
+       "selling": 267,
+       "per": "pax",
+       "notes": "43 CHF · source of ref"
+      },
+      {
+       "id": "sws-a41",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Gornergrat",
+       "cost": 333.89,
+       "selling": 387,
+       "per": "pax",
+       "notes": "66 CHF · source of ref"
+      },
+      {
+       "id": "sws-a42",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Matterhorn",
+       "cost": 278.24,
+       "selling": 397,
+       "per": "pax",
+       "notes": "55 CHF · source of ref"
+      },
+      {
+       "id": "sws-a43",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Pfinstegg",
+       "cost": 80.94,
+       "selling": 97.13,
+       "per": "pax",
+       "notes": "16 CHF · source of ref"
+      },
+      {
+       "id": "sws-a44",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Oechinensee",
+       "cost": 80.94,
+       "selling": 97.13,
+       "per": "pax",
+       "notes": "16 CHF · source of ref"
+      },
+      {
+       "id": "sws-a45",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Jungfraujoch",
+       "cost": 743.66,
+       "selling": 937,
+       "per": "pax",
+       "notes": "147 CHF · source of ref"
+      },
+      {
+       "id": "sws-a46",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Pfinstegg (per ride)",
+       "cost": 40.47,
+       "selling": 48.57,
+       "per": "pax",
+       "notes": "8 CHF · source of ref"
+      },
+      {
+       "id": "sws-a47",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Flyline/ Zipline",
+       "cost": 60.71,
+       "selling": 72.85,
+       "per": "pax",
+       "notes": "12 CHF · source of ref"
+      },
+      {
+       "id": "sws-a48",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Grindelwald First",
+       "cost": 263.07,
+       "selling": 315.68,
+       "per": "pax",
+       "notes": "52 CHF · source of ref"
+      },
+      {
+       "id": "sws-a49",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Oechinensee (per ride)",
+       "cost": 30.35,
+       "selling": 36.42,
+       "per": "pax",
+       "notes": "6 CHF · source of ref"
+      },
+      {
+       "id": "sws-a50",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Harder Kulm",
+       "cost": 96.12,
+       "selling": 115.34,
+       "per": "pax",
+       "notes": "19 CHF · source of ref"
+      },
+      {
+       "id": "sws-a51",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Glacier express (Chur - St Moritz)",
+       "cost": 222.59,
+       "selling": 267.11,
+       "per": "pax",
+       "notes": "44 CHF · source of ref"
+      },
+      {
+       "id": "sws-a52",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Bernina express (Chur - Lugano)",
+       "cost": 263.07,
+       "selling": 315.68,
+       "per": "pax",
+       "notes": "52 CHF · source of ref"
+      },
+      {
+       "id": "sws-a55",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Rhine Falls Boat Tour",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "source of ref"
+      },
+      {
+       "id": "sws-a56",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mount Titlis",
+       "cost": 546.37,
+       "selling": 655.64,
+       "per": "pax",
+       "notes": "108 CHF · source of ref"
+      },
+      {
+       "id": "sws-a57",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Blausee",
+       "cost": 55.65,
+       "selling": 66.78,
+       "per": "pax",
+       "notes": "11 CHF · source of ref"
+      },
+      {
+       "id": "sws-a58",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Schilthorn",
+       "cost": 546.37,
+       "selling": 655.64,
+       "per": "pax",
+       "notes": "108 CHF · source of ref"
+      },
+      {
+       "id": "sws-a59",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Gornergrat",
+       "cost": 667.78,
+       "selling": 801.34,
+       "per": "pax",
+       "notes": "132 CHF · source of ref"
+      },
+      {
+       "id": "sws-a60",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Matterhorn",
+       "cost": 551.43,
+       "selling": 661.71,
+       "per": "pax",
+       "notes": "109 CHF · source of ref"
+      },
+      {
+       "id": "sws-a61",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Pfinstegg",
+       "cost": 161.89,
+       "selling": 194.26,
+       "per": "pax",
+       "notes": "32 CHF · source of ref"
+      },
+      {
+       "id": "sws-a62",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Oechinensee",
+       "cost": 161.89,
+       "selling": 194.26,
+       "per": "pax",
+       "notes": "32 CHF · source of ref"
+      },
+      {
+       "id": "sws-a63",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Jungfraujoch",
+       "cost": 1264.74,
+       "selling": 1517.68,
+       "per": "pax",
+       "notes": "250 CHF · source of ref"
+      },
+      {
+       "id": "sws-a64",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Pfinstegg (per ride)",
+       "cost": 40.47,
+       "selling": 48.57,
+       "per": "pax",
+       "notes": "8 CHF · source of ref"
+      },
+      {
+       "id": "sws-a65",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Flyline/ Zipline",
+       "cost": 60.71,
+       "selling": 72.85,
+       "per": "pax",
+       "notes": "12 CHF · source of ref"
+      },
+      {
+       "id": "sws-a66",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Grindelwald First",
+       "cost": 414.83,
+       "selling": 497.8,
+       "per": "pax",
+       "notes": "82 CHF · source of ref"
+      },
+      {
+       "id": "sws-a67",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Oechinensee (per ride)",
+       "cost": 30.35,
+       "selling": 36.42,
+       "per": "pax",
+       "notes": "6 CHF · source of ref"
+      },
+      {
+       "id": "sws-a68",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Harder Kulm",
+       "cost": 192.24,
+       "selling": 230.69,
+       "per": "pax",
+       "notes": "38 CHF · source of ref"
+      },
+      {
+       "id": "sws-a69",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Zurich cruise",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "source of ref"
+      },
+      {
+       "id": "sws-a70",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Interlaken cruise",
+       "cost": 258.01,
+       "selling": 309.61,
+       "per": "pax",
+       "notes": "51 CHF · source of ref"
+      },
+      {
+       "id": "sws-a71",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Glacier Express",
+       "cost": 627.31,
+       "selling": 752.77,
+       "per": "pax",
+       "notes": "124 CHF · source of ref"
+      },
+      {
+       "id": "sws-a72",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Bernina Express",
+       "cost": 804.37,
+       "selling": 965.25,
+       "per": "pax",
+       "notes": "159 CHF · source of ref"
+      },
+      {
+       "id": "sws-a73",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Paragliding",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "source of ref"
+      },
+      {
+       "id": "sws-a74",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Skydiving",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "source of ref"
+      },
+      {
+       "id": "sws-a75",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mountain Cart",
+       "cost": 106.24,
+       "selling": 127.49,
+       "per": "pax",
+       "notes": "21 CHF · source of ref"
+      },
+      {
+       "id": "sws-a76",
+       "category": "Switzerland Entrance/Activity",
+       "label": "GoldenPass Belle Opaque",
+       "cost": 172,
+       "selling": 206.4,
+       "per": "pax",
+       "notes": "34 CHF · source of ref"
+      },
+      {
+       "id": "sws-a77",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mount Rigi Pass",
+       "cost": 394.6,
+       "selling": 473.52,
+       "per": "pax",
+       "notes": "78 CHF · source of ref"
+      },
+      {
+       "id": "sws-a78",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Gruyere cheese factory",
+       "cost": 0,
+       "selling": 40.47,
+       "per": "pax",
+       "notes": "8 CHF · source of ref"
+      },
+      {
+       "id": "sws-a81",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Adult (16+)",
+       "cost": 303.54,
+       "selling": 377,
+       "per": "pax",
+       "notes": "(ST) Swiss Pass holder rate · ST catalog"
+      },
+      {
+       "id": "sws-a82",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Child (6-15)",
+       "cost": 177,
+       "selling": 177,
+       "per": "pax",
+       "notes": "(ST)"
+      },
+      {
+       "id": "sws-a83",
+       "category": "Mt Titlis",
+       "label": "Mt Titlis Round Trip — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(ST) FREE"
+      },
+      {
+       "id": "sws-a84",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Adult (16+)",
+       "cost": 217.53,
+       "selling": 267,
+       "per": "pax",
+       "notes": "(ST) Swiss Pass holder rate · ST catalog"
+      },
+      {
+       "id": "sws-a85",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Child (6-15)",
+       "cost": 167,
+       "selling": 167,
+       "per": "pax",
+       "notes": "(ST)"
+      },
+      {
+       "id": "sws-a86",
+       "category": "Schilthorn",
+       "label": "Schilthorn Round Trip — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(ST) FREE"
+      },
+      {
+       "id": "sws-a87",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Adult (16+)",
+       "cost": 333.89,
+       "selling": 387,
+       "per": "pax",
+       "notes": "(ST) Swiss Pass holder rate · ST catalog"
+      },
+      {
+       "id": "sws-a88",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Child (6-15)",
+       "cost": 287,
+       "selling": 287,
+       "per": "pax",
+       "notes": "(ST)"
+      },
+      {
+       "id": "sws-a89",
+       "category": "Gornergrat",
+       "label": "Gornergrat Railways — Child (<5)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(ST) FREE"
+      },
+      {
+       "id": "sws-a90",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Adult (16+)",
+       "cost": 278.24,
+       "selling": 397,
+       "per": "pax",
+       "notes": "(ST) Swiss Pass holder rate · ST catalog"
+      },
+      {
+       "id": "sws-a91",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Child (9-15)",
+       "cost": 297,
+       "selling": 297,
+       "per": "pax",
+       "notes": "(ST)"
+      },
+      {
+       "id": "sws-a92",
+       "category": "Matterhorn",
+       "label": "Matterhorn Glacier Paradise — Child (0-8)",
+       "cost": 0,
+       "selling": 0,
+       "per": "pax",
+       "notes": "(ST) FREE"
+      },
+      {
+       "id": "sws-k001",
+       "category": "Add-on",
+       "label": "Mount Titlis",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
+       "duration": "Open all year long · Operation hour: 8.30am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM377",
+        "6-15 years old: RM177",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 1
+       }
+      },
+      {
+       "id": "sws-k002",
+       "category": "Add-on",
+       "label": "Iseltwald Bridge Fee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "price_lines": [
+        "RM67"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 2,
+        "switzerland-standard": 2
+       }
+      },
+      {
+       "id": "sws-k003",
+       "category": "Add-on",
+       "label": "Gornergrat Railways",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
+       "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
+       "price_lines": [
+        "16 years old and above: RM387",
+        "6-15 years old: RM287",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 3
+       }
+      },
+      {
+       "id": "sws-k004",
+       "category": "Add-on",
+       "label": "Matterhorn Glacier Paradise (Zermatt)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
+       "price_lines": [
+        "16 years old and above: RM397",
+        "9-15 years old: RM297",
+        "0-8 years old: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 4
+       }
+      },
+      {
+       "id": "sws-k005",
+       "category": "Add-on",
+       "label": "Mount Titlis",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
+       "duration": "Open all year long · Operation hour: 8.30am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM687",
+        "6-15 years old: RM347",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 1
+       }
+      },
+      {
+       "id": "sws-k006",
+       "category": "Add-on",
+       "label": "Gornergrat Railways",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
+       "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
+       "price_lines": [
+        "16 years old and above: RM837",
+        "6-15 years old: RM417",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 3
+       }
+      },
+      {
+       "id": "sws-k007",
+       "category": "Add-on",
+       "label": "Matterhorn Glacier Paradise (Zermatt)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
+       "price_lines": [
+        "16 years old and above: RM687",
+        "9-15 years old: RM347",
+        "0-8 years old: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 4
+       }
+      },
+      {
+       "id": "sws-k008",
+       "category": "Add-on",
+       "label": "Mount Rigi Pass",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Train Rides from Vitznau, Train Rides from Goldau, Cable Car from Weggis, Cable Car from Krabel",
+       "duration": "Open all year long · Operation hour: 8am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM497",
+        "6-15 years old: RM357",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 5
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "sws-a17",
+       "category": "Wifi",
+       "label": "Pocket Wifi 3GB 4G",
+       "cost": 100,
+       "selling": 140,
+       "per": "trip",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a18",
+       "category": "Wifi",
+       "label": "Pocket Wifi 6GB whole trip",
+       "cost": 130,
+       "selling": 200,
+       "per": "trip",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 54,
+       "selling": 72,
+       "per": "pax",
+       "notes": "(All) Etiqa Area 2"
+      },
+      {
+       "id": "sws-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 78.75,
+       "selling": 115,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (11-18 hari)",
+       "cost": 133,
+       "selling": 174,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a22",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 54,
+       "selling": 72,
+       "per": "pair",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a23",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 78.75,
+       "selling": 115,
+       "per": "pair",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a24",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (11-18 hari)",
+       "cost": 133,
+       "selling": 174,
+       "per": "pair",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a25",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 143.5,
+       "selling": 188,
+       "per": "family",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 201.25,
+       "selling": 265,
+       "per": "family",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (11-18 hari)",
+       "cost": 313.75,
+       "selling": 415,
+       "per": "family",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 185.5,
+       "selling": 244,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 265.75,
+       "selling": 351,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (11-18 hari)",
+       "cost": 409.75,
+       "selling": 543,
+       "per": "pax",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a31",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a32",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a33",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": "(All)"
+      },
+      {
+       "id": "sws-a56",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mount Titlis",
+       "cost": 546.37,
+       "selling": 655.64,
+       "per": "pax",
+       "notes": "108 CHF · source of ref"
+      },
+      {
+       "id": "sws-a57",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Blausee",
+       "cost": 55.65,
+       "selling": 66.78,
+       "per": "pax",
+       "notes": "11 CHF · source of ref"
+      },
+      {
+       "id": "sws-a58",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Schilthorn",
+       "cost": 546.37,
+       "selling": 655.64,
+       "per": "pax",
+       "notes": "108 CHF · source of ref"
+      },
+      {
+       "id": "sws-a59",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Gornergrat",
+       "cost": 667.78,
+       "selling": 801.34,
+       "per": "pax",
+       "notes": "132 CHF · source of ref"
+      },
+      {
+       "id": "sws-a60",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Matterhorn",
+       "cost": 551.43,
+       "selling": 661.71,
+       "per": "pax",
+       "notes": "109 CHF · source of ref"
+      },
+      {
+       "id": "sws-a61",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Pfinstegg",
+       "cost": 161.89,
+       "selling": 194.26,
+       "per": "pax",
+       "notes": "32 CHF · source of ref"
+      },
+      {
+       "id": "sws-a62",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Oechinensee",
+       "cost": 161.89,
+       "selling": 194.26,
+       "per": "pax",
+       "notes": "32 CHF · source of ref"
+      },
+      {
+       "id": "sws-a63",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Jungfraujoch",
+       "cost": 1264.74,
+       "selling": 1517.68,
+       "per": "pax",
+       "notes": "250 CHF · source of ref"
+      },
+      {
+       "id": "sws-a64",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Pfinstegg (per ride)",
+       "cost": 40.47,
+       "selling": 48.57,
+       "per": "pax",
+       "notes": "8 CHF · source of ref"
+      },
+      {
+       "id": "sws-a65",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Flyline/ Zipline",
+       "cost": 60.71,
+       "selling": 72.85,
+       "per": "pax",
+       "notes": "12 CHF · source of ref"
+      },
+      {
+       "id": "sws-a66",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Grindelwald First",
+       "cost": 414.83,
+       "selling": 497.8,
+       "per": "pax",
+       "notes": "82 CHF · source of ref"
+      },
+      {
+       "id": "sws-a67",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Toboggan Run Oechinensee (per ride)",
+       "cost": 30.35,
+       "selling": 36.42,
+       "per": "pax",
+       "notes": "6 CHF · source of ref"
+      },
+      {
+       "id": "sws-a68",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Harder Kulm",
+       "cost": 192.24,
+       "selling": 230.69,
+       "per": "pax",
+       "notes": "38 CHF · source of ref"
+      },
+      {
+       "id": "sws-a70",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Lake Interlaken cruise",
+       "cost": 258.01,
+       "selling": 309.61,
+       "per": "pax",
+       "notes": "51 CHF · source of ref"
+      },
+      {
+       "id": "sws-a71",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Glacier Express",
+       "cost": 627.31,
+       "selling": 752.77,
+       "per": "pax",
+       "notes": "124 CHF · source of ref"
+      },
+      {
+       "id": "sws-a72",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Bernina Express",
+       "cost": 804.37,
+       "selling": 965.25,
+       "per": "pax",
+       "notes": "159 CHF · source of ref"
+      },
+      {
+       "id": "sws-a73",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Paragliding",
+       "cost": null,
+       "selling": null,
+       "per": "pax",
+       "notes": "source of ref — no rate"
+      },
+      {
+       "id": "sws-a74",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Skydiving",
+       "cost": null,
+       "selling": null,
+       "per": "pax",
+       "notes": "source of ref — no rate"
+      },
+      {
+       "id": "sws-a75",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mountain Cart",
+       "cost": 106.24,
+       "selling": 127.49,
+       "per": "pax",
+       "notes": "21 CHF · source of ref"
+      },
+      {
+       "id": "sws-a76",
+       "category": "Switzerland Entrance/Activity",
+       "label": "GoldenPass Belle Opaque",
+       "cost": 172,
+       "selling": 206.4,
+       "per": "pax",
+       "notes": "34 CHF · source of ref"
+      },
+      {
+       "id": "sws-a77",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Mount Rigi Pass",
+       "cost": 394.6,
+       "selling": 473.52,
+       "per": "pax",
+       "notes": "78 CHF · source of ref"
+      },
+      {
+       "id": "sws-a78",
+       "category": "Switzerland Entrance/Activity",
+       "label": "Gruyere cheese factory",
+       "cost": 39.19,
+       "selling": 40.47,
+       "per": "pax",
+       "notes": "8 CHF × 4.8986 · source of ref"
+      },
+      {
+       "id": "sws-k001",
+       "category": "Add-on",
+       "label": "Mount Titlis",
+       "per": "",
+       "cost": 293.92,
+       "selling": null,
+       "notes": "Adult cost CHF60 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
+       "duration": "Open all year long · Operation hour: 8.30am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM377",
+        "6-15 years old: RM177",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 1
+       }
+      },
+      {
+       "id": "sws-k002",
+       "category": "Add-on",
+       "label": "Iseltwald Bridge Fee",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": "No CHF rate in the R&D (old duplicate had cost = selling RM67) — flag",
+       "price_lines": [
+        "RM67"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 2,
+        "switzerland-standard": 2
+       }
+      },
+      {
+       "id": "sws-k003",
+       "category": "Add-on",
+       "label": "Gornergrat Railways",
+       "per": "",
+       "cost": 323.31,
+       "selling": null,
+       "notes": "Adult cost CHF66 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
+       "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
+       "price_lines": [
+        "16 years old and above: RM387",
+        "6-15 years old: RM287",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 3
+       }
+      },
+      {
+       "id": "sws-k004",
+       "category": "Add-on",
+       "label": "Matterhorn Glacier Paradise (Zermatt)",
+       "per": "",
+       "cost": 269.42,
+       "selling": null,
+       "notes": "Adult cost CHF55 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
+       "price_lines": [
+        "16 years old and above: RM397",
+        "9-15 years old: RM297",
+        "0-8 years old: FREE"
+       ],
+       "catalogs": {
+        "switzerland-self-tour": 4
+       }
+      },
+      {
+       "id": "sws-k005",
+       "category": "Add-on",
+       "label": "Mount Titlis",
+       "per": "",
+       "cost": 529.05,
+       "selling": null,
+       "notes": "Adult cost CHF108 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
+       "duration": "Open all year long · Operation hour: 8.30am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM687",
+        "6-15 years old: RM347",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 1
+       }
+      },
+      {
+       "id": "sws-k006",
+       "category": "Add-on",
+       "label": "Gornergrat Railways",
+       "per": "",
+       "cost": 646.62,
+       "selling": null,
+       "notes": "Adult cost CHF132 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
+       "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
+       "price_lines": [
+        "16 years old and above: RM837",
+        "6-15 years old: RM417",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 3
+       }
+      },
+      {
+       "id": "sws-k007",
+       "category": "Add-on",
+       "label": "Matterhorn Glacier Paradise (Zermatt)",
+       "per": "",
+       "cost": 533.95,
+       "selling": null,
+       "notes": "Adult cost CHF109 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
+       "price_lines": [
+        "16 years old and above: RM687",
+        "9-15 years old: RM347",
+        "0-8 years old: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 4
+       }
+      },
+      {
+       "id": "sws-k008",
+       "category": "Add-on",
+       "label": "Mount Rigi Pass",
+       "per": "",
+       "cost": 382.09,
+       "selling": null,
+       "notes": "Adult cost CHF78 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
+       "includes": "Train Rides from Vitznau, Train Rides from Goldau, Cable Car from Weggis, Cable Car from Krabel",
+       "duration": "Open all year long · Operation hour: 8am - 5pm",
+       "price_lines": [
+        "16 years old and above: RM497",
+        "6-15 years old: RM357",
+        "5 years old and below: FREE"
+       ],
+       "catalogs": {
+        "switzerland-standard": 5
+       }
+      }
+     ],
+     "label": "Switzerland › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "contracts"
+     ],
+     "from": [
+      {
+       "id": "1a1075462e1",
+       "name": "PT Switz (Musafir Eropah) CR.png",
+       "file": "contracts/sws/1a1075462e1-PT_Switz_Musafir_Eropah_CR.png",
+       "to": "Musafir Eropah",
+       "note": "From Drive · Production Team",
+       "size": 211791,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1vSYejz7yJbBjw2bgS5V9wfhGBNEDPutF"
+      }
+     ],
+     "to": [
+      {
+       "id": "1a1075462e1",
+       "name": "PT Switz (Musafir Eropah) CR.png",
+       "file": "contracts/sws/1a1075462e1-PT_Switz_Musafir_Eropah_CR.png",
+       "to": "Musafir Eropah",
+       "note": "From Drive · Production Team",
+       "size": 211791,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1vSYejz7yJbBjw2bgS5V9wfhGBNEDPutF"
+      },
+      {
+       "id": "5c2b1d4f8e1",
+       "name": "SWITZERLAND COSTING RATE RND.pdf",
+       "file": "contracts/sws/5c2b1d4f8e1-SWITZERLAND_COSTING_RATE_RND.pdf",
+       "to": "Musafir Eropah",
+       "note": "R&D 'PT SWS R&D - reformatupload.xlsx' (Jun 2026): Raw Costing, CR tab (old cost per pax), PRICE 2027 transport block, CHF entrance / add-on tables with and without Swiss Pass (PO ezie 15 Oct 2026)",
+       "size": 195589,
+       "at": "2026-10-15T11:00:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Switzerland › TO Contract Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "SWS",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 109,
+     "label": "Switzerland › historyFrom"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "kb_url"
+     ],
+     "from": "https://prod-at22.github.io/arba-switzerland-kb/",
+     "to": "https://prod-at22.github.io/pt-kb-house/switzerland/",
+     "label": "Catalog switzerland-standard › kb_url"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "po"
+     ],
+     "from": "Acap",
+     "to": "Thania",
+     "label": "Catalog switzerland-standard › po"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "surcharge",
+      "seasons",
+      0,
+      "period"
+     ],
+     "from": "20 December 2025 - 10 January 2026 · 1 - 28 February 2026 · 15 July 2026 - 15 August 2026 · 20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
+     "to": "20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
+     "label": "Catalog switzerland-standard › surcharge › seasons › #1 › period"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "itinerary",
+      1,
+      "activities",
+      2
+     ],
+     "from": "Lindenhof (Churches with scenice view, CLOY film location)",
+     "to": "Lindenhof (Churches with scenic view, CLOY film location)",
+     "label": "Catalog switzerland-standard › itinerary › #2 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "itinerary",
+      1,
+      "activities",
+      4
+     ],
+     "from": "Bahnhofstrasse, Zurich (Famous hopping street)",
+     "to": "Bahnhofstrasse, Zurich (Famous shopping street)",
+     "label": "Catalog switzerland-standard › itinerary › #2 › activities › #5"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "itinerary",
+      2,
+      "activities",
+      2
+     ],
+     "from": "Lucern Old Town (Historic building & shopping street)",
+     "to": "Lucerne Old Town (Historic building & shopping street)",
+     "label": "Catalog switzerland-standard › itinerary › #3 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "itinerary",
+      3,
+      "activities",
+      2
+     ],
+     "from": "Staubach Waterfall",
+     "to": "Staubbach Waterfall",
+     "label": "Catalog switzerland-standard › itinerary › #4 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-standard",
+      "itinerary",
+      4,
+      "activities",
+      2
+     ],
+     "from": "Matterhorn (One of the highest summits in the Alps and Europe, the Tobelerone mountain) - optional",
+     "to": "Matterhorn (One of the highest summits in the Alps and Europe, the Toblerone mountain) - optional",
+     "label": "Catalog switzerland-standard › itinerary › #5 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "basis"
+     ],
+     "from": "Ground & Tipping · Self Guided",
+     "to": "Ground Only · Self Guided",
+     "label": "Catalog switzerland-self-tour › basis"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "kb_url"
+     ],
+     "from": "https://prod-at22.github.io/arba-switzerland-kb/",
+     "to": "https://prod-at22.github.io/pt-kb-house/switzerland/",
+     "label": "Catalog switzerland-self-tour › kb_url"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "po"
+     ],
+     "from": "Acap",
+     "to": "Thania",
+     "label": "Catalog switzerland-self-tour › po"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "surcharge",
+      "seasons",
+      0,
+      "period"
+     ],
+     "from": "20 December 2025 - 10 January 2026 · 1 - 28 February 2026 · 15 July 2026 - 15 August 2026 · 20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
+     "to": "20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
+     "label": "Catalog switzerland-self-tour › surcharge › seasons › #1 › period"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "itinerary",
+      1,
+      "activities",
+      2
+     ],
+     "from": "Lindenhof (Churches with scenice view, CLOY film location)",
+     "to": "Lindenhof (Churches with scenic view, CLOY film location)",
+     "label": "Catalog switzerland-self-tour › itinerary › #2 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "itinerary",
+      1,
+      "activities",
+      4
+     ],
+     "from": "Bahnhofstrasse, Zurich (Famous hopping street)",
+     "to": "Bahnhofstrasse, Zurich (Famous shopping street)",
+     "label": "Catalog switzerland-self-tour › itinerary › #2 › activities › #5"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "itinerary",
+      2,
+      "activities",
+      2
+     ],
+     "from": "Lucern Old Town (Historic building & shopping street)",
+     "to": "Lucerne Old Town (Historic building & shopping street)",
+     "label": "Catalog switzerland-self-tour › itinerary › #3 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "itinerary",
+      3,
+      "activities",
+      2
+     ],
+     "from": "Staubach Waterfall",
+     "to": "Staubbach Waterfall",
+     "label": "Catalog switzerland-self-tour › itinerary › #4 › activities › #3"
+    },
+    {
+     "path": [
+      "catalogs",
+      "switzerland-self-tour",
+      "itinerary",
+      4,
+      "activities",
+      2
+     ],
+     "from": "Matterhorn (One of the highest summits in the Alps and Europe, the Tobelerone mountain) - optional",
+     "to": "Matterhorn (One of the highest summits in the Alps and Europe, the Toblerone mountain) - optional",
+     "label": "Catalog switzerland-self-tour › itinerary › #5 › activities › #3"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "blocks",
+      "custom"
+     ],
+     "from": "<h2>Simple Customisation / Add-Ons</h2><p class='ssub'>Harga per pax kecuali dinyatakan. Semua aktiviti puncak, cable car dan panoramic train adalah <b>optional</b> &mdash; tiada dalam base package.</p><div class='custblk'><h3>Optional Tour &mdash; Puncak, Cable Car &amp; Cruise</h3><table class='ctbl'><thead><tr><th>Aktiviti</th><th>16 tahun ke atas</th><th>Kanak-kanak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Jungfraujoch &mdash; Top of Europe</td><td class='add'>RM 1,577</td><td>6&ndash;15 thn: RM 797 &middot; 0&ndash;5 thn: FREE</td><td>Train + cable car pergi-balik, Alpine Sensation, observation deck, Ice Palace. Snow Fun Park pertengahan Mei hingga pertengahan Okt.</td></tr><tr><td class='it'>Gornergrat Railway (Zermatt)</td><td class='add'>RM 837</td><td>6&ndash;15 thn: RM 417 &middot; &le;5 thn: FREE</td><td>Train pergi-balik Zermatt &rarr; Gornergrat (Riffelalp, Riffelberg). Buka sepanjang tahun, 7.30 pagi &ndash; 5.40 petang.</td></tr><tr><td class='it'>Mount Titlis (Engelberg)</td><td class='add'>RM 687</td><td>6&ndash;15 thn: RM 347 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik termasuk Titlis ROTAIR, Glacier Cave, Cliff Walk, IceFlyer, Glacier Park &amp; snow tubing (ikut cuaca). Sepanjang tahun, 8.30 pagi &ndash; 5 petang.</td></tr><tr><td class='it'>Matterhorn Glacier Paradise (Zermatt)</td><td class='add'>RM 687</td><td>9&ndash;15 thn: RM 347 &middot; 0&ndash;8 thn: FREE</td><td>Cable car pergi-balik, platform 360 darjah, Glacier Ice Palace, Cinema Lounge, The Peak Shop.</td></tr><tr><td class='it'>Schilthorn / Piz Gloria</td><td class='add'>RM 687</td><td>6&ndash;15 thn: RM 347 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik dari Stechelberg. Spy World &amp; Cinema, Walk of Fame, Piz Gloria view point, Skyline Walk &amp; Thrill Walk di Birg. 8 pagi &ndash; 4 petang.</td></tr><tr><td class='it'>Grindelwald First + 1 aktiviti</td><td class='add'>RM 537</td><td>6&ndash;15 thn: RM 297 &middot; &le;5 thn: FREE (tanpa aktiviti)</td><td>Cable car pergi-balik, First Walk by Tissot, First View, Bort Alpine playground. Aktiviti Jan&ndash;Okt ikut availability: First Glider, First Flyer, Mountain Cart, Trottibike.</td></tr><tr><td class='it'>Mount Rigi Pass</td><td class='add'>RM 497</td><td>6&ndash;15 thn: RM 357 &middot; &le;5 thn: FREE</td><td>Train + cable car. Pilihan puncak paling murah. Sumber: rate card ARBA &mdash; tiada dalam sheet operator.</td></tr><tr><td class='it'>Murren (Stechelberg &rarr; Murren)</td><td class='add'>RM 327</td><td>6&ndash;15 thn: RM 277 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik. Buka sepanjang tahun, 6 pagi &ndash; 11 malam.</td></tr><tr><td class='it'>Interlaken Lake Cruise (Lake Thun)</td><td class='add'>RM 327 (10 thn ke atas)</td><td>&le;9 thn: FREE</td><td>Tiket cruise 2nd class, sehala.</td></tr><tr><td class='it'>Kandersteg Oeschinensee</td><td class='add'>RM 197</td><td>6&ndash;15 thn: RM 97 &middot; &le;5 thn: FREE</td><td>Cable car / gondola pergi-balik. Ada tempoh tutup untuk maintenance &mdash; lihat dropdown waktu operasi.</td></tr><tr><td class='it'>Pfingstegg Grindelwald</td><td class='add'>RM 197</td><td>6&ndash;15 thn: RM 97 &middot; &le;5 thn: FREE</td><td>Cable car / gondola pergi-balik.</td></tr><tr><td class='it'>Iseltwald Bridge Fee</td><td class='add'>RM 67</td><td>Sama untuk semua umur</td><td>Lokasi filem CLOY di Lake Brienz.</td></tr></tbody></table></div><div class='custblk'><h3>Panoramic Train (tiket sehala)</h3><table class='ctbl'><thead><tr><th>Train &amp; laluan</th><th>16 tahun ke atas</th><th>Kanak-kanak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bernina Express &mdash; Chur &rarr; St Moritz</td><td class='add'>RM 997</td><td>6&ndash;15 thn: RM 497 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 4 jam. Sepanjang tahun.</td></tr><tr><td class='it'>Glacier Express &mdash; Chur &rarr; Zermatt</td><td class='add'>RM 797</td><td>6&ndash;15 thn: RM 397 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 4 jam 30 minit. Sepanjang tahun.</td></tr><tr><td class='it'>GoldenPass Belle Epoque &mdash; Zweisimmen &rarr; Montreux</td><td class='add'>RM 237</td><td>6&ndash;15 thn: RM 137 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 2 jam. Sepanjang tahun kecuali beberapa tarikh terpilih.</td></tr></tbody></table></div><div class='custblk'><h3>Aktiviti Adventure (harga per ride / per aktiviti)</h3><table class='ctbl'><thead><tr><th>Aktiviti</th><th>Harga</th><th>Had umur / berat</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Skydiving (Interlaken)</td><td class='add'>RM 2,797</td><td>12 tahun ke atas &middot; berat 40&ndash;100 kg &middot; tinggi min 140 cm</td><td>Skydive, safety briefing &amp; peralatan. Slot 8.30 pagi dan 12 tengah hari. Bawah 12 tahun tidak dibenarkan.</td></tr><tr><td class='it'>Paragliding (Interlaken)</td><td class='add'>RM 1,337</td><td>5 tahun ke atas &middot; berat min 30 kg</td><td>Bas berhawa dingin, pilot berpengalaman, peralatan, penerbangan 10&ndash;20 minit. Slot 8.15 pagi, 4.45 petang &amp; 6 petang tidak sesuai untuk melebihi 80 kg; beberapa slot tengah hari tidak sesuai melebihi 100 kg.</td></tr><tr><td class='it'>Mountain Cart (Grindelwald First)</td><td class='add'>16+: RM 137 &middot; 6&ndash;15 thn: RM 97</td><td>&le;5 thn tidak dibenarkan</td><td>Per ride. Operasi 9 pagi &ndash; 5.30 petang dalam musim.</td></tr><tr><td class='it'>Zipline / Flyline (Pfingstegg)</td><td class='add'>16+: RM 77 &middot; 4&ndash;15 thn: RM 57</td><td>&le;4 thn tidak dibenarkan</td><td>Per ride.</td></tr><tr><td class='it'>Mountain Coaster (Pfingstegg)</td><td class='add'>16+: RM 57 &middot; 8&ndash;15 thn: RM 37 &middot; 4&ndash;7 thn: RM 17</td><td>4&ndash;7 thn wajib bersama dewasa</td><td>Per ride.</td></tr><tr><td class='it'>Mountain Coaster (Oeschinensee)</td><td class='add'>RM 37</td><td>4&ndash;7 thn wajib bersama dewasa</td><td>Per ride. Cuaca kering sahaja.</td></tr></tbody></table></div><div class='custblk'><h3>Travel Essentials</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Pocket WiFi (3GB)</td><td><span class='add'>RM 200</span></td><td>Setiap trip</td></tr><tr><td class='it'>Pocket WiFi (6GB)</td><td><span class='add'>RM 140</span></td><td>Setiap trip</td></tr><tr><td class='it'>Luggage Tag Blue Ribbon</td><td><span class='add'>RM 20&ndash;70</span></td><td>Silver 20 &middot; Gold 40 &middot; Platinum 55 &middot; Diamond 70</td></tr><tr><td class='it'>Takaful TripCare 360 (Etiqa)</td><td><span class='add'>dari RM 72</span></td><td>Ikut kategori (Individu / Couple / Family / Senior) &amp; tempoh</td></tr></tbody></table></div><div class='custblk'><h3>Kadar Extension / Custom Itinerary</h3><table class='ctbl'><thead><tr><th>Komponen</th><th>Normal Season</th><th>Peak Season</th></tr></thead><tbody><tr><td class='it'>Transport &mdash; per transport per hari (maks 7 pax)</td><td><span class='add'>RM 3,400</span></td><td><span class='add'>RM 3,700</span></td></tr><tr><td class='it'>Accommodation &mdash; per pax per hari</td><td><span class='add'>RM 500</span></td><td><span class='add'>RM 650</span></td></tr></tbody></table><p><b>Reminder guna calculator ini:</b></p><ul><li>Tambah <b>RM 1,300 per pax</b> sebagai margin.</li><li><b>Bullet:</b> diskaun RM 200 dan pocket WiFi.</li><li>Hanya untuk <b>negara bersebelahan</b> sahaja &mdash; tiada domestic flight yang boleh guna calculator ini.</li></ul></div><p class='ssub'>Sumber harga optional tour: sheet operator <i>Swiss Additional Activities</i>. Waktu operasi dan tarikh tutup adalah seperti dalam sheet operator &mdash; sahkan availability semasa tempahan kerana cable car dan aktiviti alpine tertakluk kepada cuaca. Kadar extension adalah kegunaan dalaman ARBA, bukan untuk diberi kepada customer.</p><details class='qa' data-text='add-on mana patut tc cadangkan? customer biasanya pilih satu sahaja aktiviti puncak — kesan pengalaman bertindih dan kos tinggi. panduan ringkas: add-on sesuai untuk nota mount titlis (engelberg) first-timer, keluarga 2 cable car termasuk gondola rotair. salji sepanjang tahun. glacier cave, cliff walk, snow tubing. gornergrat railway (zermatt) yang mahu lihat matterhorn dekat train panoramik — pengalaman kereta api switzerland yang ikonik. matterhorn glacier paradise puncak tertinggi boleh dicapai cable car 360-degree platform, glacier ice palace. schilthorn / piz gloria peminat james bond thrill walk &amp; skyline walk di birg. lokasi filem 007. mount rigi pass bajet lebih rendah paling murah antara semua puncak. train + cable car. suhu di titlis dan puncak tinggi jauh lebih sejuk dari kawasan base — wajib jaket tebal, sarung tangan &amp; kasut tidak licin walaupun musim panas. jika customer tidak ambil add-on: mereka bebas free &amp; easy di kawasan base. guide akan beri cadangan aktiviti sementara yang lain naik ke puncak.'><summary><span class='tw'>&#9654;</span><span>Add-on mana patut TC cadangkan?</span></summary><div class='ans'><p>Customer biasanya <b>pilih satu sahaja</b> aktiviti puncak &mdash; kesan pengalaman bertindih dan kos tinggi. Panduan ringkas:</p><div class='custblk'><table class='ctbl'><thead><tr><th>Aktiviti</th><th>Waktu operasi</th><th>Tempoh tutup</th></tr></thead><tbody><tr><td class='it'>Mount Titlis</td><td>8.30 pagi &ndash; 5 petang</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Gornergrat Railway</td><td>7.30 pagi &ndash; 5.40 petang</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Murren</td><td>6 pagi &ndash; 11 malam</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Schilthorn</td><td>8 pagi &ndash; 4 petang</td><td>Tutup pertengahan Okt hingga pertengahan Mac</td></tr><tr><td class='it'>Kandersteg Oeschinensee</td><td>8.30 pagi &ndash; 6 petang (musim panas) &middot; 9 pagi &ndash; 5 petang (musim sejuk)</td><td>Tutup hujung Nov dan pertengahan Mac hingga pertengahan Mei</td></tr><tr><td class='it'>Pfingstegg Grindelwald</td><td>8.30 pagi &ndash; 7 petang (puncak musim panas) &middot; 9 pagi &ndash; 6 petang</td><td>Tutup luar musim</td></tr><tr><td class='it'>Grindelwald First</td><td>8 pagi &ndash; 5.30 petang (musim panas) &middot; 9 pagi &ndash; 4 petang</td><td>Tutup hujung Okt hingga akhir Nov</td></tr><tr><td class='it'>Mountain Coaster (Oeschinensee &amp; Pfingstegg)</td><td>9 pagi &ndash; 5.30 petang ikut musim</td><td>Cuaca kering sahaja</td></tr></tbody></table></div><p>Snow Fun Park di Jungfraujoch beroperasi pertengahan Mei hingga pertengahan Oktober sahaja. Aktiviti adventure Grindelwald First (First Glider, First Flyer, Mountain Cart, Trottibike) tersedia Jan hingga Okt ikut availability.</p></div></details><details class='qa' data-text='macam mana kira extension atau tambah hari guna kadar dalam jadual kadar extension / custom itinerary di atas. transport dikira per kenderaan per hari (maks 7 pax satu kenderaan), accommodation dikira per pax per hari . contoh: 4 pax, tambah 2 hari, normal season komponen kiraan jumlah transport rm 3,400 × 2 hari rm 6,800 accommodation rm 500 × 4 pax × 2 hari rm 4,000 margin rm 1,300 × 4 pax rm 5,200 jumlah quotation rm 6,800 + rm 4,000 + rm 5,200 rm 16,000 (rm 4,000 per pax) peak season guna rm 3,700 (transport) dan rm 650 (accommodation). lebih 7 pax perlu kenderaan kedua - darab kadar transport mengikut bilangan kenderaan. had penggunaan: calculator ini hanya untuk sambungan ke negara bersebelahan yang boleh dipandu. mana-mana rancangan yang melibatkan domestic flight tidak boleh guna kadar ini - minta quotation berasingan dari operator. customer bullet dapat diskaun rm 200 dan pocket wifi.'><summary><span class='tw'>&#9654;</span><span>Macam mana kira extension / tambah hari?</span></summary><div class='ans'><p>Guna kadar dalam jadual <b>Kadar Extension / Custom Itinerary</b> di atas. Transport dikira <b>per kenderaan per hari</b> (maks 7 pax satu kenderaan), accommodation dikira <b>per pax per hari</b>.</p><p><b>Contoh: 4 pax, tambah 2 hari, normal season</b></p><div class='custblk'><table class='ctbl'><thead><tr><th>Komponen</th><th>Kiraan</th><th>Jumlah</th></tr></thead><tbody><tr><td class='it'>Transport</td><td>RM 3,400 &times; 2 hari</td><td><span class='add'>RM 6,800</span></td></tr><tr><td class='it'>Accommodation</td><td>RM 500 &times; 4 pax &times; 2 hari</td><td><span class='add'>RM 4,000</span></td></tr><tr><td class='it'>Margin</td><td>RM 1,300 &times; 4 pax</td><td><span class='add'>RM 5,200</span></td></tr><tr><td class='it'>Jumlah quotation</td><td>RM 6,800 + RM 4,000 + RM 5,200</td><td><span class='add'>RM 16,000 (RM 4,000 per pax)</span></td></tr></tbody></table></div><p>Peak season guna RM 3,700 (transport) dan RM 650 (accommodation). Lebih 7 pax perlu kenderaan kedua &mdash; darab kadar transport mengikut bilangan kenderaan.</p><p><b>Had penggunaan:</b> calculator ini hanya untuk sambungan ke <b>negara bersebelahan</b> yang boleh dipandu. Mana-mana rancangan yang melibatkan domestic flight tidak boleh guna kadar ini &mdash; minta quotation berasingan dari operator. Customer Bullet dapat diskaun RM 200 dan pocket WiFi.</p></div></details>",
+     "to": "<h2>Simple Customisation / Add-Ons</h2><p class='ssub'>Harga per pax kecuali dinyatakan. Semua aktiviti puncak, cable car dan panoramic train adalah <b>optional</b> &mdash; tiada dalam base package.</p><div class='custblk'><h3>Optional Tour &mdash; Puncak, Cable Car &amp; Cruise</h3><table class='ctbl'><thead><tr><th>Aktiviti</th><th>16 tahun ke atas</th><th>Kanak-kanak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Jungfraujoch &mdash; Top of Europe</td><td class='add'>RM 1,577</td><td>6&ndash;15 thn: RM 797 &middot; 0&ndash;5 thn: FREE</td><td>Train + cable car pergi-balik, Alpine Sensation, observation deck, Ice Palace. Snow Fun Park pertengahan Mei hingga pertengahan Okt.</td></tr><tr><td class='it'>Gornergrat Railway (Zermatt)</td><td class='add'>RM 837</td><td>6&ndash;15 thn: RM 417 &middot; &le;5 thn: FREE</td><td>Train pergi-balik Zermatt &rarr; Gornergrat (Riffelalp, Riffelberg). Buka sepanjang tahun, 7.30 pagi &ndash; 5.40 petang.</td></tr><tr><td class='it'>Mount Titlis (Engelberg)</td><td class='add'>RM 687</td><td>6&ndash;15 thn: RM 347 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik termasuk Titlis ROTAIR, Glacier Cave, Cliff Walk, IceFlyer, Glacier Park &amp; snow tubing (ikut cuaca). Sepanjang tahun, 8.30 pagi &ndash; 5 petang.</td></tr><tr><td class='it'>Matterhorn Glacier Paradise (Zermatt)</td><td class='add'>RM 687</td><td>9&ndash;15 thn: RM 347 &middot; 0&ndash;8 thn: FREE</td><td>Cable car pergi-balik, platform 360 darjah, Glacier Ice Palace, Cinema Lounge, The Peak Shop.</td></tr><tr><td class='it'>Schilthorn / Piz Gloria</td><td class='add'>RM 687</td><td>6&ndash;15 thn: RM 347 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik dari Stechelberg. Spy World &amp; Cinema, Walk of Fame, Piz Gloria view point, Skyline Walk &amp; Thrill Walk di Birg. 8 pagi &ndash; 4 petang.</td></tr><tr><td class='it'>Grindelwald First + 1 aktiviti</td><td class='add'>RM 537</td><td>6&ndash;15 thn: RM 297 &middot; &le;5 thn: FREE (tanpa aktiviti)</td><td>Cable car pergi-balik, First Walk by Tissot, First View, Bort Alpine playground. Aktiviti Jan&ndash;Okt ikut availability: First Glider, First Flyer, Mountain Cart, Trottibike.</td></tr><tr><td class='it'>Mount Rigi Pass</td><td class='add'>RM 497</td><td>6&ndash;15 thn: RM 357 &middot; &le;5 thn: FREE</td><td>Train + cable car. Pilihan puncak paling murah. Sumber: rate card ARBA &mdash; tiada dalam sheet operator.</td></tr><tr><td class='it'>Murren (Stechelberg &rarr; Murren)</td><td class='add'>RM 327</td><td>6&ndash;15 thn: RM 277 &middot; &le;5 thn: FREE</td><td>Cable car pergi-balik. Buka sepanjang tahun, 6 pagi &ndash; 11 malam.</td></tr><tr><td class='it'>Interlaken Lake Cruise (Lake Thun)</td><td class='add'>RM 327 (10 thn ke atas)</td><td>&le;9 thn: FREE</td><td>Tiket cruise 2nd class, sehala.</td></tr><tr><td class='it'>Kandersteg Oeschinensee</td><td class='add'>RM 197</td><td>6&ndash;15 thn: RM 97 &middot; &le;5 thn: FREE</td><td>Cable car / gondola pergi-balik. Ada tempoh tutup untuk maintenance &mdash; lihat dropdown waktu operasi.</td></tr><tr><td class='it'>Pfingstegg Grindelwald</td><td class='add'>RM 197</td><td>6&ndash;15 thn: RM 97 &middot; &le;5 thn: FREE</td><td>Cable car / gondola pergi-balik.</td></tr><tr><td class='it'>Iseltwald Bridge Fee</td><td class='add'>RM 67</td><td>Sama untuk semua umur</td><td>Lokasi filem CLOY di Lake Brienz.</td></tr></tbody></table></div><div class='custblk'><h3>Panoramic Train (tiket sehala)</h3><table class='ctbl'><thead><tr><th>Train &amp; laluan</th><th>16 tahun ke atas</th><th>Kanak-kanak</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Bernina Express &mdash; Chur &rarr; St Moritz</td><td class='add'>RM 997</td><td>6&ndash;15 thn: RM 497 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 4 jam. Sepanjang tahun.</td></tr><tr><td class='it'>Glacier Express &mdash; Chur &rarr; Zermatt</td><td class='add'>RM 797</td><td>6&ndash;15 thn: RM 397 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 4 jam 30 minit. Sepanjang tahun.</td></tr><tr><td class='it'>GoldenPass Belle Epoque &mdash; Zweisimmen &rarr; Montreux</td><td class='add'>RM 237</td><td>6&ndash;15 thn: RM 137 &middot; &le;5 thn: FREE</td><td>Perjalanan lebih kurang 2 jam. Sepanjang tahun kecuali beberapa tarikh terpilih.</td></tr></tbody></table></div><div class='custblk'><h3>Aktiviti Adventure (harga per ride / per aktiviti)</h3><table class='ctbl'><thead><tr><th>Aktiviti</th><th>Harga</th><th>Had umur / berat</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Skydiving (Interlaken)</td><td class='add'>RM 2,797</td><td>12 tahun ke atas &middot; berat 40&ndash;100 kg &middot; tinggi min 140 cm</td><td>Skydive, safety briefing &amp; peralatan. Slot 8.30 pagi dan 12 tengah hari. Bawah 12 tahun tidak dibenarkan.</td></tr><tr><td class='it'>Paragliding (Interlaken)</td><td class='add'>RM 1,337</td><td>5 tahun ke atas &middot; berat min 30 kg</td><td>Bas berhawa dingin, pilot berpengalaman, peralatan, penerbangan 10&ndash;20 minit. Slot 8.15 pagi, 4.45 petang &amp; 6 petang tidak sesuai untuk melebihi 80 kg; beberapa slot tengah hari tidak sesuai melebihi 100 kg.</td></tr><tr><td class='it'>Mountain Cart (Grindelwald First)</td><td class='add'>16+: RM 137 &middot; 6&ndash;15 thn: RM 97</td><td>&le;5 thn tidak dibenarkan</td><td>Per ride. Operasi 9 pagi &ndash; 5.30 petang dalam musim.</td></tr><tr><td class='it'>Zipline / Flyline (Pfingstegg)</td><td class='add'>16+: RM 77 &middot; 4&ndash;15 thn: RM 57</td><td>&le;4 thn tidak dibenarkan</td><td>Per ride.</td></tr><tr><td class='it'>Mountain Coaster (Pfingstegg)</td><td class='add'>16+: RM 57 &middot; 8&ndash;15 thn: RM 37 &middot; 4&ndash;7 thn: RM 17</td><td>4&ndash;7 thn wajib bersama dewasa</td><td>Per ride.</td></tr><tr><td class='it'>Mountain Coaster (Oeschinensee)</td><td class='add'>RM 37</td><td>4&ndash;7 thn wajib bersama dewasa</td><td>Per ride. Cuaca kering sahaja.</td></tr></tbody></table></div><div class='custblk'><h3>Travel Essentials</h3><table class='ctbl'><thead><tr><th>Item</th><th>Harga</th><th>Nota</th></tr></thead><tbody><tr><td class='it'>Pocket WiFi (3GB)</td><td><span class='add'>RM 140</span></td><td>Setiap trip</td></tr><tr><td class='it'>Pocket WiFi (6GB)</td><td><span class='add'>RM 200</span></td><td>Setiap trip</td></tr><tr><td class='it'>Luggage Tag Blue Ribbon</td><td><span class='add'>RM 20&ndash;70</span></td><td>Silver 20 &middot; Gold 40 &middot; Platinum 55 &middot; Diamond 70</td></tr><tr><td class='it'>Takaful TripCare 360 (Etiqa)</td><td><span class='add'>dari RM 72</span></td><td>Ikut kategori (Individu / Couple / Family / Senior) &amp; tempoh</td></tr></tbody></table></div><div class='custblk'><h3>Kadar Extension / Custom Itinerary</h3><table class='ctbl'><thead><tr><th>Komponen</th><th>Normal Season</th><th>Peak Season</th></tr></thead><tbody><tr><td class='it'>Transport &mdash; per transport per hari (maks 7 pax)</td><td><span class='add'>RM 3,400</span></td><td><span class='add'>RM 3,700</span></td></tr><tr><td class='it'>Accommodation &mdash; per pax per hari</td><td><span class='add'>RM 500</span></td><td><span class='add'>RM 650</span></td></tr></tbody></table><p><b>Reminder guna calculator ini:</b></p><ul><li>Tambah <b>RM 1,300 per pax</b> sebagai margin.</li><li><b>Bullet:</b> diskaun RM 200 dan pocket WiFi.</li><li>Hanya untuk <b>negara bersebelahan</b> sahaja &mdash; tiada domestic flight yang boleh guna calculator ini.</li></ul></div><p class='ssub'>Sumber harga optional tour: sheet operator <i>Swiss Additional Activities</i>. Waktu operasi dan tarikh tutup adalah seperti dalam sheet operator &mdash; sahkan availability semasa tempahan kerana cable car dan aktiviti alpine tertakluk kepada cuaca. Kadar extension adalah kegunaan dalaman ARBA, bukan untuk diberi kepada customer.</p><details class='qa' data-text='add-on mana patut tc cadangkan? customer biasanya pilih satu sahaja aktiviti puncak — kesan pengalaman bertindih dan kos tinggi. panduan ringkas: add-on sesuai untuk nota mount titlis (engelberg) first-timer, keluarga 2 cable car termasuk gondola rotair. salji sepanjang tahun. glacier cave, cliff walk, snow tubing. gornergrat railway (zermatt) yang mahu lihat matterhorn dekat train panoramik — pengalaman kereta api switzerland yang ikonik. matterhorn glacier paradise puncak tertinggi boleh dicapai cable car 360-degree platform, glacier ice palace. schilthorn / piz gloria peminat james bond thrill walk &amp; skyline walk di birg. lokasi filem 007. mount rigi pass bajet lebih rendah paling murah antara semua puncak. train + cable car. suhu di titlis dan puncak tinggi jauh lebih sejuk dari kawasan base — wajib jaket tebal, sarung tangan &amp; kasut tidak licin walaupun musim panas. jika customer tidak ambil add-on: mereka bebas free &amp; easy di kawasan base. guide akan beri cadangan aktiviti sementara yang lain naik ke puncak.'><summary><span class='tw'>&#9654;</span><span>Add-on mana patut TC cadangkan?</span></summary><div class='ans'><p>Customer biasanya <b>pilih satu sahaja</b> aktiviti puncak &mdash; kesan pengalaman bertindih dan kos tinggi. Panduan ringkas:</p><div class='custblk'><table class='ctbl'><thead><tr><th>Aktiviti</th><th>Waktu operasi</th><th>Tempoh tutup</th></tr></thead><tbody><tr><td class='it'>Mount Titlis</td><td>8.30 pagi &ndash; 5 petang</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Gornergrat Railway</td><td>7.30 pagi &ndash; 5.40 petang</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Murren</td><td>6 pagi &ndash; 11 malam</td><td>Buka sepanjang tahun</td></tr><tr><td class='it'>Schilthorn</td><td>8 pagi &ndash; 4 petang</td><td>Tutup pertengahan Okt hingga pertengahan Mac</td></tr><tr><td class='it'>Kandersteg Oeschinensee</td><td>8.30 pagi &ndash; 6 petang (musim panas) &middot; 9 pagi &ndash; 5 petang (musim sejuk)</td><td>Tutup hujung Nov dan pertengahan Mac hingga pertengahan Mei</td></tr><tr><td class='it'>Pfingstegg Grindelwald</td><td>8.30 pagi &ndash; 7 petang (puncak musim panas) &middot; 9 pagi &ndash; 6 petang</td><td>Tutup luar musim</td></tr><tr><td class='it'>Grindelwald First</td><td>8 pagi &ndash; 5.30 petang (musim panas) &middot; 9 pagi &ndash; 4 petang</td><td>Tutup hujung Okt hingga akhir Nov</td></tr><tr><td class='it'>Mountain Coaster (Oeschinensee &amp; Pfingstegg)</td><td>9 pagi &ndash; 5.30 petang ikut musim</td><td>Cuaca kering sahaja</td></tr></tbody></table></div><p>Snow Fun Park di Jungfraujoch beroperasi pertengahan Mei hingga pertengahan Oktober sahaja. Aktiviti adventure Grindelwald First (First Glider, First Flyer, Mountain Cart, Trottibike) tersedia Jan hingga Okt ikut availability.</p></div></details><details class='qa' data-text='macam mana kira extension atau tambah hari guna kadar dalam jadual kadar extension / custom itinerary di atas. transport dikira per kenderaan per hari (maks 7 pax satu kenderaan), accommodation dikira per pax per hari . contoh: 4 pax, tambah 2 hari, normal season komponen kiraan jumlah transport rm 3,400 × 2 hari rm 6,800 accommodation rm 500 × 4 pax × 2 hari rm 4,000 margin rm 1,300 × 4 pax rm 5,200 jumlah quotation rm 6,800 + rm 4,000 + rm 5,200 rm 16,000 (rm 4,000 per pax) peak season guna rm 3,700 (transport) dan rm 650 (accommodation). lebih 7 pax perlu kenderaan kedua - darab kadar transport mengikut bilangan kenderaan. had penggunaan: calculator ini hanya untuk sambungan ke negara bersebelahan yang boleh dipandu. mana-mana rancangan yang melibatkan domestic flight tidak boleh guna kadar ini - minta quotation berasingan dari operator. customer bullet dapat diskaun rm 200 dan pocket wifi.'><summary><span class='tw'>&#9654;</span><span>Macam mana kira extension / tambah hari?</span></summary><div class='ans'><p>Guna kadar dalam jadual <b>Kadar Extension / Custom Itinerary</b> di atas. Transport dikira <b>per kenderaan per hari</b> (maks 7 pax satu kenderaan), accommodation dikira <b>per pax per hari</b>.</p><p><b>Contoh: 4 pax, tambah 2 hari, normal season</b></p><div class='custblk'><table class='ctbl'><thead><tr><th>Komponen</th><th>Kiraan</th><th>Jumlah</th></tr></thead><tbody><tr><td class='it'>Transport</td><td>RM 3,400 &times; 2 hari</td><td><span class='add'>RM 6,800</span></td></tr><tr><td class='it'>Accommodation</td><td>RM 500 &times; 4 pax &times; 2 hari</td><td><span class='add'>RM 4,000</span></td></tr><tr><td class='it'>Margin</td><td>RM 1,300 &times; 4 pax</td><td><span class='add'>RM 5,200</span></td></tr><tr><td class='it'>Jumlah quotation</td><td>RM 6,800 + RM 4,000 + RM 5,200</td><td><span class='add'>RM 16,000 (RM 4,000 per pax)</span></td></tr></tbody></table></div><p>Peak season guna RM 3,700 (transport) dan RM 650 (accommodation). Lebih 7 pax perlu kenderaan kedua &mdash; darab kadar transport mengikut bilangan kenderaan.</p><p><b>Had penggunaan:</b> calculator ini hanya untuk sambungan ke <b>negara bersebelahan</b> yang boleh dipandu. Mana-mana rancangan yang melibatkan domestic flight tidak boleh guna kadar ini &mdash; minta quotation berasingan dari operator. Customer Bullet dapat diskaun RM 200 dan pocket WiFi.</p></div></details>",
+     "label": "KB switzerland › content › blocks › custom"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "blocks",
+      "calc"
+     ],
+     "from": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season, surcaj travel 2027, last minute dan late booking dikira sendiri. Dalam panel <b>Ubah itinerary</b>, setiap hari boleh ditukar kepada mana-mana blok dalam pustaka (Zurich &middot; Lucerne &middot; Interlaken &middot; Zermatt &middot; panoramic train). Hari yang TC tambah sendiri terus berkos ikut kadar extension; malam lebih atau kurang daripada pakej asal dilaras sendiri. Sumber: katalog PT Switzerland Standard 7D6N 2026 (last updated 8 Dis 2025) dan rate card ARBA. Switzerland <b>tiada ProdReq</b>, jadi kadar transport adalah satu kadar rata seluruh negara &mdash; tiada kadar ikut kawasan.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (7&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;6)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>RM 900 flat, bukan FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>+RM 2,800 setiap satu (rate card ARBA)</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (adult)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "to": "<h2>Simple Calculator</h2><p class='ssub'>Isi pax dan tarikh &mdash; peak season, surcaj travel 2027, last minute dan late booking dikira sendiri. Dalam panel <b>Ubah itinerary</b>, setiap hari boleh ditukar kepada mana-mana blok dalam pustaka (Zurich &middot; Lucerne &middot; Interlaken &middot; Zermatt &middot; panoramic train). Hari yang TC tambah sendiri terus berkos ikut kadar extension; malam lebih atau kurang daripada pakej asal dilaras sendiri. Sumber: katalog PT Switzerland Standard 7D6N 2026 (last updated 8 Dis 2025) dan rate card ARBA. Switzerland <b>tiada ProdReq</b>, jadi kadar transport adalah satu kadar rata seluruh negara &mdash; tiada kadar ikut kawasan.</p><div class='custblk calcblk'><h3>Detail customer</h3><div class='cgrid'><label class='fld'><span class='fl'>Nama customer</span><input id='c_name' type='text' placeholder='Nama penuh customer'></label><label class='fld'><span class='fl'>Departure date</span><input id='c_dep' type='date'><span class='fh'>Hari 1 trip</span></label><label class='fld'><span class='fl'>Return date</span><input id='c_ret' type='date'><span class='fh'>Hari terakhir &mdash; tentukan panjang trip</span></label><label class='fld'><span class='fl'>Adult (12 tahun ke atas)</span><input id='c_adult' type='number' min='0' value='2'></label><label class='fld'><span class='fl'>Child With Bed (7&ndash;11)</span><input id='c_cwb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Child No Bed (2&ndash;6)</span><input id='c_cnb' type='number' min='0' value='0'></label><label class='fld'><span class='fl'>Infant (bawah 2)</span><input id='c_inf' type='number' min='0' value='0'><span class='fh'>RM 900 flat, bukan FOC</span></label><label class='fld'><span class='fl'>Bilik single</span><input id='c_single' type='number' min='0' value='0'><span class='fh'>Quoted upon request (katalog) &mdash; minta kadar daripada PO</span></label></div><p class='calcnote' id='c_tier'></p></div><details class='panel' id='p_itin'><summary><span class='tw'>&#9654;</span><span class='pt'>Ubah itinerary</span><span class='psum' id='p_itin_s'></span></summary><div class='pbody'><div class='dbar'><span id='c_bar'></span><button type='button' id='c_expand' class='cbtn cbtn3'>Buka semua</button></div><div id='c_days'></div><div class='cbtns'><button type='button' id='c_addday' class='cbtn'>+ Tambah Hari</button><button type='button' id='c_reload' class='cbtn cbtn2'>Muat semula itinerary asal</button></div><p class='calcnote'>Seret baris hari (&#10303;) untuk susun semula &mdash; nombor hari dan tarikh berubah sendiri. Tambah atau buang hari akan laraskan <b>return date</b>. Pilihan bertanda <i>Termasuk pakej</i> tidak menambah kos.</p></div></details><div class='custblk calcblk'><h3>Ringkasan quotation</h3><table class='ctbl calctbl'><thead><tr><th>Item</th><th>Bil.</th><th>Harga seunit (RM)</th><th>Jumlah (RM)</th></tr></thead><tbody id='c_lines'></tbody></table><div class='ctot'><div><span class='ctl'>Grand Total</span><span class='ctv' id='c_grand'>RM 0</span></div><div><span class='ctl'>Per pax (adult)</span><span class='ctv' id='c_perpax'>RM 0</span></div><div><span class='ctl'>Deposit</span><span class='ctv' id='c_dep_amt'>RM 0</span></div></div><div class='cbtns'><button type='button' id='c_pdf' class='cbtn'>Jana Quotation PDF</button><button type='button' id='c_reset' class='cbtn cbtn2'>Reset semua</button></div><p class='calcnote'>Quotation dibuka dalam <b>tab baharu</b> mengikut format rasmi ARBA &mdash; dari situ tekan <b>Muat turun PDF</b> untuk simpan fail.</p></div>",
+     "label": "KB switzerland › content › blocks › calc"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "blocks",
+      "map"
+     ],
+     "from": "<h2>Travel Map</h2><p class='ssub'>Route map rasmi PT Switzerland 7H6M. Susunan boleh berubah ikut cuaca, musim &amp; keadaan jalan tanpa notis terlebih dahulu.</p><div class='custblk' style='max-width:470px;margin:0 auto 20px'><div style='font-size:13.5px;font-weight:700;margin:0 0 8px'>PT Switzerland 7H6M (Zurich in &#8594; Zurich out)</div><img src='@asset:9608858b5a37' alt='Route Map PT Switzerland 7H6M' style='width:100%;height:auto;display:block;border:1px solid #e6e6e6;border-radius:12px'><div style='font-size:12px;color:#6b6b6b;margin-top:7px;line-height:1.5'>Zurich (2+1 malam) &#8594; Bern (2 malam) &#8594; T&auml;sch (1 malam) &#8594; Bern &#8594; Zurich. Semua pergerakan guna private MPV/Van.</div></div><div class='custblk'><h3>Masa perjalanan antara sektor</h3><table class='ctbl'><thead><tr><th>Sektor</th><th>Masa</th><th>Hari</th></tr></thead><tbody><tr><td class='it'>Zurich &rarr; Rhine Falls</td><td class='add'>1 jam</td><td>Day 2</td></tr><tr><td class='it'>Zurich &rarr; Engelberg</td><td class='add'>1 jam 30 min</td><td>Day 3</td></tr><tr><td class='it'>Engelberg &rarr; Lucerne</td><td class='add'>1 jam</td><td>Day 3</td></tr><tr><td class='it'>Lucerne &rarr; Bern</td><td class='add'>1 jam 30 min</td><td>Day 3</td></tr><tr><td class='it'>Bern &rarr; Grindelwald</td><td class='add'>1 jam</td><td>Day 4</td></tr><tr><td class='it'>Grindelwald &harr; Lauterbrunnen</td><td class='add'>30 min</td><td>Day 4</td></tr><tr><td class='it'>Bern &rarr; T&auml;sch</td><td class='add'>2 jam 30 min</td><td>Day 5</td></tr><tr><td class='it'>T&auml;sch &rarr; Zermatt</td><td class='add'>Train panoramik (termasuk)</td><td>Day 5</td></tr><tr><td class='it'>T&auml;sch &rarr; Blausee &rarr; Interlaken</td><td class='add'>1 jam 30 min</td><td>Day 6</td></tr><tr><td class='it'>Interlaken &rarr; Iseltwald &rarr; Zurich</td><td class='add'>15 min + 2 jam</td><td>Day 6</td></tr></tbody></table><p class='custnote'>Zermatt adalah kawasan bebas kereta &mdash; sebab itu bermalam di T&auml;sch dan masuk Zermatt dengan train panoramik (sudah termasuk dalam pakej).</p></div><details class='qa' open data-text='susunan hari — 7h6m day 1 — tiba zurich (zrh), airport transfer, check in zurich. day 2 — rhine falls (boat tour termasuk), zurich old town, lindenhof, bürkliplatz, bahnhofstrasse. day 3 — engelberg &amp; mount titlis (optional), lucerne old town, chapel bridge. check in bern. day 4 — grindelwald, lauterbrunnen, staubbach waterfall, mürren, birg &amp; schilthorn (optional). malam di bern. day 5 — train täsch–zermatt, matterhorn glacier paradise (optional), gornergrat (optional). check in täsch/visp. day 6 — lake blausee, interlaken west, interlaken lake cruise, iseltwald (lokasi filem cloy). malam di bern. day 7 — check out, airport transfer, berlepas dari zurich. lindenhof, bürkliplatz dan iseltwald adalah lokasi penggambaran crash landing on you — selling point kuat untuk customer peminat drama korea.'><summary><span class='tw'>&#9654;</span><span>Susunan hari &mdash; 7H6M</span></summary><div class='ans'><ul><li><strong>Day 1</strong> &mdash; Tiba Zurich (ZRH), airport transfer, check in Zurich.</li><li><strong>Day 2</strong> &mdash; Rhine Falls (boat tour termasuk), Zurich Old Town, Lindenhof, B&uuml;rkliplatz, Bahnhofstrasse.</li><li><strong>Day 3</strong> &mdash; Engelberg &amp; Mount Titlis (optional), Lucerne Old Town, Chapel Bridge. Check in Bern.</li><li><strong>Day 4</strong> &mdash; Grindelwald, Lauterbrunnen, Staubbach Waterfall, M&uuml;rren, Birg &amp; Schilthorn (optional). Malam di Bern.</li><li><strong>Day 5</strong> &mdash; Train T&auml;sch&ndash;Zermatt, Matterhorn Glacier Paradise (optional), Gornergrat (optional). Check in T&auml;sch/Visp.</li><li><strong>Day 6</strong> &mdash; Lake Blausee, Interlaken West, Interlaken Lake Cruise, Iseltwald (lokasi filem CLOY). Malam di Bern.</li><li><strong>Day 7</strong> &mdash; Check out, airport transfer, berlepas dari Zurich.</li></ul><p>Lindenhof, B&uuml;rkliplatz dan Iseltwald adalah lokasi penggambaran <em>Crash Landing on You</em> &mdash; selling point kuat untuk customer peminat drama Korea.</p></div></details>",
+     "to": "<h2>Travel Map</h2><p class='ssub'>Route map rasmi PT Switzerland 7H6M. Susunan boleh berubah ikut cuaca, musim &amp; keadaan jalan tanpa notis terlebih dahulu.</p><div class='custblk' style='max-width:470px;margin:0 auto 20px'><div style='font-size:13.5px;font-weight:700;margin:0 0 8px'>PT Switzerland 7H6M (Zurich in &#8594; Zurich out)</div><img src='@asset:9608858b5a37' alt='Route Map PT Switzerland 7H6M' style='width:100%;height:auto;display:block;border:1px solid #e6e6e6;border-radius:12px'><div style='font-size:12px;color:#6b6b6b;margin-top:7px;line-height:1.5'>Zurich (2 malam) &#8594; Bern (2 malam) &#8594; T&auml;sch (1 malam) &#8594; Bern (1 malam) &#8594; Zurich. Semua pergerakan guna private MPV/Van.</div></div><div class='custblk'><h3>Masa perjalanan antara sektor</h3><table class='ctbl'><thead><tr><th>Sektor</th><th>Masa</th><th>Hari</th></tr></thead><tbody><tr><td class='it'>Zurich &rarr; Rhine Falls</td><td class='add'>1 jam</td><td>Day 2</td></tr><tr><td class='it'>Zurich &rarr; Engelberg</td><td class='add'>1 jam 30 min</td><td>Day 3</td></tr><tr><td class='it'>Engelberg &rarr; Lucerne</td><td class='add'>1 jam</td><td>Day 3</td></tr><tr><td class='it'>Lucerne &rarr; Bern</td><td class='add'>1 jam 30 min</td><td>Day 3</td></tr><tr><td class='it'>Bern &rarr; Grindelwald</td><td class='add'>1 jam</td><td>Day 4</td></tr><tr><td class='it'>Grindelwald &harr; Lauterbrunnen</td><td class='add'>30 min</td><td>Day 4</td></tr><tr><td class='it'>Bern &rarr; T&auml;sch</td><td class='add'>2 jam 30 min</td><td>Day 5</td></tr><tr><td class='it'>T&auml;sch &rarr; Zermatt</td><td class='add'>Train panoramik (termasuk)</td><td>Day 5</td></tr><tr><td class='it'>T&auml;sch &rarr; Blausee &rarr; Interlaken</td><td class='add'>1 jam 30 min</td><td>Day 6</td></tr><tr><td class='it'>Interlaken &rarr; Iseltwald &rarr; Bern</td><td class='add'>15 min + 1 jam</td><td>Day 6</td></tr></tbody></table><p class='custnote'>Zermatt adalah kawasan bebas kereta &mdash; sebab itu bermalam di T&auml;sch dan masuk Zermatt dengan train panoramik (sudah termasuk dalam pakej).</p></div><details class='qa' open data-text='susunan hari — 7h6m day 1 — tiba zurich (zrh), airport transfer, check in zurich. day 2 — rhine falls (boat tour termasuk), zurich old town, lindenhof, bürkliplatz, bahnhofstrasse. day 3 — engelberg &amp; mount titlis (optional), lucerne old town, chapel bridge. check in bern. day 4 — grindelwald, lauterbrunnen, staubbach waterfall, mürren, birg &amp; schilthorn (optional). malam di bern. day 5 — train täsch–zermatt, matterhorn glacier paradise (optional), gornergrat (optional). check in täsch/visp. day 6 — lake blausee, interlaken west, interlaken lake cruise, iseltwald (lokasi filem cloy). malam di bern. day 7 — check out, airport transfer, berlepas dari zurich. lindenhof, bürkliplatz dan iseltwald adalah lokasi penggambaran crash landing on you — selling point kuat untuk customer peminat drama korea.'><summary><span class='tw'>&#9654;</span><span>Susunan hari &mdash; 7H6M</span></summary><div class='ans'><ul><li><strong>Day 1</strong> &mdash; Tiba Zurich (ZRH), airport transfer, check in Zurich.</li><li><strong>Day 2</strong> &mdash; Rhine Falls (boat tour termasuk), Zurich Old Town, Lindenhof, B&uuml;rkliplatz, Bahnhofstrasse.</li><li><strong>Day 3</strong> &mdash; Engelberg &amp; Mount Titlis (optional), Lucerne Old Town, Chapel Bridge. Check in Bern.</li><li><strong>Day 4</strong> &mdash; Grindelwald, Lauterbrunnen, Staubbach Waterfall, M&uuml;rren, Birg &amp; Schilthorn (optional). Malam di Bern.</li><li><strong>Day 5</strong> &mdash; Train T&auml;sch&ndash;Zermatt, Matterhorn Glacier Paradise (optional), Gornergrat (optional). Check in T&auml;sch/Visp.</li><li><strong>Day 6</strong> &mdash; Lake Blausee, Interlaken West, Interlaken Lake Cruise, Iseltwald (lokasi filem CLOY). Malam di Bern.</li><li><strong>Day 7</strong> &mdash; Check out, airport transfer, berlepas dari Zurich.</li></ul><p>Lindenhof, B&uuml;rkliplatz dan Iseltwald adalah lokasi penggambaran <em>Crash Landing on You</em> &mdash; selling point kuat untuk customer peminat drama Korea.</p></div></details>",
+     "label": "KB switzerland › content › blocks › map"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "content",
+      "snapshot"
+     ],
+     "from": "# PT Switzerland Standard 7D6N — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*PT Switzerland Standard 7D6N — Ground & Tipping sahaja (tanpa flight). Sah untuk travel period sehingga 31 Dis 2026.*\n\n- Age based on travel date: Adult 12+, Child With Bed 7–11, Child No Bed 2–6, Infant <2 (RM 900 flat — bukan FOC).\n- Final itinerary & hotel arrangement 14 hari sebelum trip.\n- Free activities non-exchangeable dengan voucher/cash jika tidak join atau due to weather/availability.\n- Pax 8 — kenapa lebih mahal: harga pax 8 lebih tinggi dari pax 7 sebab tambahan kenderaan — turun semula pada pax 9–10.\n- Requirement muslim-friendly (halal, surau/masjid, solat) adalah baseline — driver bawa ke stop halal setiap hari.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa kelebihan Private Tour Switzerland dengan ARBA?**\nLebih fleksibel & selesa — travel dengan family/group sendiri tanpa bercampur peserta lain. Private van/MPV + Malaysian driver-cum-guide, hotel 3/4★ city centre, dan banyak FREE add-on (train Täsch–Zermatt, Blausee, Rhine Falls Boat Tour).\n\n**Switzerland trip pergi mana sahaja?**\nZurich, Rhine Falls, Lucerne, Bern, Grindelwald, Lauterbrunnen, Zermatt, Blausee & Interlaken (7D6N).\n\n**Ada lokasi filem CLOY (Crash Landing on You)?**\nYa — Lindenhof & Bürkliplatz (Zurich) dan Iseltwald (Lake Brienz).\n\n**Ada optional activities?**\nMount Titlis, Schilthorn (James Bond), Gornergrat Railway, Matterhorn Glacier Paradise & Mount Rigi Pass. Semua add-on (lihat tab Customisation).\n\n**Pakej rushing tak?**\nSantai berbanding group tour, tapi tetap ada perjalanan antara bandar & banyak berjalan kaki di alpine village.\n\n**Sesuai untuk family / warga emas?**\nSesuai family — suasana selesa, bersih, pemandangan cantik. Warga emas boleh, tapi ambil kira banyak walking & kawasan berbukit alpine.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nBandar besar lebih mudah — Zurich ada 40+ restoran halal, Interlaken ialah 'Halal Hub'. Kawasan alpine terhad; driver-cum-guide bawa ke stop halal. Bawa snek ringan tambahan.\n\n**Lunch & Dinner termasuk?**\nTidak — hanya breakfast hotel yang termasuk. L/D customer arrange, driver bawa ke tempat halal.\n\n**Ada masjid/surau untuk solat?**\nYa — Islamisches Zentrum Zürich (Oerlikon), Masjid Darussalam Interlaken, Moschee Luzern. Zurich Airport ada prayer room (Airside Center, Level 2, ada tanda kiblat). Di pergunungan, solat jamak/qasar di hotel atau rest area.\n\n**Mount Titlis mesra Muslim?**\nYa — Titlis dianggap 'gold standard' untuk pelawat Muslim dengan makanan halal di puncak.\n\n**Makanan apa boleh dibawa dari Malaysia?**\nMakanan **kering** selamat: biskut, roti, kek, coklat, kerepek, mi segera tanpa daging, minuman 3-in-1. **Elak** apa-apa berasaskan **daging atau tenusu** — berisiko tidak lepas imigresen. Maggi perisa ayam/daging berisiko dirampas; perisa kari/sayur/tomyam lebih selamat. Milo serbuk untuk kegunaan sendiri biasanya OK, tetapi hati-hati dengan 3-in-1 bersusu dan kuantiti besar.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam **pek asal beserta label** (jangan buka atau salin pek). Air panas untuk bancuh susu boleh diminta dari kru penerbangan.\n\n### C. Visa & Passport\n\n**Rakyat Malaysia perlu visa ke Switzerland?**\nTiada visa Schengen diperlukan untuk lawatan <90 hari. TAPI mulai Q4 2026, ETIAS (travel authorisation dalam talian) diperkenalkan — mandatori sekitar pertengahan 2027 selepas tempoh transisi.\n\n**Apa itu ETIAS & berapa kos?**\nETIAS ialah kebenaran perjalanan dalam talian untuk Schengen. Yuran EUR 20/pax (sah 3 tahun); percuma untuk <18 & >70 tahun. Apply online di laman rasmi EU ETIAS.\n\n**Passport perlu berapa lama validity?**\nMinimum 3 bulan selepas tarikh keluar dari Eropah, dan dikeluarkan dalam tempoh 10 tahun terakhir. (Amalan biasa: pastikan min 6 bulan.)\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej Ground & Tipping sahaja. Tiket flight antarabangsa customer beli berasingan.\n\n**Ada flight direct KUL–Zurich?**\nTiada flight direct — semua transit. Dua pilihan utama: **Emirates** (transit Dubai) dan **Qatar Airways** (transit Doha).\nKUL → Zurich: Emirates 2.25 AM–1.20 PM atau 10.15 AM–8.20 PM (16–17 jam); Qatar 2.55 AM–2.20 PM atau 9.00 PM–7.55 AM (+1) (16–18 jam).\nZurich → KUL: Emirates 3.25 PM–2.25 PM (+1) atau 10.15 PM–9.50 PM (+1) (17–18 jam); Qatar 9.40 AM–7.50 AM (+1), 4.40 PM–2.45 PM (+1) atau 4.40 PM–3.25 PM (+1) (16–17 jam).\n\n**Masuk & keluar dari airport mana?**\nZurich Airport (ZRH) — ketibaan Hari 1, berlepas Hari 7. Driver-cum-guide tunggu di airport semasa ketibaan.\n\n**Boleh book connecting flight tambahan?**\nSila check dengan staff ARBA dahulu sebelum book connecting flight tambahan.\n\n**Bagasi macam mana?**\nEmirates 30kg · Turkish Airlines 30kg. Maksimum **2 luggage/pax**, satu beg tidak melebihi 30kg. Hand carry 7kg (1 handbag/sling + 1 cabin bag). Tetapi **katalog minta maksimum 1 luggage per pax** kerana kapasiti MPV/Van terhad.\n\n**Boleh share luggage allowance?**\nBoleh dalam booking yang sama — 3 pax × 30kg = 90kg. Had 2 beg per pax kekal, setiap beg ≤30kg.\n\n**Powerbank & bateri macam mana?**\n**Semua bateri & powerbank WAJIB hand carry** — tidak boleh dalam check-in. Had **100Wh (±20,000mAh)**.\n\n**Apa boleh & tak boleh dalam hand carry?**\nCecair **≤100ml** sahaja, dalam plastik yang diikat ketat. Cecair >100ml (lotion, gel) mesti check-in. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) mesti check-in.\n\n**Dokumen apa perlu disediakan?**\n**Tour Voucher** (softcopy memadai, 1 per family) + **Covernote Insurance**. Bawa printed jika risau tiada internet. Bawah 18 tahun: passport sahaja cukup jika bersama parents.\n\n**Semasa layover, ada tempat rehat disediakan?**\nTidak — customer bebas bergerak dalam airport, tetapi mesti berada di boarding gate pada masa yang ditetapkan. Routing ke Zurich semua transit — Dubai (Emirates) atau Doha (Qatar Airways).\n\n**Boleh pilih seat dalam flight?**\nUntuk PT, customer beli tiket sendiri — seat selection diuruskan sendiri melalui airline. Sarankan pilih seat awal untuk keluarga dengan anak kecil atau warga emas.\n\n### E. Hotel & Bilik\n\n**Berapa malam di mana?**\n2 malam Zurich · 2 malam Bern · 1 malam Täsch · 1 malam Bern (jumlah 6 malam).\n\n**Berapa kali tukar hotel?**\n**Tiga kali:** Zurich (2 malam) → Bern (2 malam) → Täsch (1 malam) → Bern (1 malam). Sarankan customer pack satu bag kecil untuk malam di Täsch supaya tidak perlu buka luggage besar.\n\n**Ada kettle & iron dalam bilik?**\n**Kettle:** tidak semua hotel sediakan — air panas boleh diminta di reception. **Iron:** bergantung hotel dan biasanya terhad; sarankan bawa sendiri jika perlu.\n\n**Saiz bilik macam mana? Ada connecting/family room?**\nBilik hotel Europe biasanya lebih kecil dari Asia. Connecting/family room **tidak dijamin** — tertakluk availability.\n\n### F. Cuaca & Musim\n\n**Cuaca Switzerland macam mana?**\n4 musim. Panas (Jun–Ogos) 18–25°C · Spring/Autumn 8–18°C · Winter (Dis–Feb) -5 hingga 5°C (salji). Pergunungan sentiasa lebih sejuk.\n\n**Bila musim terbaik untuk travel?**\nMei–Sep (cuaca terbaik, semua cable car buka). Dis–Mac untuk salji & winter scenery. Elak Apr/Nov (shoulder — sesetengah cable car tutup untuk maintenance).\n\n**Winter mesti dapat salji?**\nPergunungan Titlis/Zermatt high chance salji, tapi tetap bergantung cuaca.\n\n### G. Shopping & Duit\n\n**Guna mata wang apa?**\nSwiss Franc (CHF). 1 CHF ≈ RM 5.00. Tukar di Zurich Airport atau Bahnhof exchange.\n\n**Bawa cash berapa?**\nCadangan RM 3,000–5,000/pax untuk shopping + tiket add-on + makan. Swiss terima Mastercard/Visa di mana-mana; hanya kedai kampung kecil mungkin cash sahaja.\n\n**Shopping di mana?**\nBahnhofstrasse (Zurich) & Interlaken West.\n\n**Tukar duit Swiss Franc atau Euro?**\nTukar **kedua-dua**. Nisbah cadangan: 200 euro : 100 Swiss Franc, bergantung gaya perbelanjaan. Jangan tukar Euro sahaja — risiko tiada tempat tukar duit di sana.\n\n**Berapa duit belanja harian?**\nAnggaran **±20 euro per orang setiap meal** (lunch & dinner tidak termasuk dalam pakej). Tambah lagi untuk snack & shopping. Kebanyakan tempat terima kad; tunai perlu untuk kedai kecil dan **caj masuk tandas awam (1–2 euro)**.\n\n**Boleh guna kad atau e-wallet?**\nVisa/Mastercard boleh — **aktifkan dahulu** dengan bank untuk kegunaan luar negara. Wise, Apple Pay dan BigPay boleh. **Touch 'n Go e-wallet TIDAK boleh** digunakan di Switzerland.\n\n### H. Payment & Refund\n\n**Ada surcharge lain?**\nPeak season +RM 200/pax/malam, late booking +RM 50/booking, last minute +RM 500–700/pax. Lihat tab Surcharge.\n\n### I. Add-ons & Customization\n\n**Ada WiFi & insurance?**\nPocket WiFi dari RM 140/trip; Takaful TripCare 360 (Etiqa) dari RM 72/pax. Lihat tab Customisation.\n\n**Kalau customer tak ambil add-on, mereka tunggu di mana?**\nBebas free & easy di kawasan base. Guide akan beri cadangan aktiviti sementara peserta lain naik ke puncak.\n\n**Semua add-on perlu ambil?**\nTidak — sarankan **pilih satu sahaja** aktiviti puncak kerana pengalaman bertindih dan kos tinggi. Rujuk jadual panduan add-on di bahagian atas tab ini.\n\n### J. Kesihatan & Keselamatan\n\n**Selamat untuk family?**\nYa — Switzerland antara negara paling selamat & bersih. Ikut arahan driver-cum-guide di kawasan alpine.\n\n**Perlu insurance/takaful?**\nSangat digalakkan (tidak termasuk dalam pakej) — boleh tambah TripCare 360.\n\n**Boleh bawa ubat preskripsi?**\nBoleh. Ubat berpreskripsi (darah tinggi, kencing manis) perlu dibawa **bersama surat doktor** — boleh didapatkan dari mana-mana klinik jika hilang. Ubat OTC (panadol, selsema) tidak perlu preskripsi dan tidak wajib label.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh dibawa **on board** (hand carry). Sertakan surat doktor jika ada.\n\n### K. Praktikal (SIM/Socket/Tandas)\n\n**Internet & SIM?**\nBeli eSIM Swisscom/Salt atau Pocket WiFi (roaming EU tidak semestinya cover Switzerland kerana Swiss BUKAN EU). Hotel ada free WiFi.\n\n**Socket & tandas?**\nSwiss guna plug Type J (3-pin) — bawa universal adapter. Tandas awam kadang berbayar (bawa syiling kecil).\n\n### L. Packing\n\n**Kena pakai baju tebal?**\nYa — terutama winter atau pergunungan (Titlis/Zermatt). Pakai berlapis; bawa jaket kalis air, kasut selesa untuk banyak berjalan.\n\n**Berapa luggage boleh bawa?**\nMax 1 luggage/pax kerana kapasiti van. Bawa beg sandang kecil untuk daily.\n",
+     "to": "# PT Switzerland Standard 7D6N — Knowledge Base (Important Notes · FAQ)\n\n## 1. IMPORTANT NOTES (Polisi Pakej)\n\n*PT Switzerland Standard 7D6N — Ground & Tipping sahaja (tanpa flight). Sah untuk travel period sehingga 31 Dis 2026.*\n\n- Age based on travel date: Adult 12+, Child With Bed 7–11, Child No Bed 2–6, Infant <2 (RM 900 flat — bukan FOC).\n- Final itinerary & hotel arrangement 14 hari sebelum trip.\n- Free activities non-exchangeable dengan voucher/cash jika tidak join atau due to weather/availability.\n- Pax 8 — kenapa lebih mahal: harga pax 8 lebih tinggi dari pax 7 sebab tambahan kenderaan — turun semula pada pax 9–10.\n- Requirement muslim-friendly (halal, surau/masjid, solat) adalah baseline — driver bawa ke stop halal setiap hari.\n\n## 3. FAQ\n\n### A. Pakej & Itinerari\n\n**Apa kelebihan Private Tour Switzerland dengan ARBA?**\nLebih fleksibel & selesa — travel dengan family/group sendiri tanpa bercampur peserta lain. Private van/MPV + Malaysian driver-cum-guide, hotel 3/4★ city centre, dan banyak FREE add-on (train Täsch–Zermatt, Blausee, Rhine Falls Boat Tour).\n\n**Switzerland trip pergi mana sahaja?**\nZurich, Rhine Falls, Lucerne, Bern, Grindelwald, Lauterbrunnen, Zermatt, Blausee & Interlaken (7D6N).\n\n**Ada lokasi filem CLOY (Crash Landing on You)?**\nYa — Lindenhof & Bürkliplatz (Zurich) dan Iseltwald (Lake Brienz).\n\n**Ada optional activities?**\nMount Titlis, Schilthorn (James Bond), Gornergrat Railway, Matterhorn Glacier Paradise & Mount Rigi Pass. Semua add-on (lihat tab Customisation).\n\n**Pakej rushing tak?**\nSantai berbanding group tour, tapi tetap ada perjalanan antara bandar & banyak berjalan kaki di alpine village.\n\n**Sesuai untuk family / warga emas?**\nSesuai family — suasana selesa, bersih, pemandangan cantik. Warga emas boleh, tapi ambil kira banyak walking & kawasan berbukit alpine.\n\n### B. Halal, Makanan & Solat\n\n**Makanan halal senang dapat?**\nBandar besar lebih mudah — Zurich ada 40+ restoran halal, Interlaken ialah 'Halal Hub'. Kawasan alpine terhad; driver-cum-guide bawa ke stop halal. Bawa snek ringan tambahan.\n\n**Lunch & Dinner termasuk?**\nTidak — hanya breakfast hotel yang termasuk. L/D customer arrange, driver bawa ke tempat halal.\n\n**Ada masjid/surau untuk solat?**\nYa — Islamisches Zentrum Zürich (Oerlikon), Masjid Darussalam Interlaken, Moschee Luzern. Zurich Airport ada prayer room (Airside Center, Level 2, ada tanda kiblat). Di pergunungan, solat jamak/qasar di hotel atau rest area.\n\n**Mount Titlis mesra Muslim?**\nYa — Titlis dianggap 'gold standard' untuk pelawat Muslim dengan makanan halal di puncak.\n\n**Makanan apa boleh dibawa dari Malaysia?**\nMakanan **kering** selamat: biskut, roti, kek, coklat, kerepek, mi segera tanpa daging, minuman 3-in-1. **Elak** apa-apa berasaskan **daging atau tenusu** — berisiko tidak lepas imigresen. Maggi perisa ayam/daging berisiko dirampas; perisa kari/sayur/tomyam lebih selamat. Milo serbuk untuk kegunaan sendiri biasanya OK, tetapi hati-hati dengan 3-in-1 bersusu dan kuantiti besar.\n\n**Makanan bayi boleh dibawa?**\nBoleh — dalam cabin, dalam **pek asal beserta label** (jangan buka atau salin pek). Air panas untuk bancuh susu boleh diminta dari kru penerbangan.\n\n### C. Visa & Passport\n\n**Rakyat Malaysia perlu visa ke Switzerland?**\nTiada visa Schengen diperlukan untuk lawatan <90 hari. TAPI mulai Q4 2026, ETIAS (travel authorisation dalam talian) diperkenalkan — mandatori sekitar pertengahan 2027 selepas tempoh transisi.\n\n**Apa itu ETIAS & berapa kos?**\nETIAS ialah kebenaran perjalanan dalam talian untuk Schengen. Yuran EUR 20/pax (sah 3 tahun); percuma untuk <18 & >70 tahun. Apply online di laman rasmi EU ETIAS.\n\n**Passport perlu berapa lama validity?**\nMinimum 3 bulan selepas tarikh keluar dari Eropah, dan dikeluarkan dalam tempoh 10 tahun terakhir. (Amalan biasa: pastikan min 6 bulan.)\n\n### D. Flight & Airport\n\n**Flight termasuk dalam pakej?**\nTidak — pakej Ground & Tipping sahaja. Tiket flight antarabangsa customer beli berasingan.\n\n**Ada flight direct KUL–Zurich?**\nTiada flight direct — semua transit. Dua pilihan utama: **Emirates** (transit Dubai) dan **Qatar Airways** (transit Doha).\nKUL → Zurich: Emirates 2.25 AM–1.20 PM atau 10.15 AM–8.20 PM (16–17 jam); Qatar 2.55 AM–2.20 PM atau 9.00 PM–7.55 AM (+1) (16–18 jam).\nZurich → KUL: Emirates 3.25 PM–2.25 PM (+1) atau 10.15 PM–9.50 PM (+1) (17–18 jam); Qatar 9.40 AM–7.50 AM (+1), 4.40 PM–2.45 PM (+1) atau 4.40 PM–3.25 PM (+1) (16–17 jam).\n\n**Masuk & keluar dari airport mana?**\nZurich Airport (ZRH) — ketibaan Hari 1, berlepas Hari 7. Driver-cum-guide tunggu di airport semasa ketibaan.\n\n**Boleh book connecting flight tambahan?**\nSila check dengan staff ARBA dahulu sebelum book connecting flight tambahan.\n\n**Bagasi macam mana?**\nEmirates 30kg · Turkish Airlines 30kg. Maksimum **2 luggage/pax**, satu beg tidak melebihi 30kg. Hand carry 7kg (1 handbag/sling + 1 cabin bag). Tetapi **katalog minta maksimum 1 luggage per pax** kerana kapasiti MPV/Van terhad.\n\n**Boleh share luggage allowance?**\nBoleh dalam booking yang sama — 3 pax × 30kg = 90kg. Had 2 beg per pax kekal, setiap beg ≤30kg.\n\n**Powerbank & bateri macam mana?**\n**Semua bateri & powerbank WAJIB hand carry** — tidak boleh dalam check-in. Had **100Wh (±20,000mAh)**.\n\n**Apa boleh & tak boleh dalam hand carry?**\nCecair **≤100ml** sahaja, dalam plastik yang diikat ketat. Cecair >100ml (lotion, gel) mesti check-in. Barang tajam (gunting kecil, mata pisau pencukur, pembuka botol, pemotong kuku) mesti check-in.\n\n**Dokumen apa perlu disediakan?**\n**Tour Voucher** (softcopy memadai, 1 per family) + **Covernote Insurance**. Bawa printed jika risau tiada internet. Bawah 18 tahun: passport sahaja cukup jika bersama parents.\n\n**Semasa layover, ada tempat rehat disediakan?**\nTidak — customer bebas bergerak dalam airport, tetapi mesti berada di boarding gate pada masa yang ditetapkan. Routing ke Zurich semua transit — Dubai (Emirates) atau Doha (Qatar Airways).\n\n**Boleh pilih seat dalam flight?**\nUntuk PT, customer beli tiket sendiri — seat selection diuruskan sendiri melalui airline. Sarankan pilih seat awal untuk keluarga dengan anak kecil atau warga emas.\n\n### E. Hotel & Bilik\n\n**Berapa malam di mana?**\n2 malam Zurich · 2 malam Bern · 1 malam Täsch · 1 malam Bern (jumlah 6 malam).\n\n**Berapa kali tukar hotel?**\n**Tiga kali:** Zurich (2 malam) → Bern (2 malam) → Täsch (1 malam) → Bern (1 malam). Sarankan customer pack satu bag kecil untuk malam di Täsch supaya tidak perlu buka luggage besar.\n\n**Ada kettle & iron dalam bilik?**\n**Kettle:** tidak semua hotel sediakan — air panas boleh diminta di reception. **Iron:** bergantung hotel dan biasanya terhad; sarankan bawa sendiri jika perlu.\n\n**Saiz bilik macam mana? Ada connecting/family room?**\nBilik hotel Europe biasanya lebih kecil dari Asia. Connecting/family room **tidak dijamin** — tertakluk availability.\n\n### F. Cuaca & Musim\n\n**Cuaca Switzerland macam mana?**\n4 musim. Panas (Jun–Ogos) 18–25°C · Spring/Autumn 8–18°C · Winter (Dis–Feb) -5 hingga 5°C (salji). Pergunungan sentiasa lebih sejuk.\n\n**Bila musim terbaik untuk travel?**\nMei–Sep (cuaca terbaik, semua cable car buka). Dis–Mac untuk salji & winter scenery. Elak Apr/Nov (shoulder — sesetengah cable car tutup untuk maintenance).\n\n**Winter mesti dapat salji?**\nPergunungan Titlis/Zermatt high chance salji, tapi tetap bergantung cuaca.\n\n### G. Shopping & Duit\n\n**Guna mata wang apa?**\nSwiss Franc (CHF). 1 CHF ≈ RM 4.90 (Okt 2026). Tukar di Zurich Airport atau Bahnhof exchange.\n\n**Bawa cash berapa?**\nCadangan RM 3,000–5,000/pax untuk shopping + tiket add-on + makan. Swiss terima Mastercard/Visa di mana-mana; hanya kedai kampung kecil mungkin cash sahaja.\n\n**Shopping di mana?**\nBahnhofstrasse (Zurich) & Interlaken West.\n\n**Tukar duit Swiss Franc atau Euro?**\nTukar **kedua-dua**. Nisbah cadangan: 200 euro : 100 Swiss Franc, bergantung gaya perbelanjaan. Jangan tukar Euro sahaja — risiko tiada tempat tukar duit di sana.\n\n**Berapa duit belanja harian?**\nAnggaran **±20 euro per orang setiap meal** (lunch & dinner tidak termasuk dalam pakej). Tambah lagi untuk snack & shopping. Kebanyakan tempat terima kad; tunai perlu untuk kedai kecil dan **caj masuk tandas awam (1–2 euro)**.\n\n**Boleh guna kad atau e-wallet?**\nVisa/Mastercard boleh — **aktifkan dahulu** dengan bank untuk kegunaan luar negara. Wise, Apple Pay dan BigPay boleh. **Touch 'n Go e-wallet TIDAK boleh** digunakan di Switzerland.\n\n### H. Payment & Refund\n\n**Ada surcharge lain?**\nPeak season +RM 200/pax/malam, travel date 2027 (Jan–Jun) +RM 370/pax, late booking +RM 50/booking, last minute +RM 500–700/pax. Lihat tab Surcharge.\n\n### I. Add-ons & Customization\n\n**Ada WiFi & insurance?**\nPocket WiFi dari RM 140/trip; Takaful TripCare 360 (Etiqa) dari RM 72/pax. Lihat tab Customisation.\n\n**Kalau customer tak ambil add-on, mereka tunggu di mana?**\nBebas free & easy di kawasan base. Guide akan beri cadangan aktiviti sementara peserta lain naik ke puncak.\n\n**Semua add-on perlu ambil?**\nTidak — sarankan **pilih satu sahaja** aktiviti puncak kerana pengalaman bertindih dan kos tinggi. Rujuk jadual panduan add-on di bahagian atas tab ini.\n\n### J. Kesihatan & Keselamatan\n\n**Selamat untuk family?**\nYa — Switzerland antara negara paling selamat & bersih. Ikut arahan driver-cum-guide di kawasan alpine.\n\n**Perlu insurance/takaful?**\nSangat digalakkan (tidak termasuk dalam pakej) — boleh tambah TripCare 360.\n\n**Boleh bawa ubat preskripsi?**\nBoleh. Ubat berpreskripsi (darah tinggi, kencing manis) perlu dibawa **bersama surat doktor** — boleh didapatkan dari mana-mana klinik jika hilang. Ubat OTC (panadol, selsema) tidak perlu preskripsi dan tidak wajib label.\n\n**Mesin nebuliser portable boleh dibawa?**\nBoleh dibawa **on board** (hand carry). Sertakan surat doktor jika ada.\n\n### K. Praktikal (SIM/Socket/Tandas)\n\n**Internet & SIM?**\nBeli eSIM Swisscom/Salt atau Pocket WiFi (roaming EU tidak semestinya cover Switzerland kerana Swiss BUKAN EU). Hotel ada free WiFi.\n\n**Socket & tandas?**\nSwiss guna plug Type J (3-pin) — bawa universal adapter. Tandas awam kadang berbayar (bawa syiling kecil).\n\n### L. Packing\n\n**Kena pakai baju tebal?**\nYa — terutama winter atau pergunungan (Titlis/Zermatt). Pakai berlapis; bawa jaket kalis air, kasut selesa untuk banyak berjalan.\n\n**Berapa luggage boleh bawa?**\nMax 1 luggage/pax kerana kapasiti van. Bawa beg sandang kecil untuk daily.\n",
+     "label": "KB switzerland › content › snapshot"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "calc",
+      "singleNote"
+     ],
+     "from": "+RM 2,800 setiap satu (rate card ARBA)",
+     "to": "Quoted upon request (katalog) &mdash; kalkulator tidak caj; minta kadar daripada PO.",
+     "label": "KB switzerland › calc › singleNote"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "calc",
+      "variants",
+      "std",
+      "single"
+     ],
+     "from": 2800,
+     "to": 0,
+     "label": "KB switzerland › calc › variants › std › single"
+    },
+    {
+     "path": [
+      "kb",
+      "switzerland",
+      "calc",
+      "peak",
+      "windows"
+     ],
+     "from": [
+      [
+       "2025-12-20",
+       "2026-01-10"
+      ],
+      [
+       "2026-02-01",
+       "2026-02-28"
+      ],
+      [
+       "2026-07-15",
+       "2026-08-15"
+      ],
+      [
+       "2026-12-20",
+       "2027-01-03"
+      ],
+      [
+       "2027-02-01",
+       "2027-02-28"
+      ],
+      [
+       "2027-07-15",
+       "2027-08-15"
+      ]
+     ],
+     "to": [
+      [
+       "2026-12-20",
+       "2027-01-03"
+      ],
+      [
+       "2027-02-01",
+       "2027-02-28"
+      ],
+      [
+       "2027-07-15",
+       "2027-08-15"
+      ]
+     ],
+     "label": "KB switzerland › calc › peak › windows"
+    }
+   ]
   }
  ]
 }

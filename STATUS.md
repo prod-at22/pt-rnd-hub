@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v108 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v108, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v109 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v109, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -310,10 +310,18 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   table still Add RM85/night), typos, S-M code SUBB, kb_url / PO. KB: 2027 'no surcharge' texts removed, peak windows = catalog, Hiace 5–12 / 2× Hiace 13–15, FAQ flight / IDR / 16+ pax.
   Not changed (PO left open): Day 1 'Hotel or Homestay', 'valid until 31 Jan 2027' note (CR ends Dec 2026). Open (flags_open): S-M / 11–15 / child / single / peak / 4★ rates, add-ons
   without cost, KB transport rate card at / below cost (Avanza 1 day RM300 < CR 335; Hiace RM900 vs CR 500).
+  **Switzerland (v109, PO ezie 15 Oct; sources = Musafir Eropah CR image + R&D SWITZERLAND 'PT SWS R&D - reformatupload.xlsx' (read with PO OK) → contracts/sws
+  'SWITZERLAND COSTING RATE RND.pdf'):** the hub cost was the R&D CR tab in MYR at fixed CHF 5.0589: hotel RM500 × 6 + van RM20,000 per trip (no source) + city tax CHF20 + insurance RM58
+  + 'visa' RM150 / 54. Now raw rates: hotel RM500/pax/night × N (R&D estimate, flag) + Musafir van + driver-guide × 7 days (1 van 2–7, 2 vans 8–14) by CR season — default TO Mid RM3,250/day,
+  alternative TOs Low 3,000 / Peak 3,500 / Special 3,750 (TO Comparison; names.json) — + city tax CHF20 + Blausee CHF11; Self Tour = hotel + Swiss Travel Pass 8 days CHF419 (catalog D1–D7) + Blausee;
+  insurance / visa removed (catalog excludes insurance, no Schengen visa), ST city tax removed (customer pays); CHF × live FX; nights 6. Margins adult PT Mid 1.8 % (2 pax) – 17.9 %, ST 10.2 % —
+  catalog prices unchanged, flagged high (PO: flag only; Peak / Special below cost at 2 / 3 / 9 / 11 pax; catalog peak windows ≠ CR seasons). Add-ons: 46 duplicates removed, catalog items costed in CHF
+  (child ticket costs unknown), wifi 3GB / 6GB swapped back, TripCare couple / family per pair / family (Area 2 for Europe to confirm). Catalogs: expired peak windows removed, typos, ST basis
+  'Ground Only', PO Thania, kb_url. KB: single = quoted upon request (was RM2,800), Travel Map night 6 = Bern, wifi, FAQ CHF ≈ RM4.90 / 2027 +RM370. Not done: Self Tour variant in the KB (flag).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 3 destinations** (costs stored in MYR): JOG, MLE, SWS (PER v105, PHU v106, SUBB v108 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
+- **Live FX not used by 2 destinations** (costs stored in MYR): JOG, MLE (PER v105, PHU v106, SUBB v108, SWS v109 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108).
+- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108; Switzerland v109).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs

@@ -8,12 +8,12 @@
   "title": "SELF TOUR SWITZERLAND",
   "duration": "7D6N",
   "route": "Zurich - Rhine Falls - Lucerne - Bern - Grindelwald - Lauterbrunnen - Zermatt - Blausee - Interlaken",
-  "basis": "Ground & Tipping · Self Guided",
+  "basis": "Ground Only · Self Guided",
   "valid_until": "31 December 2026",
   "version": "v1",
-  "updated": "2025-12-08",
-  "kb_url": "https://prod-at22.github.io/arba-switzerland-kb/",
-  "po": "Acap",
+  "updated": "2026-10-15",
+  "kb_url": "https://prod-at22.github.io/pt-kb-house/switzerland/",
+  "po": "Thania",
   "ops": "ATIQAH",
   "source_pdf": "Switzerland/Catalog/ST SWITZERLAND 7D6N 2026.pdf",
   "highlights": [
@@ -82,7 +82,7 @@
     "seasons": [
       {
         "label": "Peak Season",
-        "period": "20 December 2025 - 10 January 2026 · 1 - 28 February 2026 · 15 July 2026 - 15 August 2026 · 20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
+        "period": "20 December 2026 - 3 January 2027 · 1 - 28 February 2027 · 15 July 2027 - 15 August 2027",
         "rate": "Add on RM200 per person per night"
       },
       {
@@ -115,9 +115,9 @@
       "activities": [
         "Rhine Falls (The largest waterfall in Europe)",
         "Zurich Old Town (Historic building & cobblestones alley)",
-        "Lindenhof (Churches with scenice view, CLOY film location)",
+        "Lindenhof (Churches with scenic view, CLOY film location)",
         "Burkliplatz (Oldest bridge in Zurich, CLOY film location)",
-        "Bahnhofstrasse, Zurich (Famous hopping street)"
+        "Bahnhofstrasse, Zurich (Famous shopping street)"
       ],
       "transport": "Public Transport",
       "meals": "International Breakfast",
@@ -129,7 +129,7 @@
       "activities": [
         "Check out",
         "Engelberg & Mount Titlis (360 Rotair Cable Car) - optional",
-        "Lucern Old Town (Historic building & shopping street)",
+        "Lucerne Old Town (Historic building & shopping street)",
         "Chapel Bridge (The famous old wooden bridge)",
         "Check in hotel - Bern"
       ],
@@ -143,7 +143,7 @@
       "activities": [
         "Grindelwald (Mountain village with Alpine view)",
         "Lauterbrunnen (Fairy-tale valley with 72 waterfalls)",
-        "Staubach Waterfall",
+        "Staubbach Waterfall",
         "Murren (Mountain village with Alpine view)",
         "Birg & Schilthorn (James Bond film location) - optional"
       ],
@@ -157,7 +157,7 @@
       "activities": [
         "Check out",
         "Train from Tasch Zermatt (Panoramic train ride)",
-        "Matterhorn (One of the highest summits in the Alps and Europe, the Tobelerone mountain) - optional",
+        "Matterhorn (One of the highest summits in the Alps and Europe, the Toblerone mountain) - optional",
         "Gornergrat (The mountain with magnificent view of the Matterhorn) - optional",
         "Check in hotel - Tasch or Visp"
       ],
@@ -264,5 +264,5 @@
       "title": "Add-on"
     }
   ],
-  "hub_version": 30
+  "hub_version": 109
 }

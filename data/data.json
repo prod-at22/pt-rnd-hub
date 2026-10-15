@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 108,
- "updatedAt": "2026-10-15T09:00:00Z",
+ "version": 109,
+ "updatedAt": "2026-10-15T11:00:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -34423,10 +34423,10 @@
    "name": "Switzerland",
    "country": "Switzerland",
    "duration": "7D6N",
-   "nights": 0,
+   "nights": 6,
    "po": "Thania",
    "source": "hub",
-   "note": "",
+   "note": "Cost (v109) = raw rates: hotel RM500/pax/night × 6 (ARBA estimate, R&D — no hotel CR, flag) + Musafir Eropah CR van + Malaysian driver-guide 7–10 days per day × 7 (1 van 2–7 pax, 2 vans 8–14): Mid RM3,250 default TO, Low 3,000 / Peak 3,500 / Special 3,750 as alternative TOs (TO Comparison) + city tax CHF20 + Lake Blausee CHF11 (FREE in the catalog); Self Tour = hotel + Swiss Travel Pass 8 days CHF419 (catalog pass D1–D7) + Blausee CHF11 (city tax excluded in the ST catalog). CHF × live FX. Insurance RM58 / 'visa' RM150 / 54 removed (catalog excludes insurance; no Schengen visa). Rhine Falls boat and Täsch–Zermatt train not costed (no rate, flag). Child: PT CWB 100 % / CNB − RM600, ST CNB 88.3 % kept.",
    "fx": [
     {
      "id": "MYR",
@@ -34443,253 +34443,216 @@
      "live": "CHF"
     }
    ],
-   "rates": [],
-   "tables": [
+   "rates": [
     {
-     "id": "MUSAFIR-ARBATO-PT__Hotel-ARBA",
-     "label": "MUSAFIR - ARBATO-PT · Hotel (ARBA)",
-     "unit": "MYR/pax",
+     "id": "hotelN",
+     "label": "Hotel 3/4★ per pax per night (ARBA estimate, R&D — no hotel CR)",
+     "value": 500,
      "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-PT",
-     "values": {
-      "2": 3000,
-      "3": 3000,
-      "4": 3000,
-      "5": 3000,
-      "6": 3000,
-      "7": 3000,
-      "8": 3000,
-      "9": 3000,
-      "10": 3000,
-      "11": 3000,
-      "12": 3000,
-      "13": 3000,
-      "14": 3000
-     }
+     "unit": "RM/pax/night",
+     "group": "1. Hotel (ARBA)"
     },
     {
-     "id": "MUSAFIR-ARBATO-PT__Transport-Pax-Supplier",
-     "label": "MUSAFIR - ARBATO-PT · Transport/Pax (Supplier)",
-     "unit": "MYR/pax",
+     "id": "vanLow",
+     "label": "Low season (Jan–Feb) per day",
+     "value": 3000,
      "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-PT",
-     "values": {
-      "2": 10000,
-      "3": 6666.6667,
-      "4": 5000,
-      "5": 4000,
-      "6": 3333.3333,
-      "7": 2857.1429,
-      "8": 5000,
-      "9": 4444.4444,
-      "10": 4000,
-      "11": 3636.3636,
-      "12": 3333.3333,
-      "13": 3076.9231,
-      "14": 2857.1429
-     }
+     "unit": "RM/van/day",
+     "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
     },
     {
-     "id": "MUSAFIR-ARBATO-PT__Other-Fees",
-     "label": "MUSAFIR - ARBATO-PT · Other Fees",
-     "unit": "MYR/pax",
+     "id": "vanMid",
+     "label": "Mid season (Mar, Apr, May, Sep, Oct, Nov) per day",
+     "value": 3250,
      "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-PT",
-     "values": {
-      "2": 309.1789,
-      "3": 309.1789,
-      "4": 309.1789,
-      "5": 309.1789,
-      "6": 309.1789,
-      "7": 309.1789,
-      "8": 309.1789,
-      "9": 309.1789,
-      "10": 309.1789,
-      "11": 309.1789,
-      "12": 309.1789,
-      "13": 309.1789,
-      "14": 309.1789
-     }
+     "unit": "RM/van/day",
+     "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
     },
     {
-     "id": "MUSAFIR-ARBATO-PT__Tipping",
-     "label": "MUSAFIR - ARBATO-PT · Tipping",
-     "unit": "MYR/pax",
+     "id": "vanPeak",
+     "label": "Peak season (Jun, Jul, Aug, Dec) per day",
+     "value": 3500,
      "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-PT",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0
-     }
+     "unit": "RM/van/day",
+     "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
     },
     {
-     "id": "MUSAFIR-ARBATO-ST__Hotel-ARBA",
-     "label": "MUSAFIR - ARBATO-ST · Hotel (ARBA)",
-     "unit": "MYR/pax",
+     "id": "vanSpec",
+     "label": "Special season (Ramadan, Raya Aidilfitri / Aidiladha, Christmas) per day",
+     "value": 3750,
      "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-ST",
-     "values": {
-      "2": 3000,
-      "3": 3000,
-      "4": 3000,
-      "5": 3000,
-      "6": 3000,
-      "7": 3000,
-      "8": 3000,
-      "9": 3000,
-      "10": 3000,
-      "11": 3000,
-      "12": 3000,
-      "13": 3000,
-      "14": 3000
-     }
+     "unit": "RM/van/day",
+     "group": "2. Musafir Eropah CR — van + Malaysian driver-guide, 7–10 days"
     },
     {
-     "id": "MUSAFIR-ARBATO-ST__Transport-Pax-Supplier",
-     "label": "MUSAFIR - ARBATO-ST · Transport/Pax (Supplier)",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-ST",
-     "values": {
-      "2": 1917.3402,
-      "3": 1917.3402,
-      "4": 1917.3402,
-      "5": 1917.3402,
-      "6": 1917.3402,
-      "7": 1917.3402,
-      "8": 1917.3402,
-      "9": 1917.3402,
-      "10": 1917.3402,
-      "11": 1917.3402,
-      "12": 1917.3402,
-      "13": 1917.3402,
-      "14": 1917.3402
-     }
+     "id": "cityTax",
+     "label": "City tax (6 nights)",
+     "value": 20,
+     "fx": "CHF",
+     "unit": "CHF/pax",
+     "group": "3. Switzerland fees (CHF, R&D source of ref)"
     },
     {
-     "id": "MUSAFIR-ARBATO-ST__Other-Fees",
-     "label": "MUSAFIR - ARBATO-ST · Other Fees",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-ST",
-     "values": {
-      "2": 213.1789,
-      "3": 213.1789,
-      "4": 213.1789,
-      "5": 213.1789,
-      "6": 213.1789,
-      "7": 213.1789,
-      "8": 213.1789,
-      "9": 213.1789,
-      "10": 213.1789,
-      "11": 213.1789,
-      "12": 213.1789,
-      "13": 213.1789,
-      "14": 213.1789
-     }
+     "id": "blausee",
+     "label": "Lake Blausee entrance (FREE in the catalogs)",
+     "value": 11,
+     "fx": "CHF",
+     "unit": "CHF/pax",
+     "group": "3. Switzerland fees (CHF, R&D source of ref)"
     },
     {
-     "id": "MUSAFIR-ARBATO-ST__Tipping",
-     "label": "MUSAFIR - ARBATO-ST · Tipping",
-     "unit": "MYR/pax",
-     "fx": "MYR",
-     "group": "MUSAFIR - ARBATO-ST",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0
-     }
+     "id": "stp8",
+     "label": "Swiss Travel Pass 8 days, 2nd class (Self Tour, pass D1–D7)",
+     "value": 419,
+     "fx": "CHF",
+     "unit": "CHF/pax",
+     "group": "3. Switzerland fees (CHF, R&D source of ref)"
     }
    ],
+   "tables": [],
    "variants": [
     {
      "id": "MUSAFIR-ARBATO-PT",
-     "label": "Musafir / ARBATO",
-     "supplier": "MUSAFIR - ARBATO-PT",
+     "label": "Musafir · Mid season (Mar–May, Sep–Nov)",
+     "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,250/day",
      "paxMin": 2,
      "paxMax": 14,
-     "hotel": "3000",
-     "notes": "",
+     "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+     "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
      "components": [
       {
-       "key": "hotel-arba",
-       "label": "Hotel (ARBA)",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-PT__Hotel-ARBA']"
+       "key": "hotel",
+       "label": "Hotel (ARBA) 6 nights",
+       "per": "group",
+       "expr": "R.hotelN*N*pax"
       },
       {
-       "key": "transport-pax-supplier",
-       "label": "Transport/Pax (Supplier)",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-PT__Transport-Pax-Supplier']"
+       "key": "van",
+       "label": "Van + driver-guide × 7 days",
+       "per": "group",
+       "expr": "band(pax,[7,1],[14,2])*R.vanMid*7"
       },
       {
-       "key": "other-fees",
-       "label": "Other Fees",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-PT__Other-Fees']"
+       "key": "fees",
+       "label": "City tax + Blausee",
+       "per": "group",
+       "expr": "(R.cityTax+R.blausee)*pax"
+      }
+     ]
+    },
+    {
+     "id": "MUSAFIR-PT-LOW",
+     "label": "Musafir · Low season (Jan–Feb)",
+     "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,000/day",
+     "paxMin": 2,
+     "paxMax": 14,
+     "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+     "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+     "components": [
+      {
+       "key": "hotel",
+       "label": "Hotel (ARBA) 6 nights",
+       "per": "group",
+       "expr": "R.hotelN*N*pax"
       },
       {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-PT__Tipping']"
+       "key": "van",
+       "label": "Van + driver-guide × 7 days",
+       "per": "group",
+       "expr": "band(pax,[7,1],[14,2])*R.vanLow*7"
+      },
+      {
+       "key": "fees",
+       "label": "City tax + Blausee",
+       "per": "group",
+       "expr": "(R.cityTax+R.blausee)*pax"
+      }
+     ]
+    },
+    {
+     "id": "MUSAFIR-PT-PEAK",
+     "label": "Musafir · Peak season (Jun–Aug, Dec)",
+     "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,500/day",
+     "paxMin": 2,
+     "paxMax": 14,
+     "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+     "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+     "components": [
+      {
+       "key": "hotel",
+       "label": "Hotel (ARBA) 6 nights",
+       "per": "group",
+       "expr": "R.hotelN*N*pax"
+      },
+      {
+       "key": "van",
+       "label": "Van + driver-guide × 7 days",
+       "per": "group",
+       "expr": "band(pax,[7,1],[14,2])*R.vanPeak*7"
+      },
+      {
+       "key": "fees",
+       "label": "City tax + Blausee",
+       "per": "group",
+       "expr": "(R.cityTax+R.blausee)*pax"
+      }
+     ]
+    },
+    {
+     "id": "MUSAFIR-PT-SPECIAL",
+     "label": "Musafir · Special season (Ramadan, Raya, Christmas)",
+     "supplier": "Musafir Eropah — van + Malaysian driver-guide, CR 7–10 days RM3,750/day",
+     "paxMin": 2,
+     "paxMax": 14,
+     "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+     "notes": "Van: 1 for 2–7 pax, 2 for 8–14 (R&D). Rhine Falls boat / Täsch–Zermatt train not costed (flag).",
+     "components": [
+      {
+       "key": "hotel",
+       "label": "Hotel (ARBA) 6 nights",
+       "per": "group",
+       "expr": "R.hotelN*N*pax"
+      },
+      {
+       "key": "van",
+       "label": "Van + driver-guide × 7 days",
+       "per": "group",
+       "expr": "band(pax,[7,1],[14,2])*R.vanSpec*7"
+      },
+      {
+       "key": "fees",
+       "label": "City tax + Blausee",
+       "per": "group",
+       "expr": "(R.cityTax+R.blausee)*pax"
       }
      ]
     },
     {
      "id": "MUSAFIR-ARBATO-ST",
-     "label": "Musafir / ARBATO",
-     "supplier": "Pax",
+     "label": "Self Tour · Swiss Travel Pass 8 days",
+     "supplier": "Self Tour — Swiss Travel Pass 8 days (2nd class) + hotel booked by ARBA",
      "paxMin": 2,
      "paxMax": 14,
-     "hotel": "3000",
-     "notes": "",
+     "hotel": "3/4★ Holiday Inn Express Zurich · Ibis Bern · Matterhorn Inn Täsch (or similar) — booked by ARBA",
+     "notes": "Pass covers D1–D7 incl. airport trains, Täsch–Zermatt, Murren cable car, lake cruise; Blausee paid; city tax paid by the customer (catalog).",
      "components": [
       {
-       "key": "hotel-arba",
-       "label": "Hotel (ARBA)",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-ST__Hotel-ARBA']"
+       "key": "hotel",
+       "label": "Hotel (ARBA) 6 nights",
+       "per": "group",
+       "expr": "R.hotelN*N*pax"
       },
       {
-       "key": "transport-pax-supplier",
-       "label": "Transport/Pax (Supplier)",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-ST__Transport-Pax-Supplier']"
+       "key": "pass",
+       "label": "Swiss Travel Pass 8 days",
+       "per": "group",
+       "expr": "R.stp8*pax"
       },
       {
-       "key": "other-fees",
-       "label": "Other Fees",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-ST__Other-Fees']"
-      },
-      {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['MUSAFIR-ARBATO-ST__Tipping']"
+       "key": "fees",
+       "label": "Lake Blausee",
+       "per": "group",
+       "expr": "R.blausee*pax"
       }
      ]
     }
@@ -34769,7 +34732,12 @@
        "type": "flat",
        "value": 0
       }
-     }
+     },
+     "alsoVariants": [
+      "MUSAFIR-PT-LOW",
+      "MUSAFIR-PT-PEAK",
+      "MUSAFIR-PT-SPECIAL"
+     ]
     },
     {
      "id": "musafir-arbato-st",
@@ -34850,155 +34818,11 @@
    ],
    "addons": [
     {
-     "id": "sws-a01",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Adult (16+)",
-     "cost": 549.0,
-     "selling": 687.0,
-     "per": "pax",
-     "notes": "(PT) Cable car + Glacier cave + Cliff walk + IceFlyer"
-    },
-    {
-     "id": "sws-a02",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Child (6-15)",
-     "cost": 347.0,
-     "selling": 347.0,
-     "per": "pax",
-     "notes": "(PT)"
-    },
-    {
-     "id": "sws-a03",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(PT) FREE"
-    },
-    {
-     "id": "sws-a04",
-     "category": "Iseltwald",
-     "label": "Iseltwald Bridge Fee",
-     "cost": 67.0,
-     "selling": 67.0,
-     "per": "pax",
-     "notes": "(All) CLOY Film Location"
-    },
-    {
-     "id": "sws-a05",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Adult (16+)",
-     "cost": 549.0,
-     "selling": 687.0,
-     "per": "pax",
-     "notes": "(PT) Cable car + Spy World + Skyline"
-    },
-    {
-     "id": "sws-a06",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Child (6-15)",
-     "cost": 347.0,
-     "selling": 347.0,
-     "per": "pax",
-     "notes": "(PT)"
-    },
-    {
-     "id": "sws-a07",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(PT) FREE"
-    },
-    {
-     "id": "sws-a08",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Adult (16+)",
-     "cost": 671.0,
-     "selling": 837.0,
-     "per": "pax",
-     "notes": "(PT) Round trip Zermatt-Gornergrat"
-    },
-    {
-     "id": "sws-a09",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Child (6-15)",
-     "cost": 417.0,
-     "selling": 417.0,
-     "per": "pax",
-     "notes": "(PT)"
-    },
-    {
-     "id": "sws-a10",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(PT) FREE"
-    },
-    {
-     "id": "sws-a11",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Adult (16+)",
-     "cost": 554.0,
-     "selling": 687.0,
-     "per": "pax",
-     "notes": "(PT) Cable car + Ice Palace"
-    },
-    {
-     "id": "sws-a12",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Child (9-15)",
-     "cost": 347.0,
-     "selling": 347.0,
-     "per": "pax",
-     "notes": "(PT)"
-    },
-    {
-     "id": "sws-a13",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Child (0-8)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(PT) FREE"
-    },
-    {
-     "id": "sws-a14",
-     "category": "Mount Rigi",
-     "label": "Mount Rigi Pass — Adult (16+)",
-     "cost": 397.0,
-     "selling": 497.0,
-     "per": "pax",
-     "notes": "(PT) Train + Cable Car"
-    },
-    {
-     "id": "sws-a15",
-     "category": "Mount Rigi",
-     "label": "Mount Rigi Pass — Child (6-15)",
-     "cost": 357.0,
-     "selling": 357.0,
-     "per": "pax",
-     "notes": "(PT)"
-    },
-    {
-     "id": "sws-a16",
-     "category": "Mount Rigi",
-     "label": "Mount Rigi Pass — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(PT) FREE"
-    },
-    {
      "id": "sws-a17",
      "category": "Wifi",
      "label": "Pocket Wifi 3GB 4G",
-     "cost": 130.0,
-     "selling": 200.0,
+     "cost": 100.0,
+     "selling": 140.0,
      "per": "trip",
      "notes": "(All)"
     },
@@ -35006,8 +34830,8 @@
      "id": "sws-a18",
      "category": "Wifi",
      "label": "Pocket Wifi 6GB whole trip",
-     "cost": 100.0,
-     "selling": 140.0,
+     "cost": 130.0,
+     "selling": 200.0,
      "per": "trip",
      "notes": "(All)"
     },
@@ -35044,7 +34868,7 @@
      "label": "TripCare 360 — Couple (1-5 hari)",
      "cost": 54.0,
      "selling": 72.0,
-     "per": "pax",
+     "per": "pair",
      "notes": "(All)"
     },
     {
@@ -35053,7 +34877,7 @@
      "label": "TripCare 360 — Couple (6-10 hari)",
      "cost": 78.75,
      "selling": 115.0,
-     "per": "pax",
+     "per": "pair",
      "notes": "(All)"
     },
     {
@@ -35062,7 +34886,7 @@
      "label": "TripCare 360 — Couple (11-18 hari)",
      "cost": 133.0,
      "selling": 174.0,
-     "per": "pax",
+     "per": "pair",
      "notes": "(All)"
     },
     {
@@ -35071,7 +34895,7 @@
      "label": "TripCare 360 — Family (1-5 hari)",
      "cost": 143.5,
      "selling": 188.0,
-     "per": "pax",
+     "per": "family",
      "notes": "(All)"
     },
     {
@@ -35080,7 +34904,7 @@
      "label": "TripCare 360 — Family (6-10 hari)",
      "cost": 201.25,
      "selling": 265.0,
-     "per": "pax",
+     "per": "family",
      "notes": "(All)"
     },
     {
@@ -35089,7 +34913,7 @@
      "label": "TripCare 360 — Family (11-18 hari)",
      "cost": 313.75,
      "selling": 415.0,
-     "per": "pax",
+     "per": "family",
      "notes": "(All)"
     },
     {
@@ -35154,159 +34978,6 @@
      "selling": 70.0,
      "per": "unit",
      "notes": "(All)"
-    },
-    {
-     "id": "sws-a37",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Rhine Falls Boat Tour",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "source of ref"
-    },
-    {
-     "id": "sws-a38",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Mount Titlis",
-     "cost": 303.54,
-     "selling": 377.0,
-     "per": "pax",
-     "notes": "60 CHF · source of ref"
-    },
-    {
-     "id": "sws-a39",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Lake Blausee",
-     "cost": 55.65,
-     "selling": 66.78,
-     "per": "pax",
-     "notes": "11 CHF · source of ref"
-    },
-    {
-     "id": "sws-a40",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Schilthorn",
-     "cost": 217.53,
-     "selling": 267.0,
-     "per": "pax",
-     "notes": "43 CHF · source of ref"
-    },
-    {
-     "id": "sws-a41",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Gornergrat",
-     "cost": 333.89,
-     "selling": 387.0,
-     "per": "pax",
-     "notes": "66 CHF · source of ref"
-    },
-    {
-     "id": "sws-a42",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Matterhorn",
-     "cost": 278.24,
-     "selling": 397.0,
-     "per": "pax",
-     "notes": "55 CHF · source of ref"
-    },
-    {
-     "id": "sws-a43",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Pfinstegg",
-     "cost": 80.94,
-     "selling": 97.13,
-     "per": "pax",
-     "notes": "16 CHF · source of ref"
-    },
-    {
-     "id": "sws-a44",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Oechinensee",
-     "cost": 80.94,
-     "selling": 97.13,
-     "per": "pax",
-     "notes": "16 CHF · source of ref"
-    },
-    {
-     "id": "sws-a45",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Jungfraujoch",
-     "cost": 743.66,
-     "selling": 937.0,
-     "per": "pax",
-     "notes": "147 CHF · source of ref"
-    },
-    {
-     "id": "sws-a46",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Toboggan Run Pfinstegg (per ride)",
-     "cost": 40.47,
-     "selling": 48.57,
-     "per": "pax",
-     "notes": "8 CHF · source of ref"
-    },
-    {
-     "id": "sws-a47",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Flyline/ Zipline",
-     "cost": 60.71,
-     "selling": 72.85,
-     "per": "pax",
-     "notes": "12 CHF · source of ref"
-    },
-    {
-     "id": "sws-a48",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Grindelwald First",
-     "cost": 263.07,
-     "selling": 315.68,
-     "per": "pax",
-     "notes": "52 CHF · source of ref"
-    },
-    {
-     "id": "sws-a49",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Toboggan Run Oechinensee (per ride)",
-     "cost": 30.35,
-     "selling": 36.42,
-     "per": "pax",
-     "notes": "6 CHF · source of ref"
-    },
-    {
-     "id": "sws-a50",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Harder Kulm",
-     "cost": 96.12,
-     "selling": 115.34,
-     "per": "pax",
-     "notes": "19 CHF · source of ref"
-    },
-    {
-     "id": "sws-a51",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Glacier express (Chur - St Moritz)",
-     "cost": 222.59,
-     "selling": 267.11,
-     "per": "pax",
-     "notes": "44 CHF · source of ref"
-    },
-    {
-     "id": "sws-a52",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Bernina express (Chur - Lugano)",
-     "cost": 263.07,
-     "selling": 315.68,
-     "per": "pax",
-     "notes": "52 CHF · source of ref"
-    },
-    {
-     "id": "sws-a55",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Rhine Falls Boat Tour",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "source of ref"
     },
     {
      "id": "sws-a56",
@@ -35426,15 +35097,6 @@
      "notes": "38 CHF · source of ref"
     },
     {
-     "id": "sws-a69",
-     "category": "Switzerland Entrance/Activity",
-     "label": "Lake Zurich cruise",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "source of ref"
-    },
-    {
      "id": "sws-a70",
      "category": "Switzerland Entrance/Activity",
      "label": "Lake Interlaken cruise",
@@ -35465,19 +35127,19 @@
      "id": "sws-a73",
      "category": "Switzerland Entrance/Activity",
      "label": "Paragliding",
-     "cost": 0.0,
-     "selling": 0.0,
+     "cost": null,
+     "selling": null,
      "per": "pax",
-     "notes": "source of ref"
+     "notes": "source of ref — no rate"
     },
     {
      "id": "sws-a74",
      "category": "Switzerland Entrance/Activity",
      "label": "Skydiving",
-     "cost": 0.0,
-     "selling": 0.0,
+     "cost": null,
+     "selling": null,
      "per": "pax",
-     "notes": "source of ref"
+     "notes": "source of ref — no rate"
     },
     {
      "id": "sws-a75",
@@ -35510,127 +35172,19 @@
      "id": "sws-a78",
      "category": "Switzerland Entrance/Activity",
      "label": "Gruyere cheese factory",
-     "cost": 0.0,
+     "cost": 39.19,
      "selling": 40.47,
      "per": "pax",
-     "notes": "8 CHF · source of ref"
-    },
-    {
-     "id": "sws-a81",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Adult (16+)",
-     "cost": 303.54,
-     "selling": 377.0,
-     "per": "pax",
-     "notes": "(ST) Swiss Pass holder rate · ST catalog"
-    },
-    {
-     "id": "sws-a82",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Child (6-15)",
-     "cost": 177.0,
-     "selling": 177.0,
-     "per": "pax",
-     "notes": "(ST)"
-    },
-    {
-     "id": "sws-a83",
-     "category": "Mt Titlis",
-     "label": "Mt Titlis Round Trip — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(ST) FREE"
-    },
-    {
-     "id": "sws-a84",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Adult (16+)",
-     "cost": 217.53,
-     "selling": 267.0,
-     "per": "pax",
-     "notes": "(ST) Swiss Pass holder rate · ST catalog"
-    },
-    {
-     "id": "sws-a85",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Child (6-15)",
-     "cost": 167.0,
-     "selling": 167.0,
-     "per": "pax",
-     "notes": "(ST)"
-    },
-    {
-     "id": "sws-a86",
-     "category": "Schilthorn",
-     "label": "Schilthorn Round Trip — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(ST) FREE"
-    },
-    {
-     "id": "sws-a87",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Adult (16+)",
-     "cost": 333.89,
-     "selling": 387.0,
-     "per": "pax",
-     "notes": "(ST) Swiss Pass holder rate · ST catalog"
-    },
-    {
-     "id": "sws-a88",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Child (6-15)",
-     "cost": 287.0,
-     "selling": 287.0,
-     "per": "pax",
-     "notes": "(ST)"
-    },
-    {
-     "id": "sws-a89",
-     "category": "Gornergrat",
-     "label": "Gornergrat Railways — Child (<5)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(ST) FREE"
-    },
-    {
-     "id": "sws-a90",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Adult (16+)",
-     "cost": 278.24,
-     "selling": 397.0,
-     "per": "pax",
-     "notes": "(ST) Swiss Pass holder rate · ST catalog"
-    },
-    {
-     "id": "sws-a91",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Child (9-15)",
-     "cost": 297.0,
-     "selling": 297.0,
-     "per": "pax",
-     "notes": "(ST)"
-    },
-    {
-     "id": "sws-a92",
-     "category": "Matterhorn",
-     "label": "Matterhorn Glacier Paradise — Child (0-8)",
-     "cost": 0.0,
-     "selling": 0.0,
-     "per": "pax",
-     "notes": "(ST) FREE"
+     "notes": "8 CHF × 4.8986 · source of ref"
     },
     {
      "id": "sws-k001",
      "category": "Add-on",
      "label": "Mount Titlis",
      "per": "",
-     "cost": null,
+     "cost": 293.92,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF60 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
      "duration": "Open all year long · Operation hour: 8.30am - 5pm",
      "price_lines": [
@@ -35649,7 +35203,7 @@
      "per": "",
      "cost": null,
      "selling": null,
-     "notes": null,
+     "notes": "No CHF rate in the R&D (old duplicate had cost = selling RM67) — flag",
      "price_lines": [
       "RM67"
      ],
@@ -35663,9 +35217,9 @@
      "category": "Add-on",
      "label": "Gornergrat Railways",
      "per": "",
-     "cost": null,
+     "cost": 323.31,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF66 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
      "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
      "price_lines": [
@@ -35682,9 +35236,9 @@
      "category": "Add-on",
      "label": "Matterhorn Glacier Paradise (Zermatt)",
      "per": "",
-     "cost": null,
+     "cost": 269.42,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF55 (ST · Swiss Pass holder rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
      "price_lines": [
       "16 years old and above: RM397",
@@ -35700,9 +35254,9 @@
      "category": "Add-on",
      "label": "Mount Titlis",
      "per": "",
-     "cost": null,
+     "cost": 529.05,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF108 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Admission to Mt. Titlis from Engelberg, Round trip cable-car tickets including Titlis ROTAIR, Glacier cave, Titlis Cliff walk, IceFlyer chairlift, Titlis Glacier Park including snow tubing (weather permitting)",
      "duration": "Open all year long · Operation hour: 8.30am - 5pm",
      "price_lines": [
@@ -35719,9 +35273,9 @@
      "category": "Add-on",
      "label": "Gornergrat Railways",
      "per": "",
-     "cost": null,
+     "cost": 646.62,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF132 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Round trip train from Zermatt to Gornergrat, Riffelalp, Riffelberg, Gornergrat",
      "duration": "Open all year long · Operation hour: 7.30am - 5.40pm",
      "price_lines": [
@@ -35738,9 +35292,9 @@
      "category": "Add-on",
      "label": "Matterhorn Glacier Paradise (Zermatt)",
      "per": "",
-     "cost": null,
+     "cost": 533.95,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF109 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Admission to Matterhorn Glacier Paradise in Zermatt, Round trip by Matterhorn Glacier ride (cable-car), Entry to 360-Degree Viewing Platform, Admission to Glacier Ice Palace, Cinema Lounge, The Peak Shop",
      "price_lines": [
       "16 years old and above: RM687",
@@ -35756,9 +35310,9 @@
      "category": "Add-on",
      "label": "Mount Rigi Pass",
      "per": "",
-     "cost": null,
+     "cost": 382.09,
      "selling": null,
-     "notes": null,
+     "notes": "Adult cost CHF78 (PT · full rate, R&D source of ref) × 4.8986 (live 14 Oct 2026); child ticket cost unknown (flag)",
      "includes": "Train Rides from Vitznau, Train Rides from Goldau, Cable Car from Weggis, Cable Car from Krabel",
      "duration": "Open all year long · Operation hour: 8am - 5pm",
      "price_lines": [
@@ -35786,6 +35340,16 @@
      "at": "2026-10-04T14:32:13Z",
      "by": "product",
      "drive": "1vSYejz7yJbBjw2bgS5V9wfhGBNEDPutF"
+    },
+    {
+     "id": "5c2b1d4f8e1",
+     "name": "SWITZERLAND COSTING RATE RND.pdf",
+     "file": "contracts/sws/5c2b1d4f8e1-SWITZERLAND_COSTING_RATE_RND.pdf",
+     "to": "Musafir Eropah",
+     "note": "R&D 'PT SWS R&D - reformatupload.xlsx' (Jun 2026): Raw Costing, CR tab (old cost per pax), PRICE 2027 transport block, CHF entrance / add-on tables with and without Swiss Pass (PO ezie 15 Oct 2026)",
+     "size": 195589,
+     "at": "2026-10-15T11:00:00Z",
+     "by": "ezie"
     }
    ],
    "hotels": [
@@ -35895,7 +35459,8 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 109
   },
   {
    "code": "KKK",
