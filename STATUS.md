@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v113 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v113, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v114 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v114, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -337,6 +337,7 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   38 hub pages, data integrity, 298 live links — all clean. Open question: Maldives Christmas Eve / NYE (+RM600 / 700) — KB charges only the highest flat surcharge, not on top of Peak +RM200.
   PO: KB-only surcharges / notes live in the hub (data/kb, Simple Calculator tab) — not added to the catalog Surcharge tab.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
+  **v114 (PO ezie 15 Oct): CR files only** — contracts/kkk (CR Bahrun 3 photos → 1 PDF + KPR, Celyn, HBenjamin, Dreamworld, Ming Garden, Dreamtel), contracts/pht (Mimpi, Shari-La, Flora Bay, Ombak) from Drive 'CR PT 2026 (CENTRALIZE)'; contracts/kix 'KIX COSTING RATE QAYYUM UCOP 2026.pdf' from Google Sheet 'PT KIX R&D' (Raw Costing + CR QAY-UCOP-STD; script work/cr_add.py in the session scratch). Every TO used by a package now has a CR file except SWS Self Tour (Swiss Travel Pass, no TO). Also live (no data change): Edit-mode add / remove buttons, tidy Edit UI, Info KB visual editor (no HTML shown).
 - **Live FX not used by 2 destinations** (costs stored in MYR): JOG, MLE (PER v105, PHU v106, SUBB v108, SWS v109 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
 - **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108; Switzerland v109; Seoul / Seoul-Jeju v110).

@@ -170028,6 +170028,200 @@
      "label": "KB perhentian › calc › variants › basic › peak › windows › #1 › #1"
     }
    ]
+  },
+  {
+   "v": 114,
+   "at": "2026-10-15T18:00:00Z",
+   "by": "ezie",
+   "note": "TO Contract Rate files added (PO ezie 15 Oct 2026; source Drive 'CR PT 2026 (CENTRALIZE)'): KK Kundasang (KKK) had no CR → CR Bahrun (3 photos merged into one PDF: transport with driver 3D2N / 4D3N, airport transfer, car rental) + hotel contracts Kinabalu Pine Resort (CR + 2026 calendar), Celyn, HBenjamin, Dreamworld, Ming Garden, Dreamtel (CR SABAH 2026); Perhentian (PHT) had no CR → Mimpi Resort TA contract 2026, Shari-La contract 2026, Flora Bay contract 2026, Ombak published rates 2026 (CR PERHENTIAN 2026); Tokyo-Osaka (KIX) TO 'Qayyum + Ucop' had no CR (Qayyum / Ucop issue none) → 'KIX COSTING RATE QAYYUM UCOP 2026.pdf' compiled from Google Sheet 'PT KIX R&D' tabs Raw Costing + CR (QAY-UCOP-STD, FX 0.0259). Files only — no cost, price or catalog change. Hotels without a contract file: Perkasa (Kundasang), Promenade, Palace (KK).",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "KIX",
+      "contracts"
+     ],
+     "from": [
+      {
+       "id": "1a1075462d0",
+       "name": "PT KIX WIF TOKYO OSAKA 7D6N JAN-DEC 2026.pdf",
+       "file": "contracts/kix/1a1075462d0-PT_KIX_WIF_TOKYO_OSAKA_7D6N_JAN-DEC_2026.pdf",
+       "to": "WIF",
+       "note": "From Drive · Production Team",
+       "size": 78514,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1Qc2OIxhrj0WwnRANVa-1JUvvJetgoiai"
+      }
+     ],
+     "to": [
+      {
+       "id": "1a1075462d0",
+       "name": "PT KIX WIF TOKYO OSAKA 7D6N JAN-DEC 2026.pdf",
+       "file": "contracts/kix/1a1075462d0-PT_KIX_WIF_TOKYO_OSAKA_7D6N_JAN-DEC_2026.pdf",
+       "to": "WIF",
+       "note": "From Drive · Production Team",
+       "size": 78514,
+       "at": "2026-10-04T14:32:13Z",
+       "by": "product",
+       "drive": "1Qc2OIxhrj0WwnRANVa-1JUvvJetgoiai"
+      },
+      {
+       "id": "3bc635c1c6b",
+       "name": "KIX COSTING RATE QAYYUM UCOP 2026.pdf",
+       "file": "contracts/kix/3bc635c1c6b-KIX_COSTING_RATE_QAYYUM_UCOP_2026.pdf",
+       "to": "Qayyum + Ucop",
+       "note": "ARBA rate card from Google Sheet 'PT KIX R&D' tabs Raw Costing + CR (QAY-UCOP-STD, FX 0.0259) — Qayyum / Ucop issue no CR (PO ezie 15 Oct 2026)",
+       "size": 162803,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Tokyo - Kyoto - Osaka › TO Contract Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "KKK",
+      "contracts"
+     ],
+     "from": null,
+     "to": [
+      {
+       "id": "3664b9af973",
+       "name": "CR BAHRUN KK KUNDASANG 2026.pdf",
+       "file": "contracts/kkk/3664b9af973-CR_BAHRUN_KK_KUNDASANG_2026.pdf",
+       "to": "Bahrun",
+       "note": "CR Bahrun (3 photos, Drive CR SABAH 2026): transport with driver 3D2N / 4D3N, airport transfer, car rental",
+       "size": 349605,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "b56f456c6e6",
+       "name": "KPR - [CR] ARBA TRAVEL.pdf",
+       "file": "contracts/kkk/b56f456c6e6-KPR_-_CR_ARBA_TRAVEL.pdf",
+       "to": "Kinabalu Pine Resort (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 669819,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "5401197fe94",
+       "name": "KPR - 2026 CALENDAR.pdf",
+       "file": "contracts/kkk/5401197fe94-KPR_-_2026_CALENDAR.pdf",
+       "to": "Kinabalu Pine Resort (hotel)",
+       "note": "KPR 2026 season calendar · Drive CR SABAH 2026",
+       "size": 303110,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "e5840f9bd8a",
+       "name": "CELYN - ARBA TRAVEL  TOURS SDN BHD - 2025-6 - CONTRACT RATE.pdf",
+       "file": "contracts/kkk/e5840f9bd8a-CELYN_-_ARBA_TRAVEL_TOURS_SDN_BHD_-_2025-6_-_CONTRACT_RATE.pdf",
+       "to": "Celyn (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 1735473,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "45f150d385b",
+       "name": "HBENJAMIN - Agent Contract Rates -2026.pdf",
+       "file": "contracts/kkk/45f150d385b-HBENJAMIN_-_Agent_Contract_Rates_-2026.pdf",
+       "to": "HBenjamin (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 208275,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "2372ad0ebc8",
+       "name": "DREAMWORLD_RESORT_KUNDASANG_AGENT_CONTRACT_2026_ARBA_TRAVEL_TOURS.pdf",
+       "file": "contracts/kkk/2372ad0ebc8-DREAMWORLD_RESORT_KUNDASANG_AGENT_CONTRACT_2026_ARBA_TRAVEL_TOURS.pdf",
+       "to": "Dreamworld (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 628581,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "151ee60f7f1",
+       "name": "MING - General Contract Rates Agreement 2026_ARBA TRAVEL & TOURS SDN BHD.docx.pdf",
+       "file": "contracts/kkk/151ee60f7f1-MING_-_General_Contract_Rates_Agreement_2026_ARBA_TRAVEL_TOURS_SDN_BHD.docx.pdf",
+       "to": "Ming Garden (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 563396,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "15705d69539",
+       "name": "DREAMTEL - ARBA TRAVEL & TOURS SDN BHD -  Contract 2026-2027.pdf",
+       "file": "contracts/kkk/15705d69539-DREAMTEL_-_ARBA_TRAVEL_TOURS_SDN_BHD_-_Contract_2026-2027.pdf",
+       "to": "Dreamtel (hotel)",
+       "note": "Drive CR SABAH 2026",
+       "size": 372440,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "KK Kundasang › TO Contract Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "PHT",
+      "contracts"
+     ],
+     "from": null,
+     "to": [
+      {
+       "id": "e87ea15679c",
+       "name": "MIMPI - 2026 TA Contract Rates ARBA -.pdf",
+       "file": "contracts/pht/e87ea15679c-MIMPI_-_2026_TA_Contract_Rates_ARBA_-.pdf",
+       "to": "Mimpi Resort",
+       "note": "Drive CR PERHENTIAN 2026",
+       "size": 731641,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "6be3c8cb643",
+       "name": "SHA-RI LA PERHENTIAN - CONTRACT RATE 2026 - ARBA TRAVEL.pdf",
+       "file": "contracts/pht/6be3c8cb643-SHA-RI_LA_PERHENTIAN_-_CONTRACT_RATE_2026_-_ARBA_TRAVEL.pdf",
+       "to": "Shari-La Resort",
+       "note": "Drive CR PERHENTIAN 2026",
+       "size": 495776,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "9146445b3bb",
+       "name": "Flora Contract Agent 2026.pdf",
+       "file": "contracts/pht/9146445b3bb-Flora_Contract_Agent_2026.pdf",
+       "to": "Flora Bay (hotel)",
+       "note": "Drive CR PERHENTIAN 2026",
+       "size": 351186,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      },
+      {
+       "id": "29027f23361",
+       "name": "OMBAK DIVE RESORT RATES PACKAGES 2026 PUBLISHED.pdf",
+       "file": "contracts/pht/29027f23361-OMBAK_DIVE_RESORT_RATES_PACKAGES_2026_PUBLISHED.pdf",
+       "to": "Ombak (hotel)",
+       "note": "Drive CR PERHENTIAN 2026 (published rates)",
+       "size": 745922,
+       "at": "2026-10-15T18:00:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Perhentian › TO Contract Rate"
+    }
+   ]
   }
  ]
 }
