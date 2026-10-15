@@ -71,6 +71,12 @@ function setPath(obj, path, val) {
   if (val === undefined) { delete parent[last]; return; }
   parent[last] = val;
 }
+// setPath that creates missing objects on the way (a catalog / KB section added from scratch in Edit costs)
+function ensureSet(obj, path, val) {
+  let cur = obj;
+  for (let i = 0; i < path.length - 1; i++) { const nx = step(cur, path[i]); if (nx == null) { cur[path[i]] = typeof path[i + 1] === "number" ? [] : {}; cur = cur[path[i]]; } else cur = nx; }
+  const last = path[path.length - 1]; if (val === undefined) delete cur[last]; else cur[last] = val;
+}
 function keyedArray(a) { return a.length > 0 && a.every(x => keyOf(x) != null); }
 function diff(a, b, path = [], out = []) {
   if (a === b) return out;
@@ -437,7 +443,7 @@ function renderControls(d, pkg) {
       <label>Package<select id="selPkg">${d.packages.map(p => `<option value="${p.id}"${p.id === pkg.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}</select></label>
       ${(d.options || []).map(op => { const O = optsFor(d), c = op.choices.find(x => x.id === O[op.id]), up = c && c.upgrade ? +(c.upgrade[pkg.id] || 0) : 0;
         return `<label>${esc(op.label)}${up ? ` <span class="pill warn">catalog +RM${up}</span>` : ""}<select id="opt_${esc(op.id)}">${op.choices.map(ch => `<option value="${esc(ch.id)}"${ch.id === O[op.id] ? " selected" : ""}>${esc(ch.label)}</option>`).join("")}</select></label>`; }).join("")}
-      <label>Tour operator<select id="selVar">
+      <label>Tour operator${EDIT && !VIEW ? ` <button class="btn" data-act="goAddTO" title="Add a new tour operator to this package">+ Add TO</button>` : ""}<select id="selVar">
         <option value="auto"${SEL.variant === "auto" ? " selected" : ""}>Auto${autoId ? ": " + esc((d.variants.find(v => v.id === autoId) || {}).label || autoId) + (multiTO ? " (" + pax + " pax)" : "") : " by pax"}</option>
         ${multiTO ? pkgVariants(d, pkg).map(v => `<option value="${v.id}"${SEL.variant === v.id ? " selected" : ""}>${esc(v.label)} (${v.paxMin}–${v.paxMax} pax)</option>`).join("") : ""}
       </select></label>
@@ -697,11 +703,11 @@ function toListCard(d, pkg) {
         <td class="l">${isDef ? `<span class="pill nav">Default${def.length > 1 ? " · " + esc(band) + " pax" : ""}</span>` : '<span class="pill grey">Alternative</span>'}</td>
         <td>${isDef ? "" : `<button class="btn" data-act="toDefault" data-id="${esc(v.id)}">Make default</button> <button class="btn danger" data-act="toRemove" data-id="${esc(v.id)}">Remove</button>`}</td></tr>`; }).join("")}
     </tbody></table></div>
-    <div class="body ao-add"><b style="width:100%">Add TO <span class="muted small" style="font-weight:400">— copies the components and per-pax rates of an existing TO; change its rates in TO rates below. It becomes an alternative of this package.</span></b>
+    <div class="body ao-add"><b style="width:100%">Add TO <span class="muted small" style="font-weight:400">— copies the components and per-pax rates of an existing TO, or starts a blank TO (one Ground Cost per pax); fill its rates in TO rates below. It becomes an alternative of this package (Make default to use it).</span></b>
       <label class="grow">TO name<input id="toName" placeholder="e.g. Pak Rahman"></label>
       <label class="grow">Supplier / note<input id="toSup" placeholder="e.g. Pak Rahman 3★ CR 2027"></label>
       <label>Pax from<input id="toFrom" type="number" value="${lo}"></label><label>to<input id="toTo" type="number" value="${hi}"></label>
-      <label>Copy from<select id="toCopy">${vs.map(v => `<option value="${esc(v.id)}">${esc(v.label)} (${v.paxMin}–${v.paxMax})</option>`).join("")}</select></label>
+      <label>Copy from<select id="toCopy">${vs.map(v => `<option value="${esc(v.id)}">${esc(v.label)} (${v.paxMin}–${v.paxMax})</option>`).join("")}<option value="">— New TO, blank (Ground Cost per pax) —</option></select></label>
       <button class="btn primary" data-act="toAdd">Add TO</button></div></div>`;
 }
 // TO Comparison: adult margin (Selling − cost per pax) of every TO of the package at each pax (shown when there is more than one TO)
@@ -723,7 +729,7 @@ function toCompareCard(d, pkg) {
 // excludes / duration and price text (price_lines), grouped by category in the catalog's addon_groups order.
 function addonCard(d, pkg) {
   const list = d.addons || [], DP = ["destinations", d.code], E = EDIT && !VIEW;
-  if (!list.length) return "";
+  if (!list.length && !E) return "";
   const slugs = (pkg && catalogSlugs(pkg, d)) || [];
   const t = addonTotals(d), tm = t.sell - t.cost;
   const cats = [...new Set(list.map(a => a.category || "Other"))];
@@ -822,24 +828,27 @@ function catalogPart(c0, ix, which) {
   const ul = (a, path) => E && path ? ct(path, a) : a && a.length ? `<ul class="cd-list">${a.map(li).join("")}</ul>` : '<div class="muted">—</div>';
   const sec = (title, body, sub) => body ? `<section class="cd-sec"><h3>${title}${sub ? ` <span class="muted">${esc(sub)}</span>` : ""}</h3>${body}</section>` : "";
   const notes = (n, path) => E && path ? `<div class="cd-note">${ct(path, n, 2)}</div>` : n && n.length ? `<div class="cd-note">${n.map(esc).join("<br>")}</div>` : "";
+  const addB = (path, tpl, label) => E ? ` <button class="btn" data-catact="additem" data-cpath="${cp(path)}" data-tpl="${esc(JSON.stringify(tpl))}">${label}</button>` : "";
+  const delB = (path, renum) => E ? ` <button class="btn danger" data-catact="delitem" data-cpath="${cp(path)}"${renum ? ' data-renum="1"' : ""} title="Buang">×</button>` : "";
   let body = "", title = "";
   if (which === "price") {
     const P = resolvePrices(c, ix), literal = !catPackage(ix);
     title = "Catalog price table";
     body = P.rows && P.rows.length ? sec("Package Price", `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">${ci(["prices", "pax_label"], P.pax_label || (E ? "" : "No. of Pax"), "No. of Pax")}</th>${P.columns.map((x, i) => `<th>${ci(["prices", "columns", i, "label"], x.label)}${x.age || E ? `<span class="cd-age">${ci(["prices", "columns", i, "age"], x.age, "age")}</span>` : ""}</th>`).join("")}</tr></thead>
-      <tbody>${P.rows.map((r, ri) => `<tr><td class="l">${ci(["prices", "rows", ri, "pax"], r.pax)}</td>${r.amounts.map((v, ai) => `<td class="num">${E && literal ? ci(["prices", "rows", ri, "amounts", ai], v) : esc(v || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+      <tbody>${P.rows.map((r, ri) => `<tr><td class="l">${ci(["prices", "rows", ri, "pax"], r.pax)}${delB(["prices", "rows", ri])}</td>${r.amounts.map((v, ai) => `<td class="num">${E && literal ? ci(["prices", "rows", ri, "amounts", ai], v) : esc(v || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+      ${E ? `<div class="cd-note">${addB(["prices", "rows"], literal ? { pax: "", amounts: [] } : { pax: "" }, "+ Pax band")} <span class="muted">${literal ? "" : "harga band baharu ikut Costing pax pertama dalam band"}</span></div>` : ""}
       <div class="cd-note">Infant: ${E ? ci(["prices", "infant"], (c.prices || {}).infant, "e.g. {price} per pax — {price} = Costing infant price, FOC when 0") : esc(P.infant || "—")}</div>${notes(P.notes, ["prices", "notes"])}`,
       literal ? "as printed (no Costing package yet)" : "amounts = the Catalog Price column above; edit pax bands, column labels and the infant line here") : "";
   } else if (which === "itinerary") {
     title = c.title;
     const head = E ? `<div class="cd-edit-head">${[["title", "Title"], ["duration", "Duration"], ["route", "Route"], ["basis", "Package basis"], ["valid_until", "Valid until"], ["version", "Version"]].map(([k, l]) => `<label>${l}${ci([k], c[k])}</label>`).join("")}</div>
-      ${(c.highlights || []).length ? `<div class="cd-chips">${c.highlights.map((h, i) => ci(["highlights", i, "label"], h.label)).join(" ")}</div>` : ""}`
+      <div class="cd-chips">${(c.highlights || []).map((h, i) => `<span>${ci(["highlights", i, "label"], h.label)}${delB(["highlights", i])}</span>`).join(" ")}${addB(["highlights"], { icon: "info", label: "" }, "+ Highlight")}</div>`
       : `${(c.highlights || []).length ? `<div class="cd-chips">${c.highlights.map(h => `<span class="pill">${esc(h.label)}</span>`).join("")}</div>` : ""}`;
     const HA = catHotels(c, sl, ix.code).acc;
     const acc = HA && HA.length ? `<div class="cd-acc">${HA.map(a => `<div><span class="muted">${esc(a.city || "")}</span>${a.stars ? ` · ${"★".repeat(a.stars)}` : ""}<br>${esc(a.name)}${a.similar ? ' <span class="muted">or similar</span>' : ""}</div>`).join("")}</div>${E ? '<div class="cd-note">Hotel: tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a></div>' : ""}` : "";
     const itins = c.itineraries ? c.itineraries.map((x, i) => ({ label: x.label, days: x.days || [], base: ["itineraries", i, "days"] })) : [{ label: null, days: c.itinerary || [], base: ["itinerary"] }];
     const itin = it => `<div class="scroll"><table class="cd-t cd-itin"><thead><tr><th class="l">Day</th><th class="l">Activities</th><th class="l">Transport</th><th class="l">Meal</th><th class="l">Hotel</th></tr></thead>
-      <tbody>${it.days.map((x, di) => { const p = k => [...it.base, di, k]; return `<tr><td class="l cd-day">${esc(x.day)}</td><td class="l"><b>${ci(p("title"), x.title, "title")}</b>${ul(x.activities, p("activities"))}</td><td class="l">${E ? ci(p("transport"), x.transport) : esc(x.transport || "—")}</td><td class="l">${E ? ci(p("meals"), x.meals) : esc(x.meals || "—")}</td><td class="l">${E ? ci(p("hotel"), x.hotel) : esc(x.hotel || "—")}</td></tr>`; }).join("")}</tbody></table></div>
+      <tbody>${it.days.map((x, di) => { const p = k => [...it.base, di, k]; return `<tr><td class="l cd-day">${esc(x.day)}${delB([...it.base, di], true)}</td><td class="l"><b>${ci(p("title"), x.title, "title")}</b>${ul(x.activities, p("activities"))}</td><td class="l">${E ? ci(p("transport"), x.transport) : esc(x.transport || "—")}</td><td class="l">${E ? ci(p("meals"), x.meals) : esc(x.meals || "—")}</td><td class="l">${E ? ci(p("hotel"), x.hotel) : esc(x.hotel || "—")}</td></tr>`; }).join("")}</tbody></table></div>
       ${E ? `<div class="cd-note"><button class="btn" data-catact="addday" data-cpath="${cp(it.base)}">+ Day</button> ${it.days.length ? `<button class="btn danger" data-catact="delday" data-cpath="${cp(it.base)}">− Last day</button>` : ""}</div>` : ""}`;
     const incl = (c.price_blocks || []).map((b, bi) => `${b.label ? `<div class="cd-lbl">${esc(b.label)}</div>` : ""}<div class="cd-two"><div><h4>Includes</h4>${ul(b.includes, ["price_blocks", bi, "includes"])}</div><div><h4>Excludes</h4>${ul(b.excludes, ["price_blocks", bi, "excludes"])}</div></div>`).join("");
     body = head + sec("Accommodation", acc) + itins.map(it => sec("Travel Itinerary" + (it.label ? " (" + esc(it.label) + ")" : ""), itin(it))).join("") + sec("Price Includes / Excludes", incl);
@@ -850,14 +859,20 @@ function catalogPart(c0, ix, which) {
       <tbody>${S.rows.map(r => `<tr><td class="l">${esc(r.type || "")}</td><td class="l">${esc(r.name || "")}${r.similar ? ' <span class="muted">or similar</span>' : ""}</td>${(r.amounts || []).map(v => `<td>${esc(v || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${E ? '<div class="cd-note">Baris hotel: tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a></div>' : ""}` : "")
       + (S.seasons && S.seasons.length ? `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season</th><th class="l">Travel dates</th><th class="l">Surcharge</th></tr></thead>
       <tbody>${S.seasons.map((x, i) => `<tr><td class="l"><b>${ci(["surcharge", "seasons", i, "label"], x.label)}</b></td><td class="l">${ci(["surcharge", "seasons", i, "period"], x.period)}</td><td class="l">${ci(["surcharge", "seasons", i, "rate"], x.rate)}</td></tr>`).join("")}</tbody></table></div>` : "") + notes(S.notes, S.title || S.rows || S.seasons ? ["surcharge", "notes"] : null);
-    body = (E && (S.title || S.rows || S.seasons) ? `<label class="cd-edit-head">Title${ci(["surcharge", "title"], S.title)}</label>` : "") + (sur || '<div class="empty">No surcharge in this catalog.</div>');
+    if (E) {
+      const cols = `<div class="cd-note"><b>Kolum jadual hotel</b> (amaun setiap hotel di tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a>): ${(S.columns || []).map((x, i) => `<span>${ci(["surcharge", "columns", i, "label"], x.label, "label")}${ci(["surcharge", "columns", i, "period"], x.period, "period")}${delB(["surcharge", "columns", i])}</span>`).join(" ")}${addB(["surcharge", "columns"], { label: "", period: "" }, "+ Kolum")}</div>`;
+      const seas = `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season</th><th class="l">Travel dates</th><th class="l">Surcharge</th><th></th></tr></thead><tbody>${(S.seasons || []).map((x, i) => `<tr><td class="l">${ci(["surcharge", "seasons", i, "label"], x.label)}</td><td class="l">${ci(["surcharge", "seasons", i, "period"], x.period)}</td><td class="l">${ci(["surcharge", "seasons", i, "rate"], x.rate)}</td><td>${delB(["surcharge", "seasons", i])}</td></tr>`).join("")}</tbody></table></div>
+        <div class="cd-note">${addB(["surcharge", "seasons"], { label: "", period: "", rate: "" }, "+ Season")}</div>`;
+      body = `<label class="cd-edit-head">Title${ci(["surcharge", "title"], S.title)}</label>` + (S.rows && S.rows.length ? sur.split('<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season')[0] : "") + cols + seas + `<h4>Notes</h4>${notes(S.notes, ["surcharge", "notes"])}`;
+    } else body = sur || '<div class="empty">No surcharge in this catalog.</div>';
   } else if (which === "expect") {
     title = "What to Expect";
-    body = c.expect && c.expect.length ? `<div class="cd-acc">${c.expect.map((e, i) => `<div><b>${ci(["expect", i, "title"], e.title)}</b>${e.tag && !E ? ` <span class="pill">${esc(e.tag)}</span>` : ""}<br><span class="muted">${E ? `<textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="2">${esc(e.body || "")}</textarea>` : esc(e.body)}</span></div>`).join("")}</div>` : '<div class="empty">No "What to Expect" in this catalog.</div>';
+    body = E ? `<div class="cd-acc">${(c.expect || []).map((e, i) => `<div><b>${ci(["expect", i, "title"], e.title, "title")}</b>${delB(["expect", i])}<br><span class="muted small">icon ${ci(["expect", i, "icon"], e.icon, "info / hotel / bus / utensils …")}</span><br><textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="2">${esc(e.body || "")}</textarea></div>`).join("")}</div><div class="cd-note">${addB(["expect"], { icon: "info", title: "", body: "" }, "+ Item")}</div>`
+      : c.expect && c.expect.length ? `<div class="cd-acc">${c.expect.map((e, i) => `<div><b>${ci(["expect", i, "title"], e.title)}</b>${e.tag && !E ? ` <span class="pill">${esc(e.tag)}</span>` : ""}<br><span class="muted">${E ? `<textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="2">${esc(e.body || "")}</textarea>` : esc(e.body)}</span></div>`).join("")}</div>` : '<div class="empty">No "What to Expect" in this catalog.</div>';
   } else if (which === "policy") {
     title = "Policy";
-    const imp = (c.notes || []).map((n, i) => `${n.title || E ? `<h4>${ci(["notes", i, "title"], n.title, "title")}</h4>` : ""}${ul(n.entries, ["notes", i, "entries"])}`).join("");
-    const dep = (c.deposit || []).map((x, i) => `<div><b>${ci(["deposit", i, "figure"], x.figure)}</b> ${ci(["deposit", i, "text"], x.text)}</div>`).join("");
+    const imp = (c.notes || []).map((n, i) => `${n.title || E ? `<h4>${ci(["notes", i, "title"], n.title, "title")}${delB(["notes", i])}</h4>` : ""}${ul(n.entries, ["notes", i, "entries"])}`).join("") + (E ? `<div class="cd-note">${addB(["notes"], { title: "", entries: [] }, "+ Kumpulan nota")}</div>` : "");
+    const dep = (c.deposit || []).map((x, i) => `<div><b>${ci(["deposit", i, "figure"], x.figure, "RM 250")}</b> ${ci(["deposit", i, "text"], x.text, "deposit per person")}${delB(["deposit", i])}</div>`).join("") + (E ? `<div class="cd-note">${addB(["deposit"], { figure: "", text: "" }, "+ Baris deposit")}</div>` : "");
     body = sec("Important Notes", imp) + sec("Deposit & Full Payment", dep);
   }
   if (!body) return "";
@@ -1110,7 +1125,7 @@ function calcTable(sl, path, arr, cols, E, opt = {}) {
   const head = `<tr>${cols.map(c => `<th class="l">${esc(c.l)}</th>`).join("")}${E && !opt.ro ? "<th></th>" : ""}</tr>`;
   const rows = arr.map((x, i) => `<tr>${cols.map(c => `<td class="l">${c.f ? c.f(x, i) : (x == null || x[c.k] === undefined) && !E ? "" : calcIn(sl, [...path, i, c.k], x[c.k], E, { num: c.num, ro: opt.ro })}</td>`).join("")}
     ${E && !opt.ro ? `<td><button class="btn danger" data-kact="del" data-kpath="${esc(JSON.stringify([sl, "calc", ...path, i]))}">Buang</button></td>` : ""}</tr>`).join("");
-  return `<div class="scroll"><table class="zebra calc-t"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${E && !opt.ro ? `<button class="btn" data-kact="add" data-kpath="${kp}">+ Tambah baris</button>` : ""}`;
+  return `<div class="scroll"><table class="zebra calc-t"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${E && !opt.ro ? `<button class="btn" data-kact="add" data-kpath="${kp}"${opt.tpl ? ` data-ktpl="${esc(JSON.stringify(opt.tpl))}"` : ""}>+ Tambah baris</button>` : ""}`;
 }
 const calcCols = (arr, order) => { const ks = [...new Set((arr || []).flatMap(x => x && typeof x === "object" && !Array.isArray(x) ? Object.keys(x) : []))]; return [...order.filter(k => ks.includes(k)), ...ks.filter(k => !order.includes(k))]; };
 function kbCalcForm(sl, cal, links, E) {
@@ -1128,19 +1143,25 @@ function kbCalcForm(sl, cal, links, E) {
     return `<div class="calc-pkg"><h3>${esc(kbTxt(v.name))} <span class="muted small">${v.days ?? "?"}H${v.nights ?? "?"}M · ${esc(kbTxt(v.hotelLabel || ""))}${v.single != null ? ` · single +RM${n2(v.single)}` : ""}${v.infant != null ? ` · infant RM${n2(v.infant)}` : ""}</span></h3>
       ${ro ? `<div class="small muted">Harga dari tab <a href="#costing" data-tabmain="costing">Costing</a> (Catalog Price) — ditulis semula setiap build; ubah di Costing.</div>` : `<div class="small muted">KB sahaja (tiada pakej Costing) — harga diedit di sini.</div>`}
       ${calcTable(sl, ["variants", i, "tiers"], v.tiers, [{ k: "from", l: "Dari pax", num: 1 }, { k: "to", l: "Hingga pax", num: 1 }, { k: "a", l: "Adult (RM/pax)", num: 1 }, { k: "c", l: "CWB (RM/pax)", num: 1 }, { k: "n", l: "CNB (RM/pax)", num: 1 }], E, { ro })}
-      ${E && !ro ? `<div class="calc-row">${f("Single supplement (RM)", ["variants", i, "single"], 1)}${f("Infant (RM)", ["variants", i, "infant"], 1)}</div>` : ""}</div>`;
+      ${E && !ro ? `<div class="calc-row">${f("Single supplement (RM)", ["variants", i, "single"], 1)}${f("Infant (RM)", ["variants", i, "infant"], 1)}</div>` : ""}
+      ${v.lastMinute ? `<div class="calc-row">${f("Last minute: kurang dari (hari)", ["variants", i, "lastMinute", "lt"], 1)}${f("Last minute: 2 pax (RM)", ["variants", i, "lastMinute", "rate2"], 1)}${f("Last minute: 3+ pax (RM)", ["variants", i, "lastMinute", "rate3"], 1)}</div>` : ""}
+      ${v.peak ? `<h4>Peak season pakej ini</h4>${E ? `<div class="calc-row">${f("Cara kira (perNight / flat / percent)", ["variants", i, "peak", "mode"])}${f("Nilai asas (RM)", ["variants", i, "peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(v.peak.mode || "")} · nilai asas RM${n2(v.peak.value)}</div>`}
+        ${calcTable(sl, ["variants", i, "peak", "windows"], v.peak.windows, [{ k: 0, l: "Dari tarikh" }, { k: 1, l: "Hingga tarikh" }, { k: 2, l: "Pakej (kod)" }, { k: 3, l: "RM / pax", num: 1 }, { k: 4, l: "Label" }], E, { tpl: ["", ""] })}`
+        : E ? `<button class="btn" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "variants", i, "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season khusus pakej ini</button>` : ""}</div>`;
   }).join("");
   const pk = cal.peak;
   const peak = pk ? `${E ? `<div class="calc-row">${f("Cara kira (flat / …)", ["peak", "mode"])}${f("Nilai asas (RM)", ["peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(pk.mode || "")}${pk.value != null ? ` · nilai asas RM${n2(pk.value)}` : ""}</div>`}
-    ${calcTable(sl, ["peak", "windows"], pk.windows, [{ k: 0, l: "Dari tarikh" }, { k: 1, l: "Hingga tarikh" }, { k: 2, l: "Pakej (kod)", f: E ? null : x => esc(vName(x[2])) }, { k: 3, l: "RM / pax", num: 1 }, { k: 4, l: "Label" }], E)}` : "";
-  const addons = calcTable(sl, ["addons"], cal.addons, [{ k: 0, l: "Add-on" }, { k: 1, l: "Adult (RM)", num: 1 }, { k: 2, l: "Child (RM)", num: 1 }, { k: 3, l: "Unit (pax / unit)" }, { k: 4, l: "Teks quotation" }], E);
-  const opt = (key, title, order) => cal[key] ? `<h3>${title}</h3>` + calcTable(sl, [key], cal[key], calcCols(cal[key], order).map(k => ({ k, l: CALC_L[k] || k, f: k === "cost" && !E ? x => esc(CALC_COST[x.cost] || calcTxt(x.cost)) : null, num: ["perPax", "perVehicle", "perVehicleQty", "b", "l", "d", "percentOfTier", "from", "to"].includes(k) })), E) : "";
+    ${calcTable(sl, ["peak", "windows"], pk.windows, [{ k: 0, l: "Dari tarikh" }, { k: 1, l: "Hingga tarikh" }, { k: 2, l: "Pakej (kod)", f: E ? null : x => esc(vName(x[2])) }, { k: 3, l: "RM / pax", num: 1 }, { k: 4, l: "Label" }], E, { tpl: ["", ""] })}` : "";
+  const addons = calcTable(sl, ["addons"], cal.addons, [{ k: 0, l: "Add-on" }, { k: 1, l: "Adult (RM)", num: 1 }, { k: 2, l: "Child (RM)", num: 1 }, { k: 3, l: "Unit (pax / unit)" }, { k: 4, l: "Teks quotation" }], E, { tpl: ["", 0, 0, "pax"] });
+  const TPL = { extraSurcharge: { label: "", dateIn: ["", ""], perPax: 0 }, paxNotes: { from: 1, to: 99, text: "" }, accOptions: { v: "", t: "", cost: "incl" }, mealOptions: { v: "", t: "", b: 1, l: 0, d: 0, lbl: "" }, trpOptions: { v: "", t: "", cost: "incl", lbl: "" } };
+  const opt = (key, title, order) => cal[key] ? `<h3>${title}</h3>` + calcTable(sl, [key], cal[key], calcCols(cal[key], order).map(k => ({ k, l: CALC_L[k] || k, f: k === "cost" && !E ? x => esc(CALC_COST[x.cost] || calcTxt(x.cost)) : null, num: ["perPax", "perVehicle", "perVehicleQty", "b", "l", "d", "percentOfTier", "from", "to"].includes(k) })), E, { tpl: TPL[key] })
+    : E && TPL[key] ? `<h3>${title}</h3><button class="btn" data-kact="add" data-kpath="${esc(JSON.stringify([sl, "calc", key]))}" data-ktpl="${esc(JSON.stringify(TPL[key]))}">+ Tambah baris</button>` : "";
   const options = opt("accOptions", "Hotel (pilihan harian)", ["t", "cost", "perPax", "hotel", "incl"]) + opt("mealOptions", "Meal (pilihan harian)", ["t", "b", "l", "d", "perPax", "lbl"]) + opt("trpOptions", "Transport (pilihan harian)", ["t", "cost", "perPax", "perVehicle", "lbl", "incl"]);
   const extra = opt("extraSurcharge", "Surcaj tambahan", ["label", "dateIn", "perPax", "percentOfTier", "variants"]) + opt("paxNotes", "Nota ikut bilangan pax", ["from", "to", "text"]);
   const lib = cal.library ? calcTable(sl, ["library"], cal.library, calcCols(cal.library, ["g", "t", "region", "acc", "meal", "trp", "act"]).filter(k => k !== "eact" && k !== "en").map(k => ({ k, l: CALC_L[k] || k })), E) : "";
   return sec("asas", "Asas", "deposit, late booking, meal, malam tambahan", `<div class="calc-row">${basics}</div>${texts}`)
     + sec("tiers", "Pakej &amp; harga tier", `${V.length} pakej · harga per pax ikut bilangan pax`, pkgs)
-    + (pk ? sec("peak", "Peak season", `${(pk.windows || []).length} tempoh`, peak) : "")
+    + (pk ? sec("peak", "Peak season", `${(pk.windows || []).length} tempoh`, peak) : E ? sec("peak", "Peak season", "semua pakej", `<button class="btn" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season (semua pakej)</button>`) : "")
     + sec("addons", "Add-on", `${(cal.addons || []).length} item · harga jual`, addons)
     + sec("options", "Pilihan harian (Ubah itinerary)", "hotel · meal · transport", options)
     + (extra ? sec("extra", "Surcaj lain &amp; nota pax", "", extra) : "")
@@ -2335,14 +2356,23 @@ document.addEventListener("click", async e => {
     e.preventDefault();
     const [sl, ...path] = JSON.parse(t.dataset.kpath), doc = KB.edit[sl] ||= clone(KB.docs[sl]);
     const blank = v => typeof v === "string" ? "" : typeof v === "number" ? 0 : Array.isArray(v) ? [] : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, blank(x)])) : v;
-    if (t.dataset.kact === "add") { const arr = getPath(doc, path), last = arr[arr.length - 1]; arr.push(!arr.length ? "" : Array.isArray(last) ? last.map(blank) : blank(last)); }
+    if (t.dataset.kact === "add") { let arr = getPath(doc, path); if (!Array.isArray(arr)) { arr = []; ensureSet(doc, path, arr); } const last = arr[arr.length - 1]; arr.push(t.dataset.ktpl ? JSON.parse(t.dataset.ktpl) : !arr.length ? "" : Array.isArray(last) ? last.map(blank) : blank(last)); }
+    if (t.dataset.kact === "set") ensureSet(doc, path, JSON.parse(t.dataset.kval));
     if (t.dataset.kact === "del") { const arr = getPath(doc, path.slice(0, -1)), i = path[path.length - 1]; if (confirm("Buang item #" + (i + 1) + "?")) arr.splice(i, 1); }
     return render();
   }
   if (t.dataset.catact) {
-    const [sl, ...path] = JSON.parse(t.dataset.cpath), doc = CAT.edit[sl] ||= clone(CAT.docs[sl]), days = getPath(doc, path);
-    if (t.dataset.catact === "addday") days.push({ day: days.length + 1, title: "", activities: [], transport: "", meals: "", hotel: "" });
-    if (t.dataset.catact === "delday" && days.length && confirm("Remove day " + days.length + "?")) days.pop();
+    const [sl, ...path] = JSON.parse(t.dataset.cpath), doc = CAT.edit[sl] ||= clone(CAT.docs[sl]), act = t.dataset.catact;
+    if (act === "additem") { let arr = getPath(doc, path); if (!Array.isArray(arr)) { arr = []; ensureSet(doc, path, arr); } arr.push(JSON.parse(t.dataset.tpl || '""')); return render(); }
+    if (act === "delitem") {
+      const arr = getPath(doc, path.slice(0, -1)), i = path[path.length - 1];
+      if (!Array.isArray(arr) || !confirm("Buang item #" + (i + 1) + "?")) return;
+      arr.splice(i, 1); if (t.dataset.renum) arr.forEach((x, k) => { if (x && typeof x === "object") x.day = k + 1; });
+      return render();
+    }
+    const days = getPath(doc, path);
+    if (act === "addday") days.push({ day: days.length + 1, title: "", activities: [], transport: "", meals: "", hotel: "" });
+    if (act === "delday" && days.length && confirm("Remove day " + days.length + "?")) days.pop();
     return render();
   }
   if (t.dataset.act === "addHotel" || t.dataset.act === "delHotel") {
@@ -2358,14 +2388,26 @@ document.addEventListener("click", async e => {
     }
     return render();
   }
+  if (t.dataset.act === "goAddTO") {
+    e.preventDefault(); SEL.tab = "costing"; render();
+    const c = document.getElementById("toList"); if (c) { c.scrollIntoView({ behavior: "smooth", block: "start" }); const n = document.getElementById("toName"); if (n) n.focus(); }
+    return;
+  }
   if (t.dataset.act === "toAdd") {
     const d = DATA.destinations.find(x => x.code === PAGE_DEST), pkg = d.packages.find(p => p.id === SEL.pkg) || d.packages[0];
     const name = $("#toName").value.trim(), sup = $("#toSup").value.trim(), from = +$("#toFrom").value, to = +$("#toTo").value, src = d.variants.find(v => v.id === $("#toCopy").value);
     if (!name) return toast("TO name is required");
     if (!(from >= 1 && to >= from)) return toast("Pax from / to: from ≥ 1 and to ≥ from");
-    if (!src) return toast("Pick a TO to copy from");
     const base = name.toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-|-$/g, "") || "TO";
     let id = base; for (let i = 2; d.variants.some(v => v.id === id); i++) id = base + "-" + i;
+    if (!src) {   // blank TO: one Ground Cost table (RM per pax) for its pax range, filled in TO rates
+      const tid = id + "__Ground-Cost";
+      d.tables = d.tables || [];
+      d.tables.push({ id: tid, label: name + " · Ground Cost", unit: "MYR/pax", fx: "MYR", group: name, values: Object.fromEntries(Array.from({ length: to - from + 1 }, (_, k) => [String(from + k), null])) });
+      d.variants.push({ id, label: name, supplier: sup || name, paxMin: from, paxMax: to, hotel: "", notes: "New TO — fill the Ground Cost per pax in TO rates", components: [{ key: "ground-cost", label: "Ground Cost", per: "pax", expr: "T['" + tid + "']" }] });
+      pkg.alsoVariants = [...(pkg.alsoVariants || []), id];
+      SEL.variant = id; toast(`Added new TO "${name}" — fill its Ground Cost per pax in TO rates, then Save`); return render();
+    }
     const tables = [];
     const components = src.components.map(c => ({ ...c, expr: String(c.expr).replace(/T\['([^']+)'\]/g, (m, tid) => {
       const old = d.tables.find(x => x.id === tid); if (!old) return m;
@@ -2608,7 +2650,7 @@ document.addEventListener("change", e => {
   }
   if (t.dataset && t.dataset.cpath && t.dataset.catact === undefined) {
     const [sl, ...path] = JSON.parse(t.dataset.cpath), doc = CAT.edit[sl] ||= clone(CAT.docs[sl]);
-    setPath(doc, path, t.dataset.ckind === "lines" ? catParseLines(t.value) : t.value);
+    ensureSet(doc, path, t.dataset.ckind === "lines" ? catParseLines(t.value) : t.value);
     setTimeout(() => {
       const nx = document.activeElement && document.activeElement.dataset ? document.activeElement.dataset.cpath : null;
       render();
@@ -2640,5 +2682,5 @@ setInterval(() => { if (SESSION && Date.now() - lastActivity > IDLE_LOGOUT_MS) {
 
 if (SEL.tab === "catalog") SEL.tab = "itinerary";
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1) === "catalog" ? "itinerary" : location.hash.slice(1); if (tabsFor(curDest()).some(t => t[0] === h) && h !== SEL.tab) { SEL.tab = h; render(); } });
-window.PTCALC = { priceRow, calcMd, KBEDIT: () => KB.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
+window.PTCALC = { priceRow, calcMd, KBEDIT: () => KB.edit, CATEDIT: () => CAT.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
 load().catch(() => { });

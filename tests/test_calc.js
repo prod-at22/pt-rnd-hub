@@ -673,6 +673,56 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     click(w, doc.querySelector("#btnEdit")); await tick(5);
   }
 
+  console.log("8e2. Add / remove buttons on every editable tab + blank new TO (PO 15 Oct 2026)");
+  {
+    const V = P.BASE.version, cp = (...p) => JSON.stringify(["tokyo-standard", ...p]), CE = () => P.CATEDIT()["tokyo-standard"];
+    if (!/Stop/.test(doc.querySelector("#btnEdit").textContent)) { click(w, doc.querySelector("#btnEdit")); await tick(5); }
+    const btn = (act, ...path) => [...doc.querySelectorAll(`[data-catact="${act}"]`)].find(x => x.dataset.cpath === cp(...path));
+    ok(doc.querySelector('[data-act="goAddTO"]'), "Edit: '+ Add TO' button next to the Tour operator box");
+    await tab(w, doc, "expect"); await until(() => doc.querySelector("#cat-tokyo-standard-expect"));
+    const ne = (CE() || {}).expect ? CE().expect.length : JSON.parse(repo.files(repo.head)["data/catalogs/tokyo-standard.json"]).expect.length;
+    ok(btn("additem", "expect"), "What to Expect: + Item");
+    click(w, btn("additem", "expect")); await tick(10);
+    ok(CE().expect.length === ne + 1 && CE().expect[ne].icon === "info", "+ Item adds a blank item (icon info)");
+    const ti = [...doc.querySelectorAll("input.ed.cat")].find(x => x.dataset.cpath === cp("expect", ne, "title"));
+    setVal(w, ti, "Cuaca sejuk"); await tick(10);
+    ok(CE().expect[ne].title === "Cuaca sejuk", "new item editable");
+    w.confirm = () => true; click(w, btn("delitem", "expect", ne)); await tick(10);
+    ok(CE().expect.length === ne, "× removes it again");
+    await tab(w, doc, "surcharge"); await until(() => doc.querySelector("#cat-tokyo-standard-surcharge"));
+    const ns = ((CE().surcharge || {}).seasons || []).length;
+    click(w, btn("additem", "surcharge", "seasons")); await tick(10);
+    ok(CE().surcharge.seasons.length === ns + 1 && "rate" in CE().surcharge.seasons[ns], "Surcharge: + Season adds a row");
+    click(w, btn("delitem", "surcharge", "seasons", ns)); await tick(10);
+    ok(CE().surcharge.seasons.length === ns, "Surcharge: × removes the row");
+    await tab(w, doc, "policy"); await until(() => doc.querySelector("#cat-tokyo-standard-policy"));
+    const nd = (CE().deposit || []).length;
+    click(w, btn("additem", "deposit")); await tick(10);
+    ok(CE().deposit.length === nd + 1, "Policy: + Baris deposit");
+    click(w, btn("delitem", "deposit", nd)); await tick(10);
+    ok(CE().deposit.length === nd && btn("additem", "notes"), "Policy: × deposit row, + Kumpulan nota shown");
+    await tab(w, doc, "itinerary"); await until(() => doc.querySelector("#cat-tokyo-standard"));
+    const nh = (CE().highlights || []).length;
+    click(w, btn("additem", "highlights")); await tick(10);
+    ok(CE().highlights.length === nh + 1, "Itinerary: + Highlight");
+    click(w, btn("delitem", "highlights", nh)); await tick(10);
+    const days = CE().itinerary.length;
+    ok(CE().highlights.length === nh && btn("delitem", "itinerary", 0), "Itinerary: × per day shown");
+    ok(!doc.querySelector("#btnSave"), "add + remove leaves nothing to save: " + ((doc.querySelector("#btnSave") || {}).textContent || ""));
+    // blank TO
+    await tab(w, doc, "costing"); await until(() => doc.querySelector("#toList"));
+    const H0 = HND(), pkg = H0.packages.find(p => p.id === P.SEL.pkg), nv = H0.variants.length;
+    doc.querySelector("#toName").value = "Pak Baru"; doc.querySelector("#toSup").value = "CR 2027"; doc.querySelector("#toFrom").value = "2"; doc.querySelector("#toTo").value = "6";
+    doc.querySelector("#toCopy").value = ""; click(w, doc.querySelector('[data-act="toAdd"]')); await tick(10);
+    const nvar = HND().variants.find(v => v.label === "Pak Baru"), tb = nvar && HND().tables.find(t => t.id === nvar.id + "__Ground-Cost");
+    ok(nvar && nvar.components.length === 1 && tb && Object.keys(tb.values).join() === "2,3,4,5,6" && Object.values(tb.values).every(v => v === null) && HND().packages.find(p => p.id === P.SEL.pkg).alsoVariants.includes(nvar.id), "blank TO: one Ground Cost table 2–6 pax, empty, added as an alternative");
+    ok(HND().variants.length === nv + 1, "one TO added");
+    click(w, [...doc.querySelectorAll('[data-act="toRemove"]')].find(x => x.dataset.id === nvar.id)); await tick(10);
+    ok(!HND().variants.some(v => v.id === nvar.id) && !HND().tables.some(t => t.id === nvar.id + "__Ground-Cost"), "Remove deletes the blank TO and its table");
+    ok(!doc.querySelector("#btnSave"), "nothing pending after removing it");
+    click(w, doc.querySelector("#btnEdit")); await tick(5);
+  }
+
   console.log("8g. Info KB + Simple Calculator tabs: PT KB House content from data/kb/<slug>.json, edited and saved like the catalogs");
   {
     const V = P.BASE.version, kb0 = JSON.parse(files["data/kb/jepun.json"]), clone0 = o => JSON.parse(JSON.stringify(o));
