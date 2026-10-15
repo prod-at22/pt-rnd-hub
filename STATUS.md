@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v109 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v109, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v110 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v110, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -318,10 +318,17 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   catalog prices unchanged, flagged high (PO: flag only; Peak / Special below cost at 2 / 3 / 9 / 11 pax; catalog peak windows ≠ CR seasons). Add-ons: 46 duplicates removed, catalog items costed in CHF
   (child ticket costs unknown), wifi 3GB / 6GB swapped back, TripCare couple / family per pair / family (Area 2 for Europe to confirm). Catalogs: expired peak windows removed, typos, ST basis
   'Ground Only', PO Thania, kb_url. KB: single = quoted upon request (was RM2,800), Travel Map night 6 = Bern, wifi, FAQ CHF ≈ RM4.90 / 2027 +RM370. Not done: Self Tour variant in the KB (flag).
+  **Seoul + Seoul-Jeju (v110, PO ezie 15 Oct; sources = ATK CR 2026 KRW in TO Contract Rate = R&D 'ATK-OPS Package-Rate'; R&D SEOUL / SEOUL JEJU + ProdReq Korea read with PO OK):**
+  package cost = CR KRW (checked: Basic row 'PT 5D4N -BSC', Standard 'PT 5D4N Seoul Standard', Seoul-Jeju 'PT 6D5N Seoul-Jeju') × **0.003 locked** (PO: not live — Jeju / Jeju-Udo stay live → FX flag)
+  + K-ETA RM27 component (catalog inclusion, PO; free for children); child CWB 100 % (CR child rate only under 7) / CNB 50 %; Costing 2–15 (= catalogs); Seoul-Jeju nights 5; Seoul Self Tour kept with
+  its hub calculation (PO; no hub catalog, costs 2–12 — 13–30 flagged). Add-ons: only 'K-ETA' → 'K-ETA Re-Application' RM70 / cost RM27 (PO; = Jeju) — no ProdReq add-on updates (PO). Margins adult:
+  Basic 20.1–31.1 %, Standard 15.2–24.8 %, Seoul-Jeju 11.0–25.9 %. Catalogs: Basic '10 hours basis', 'Complimentary', PO Aiman, kb_url. KB korea: Travel date 2027 +RM100 removed, validity
+  31 Dec 2026, Basic super peak 20 Dec (catalog = source of truth, PO). tests/test_calc.js updated (KRW 0.003, K-ETA line, 2–15). NB tools/build_sel.py predates v110 (no K-ETA line, KRW live) —
+  update it before rebuilding Seoul from a new ATK CR. Open (flags_open): CR seasonal rows, CR 'valid until Dec 2025', BSC 16 pax typo, R&D PDF MYR at 0.002623, Self Tour catalog.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 2 destinations** (costs stored in MYR): JOG, MLE (PER v105, PHU v106, SUBB v108, SWS v109 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108; Switzerland v109).
+- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108; Switzerland v109; Seoul / Seoul-Jeju v110).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs

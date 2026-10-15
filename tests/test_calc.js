@@ -124,29 +124,31 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const s = byCode(D, "SEL"), b = s.packages.find(p => p.id === "atk-bsc"), st = s.packages.find(p => p.id === "atk-std");
     const r = (pk, v, p) => P.priceRow(s, pk, v, p);
     const KRW = s.fx.find(f => f.id === "KRW").value;
-    ok(s.fx.find(f => f.id === "KRW").live === "KRW" && KRW > 0.002 && KRW < 0.004, "KRW FX live (stored fallback " + KRW + ")");
-    ok(near(r(b, "ATK-BSC", 2).adult.cost, 858261 * KRW) && near(r(b, "ATK-BSC", 10).adult.cost, 581256 * KRW) && near(r(b, "ATK-BSC", 25).adult.cost, 442351 * KRW), "Basic = CR KRW × live KRW FX (2/10/25 pax)");
-    ok(near(r(st, "ATK-STD", 2).adult.cost, 1224774 * KRW) && near(r(st, "ATK-STD", 42).adult.cost, 420726 * KRW), "Standard = CR KRW × live KRW FX (2/42 pax)");
+    ok(!s.fx.find(f => f.id === "KRW").live && KRW === 0.003 && byCode(D, "SELJJU").fx.find(f => f.id === "KRW").value === 0.003, "KRW FX locked at 0.003 for Seoul / Seoul-Jeju (PO 15 Oct 2026)");
+    ok(near(r(b, "ATK-BSC", 2).adult.cost, 858261 * KRW + 27) && near(r(b, "ATK-BSC", 10).adult.cost, 581256 * KRW + 27) && near(r(b, "ATK-BSC", 15).adult.cost, 496755 * KRW + 27), "Basic = CR KRW × 0.003 + K-ETA RM27 (2/10/15 pax)");
+    ok(near(r(st, "ATK-STD", 2).adult.cost, 1224774 * KRW + 27) && near(r(st, "ATK-STD", 15).adult.cost, 572864 * KRW + 27), "Standard = CR KRW × 0.003 + K-ETA (2/15 pax)");
+    ok(b.assign[0].to === 15 && !("16" in b.pricing.adult) && !("16" in st.pricing.adult) && s.packages.some(p => p.id === "atk-st"), "Seoul Basic / Standard Costing 2–15 (= catalogs); Self Tour kept (PO)");
     ok(!isFinite(r(b, "ATK-BSC", 26).adult.cost), "Basic 26+ pax: not in the CR → no cost");
-    ok(s.variants.filter(v => v.id !== "ATK-ST").every(v => v.components.length === 1), "one cost line (not broken down)");
+    ok(s.variants.filter(v => v.id !== "ATK-ST").every(v => v.components.length === 2 && v.components[1].key === "keta"), "two cost lines: CR + K-ETA");
     const sp = await boot(repo, "sel/", "?pkg=atk-bsc");
     const sh = [...sp.doc.querySelectorAll("#costPax tr.blk-head th")].map(x => x.textContent);
     ok(!sh.includes("Source"), "costing table has no Source column");
-    ok(sh[1] === "Cost/Pax" && sp.doc.querySelector('#costPax tr[data-pax="2"]').children[1].textContent.trim() === Math.round(858261 * KRW).toLocaleString("en-US"), "Seoul costing: no breakdown column, Cost/Pax = 858,261 KRW × live KRW FX");
-    ok(near(r(b, "ATK-BSC", 2).cnb.cost, 858261 * KRW * 0.5) && r(b, "ATK-BSC", 2).infant.cost === 0, "CNB 50%, infant FOC");
+    const ci = sh.indexOf("Cost/Pax");
+    ok(ci > 0 && sp.doc.querySelector('#costPax tr[data-pax="2"]').children[ci].textContent.trim() === Math.round(858261 * KRW + 27).toLocaleString("en-US"), "Seoul costing: Cost/Pax = 858,261 KRW × 0.003 + K-ETA (" + sh.join("|") + ")");
+    ok(near(r(b, "ATK-BSC", 2).cnb.cost, 858261 * KRW * 0.5) && near(r(b, "ATK-BSC", 2).cwb.cost, 858261 * KRW) && r(b, "ATK-BSC", 2).infant.cost === 0, "CWB 100 % / CNB 50 % of the CR, K-ETA free for children, infant FOC");
     ok(s.contracts.length === 3 && s.contracts.every(c => /ATK_CR_2026_Korea/.test(c.file) && fs.existsSync(path.join(ROOT, c.file))), "SEL TO Contract Rate = ATK CR 2026 (KRW xlsx + rates + terms) only");
     const ev = s.addons.find(x => x.label === "Everland ticket");
     ok(ev && near(ev.cost, 40700 * 0.003, 0.01) && ev.selling === 140, "Everland add-on: cost stored in RM (40,700 KRW × 0.0030), selling RM140");
-    ok(s.addons.find(x => x.label === "K-ETA").cost === 27 && s.addons.find(x => x.label.startsWith("Hanbok")).cost === null, "K-ETA cost RM27; Hanbok has no cost rate (null)");
+    ok(s.addons.find(x => x.label === "K-ETA Re-Application").cost === 27 && s.addons.find(x => x.label === "K-ETA Re-Application").selling === 70 && s.addons.find(x => x.label.startsWith("Hanbok")).cost === null, "K-ETA cost RM27; Hanbok has no cost rate (null)");
   }
 
   console.log("1e. Seoul-Jeju, Jeju, Jeju-Udo = ATK CR 2026");
   {
-    const KRW = byCode(D, "SEL").fx.find(f => f.id === "KRW").value;
-    const chk = (code, vid, exp) => { const d = byCode(D, code), pk = d.packages.find(p => p.assign.some(x => x.variant === vid));
+    const KRW = byCode(D, "JJU").fx.find(f => f.id === "KRW").value;   // Jeju / Jeju-Udo: KRW live; Seoul-Jeju locked 0.003 (PO 15 Oct 2026)
+    const chk = (code, vid, exp, n = 1, K = KRW) => { const d = byCode(D, code), pk = d.packages.find(p => p.assign.some(x => x.variant === vid));
       return Object.entries(exp).every(([p, c]) => near(P.priceRow(d, pk, vid, +p).adult.cost, c)) && !isFinite(P.priceRow(d, pk, vid, 26).adult.cost)
-        && d.variants.find(v => v.id === vid).components.length === 1; };
-    ok(chk("SELJJU", "ATK-STD", { 2: 1769500 * KRW, 9: 1138111 * KRW, 25: 865000 * KRW }), "SELJJU = CR KRW × live KRW FX, none at 26");
+        && d.variants.find(v => v.id === vid).components.length === n; };
+    ok(chk("SELJJU", "ATK-STD", { 2: 1769500 * 0.003 + 27, 9: 1138111 * 0.003 + 27, 15: 955667 * 0.003 + 27 }, 2) && byCode(D, "SELJJU").packages[0].assign[0].to === 15, "SELJJU = CR KRW × 0.003 + K-ETA, Costing 2–15");
     ok(chk("JJU", "ATK-PT", { 2: 943000 * KRW, 9: 521889 * KRW, 25: 353000 * KRW }), "JJU = CR KRW × live KRW FX");
     ok(chk("JJUO", "ATK-STD", { 2: 1442257 * KRW, 10: 783357 * KRW, 25: 571827 * KRW }), "JJUO = CR KRW × live KRW FX");
     ok(!byCode(D, "JJU").variants.some(v => v.id === "ATK-ST") && byCode(D, "JJU").packages.length === 1, "Jeju Self Tour removed (PO 13 Oct 2026)");
@@ -197,8 +199,8 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const sel = D.destinations.find(x => x.code === "SEL"), b = sel.packages.find(p => p.id === "atk-bsc");
     const r = P.priceRow(sel, b, "ATK-BSC", 2);
     ok(r.adult.catalog === 3497 && r.adult.selling === 3297, "Seoul Basic 2 pax adult catalog 3497, selling 3297 (− RM200)");
-    ok(near(r.cwb.cost, r.adult.cost * 0.75), "Seoul CWB cost = 75% adult (CR extra bed)");
-    ok(near(r.cnb.cost, r.adult.cost * 0.5), "Seoul CNB cost = 50% adult");
+    ok(near(r.cwb.cost, r.adult.cost - 27), "Seoul CWB cost = 100% of the CR (K-ETA free for children)");
+    ok(near(r.cnb.cost, (r.adult.cost - 27) * 0.5), "Seoul CNB cost = 50% of the CR");
     ok(r.infant.selling === 200 && r.infant.cost === 0, "Seoul infant RM200, cost 0");
     ok(near(r.adult.margin, 3297 - r.adult.cost) && near(r.adult.pct, r.adult.margin / 3297), "Seoul margin & % on the selling price");
     const hnd = D.destinations.find(x => x.code === "HND"), s = hnd.packages.find(p => p.id === "standard");

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 109,
- "updatedAt": "2026-10-15T11:00:00Z",
+ "version": 110,
+ "updatedAt": "2026-10-15T13:00:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -16,8 +16,8 @@
    "duration": "5D4N",
    "nights": 4,
    "po": "Aiman",
-   "source": "ATK CR 2026 Korea · add-ons: ProdReq Korea · Self Tour: hub",
-   "note": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.0030. CR seasonal discount/upcharge for BSC & STD (Jan −RM200, Feb −RM200, 21–31 Dec +RM200) is not applied here.",
+   "source": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27 · add-ons: ProdReq Korea · Self Tour: hub",
+   "note": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.003 (locked, PO; rows 'PT 5D4N -BSC' / 'PT 5D4N Seoul Standard' = ATK-OPS Package-Rate) + K-ETA RM27 (catalog inclusion). Child: CWB 100 % (CR child rate only under 7; catalog CWB 6–11) / CNB 50 %, K-ETA free for children (exempt <18). Costing 2–15 (= catalogs). Self Tour kept with its hub calculation (no hub catalog; costs 2–12). Not applied (flag): CR seasonal Jan / Feb −RM200, 21–31 Dec +RM200.",
    "fx": [
     {
      "id": "MYR",
@@ -28,13 +28,21 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.00304516,
+     "value": 0.003,
      "locked": true,
-     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
-     "live": "KRW"
+     "source": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)"
     }
    ],
-   "rates": [],
+   "rates": [
+    {
+     "id": "keta",
+     "label": "K-ETA (complimentary 1× — catalog inclusion)",
+     "value": 27,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "K-ETA"
+    }
+   ],
    "tables": [
     {
      "id": "ATK-ST__Hotel",
@@ -313,6 +321,12 @@
        "label": "ATK contract rate",
        "per": "pax",
        "expr": "T['CR-BSC']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
       }
      ]
     },
@@ -330,6 +344,12 @@
        "label": "ATK contract rate",
        "per": "pax",
        "expr": "T['CR-STD']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
       }
      ]
     },
@@ -407,7 +427,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 15,
        "variant": "ATK-BSC"
       }
      ],
@@ -426,22 +446,7 @@
        "12": 2397,
        "13": 2197,
        "14": 2197,
-       "15": 2197,
-       "16": 2147,
-       "17": 2147,
-       "18": 2147,
-       "19": 2147,
-       "20": 2147,
-       "21": 2097,
-       "22": 2097,
-       "23": 2097,
-       "24": 2097,
-       "25": 2097,
-       "26": 2047,
-       "27": 2047,
-       "28": 2047,
-       "29": 2047,
-       "30": 2047
+       "15": 2197
       },
       "cwb": {
        "2": 3297,
@@ -457,22 +462,7 @@
        "12": 2197,
        "13": 1997,
        "14": 1997,
-       "15": 1997,
-       "16": 1947,
-       "17": 1947,
-       "18": 1947,
-       "19": 1947,
-       "20": 1947,
-       "21": 1897,
-       "22": 1897,
-       "23": 1897,
-       "24": 1897,
-       "25": 1897,
-       "26": 1847,
-       "27": 1847,
-       "28": 1847,
-       "29": 1847,
-       "30": 1847
+       "15": 1997
       },
       "cnb": {
        "2": 3097,
@@ -488,22 +478,7 @@
        "12": 1997,
        "13": 1797,
        "14": 1797,
-       "15": 1797,
-       "16": 1747,
-       "17": 1747,
-       "18": 1747,
-       "19": 1747,
-       "20": 1747,
-       "21": 1697,
-       "22": 1697,
-       "23": 1697,
-       "24": 1697,
-       "25": 1697,
-       "26": 1647,
-       "27": 1647,
-       "28": 1647,
-       "29": 1647,
-       "30": 1647
+       "15": 1797
       },
       "infant": 200
      },
@@ -512,11 +487,17 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 1.0,
+       "free": [
+        "keta"
+       ]
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.5
+       "value": 0.5,
+       "free": [
+        "keta"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -531,7 +512,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 15,
        "variant": "ATK-STD"
       }
      ],
@@ -550,22 +531,7 @@
        "12": 2597,
        "13": 2597,
        "14": 2397,
-       "15": 2397,
-       "16": 2347,
-       "17": 2347,
-       "18": 2347,
-       "19": 2347,
-       "20": 2347,
-       "21": 2297,
-       "22": 2297,
-       "23": 2297,
-       "24": 2297,
-       "25": 2297,
-       "26": 2247,
-       "27": 2247,
-       "28": 2247,
-       "29": 2247,
-       "30": 2247
+       "15": 2397
       },
       "cwb": {
        "2": 4397,
@@ -581,22 +547,7 @@
        "12": 2397,
        "13": 2397,
        "14": 2197,
-       "15": 2197,
-       "16": 2147,
-       "17": 2147,
-       "18": 2147,
-       "19": 2147,
-       "20": 2147,
-       "21": 2097,
-       "22": 2097,
-       "23": 2097,
-       "24": 2097,
-       "25": 2097,
-       "26": 2047,
-       "27": 2047,
-       "28": 2047,
-       "29": 2047,
-       "30": 2047
+       "15": 2197
       },
       "cnb": {
        "2": 4197,
@@ -612,22 +563,7 @@
        "12": 2197,
        "13": 2197,
        "14": 1997,
-       "15": 1997,
-       "16": 1947,
-       "17": 1947,
-       "18": 1947,
-       "19": 1947,
-       "20": 1947,
-       "21": 1897,
-       "22": 1897,
-       "23": 1897,
-       "24": 1897,
-       "25": 1897,
-       "26": 1847,
-       "27": 1847,
-       "28": 1847,
-       "29": 1847,
-       "30": 1847
+       "15": 1997
       },
       "infant": 200
      },
@@ -636,11 +572,17 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 1.0,
+       "free": [
+        "keta"
+       ]
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.5
+       "value": 0.5,
+       "free": [
+        "keta"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -777,11 +719,11 @@
     {
      "id": "sel-p01",
      "category": "Visa",
-     "label": "K-ETA",
-     "cost": 27,
-     "selling": 35,
+     "label": "K-ETA Re-Application",
+     "cost": 27.0,
+     "selling": 70.0,
      "per": "pax",
-     "notes": "ProdReq §8.1 (complimentary 1x in the package)"
+     "notes": "K-ETA pertama termasuk dalam pakej (Costing); re-application jual = katalog RM70, kos RM27 (PO)"
     },
     {
      "id": "sel-p02",
@@ -1697,17 +1639,18 @@
       "Ask Lurima and Jeju Muslim Travel for 2026 quotes (their pages still show 2025 prices)."
      ]
     }
-   }
+   },
+   "historyFrom": 110
   },
   {
    "code": "SELJJU",
    "name": "Seoul - Jeju",
    "country": "Korea",
    "duration": "6D5N",
-   "nights": 0,
+   "nights": 5,
    "po": "Aiman",
-   "source": "ATK CR 2026 Korea",
-   "note": "Package cost = ATK CR 2026 per pax in KRW × 0.0030, 2–25 pax. CR seasonal discount/upcharge is not applied here.",
+   "source": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27",
+   "note": "Cost = ATK CR 2026 'PT 6D5N Seoul-Jeju Standard' per pax in KRW × 0.003 (locked, PO; incl. domestic flights, tipping) + K-ETA RM27 (catalog inclusion). Child CWB 100 % / CNB 50 % (K-ETA free). Costing 2–15 (= catalog). Not applied (flag): CR Jeju+Seoul seasonal row (labelled FXP) Jan / Feb −150, Jun–Aug −100, 21–31 Dec +250 / +300.",
    "fx": [
     {
      "id": "MYR",
@@ -1718,13 +1661,21 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.00304516,
+     "value": 0.003,
      "locked": true,
-     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
-     "live": "KRW"
+     "source": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)"
     }
    ],
-   "rates": [],
+   "rates": [
+    {
+     "id": "keta",
+     "label": "K-ETA (complimentary 1× — catalog inclusion)",
+     "value": 27,
+     "fx": "MYR",
+     "unit": "RM/pax",
+     "group": "K-ETA"
+    }
+   ],
    "tables": [
     {
      "id": "CR-SELJJU",
@@ -1766,7 +1717,7 @@
      "supplier": "ATK",
      "paxMin": 2,
      "paxMax": 25,
-     "hotel": "672.435",
+     "hotel": "Seoul 3★ Travelodge / Migliore or similar · Jeju Parkside or similar",
      "notes": "ATK CR 2026 row: PT 6D5N Seoul-Jeju Standard · NO Meal · Seoul 3★ Migliore / Jeju Parkside · KRW × 0.003 · SGL sppl 380,000 KRW · contracts/seljju/1a10c5cdc92-ATK_CR_2026_Korea_KRW.xlsx",
      "components": [
       {
@@ -1774,6 +1725,12 @@
        "label": "ATK contract rate",
        "per": "pax",
        "expr": "T['CR-SELJJU']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
       }
      ]
     }
@@ -1786,7 +1743,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 30,
+       "to": 15,
        "variant": "ATK-STD"
       }
      ],
@@ -1805,22 +1762,7 @@
        "12": 4097,
        "13": 4097,
        "14": 3997,
-       "15": 3997,
-       "16": 3647,
-       "17": 3647,
-       "18": 3647,
-       "19": 3647,
-       "20": 3647,
-       "21": 3597,
-       "22": 3597,
-       "23": 3597,
-       "24": 3597,
-       "25": 3597,
-       "26": 3547,
-       "27": 3547,
-       "28": 3547,
-       "29": 3547,
-       "30": 3547
+       "15": 3997
       },
       "cwb": {
        "2": 5997,
@@ -1836,22 +1778,7 @@
        "12": 3897,
        "13": 3897,
        "14": 3797,
-       "15": 3797,
-       "16": 3447,
-       "17": 3447,
-       "18": 3447,
-       "19": 3447,
-       "20": 3447,
-       "21": 3397,
-       "22": 3397,
-       "23": 3397,
-       "24": 3397,
-       "25": 3397,
-       "26": 3347,
-       "27": 3347,
-       "28": 3347,
-       "29": 3347,
-       "30": 3347
+       "15": 3797
       },
       "cnb": {
        "2": 5797,
@@ -1867,22 +1794,7 @@
        "12": 3697,
        "13": 3697,
        "14": 3597,
-       "15": 3597,
-       "16": 3247,
-       "17": 3247,
-       "18": 3247,
-       "19": 3247,
-       "20": 3247,
-       "21": 3197,
-       "22": 3197,
-       "23": 3197,
-       "24": 3197,
-       "25": 3197,
-       "26": 3147,
-       "27": 3147,
-       "28": 3147,
-       "29": 3147,
-       "30": 3147
+       "15": 3597
       },
       "infant": 200
      },
@@ -1891,11 +1803,17 @@
       "tierUpgrade": 0,
       "cwbCost": {
        "type": "pct",
-       "value": 0.75
+       "value": 1.0,
+       "free": [
+        "keta"
+       ]
       },
       "cnbCost": {
        "type": "pct",
-       "value": 0.5
+       "value": 0.5,
+       "free": [
+        "keta"
+       ]
       },
       "infantCost": {
        "type": "flat",
@@ -2061,11 +1979,11 @@
     {
      "id": "seljju-a18",
      "category": "Visa",
-     "label": "K-ETA",
+     "label": "K-ETA Re-Application",
      "cost": 27.0,
-     "selling": 35.0,
+     "selling": 70.0,
      "per": "pax",
-     "notes": "Included 1x. Re-apply RM70"
+     "notes": "K-ETA pertama termasuk dalam pakej (Costing); re-application jual = katalog RM70, kos RM27 (PO)"
     },
     {
      "id": "seljju-a19",
@@ -2398,7 +2316,8 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "historyFrom": 110
   },
   {
    "code": "JJU",

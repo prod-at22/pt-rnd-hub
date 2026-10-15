@@ -11,9 +11,9 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v2",
-  "updated": "2026-03-12",
-  "kb_url": "https://prod-at22.github.io/korea-kb/",
-  "po": "Ezie",
+  "updated": "2026-10-15",
+  "kb_url": "https://prod-at22.github.io/pt-kb-house/korea/",
+  "po": "Aiman",
   "ops": "ATIQAH",
   "source_pdf": "Korea/Seoul/Catalog/PT SEOUL BASIC 5D4N 2026 v2.pdf",
   "highlights": [
@@ -92,7 +92,7 @@
       ],
       "excludes": [
         "Lunch & Dinner",
-        "Private Driver & Guide is based on 8 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage.",
+        "Private Driver & Guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage.",
         "International Flight",
         "Personal Expenses",
         "Optional Activity",
@@ -246,5 +246,5 @@
       "title": "Additional Activities"
     }
   ],
-  "hub_version": 30
+  "hub_version": 110
 }

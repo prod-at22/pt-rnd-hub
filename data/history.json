@@ -165854,6 +165854,2611 @@
      "label": "KB switzerland › calc › peak › windows"
     }
    ]
+  },
+  {
+   "v": 110,
+   "at": "2026-10-15T13:00:00Z",
+   "by": "ezie",
+   "note": "Seoul + Seoul-Jeju verified (PO ezie 15 Oct 2026; sources = ATK CR 2026 KRW (TO Contract Rate) = R&D 'ATK-OPS Package-Rate'; R&D SEOUL / SEOUL JEJU and ProdReq Korea read with PO OK): package cost = CR KRW × 0.003 locked (PO; was live) + K-ETA RM27 (catalog inclusion, PO); child CWB 100 % (CR child rate only under 7) / CNB 50 %, K-ETA free for children; Costing 2–15 for Basic / Standard / Seoul-Jeju (= catalogs; was 2–30, Basic / Seoul-Jeju had no cost at 26–30); Seoul Self Tour kept with its hub calculation (PO, no catalog); Seoul-Jeju nights 5. Margins adult: Basic 20.1–31.1 %, Standard 15.2–24.8 %, Seoul-Jeju 11.0–25.9 %. Add-ons: 'K-ETA' → 'K-ETA Re-Application' RM70, cost RM27 (PO; first K-ETA is in the costing); no other add-on changes (PO). Catalogs: Basic '8 hours' → 10 hours, 'Complimentary', PO Aiman, kb_url. KB korea: Travel date 2027 +RM100 removed (not in the catalogs), quotation validity 31 Dec 2026 (was 30 Jun 2027), Basic super peak from 20 Dec (= catalog, PO: catalog is the source of truth). tests/test_calc.js updated. Open items in tools/flags_open.json.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "source"
+     ],
+     "from": "ATK CR 2026 Korea · add-ons: ProdReq Korea · Self Tour: hub",
+     "to": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27 · add-ons: ProdReq Korea · Self Tour: hub",
+     "label": "Seoul › source"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "note"
+     ],
+     "from": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.0030. CR seasonal discount/upcharge for BSC & STD (Jan −RM200, Feb −RM200, 21–31 Dec +RM200) is not applied here.",
+     "to": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.003 (locked, PO; rows 'PT 5D4N -BSC' / 'PT 5D4N Seoul Standard' = ATK-OPS Package-Rate) + K-ETA RM27 (catalog inclusion). Child: CWB 100 % (CR child rate only under 7; catalog CWB 6–11) / CNB 50 %, K-ETA free for children (exempt <18). Costing 2–15 (= catalogs). Self Tour kept with its hub calculation (no hub catalog; costs 2–12). Not applied (flag): CR seasonal Jan / Feb −RM200, 21–31 Dec +RM200.",
+     "label": "Seoul › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "fx",
+      "KRW",
+      "value"
+     ],
+     "from": 0.00304516,
+     "to": 0.003,
+     "label": "Seoul › FX › FX KRW → MYR"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "fx",
+      "KRW",
+      "source"
+     ],
+     "from": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
+     "to": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)",
+     "label": "Seoul › FX › FX KRW → MYR › source"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "fx",
+      "KRW",
+      "live"
+     ],
+     "from": "KRW",
+     "to": null,
+     "label": "Seoul › FX › FX KRW → MYR › live"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "keta",
+       "label": "K-ETA (complimentary 1× — catalog inclusion)",
+       "value": 27,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "K-ETA"
+      }
+     ],
+     "label": "Seoul › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "variants",
+      "ATK-BSC",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-BSC']"
+      }
+     ],
+     "to": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-BSC']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
+      }
+     ],
+     "label": "Seoul › TO › TO ATK › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "variants",
+      "ATK-STD",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-STD']"
+      }
+     ],
+     "to": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-STD']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
+      }
+     ],
+     "label": "Seoul › TO › TO ATK › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 15,
+     "label": "Seoul › Seoul Basic 5D4N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 1747,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1697,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1697,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1697,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1697,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1697,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 1647,
+     "to": null,
+     "label": "Seoul › Seoul Basic 5D4N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 1,
+     "label": "Seoul › Seoul Basic 5D4N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "rules",
+      "cwbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul › Seoul Basic 5D4N › Rule › CWB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-bsc",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul › Seoul Basic 5D4N › Rule › CNB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 15,
+     "label": "Seoul › Seoul Standard 5D4N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 2347,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 2347,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 2347,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 2347,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 2347,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 2297,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 2247,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 2247,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 2247,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 2247,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 2247,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 2147,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 2097,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 2047,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 1947,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 1897,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 1847,
+     "to": null,
+     "label": "Seoul › Seoul Standard 5D4N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 1,
+     "label": "Seoul › Seoul Standard 5D4N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "rules",
+      "cwbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul › Seoul Standard 5D4N › Rule › CWB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "packages",
+      "atk-std",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul › Seoul Standard 5D4N › Rule › CNB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "addons",
+      "sel-p01",
+      "label"
+     ],
+     "from": "K-ETA",
+     "to": "K-ETA Re-Application",
+     "label": "Seoul › addons › sel-p01 › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "addons",
+      "sel-p01",
+      "selling"
+     ],
+     "from": 35,
+     "to": 70,
+     "label": "Seoul › addons › sel-p01 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "addons",
+      "sel-p01",
+      "notes"
+     ],
+     "from": "ProdReq §8.1 (complimentary 1x in the package)",
+     "to": "K-ETA pertama termasuk dalam pakej (Costing); re-application jual = katalog RM70, kos RM27 (PO)",
+     "label": "Seoul › addons › sel-p01 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEL",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 110,
+     "label": "Seoul › historyFrom"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "nights"
+     ],
+     "from": 0,
+     "to": 5,
+     "label": "Seoul - Jeju › Nights"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "source"
+     ],
+     "from": "ATK CR 2026 Korea",
+     "to": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27",
+     "label": "Seoul - Jeju › source"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "note"
+     ],
+     "from": "Package cost = ATK CR 2026 per pax in KRW × 0.0030, 2–25 pax. CR seasonal discount/upcharge is not applied here.",
+     "to": "Cost = ATK CR 2026 'PT 6D5N Seoul-Jeju Standard' per pax in KRW × 0.003 (locked, PO; incl. domestic flights, tipping) + K-ETA RM27 (catalog inclusion). Child CWB 100 % / CNB 50 % (K-ETA free). Costing 2–15 (= catalog). Not applied (flag): CR Jeju+Seoul seasonal row (labelled FXP) Jan / Feb −150, Jun–Aug −100, 21–31 Dec +250 / +300.",
+     "label": "Seoul - Jeju › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "fx",
+      "KRW",
+      "value"
+     ],
+     "from": 0.00304516,
+     "to": 0.003,
+     "label": "Seoul - Jeju › FX › FX KRW → MYR"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "fx",
+      "KRW",
+      "source"
+     ],
+     "from": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
+     "to": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)",
+     "label": "Seoul - Jeju › FX › FX KRW → MYR › source"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "fx",
+      "KRW",
+      "live"
+     ],
+     "from": "KRW",
+     "to": null,
+     "label": "Seoul - Jeju › FX › FX KRW → MYR › live"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "keta",
+       "label": "K-ETA (complimentary 1× — catalog inclusion)",
+       "value": 27,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "K-ETA"
+      }
+     ],
+     "label": "Seoul - Jeju › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "variants",
+      "ATK-STD",
+      "hotel"
+     ],
+     "from": "672.435",
+     "to": "Seoul 3★ Travelodge / Migliore or similar · Jeju Parkside or similar",
+     "label": "Seoul - Jeju › TO › TO ATK › hotel"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "variants",
+      "ATK-STD",
+      "components"
+     ],
+     "from": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-SELJJU']"
+      }
+     ],
+     "to": [
+      {
+       "key": "cr",
+       "label": "ATK contract rate",
+       "per": "pax",
+       "expr": "T['CR-SELJJU']"
+      },
+      {
+       "key": "keta",
+       "label": "K-ETA",
+       "per": "pax",
+       "expr": "R.keta"
+      }
+     ],
+     "label": "Seoul - Jeju › TO › TO ATK › Component"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "assign",
+      0,
+      "to"
+     ],
+     "from": 30,
+     "to": 15,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › TO assignment › 0 › to"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "16"
+     ],
+     "from": 3647,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "17"
+     ],
+     "from": 3647,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "18"
+     ],
+     "from": 3647,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "19"
+     ],
+     "from": 3647,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "20"
+     ],
+     "from": 3647,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "21"
+     ],
+     "from": 3597,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "22"
+     ],
+     "from": 3597,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "23"
+     ],
+     "from": 3597,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "24"
+     ],
+     "from": 3597,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "25"
+     ],
+     "from": 3597,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "26"
+     ],
+     "from": 3547,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "27"
+     ],
+     "from": 3547,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "28"
+     ],
+     "from": 3547,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "29"
+     ],
+     "from": 3547,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "adult",
+      "30"
+     ],
+     "from": 3547,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Adult catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "16"
+     ],
+     "from": 3447,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "17"
+     ],
+     "from": 3447,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "18"
+     ],
+     "from": 3447,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "19"
+     ],
+     "from": 3447,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "20"
+     ],
+     "from": 3447,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "21"
+     ],
+     "from": 3397,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "22"
+     ],
+     "from": 3397,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "23"
+     ],
+     "from": 3397,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "24"
+     ],
+     "from": 3397,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "25"
+     ],
+     "from": 3397,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "26"
+     ],
+     "from": 3347,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "27"
+     ],
+     "from": 3347,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "28"
+     ],
+     "from": 3347,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "29"
+     ],
+     "from": 3347,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cwb",
+      "30"
+     ],
+     "from": 3347,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CWB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "16"
+     ],
+     "from": 3247,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @16 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "17"
+     ],
+     "from": 3247,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @17 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "18"
+     ],
+     "from": 3247,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @18 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "19"
+     ],
+     "from": 3247,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @19 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "20"
+     ],
+     "from": 3247,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @20 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "21"
+     ],
+     "from": 3197,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @21 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "22"
+     ],
+     "from": 3197,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @22 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "23"
+     ],
+     "from": 3197,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @23 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "24"
+     ],
+     "from": 3197,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @24 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "25"
+     ],
+     "from": 3197,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @25 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "26"
+     ],
+     "from": 3147,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @26 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "27"
+     ],
+     "from": 3147,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @27 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "28"
+     ],
+     "from": 3147,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @28 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "29"
+     ],
+     "from": 3147,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @29 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "pricing",
+      "cnb",
+      "30"
+     ],
+     "from": 3147,
+     "to": null,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › CNB catalog › @30 pax"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "rules",
+      "cwbCost",
+      "value"
+     ],
+     "from": 0.75,
+     "to": 1,
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Rule › CWB cost"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "rules",
+      "cwbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Rule › CWB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "packages",
+      "atk-std",
+      "rules",
+      "cnbCost",
+      "free"
+     ],
+     "from": null,
+     "to": [
+      "keta"
+     ],
+     "label": "Seoul - Jeju › Seoul - Jeju Standard 6D5N › Rule › CNB cost › free"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "addons",
+      "seljju-a18",
+      "label"
+     ],
+     "from": "K-ETA",
+     "to": "K-ETA Re-Application",
+     "label": "Seoul - Jeju › addons › seljju-a18 › label"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "addons",
+      "seljju-a18",
+      "selling"
+     ],
+     "from": 35,
+     "to": 70,
+     "label": "Seoul - Jeju › addons › seljju-a18 › selling"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "addons",
+      "seljju-a18",
+      "notes"
+     ],
+     "from": "Included 1x. Re-apply RM70",
+     "to": "K-ETA pertama termasuk dalam pakej (Costing); re-application jual = katalog RM70, kos RM27 (PO)",
+     "label": "Seoul - Jeju › addons › seljju-a18 › notes"
+    },
+    {
+     "path": [
+      "destinations",
+      "SELJJU",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 110,
+     "label": "Seoul - Jeju › historyFrom"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-basic",
+      "kb_url"
+     ],
+     "from": "https://prod-at22.github.io/korea-kb/",
+     "to": "https://prod-at22.github.io/pt-kb-house/korea/",
+     "label": "Catalog seoul-basic › kb_url"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-basic",
+      "po"
+     ],
+     "from": "Ezie",
+     "to": "Aiman",
+     "label": "Catalog seoul-basic › po"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-basic",
+      "price_blocks",
+      0,
+      "excludes",
+      1
+     ],
+     "from": "Private Driver & Guide is based on 8 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage.",
+     "to": "Private Driver & Guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage.",
+     "label": "Catalog seoul-basic › price_blocks › #1 › excludes › #2"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-standard",
+      "kb_url"
+     ],
+     "from": "https://prod-at22.github.io/korea-kb/",
+     "to": "https://prod-at22.github.io/pt-kb-house/korea/",
+     "label": "Catalog seoul-standard › kb_url"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-standard",
+      "po"
+     ],
+     "from": "Ezie",
+     "to": "Aiman",
+     "label": "Catalog seoul-standard › po"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-jeju",
+      "kb_url"
+     ],
+     "from": "https://prod-at22.github.io/korea-kb/",
+     "to": "https://prod-at22.github.io/pt-kb-house/korea/",
+     "label": "Catalog seoul-jeju › kb_url"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-jeju",
+      "po"
+     ],
+     "from": "Ezie",
+     "to": "Aiman",
+     "label": "Catalog seoul-jeju › po"
+    },
+    {
+     "path": [
+      "catalogs",
+      "seoul-jeju",
+      "price_blocks",
+      0,
+      "includes",
+      7
+     ],
+     "from": "K-ETA Application - Complementary For Malaysian (1 time)",
+     "to": "K-ETA Application - Complimentary For Malaysian (1 time)",
+     "label": "Catalog seoul-jeju › price_blocks › #1 › includes › #8"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "content",
+      "SURCHARGE_HTML"
+     ],
+     "from": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Travel Date 2027 (1 Jan &#8211; 30 Jun 2027)</td><td class=\"add\">+RM 100 / pax</td><td>Di atas surcharge peak season. Tiada untuk Jeju 4D3N dan Jeju&#8211;Udo 5D4N. Sumber: rate card 2026/2027 Date Surcharge &#8212; tiada dalam katalog.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "to": "\n  \n  <p class=\"ssub\" style=\"margin:0 0 10px\">Caj tambahan di atas harga pakej. Semua kadar peak/super-peak adalah <b>per malam, per pax</b>; infant dikecualikan.</p>\n\n  <div class=\"custblk\">\n    <h3>Surcharge Lain</h3>\n    <table class=\"ctbl\"><thead><tr><th>Item</th><th>Caj</th><th>Bila dikenakan</th></tr></thead><tbody>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul&#8211;Jeju 6D5N</td><td class=\"add\">+RM 1,500 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Seoul Basic, Seoul Standard, Jeju&#8211;Udo</td><td class=\"add\">+RM 1,000 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Single Supplement &#8212; Jeju 4D3N</td><td class=\"add\">+RM 800 / orang</td><td>Guest perlu bilik single.</td></tr>\n      <tr><td class=\"it\">Late Booking Surcharge</td><td class=\"add\">+RM 50 / booking</td><td>Tempahan kurang 45 hari sebelum berlepas.</td></tr>\n      <tr><td class=\"it\">Jam lebih driver / driving guide</td><td class=\"add\">30,000 &#8211; 60,000 KRW / jam</td><td>Melebihi asas 10 jam. Bayaran tunai di lokasi.</td></tr>\n      <tr><td class=\"it\">K-ETA Re-Application</td><td class=\"add\">RM 70</td><td>Permohonan semula selepas K-ETA percuma pertama.</td></tr>\n    </tbody></table>\n  </div>\n\n  ",
+     "label": "KB korea › content › SURCHARGE_HTML"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "variants",
+      "sbasic",
+      "peak",
+      "windows",
+      6,
+      0
+     ],
+     "from": "2026-12-16",
+     "to": "2026-12-20",
+     "label": "KB korea › calc › variants › sbasic › peak › windows › #7 › #1"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "extraSurcharge"
+     ],
+     "from": [
+      {
+       "label": "Travel date 2027 (1 Jan - 30 Jun 2027)",
+       "dateIn": [
+        "2027-01-01",
+        "2027-06-30"
+       ],
+       "perPax": 100,
+       "variants": [
+        "sbasic",
+        "sstd",
+        "seljju",
+        "custom"
+       ]
+      },
+      {
+       "label": "ATK / TO Charge",
+       "variants": [
+        "custom"
+       ],
+       "perPax": 225,
+       "preLadder": true
+      }
+     ],
+     "to": [
+      {
+       "label": "ATK / TO Charge",
+       "variants": [
+        "custom"
+       ],
+       "perPax": 225,
+       "preLadder": true
+      }
+     ],
+     "label": "KB korea › calc › extraSurcharge"
+    },
+    {
+     "path": [
+      "kb",
+      "korea",
+      "calc",
+      "validity"
+     ],
+     "from": "<b>Validity of Quotation:</b> This quotation is valid for 24 hours from the date of issue and is subject to hotel and room availability as no space has been secured. Price is based on 2&ndash;3 persons per room. A deposit of RM 500 per pax is required upon confirmation, with full payment due 45 days before the departure date; payment must be made in cash. A late booking surcharge of RM 50 per booking applies if the booking is made less than 45 days before departure. Airport transfer allows a maximum of 1 luggage per pax. The final itinerary is confirmed 14 days before the trip. Package is valid for travel until 30 June 2027. Ground arrangement and tipping only &mdash; international flight tickets are not included.",
+     "to": "<b>Validity of Quotation:</b> This quotation is valid for 24 hours from the date of issue and is subject to hotel and room availability as no space has been secured. Price is based on 2&ndash;3 persons per room. A deposit of RM 500 per pax is required upon confirmation, with full payment due 45 days before the departure date; payment must be made in cash. A late booking surcharge of RM 50 per booking applies if the booking is made less than 45 days before departure. Airport transfer allows a maximum of 1 luggage per pax. The final itinerary is confirmed 14 days before the trip. Package is valid for travel until 31 December 2026. Ground arrangement and tipping only &mdash; international flight tickets are not included.",
+     "label": "KB korea › calc › validity"
+    }
+   ]
   }
  ]
 }
