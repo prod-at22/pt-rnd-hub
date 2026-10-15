@@ -443,7 +443,7 @@ function renderControls(d, pkg) {
       <label>Package<select id="selPkg">${d.packages.map(p => `<option value="${p.id}"${p.id === pkg.id ? " selected" : ""}>${esc(p.label)}</option>`).join("")}</select></label>
       ${(d.options || []).map(op => { const O = optsFor(d), c = op.choices.find(x => x.id === O[op.id]), up = c && c.upgrade ? +(c.upgrade[pkg.id] || 0) : 0;
         return `<label>${esc(op.label)}${up ? ` <span class="pill warn">catalog +RM${up}</span>` : ""}<select id="opt_${esc(op.id)}">${op.choices.map(ch => `<option value="${esc(ch.id)}"${ch.id === O[op.id] ? " selected" : ""}>${esc(ch.label)}</option>`).join("")}</select></label>`; }).join("")}
-      <label>Tour operator${EDIT && !VIEW ? ` <button class="btn" data-act="goAddTO" title="Add a new tour operator to this package">+ Add TO</button>` : ""}<select id="selVar">
+      <label><span class="lbl-row">Tour operator${EDIT && !VIEW ? `<button class="btn add sm" data-act="goAddTO" title="Add a new tour operator to this package">+ Add TO</button>` : ""}</span><select id="selVar">
         <option value="auto"${SEL.variant === "auto" ? " selected" : ""}>Auto${autoId ? ": " + esc((d.variants.find(v => v.id === autoId) || {}).label || autoId) + (multiTO ? " (" + pax + " pax)" : "") : " by pax"}</option>
         ${multiTO ? pkgVariants(d, pkg).map(v => `<option value="${v.id}"${SEL.variant === v.id ? " selected" : ""}>${esc(v.label)} (${v.paxMin}–${v.paxMax} pax)</option>`).join("") : ""}
       </select></label>
@@ -749,7 +749,7 @@ function addonCard(d, pkg) {
       <td>${ed([...DP, "addons", a.id, "cost"], a.cost, { display: num(a.cost) ? rm(a.cost, 2) : '<span class="pill bad" title="No cost yet — add it in Edit costs">cost?</span>' })}</td>
       <td>${ed([...DP, "addons", a.id, "selling"], a.selling, { display: rm(sv, 2) })}</td>
       <td class="${marginClass(p)}">${rm(m, 2)}</td><td>${marginPill(p)}</td>
-      <td><input type="number" min="0" max="999" class="aq" data-addon="${esc(a.id)}" value="${q || ""}" placeholder="0"></td>${E ? `<td><button class="btn danger ao-del" data-act="delAddon" data-id="${esc(a.id)}" title="Delete this add-on">Delete</button></td>` : ""}</tr>`;
+      <td><input type="number" min="0" max="999" class="aq" data-addon="${esc(a.id)}" value="${q || ""}" placeholder="0"></td>${E ? `<td><button class="btn x ao-del" data-act="delAddon" data-id="${esc(a.id)}" title="Delete this add-on" aria-label="Delete">×</button></td>` : ""}</tr>`;
   };
   const nTick = sl => list.filter(a => a.catalogs && sl in a.catalogs).length;
   const head = slugs.map(sl => `<th class="c" title="${esc(sl)}">In catalog<div class="muted small">${esc(sl)}</div></th>`).join("");
@@ -823,33 +823,35 @@ function catalogPart(c0, ix, which) {
   const c = E ? (CAT.edit[sl] ||= clone(c0)) : c0;
   const cp = path => esc(JSON.stringify([sl, ...path]));
   const ci = (path, v, ph = "") => E ? `<input class="ed txt cat" data-cpath="${cp(path)}" value="${esc(v ?? "")}" placeholder="${esc(ph)}">` : esc(v ?? "");
+  const cta = (path, v, ph = "") => `<textarea class="ed cat grow" rows="1" data-cpath="${cp(path)}" placeholder="${esc(ph)}">${esc(v ?? "")}</textarea>`;
   const ct = (path, a, rows) => `<textarea class="ed cat" data-cpath="${cp(path)}" data-ckind="lines" rows="${rows || Math.min(14, Math.max(3, (a || []).length + 1))}">${esc(catLines(a))}</textarea>`;
   const li = it => typeof it === "string" ? `<li>${esc(it)}</li>` : `<li>${esc(it.text)}${it.sub && it.sub.length ? `<ul>${it.sub.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</li>`;
   const ul = (a, path) => E && path ? ct(path, a) : a && a.length ? `<ul class="cd-list">${a.map(li).join("")}</ul>` : '<div class="muted">—</div>';
   const sec = (title, body, sub) => body ? `<section class="cd-sec"><h3>${title}${sub ? ` <span class="muted">${esc(sub)}</span>` : ""}</h3>${body}</section>` : "";
   const notes = (n, path) => E && path ? `<div class="cd-note">${ct(path, n, 2)}</div>` : n && n.length ? `<div class="cd-note">${n.map(esc).join("<br>")}</div>` : "";
-  const addB = (path, tpl, label) => E ? ` <button class="btn" data-catact="additem" data-cpath="${cp(path)}" data-tpl="${esc(JSON.stringify(tpl))}">${label}</button>` : "";
-  const delB = (path, renum) => E ? ` <button class="btn danger" data-catact="delitem" data-cpath="${cp(path)}"${renum ? ' data-renum="1"' : ""} title="Buang">×</button>` : "";
+  const addB = (path, tpl, label) => E ? ` <button class="btn add" data-catact="additem" data-cpath="${cp(path)}" data-tpl="${esc(JSON.stringify(tpl))}">${label}</button>` : "";
+  const delB = (path, renum) => E ? ` <button class="btn x" data-catact="delitem" data-cpath="${cp(path)}"${renum ? ' data-renum="1"' : ""} title="Buang" aria-label="Buang">×</button>` : "";
   let body = "", title = "";
   if (which === "price") {
     const P = resolvePrices(c, ix), literal = !catPackage(ix);
     title = "Catalog price table";
     body = P.rows && P.rows.length ? sec("Package Price", `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">${ci(["prices", "pax_label"], P.pax_label || (E ? "" : "No. of Pax"), "No. of Pax")}</th>${P.columns.map((x, i) => `<th>${ci(["prices", "columns", i, "label"], x.label)}${x.age || E ? `<span class="cd-age">${ci(["prices", "columns", i, "age"], x.age, "age")}</span>` : ""}</th>`).join("")}</tr></thead>
-      <tbody>${P.rows.map((r, ri) => `<tr><td class="l">${ci(["prices", "rows", ri, "pax"], r.pax)}${delB(["prices", "rows", ri])}</td>${r.amounts.map((v, ai) => `<td class="num">${E && literal ? ci(["prices", "rows", ri, "amounts", ai], v) : esc(v || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
-      ${E ? `<div class="cd-note">${addB(["prices", "rows"], literal ? { pax: "", amounts: [] } : { pax: "" }, "+ Pax band")} <span class="muted">${literal ? "" : "harga band baharu ikut Costing pax pertama dalam band"}</span></div>` : ""}
-      <div class="cd-note">Infant: ${E ? ci(["prices", "infant"], (c.prices || {}).infant, "e.g. {price} per pax — {price} = Costing infant price, FOC when 0") : esc(P.infant || "—")}</div>${notes(P.notes, ["prices", "notes"])}`,
+      <tbody>${P.rows.map((r, ri) => `<tr><td class="l">${E ? `<div class="cd-cellx">${ci(["prices", "rows", ri, "pax"], r.pax)}${delB(["prices", "rows", ri])}</div>` : esc(r.pax)}</td>${r.amounts.map((v, ai) => `<td class="num">${E && literal ? ci(["prices", "rows", ri, "amounts", ai], v) : esc(v || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+      ${E ? `<div class="cd-tools">${addB(["prices", "rows"], literal ? { pax: "", amounts: [] } : { pax: "" }, "+ Pax band")} <span class="muted">${literal ? "" : "harga band baharu ikut Costing pax pertama dalam band"}</span></div>` : ""}
+      ${E ? `<div class="cd-edit-head cd-one"><label>Infant${ci(["prices", "infant"], (c.prices || {}).infant, "e.g. {price} per pax — {price} = Costing infant price, FOC when 0")}</label><label>Notes (satu baris = satu nota)${ct(["prices", "notes"], P.notes, 2)}</label></div>`
+        : `<div class="cd-note">Infant: ${esc(P.infant || "—")}</div>${notes(P.notes)}`}`,
       literal ? "as printed (no Costing package yet)" : "amounts = the Catalog Price column above; edit pax bands, column labels and the infant line here") : "";
   } else if (which === "itinerary") {
     title = c.title;
-    const head = E ? `<div class="cd-edit-head">${[["title", "Title"], ["duration", "Duration"], ["route", "Route"], ["basis", "Package basis"], ["valid_until", "Valid until"], ["version", "Version"]].map(([k, l]) => `<label>${l}${ci([k], c[k])}</label>`).join("")}</div>
-      <div class="cd-chips">${(c.highlights || []).map((h, i) => `<span>${ci(["highlights", i, "label"], h.label)}${delB(["highlights", i])}</span>`).join(" ")}${addB(["highlights"], { icon: "info", label: "" }, "+ Highlight")}</div>`
+    const head = E ? `<section class="cd-sec"><h3>Butiran pakej</h3><div class="cd-edit-head">${[["title", "Title"], ["duration", "Duration"], ["route", "Route"], ["basis", "Package basis"], ["valid_until", "Valid until"], ["version", "Version"]].map(([k, l]) => `<label>${l}${ci([k], c[k])}</label>`).join("")}</div>
+      </section><section class="cd-sec"><h3>Highlights</h3><div class="cd-chips-ed">${(c.highlights || []).map((h, i) => `<span class="chip-ed">${ci(["highlights", i, "label"], h.label, "highlight")}${delB(["highlights", i])}</span>`).join("")}${addB(["highlights"], { icon: "info", label: "" }, "+ Highlight")}</div></section>`
       : `${(c.highlights || []).length ? `<div class="cd-chips">${c.highlights.map(h => `<span class="pill">${esc(h.label)}</span>`).join("")}</div>` : ""}`;
     const HA = catHotels(c, sl, ix.code).acc;
     const acc = HA && HA.length ? `<div class="cd-acc">${HA.map(a => `<div><span class="muted">${esc(a.city || "")}</span>${a.stars ? ` · ${"★".repeat(a.stars)}` : ""}<br>${esc(a.name)}${a.similar ? ' <span class="muted">or similar</span>' : ""}</div>`).join("")}</div>${E ? '<div class="cd-note">Hotel: tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a></div>' : ""}` : "";
     const itins = c.itineraries ? c.itineraries.map((x, i) => ({ label: x.label, days: x.days || [], base: ["itineraries", i, "days"] })) : [{ label: null, days: c.itinerary || [], base: ["itinerary"] }];
     const itin = it => `<div class="scroll"><table class="cd-t cd-itin"><thead><tr><th class="l">Day</th><th class="l">Activities</th><th class="l">Transport</th><th class="l">Meal</th><th class="l">Hotel</th></tr></thead>
-      <tbody>${it.days.map((x, di) => { const p = k => [...it.base, di, k]; return `<tr><td class="l cd-day">${esc(x.day)}${delB([...it.base, di], true)}</td><td class="l"><b>${ci(p("title"), x.title, "title")}</b>${ul(x.activities, p("activities"))}</td><td class="l">${E ? ci(p("transport"), x.transport) : esc(x.transport || "—")}</td><td class="l">${E ? ci(p("meals"), x.meals) : esc(x.meals || "—")}</td><td class="l">${E ? ci(p("hotel"), x.hotel) : esc(x.hotel || "—")}</td></tr>`; }).join("")}</tbody></table></div>
-      ${E ? `<div class="cd-note"><button class="btn" data-catact="addday" data-cpath="${cp(it.base)}">+ Day</button> ${it.days.length ? `<button class="btn danger" data-catact="delday" data-cpath="${cp(it.base)}">− Last day</button>` : ""}</div>` : ""}`;
+      <tbody>${it.days.map((x, di) => { const p = k => [...it.base, di, k]; return `<tr><td class="l cd-day">${esc(x.day)}${E ? `<div class="cd-daydel">${delB([...it.base, di], true)}</div>` : ""}</td><td class="l">${E ? `<div class="cd-dtitle">${ci(p("title"), x.title, "tajuk hari")}</div>` : `<b>${esc(x.title)}</b>`}${ul(x.activities, p("activities"))}</td><td class="l">${E ? ci(p("transport"), x.transport) : esc(x.transport || "—")}</td><td class="l">${E ? ci(p("meals"), x.meals) : esc(x.meals || "—")}</td><td class="l">${E ? ci(p("hotel"), x.hotel) : esc(x.hotel || "—")}</td></tr>`; }).join("")}</tbody></table></div>
+      ${E ? `<div class="cd-tools"><button class="btn add" data-catact="addday" data-cpath="${cp(it.base)}">+ Day</button></div>` : ""}`;
     const incl = (c.price_blocks || []).map((b, bi) => `${b.label ? `<div class="cd-lbl">${esc(b.label)}</div>` : ""}<div class="cd-two"><div><h4>Includes</h4>${ul(b.includes, ["price_blocks", bi, "includes"])}</div><div><h4>Excludes</h4>${ul(b.excludes, ["price_blocks", bi, "excludes"])}</div></div>`).join("");
     body = head + sec("Accommodation", acc) + itins.map(it => sec("Travel Itinerary" + (it.label ? " (" + esc(it.label) + ")" : ""), itin(it))).join("") + sec("Price Includes / Excludes", incl);
   } else if (which === "surcharge") {
@@ -860,19 +862,26 @@ function catalogPart(c0, ix, which) {
       + (S.seasons && S.seasons.length ? `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season</th><th class="l">Travel dates</th><th class="l">Surcharge</th></tr></thead>
       <tbody>${S.seasons.map((x, i) => `<tr><td class="l"><b>${ci(["surcharge", "seasons", i, "label"], x.label)}</b></td><td class="l">${ci(["surcharge", "seasons", i, "period"], x.period)}</td><td class="l">${ci(["surcharge", "seasons", i, "rate"], x.rate)}</td></tr>`).join("")}</tbody></table></div>` : "") + notes(S.notes, S.title || S.rows || S.seasons ? ["surcharge", "notes"] : null);
     if (E) {
-      const cols = `<div class="cd-note"><b>Kolum jadual hotel</b> (amaun setiap hotel di tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a>): ${(S.columns || []).map((x, i) => `<span>${ci(["surcharge", "columns", i, "label"], x.label, "label")}${ci(["surcharge", "columns", i, "period"], x.period, "period")}${delB(["surcharge", "columns", i])}</span>`).join(" ")}${addB(["surcharge", "columns"], { label: "", period: "" }, "+ Kolum")}</div>`;
-      const seas = `<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season</th><th class="l">Travel dates</th><th class="l">Surcharge</th><th></th></tr></thead><tbody>${(S.seasons || []).map((x, i) => `<tr><td class="l">${ci(["surcharge", "seasons", i, "label"], x.label)}</td><td class="l">${ci(["surcharge", "seasons", i, "period"], x.period)}</td><td class="l">${ci(["surcharge", "seasons", i, "rate"], x.rate)}</td><td>${delB(["surcharge", "seasons", i])}</td></tr>`).join("")}</tbody></table></div>
-        <div class="cd-note">${addB(["surcharge", "seasons"], { label: "", period: "", rate: "" }, "+ Season")}</div>`;
-      body = `<label class="cd-edit-head">Title${ci(["surcharge", "title"], S.title)}</label>` + (S.rows && S.rows.length ? sur.split('<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season')[0] : "") + cols + seas + `<h4>Notes</h4>${notes(S.notes, ["surcharge", "notes"])}`;
+      const cols = sec("Kolum jadual hotel", `<div class="cd-hint">Amaun setiap hotel diisi di tab <a href="#accommodation" data-tabmain="accommodation">Accommodation</a>.</div>
+        ${(S.columns || []).length ? `<div class="cd-rows cd-rows3"><span class="cd-rh">Label</span><span class="cd-rh">Tempoh</span><span></span>${S.columns.map((x, i) => `${ci(["surcharge", "columns", i, "label"], x.label, "cth. Peak")}${ci(["surcharge", "columns", i, "period"], x.period, "cth. 1 Jun – 31 Ogos")}${delB(["surcharge", "columns", i])}`).join("")}</div>` : ""}
+        <div class="cd-tools">${addB(["surcharge", "columns"], { label: "", period: "" }, "+ Kolum")}</div>`);
+      const seas = sec("Musim (Season)", `${(S.seasons || []).length ? `<div class="cd-rows cd-rows4"><span class="cd-rh">Season</span><span class="cd-rh">Travel dates</span><span class="cd-rh">Surcharge</span><span></span>${S.seasons.map((x, i) => `${ci(["surcharge", "seasons", i, "label"], x.label, "cth. Peak Season")}${cta(["surcharge", "seasons", i, "period"], x.period, "cth. 20 Dis – 5 Jan")}${cta(["surcharge", "seasons", i, "rate"], x.rate, "cth. RM100/pax")}${delB(["surcharge", "seasons", i])}`).join("")}</div>` : '<div class="cd-hint">Tiada musim lagi.</div>'}
+        <div class="cd-tools">${addB(["surcharge", "seasons"], { label: "", period: "", rate: "" }, "+ Season")}</div>`);
+      const hot = S.rows && S.rows.length ? sec("Jadual hotel", sur.split('<div class="scroll"><table class="cd-t"><thead><tr><th class="l">Season')[0]) : "";
+      body = `<div class="cd-edit-head"><label>Title${ci(["surcharge", "title"], S.title, "Surcharge")}</label></div>` + hot + cols + seas + sec("Notes", notes(S.notes, ["surcharge", "notes"]));
     } else body = sur || '<div class="empty">No surcharge in this catalog.</div>';
   } else if (which === "expect") {
     title = "What to Expect";
-    body = E ? `<div class="cd-acc">${(c.expect || []).map((e, i) => `<div><b>${ci(["expect", i, "title"], e.title, "title")}</b>${delB(["expect", i])}<br><span class="muted small">icon ${ci(["expect", i, "icon"], e.icon, "info / hotel / bus / utensils …")}</span><br><textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="2">${esc(e.body || "")}</textarea></div>`).join("")}</div><div class="cd-note">${addB(["expect"], { icon: "info", title: "", body: "" }, "+ Item")}</div>`
+    body = E ? `<div class="cd-cards">${(c.expect || []).map((e, i) => `<div class="cd-card"><div class="cd-card-h">${ci(["expect", i, "title"], e.title, "tajuk")}${delB(["expect", i])}</div>
+        <label class="cd-mini">Ikon${ci(["expect", i, "icon"], e.icon, "info / hotel / bus / utensils …")}</label>
+        <textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="3" placeholder="penerangan">${esc(e.body || "")}</textarea></div>`).join("")}</div><div class="cd-tools">${addB(["expect"], { icon: "info", title: "", body: "" }, "+ Item")}</div>`
       : c.expect && c.expect.length ? `<div class="cd-acc">${c.expect.map((e, i) => `<div><b>${ci(["expect", i, "title"], e.title)}</b>${e.tag && !E ? ` <span class="pill">${esc(e.tag)}</span>` : ""}<br><span class="muted">${E ? `<textarea class="ed cat" data-cpath="${cp(["expect", i, "body"])}" rows="2">${esc(e.body || "")}</textarea>` : esc(e.body)}</span></div>`).join("")}</div>` : '<div class="empty">No "What to Expect" in this catalog.</div>';
   } else if (which === "policy") {
     title = "Policy";
-    const imp = (c.notes || []).map((n, i) => `${n.title || E ? `<h4>${ci(["notes", i, "title"], n.title, "title")}${delB(["notes", i])}</h4>` : ""}${ul(n.entries, ["notes", i, "entries"])}`).join("") + (E ? `<div class="cd-note">${addB(["notes"], { title: "", entries: [] }, "+ Kumpulan nota")}</div>` : "");
-    const dep = (c.deposit || []).map((x, i) => `<div><b>${ci(["deposit", i, "figure"], x.figure, "RM 250")}</b> ${ci(["deposit", i, "text"], x.text, "deposit per person")}${delB(["deposit", i])}</div>`).join("") + (E ? `<div class="cd-note">${addB(["deposit"], { figure: "", text: "" }, "+ Baris deposit")}</div>` : "");
+    const imp = E ? `<div class="cd-hint">Satu baris = satu nota. Mula baris dengan "  - " untuk sub-item.</div><div class="cd-cards cd-cards-wide">${(c.notes || []).map((n, i) => `<div class="cd-card"><div class="cd-card-h">${ci(["notes", i, "title"], n.title, "tajuk kumpulan (boleh kosong)")}${delB(["notes", i])}</div>${ct(["notes", i, "entries"], n.entries)}</div>`).join("")}</div><div class="cd-tools">${addB(["notes"], { title: "", entries: [] }, "+ Kumpulan nota")}</div>`
+      : (c.notes || []).map(n => `${n.title ? `<h4>${esc(n.title)}</h4>` : ""}${ul(n.entries)}`).join("");
+    const dep = E ? `${(c.deposit || []).length ? `<div class="cd-rows cd-rows-dep"><span class="cd-rh">Amaun</span><span class="cd-rh">Keterangan</span><span></span>${c.deposit.map((x, i) => `${ci(["deposit", i, "figure"], x.figure, "RM 250")}${cta(["deposit", i, "text"], x.text, "deposit per person")}${delB(["deposit", i])}`).join("")}</div>` : ""}<div class="cd-tools">${addB(["deposit"], { figure: "", text: "" }, "+ Baris deposit")}</div>`
+      : (c.deposit || []).map(x => `<div><b>${esc(x.figure)}</b> ${esc(x.text)}</div>`).join("");
     body = sec("Important Notes", imp) + sec("Deposit & Full Payment", dep);
   }
   if (!body) return "";
@@ -935,10 +944,10 @@ function accommodationCard(d) {
   const row = h => `<tr><td class="l">${fld(h, "city", "bandar")}</td><td class="l">${fld(h, "type", "jenis (cth. 4 Star Hotel)")}</td><td class="l" style="min-width:220px">${fld(h, "name", "nama hotel")}</td><td class="l" style="min-width:160px">${fld(h, "roomNote", "cth. triple = extra bed")}</td>
       <td class="c">${E ? `<input class="ed" type="number" min="0" max="5" data-path="${esc(JSON.stringify([...DP, "hotels", h.id, "stars"]))}" data-kind="num" value="${esc(h.stars ?? "")}">` : h.stars ? "★".repeat(h.stars) : ""}</td>
       <td class="c">${E ? `<input type="checkbox" class="hsim" data-hsim="${esc(JSON.stringify({ code: d.code, id: h.id }))}"${h.similar ? " checked" : ""}>` : h.similar ? "✓" : ""}</td>
-      ${slugs.map(sl => cell(h, sl)).join("")}${E ? `<td><button class="btn danger" data-act="delHotel" data-id="${esc(h.id)}">Delete</button></td>` : ""}</tr>`;
+      ${slugs.map(sl => cell(h, sl)).join("")}${E ? `<td><button class="btn x" data-act="delHotel" data-id="${esc(h.id)}" title="Delete hotel" aria-label="Delete">×</button></td>` : ""}</tr>`;
   const head = slugs.map(sl => `<th class="l">${esc(sl)}${cols(sl).length ? `<div class="muted small">surcharge: ${cols(sl).map(c => esc(c.label)).join(" · ")}</div>` : ""}</th>`).join("");
   const hotelsCard = `<div class="card full" id="hotels"><h2>Accommodation <span class="sub">${H.length} hotel · satu senarai untuk katalog customer &amp; KB · Acc = bahagian Accommodation katalog · Surcharge = baris jadual surcharge hotel${E ? "" : " (Edit costs untuk ubah)"}</span></h2>
-    ${E ? `<div class="body"><button class="btn" data-act="addHotel">+ Tambah hotel</button></div>` : ""}
+    ${E ? `<div class="body"><button class="btn add" data-act="addHotel">+ Tambah hotel</button></div>` : ""}
     ${H.length ? `<div class="scroll"><table class="zebra"><thead><tr><th class="l">Bandar</th><th class="l">Jenis</th><th class="l">Hotel</th><th class="l" title="Ditunjuk dalam KB sahaja, bukan katalog customer">Nota bilik (KB)</th><th>★</th><th>or similar</th>${head}${E ? "<th></th>" : ""}</tr></thead><tbody>${H.map(row).join("")}</tbody></table></div>` : `<div class="empty">Tiada hotel lagi untuk ${esc(d.name)}.</div>`}
     <div class="note">Katalog customer dan tab Accommodation KB mencetak hotel yang ditanda, ikut susunan tanda (gambar hotel KB kekal di PT KB House). Lajur "Hotel" dalam itinerary harian kekal di tab Itinerary; tarikh &amp; kadar musim peak kekal di tab Surcharge.</div></div>`;
   return hotelsCard;
@@ -1050,8 +1059,8 @@ function kbEditor(sl, path, v, key) {
     return `<label class="kb-f wide">${lbl} <span class="muted small">(satu baris satu item)</span><textarea class="ed kbed" data-kpath="${kp}" data-kkind="lines" rows="${Math.min(14, Math.max(2, v.length + 1))}">${esc(v.join("\n"))}</textarea></label>`;
   if (Array.isArray(v) && v.every(x => Array.isArray(x) && x.every(y => typeof y === "string")))
     return `<label class="kb-f wide">${lbl} <span class="muted small">(satu baris satu item, lajur dipisah " | ")</span><textarea class="ed kbed" data-kpath="${kp}" data-kkind="pairs" rows="${Math.min(14, v.length + 1)}">${esc(v.map(x => x.join(" | ")).join("\n"))}</textarea></label>`;
-  if (Array.isArray(v)) return `<fieldset class="kb-fs"><legend>${lbl} <span class="muted small">${v.length} item</span></legend>${v.map((x, i) => `<fieldset class="kb-fs"><legend>#${i + 1} ${esc(kbTxt((x && (x.n || x.name || x.t || x.tier || x.city)) || ""))} <button class="btn danger" data-kact="del" data-kpath="${esc(JSON.stringify([sl, ...path, i]))}">Buang</button></legend>${kbEditor(sl, [...path, i], x, null)}</fieldset>`).join("")}
-    <button class="btn" data-kact="add" data-kpath="${kp}">+ Tambah</button></fieldset>`;
+  if (Array.isArray(v)) return `<fieldset class="kb-fs"><legend>${lbl} <span class="muted small">${v.length} item</span></legend>${v.map((x, i) => `<fieldset class="kb-fs"><legend>#${i + 1} ${esc(kbTxt((x && (x.n || x.name || x.t || x.tier || x.city)) || ""))} <button class="btn x" data-kact="del" data-kpath="${esc(JSON.stringify([sl, ...path, i]))}" title="Buang item ini" aria-label="Buang">×</button></legend>${kbEditor(sl, [...path, i], x, null)}</fieldset>`).join("")}
+    <button class="btn add" data-kact="add" data-kpath="${kp}">+ Tambah</button></fieldset>`;
   if (v && typeof v === "object") return (key == null ? "" : `<fieldset class="kb-fs"><legend>${lbl}</legend>`) + Object.keys(v).map(k => kbEditor(sl, [...path, k], v[k], k)).join("") + (key == null ? "" : "</fieldset>");
   return `<div class="kb-f muted small">${lbl}: ${esc(showVal(v))}</div>`;
 }
@@ -1124,14 +1133,16 @@ function calcTable(sl, path, arr, cols, E, opt = {}) {
   const kp = esc(JSON.stringify([sl, "calc", ...path]));
   const head = `<tr>${cols.map(c => `<th class="l">${esc(c.l)}</th>`).join("")}${E && !opt.ro ? "<th></th>" : ""}</tr>`;
   const rows = arr.map((x, i) => `<tr>${cols.map(c => `<td class="l">${c.f ? c.f(x, i) : (x == null || x[c.k] === undefined) && !E ? "" : calcIn(sl, [...path, i, c.k], x[c.k], E, { num: c.num, ro: opt.ro })}</td>`).join("")}
-    ${E && !opt.ro ? `<td><button class="btn danger" data-kact="del" data-kpath="${esc(JSON.stringify([sl, "calc", ...path, i]))}">Buang</button></td>` : ""}</tr>`).join("");
-  return `<div class="scroll"><table class="zebra calc-t"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${E && !opt.ro ? `<button class="btn" data-kact="add" data-kpath="${kp}"${opt.tpl ? ` data-ktpl="${esc(JSON.stringify(opt.tpl))}"` : ""}>+ Tambah baris</button>` : ""}`;
+    ${E && !opt.ro ? `<td><button class="btn x" data-kact="del" data-kpath="${esc(JSON.stringify([sl, "calc", ...path, i]))}" title="Buang" aria-label="Buang">×</button></td>` : ""}</tr>`).join("");
+  return `<div class="scroll"><table class="zebra calc-t"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${E && !opt.ro ? `<button class="btn add" data-kact="add" data-kpath="${kp}"${opt.tpl ? ` data-ktpl="${esc(JSON.stringify(opt.tpl))}"` : ""}>+ Tambah baris</button>` : ""}`;
 }
 const calcCols = (arr, order) => { const ks = [...new Set((arr || []).flatMap(x => x && typeof x === "object" && !Array.isArray(x) ? Object.keys(x) : []))]; return [...order.filter(k => ks.includes(k)), ...ks.filter(k => !order.includes(k))]; };
 function kbCalcForm(sl, cal, links, E) {
   const V = cal.variants || [], vName = id => { const v = V.find(x => x.id === id); return v ? kbTxt(v.name) : id; };
   const sec = (id, title, sub, body) => `<div class="card full kb" id="calc-${id}"><h2>${title} <span class="sub">${sub}</span></h2><div class="body">${body}</div></div>`;
   const f = (lbl, path, num) => { const v = path.reduce((o, k) => o == null ? undefined : o[k], cal); return v === undefined ? "" : `<label class="kb-f"><span class="muted">${esc(lbl)}</span>${E ? "" : " "}<b>${calcIn(sl, path, v, E, { num })}</b></label>`; };
+  const PEAK_MODES = [["perNight", "per malam (jumlah setiap malam)"], ["flat", "flat (sekali, nilai tertinggi)"], ["percent", "% harga tier"]];
+  const fm = path => { const v = path.reduce((o, k) => o == null ? undefined : o[k], cal) || ""; return `<label class="kb-f"><span class="muted">Cara kira</span><select class="ed kbed" data-kpath="${esc(JSON.stringify([sl, "calc", ...path]))}">${(PEAK_MODES.some(m => m[0] === v) ? PEAK_MODES : [[v, v], ...PEAK_MODES]).map(([k, l]) => `<option value="${esc(k)}"${k === v ? " selected" : ""}>${esc(l)}</option>`).join("")}</select></label>`; };
   const basics = [f("Deposit (RM / pax)", ["deposit"], 1), f("Adult default", ["defaultAdult"], 1), f("Late booking: kurang dari (hari)", ["lateBooking", "lt"], 1), f("Late booking: caj (RM / booking)", ["lateBooking", "amount"], 1),
     f("Tambah meal (RM / pax / hidangan)", ["mealDelta", "add"], 1), f("Tolak meal (RM / pax / hidangan)", ["mealDelta", "drop"], 1), f("Lunch dalam pakej (bil.)", ["meals", "lunch"], 1), f("Dinner dalam pakej (bil.)", ["meals", "dinner"], 1),
     f("Malam tambahan — biasa (RM)", ["ext", "night", "normal"], 1), f("Malam tambahan — peak (RM)", ["ext", "night", "peak"], 1), f("Margin hari tambahan (RM / pax)", ["ext", "marginPerPax"], 1), f("Pax sekenderaan", ["ext", "paxPerVehicle"], 1),
@@ -1145,23 +1156,23 @@ function kbCalcForm(sl, cal, links, E) {
       ${calcTable(sl, ["variants", i, "tiers"], v.tiers, [{ k: "from", l: "Dari pax", num: 1 }, { k: "to", l: "Hingga pax", num: 1 }, { k: "a", l: "Adult (RM/pax)", num: 1 }, { k: "c", l: "CWB (RM/pax)", num: 1 }, { k: "n", l: "CNB (RM/pax)", num: 1 }], E, { ro })}
       ${E && !ro ? `<div class="calc-row">${f("Single supplement (RM)", ["variants", i, "single"], 1)}${f("Infant (RM)", ["variants", i, "infant"], 1)}</div>` : ""}
       ${v.lastMinute ? `<div class="calc-row">${f("Last minute: kurang dari (hari)", ["variants", i, "lastMinute", "lt"], 1)}${f("Last minute: 2 pax (RM)", ["variants", i, "lastMinute", "rate2"], 1)}${f("Last minute: 3+ pax (RM)", ["variants", i, "lastMinute", "rate3"], 1)}</div>` : ""}
-      ${v.peak ? `<h4>Peak season pakej ini</h4>${E ? `<div class="calc-row">${f("Cara kira (perNight / flat / percent)", ["variants", i, "peak", "mode"])}${f("Nilai asas (RM)", ["variants", i, "peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(v.peak.mode || "")} · nilai asas RM${n2(v.peak.value)}</div>`}
+      ${v.peak ? `<h4>Peak season pakej ini</h4>${E ? `<div class="calc-row">${fm(["variants", i, "peak", "mode"])}${f("Nilai asas (RM)", ["variants", i, "peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(v.peak.mode || "")} · nilai asas RM${n2(v.peak.value)}</div>`}
         ${calcTable(sl, ["variants", i, "peak", "windows"], v.peak.windows, [{ k: 0, l: "Dari tarikh" }, { k: 1, l: "Hingga tarikh" }, { k: 2, l: "Pakej (kod)" }, { k: 3, l: "RM / pax", num: 1 }, { k: 4, l: "Label" }], E, { tpl: ["", ""] })}`
-        : E ? `<button class="btn" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "variants", i, "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season khusus pakej ini</button>` : ""}</div>`;
+        : E ? `<button class="btn add" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "variants", i, "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season khusus pakej ini</button>` : ""}</div>`;
   }).join("");
   const pk = cal.peak;
-  const peak = pk ? `${E ? `<div class="calc-row">${f("Cara kira (flat / …)", ["peak", "mode"])}${f("Nilai asas (RM)", ["peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(pk.mode || "")}${pk.value != null ? ` · nilai asas RM${n2(pk.value)}` : ""}</div>`}
+  const peak = pk ? `${E ? `<div class="calc-row">${fm(["peak", "mode"])}${f("Nilai asas (RM)", ["peak", "value"], 1)}</div>` : `<div class="small muted">Cara kira: ${esc(pk.mode || "")}${pk.value != null ? ` · nilai asas RM${n2(pk.value)}` : ""}</div>`}
     ${calcTable(sl, ["peak", "windows"], pk.windows, [{ k: 0, l: "Dari tarikh" }, { k: 1, l: "Hingga tarikh" }, { k: 2, l: "Pakej (kod)", f: E ? null : x => esc(vName(x[2])) }, { k: 3, l: "RM / pax", num: 1 }, { k: 4, l: "Label" }], E, { tpl: ["", ""] })}` : "";
   const addons = calcTable(sl, ["addons"], cal.addons, [{ k: 0, l: "Add-on" }, { k: 1, l: "Adult (RM)", num: 1 }, { k: 2, l: "Child (RM)", num: 1 }, { k: 3, l: "Unit (pax / unit)" }, { k: 4, l: "Teks quotation" }], E, { tpl: ["", 0, 0, "pax"] });
   const TPL = { extraSurcharge: { label: "", dateIn: ["", ""], perPax: 0 }, paxNotes: { from: 1, to: 99, text: "" }, accOptions: { v: "", t: "", cost: "incl" }, mealOptions: { v: "", t: "", b: 1, l: 0, d: 0, lbl: "" }, trpOptions: { v: "", t: "", cost: "incl", lbl: "" } };
   const opt = (key, title, order) => cal[key] ? `<h3>${title}</h3>` + calcTable(sl, [key], cal[key], calcCols(cal[key], order).map(k => ({ k, l: CALC_L[k] || k, f: k === "cost" && !E ? x => esc(CALC_COST[x.cost] || calcTxt(x.cost)) : null, num: ["perPax", "perVehicle", "perVehicleQty", "b", "l", "d", "percentOfTier", "from", "to"].includes(k) })), E, { tpl: TPL[key] })
-    : E && TPL[key] ? `<h3>${title}</h3><button class="btn" data-kact="add" data-kpath="${esc(JSON.stringify([sl, "calc", key]))}" data-ktpl="${esc(JSON.stringify(TPL[key]))}">+ Tambah baris</button>` : "";
+    : E && TPL[key] ? `<h3>${title}</h3><button class="btn add" data-kact="add" data-kpath="${esc(JSON.stringify([sl, "calc", key]))}" data-ktpl="${esc(JSON.stringify(TPL[key]))}">+ Tambah baris</button>` : "";
   const options = opt("accOptions", "Hotel (pilihan harian)", ["t", "cost", "perPax", "hotel", "incl"]) + opt("mealOptions", "Meal (pilihan harian)", ["t", "b", "l", "d", "perPax", "lbl"]) + opt("trpOptions", "Transport (pilihan harian)", ["t", "cost", "perPax", "perVehicle", "lbl", "incl"]);
   const extra = opt("extraSurcharge", "Surcaj tambahan", ["label", "dateIn", "perPax", "percentOfTier", "variants"]) + opt("paxNotes", "Nota ikut bilangan pax", ["from", "to", "text"]);
   const lib = cal.library ? calcTable(sl, ["library"], cal.library, calcCols(cal.library, ["g", "t", "region", "acc", "meal", "trp", "act"]).filter(k => k !== "eact" && k !== "en").map(k => ({ k, l: CALC_L[k] || k })), E) : "";
   return sec("asas", "Asas", "deposit, late booking, meal, malam tambahan", `<div class="calc-row">${basics}</div>${texts}`)
     + sec("tiers", "Pakej &amp; harga tier", `${V.length} pakej · harga per pax ikut bilangan pax`, pkgs)
-    + (pk ? sec("peak", "Peak season", `${(pk.windows || []).length} tempoh`, peak) : E ? sec("peak", "Peak season", "semua pakej", `<button class="btn" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season (semua pakej)</button>`) : "")
+    + (pk ? sec("peak", "Peak season", `${(pk.windows || []).length} tempoh`, peak) : E ? sec("peak", "Peak season", "semua pakej", `<button class="btn add" data-kact="set" data-kpath="${esc(JSON.stringify([sl, "calc", "peak"]))}" data-kval="${esc(JSON.stringify({ mode: "perNight", value: 0, windows: [] }))}">+ Peak season (semua pakej)</button>`) : "")
     + sec("addons", "Add-on", `${(cal.addons || []).length} item · harga jual`, addons)
     + sec("options", "Pilihan harian (Ubah itinerary)", "hotel · meal · transport", options)
     + (extra ? sec("extra", "Surcaj lain &amp; nota pax", "", extra) : "")

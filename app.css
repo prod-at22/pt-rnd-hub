@@ -358,3 +358,50 @@ input.ed.txt.cmp-exn{font-size:12px;display:block;margin:4px auto 0;width:100%;b
 .qt-pt{width:100%;border-collapse:collapse;margin-top:4px} .qt-pt th,.qt-pt td{padding:4px 6px;font-size:12.5px;text-transform:none;letter-spacing:0;border-bottom:1px solid var(--line)}
 .qt-pt input{width:100%;min-width:64px;box-sizing:border-box;text-align:right} .qt-pt th.l{white-space:nowrap} .qt-pt .qt-t1 td{font-weight:600}
 .qt-vers{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--line)}
+/* Edit mode: tidy add / remove controls (PO 15 Oct 2026) */
+.cd input.ed.cat,.cd textarea.ed.cat{box-sizing:border-box}
+.cd textarea.ed.cat{display:block}
+.btn.add{border-style:dashed;color:var(--navy);background:transparent;font-weight:600}
+.btn.add:hover{background:var(--paper);border-color:var(--navy)}
+.btn.add.sm{padding:1px 8px;font-size:11px;border-radius:6px}
+.btn.x{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;padding:0;border-radius:6px;border-color:transparent;background:transparent;color:var(--muted);font-size:16px;line-height:1;flex:none}
+.btn.x:hover{color:var(--bad);background:#fdecec;border-color:#f3c6c6}
+.lbl-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.cd-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px;font-size:12px}
+.cd-hint{font-size:12px;color:var(--ink-soft);margin-bottom:8px}
+.cd-cellx{display:flex;align-items:center;gap:4px}
+.cd-chips-ed{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip-ed{display:inline-flex;align-items:center;gap:2px;padding:2px 2px 2px 4px;border:1px solid var(--edit-line);background:var(--edit);border-radius:999px}
+.cd .chip-ed input.ed.cat{width:170px;min-width:0;border:0;background:transparent;padding:3px 6px}
+.cd-itin td.cd-day{text-align:center}
+.cd-daydel{margin-top:6px}
+.cd-dtitle{margin-bottom:6px}
+.cd-dtitle input.ed.cat{font-weight:700}
+.cd-rows{display:grid;gap:6px 8px;align-items:center}
+.cd-rows3{grid-template-columns:minmax(140px,1fr) minmax(180px,2fr) 24px}
+.cd-rows4{grid-template-columns:minmax(140px,1fr) minmax(160px,1.4fr) minmax(140px,1fr) 24px}
+.cd-rows-dep{grid-template-columns:minmax(110px,180px) 1fr 24px}
+.cd-rh{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.cd-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.cd-cards-wide{grid-template-columns:repeat(auto-fill,minmax(420px,1fr))}
+.cd-card{border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;display:flex;flex-direction:column;gap:8px}
+.cd-card-h{display:flex;align-items:center;gap:6px}
+.cd-card-h input.ed.cat{font-weight:700}
+.cd-mini{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.cd .cd-mini input.ed.cat{flex:1}
+@media (max-width:640px){.cd-rows3,.cd-rows4,.cd-rows-dep{grid-template-columns:1fr 24px}.cd-rows .cd-rh{display:none}.cd-cards-wide{grid-template-columns:1fr}}
+.cd input.ed.cat{font-family:inherit;font-size:13px;padding:5px 8px;border-radius:6px}
+.cd-itin th:nth-child(2){width:42%}
+.cd-itin th:nth-child(4){width:12%}
+.cd textarea.ed.cat.grow{field-sizing:content;min-height:30px;resize:none;padding:5px 8px;line-height:1.4}
+.cd-rows{align-items:start}
+.cd-rows .btn.x{margin-top:3px}
+.cd-cards-wide{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+.cd-cellx{max-width:220px}
+.cd-edit-head.cd-one{grid-template-columns:1fr;margin-top:12px}
+select.ed.kbed{border:1px solid var(--edit-line);background:var(--edit);border-radius:5px;padding:3px 6px;font:inherit;font-size:13px}
+#addons input.ed.txt,#hotels input.ed.txt{font-family:inherit;font-size:13px}
+.btn.x.ao-del{padding:0;font-size:16px}
+.kb input.ed.txt.kbed{font-family:inherit;font-size:13px}
+.kb-fs legend .btn.x{vertical-align:middle;margin-left:4px}
+@media (max-width:640px){.cd-rows3,.cd-rows4,.cd-rows-dep{grid-template-columns:minmax(0,1fr)}.cd-rows .btn.x{justify-self:end;margin:-2px 0 8px}.cd-cards,.cd-cards-wide{grid-template-columns:minmax(0,1fr)}}
