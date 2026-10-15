@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v106 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v106, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v107 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v107, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -295,6 +295,11 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   at 0.122); Costing 2–10; nights 3. Catalog Standard peak now 1 Nov 2026 – 10 Jan 2027 +RM300 (was from 21 Dec; KTT high season starts 1 Nov) + KB calculator. Margins 31.8–42.2 % per TO.
   tests/test_calc.js names threshold ≥185 (8 packages removed). Open (flags): no KTT rate after 20 Dec 2026 / 2027 (R&D 2027: Ibis unavailable, Tony Resort), Basic 4★ +250 (R&D) vs +300,
   Banana / Parasailing low-end prices below cost, day-tour transport at cost, single supplement.
+  **Semporna (v107, PO ezie 15 Oct; source = ~/Downloads/'PT SEMPORNA R&D 2023 (1).xlsx' tabs COSTING SEM (PO: latest calculation) + RAW DATA → contracts/sem 'SEMPORNA COSTING RATE RND.pdf'):**
+  cost = airport 2× RM30 + boat RM30 + accommodation by room config (Basic 2 pax RM540 / 3+ 640 per pax, Std 700) + meals 85 / 155 + island hopping RM157 → Basic 2 pax RM872 / 3–10 972,
+  Std 1,102, 1 pax 1,412 / 1,802 (old 'Legend' costs had no CR); 8 packages → 2 catalog packages, water-chalet upgrades as alternative TOs (catalog +150 / 450 / 600, cost RAW − Nusakuya
+  +70 / 300 / 450); 3★ and honeymoon packages removed; Costing 1–10; add-ons costed per R&D. Margins Basic 18.8–27.2 %, Std 21.1 % (= R&D). tests names threshold ≥180. Open (flag): 2023
+  workbook / unnamed hotels behind 'Accomm', upgrades vs Lato-Lato at / below cost, 3★ and honeymoon not costed, child CWB 85 % / CNB 65 % (RAW child 50 %).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 3 destinations** (costs stored in MYR): JOG, MLE, SWS (PER v105, PHU v106 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).

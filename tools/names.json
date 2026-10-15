@@ -66,10 +66,8 @@
  "KKK": {"packages": {"bahrun-3d-hotel": "KK Kundasang Basic 3D2N · Hotel", "bahrun-3d-gh": "KK Kundasang Basic 3D2N · Guesthouse", "bahrun-4d-hotel": "KK Kundasang Standard 4D3N · Hotel",
                       "bahrun-4d-gh": "KK Kundasang Standard 4D3N · Guesthouse", "bahrun-hny-3d": "KK Kundasang Honeymoon 3D2N", "bahrun-hny-4d": "KK Kundasang Honeymoon 4D3N"},
          "variants": {"Bahrun-3D-Hotel": "Bahrun", "Bahrun-3D-GH": "Bahrun", "Bahrun-4D-Hotel": "Bahrun", "Bahrun-4D-GH": "Bahrun", "Bahrun-HNY-3D": "Bahrun", "Bahrun-HNY-4D": "Bahrun"}},
- "SEM": {"packages": {"legend-3d-1s": "Semporna Basic 3D2N · 1★ Water Chalet", "legend-3d-2s": "Semporna Basic 3D2N · 2★ Water Chalet", "legend-3d-3s": "Semporna Basic 3D2N · 3★ Mabul",
-                      "legend-4d-1s": "Semporna Standard 4D3N · 1★ Water Chalet", "legend-4d-2s": "Semporna Standard 4D3N · 2★ Water Chalet", "legend-4d-3s": "Semporna Standard 4D3N · 3★ Singamata",
-                      "legend-hny-1s": "Semporna Honeymoon · 1★ Water Chalet", "legend-hny-2s": "Semporna Honeymoon · 2★ Water Chalet"},
-         "variants": {"Legend-3D-1S": "Legend", "Legend-3D-2S": "Legend", "Legend-3D-3S": "Legend", "Legend-4D-1S": "Legend", "Legend-4D-2S": "Legend", "Legend-4D-3S": "Legend", "Legend-HNY-1S": "Legend", "Legend-HNY-2S": "Legend"}},
+ "SEM": {"packages": {"legend-3d-1s": "Semporna Basic 3D2N", "legend-4d-1s": "Semporna Standard 4D3N"},
+         "variants": {"Legend-3D-1S": "Legend", "SEM-3D-MAGLAMI": "Legend · Maglami-Lami / Aminah / Starz (+RM150)", "SEM-3D-DANGLAI": "Legend · Danglai / Dayang 2★ (+RM450)", "SEM-3D-ROYAL": "Legend · Royal Resort Standard 2★ (+RM600)", "Legend-4D-1S": "Legend", "SEM-4D-MAGLAMI": "Legend · Maglami-Lami / Aminah / Starz (+RM150)", "SEM-4D-DANGLAI": "Legend · Danglai / Dayang 2★ (+RM450)", "SEM-4D-ROYAL": "Legend · Royal Resort Standard 2★ (+RM600)"}},
  "PHT": {"packages": {"shari-la": "Perhentian Basic 3D2N · Shari-La Resort", "mimpi": "Perhentian Standard 3D2N · Mimpi Resort"},
          "variants": {"Shari-La": "Shari-La Resort", "Mimpi": "Mimpi Resort"}}
 }

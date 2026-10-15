@@ -158634,6 +158634,3107 @@
      "label": "KB phuket › calc › peak › windows › #1 › #1"
     }
    ]
+  },
+  {
+   "v": 107,
+   "at": "2026-10-15T03:00:00Z",
+   "by": "ezie",
+   "note": "Semporna verified (PO ezie 15 Oct 2026; source = PT SEMPORNA R&D tabs COSTING SEM (latest calculation, PO) + RAW DATA, compiled into TO Contract Rate 'SEMPORNA COSTING RATE RND.pdf'): costs rebuilt per COSTING SEM — airport 2× RM30, boat RM30, accommodation by room config, meals RM85 / 155, island hopping RM157 (Basic 2 pax RM872 / 3–10 RM972, Standard RM1,102, 1 pax 1,412 / 1,802; were RM877 → 597 and 1,067 → 767 'Legend' figures without CR); 8 packages → 2 catalog packages, water-chalet upgrades as alternative TOs (catalog +150 / 450 / 600, cost RAW − Nusakuya); 3★ and honeymoon packages removed; Costing 1–10 (1 pax costed). Add-ons: catalog items costed per R&D, duplicates / TripCare Area 2 / Blue Ribbon / header removed. Child cost CWB 85 % / CNB 65 % kept (flag). Margins: Basic 18.8–27.2 %, Std 21.1 %. Catalog / KB unchanged; Flags / History from v107.",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "note"
+     ],
+     "from": "",
+     "to": "Cost = PT SEMPORNA R&D 'COSTING SEM' (latest calculation, PO) + RAW DATA (PDF in TO Contract Rate): airport 2× RM30, boat RM30, accommodation by room config, meals RM85 / 155, island hopping Package A RM157. Alternative TOs = catalog water-chalet upgrades (+RM150 / 450 / 600) with cost = RAW resort rate − Nusakuya (+70 / 300 / 450). 3★ (Kapalai / SWV) and honeymoon not costed here. Costing 1–10. Child CWB 85 % / CNB 65 % kept (flag).",
+     "label": "Semporna › note"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "rates"
+     ],
+     "from": [],
+     "to": [
+      {
+       "id": "air",
+       "label": "Airport transfer Tawau – Semporna sharing van, per way (R&D)",
+       "value": 30,
+       "fx": "MYR",
+       "unit": "RM/pax/way",
+       "group": "1. Transport"
+      },
+      {
+       "id": "boat",
+       "label": "Boat transfer sharing, Seafest jetty – water chalet (COSTING SEM)",
+       "value": 30,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "1. Transport"
+      },
+      {
+       "id": "mealsB",
+       "label": "Meals Basic 3D2N (COSTING SEM)",
+       "value": 85,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "3. Meals"
+      },
+      {
+       "id": "mealsS",
+       "label": "Meals Standard 4D3N (COSTING SEM)",
+       "value": 155,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "3. Meals"
+      },
+      {
+       "id": "ihA",
+       "label": "Island hopping Package A Bohey Dulang / Sibuan / Mantabuan, adult (RAW DATA)",
+       "value": 157,
+       "fx": "MYR",
+       "unit": "RM/pax",
+       "group": "4. Activity"
+      },
+      {
+       "id": "upMaglami",
+       "label": "Water chalet upgrade Maglami-Lami vs Nusakuya (RAW 450 − 380)",
+       "value": 70,
+       "fx": "MYR",
+       "unit": "RM/pax/night",
+       "group": "5. Upgrade"
+      },
+      {
+       "id": "upDanglai",
+       "label": "Water chalet upgrade Danglai vs Nusakuya (RAW 680 − 380)",
+       "value": 300,
+       "fx": "MYR",
+       "unit": "RM/pax/night",
+       "group": "5. Upgrade"
+      },
+      {
+       "id": "upRoyal",
+       "label": "Water chalet upgrade Royal Resort Standard vs Nusakuya (RAW 830 − 380)",
+       "value": 450,
+       "fx": "MYR",
+       "unit": "RM/pax/night",
+       "group": "5. Upgrade"
+      }
+     ],
+     "label": "Semporna › Rate"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "tables"
+     ],
+     "from": [
+      {
+       "id": "Legend-3D-1S__Ground-Cost-MYR",
+       "label": "Legend-3D-1S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-1S",
+       "values": {
+        "1": 1157,
+        "2": 877,
+        "3": 787,
+        "4": 727,
+        "5": 687,
+        "6": 657,
+        "7": 657,
+        "8": 627,
+        "9": 627,
+        "10": 597,
+        "11": 587,
+        "12": 587,
+        "13": 587,
+        "14": 587,
+        "15": 587,
+        "16": 577,
+        "17": 577,
+        "18": 577,
+        "19": 577,
+        "20": 577,
+        "21": 567,
+        "22": 567,
+        "23": 567,
+        "24": 567,
+        "25": 567,
+        "26": 567,
+        "27": 567,
+        "28": 567,
+        "29": 567,
+        "30": 567
+       }
+      },
+      {
+       "id": "Legend-3D-1S__Tipping-MYR",
+       "label": "Legend-3D-1S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-1S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-3D-2S__Ground-Cost-MYR",
+       "label": "Legend-3D-2S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-2S",
+       "values": {
+        "1": 1237,
+        "2": 1057,
+        "3": 957,
+        "4": 877,
+        "5": 837,
+        "6": 807,
+        "7": 787,
+        "8": 767,
+        "9": 767,
+        "10": 737,
+        "11": 727,
+        "12": 727,
+        "13": 727,
+        "14": 727,
+        "15": 727,
+        "16": 717,
+        "17": 717,
+        "18": 717,
+        "19": 717,
+        "20": 717,
+        "21": 707,
+        "22": 707,
+        "23": 707,
+        "24": 707,
+        "25": 707,
+        "26": 707,
+        "27": 707,
+        "28": 707,
+        "29": 707,
+        "30": 707
+       }
+      },
+      {
+       "id": "Legend-3D-2S__Tipping-MYR",
+       "label": "Legend-3D-2S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-2S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-3D-3S__Ground-Cost-MYR",
+       "label": "Legend-3D-3S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-3S",
+       "values": {
+        "1": 2150,
+        "2": 1600,
+        "3": 1450,
+        "4": 1350,
+        "5": 1280,
+        "6": 1230,
+        "7": 1190,
+        "8": 1170,
+        "9": 1150,
+        "10": 1130,
+        "11": 1120,
+        "12": 1120,
+        "13": 1120,
+        "14": 1120,
+        "15": 1120,
+        "16": 1110,
+        "17": 1110,
+        "18": 1110,
+        "19": 1110,
+        "20": 1110,
+        "21": 1100,
+        "22": 1100,
+        "23": 1100,
+        "24": 1100,
+        "25": 1100,
+        "26": 1100,
+        "27": 1100,
+        "28": 1100,
+        "29": 1100,
+        "30": 1100
+       }
+      },
+      {
+       "id": "Legend-3D-3S__Tipping-MYR",
+       "label": "Legend-3D-3S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-3S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-4D-1S__Ground-Cost-MYR",
+       "label": "Legend-4D-1S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-1S",
+       "values": {
+        "1": 1357,
+        "2": 1067,
+        "3": 957,
+        "4": 897,
+        "5": 857,
+        "6": 827,
+        "7": 827,
+        "8": 797,
+        "9": 797,
+        "10": 767,
+        "11": 757,
+        "12": 757,
+        "13": 757,
+        "14": 757,
+        "15": 757,
+        "16": 747,
+        "17": 747,
+        "18": 747,
+        "19": 747,
+        "20": 747,
+        "21": 737,
+        "22": 737,
+        "23": 737,
+        "24": 737,
+        "25": 737,
+        "26": 737,
+        "27": 737,
+        "28": 737,
+        "29": 737,
+        "30": 737
+       }
+      },
+      {
+       "id": "Legend-4D-1S__Tipping-MYR",
+       "label": "Legend-4D-1S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-1S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-4D-2S__Ground-Cost-MYR",
+       "label": "Legend-4D-2S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-2S",
+       "values": {
+        "1": 1557,
+        "2": 1257,
+        "3": 1157,
+        "4": 1097,
+        "5": 1057,
+        "6": 997,
+        "7": 977,
+        "8": 957,
+        "9": 957,
+        "10": 927,
+        "11": 917,
+        "12": 917,
+        "13": 917,
+        "14": 917,
+        "15": 917,
+        "16": 907,
+        "17": 907,
+        "18": 907,
+        "19": 907,
+        "20": 907,
+        "21": 897,
+        "22": 897,
+        "23": 897,
+        "24": 897,
+        "25": 897,
+        "26": 897,
+        "27": 897,
+        "28": 897,
+        "29": 897,
+        "30": 897
+       }
+      },
+      {
+       "id": "Legend-4D-2S__Tipping-MYR",
+       "label": "Legend-4D-2S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-2S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-4D-3S__Ground-Cost-MYR",
+       "label": "Legend-4D-3S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-3S",
+       "values": {
+        "1": 2017,
+        "2": 1697,
+        "3": 1577,
+        "4": 1497,
+        "5": 1457,
+        "6": 1397,
+        "7": 1377,
+        "8": 1357,
+        "9": 1357,
+        "10": 1327,
+        "11": 1317,
+        "12": 1317,
+        "13": 1317,
+        "14": 1317,
+        "15": 1317,
+        "16": 1307,
+        "17": 1307,
+        "18": 1307,
+        "19": 1307,
+        "20": 1307,
+        "21": 1297,
+        "22": 1297,
+        "23": 1297,
+        "24": 1297,
+        "25": 1297,
+        "26": 1297,
+        "27": 1297,
+        "28": 1297,
+        "29": 1297,
+        "30": 1297
+       }
+      },
+      {
+       "id": "Legend-4D-3S__Tipping-MYR",
+       "label": "Legend-4D-3S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-3S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-HNY-1S__Ground-Cost-MYR",
+       "label": "Legend-HNY-1S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-HNY-1S",
+       "values": {
+        "1": 1500,
+        "2": 1150,
+        "3": 1050,
+        "4": 990,
+        "5": 950,
+        "6": 920,
+        "7": 920,
+        "8": 890,
+        "9": 890,
+        "10": 860,
+        "11": 850,
+        "12": 850,
+        "13": 850,
+        "14": 850,
+        "15": 850,
+        "16": 840,
+        "17": 840,
+        "18": 840,
+        "19": 840,
+        "20": 840,
+        "21": 830,
+        "22": 830,
+        "23": 830,
+        "24": 830,
+        "25": 830,
+        "26": 830,
+        "27": 830,
+        "28": 830,
+        "29": 830,
+        "30": 830
+       }
+      },
+      {
+       "id": "Legend-HNY-1S__Tipping-MYR",
+       "label": "Legend-HNY-1S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-HNY-1S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      },
+      {
+       "id": "Legend-HNY-2S__Ground-Cost-MYR",
+       "label": "Legend-HNY-2S · Ground Cost",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-HNY-2S",
+       "values": {
+        "1": 1597,
+        "2": 1297,
+        "3": 1197,
+        "4": 1137,
+        "5": 1097,
+        "6": 1037,
+        "7": 1017,
+        "8": 997,
+        "9": 997,
+        "10": 967,
+        "11": 957,
+        "12": 957,
+        "13": 957,
+        "14": 957,
+        "15": 957,
+        "16": 947,
+        "17": 947,
+        "18": 947,
+        "19": 947,
+        "20": 947,
+        "21": 937,
+        "22": 937,
+        "23": 937,
+        "24": 937,
+        "25": 937,
+        "26": 937,
+        "27": 937,
+        "28": 937,
+        "29": 937,
+        "30": 937
+       }
+      },
+      {
+       "id": "Legend-HNY-2S__Tipping-MYR",
+       "label": "Legend-HNY-2S · Tipping",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-HNY-2S",
+       "values": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "Legend-3D-1S__Accommodation",
+       "label": "Basic · Accommodation 1N water chalet + 1N town hotel per pax by room config (COSTING SEM)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-3D-1S",
+       "values": {
+        "1": 1080,
+        "2": 540,
+        "3": 640,
+        "4": 640,
+        "5": 640,
+        "6": 640,
+        "7": 640,
+        "8": 640,
+        "9": 640,
+        "10": 640
+       }
+      },
+      {
+       "id": "Legend-4D-1S__Accommodation",
+       "label": "Standard · Accommodation 1N water chalet + 2N town hotel per pax by room config (COSTING SEM)",
+       "unit": "MYR/pax",
+       "fx": "MYR",
+       "group": "Legend-4D-1S",
+       "values": {
+        "1": 1400,
+        "2": 700,
+        "3": 700,
+        "4": 700,
+        "5": 700,
+        "6": 700,
+        "7": 700,
+        "8": 700,
+        "9": 700,
+        "10": 700
+       }
+      }
+     ],
+     "label": "Semporna › Table"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "variants"
+     ],
+     "from": [
+      {
+       "id": "Legend-3D-1S",
+       "label": "Legend",
+       "supplier": "SEM 3D2N 1-STAR [DEFAULT]",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Nusakuya/Lato-Lato/Maglami + Seafest Lepa",
+       "notes": "1★ Water Chalet (Bum Bum Island) + Town Hotel",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-3D-2S",
+       "label": "Legend",
+       "supplier": "SEM 3D2N 2-STAR",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Shun Shun/Seastar/Sisipan + Town Hotel",
+       "notes": "2★ Water Chalet",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-3D-2S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-3D-2S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-3D-3S",
+       "label": "Legend",
+       "supplier": "SEM 3D2N 3-STAR (Mabul/Kapalai)",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Sipadan Water Village/Borneo Divers",
+       "notes": "3★ Mabul Island; +Kapalai upgrade option",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-3D-3S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-3D-3S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-4D-1S",
+       "label": "Legend",
+       "supplier": "SEM 4D3N 1-STAR",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Nusakuya/Lato-Lato + Seafest Lepa 2N",
+       "notes": "1★ Water 1N + Town 2N",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-4D-2S",
+       "label": "Legend",
+       "supplier": "SEM 4D3N 2-STAR (no catalog)",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Shun Shun/Seastar + Town Hotel 2N",
+       "notes": "Custom — no published catalog",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-4D-2S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-4D-2S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-4D-3S",
+       "label": "Legend",
+       "supplier": "SEM 4D3N 3-STAR (no catalog)",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "Singamata premium + 3★ Town Hotel",
+       "notes": "Custom — no published catalog",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-4D-3S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-4D-3S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-HNY-1S",
+       "label": "Legend",
+       "supplier": "SEM 4D3N HONEYMOON 1-STAR",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "1★ Water + Town + Room Deco",
+       "notes": "Couple RM 3,797",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-HNY-1S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-HNY-1S__Tipping-MYR']"
+        }
+       ]
+      },
+      {
+       "id": "Legend-HNY-2S",
+       "label": "Legend",
+       "supplier": "SEM 4D3N HONEYMOON 2-STAR",
+       "paxMin": 1,
+       "paxMax": 30,
+       "hotel": "2★ Water + Town + Room Deco + CLD",
+       "notes": "Couple RM 4,597",
+       "components": [
+        {
+         "key": "ground-cost-myr",
+         "label": "Ground Cost",
+         "per": "pax",
+         "expr": "T['Legend-HNY-2S__Ground-Cost-MYR']"
+        },
+        {
+         "key": "tipping-myr",
+         "label": "Tipping",
+         "per": "pax",
+         "expr": "T['Legend-HNY-2S__Tipping-MYR']"
+        }
+       ]
+      }
+     ],
+     "to": [
+      {
+       "id": "Legend-3D-1S",
+       "label": "Legend",
+       "supplier": "SEM Legend",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "Nusakuya/Lato-Lato/Maglami + Seafest Lepa",
+       "notes": "COSTING SEM 3D2N 1★ (latest calculation, PO)",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsB*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        }
+       ]
+      },
+      {
+       "id": "SEM-3D-MAGLAMI",
+       "label": "Legend · Maglami-Lami / Aminah / Starz (+RM150)",
+       "supplier": "SEM Legend · Maglami-Lami / Aminah / Starz (+RM150)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsB*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upMaglami*pax"
+        }
+       ],
+       "sellingUpgrade": 150
+      },
+      {
+       "id": "SEM-3D-DANGLAI",
+       "label": "Legend · Danglai / Dayang 2★ (+RM450)",
+       "supplier": "SEM Legend · Danglai / Dayang 2★ (+RM450)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsB*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upDanglai*pax"
+        }
+       ],
+       "sellingUpgrade": 450
+      },
+      {
+       "id": "SEM-3D-ROYAL",
+       "label": "Legend · Royal Resort Standard 2★ (+RM600)",
+       "supplier": "SEM Legend · Royal Resort Standard 2★ (+RM600)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-3D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsB*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upRoyal*pax"
+        }
+       ],
+       "sellingUpgrade": 600
+      },
+      {
+       "id": "Legend-4D-1S",
+       "label": "Legend",
+       "supplier": "SEM Legend",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "Nusakuya/Lato-Lato + Seafest Lepa 2N",
+       "notes": "COSTING SEM 4D3N 1★ (latest calculation, PO)",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsS*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        }
+       ]
+      },
+      {
+       "id": "SEM-4D-MAGLAMI",
+       "label": "Legend · Maglami-Lami / Aminah / Starz (+RM150)",
+       "supplier": "SEM Legend · Maglami-Lami / Aminah / Starz (+RM150)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsS*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upMaglami*pax"
+        }
+       ],
+       "sellingUpgrade": 150
+      },
+      {
+       "id": "SEM-4D-DANGLAI",
+       "label": "Legend · Danglai / Dayang 2★ (+RM450)",
+       "supplier": "SEM Legend · Danglai / Dayang 2★ (+RM450)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsS*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upDanglai*pax"
+        }
+       ],
+       "sellingUpgrade": 450
+      },
+      {
+       "id": "SEM-4D-ROYAL",
+       "label": "Legend · Royal Resort Standard 2★ (+RM600)",
+       "supplier": "SEM Legend · Royal Resort Standard 2★ (+RM600)",
+       "paxMin": 1,
+       "paxMax": 10,
+       "hotel": "",
+       "notes": "",
+       "components": [
+        {
+         "key": "airport",
+         "label": "Airport transfer (2× sharing)",
+         "per": "group",
+         "expr": "R.air*2*pax"
+        },
+        {
+         "key": "boat",
+         "label": "Boat transfer",
+         "per": "group",
+         "expr": "R.boat*pax"
+        },
+        {
+         "key": "accommodation",
+         "label": "Accommodation",
+         "per": "pax",
+         "expr": "T['Legend-4D-1S__Accommodation']"
+        },
+        {
+         "key": "meals",
+         "label": "Meals",
+         "per": "group",
+         "expr": "R.mealsS*pax"
+        },
+        {
+         "key": "activity",
+         "label": "Island hopping",
+         "per": "group",
+         "expr": "R.ihA*pax"
+        },
+        {
+         "key": "upgrade",
+         "label": "Water chalet upgrade (1 night)",
+         "per": "group",
+         "expr": "R.upRoyal*pax"
+        }
+       ],
+       "sellingUpgrade": 600
+      }
+     ],
+     "label": "Semporna › TO"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "packages"
+     ],
+     "from": [
+      {
+       "id": "legend-3d-1s",
+       "label": "Semporna Basic 3D2N · 1★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-3D-1S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 1897,
+         "2": 1397,
+         "3": 1397,
+         "4": 1397,
+         "5": 1397,
+         "6": 1397,
+         "7": 1397,
+         "8": 1397,
+         "9": 1397,
+         "10": 1397,
+         "11": 1487,
+         "12": 1487,
+         "13": 1487,
+         "14": 1487,
+         "15": 1487,
+         "16": 1437,
+         "17": 1437,
+         "18": 1437,
+         "19": 1437,
+         "20": 1437,
+         "21": 1387,
+         "22": 1387,
+         "23": 1387,
+         "24": 1387,
+         "25": 1387,
+         "26": 1337,
+         "27": 1337,
+         "28": 1337,
+         "29": 1337,
+         "30": 1337
+        },
+        "cwb": {
+         "2": 1197,
+         "3": 1197,
+         "4": 1197,
+         "5": 1197,
+         "6": 1197,
+         "7": 1197,
+         "8": 1197,
+         "9": 1197,
+         "10": 1197,
+         "11": 1047,
+         "12": 1047,
+         "13": 1047,
+         "14": 1047,
+         "15": 1047,
+         "16": 997,
+         "17": 997,
+         "18": 997,
+         "19": 997,
+         "20": 997,
+         "21": 947,
+         "22": 947,
+         "23": 947,
+         "24": 947,
+         "25": 947,
+         "26": 897,
+         "27": 897,
+         "28": 897,
+         "29": 897,
+         "30": 897
+        },
+        "cnb": {
+         "2": 997,
+         "3": 997,
+         "4": 997,
+         "5": 997,
+         "6": 997,
+         "7": 997,
+         "8": 997,
+         "9": 997,
+         "10": 997,
+         "11": 867,
+         "12": 867,
+         "13": 867,
+         "14": 867,
+         "15": 867,
+         "16": 817,
+         "17": 817,
+         "18": 817,
+         "19": 817,
+         "20": 817,
+         "21": 767,
+         "22": 767,
+         "23": 767,
+         "24": 767,
+         "25": 767,
+         "26": 717,
+         "27": 717,
+         "28": 717,
+         "29": 717,
+         "30": 717
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-3d-2s",
+       "label": "Semporna Basic 3D2N · 2★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-3D-2S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1797,
+         "3": 1797,
+         "4": 1797,
+         "5": 1797,
+         "6": 1797,
+         "7": 1797,
+         "8": 1797,
+         "9": 1797,
+         "10": 1797,
+         "11": 1747,
+         "12": 1747,
+         "13": 1747,
+         "14": 1747,
+         "15": 1747,
+         "16": 1697,
+         "17": 1697,
+         "18": 1697,
+         "19": 1697,
+         "20": 1697,
+         "21": 1647,
+         "22": 1647,
+         "23": 1647,
+         "24": 1647,
+         "25": 1647,
+         "26": 1597,
+         "27": 1597,
+         "28": 1597,
+         "29": 1597,
+         "30": 1597
+        },
+        "cwb": {
+         "2": 1297,
+         "3": 1297,
+         "4": 1297,
+         "5": 1297,
+         "6": 1297,
+         "7": 1297,
+         "8": 1297,
+         "9": 1297,
+         "10": 1297,
+         "11": 1247,
+         "12": 1247,
+         "13": 1247,
+         "14": 1247,
+         "15": 1247,
+         "16": 1197,
+         "17": 1197,
+         "18": 1197,
+         "19": 1197,
+         "20": 1197,
+         "21": 1147,
+         "22": 1147,
+         "23": 1147,
+         "24": 1147,
+         "25": 1147,
+         "26": 1097,
+         "27": 1097,
+         "28": 1097,
+         "29": 1097,
+         "30": 1097
+        },
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-3d-3s",
+       "label": "Semporna Basic 3D2N · 3★ Mabul",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-3D-3S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2667,
+         "3": 2667,
+         "4": 2667,
+         "5": 2667,
+         "6": 2667,
+         "7": 2667,
+         "8": 2667,
+         "9": 2667,
+         "10": 2667,
+         "11": 2617,
+         "12": 2617,
+         "13": 2617,
+         "14": 2617,
+         "15": 2617,
+         "16": 2567,
+         "17": 2567,
+         "18": 2567,
+         "19": 2567,
+         "20": 2567,
+         "21": 2517,
+         "22": 2517,
+         "23": 2517,
+         "24": 2517,
+         "25": 2517,
+         "26": 2467,
+         "27": 2467,
+         "28": 2467,
+         "29": 2467,
+         "30": 2467
+        },
+        "cwb": {
+         "2": 1657,
+         "3": 1657,
+         "4": 1657,
+         "5": 1657,
+         "6": 1657,
+         "7": 1657,
+         "8": 1657,
+         "9": 1657,
+         "10": 1657,
+         "11": 1607,
+         "12": 1607,
+         "13": 1607,
+         "14": 1607,
+         "15": 1607,
+         "16": 1557,
+         "17": 1557,
+         "18": 1557,
+         "19": 1557,
+         "20": 1557,
+         "21": 1507,
+         "22": 1507,
+         "23": 1507,
+         "24": 1507,
+         "25": 1507,
+         "26": 1457,
+         "27": 1457,
+         "28": 1457,
+         "29": 1457,
+         "30": 1457
+        },
+        "cnb": {},
+        "infant": 697
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-4d-1s",
+       "label": "Semporna Standard 4D3N · 1★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-4D-1S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 2297,
+         "2": 1597,
+         "3": 1597,
+         "4": 1597,
+         "5": 1597,
+         "6": 1597,
+         "7": 1597,
+         "8": 1597,
+         "9": 1597,
+         "10": 1597,
+         "11": 1707,
+         "12": 1707,
+         "13": 1707,
+         "14": 1707,
+         "15": 1707,
+         "16": 1657,
+         "17": 1657,
+         "18": 1657,
+         "19": 1657,
+         "20": 1657,
+         "21": 1607,
+         "22": 1607,
+         "23": 1607,
+         "24": 1607,
+         "25": 1607,
+         "26": 1557,
+         "27": 1557,
+         "28": 1557,
+         "29": 1557,
+         "30": 1557
+        },
+        "cwb": {
+         "2": 1457,
+         "3": 1457,
+         "4": 1457,
+         "5": 1457,
+         "6": 1457,
+         "7": 1457,
+         "8": 1457,
+         "9": 1457,
+         "10": 1457,
+         "11": 1247,
+         "12": 1247,
+         "13": 1247,
+         "14": 1247,
+         "15": 1247,
+         "16": 1197,
+         "17": 1197,
+         "18": 1197,
+         "19": 1197,
+         "20": 1197,
+         "21": 1147,
+         "22": 1147,
+         "23": 1147,
+         "24": 1147,
+         "25": 1147,
+         "26": 1097,
+         "27": 1097,
+         "28": 1097,
+         "29": 1097,
+         "30": 1097
+        },
+        "cnb": {
+         "2": 1357,
+         "3": 1357,
+         "4": 1357,
+         "5": 1357,
+         "6": 1357,
+         "7": 1357,
+         "8": 1357,
+         "9": 1357,
+         "10": 1357,
+         "11": 917,
+         "12": 917,
+         "13": 917,
+         "14": 917,
+         "15": 917,
+         "16": 867,
+         "17": 867,
+         "18": 867,
+         "19": 867,
+         "20": 867,
+         "21": 817,
+         "22": 817,
+         "23": 817,
+         "24": 817,
+         "25": 817,
+         "26": 767,
+         "27": 767,
+         "28": 767,
+         "29": 767,
+         "30": 767
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-4d-2s",
+       "label": "Semporna Standard 4D3N · 2★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-4D-2S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2297,
+         "3": 2297,
+         "4": 2297,
+         "5": 2297,
+         "6": 2297,
+         "7": 2297,
+         "8": 2297,
+         "9": 2297,
+         "10": 2297,
+         "11": 2247,
+         "12": 2247,
+         "13": 2247,
+         "14": 2247,
+         "15": 2247,
+         "16": 2197,
+         "17": 2197,
+         "18": 2197,
+         "19": 2197,
+         "20": 2197,
+         "21": 2147,
+         "22": 2147,
+         "23": 2147,
+         "24": 2147,
+         "25": 2147,
+         "26": 2097,
+         "27": 2097,
+         "28": 2097,
+         "29": 2097,
+         "30": 2097
+        },
+        "cwb": {
+         "2": 1527,
+         "3": 1527,
+         "4": 1527,
+         "5": 1527,
+         "6": 1527,
+         "7": 1527,
+         "8": 1527,
+         "9": 1527,
+         "10": 1527,
+         "11": 1477,
+         "12": 1477,
+         "13": 1477,
+         "14": 1477,
+         "15": 1477,
+         "16": 1427,
+         "17": 1427,
+         "18": 1427,
+         "19": 1427,
+         "20": 1427,
+         "21": 1377,
+         "22": 1377,
+         "23": 1377,
+         "24": 1377,
+         "25": 1377,
+         "26": 1327,
+         "27": 1327,
+         "28": 1327,
+         "29": 1327,
+         "30": 1327
+        },
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-4d-3s",
+       "label": "Semporna Standard 4D3N · 3★ Singamata",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-4D-3S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2967,
+         "3": 2967,
+         "4": 2967,
+         "5": 2967,
+         "6": 2967,
+         "7": 2967,
+         "8": 2967,
+         "9": 2967,
+         "10": 2967,
+         "11": 2917,
+         "12": 2917,
+         "13": 2917,
+         "14": 2917,
+         "15": 2917,
+         "16": 2867,
+         "17": 2867,
+         "18": 2867,
+         "19": 2867,
+         "20": 2867,
+         "21": 2817,
+         "22": 2817,
+         "23": 2817,
+         "24": 2817,
+         "25": 2817,
+         "26": 2767,
+         "27": 2767,
+         "28": 2767,
+         "29": 2767,
+         "30": 2767
+        },
+        "cwb": {
+         "2": 1957,
+         "3": 1957,
+         "4": 1957,
+         "5": 1957,
+         "6": 1957,
+         "7": 1957,
+         "8": 1957,
+         "9": 1957,
+         "10": 1957,
+         "11": 1907,
+         "12": 1907,
+         "13": 1907,
+         "14": 1907,
+         "15": 1907,
+         "16": 1857,
+         "17": 1857,
+         "18": 1857,
+         "19": 1857,
+         "20": 1857,
+         "21": 1807,
+         "22": 1807,
+         "23": 1807,
+         "24": 1807,
+         "25": 1807,
+         "26": 1757,
+         "27": 1757,
+         "28": 1757,
+         "29": 1757,
+         "30": 1757
+        },
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-hny-1s",
+       "label": "Semporna Honeymoon · 1★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-HNY-1S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 1898.5,
+         "3": 1898.5,
+         "4": 1898.5,
+         "5": 1898.5,
+         "6": 1898.5,
+         "7": 1898.5,
+         "8": 1898.5,
+         "9": 1898.5,
+         "10": 1898.5,
+         "11": 1898.5,
+         "12": 1898.5,
+         "13": 1898.5,
+         "14": 1898.5,
+         "15": 1898.5,
+         "16": 1898.5,
+         "17": 1898.5,
+         "18": 1898.5,
+         "19": 1898.5,
+         "20": 1898.5,
+         "21": 1898.5,
+         "22": 1898.5,
+         "23": 1898.5,
+         "24": 1898.5,
+         "25": 1898.5,
+         "26": 1898.5,
+         "27": 1898.5,
+         "28": 1898.5,
+         "29": 1898.5,
+         "30": 1898.5
+        },
+        "cwb": {},
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      },
+      {
+       "id": "legend-hny-2s",
+       "label": "Semporna Honeymoon · 2★ Water Chalet",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 2,
+         "to": 30,
+         "variant": "Legend-HNY-2S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "2": 2298.5,
+         "3": 2298.5,
+         "4": 2298.5,
+         "5": 2298.5,
+         "6": 2298.5,
+         "7": 2298.5,
+         "8": 2298.5,
+         "9": 2298.5,
+         "10": 2298.5,
+         "11": 2298.5,
+         "12": 2298.5,
+         "13": 2298.5,
+         "14": 2298.5,
+         "15": 2298.5,
+         "16": 2298.5,
+         "17": 2298.5,
+         "18": 2298.5,
+         "19": 2298.5,
+         "20": 2298.5,
+         "21": 2298.5,
+         "22": 2298.5,
+         "23": 2298.5,
+         "24": 2298.5,
+         "25": 2298.5,
+         "26": 2298.5,
+         "27": 2298.5,
+         "28": 2298.5,
+         "29": 2298.5,
+         "30": 2298.5
+        },
+        "cwb": {},
+        "cnb": {},
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "legend-3d-1s",
+       "label": "Semporna Basic 3D2N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 1,
+         "to": 10,
+         "variant": "Legend-3D-1S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 1897,
+         "2": 1397,
+         "3": 1397,
+         "4": 1397,
+         "5": 1397,
+         "6": 1397,
+         "7": 1397,
+         "8": 1397,
+         "9": 1397,
+         "10": 1397
+        },
+        "cwb": {
+         "2": 1197,
+         "3": 1197,
+         "4": 1197,
+         "5": 1197,
+         "6": 1197,
+         "7": 1197,
+         "8": 1197,
+         "9": 1197,
+         "10": 1197
+        },
+        "cnb": {
+         "2": 997,
+         "3": 997,
+         "4": 997,
+         "5": 997,
+         "6": 997,
+         "7": 997,
+         "8": 997,
+         "9": 997,
+         "10": 997
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       },
+       "alsoVariants": [
+        "SEM-3D-MAGLAMI",
+        "SEM-3D-DANGLAI",
+        "SEM-3D-ROYAL"
+       ]
+      },
+      {
+       "id": "legend-4d-1s",
+       "label": "Semporna Standard 4D3N",
+       "catalog": null,
+       "assign": [
+        {
+         "from": 1,
+         "to": 10,
+         "variant": "Legend-4D-1S"
+        }
+       ],
+       "pricing": {
+        "adult": {
+         "1": 2297,
+         "2": 1597,
+         "3": 1597,
+         "4": 1597,
+         "5": 1597,
+         "6": 1597,
+         "7": 1597,
+         "8": 1597,
+         "9": 1597,
+         "10": 1597
+        },
+        "cwb": {
+         "2": 1457,
+         "3": 1457,
+         "4": 1457,
+         "5": 1457,
+         "6": 1457,
+         "7": 1457,
+         "8": 1457,
+         "9": 1457,
+         "10": 1457
+        },
+        "cnb": {
+         "2": 1357,
+         "3": 1357,
+         "4": 1357,
+         "5": 1357,
+         "6": 1357,
+         "7": 1357,
+         "8": 1357,
+         "9": 1357,
+         "10": 1357
+        },
+        "infant": 0
+       },
+       "rules": {
+        "discountTier2": 200,
+        "tierUpgrade": 0,
+        "cwbCost": {
+         "type": "pct",
+         "value": 0.85
+        },
+        "cnbCost": {
+         "type": "pct",
+         "value": 0.65
+        },
+        "infantCost": {
+         "type": "flat",
+         "value": 0
+        }
+       },
+       "alsoVariants": [
+        "SEM-4D-MAGLAMI",
+        "SEM-4D-DANGLAI",
+        "SEM-4D-ROYAL"
+       ]
+      }
+     ],
+     "label": "Semporna"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "addons"
+     ],
+     "from": [
+      {
+       "id": "sem-a02",
+       "category": "Category",
+       "label": "Item",
+       "cost": null,
+       "selling": null,
+       "per": "Per",
+       "notes": "Notes"
+      },
+      {
+       "id": "sem-a03",
+       "category": "Activity",
+       "label": "Island Hopping Day Trip (Set A/B/C)",
+       "cost": 137,
+       "selling": 177,
+       "per": "pax",
+       "notes": "Snorkel + lunch + jetty + guide"
+      },
+      {
+       "id": "sem-a04",
+       "category": "Activity",
+       "label": "Tawau Shopping Tour Day Trip",
+       "cost": 87,
+       "selling": 117,
+       "per": "pax",
+       "notes": "Private transport 6-8 hrs"
+      },
+      {
+       "id": "sem-a05",
+       "category": "Activity",
+       "label": "Timbun Mata Watersports",
+       "cost": 237,
+       "selling": 297,
+       "per": "pax",
+       "notes": "Parasail/Jetski/Banana/Kayak + buffet"
+      },
+      {
+       "id": "sem-a06",
+       "category": "Activity",
+       "label": "Seawalking Seafest Jetty",
+       "cost": 147,
+       "selling": 187,
+       "per": "pax",
+       "notes": "45 mins"
+      },
+      {
+       "id": "sem-a07",
+       "category": "Activity",
+       "label": "Discovery Scuba Diving",
+       "cost": 220,
+       "selling": 277,
+       "per": "pax",
+       "notes": "2 dives + equipment + dive master"
+      },
+      {
+       "id": "sem-a08",
+       "category": "Activity",
+       "label": "Fun Dive (3 dives)",
+       "cost": 267,
+       "selling": 327,
+       "per": "pax",
+       "notes": "3 dives + equipment"
+      },
+      {
+       "id": "sem-a09",
+       "category": "Honeymoon",
+       "label": "Bedroom Decoration",
+       "cost": 50,
+       "selling": 70,
+       "per": "couple",
+       "notes": null
+      },
+      {
+       "id": "sem-a10",
+       "category": "Honeymoon",
+       "label": "Candle Light Dinner at Water Chalet",
+       "cost": 230,
+       "selling": 290,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a11",
+       "category": "Honeymoon",
+       "label": "Regular Cake",
+       "cost": 80,
+       "selling": 117,
+       "per": "item",
+       "notes": null
+      },
+      {
+       "id": "sem-a12",
+       "category": "Transport",
+       "label": "Tawau Airport-City Sharing Transfer",
+       "cost": 20,
+       "selling": 27,
+       "per": "pax",
+       "notes": "1 way"
+      },
+      {
+       "id": "sem-a13",
+       "category": "Transport",
+       "label": "Private Car Tawau-Semporna",
+       "cost": 130,
+       "selling": 157,
+       "per": "car",
+       "notes": "1 way, 1-4 pax"
+      },
+      {
+       "id": "sem-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 38,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Etiqa Area 1 — Domestic Malaysia"
+      },
+      {
+       "id": "sem-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 55,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 72,
+       "selling": 95,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "sem-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 112,
+       "selling": 145,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "sem-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 100,
+       "selling": 130,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "sem-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 140,
+       "selling": 185,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "sem-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 130,
+       "selling": 170,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 186,
+       "selling": 245,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a24",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a25",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a26",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (1-5 hari)",
+       "cost": 40.5,
+       "selling": 64,
+       "per": "pax",
+       "notes": "Etiqa Area 2"
+      },
+      {
+       "id": "sem-a27",
+       "category": "Takaful",
+       "label": "TripCare 360 — Individual (6-10 hari)",
+       "cost": 58.87,
+       "selling": 88.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a28",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (1-5 hari)",
+       "cost": 77.25,
+       "selling": 113,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a29",
+       "category": "Takaful",
+       "label": "TripCare 360 — Couple (6-10 hari)",
+       "cost": 122.87,
+       "selling": 160.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a30",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (1-5 hari)",
+       "cost": 100.12,
+       "selling": 143.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a31",
+       "category": "Takaful",
+       "label": "TripCare 360 — Family (6-10 hari)",
+       "cost": 153.62,
+       "selling": 201.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a32",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (1-5 hari)",
+       "cost": 141.62,
+       "selling": 185.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a33",
+       "category": "Takaful",
+       "label": "TripCare 360 — Senior (6-10 hari)",
+       "cost": 201.62,
+       "selling": 265.5,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a34",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Silver",
+       "cost": 14.5,
+       "selling": 20,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "sem-a35",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "sem-a36",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "sem-a37",
+       "category": "Luggage",
+       "label": "Blue Ribbon — Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "unit",
+       "notes": null
+      },
+      {
+       "id": "sem-k001",
+       "category": "Additional Activities",
+       "label": "Island Hopping (Full Day)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 x island trip (Set A/B/C), snorkelling equipment, shared boat transfer, 1 x basic lunch box, jetty fee, guide. Meeting point: Seafest Jetty",
+       "duration": "From 8am to 2@3pm",
+       "price_lines": [
+        "RM180/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 1,
+        "semporna-standard": 1
+       }
+      },
+      {
+       "id": "sem-k002",
+       "category": "Additional Activities",
+       "label": "Tawau Shopping Tour (Full Day)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Private transport, driver guide, airport transfer",
+       "duration": "6-8 hours",
+       "price_lines": [
+        "RM120/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 2,
+        "semporna-standard": 2
+       }
+      },
+      {
+       "id": "sem-k003",
+       "category": "Additional Activities",
+       "label": "Timbun Mata Watersport (Half Day)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Parasailing, jet ski, transparent kayak, banana boat, paddle boat, UFO donut, hiking, snorkelling, buffet lunch. Meeting point: Timbun Mata. 2 sessions (choose 1): 8am - 1pm or 1.30pm - 5pm",
+       "duration": "4-5 hours",
+       "price_lines": [
+        "RM300/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 3,
+        "semporna-standard": 3
+       }
+      },
+      {
+       "id": "sem-k004",
+       "category": "Additional Activities",
+       "label": "Seawalking",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Meeting point: Seafest Jetty. Minimum 2 pax. Recommended to do on the first day",
+       "duration": "45 mins",
+       "price_lines": [
+        "RM180/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 4,
+        "semporna-standard": 4
+       }
+      },
+      {
+       "id": "sem-k005",
+       "category": "Additional Activities",
+       "label": "Discovery Scuba Diving",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Diving equipment, 2 x dives, dive master. Recommended to do on the first day",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 5,
+        "semporna-standard": 5
+       }
+      },
+      {
+       "id": "sem-k006",
+       "category": "Additional Activities",
+       "label": "Fun Dive",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Diving equipment, 3 x dives, dive master. Recommended to do on the first day",
+       "price_lines": [
+        "RM330/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 6,
+        "semporna-standard": 6
+       }
+      },
+      {
+       "id": "sem-k007",
+       "category": "Additional Activities",
+       "label": "Private Car Transfer (Tawau City/Hotel - Semporna)",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "1 way transfer (1 - 4 pax maximum)",
+       "price_lines": [
+        "RM160/transport"
+       ],
+       "catalogs": {
+        "semporna-basic": 7,
+        "semporna-standard": 7
+       }
+      },
+      {
+       "id": "sem-k008",
+       "category": "Additional Activities",
+       "label": "Honeymoon Room Deco",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Room decoration (available in water chalets except Lato-Lato)",
+       "price_lines": [
+        "RM350/room"
+       ],
+       "catalogs": {
+        "semporna-basic": 8,
+        "semporna-standard": 9
+       }
+      },
+      {
+       "id": "sem-k009",
+       "category": "Additional Activities",
+       "label": "Candlelight Dinner Only",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Meals + table decoration",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 9
+       }
+      },
+      {
+       "id": "sem-k010",
+       "category": "Additional Activities",
+       "label": "Regular Size Cake",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "For birthday celebration or candlelight dinner",
+       "price_lines": [
+        "RM120/cake"
+       ],
+       "catalogs": {
+        "semporna-basic": 10,
+        "semporna-standard": 10
+       }
+      },
+      {
+       "id": "sem-k011",
+       "category": "Additional Activities",
+       "label": "Candlelight Dinner",
+       "per": "",
+       "cost": null,
+       "selling": null,
+       "notes": null,
+       "includes": "Meals + table decoration",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-standard": 8
+       }
+      }
+     ],
+     "to": [
+      {
+       "id": "sem-a12",
+       "category": "Transport",
+       "label": "Tawau Airport-City Sharing Transfer",
+       "cost": 30,
+       "selling": 40,
+       "per": "pax",
+       "notes": "RAW DATA sharing van Tawau airport – Semporna 1 way"
+      },
+      {
+       "id": "sem-a14",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (1-5 days) Area 1",
+       "cost": 38,
+       "selling": 50,
+       "per": "pax",
+       "notes": "Etiqa Area 1 — Domestic Malaysia"
+      },
+      {
+       "id": "sem-a15",
+       "category": "Takaful",
+       "label": "TripCare 360 Individual (6-10 days) Area 1",
+       "cost": 55,
+       "selling": 80,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a16",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (1-5 days) Area 1",
+       "cost": 72,
+       "selling": 95,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "sem-a17",
+       "category": "Takaful",
+       "label": "TripCare 360 Couple (6-10 days) Area 1",
+       "cost": 112,
+       "selling": 145,
+       "per": "pair",
+       "notes": null
+      },
+      {
+       "id": "sem-a18",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (1-5 days) Area 1",
+       "cost": 100,
+       "selling": 130,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "sem-a19",
+       "category": "Takaful",
+       "label": "TripCare 360 Family (6-10 days) Area 1",
+       "cost": 140,
+       "selling": 185,
+       "per": "family",
+       "notes": null
+      },
+      {
+       "id": "sem-a20",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (1-5 days) Area 1",
+       "cost": 130,
+       "selling": 170,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a21",
+       "category": "Takaful",
+       "label": "TripCare 360 Senior (6-10 days) Area 1",
+       "cost": 186,
+       "selling": 245,
+       "per": "pax",
+       "notes": null
+      },
+      {
+       "id": "sem-a22",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Silver",
+       "cost": 15,
+       "selling": 20,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a23",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Gold",
+       "cost": 29,
+       "selling": 40,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a24",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Platinum",
+       "cost": 44,
+       "selling": 55,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-a25",
+       "category": "Luggage Tracker",
+       "label": "Blue Ribbon Diamond",
+       "cost": 58,
+       "selling": 70,
+       "per": "pcs",
+       "notes": null
+      },
+      {
+       "id": "sem-k001",
+       "category": "Additional Activities",
+       "label": "Island Hopping (Full Day)",
+       "per": "pax",
+       "cost": 157,
+       "selling": 180,
+       "notes": "Kos: RAW DATA Package A adult",
+       "includes": "1 x island trip (Set A/B/C), snorkelling equipment, shared boat transfer, 1 x basic lunch box, jetty fee, guide. Meeting point: Seafest Jetty",
+       "duration": "From 8am to 2@3pm",
+       "price_lines": [
+        "RM180/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 1,
+        "semporna-standard": 1
+       }
+      },
+      {
+       "id": "sem-k002",
+       "category": "Additional Activities",
+       "label": "Tawau Shopping Tour (Full Day)",
+       "per": "pax",
+       "cost": 87,
+       "selling": 120,
+       "notes": "Kos: hub cost (no R&D per-pax rate; R&D charter car Tawau city tour RM250 / 1–4 pax)",
+       "includes": "Private transport, driver guide, airport transfer",
+       "duration": "6-8 hours",
+       "price_lines": [
+        "RM120/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 2,
+        "semporna-standard": 2
+       }
+      },
+      {
+       "id": "sem-k003",
+       "category": "Additional Activities",
+       "label": "Timbun Mata Watersport (Half Day)",
+       "per": "pax",
+       "cost": 260,
+       "selling": 300,
+       "notes": "Kos: R&D Costing Timbun Mata",
+       "includes": "Parasailing, jet ski, transparent kayak, banana boat, paddle boat, UFO donut, hiking, snorkelling, buffet lunch. Meeting point: Timbun Mata. 2 sessions (choose 1): 8am - 1pm or 1.30pm - 5pm",
+       "duration": "4-5 hours",
+       "price_lines": [
+        "RM300/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 3,
+        "semporna-standard": 3
+       }
+      },
+      {
+       "id": "sem-k004",
+       "category": "Additional Activities",
+       "label": "Seawalking",
+       "per": "pax",
+       "cost": 160,
+       "selling": 180,
+       "notes": "Kos: R&D Costing Seawalking",
+       "includes": "Meeting point: Seafest Jetty. Minimum 2 pax. Recommended to do on the first day",
+       "duration": "45 mins",
+       "price_lines": [
+        "RM180/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 4,
+        "semporna-standard": 4
+       }
+      },
+      {
+       "id": "sem-k005",
+       "category": "Additional Activities",
+       "label": "Discovery Scuba Diving",
+       "per": "pax",
+       "cost": 260,
+       "selling": 280,
+       "notes": "Kos: RAW DATA DSD 2 dives",
+       "includes": "Diving equipment, 2 x dives, dive master. Recommended to do on the first day",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 5,
+        "semporna-standard": 5
+       }
+      },
+      {
+       "id": "sem-k006",
+       "category": "Additional Activities",
+       "label": "Fun Dive",
+       "per": "pax",
+       "cost": 300,
+       "selling": 330,
+       "notes": "Kos: RAW DATA Fun Dive",
+       "includes": "Diving equipment, 3 x dives, dive master. Recommended to do on the first day",
+       "price_lines": [
+        "RM330/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 6,
+        "semporna-standard": 6
+       }
+      },
+      {
+       "id": "sem-k007",
+       "category": "Additional Activities",
+       "label": "Private Car Transfer (Tawau City/Hotel - Semporna)",
+       "per": "transport",
+       "cost": 120,
+       "selling": 160,
+       "notes": "Kos: R&D Costing charter car Tawau city / hotel – Semporna 1 way",
+       "includes": "1 way transfer (1 - 4 pax maximum)",
+       "price_lines": [
+        "RM160/transport"
+       ],
+       "catalogs": {
+        "semporna-basic": 7,
+        "semporna-standard": 7
+       }
+      },
+      {
+       "id": "sem-k008",
+       "category": "Additional Activities",
+       "label": "Honeymoon Room Deco",
+       "per": "room",
+       "cost": 270,
+       "selling": 350,
+       "notes": "Kos: RAW DATA honeymoon room deco RM270/room",
+       "includes": "Room decoration (available in water chalets except Lato-Lato)",
+       "price_lines": [
+        "RM350/room"
+       ],
+       "catalogs": {
+        "semporna-basic": 8,
+        "semporna-standard": 9
+       }
+      },
+      {
+       "id": "sem-k009",
+       "category": "Additional Activities",
+       "label": "Candlelight Dinner Only",
+       "per": "pax",
+       "cost": 250,
+       "selling": 280,
+       "notes": "Kos: RAW DATA candle light dinner RM250/pax",
+       "includes": "Meals + table decoration",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-basic": 9
+       }
+      },
+      {
+       "id": "sem-k010",
+       "category": "Additional Activities",
+       "label": "Regular Size Cake",
+       "per": "cake",
+       "cost": 80,
+       "selling": 120,
+       "notes": "Kos: hub cost (not in R&D)",
+       "includes": "For birthday celebration or candlelight dinner",
+       "price_lines": [
+        "RM120/cake"
+       ],
+       "catalogs": {
+        "semporna-basic": 10,
+        "semporna-standard": 10
+       }
+      },
+      {
+       "id": "sem-k011",
+       "category": "Additional Activities",
+       "label": "Candlelight Dinner",
+       "per": "pax",
+       "cost": 250,
+       "selling": 280,
+       "notes": "Kos: RAW DATA candle light dinner RM250/pax",
+       "includes": "Meals + table decoration",
+       "price_lines": [
+        "RM280/pax"
+       ],
+       "catalogs": {
+        "semporna-standard": 8
+       }
+      }
+     ],
+     "label": "Semporna › addons"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "historyFrom"
+     ],
+     "from": null,
+     "to": 107,
+     "label": "Semporna › historyFrom"
+    },
+    {
+     "path": [
+      "destinations",
+      "SEM",
+      "contracts"
+     ],
+     "from": null,
+     "to": [
+      {
+       "id": "b3e8d5c1a26",
+       "name": "SEMPORNA COSTING RATE RND.pdf",
+       "file": "contracts/sem/b3e8d5c1a26-SEMPORNA_COSTING_RATE_RND.pdf",
+       "to": "Legend",
+       "note": "PT SEMPORNA R&D tabs COSTING SEM + RAW DATA (PO ezie 15 Oct 2026)",
+       "size": 291844,
+       "at": "2026-10-15T03:00:00Z",
+       "by": "ezie"
+      }
+     ],
+     "label": "Semporna › TO Contract Rate"
+    }
+   ]
   }
  ]
 }

@@ -540,6 +540,16 @@
    "fix": "Set the low-end prices above cost and a margin on the day-tour transport.",
    "by": "ezie",
    "at": "2026-10-15"
+  },
+  {
+   "code": "SEM",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Semporna: R&D cost basis to confirm (2023 sheet, hotels, upgrades, child)",
+   "detail": "Costs now follow PT SEMPORNA R&D 'COSTING SEM' (PO: latest calculation; workbook named 2023). The sheet does not name the hotels behind 'Accomm' (2 pax RM1,080 / 3+ pax RM640 per pax); the catalog default is Lato-Lato + Wingtat. Upgrade TOs use RAW resort rate − Nusakuya (Maglami +70, Danglai +300, Royal +450) against catalog +150 / 450 / 600; versus Lato-Lato (fan RM220) the catalog upgrades would be at or below cost. 3★ water chalets (Sipadan Kapalai, SWV) and the honeymoon packages are not costed. Child cost kept CWB 85 % / CNB 65 % (RAW: water chalet child 50 %, island hopping kids RM90).",
+   "fix": "Confirm the default hotels and current rates with the operator; cost the 3★ upgrades and child rates.",
+   "by": "ezie",
+   "at": "2026-10-15"
   }
  ]
 }

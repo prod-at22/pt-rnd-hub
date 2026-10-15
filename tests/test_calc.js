@@ -174,7 +174,7 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     for (const d of D.destinations) { const m = names[d.code]; if (!m) continue;
       for (const p of d.packages) { ok(p.label === m.packages[p.id], `${d.code} package ${p.id} named "${p.label}"`); n++; }
       for (const v of d.variants) { ok(v.label === m.variants[v.id], `${d.code} TO ${v.id} named "${v.label}"`); n++; } }
-    ok(n >= 185, "names checked: " + n);
+    ok(n >= 180, "names checked: " + n);
     ok(!byCode(D, "TUR").packages.some(p => /mytrip/i.test(p.label)) && byCode(D, "TUR").variants.every(v => v.label === "MyTrip"), "Turki: no operator in package names; TO = MyTrip");
   }
 
