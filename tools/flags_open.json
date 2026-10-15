@@ -550,6 +550,26 @@
    "fix": "Confirm the default hotels and current rates with the operator; cost the 3★ upgrades and child rates.",
    "by": "ezie",
    "at": "2026-10-15"
+  },
+  {
+   "code": "SUBB",
+   "severity": "medium",
+   "area": "Cost",
+   "title": "Surabaya: cost gaps in the Pak Jamal CR (S-M, 11–15 pax, child, single / peak / 4★)",
+   "detail": "Surabaya–Malang has no CR rate: the 'PAKEJ SURABAYA' (Bromo hotels) rate is used as a proxy; Jatim Park 2 IDR140k is from the R&D asal (not in the CR). Bromo 11–15 pax have no CR rate (held at the 6–10 rate RM650; R&D asal had RM600 without source). No child rate (CWB 100 % / CNB − RM150 kept). No cost for single supplement RM500, peak RM130 / RM180 per night, 4★ upgrade RM240 (catalog table: Add RM85/night = RM255). CR also has an unnamed 6D5N table and a Tumpak Sewu–Bromo–Malang 4D3N / 5D4N hotel + car package (no catalog). The catalog PDF v2 said 'valid until 31st January 2027 travel period' (not printed; CR ends Dec 2026).",
+   "fix": "Ask Pak Jamal for a Surabaya–Malang rate, 11–15 pax, child, single, peak and 4★ rates, and the 2027 CR.",
+   "by": "ezie",
+   "at": "2026-10-15"
+  },
+  {
+   "code": "SUBB",
+   "severity": "low",
+   "area": "Add-ons",
+   "title": "Surabaya: add-ons without CR cost; KB transport rate card at / below cost",
+   "detail": "No CR cost: Tumpak Sewu day trip (only ticket IDR150k ≈ RM34; transport, Goa Tetes / Kapas Biru missing), ATV Semeru, Panorama Kapas Biru (in the Lava Tour), Pony ride, 4★ upgrade. Ijen RM88 / Semeru RM137 are 2-pax costs (Semeru RM68 at 4 pax); transport to Ijen is not in the CR. KB Simple Customisation transport 'Tambah' = old cost list (no margin): Avanza 1 day RM300 < CR RM335; Hiace 1 day RM900 vs CR RM500 (typo?). Not in the hub: photographer + drone Bromo / Tumpak Sewu IDR1.6m, strawberry picking IDR35k.",
+   "fix": "Get the missing rates from Pak Jamal; set KB transport prices with a margin over the CR.",
+   "by": "ezie",
+   "at": "2026-10-15"
   }
  ]
 }

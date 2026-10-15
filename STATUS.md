@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v107 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v107, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v108 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v108, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -300,10 +300,20 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Std 1,102, 1 pax 1,412 / 1,802 (old 'Legend' costs had no CR); 8 packages → 2 catalog packages, water-chalet upgrades as alternative TOs (catalog +150 / 450 / 600, cost RAW − Nusakuya
   +70 / 300 / 450); 3★ and honeymoon packages removed; Costing 1–10; add-ons costed per R&D. Margins Basic 18.8–27.2 %, Std 21.1 % (= R&D). tests names threshold ≥180. Open (flag): 2023
   workbook / unnamed hotels behind 'Accomm', upgrades vs Lato-Lato at / below cost, 3★ and honeymoon not costed, child CWB 85 % / CNB 65 % (RAW child 50 %).
+  **Surabaya - Bromo - Malang (v108, PO ezie 15 Oct; sources = Pak Jamal CRs in contracts/subb: 'PAKEJ SURABAYA' hotel + transport (same PDF as JOG) + 'Contract Rate Pak Jamal.pdf'
+  2026 from R&D SURABAYA BROMO MALANG (entrance IDR, Jeep Bromo IDR1m / max 5, transport only RM/day); R&D read with PO OK):** the hub cost was the PT_SUBB_RD_reformatted 'CR' tab formula
+  (hotel RM50/night, meals RM20×6 although L&D are excluded, jeep RM300 — no source) → Bromo = CR package 830 / 780 / 730 / 650 (2 / 3 / 4–5 / 6–10) + ceil(pax/5) × jeep + entrance
+  Bromo / Santerra / apple / Coban IDR435k, IDR × live FX (2 pax RM1,210 → 1,044); 11–15 held at the 6–10 rate (no CR, flag); Surabaya–Malang has no CR → package rate as proxy + entrance
+  incl. Museum Angkut + Jatim Park 2 IDR140k (R&D asal) (flag); tipping RM0 (= Jogja); nights 3; Costing Bromo 2–15 / S-M 2–10 (= catalogs). Margins adult Bromo 18.6–31.0 %, S-M 26.1–31.7 %;
+  CWB / CNB no longer below cost (CNB 7–15 pax 4.6–7.5 %, child CWB 100 % / CNB −RM150 kept). Add-ons: duplicates a01–a07 removed; guide Tumpak Sewu RM57, Ijen RM88 / Semeru RM137 (2-pax
+  costs) from the CR; one hotel 'Aston Inn Batu'. Catalogs: expired peak windows removed (20 Dec 2026 – 5 Jan 2027 kept), note 'Upgrade to 4 Star Hotel +RM240/person' (source PDF banner;
+  table still Add RM85/night), typos, S-M code SUBB, kb_url / PO. KB: 2027 'no surcharge' texts removed, peak windows = catalog, Hiace 5–12 / 2× Hiace 13–15, FAQ flight / IDR / 16+ pax.
+  Not changed (PO left open): Day 1 'Hotel or Homestay', 'valid until 31 Jan 2027' note (CR ends Dec 2026). Open (flags_open): S-M / 11–15 / child / single / peak / 4★ rates, add-ons
+  without cost, KB transport rate card at / below cost (Avanza 1 day RM300 < CR 335; Hiace RM900 vs CR 500).
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
-- **Live FX not used by 3 destinations** (costs stored in MYR): JOG, MLE, SWS (PER v105, PHU v106 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
+- **Live FX not used by 3 destinations** (costs stored in MYR): JOG, MLE, SWS (PER v105, PHU v106, SUBB v108 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).
-- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya was mentioned by the PO).
+- **Next:** ask the PO which destination to verify next (Osaka done v102; Tokyo-Osaka KIX shares the Japan rates and still uses Ucop 0.0259 — check next; Melbourne done v94; Perth / New Zealand share the PO Acap and AUD/NZD FX work; Tokyo v90 with two items flagged on hold; Lombok v91; Maldives v92; Lake Toba v93; Surabaya v108).
 - **Method notes (13–14 Oct):** tools/vdiff.js = the changes list (app.js diff / describe in jsdom, reverse-checked, null = absent; keep catalog and KB BEFORE copies in
   separate base/cat and base/kb dirs — same slug names collide, e.g. jakarta-bandung); tools/textdiff.py = live-text diff of rebuilt HTML / PDF vs snapshot (PDFs built on a
   Mac show ligature differences, the CI build does not). Write data / KB files only after every text assertion passed. zsh does not split "$VAR" lists — pass slugs

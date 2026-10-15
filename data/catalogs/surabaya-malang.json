@@ -2,7 +2,7 @@
   "slug": "surabaya-malang",
   "destination": "Surabaya-Malang",
   "country": "Indonesia",
-  "code": "SUBM",
+  "code": "SUBB",
   "tier": "Standard",
   "tier_code": "STD",
   "title": "PRIVATE TOUR SURABAYA - MALANG",
@@ -11,9 +11,9 @@
   "basis": "Ground + Tipping",
   "valid_until": "31 December 2026",
   "version": "v2",
-  "updated": "2026-03-01",
-  "kb_url": "https://prod-at22.github.io/arba-surabaya-bromo-malang-kb/",
-  "po": "Ezie",
+  "updated": "2026-10-15",
+  "kb_url": "https://prod-at22.github.io/pt-kb-house/surabaya-bromo-malang/",
+  "po": "Aiman",
   "ops": "CIK IWAN",
   "source_pdf": "Indonesia/Surabaya-Bromo-Malang/Catalog/PT SURABAYA-MALANG 4D3N v2.pdf",
   "highlights": [
@@ -69,7 +69,7 @@
         "3 Nights Accommodation (3 Star Hotel)",
         "Private Transportation",
         "Entrance Fees as per itinerary",
-        "International Breakfast at Accomodation",
+        "International Breakfast at Accommodation",
         "Tipping Fee, Parking Fee",
         "Airport Transfer",
         "Private Driver cum Guide"
@@ -91,12 +91,13 @@
       },
       {
         "label": "Peak Season Surcharge",
-        "period": "21-31 Dec 2025, 1-5 Jan 2026 · 15-30 Mar 2026, 25 May - 5 Jun 2026 · 20 Dec 2026 - 5 Jan 2027"
+        "period": "20 Dec 2026 - 5 Jan 2027"
       }
     ],
     "notes": [
       "Proper bed for triple sharing / Family room only available at 4 star Hotel subject to availability.",
-      "Extra bed available for 3 Star Hotel."
+      "Extra bed available for 3 Star Hotel.",
+      "Upgrade to 4 Star Hotel (all 3 nights): additional RM240 per person."
     ]
   },
   "itinerary": [
@@ -149,7 +150,7 @@
     },
     {
       "day": 4,
-      "title": "Depature To Kul",
+      "title": "Departure to KUL",
       "activities": [
         "Check-out Hotel",
         "Transfer to Airport",
@@ -217,5 +218,5 @@
     }
   ],
   "addon_groups": [],
-  "hub_version": 30
+  "hub_version": 108
 }

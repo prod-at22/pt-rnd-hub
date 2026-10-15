@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 107,
- "updatedAt": "2026-10-15T03:00:00Z",
+ "version": 108,
+ "updatedAt": "2026-10-15T09:00:00Z",
  "updatedBy": "ezie",
  "settings": {
   "marginWarnPct": 0.15,
@@ -19107,157 +19107,167 @@
    "name": "Surabaya - Bromo - Malang",
    "country": "Indonesia",
    "duration": "4D3N",
-   "nights": 0,
+   "nights": 3,
    "po": "Aiman",
    "source": "hub",
-   "note": "",
+   "note": "Cost = Pak Jamal CR 2026 (TO Contract Rate): 'PAKEJ SURABAYA' 4D3N hotel 3★ + transport RM830 / 780 / 730 / 650 (2 / 3 / 4–5 / 6–10 pax) + Jeep Bromo IDR1,000,000 per jeep (max 5) + entrance IDR (Bromo 250k, Santerra 75k, apple 35k, Coban Rondo 75k), IDR × live FX. Bromo 11–15 pax held at the 6–10 rate (no CR, flag). Surabaya–Malang has no CR: same package rate as a proxy + Santerra / apple / Coban / Museum Angkut (CR) + Jatim Park 2 IDR140k (R&D asal). Tipping RM0 (CR: driver fee included; = Jogja). Costing: Bromo 2–15, Surabaya–Malang 2–10 (= catalogs). Child CWB 100 % / CNB − RM150 kept (no CR child rate).",
    "fx": [
     {
      "id": "MYR",
      "label": "MYR",
      "value": 1,
      "locked": true
+    },
+    {
+     "id": "IDR",
+     "label": "IDR → MYR",
+     "value": 0.000228462,
+     "locked": true,
+     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.0002273265 (tetap)",
+     "live": "IDR"
     }
    ],
-   "rates": [],
-   "tables": [
+   "rates": [
     {
-     "id": "Pak-Jamal-S-B-M__Ground-Cost",
-     "label": "Pak Jamal S-B-M · Ground Cost",
-     "unit": "MYR/pax",
+     "id": "to2",
+     "label": "Pakej Surabaya 4D3N hotel + transport, 2 pax",
+     "value": 830,
      "fx": "MYR",
-     "group": "Pak Jamal S-B-M",
-     "values": {
-      "2": 1210,
-      "3": 937,
-      "4": 800,
-      "5": 850,
-      "6": 823,
-      "7": 761,
-      "8": 715,
-      "9": 679,
-      "10": 650,
-      "11": 654,
-      "12": 632,
-      "13": 767,
-      "14": 740,
-      "15": 717
-     }
+     "unit": "RM/pax",
+     "group": "1. Pak Jamal CR 2026 — hotel 3★ + transport"
     },
     {
-     "id": "Pak-Jamal-S-B-M__Tipping",
-     "label": "Pak Jamal S-B-M · Tipping",
-     "unit": "MYR/pax",
+     "id": "to3",
+     "label": "Pakej Surabaya 4D3N hotel + transport, 3 pax",
+     "value": 780,
      "fx": "MYR",
-     "group": "Pak Jamal S-B-M",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0
-     }
+     "unit": "RM/pax",
+     "group": "1. Pak Jamal CR 2026 — hotel 3★ + transport"
     },
     {
-     "id": "Pak-Jamal-S-M__Ground-Cost",
-     "label": "Pak Jamal S-M · Ground Cost",
-     "unit": "MYR/pax",
+     "id": "to4",
+     "label": "Pakej Surabaya 4D3N hotel + transport, 4–5 pax",
+     "value": 730,
      "fx": "MYR",
-     "group": "Pak Jamal S-M",
-     "values": {
-      "2": 931,
-      "3": 881,
-      "4": 821,
-      "5": 770,
-      "6": 770,
-      "7": 740,
-      "8": 740,
-      "9": 740,
-      "10": 730,
-      "11": 730,
-      "12": 730,
-      "13": 730,
-      "14": 730,
-      "15": 730
-     }
+     "unit": "RM/pax",
+     "group": "1. Pak Jamal CR 2026 — hotel 3★ + transport"
     },
     {
-     "id": "Pak-Jamal-S-M__Tipping",
-     "label": "Pak Jamal S-M · Tipping",
-     "unit": "MYR/pax",
+     "id": "to6",
+     "label": "Pakej Surabaya 4D3N hotel + transport, 6–10 pax (11–15 held at this rate, no CR)",
+     "value": 650,
      "fx": "MYR",
-     "group": "Pak Jamal S-M",
-     "values": {
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0
-     }
+     "unit": "RM/pax",
+     "group": "1. Pak Jamal CR 2026 — hotel 3★ + transport"
+    },
+    {
+     "id": "jeep",
+     "label": "Jeep Bromo per jeep (max 5 pax)",
+     "value": 1000000,
+     "fx": "IDR",
+     "unit": "IDR/jeep",
+     "group": "2. Bromo (CR 2026)"
+    },
+    {
+     "id": "tkBromo",
+     "label": "Ticket Bromo",
+     "value": 250000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "2. Bromo (CR 2026)"
+    },
+    {
+     "id": "tkSanterra",
+     "label": "Ticket Santerra De Laponte",
+     "value": 75000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "3. Entrance (CR 2026)"
+    },
+    {
+     "id": "tkApel",
+     "label": "Petik apel (apple picking)",
+     "value": 35000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "3. Entrance (CR 2026)"
+    },
+    {
+     "id": "tkCoban",
+     "label": "Ticket Coban Rondo",
+     "value": 75000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "3. Entrance (CR 2026)"
+    },
+    {
+     "id": "tkAngkut",
+     "label": "Ticket Museum Angkut",
+     "value": 110000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "3. Entrance (CR 2026)"
+    },
+    {
+     "id": "tkJatim2",
+     "label": "Ticket Jatim Park 2 (R&D asal — not in the CR)",
+     "value": 140000,
+     "fx": "IDR",
+     "unit": "IDR/pax",
+     "group": "3. Entrance (CR 2026)"
     }
    ],
+   "tables": [],
    "variants": [
     {
      "id": "Pak-Jamal-S-B-M",
      "label": "Pak Jamal",
-     "supplier": "TO Pak Jamal S-B-M — Surabaya-Bromo-Malang 4D3N (Bromo sunrise + Santera + Coban",
+     "supplier": "Pak Jamal (PT Azzahra Tour & Travel) — Surabaya-Bromo-Malang 4D3N, CR 2026",
      "paxMin": 2,
      "paxMax": 15,
-     "hotel": "3-Star (Lava View Lodge BR / Aston Inn MLG / The Alana SUB) · Avanza",
-     "notes": "",
+     "hotel": "3★ Lava View Lodge (Bromo) / Aston Inn Batu (Malang) / The Alana (Surabaya) · Avanza / Luxio 2–4, Hiace 5+ · Jeep Bromo",
+     "notes": "Cost TO = CR 'PAKEJ SURABAYA' 4D3N per pax (11–15 = 6–10 rate, no CR) + Jeep Bromo per jeep (max 5) + entrance Bromo / Santerra / apple / Coban, IDR × live FX.",
      "components": [
       {
-       "key": "ground-cost",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['Pak-Jamal-S-B-M__Ground-Cost']"
+       "key": "cost-to",
+       "label": "Cost TO (hotel + transport)",
+       "per": "group",
+       "expr": "band(pax,[2,R.to2],[3,R.to3],[5,R.to4],[15,R.to6])*pax"
       },
       {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['Pak-Jamal-S-B-M__Tipping']"
+       "key": "jeep",
+       "label": "Jeep Bromo",
+       "per": "group",
+       "expr": "ceil(pax/5)*R.jeep"
+      },
+      {
+       "key": "entrance",
+       "label": "Entrance",
+       "per": "group",
+       "expr": "(R.tkBromo+R.tkSanterra+R.tkApel+R.tkCoban)*pax"
       }
      ]
     },
     {
      "id": "Pak-Jamal-S-M",
      "label": "Pak Jamal",
-     "supplier": "TO Pak Jamal S-M — Surabaya-Malang 4D3N (Jatim Park 2 focus · NOT in current cat",
+     "supplier": "Pak Jamal (PT Azzahra Tour & Travel) — Surabaya-Malang 4D3N (no CR: Bromo package rate as proxy)",
      "paxMin": 2,
-     "paxMax": 15,
-     "hotel": "3-Star (Aston Inn Malang / The Alana Surabaya) · alternative Jatim Park focus",
-     "notes": "",
+     "paxMax": 10,
+     "hotel": "3★ Aston Inn Batu (Malang) / The Alana (Surabaya) · Avanza / Luxio 2–4, Hiace 5+",
+     "notes": "No CR for Surabaya–Malang: Cost TO = CR 'PAKEJ SURABAYA' rate as a proxy (flag) + entrance Santerra / apple / Coban / Museum Angkut (CR) + Jatim Park 2 (R&D asal), IDR × live FX.",
      "components": [
       {
-       "key": "ground-cost",
-       "label": "Ground Cost",
-       "per": "pax",
-       "expr": "T['Pak-Jamal-S-M__Ground-Cost']"
+       "key": "cost-to",
+       "label": "Cost TO (hotel + transport, proxy)",
+       "per": "group",
+       "expr": "band(pax,[2,R.to2],[3,R.to3],[5,R.to4],[10,R.to6])*pax"
       },
       {
-       "key": "tipping",
-       "label": "Tipping",
-       "per": "pax",
-       "expr": "T['Pak-Jamal-S-M__Tipping']"
+       "key": "entrance",
+       "label": "Entrance",
+       "per": "group",
+       "expr": "(R.tkSanterra+R.tkApel+R.tkCoban+R.tkAngkut+R.tkJatim2)*pax"
       }
      ]
     }
@@ -19349,7 +19359,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 15,
+       "to": 10,
        "variant": "Pak-Jamal-S-M"
       }
      ],
@@ -19363,12 +19373,7 @@
        "7": 1297,
        "8": 1257,
        "9": 1257,
-       "10": 1257,
-       "11": 1257,
-       "12": 1257,
-       "13": 1257,
-       "14": 1257,
-       "15": 1257
+       "10": 1257
       },
       "cwb": {
        "2": 1257,
@@ -19379,12 +19384,7 @@
        "7": 1097,
        "8": 1057,
        "9": 1057,
-       "10": 1057,
-       "11": 1057,
-       "12": 1057,
-       "13": 1057,
-       "14": 1057,
-       "15": 1057
+       "10": 1057
       },
       "cnb": {
        "2": 1057,
@@ -19395,12 +19395,7 @@
        "7": 897,
        "8": 857,
        "9": 857,
-       "10": 857,
-       "11": 857,
-       "12": 857,
-       "13": 857,
-       "14": 857,
-       "15": 857
+       "10": 857
       },
       "infant": 0
      },
@@ -19424,76 +19419,13 @@
    ],
    "addons": [
     {
-     "id": "subb-a01",
-     "category": "Tour",
-     "label": "Water Fall Tumpak Sewu + Goa Tetes + Kapas Biru",
-     "cost": null,
-     "selling": 160.0,
-     "per": "pax",
-     "notes": "Includes transport to Tumpak Sewu"
-    },
-    {
-     "id": "subb-a02",
-     "category": "Tour",
-     "label": "Local Guide Tumpak Sewu",
-     "cost": null,
-     "selling": 150.0,
-     "per": "guide",
-     "notes": "1 guide for 1-5 pax"
-    },
-    {
-     "id": "subb-a03",
-     "category": "Tour",
-     "label": "Kawah Ijen Tour",
-     "cost": null,
-     "selling": 150.0,
-     "per": "pax",
-     "notes": "Includes local guide + mask"
-    },
-    {
-     "id": "subb-a04",
-     "category": "Tour",
-     "label": "Semeru Lava Tour",
-     "cost": null,
-     "selling": 150.0,
-     "per": "pax",
-     "notes": "Includes entrance fee + photo/video documentation"
-    },
-    {
-     "id": "subb-a05",
-     "category": "Activity",
-     "label": "ATV Semeru Rental (1 hour)",
-     "cost": null,
-     "selling": 120.0,
-     "per": "pax",
-     "notes": "1 ATV max 2 pax"
-    },
-    {
-     "id": "subb-a06",
-     "category": "Activity",
-     "label": "Panorama Kapas Biru",
-     "cost": null,
-     "selling": 10.0,
-     "per": "pax",
-     "notes": "Entrance fee only"
-    },
-    {
-     "id": "subb-a07",
-     "category": "Activity",
-     "label": "Horse/Pony Ride Kawah Bromo",
-     "cost": null,
-     "selling": 120.0,
-     "per": "pax",
-     "notes": "Return trip to/from Kawah Bromo (optional)"
-    },
-    {
      "id": "subb-a08",
      "category": "Hotel",
      "label": "4-Star Upgrade (3N total)",
      "cost": null,
      "selling": 240.0,
      "per": "pax",
-     "notes": "Per PDF — proper triple bed in 4-star"
+     "notes": "Catalog note 'Upgrade to 4 Star Hotel +RM240/person' (3 nights; table Add RM85/pax/night); cost unknown (flag)"
     },
     {
      "id": "subb-k001",
@@ -19502,7 +19434,7 @@
      "per": "",
      "cost": null,
      "selling": null,
-     "notes": null,
+     "notes": "CR 2026: ticket Tumpak Sewu IDR150k ≈ RM34 only; transport, Goa Tetes / Kapas Biru not in the CR (flag)",
      "includes": "Price included transport to Tumpak Sewu",
      "price_lines": [
       "RM160 / pax"
@@ -19516,9 +19448,9 @@
      "category": "Additional Activities",
      "label": "Local Guide to Tumpak Sewu",
      "per": "",
-     "cost": null,
+     "cost": 57.0,
      "selling": null,
-     "notes": null,
+     "notes": "CR 2026: guide lokal Tumpak Sewu IDR250,000 per guide (1–5 pax) ≈ RM57",
      "includes": "Price for 1 guide for 1-5pax",
      "price_lines": [
       "RM150 / guide"
@@ -19532,9 +19464,9 @@
      "category": "Additional Activities",
      "label": "Kawah Ijen Tour",
      "per": "",
-     "cost": null,
+     "cost": 88.0,
      "selling": null,
-     "notes": null,
+     "notes": "CR 2026 at 2 pax: ticket IDR150k + guide IDR250k ÷ 2 + mask/headlamp/surat sehat IDR110k ≈ RM88/pax; transport to Ijen not in the CR (flag)",
      "includes": "Price included with local guide & Masker",
      "price_lines": [
       "RM150 / pax"
@@ -19548,9 +19480,9 @@
      "category": "Additional Activities",
      "label": "Semeru Lava Tour",
      "per": "",
-     "cost": null,
+     "cost": 137.0,
      "selling": null,
-     "notes": null,
+     "notes": "CR 2026: Lava Tour Semeru IDR1,200,000 per jeep (max 4, incl. photo/video + Panorama Kapas Biru) ≈ RM137/pax at 2 pax, RM68 at 4",
      "includes": "Price included with Entrance Fee & Documentation Video/Photo",
      "price_lines": [
       "RM150 / pax"
@@ -19638,7 +19570,7 @@
     {
      "id": "subb-h02",
      "type": "3 Star Hotel",
-     "name": "Malang: Aston Batu Inn",
+     "name": "Malang: Aston Inn Batu",
      "catalogs": {
       "surabaya-bromo-malang": {
        "sur": 2,
@@ -19646,8 +19578,16 @@
         "-",
         "RM130/pax/night"
        ]
+      },
+      "surabaya-malang": {
+       "sur": 2,
+       "amounts": [
+        "-",
+        "RM130/pax/night"
+       ]
       }
-     }
+     },
+     "roomNote": "Extra bed untuk triple"
     },
     {
      "id": "subb-h03",
@@ -19721,21 +19661,6 @@
       }
      },
      "roomNote": "Proper triple bed tersedia"
-    },
-    {
-     "id": "subb-h07",
-     "type": "3 Star Hotel",
-     "name": "Malang: Aston Inn Batu",
-     "catalogs": {
-      "surabaya-malang": {
-       "sur": 2,
-       "amounts": [
-        "-",
-        "RM130/pax/night"
-       ]
-      }
-     },
-     "roomNote": "Extra bed untuk triple"
     }
    ],
    "competitors": {
@@ -19857,7 +19782,30 @@
      "at": "2026-10-14T11:14:43Z",
      "by": "claude (web research)"
     }
-   }
+   },
+   "contracts": [
+    {
+     "id": "5b1a0c3e7d2",
+     "name": "CR Jogja Pak Jamal.pdf",
+     "file": "contracts/subb/5b1a0c3e7d2-CR_Jogja_Pak_Jamal.pdf",
+     "to": "Pak Jamal",
+     "note": "Pak Jamal CR (same file as JOG): 'PAKEJ SURABAYA' Lava View Lodge Bromo / Aston Inn Batu / The Alana + transport, 3D2N / 4D3N / 5D4N RM per pax (2 / 3 / 4–5 / 6–10)",
+     "size": 76532,
+     "at": "2026-10-15T09:00:00Z",
+     "by": "ezie"
+    },
+    {
+     "id": "5b1a0c3e7d3",
+     "name": "Contract Rate Pak Jamal.pdf",
+     "file": "contracts/subb/5b1a0c3e7d3-Contract_Rate_Pak_Jamal.pdf",
+     "to": "Pak Jamal",
+     "note": "Pak Jamal CR 2026 (R&D SURABAYA BROMO MALANG): entrance tickets IDR, Jeep Bromo IDR1m (max 5), transport only RM/day (Avanza / Luxio 335, Hiace 500), Tumpak Sewu–Bromo–Malang hotel + car; valid until Dec 2026",
+     "size": 123218,
+     "at": "2026-10-15T09:00:00Z",
+     "by": "ezie"
+    }
+   ],
+   "historyFrom": 108
   },
   {
    "code": "DLMNHCM",
