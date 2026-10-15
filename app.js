@@ -1390,7 +1390,7 @@ function cmpGrid(d, pkg, cols, pax, adult) {
   }).join("");
   const rows = CMP_CATS.map(([l, keys]) => `<div class="cg-cat">${esc(l)}</div>${cols.map(col => `<div class="cg-cell${col.arba ? " arba" : ""}">${cell(col, keys)}</div>`).join("")}`).join("");
   const legend = `<div class="cmp-legend">Price %: <span class="cmp-gap dn">red</span> competitor cheaper · <span class="cmp-gap up">green</span> ARBA cheaper — vs ARBA Selling Price. Hover a competitor's item for ARBA's value.</div>`;
-  return legend + `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:130px repeat(${cols.length}, 200px)"><div></div>${head}${rows}</div></div>`;
+  return legend + `<div class="scroll"><div class="cmp-grid" style="grid-template-columns:minmax(130px,170px) repeat(${cols.length}, minmax(200px,1fr))"><div></div>${head}${rows}</div></div>`;
 }
 // Simple view: the package picked in the Package box + its competitors; prices first, then what is included.
 function competitorTab(d) {
