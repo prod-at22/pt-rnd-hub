@@ -405,3 +405,15 @@ select.ed.kbed{border:1px solid var(--edit-line);background:var(--edit);border-r
 .kb input.ed.txt.kbed{font-family:inherit;font-size:13px}
 .kb-fs legend .btn.x{vertical-align:middle;margin-left:4px}
 @media (max-width:640px){.cd-rows3,.cd-rows4,.cd-rows-dep{grid-template-columns:minmax(0,1fr)}.cd-rows .btn.x{justify-self:end;margin:-2px 0 8px}.cd-cards,.cd-cards-wide{grid-template-columns:minmax(0,1fr)}}
+/* Info KB: visual editor for HTML text (no code shown) */
+.wys{border:1px solid var(--edit-line);border-radius:8px;background:#fff;overflow:hidden}
+.wys-bar{display:flex;align-items:center;gap:6px;padding:5px 8px;border-bottom:1px solid var(--edit-line);background:var(--edit)}
+.wys-bar .btn{padding:2px 9px;font-size:12px}
+.wys-bar .muted{margin-left:auto}
+.wys-ed{min-height:60px;max-height:520px;overflow:auto;outline:none;font-size:13px;line-height:1.5;padding:10px 14px}
+.wys-ed:focus{box-shadow:inset 0 0 0 2px var(--edit-line)}
+.wys-ed details>summary{cursor:text}
+.wys-keep{display:inline-block;padding:1px 8px;margin:2px;border-radius:999px;background:#eef1f5;color:var(--muted);font-size:11px;user-select:none}
+.kb-html .rtag{display:inline-block}
+.kb-html{--green:#c8172b;--greend:#a01223;--greensoft:#fdebed}
+.wys-ed summary{list-style:none}.wys-ed summary::-webkit-details-marker{display:none}

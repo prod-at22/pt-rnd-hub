@@ -761,6 +761,23 @@ const tab = async (w, doc, name) => { click(w, doc.querySelector(`[data-tabmain=
     const mp = JSON.stringify(["jepun", "content", "attractions", 0, "muslim"]), mi = [...doc.querySelectorAll(".kbed")].find(x => x.dataset.kpath === mp);
     ok(mi, "Edit costs: attraction Muslim-friendly text is editable");
     mi.value = "Surau di stesen (diuji)"; fire(w, mi, "change"); await tick(10);
+    {   // HTML blocks: visual editor, no code shown (PO 15 Oct 2026)
+      ok(![...doc.querySelectorAll("#kb-blocks textarea")].some(x => /<[a-z]/i.test(x.value)), "Info KB Edit: no HTML code shown in tab blocks");
+      const fp = JSON.stringify(["jepun", "content", "blocks", "freegift"]), fe = [...doc.querySelectorAll(".wys-ed")].find(x => x.dataset.wpath === fp);
+      ok(fe && /Shibuya Sky/.test(fe.textContent) && !/<span/.test(fe.textContent), "Free Gift block shown as formatted text");
+      const before = kb0.content.blocks.freegift;
+      fe.focus(); fe.querySelector("strong").textContent = "Tokyo (diuji):"; fire(w, fe, "input"); fe.dispatchEvent(new w.FocusEvent("focusout", { bubbles: true })); await tick(10);
+      const after = w.PTCALC.KBEDIT().jepun.content.blocks.freegift;
+      ok(after.includes("Tokyo (diuji):") && after.includes("Kod: FHND8") && (after.match(/rtag/g) || []).length === (before.match(/rtag/g) || []).length && /<details[^>]*\bopen\b/.test(after), "edit saved back as HTML, tags / styles kept");
+      ok(/data-text="[^"]*tokyo \(diuji\)/.test(after), "KB search text (data-text) follows the edit");
+      const yfood = JSON.parse(repo.files(repo.head)["data/kb/yunnan.json"]).content.blocks.food, box = doc.createElement("div"); box.innerHTML = w.PTCALC.wysIn(yfood);
+      ok(!box.querySelector("img") && box.querySelectorAll(".wys-keep").length === (yfood.match(/<img\b/g) || []).length, "images shown as locked chips");
+      const back = w.PTCALC.wysOut(box), imgs = s => (s.match(/<img\b[^>]*>/g) || []);
+      ok(JSON.stringify(imgs(back)) === JSON.stringify(imgs(yfood)) && box.textContent.length && back.replace(/\s+/g, "").length > 0.9 * yfood.replace(/\s+/g, "").length, "images put back byte-identical on save");
+      const eq = [...doc.querySelectorAll(".kbed")].find(x => x.dataset.kkind === "lines-ent");
+      ok(!eq || !/&amp;/.test(eq.value), "entities shown as plain text (& not &amp;)");
+      w.PTCALC.KBEDIT().jepun.content.blocks.freegift = before; w.PTCALC.render(); await tick(10);
+    }
     await tab(w, doc, "kbcalc"); await until(() => doc.querySelector("#kb-calc-edit textarea"));
     {
       const sel = doc.querySelector("#rndCard select.rnd-ao");

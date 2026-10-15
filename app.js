@@ -1045,18 +1045,38 @@ function kbFill(t, links) {   // {{dari:N}} {{2pax:N}} {{pasangan:N}} → price 
     return "RM" + v.toLocaleString("en-US", { maximumFractionDigits: 2 });
   });
 }
+// KB text kept as HTML (tab blocks, rich fields) is edited visually: a contenteditable copy of the rendered text.
+// Images, scripts and other non-text parts stay as locked chips and are put back unchanged on save.
+const WYS_KEEP = /<img\b[^>]*>|<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>|<iframe\b[\s\S]*?<\/iframe>/gi;
+function wysIn(html) {
+  return String(html || "").replace(WYS_KEEP, m => `<span class="wys-keep" contenteditable="false" data-keep="${esc(encodeURIComponent(m))}">${/^<img/i.test(m) ? "🖼 gambar" : "⚙ kod"}</span>`)
+    .replace(/<details\b(?![^>]*\bopen\b)([^>]*)>/gi, '<details data-wys-closed="1" open$1>');
+}
+function wysOut(el) {
+  const c = el.cloneNode(true), keep = [];
+  c.querySelectorAll(".wys-keep").forEach(k => { keep.push(decodeURIComponent(k.dataset.keep)); k.replaceWith(document.createTextNode("\u0001" + (keep.length - 1) + "\u0001")); });
+  c.querySelectorAll("details[data-wys-closed]").forEach(d => { d.removeAttribute("open"); d.removeAttribute("data-wys-closed"); });
+  c.querySelectorAll("[data-text]").forEach(d => d.setAttribute("data-text", d.textContent.replace(/\s+/g, " ").trim().toLowerCase()));   // KB search index
+  return c.innerHTML.replace(/\u0001(\d+)\u0001/g, (m, i) => keep[+i]);
+}
+const hasEnt = v => typeof v === "string" && /&(#\d+|[a-z]+);/i.test(v);
+const deEnt = v => { const t = document.createElement("textarea"); t.innerHTML = v; return t.value; };
+const reEnt = v => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const isHtmlText = v => typeof v === "string" && /<(p|div|h[1-6]|table|ul|ol|li|b|strong|i|em|br|span|a|details|summary)\b/i.test(v);
 // Edit costs: a generic field editor over the KB file (strings, lists, nested items). Images are not edited here.
 function kbEditor(sl, path, v, key) {
   const kp = esc(JSON.stringify([sl, ...path])), lbl = key == null ? "" : esc(KBL[key] || String(key));
   if (v === null) return `<div class="kb-f muted small">${lbl} dari katalog (tab Itinerary)</div>`;
   if (isAsset(v) || key === "img" || key === "imgs") return `<div class="kb-f muted small">${lbl}: gambar (urus di pt-kb-house)</div>`;
+  if (isHtmlText(v)) return `<div class="kb-f wide">${lbl}<div class="wys"><div class="wys-bar"><button class="btn" data-wys="bold" title="Bold"><b>B</b></button><button class="btn" data-wys="italic" title="Italic"><i>I</i></button><button class="btn" data-wys="insertUnorderedList" title="Senarai">• Senarai</button><span class="muted small">taip terus pada teks · gambar &amp; reka bentuk kekal</span></div>
+    <div class="kb-html wys-ed" contenteditable="true" data-wpath="${kp}">${wysIn(v)}</div></div></div>`;
   if (typeof v === "string") {
-    const long = v.length > 90 || /[\n<]/.test(v);
-    return `<label class="kb-f${long ? " wide" : ""}">${lbl}${long ? `<textarea class="ed kbed" data-kpath="${kp}" rows="${Math.min(18, Math.max(2, Math.ceil(v.length / 110) + (v.match(/\n/g) || []).length))}">${esc(v)}</textarea>` : `<input class="ed txt kbed" data-kpath="${kp}" value="${esc(v)}">`}</label>`;
+    const long = v.length > 90 || /[\n<]/.test(v), ent = hasEnt(v) ? ' data-kkind="ent"' : "", sv = ent ? deEnt(v) : v;
+    return `<label class="kb-f${long ? " wide" : ""}">${lbl}${long ? `<textarea class="ed kbed" data-kpath="${kp}"${ent} rows="${Math.min(18, Math.max(2, Math.ceil(v.length / 110) + (v.match(/\n/g) || []).length))}">${esc(sv)}</textarea>` : `<input class="ed txt kbed" data-kpath="${kp}"${ent} value="${esc(sv)}">`}</label>`;
   }
   if (typeof v === "number") return `<label class="kb-f">${lbl}<input class="ed kbed" type="number" step="any" data-kpath="${kp}" data-kkind="num" value="${v}"></label>`;
   if (Array.isArray(v) && v.every(x => typeof x === "string"))
-    return `<label class="kb-f wide">${lbl} <span class="muted small">(satu baris satu item)</span><textarea class="ed kbed" data-kpath="${kp}" data-kkind="lines" rows="${Math.min(14, Math.max(2, v.length + 1))}">${esc(v.join("\n"))}</textarea></label>`;
+    return `<label class="kb-f wide">${lbl} <span class="muted small">(satu baris satu item)</span><textarea class="ed kbed" data-kpath="${kp}" data-kkind="${v.some(hasEnt) ? "lines-ent" : "lines"}" rows="${Math.min(14, Math.max(2, v.length + 1))}">${esc(v.map(x => hasEnt(x) ? deEnt(x) : x).join("\n"))}</textarea></label>`;
   if (Array.isArray(v) && v.every(x => Array.isArray(x) && x.every(y => typeof y === "string")))
     return `<label class="kb-f wide">${lbl} <span class="muted small">(satu baris satu item, lajur dipisah " | ")</span><textarea class="ed kbed" data-kpath="${kp}" data-kkind="pairs" rows="${Math.min(14, v.length + 1)}">${esc(v.map(x => x.join(" | ")).join("\n"))}</textarea></label>`;
   if (Array.isArray(v)) return `<fieldset class="kb-fs"><legend>${lbl} <span class="muted small">${v.length} item</span></legend>${v.map((x, i) => `<fieldset class="kb-fs"><legend>#${i + 1} ${esc(kbTxt((x && (x.n || x.name || x.t || x.tier || x.city)) || ""))} <button class="btn x" data-kact="del" data-kpath="${esc(JSON.stringify([sl, ...path, i]))}" title="Buang item ini" aria-label="Buang">×</button></legend>${kbEditor(sl, [...path, i], x, null)}</fieldset>`).join("")}
@@ -1080,7 +1100,7 @@ function kbInfoTab(d) {
     return head + ed("attr", "Attractions & Muslim-friendly", V.attractions) + (V.faq && typeof g(V.faq) === "string" ? card("faq", "FAQ / Important Notes", "markdown: # tajuk, - item, | jadual |", kbEditor(sl, V.faq, g(V.faq), null)) : "")
       + (V.packages ? card("pkg", "Kad pakej KB", "nama, pengenalan &amp; nota sahaja — harga, itinerary, termasuk / tidak termasuk dari tab Costing &amp; Itinerary. Harga dalam teks: {{dari:N}} · {{2pax:N}} · {{pasangan:N}} (N = pakej, mula 0)", kbEditor(sl, V.packages, g(V.packages), null)) : "")
       + (V.itin && (g(V.itin) || []).some(x => x) ? card("itin", "Itinerari pakej tanpa katalog", "pakej lain ikut tab Itinerary", (g(V.itin) || []).map((x, i) => x ? `<h3>${esc(names[i] || "#" + (i + 1))}</h3>` + kbEditor(sl, [...V.itin, i], x, null) : "").join("")) : "") + ed("acts", "Aktiviti", V.acts)
-      + card("blocks", "Tab KB (HTML)", "satu blok satu tab dalam KB", Object.entries(V.blocks).filter(([k]) => !KB_SKIP_BLOCK.has(k)).map(([k, p]) => `<h3>${esc(KB_BLOCK[k] || k)}${KB_FROM_HUB[k] ? ` <span class="muted small">— nota KB sahaja; ${KB_FROM_HUB[k]}</span>` : ""}</h3>${kbEditor(sl, p, g(p), null)}`).join(""))
+      + card("blocks", "Tab KB", "satu blok satu tab dalam KB · edit terus pada teks", Object.entries(V.blocks).filter(([k]) => !KB_SKIP_BLOCK.has(k)).map(([k, p]) => `<h3>${esc(KB_BLOCK[k] || k)}${KB_FROM_HUB[k] ? ` <span class="muted small">— nota KB sahaja; ${KB_FROM_HUB[k]}</span>` : ""}</h3>${kbEditor(sl, p, g(p), null)}`).join(""))
       + ed("mkt", "Marketing", V.marketing) + (V.meta ? card("meta", "Hero & halaman", "", kbEditor(sl, V.meta, Object.fromEntries(Object.entries(g(V.meta)).filter(([k]) => k !== "marketing")), null)) : "")
       + V.extra.map(p => ed("x-" + p[1], p[1], p)).join("");
   }
@@ -2573,11 +2593,25 @@ document.addEventListener("keydown", e => {
   if (e.key === "Enter" && $("#lp") && document.activeElement && ["lu", "lp"].includes(document.activeElement.id)) doLogin();
 });
 document.addEventListener("input", e => {
+  if (e.target.closest && e.target.closest(".wys-ed")) e.target.closest(".wys-ed").dataset.dirty = "1";
   if (e.target.id && /^q[NCT]_/.test(e.target.id)) qtCalc();
   if (e.target.id === "qPhone" && $("#qNoPhone")) { if (normPhone(e.target.value)) $("#qNoPhone").checked = false; mErr(""); }
   if (e.target.id === "hubSearch") { SEL.hubQ = e.target.value; filterHub(); }
   if (e.target.id === "kbq") { KB.q = e.target.value; kbFilter(); }
   if (e.target.id === "flagQ") { SEL.flagQ = e.target.value; render(); const i = $("#flagQ"); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }
+});
+document.addEventListener("mousedown", e => {   // visual KB editor toolbar (keeps the text selection)
+  const b = e.target.closest && e.target.closest("[data-wys]"); if (!b) return;
+  e.preventDefault(); const ed = b.closest(".wys").querySelector(".wys-ed");
+  if (!ed.contains(document.getSelection().anchorNode)) ed.focus();
+  document.execCommand(b.dataset.wys); ed.dataset.dirty = "1";
+});
+document.addEventListener("click", e => { if (e.target.closest && e.target.closest(".wys-ed summary")) e.preventDefault(); }, true);
+document.addEventListener("focusout", e => {
+  const ed = e.target.closest && e.target.closest(".wys-ed"); if (!ed || ed.dataset.dirty !== "1") return;
+  const [sl, ...path] = JSON.parse(ed.dataset.wpath), doc = KB.edit[sl] ||= clone(KB.docs[sl]);
+  ed.dataset.dirty = ""; const v = wysOut(ed);
+  if (v !== getPath(doc, path)) { setPath(doc, path, v); setTimeout(render, 0); }
 });
 document.addEventListener("change", e => {
   const t = e.target;
@@ -2647,6 +2681,8 @@ document.addEventListener("change", e => {
     let v = t.value;
     if (k === "num") { v = Number(v); if (t.value.trim() === "" || !isFinite(v)) return toast("Not a number"); }
     if (k === "lines") v = String(v).split("\n").map(x => x.trim()).filter(Boolean);
+    if (k === "ent") v = reEnt(v);
+    if (k === "lines-ent") v = String(v).split("\n").map(x => x.trim()).filter(Boolean).map(reEnt);
     if (k === "pairs") v = String(v).split("\n").filter(x => x.trim()).map(x => x.split("|").map(y => y.trim()));
     if (k === "bool") v = v === "1";
     if (k === "jsonv") { try { v = JSON.parse(v); } catch (err) { return toast("Format tidak sah: " + err.message, 6000); } }
@@ -2693,5 +2729,5 @@ setInterval(() => { if (SESSION && Date.now() - lastActivity > IDLE_LOGOUT_MS) {
 
 if (SEL.tab === "catalog") SEL.tab = "itinerary";
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1) === "catalog" ? "itinerary" : location.hash.slice(1); if (tabsFor(curDest()).some(t => t[0] === h) && h !== SEL.tab) { SEL.tab = h; render(); } });
-window.PTCALC = { priceRow, calcMd, KBEDIT: () => KB.edit, CATEDIT: () => CAT.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
+window.PTCALC = { priceRow, calcMd, wysIn, wysOut, KBEDIT: () => KB.edit, CATEDIT: () => CAT.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
 load().catch(() => { });
