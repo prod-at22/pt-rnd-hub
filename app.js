@@ -2730,4 +2730,9 @@ setInterval(() => { if (SESSION && Date.now() - lastActivity > IDLE_LOGOUT_MS) {
 if (SEL.tab === "catalog") SEL.tab = "itinerary";
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1) === "catalog" ? "itinerary" : location.hash.slice(1); if (tabsFor(curDest()).some(t => t[0] === h) && h !== SEL.tab) { SEL.tab = h; render(); } });
 window.PTCALC = { priceRow, calcMd, wysIn, wysOut, KBEDIT: () => KB.edit, CATEDIT: () => CAT.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
+// Served inside the Product R&D Hub (prod.arbatravel.com/pt/rnd/): a way back to its home page.
+if (location.pathname.startsWith("/pt/rnd/")) {
+  const b = document.querySelector(".top .brand");
+  if (b) b.insertAdjacentHTML("afterbegin", `<a class="homelink" href="/" title="Product R&D Hub home">← Home</a>`);
+}
 load().catch(() => { });
