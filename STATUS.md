@@ -72,8 +72,8 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   tools/import_catalogs.py --from-drive is retired; the old Drive builder ("Catalog PT (new)/build.py") cannot
   render the new files — do not use it.
 
-## HANDOFF (15 Oct 2026) — v110 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
-- Live: hub v110, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
+## HANDOFF (15 Oct 2026) — v111 live · Aceh + Bali + Bangkok + Beijing + Hokkaido + Istanbul + Jakarta-Bandung + Jeju + Jeju-Udo + Jogja + KK-Kundasang + Krabi + Yunnan 3 / 4 Wilayah + Turki Klasik + Tokyo + Lombok + Maldives + Medan-Lake Toba + Melbourne + New Zealand + Osaka + Padang-Bukittinggi + Perhentian + Perth + Phuket + Semporna + Surabaya + Switzerland + Seoul + Seoul-Jeju verified, Vietnam (Danang, Hanoi-Sapa, HCM-Dalat, Phu Quoc) on Ibrahim CR 2027 · next: ask the PO
+- Live: hub v111, pt-kb-house and catalog-pt-public mirrored (CI "28/28 KB OK"), all verified.
 - **Destination verification (one at a time, PO 11 Oct)**: cross-check R&D hub × catalog hub × KB hub (and the source PDF / CR);
   mirrors (.hub-sha, live = repo); fix in the hub, show the live-text diff (rebuilt catalog / KB vs snapshot), wait "ok push".
   **Aceh + Aceh-Sabang done (v55–v62):** one package each, "Aceh Standard 4D3N" / "Aceh - Sabang Standard 5D4N" (4★ / 5★ packages
@@ -325,6 +325,9 @@ After any change: `python3 tools/make_pages.py` (asset ?v= hash), run the tests,
   Basic 20.1–31.1 %, Standard 15.2–24.8 %, Seoul-Jeju 11.0–25.9 %. Catalogs: Basic '10 hours basis', 'Complimentary', PO Aiman, kb_url. KB korea: Travel date 2027 +RM100 removed, validity
   31 Dec 2026, Basic super peak 20 Dec (catalog = source of truth, PO). tests/test_calc.js updated (KRW 0.003, K-ETA line, 2–15). NB tools/build_sel.py predates v110 (no K-ETA line, KRW live) —
   update it before rebuilding Seoul from a new ATK CR. Open (flags_open): CR seasonal rows, CR 'valid until Dec 2025', BSC 16 pax typo, R&D PDF MYR at 0.002623, Self Tour catalog.
+  **v111 (PO ezie 15 Oct): KB source tiers synced** — data/kb aceh (Aceh, Aceh-Sabang) and krabi (Honeymoon) still held pre-hub calculator tiers; kb-build already replaced
+  them with the Costing prices, so live KBs are unchanged (rebuild byte-identical). NB when comparing KB vs hub, compare the BUILT calc (build.calc_from_hub / pt-kb-house
+  calc-config.json, incl. tierUpgrade), not the stored data/kb tiers. Final report (PDF, English, by PO) was delivered to the PO the same day.
   PT Quotation Hub prototype (Sales quotations, versions, PO notes; Beijing) is local only, ON HOLD (PO 12 Oct) — not in the repo.
 - **Live FX not used by 2 destinations** (costs stored in MYR): JOG, MLE (PER v105, PHU v106, SUBB v108, SWS v109 done) (MEL v94, NSNZ v97 done; NSNZ ST 9D8N still MYR, no source) —
   convert each to its currency during its check (confirm the FX each table was made with first).

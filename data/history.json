@@ -168459,6 +168459,255 @@
      "label": "KB korea › calc › validity"
     }
    ]
+  },
+  {
+   "v": 111,
+   "at": "2026-10-15T15:00:00Z",
+   "by": "ezie",
+   "note": "KB source files: calculator tiers synced with the hub (PO ezie 15 Oct 2026). data/kb/aceh.json (Aceh, Aceh-Sabang) and data/kb/krabi.json (Krabi Honeymoon) still held the pre-hub tiers (Aceh 11–25 / 26–40 / 41+ bands, Krabi Honeymoon children at the couple price); kb-build already replaced them with the Costing prices, so the live KB pages are unchanged (rebuild byte-identical, verify 28/28 KB OK). Only the stored source now matches what the KB shows.",
+   "changes": [
+    {
+     "path": [
+      "kb",
+      "aceh",
+      "calc",
+      "variants",
+      "aceh",
+      "tiers"
+     ],
+     "from": [
+      {
+       "from": 2,
+       "to": 2,
+       "a": 1197,
+       "c": 1037,
+       "n": 877
+      },
+      {
+       "from": 3,
+       "to": 5,
+       "a": 1167,
+       "c": 1017,
+       "n": 857
+      },
+      {
+       "from": 6,
+       "to": 10,
+       "a": 1137,
+       "c": 997,
+       "n": 847
+      },
+      {
+       "from": 11,
+       "to": 25,
+       "a": 1097,
+       "c": 977,
+       "n": 837
+      },
+      {
+       "from": 26,
+       "to": 40,
+       "a": 1072,
+       "c": 977,
+       "n": 837
+      },
+      {
+       "from": 41,
+       "to": 99999,
+       "a": 1047,
+       "c": 977,
+       "n": 837
+      }
+     ],
+     "to": [
+      {
+       "from": 2,
+       "to": 2,
+       "a": 1197,
+       "c": 1037,
+       "n": 877
+      },
+      {
+       "from": 3,
+       "to": 5,
+       "a": 1167,
+       "c": 1017,
+       "n": 857
+      },
+      {
+       "from": 6,
+       "to": 10,
+       "a": 1137,
+       "c": 997,
+       "n": 847
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "a": 1097,
+       "c": 977,
+       "n": 837
+      },
+      {
+       "from": 16,
+       "to": 20,
+       "a": 1077,
+       "c": 957,
+       "n": 827
+      },
+      {
+       "from": 21,
+       "to": 25,
+       "a": 1057,
+       "c": 937,
+       "n": 817
+      },
+      {
+       "from": 26,
+       "to": 30,
+       "a": 1037,
+       "c": 917,
+       "n": 807
+      }
+     ],
+     "label": "KB aceh › calc › variants › aceh › tiers"
+    },
+    {
+     "path": [
+      "kb",
+      "aceh",
+      "calc",
+      "variants",
+      "sabang",
+      "tiers"
+     ],
+     "from": [
+      {
+       "from": 2,
+       "to": 2,
+       "a": 1597,
+       "c": 1037,
+       "n": 877
+      },
+      {
+       "from": 3,
+       "to": 5,
+       "a": 1557,
+       "c": 1017,
+       "n": 857
+      },
+      {
+       "from": 6,
+       "to": 10,
+       "a": 1497,
+       "c": 997,
+       "n": 847
+      },
+      {
+       "from": 11,
+       "to": 25,
+       "a": 1457,
+       "c": 977,
+       "n": 837
+      },
+      {
+       "from": 26,
+       "to": 40,
+       "a": 1442,
+       "c": 977,
+       "n": 837
+      }
+     ],
+     "to": [
+      {
+       "from": 2,
+       "to": 2,
+       "a": 1597,
+       "c": 1037,
+       "n": 877
+      },
+      {
+       "from": 3,
+       "to": 5,
+       "a": 1557,
+       "c": 1017,
+       "n": 857
+      },
+      {
+       "from": 6,
+       "to": 10,
+       "a": 1497,
+       "c": 997,
+       "n": 847
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "a": 1457,
+       "c": 977,
+       "n": 837
+      },
+      {
+       "from": 16,
+       "to": 20,
+       "a": 1437,
+       "c": 957,
+       "n": 827
+      },
+      {
+       "from": 21,
+       "to": 25,
+       "a": 1417,
+       "c": 937,
+       "n": 817
+      },
+      {
+       "from": 26,
+       "to": 30,
+       "a": 1397,
+       "c": 917,
+       "n": 807
+      }
+     ],
+     "label": "KB aceh › calc › variants › sabang › tiers"
+    },
+    {
+     "path": [
+      "kb",
+      "krabi",
+      "calc",
+      "variants",
+      "hny",
+      "tiers"
+     ],
+     "from": [
+      {
+       "from": 2,
+       "to": 10,
+       "a": 1448.5,
+       "c": 1448.5,
+       "n": 1448.5
+      }
+     ],
+     "to": [
+      {
+       "from": 2,
+       "to": 2,
+       "a": 1448.5,
+       "c": 1397,
+       "n": 1197
+      },
+      {
+       "from": 3,
+       "to": 10,
+       "a": 1449,
+       "c": 1397,
+       "n": 1197
+      }
+     ],
+     "label": "KB krabi › calc › variants › hny › tiers"
+    }
+   ]
   }
  ]
 }
