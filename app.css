@@ -11,8 +11,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .top .in{max-width:1280px;margin:0 auto;padding:10px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .brand{font-weight:700;letter-spacing:.2px;font-size:16px;margin-right:auto;display:flex;align-items:center;gap:10px}
 .brand small{font-weight:500;opacity:.85;font-size:12px}
-.brand .homelink{color:#fff;opacity:.85;font-weight:600;font-size:13px;text-decoration:none;padding-right:10px;border-right:1px solid rgba(255,255,255,.35)}
-.brand .homelink:hover{opacity:1;text-decoration:underline}
+.top .homelink{color:#fff;opacity:.85;font-weight:600;font-size:13px;text-decoration:none;padding-right:12px;border-right:1px solid rgba(255,255,255,.35)}
+.top .homelink:hover{opacity:1;text-decoration:underline}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
 .top .chip{background:rgba(255,255,255,.16);color:#fff}
 .btn{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600;font-size:13px;white-space:nowrap}
@@ -211,9 +211,10 @@ table.ref .rr-fx{border-left:1px solid var(--line)}
 body.hubpage .top{display:none}
 body.hubpage #grid{display:block}
 .hub{max-width:720px;margin:0 auto;padding:1.5rem 0 3rem;font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5}
-.hubhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem}
-.hubhead h1{font-size:1.35rem;margin:0}
-.hubhead img{height:30px}
+.hubhead{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin-bottom:1.25rem}
+.hubhead h1{font-size:1.35rem;margin:0;text-align:center}
+.hubhead .home{justify-self:start;font-weight:600;font-size:.95rem;text-decoration:none}
+.hubhead img{height:30px;justify-self:end}
 .hub .filter{width:100%;font:inherit;font-size:0.9rem;padding:0.6rem 0.9rem;margin-bottom:1rem;border:1px solid var(--line);border-radius:10px;background:#fff}
 .hub .filter:focus{outline:none;border-color:var(--brand)}
 .hub .row{display:flex;align-items:baseline;gap:1rem;padding:0.9rem 1.1rem;margin-bottom:0.6rem;background:#fff;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:inherit}

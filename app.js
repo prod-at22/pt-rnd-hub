@@ -374,7 +374,7 @@ function renderHub() {
   })).sort((a, b) => a.sortKey.localeCompare(b.sortKey));
   const src = shown();
   $("#grid").innerHTML = `<div class="hub">
-    <header class="hubhead"><h1>PT R&amp;D Hub</h1><img src="${ROOT}arba-logo.png" alt="ARBA Travel"></header>
+    <header class="hubhead">${location.pathname.startsWith("/pt/rnd/") ? `<a class="home" href="/">← Home</a>` : "<span></span>"}<h1>PT R&amp;D Hub</h1><img src="${ROOT}arba-logo.png" alt="ARBA Travel"></header>
     <input id="hubSearch" class="filter" type="search" placeholder="Filter by destination, tier, code or PO…" value="${esc(SEL.hubQ || "")}" autocomplete="off" aria-label="Filter packages">
     ${rows.map(r => r.html).join("")}
     <p class="empty" id="hubEmpty">No package matches.</p>
@@ -2732,7 +2732,7 @@ window.addEventListener("hashchange", () => { const h = location.hash.slice(1) =
 window.PTCALC = { priceRow, calcMd, wysIn, wysOut, KBEDIT: () => KB.edit, CATEDIT: () => CAT.edit, variantCost, diff, applyChanges, snapshotAt, describe, get DATA() { return DATA; }, get BASE() { return BASE; }, GH, SEL, render, saveChanges, set SESSION(s) { SESSION = s; }, set EDIT(v) { EDIT = v; }, get HISTORY() { return HISTORY; }, unlock, wrapVault, aesEnc, setUsers(u) { USERS = u; } };
 // Served inside the Product R&D Hub (prod.arbatravel.com/pt/rnd/): a way back to its home page.
 if (location.pathname.startsWith("/pt/rnd/")) {
-  const b = document.querySelector(".top .brand");
-  if (b) b.insertAdjacentHTML("afterbegin", `<a class="homelink" href="/" title="Product R&D Hub home">← Home</a>`);
+  const b = document.querySelector(".top .brand");          // destination pages: Home at the far left of the top bar
+  if (b) b.insertAdjacentHTML("beforebegin", `<a class="homelink" href="/" title="Product R&D Hub home">← Home</a>`);
 }
 load().catch(() => { });
