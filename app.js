@@ -299,7 +299,9 @@ function render() {
 // Last update = newest saved change to that package or to its destination's shared costs
 // (rates, FX, TOs, add-ons); before any save it is the import date.
 function lastUpdate(d, pkgId) {
-  const hit = c => c.path[1] === d.code && (pkgId == null || c.path[2] !== "packages" || c.path[3] === pkgId);
+  const hit = c => c.path[0] === "catalogs"
+    ? ((x => x && x.code === d.code && (pkgId == null || x.package === pkgId))(catOf(c.path[1])))
+    : c.path[1] === d.code && (pkgId == null || c.path[2] !== "packages" || c.path[3] === pkgId);
   const reimport = e => e.rebase && new RegExp("(added|rebuilt): [^)]*\\b" + d.code + "\\b").test(e.note || "");
   const es = HISTORY.entries.filter(e => (e.changes || []).some(hit) || reimport(e)).sort((a, b) => b.v - a.v);
   return es[0] || [...HISTORY.entries].sort((a, b) => a.v - b.v)[0] || null;
@@ -1964,7 +1966,11 @@ async function saveContract(code, { file, to, note, removeId }) {
   }
   throw new Error("Could not save after 3 attempts — reload the page.");
 }
-const touchesChange = c => c.path[1] === PAGE_DEST || (c.path[0] === "kb" && kbCodesOf(c.path[1]).includes(PAGE_DEST));
+// catalog content edits are saved as ["catalogs", slug, …]; data/catalogs/index.json says which destination owns a slug
+function catIndexReady() { if (!CAT.index && !CAT.err && !CAT.indexLoading) { CAT.indexLoading = true; loadCatalog("index.json", x => { CAT.index = x; }); } return !!CAT.index; }
+const catOf = sl => (catIndexReady() && CAT.index[sl]) || null;
+const touchesChange = c => c.path[1] === PAGE_DEST || (c.path[0] === "kb" && kbCodesOf(c.path[1]).includes(PAGE_DEST))
+  || (c.path[0] === "catalogs" && (catOf(c.path[1]) || {}).code === PAGE_DEST);
 // A destination's History can be cleared (data.json destinations[].historyFrom = first version shown): the page lists
 // only later versions; the global log stays whole, so older versions can still be viewed / restored from the hub.
 const historyFrom = () => { const d = PAGE_DEST && DATA && DATA.destinations.find(x => x.code === PAGE_DEST); return (d && d.historyFrom) || 0; };
