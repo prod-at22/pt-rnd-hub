@@ -170675,6 +170675,30 @@
     "Catalog hanoi-sapa: add-ons from v115",
     "Catalog hanoi-sapa-halong: add-ons from v115"
    ]
+  },
+  {
+   "v": 116,
+   "at": "2026-10-16T02:14:15.531Z",
+   "by": "admin",
+   "note": "Aiman amendment",
+   "changes": [
+    {
+     "path": [
+      "catalogs",
+      "danang-hoi-an-5d4n",
+      "itinerary",
+      2,
+      "activities",
+      2
+     ],
+     "from": "Asia Park Danang",
+     "to": "Wonder Park",
+     "label": "Catalog danang-hoi-an-5d4n › itinerary › #3 › activities › #3"
+    }
+   ],
+   "catalogs": [
+    "Catalog danang-hoi-an-5d4n content: 1 change"
+   ]
   }
  ]
 }

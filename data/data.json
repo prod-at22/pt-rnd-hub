@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "version": 115,
- "updatedAt": "2026-10-15T13:49:17.999Z",
- "updatedBy": "amirul",
+ "version": 116,
+ "updatedAt": "2026-10-16T02:14:15.531Z",
+ "updatedBy": "admin",
  "settings": {
   "marginWarnPct": 0.15,
   "marginDangerPct": 0.05,

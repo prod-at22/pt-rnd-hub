@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "kb_url": "https://prod-at22.github.io/arba-danang-kb/",
   "po": "Ezie",
   "ops": "ILY",
@@ -163,7 +163,7 @@
       "activities": [
         "Love Bridge",
         "Shopping at Danang",
-        "Asia Park Danang",
+        "Wonder Park",
         "Dragon Bridge"
       ],
       "transport": "Private Transport",
