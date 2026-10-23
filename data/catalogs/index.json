@@ -583,5 +583,14 @@
   "version": "v1",
   "updated": "2026-07-29",
   "url": "https://prod-at22.github.io/catalog-pt-public/yunnan-4-wilayah.html"
+ },
+ "ho-chi-minh-standard": {
+  "code": "HCM",
+  "package": "ibrahim-hcm-4d3n",
+  "title": "PRIVATE TOUR HO CHI MINH",
+  "duration": "4D3N",
+  "version": "v3",
+  "updated": "2026-10-23",
+  "url": "https://prod-at22.github.io/catalog-pt-public/ho-chi-minh-standard.html"
  }
 }
