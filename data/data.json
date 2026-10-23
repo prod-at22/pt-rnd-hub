@@ -38704,6 +38704,390 @@
      "by": "ezie"
     }
    ]
+  },
+  {
+   "code": "HCM",
+   "name": "Ho Chi Minh",
+   "country": "Vietnam",
+   "duration": "4D3N",
+   "nights": 0,
+   "po": "Aiman",
+   "source": "hub",
+   "note": "Costing 2–15 pax (katalog berhenti 15 pax); 16+ pax = quote manual. Kos = CR Ibrahim HCM Mekong Cu Chi City Tour 4H3M (hlm 12, hingga Dis 2027).",
+   "fx": [
+    {
+     "id": "MYR",
+     "label": "MYR",
+     "value": 1,
+     "locked": true
+    }
+   ],
+   "rates": [],
+   "tables": [
+    {
+     "id": "IBRAHIM-HCM-4D3N__Ground-Cost",
+     "label": "IBRAHIM HCM 4D3N · Ground Cost (CR hingga Dis 2027)",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "IBRAHIM HCM 4D3N",
+     "values": {
+      "2": 870,
+      "3": 840,
+      "4": 780,
+      "5": 780,
+      "6": 750,
+      "7": 720,
+      "8": 720,
+      "9": 680,
+      "10": 680,
+      "11": 650,
+      "12": 650,
+      "13": 650,
+      "14": 620,
+      "15": 620
+     }
+    },
+    {
+     "id": "IBRAHIM-HCM-4D3N__Tipping",
+     "label": "IBRAHIM HCM 4D3N · Tipping",
+     "unit": "MYR/pax",
+     "fx": "MYR",
+     "group": "IBRAHIM HCM 4D3N",
+     "values": {
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+     }
+    }
+   ],
+   "variants": [
+    {
+     "id": "IBRAHIM-HCM-4D3N",
+     "label": "Ibrahim",
+     "supplier": "TO IBRAHIM HCM 4D3N — Ho Chi Minh Mekong Cu Chi City Tour 4D3N (3-Star, Fullboard, tipping, CR hingga Dis 2027)",
+     "paxMin": 2,
+     "paxMax": 15,
+     "hotel": "3-Star (Ho Chi Minh) — Nicecy Boutique Hotel / Queen Central Hotel or similar",
+     "notes": "CR Ibrahim berkuat kuasa sekarang hingga Dis 2027 (hlm 12). Anak: 0–5 tahun percuma (CNB), 6–9 tahun separuh harga (CWB), 10 tahun ke atas = dewasa; 2 CWB = 1 dewasa. 16 pax dewasa = 1 FOC (15+1). Costing 2–15 pax.",
+     "components": [
+      {
+       "key": "ground-cost",
+       "label": "Ground Cost",
+       "per": "pax",
+       "expr": "T['IBRAHIM-HCM-4D3N__Ground-Cost']"
+      },
+      {
+       "key": "tipping",
+       "label": "Tipping",
+       "per": "pax",
+       "expr": "T['IBRAHIM-HCM-4D3N__Tipping']"
+      }
+     ]
+    }
+   ],
+   "packages": [
+    {
+     "id": "ibrahim-hcm-4d3n",
+     "label": "Ho Chi Minh Standard 4D3N",
+     "catalog": null,
+     "assign": [
+      {
+       "from": 2,
+       "to": 15,
+       "variant": "IBRAHIM-HCM-4D3N"
+      }
+     ],
+     "pricing": {
+      "adult": {
+       "2": 1377,
+       "3": 1377,
+       "4": 1377,
+       "5": 1277,
+       "6": 1277,
+       "7": 1277,
+       "8": 1177,
+       "9": 1177,
+       "10": 1177,
+       "11": 1177,
+       "12": 1177,
+       "13": 1177,
+       "14": 1177,
+       "15": 1177
+      },
+      "cwb": {
+       "2": 1177,
+       "3": 1177,
+       "4": 1177,
+       "5": 1097,
+       "6": 1097,
+       "7": 1097,
+       "8": 977,
+       "9": 977,
+       "10": 977,
+       "11": 977,
+       "12": 977,
+       "13": 977,
+       "14": 977,
+       "15": 977
+      },
+      "cnb": {
+       "2": 997,
+       "3": 997,
+       "4": 997,
+       "5": 897,
+       "6": 897,
+       "7": 897,
+       "8": 777,
+       "9": 777,
+       "10": 777,
+       "11": 777,
+       "12": 777,
+       "13": 777,
+       "14": 777,
+       "15": 777
+      },
+      "infant": 0
+     },
+     "rules": {
+      "discountTier2": 200,
+      "tierUpgrade": 0,
+      "cwbCost": {
+       "type": "pct",
+       "value": 0.5
+      },
+      "cnbCost": {
+       "type": "pct",
+       "value": 0
+      },
+      "infantCost": {
+       "type": "flat",
+       "value": 0
+      }
+     }
+    }
+   ],
+   "addons": [
+    {
+     "id": "hcm-a01",
+     "category": "Activity",
+     "label": "Cyclo Tour at HCM (1 hour)",
+     "cost": 80,
+     "selling": 97,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "hcm-a02",
+     "category": "Activity",
+     "label": "Saigon River Cruise (1-1.5 hr)",
+     "cost": 90,
+     "selling": 107,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "hcm-a03",
+     "category": "Transport",
+     "label": "HCM Full Day Tour Sedan (2-4)",
+     "cost": 150,
+     "selling": 300,
+     "per": "trip",
+     "notes": "8 hours"
+    },
+    {
+     "id": "hcm-a04",
+     "category": "Transport",
+     "label": "HCM Full Day Tour Van (5-13)",
+     "cost": 190,
+     "selling": 380,
+     "per": "trip",
+     "notes": "8 hours"
+    },
+    {
+     "id": "hcm-a05",
+     "category": "Transport",
+     "label": "HCM Full Day Tour Bus (14+)",
+     "cost": 230,
+     "selling": 450,
+     "per": "trip",
+     "notes": "8 hours"
+    },
+    {
+     "id": "hcm-a06",
+     "category": "Meals",
+     "label": "Extra Breakfast",
+     "cost": 20,
+     "selling": 30,
+     "per": "pax/meal",
+     "notes": null
+    },
+    {
+     "id": "hcm-a07",
+     "category": "Meals",
+     "label": "Extra Lunch",
+     "cost": 20,
+     "selling": 30,
+     "per": "pax/meal",
+     "notes": null
+    },
+    {
+     "id": "hcm-a08",
+     "category": "Meals",
+     "label": "Extra Dinner",
+     "cost": 20,
+     "selling": 30,
+     "per": "pax/meal",
+     "notes": null
+    },
+    {
+     "id": "hcm-a09",
+     "category": "Wifi",
+     "label": "Pocket Wifi Vietnam 3GB (4G) 4D3N",
+     "cost": 28,
+     "selling": 80,
+     "per": "trip",
+     "notes": "RoamingMan"
+    },
+    {
+     "id": "hcm-a10",
+     "category": "Takaful",
+     "label": "TripCare 360 Individual (1-5 days) Area 1",
+     "cost": 28,
+     "selling": 45,
+     "per": "pax",
+     "notes": "Etiqa Area 1 (ASEAN)"
+    },
+    {
+     "id": "hcm-a11",
+     "category": "Takaful",
+     "label": "TripCare 360 Couple (1-5 days) Area 1",
+     "cost": 54,
+     "selling": 79,
+     "per": "pair",
+     "notes": null
+    },
+    {
+     "id": "hcm-a12",
+     "category": "Takaful",
+     "label": "TripCare 360 Family (1-5 days) Area 1",
+     "cost": 70,
+     "selling": 100,
+     "per": "family",
+     "notes": null
+    },
+    {
+     "id": "hcm-a13",
+     "category": "Takaful",
+     "label": "TripCare 360 Senior (1-5 days) Area 1",
+     "cost": 99,
+     "selling": 130,
+     "per": "pax",
+     "notes": null
+    },
+    {
+     "id": "hcm-a14",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Silver",
+     "cost": 14.5,
+     "selling": 20,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "hcm-a15",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Gold",
+     "cost": 29,
+     "selling": 40,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "hcm-a16",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Platinum",
+     "cost": 44,
+     "selling": 55,
+     "per": "pcs",
+     "notes": null
+    },
+    {
+     "id": "hcm-a17",
+     "category": "Luggage Tracker",
+     "label": "Blue Ribbon Diamond",
+     "cost": 58,
+     "selling": 70,
+     "per": "pcs",
+     "notes": null
+    }
+   ],
+   "catalogs": [
+    "PT HCM STANDARD 4D3N"
+   ],
+   "contracts": [
+    {
+     "id": "1a12f1bf526",
+     "name": "IBRAHIM TRAVEL HARGA PACKAGE VIETNAM 2027 FOR TRAVEL AGENCY.pdf",
+     "file": "contracts/dlmnhcm/1a12f1bf526-IBRAHIM_TRAVEL_HARGA_PACKAGE_VIETNAM_2027.pdf",
+     "to": "Ibrahim",
+     "note": "CR berkuat kuasa sekarang hingga Dis 2027 · HCM Mekong Cu Chi City Tour 4H3M (hlm 12)",
+     "size": 4812024,
+     "at": "2026-10-12T07:55:23Z",
+     "by": "ezie"
+    }
+   ],
+   "hotels": [
+    {
+     "id": "hcm-h01",
+     "type": "3 Star Hotel",
+     "name": "Nicecy Boutique Hotel, Queen Central Hotel",
+     "similar": true,
+     "catalogs": {
+      "ho-chi-minh-standard": {
+       "sur": 1,
+       "amounts": [
+        "-"
+       ]
+      }
+     },
+     "roomNote": "Bilik 2-3 pax (twin/triple)"
+    },
+    {
+     "id": "hcm-h02",
+     "type": "4 Star Hotel",
+     "name": "Nesta Hotel, Gem Ben Thanh Hotel",
+     "similar": true,
+     "catalogs": {
+      "ho-chi-minh-standard": {
+       "sur": 2,
+       "amounts": [
+        "Add RM130/person/night"
+       ]
+      }
+     }
+    }
+   ],
+   "competitors": {
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "arba": {},
+    "items": []
+   }
   }
  ]
 }
