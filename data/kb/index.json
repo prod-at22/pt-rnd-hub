@@ -204,5 +204,12 @@
    "KMGDL"
   ],
   "url": "https://prod-at22.github.io/pt-kb-house/yunnan/"
+ },
+ "ho-chi-minh": {
+  "name": "Ho Chi Minh",
+  "codes": [
+   "HCM"
+  ],
+  "url": "https://prod-at22.github.io/pt-kb-house/ho-chi-minh/"
  }
 }
