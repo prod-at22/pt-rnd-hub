@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "version": 116,
- "updatedAt": "2026-10-16T02:14:15.531Z",
- "updatedBy": "admin",
+ "version": 130,
+ "updatedAt": "2026-11-05T03:32:06.332Z",
+ "updatedBy": "amirul",
  "settings": {
   "marginWarnPct": 0.15,
   "marginDangerPct": 0.05,
@@ -10819,7 +10819,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 0,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "",
    "fx": [
@@ -14058,7 +14058,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 0,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "",
    "fx": [
@@ -14996,7 +14996,7 @@
    "country": "Indonesia",
    "duration": "5D4N",
    "nights": 0,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "",
    "fx": [
@@ -16468,7 +16468,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Option A (Parapat) = CR Emiya Parapat; Option B (Samosir) = CR Emiya Samosir (default, full meals) or Baim (alternative, breakfast only + L&D estimate RM120). Both CRs Jan–Dec 2026 in RM; +RM25 Berastagi 4★ = Free Gift promo; catalog Option B sells +RM50. Costing 2–30 pax.",
    "fx": [
@@ -17783,7 +17783,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = Pak Herman CR (WhatsApp, RM per pax: 2–4 550 · 5–10 525 · 11–15 500 · 16–19 485) + RM25/pax 4★ upgrade Berastagi (PO). Costing 2–19 (CR max 19). 4★ package removed: catalog upgrade +RM80/pax/night (cost unknown). Child CWB 85 % / CNB 70 % (no CR child rate).",
    "fx": [
@@ -30247,7 +30247,7 @@
    "country": "China",
    "duration": "5D4N",
    "nights": 4,
-   "po": "Fyka",
+   "po": "acap",
    "source": "hub",
    "note": "",
    "fx": [
@@ -30896,7 +30896,7 @@
    "country": "Thailand",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "",
    "fx": [
@@ -31534,7 +31534,7 @@
    "country": "Thailand",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = KTT package price per person (PT R&D Phuket 2026 sheet = KTT 2026 PDFs, both in TO Contract Rate), THB × live FX (was MYR at fixed 0.122). Two catalog packages; hotel / season / Day-3 options are alternative TOs with the catalog upgrade as sellingUpgrade (Marina 4★ +RM300, peak Jan–Apr +RM250, Nov–Dec +RM300, Phi Phi +RM100). Costing 2–10. Child CWB 75 % / CNB 50 % (R&D).",
    "fx": [
@@ -32503,7 +32503,7 @@
    "country": "Thailand",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = selected hotel's KTT rate (THB) × FX, flat per pax (KTT CR 2026: Normal = 1 May–31 Oct 2026; High = 11 Jan–30 Apr 2026, highest range — that CR is in Drive CR PT 2026 (CENTRALIZE)/CR KRABI, not uploaded). Hotel tier adds the catalog upgrade (4★ RM250/pax; Honeymoon RM450/couple). Day 3 Phi Phi sells +RM100/pax (catalog). Costing 2–10 pax (= catalog). KTT 2027 rates (11 Jan–30 Apr 2027) are in TO Contract Rate but not in the Costing yet (PO decision).",
    "options": [
@@ -35412,7 +35412,7 @@
    "country": "Domestik",
    "duration": "3D2N / 4D3N",
    "nights": 0,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Costs = PT KK-KUNDASANG R&D 2026 (KKK COSTING + RAW DATA), PO 13 Oct 2026: transport per group ÷ pax (Avanza/Innova 1–4 · Van 5–8 · Van 9–16), hotels per room ÷ 2, meals, entrance. Costing 1–10 pax (= catalog); Honeymoon 4D3N = couple (2 pax), selling − RM100/pax.",
    "fx": [
@@ -36559,7 +36559,7 @@
    "country": "Domestik",
    "duration": "3D2N / 4D3N",
    "nights": 0,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = PT SEMPORNA R&D 'COSTING SEM' (latest calculation, PO) + RAW DATA (PDF in TO Contract Rate): airport 2× RM30, boat RM30, accommodation by room config, meals RM85 / 155, island hopping Package A RM157. Alternative TOs = catalog water-chalet upgrades (+RM150 / 450 / 600) with cost = RAW resort rate − Nusakuya (+70 / 300 / 450). 3★ (Kapalai / SWV) and honeymoon not costed here. Costing 1–10. Child CWB 85 % / CNB 65 % kept (flag).",
    "fx": [
@@ -37937,7 +37937,7 @@
    "country": "Domestik",
    "duration": "3D2N",
    "nights": 2,
-   "po": "Fyka",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = CALCULATOR PHT (R&D PT PERHENTIAN, tabs RAW DATA PHT / CALCULATOR PHT): resort package (Shari-La Fullboard Standard Twin low RM458 / Deluxe Triple 435; Mimpi Free & Easy Hill View twin RM1,060 / triple 960 / single 1,590) + boat RM60 + snorkel RM60 per pax (possible double count — flag). Costing 1–10 pax (= catalog). Child (CWB / CNB) = resort child rate 3–12: Shari-La RM256, Mimpi RM580 + snorkel RM30 (flag).",
    "fx": [
