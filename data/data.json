@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 130,
- "updatedAt": "2026-11-05T03:32:06.332Z",
+ "version": 134,
+ "updatedAt": "2026-11-06T02:10:02.884Z",
  "updatedBy": "amirul",
  "settings": {
   "marginWarnPct": 0.15,
@@ -12566,7 +12566,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Aiman",
+   "po": "noora",
    "source": "hub",
    "note": "Kos = Pak Anang (Sheet3 'PT LOP R&D' + rate card, TO Contract Rate) dalam IDR × FX live (dulu MYR tetap 0.0002273265). Costing 2–30 pax (katalog 2–15). Pakej Honeymoon dibuang (PO 14 Oct 2026). Info sahaja (tiada dalam katalog): hotel 3★ Sembalun Persona Rinjani / Telas Melati / Nusantara IDR650k/malam, weekend +150k, peak +200k (rate card Anang).",
    "fx": [
@@ -13481,7 +13481,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 0,
-   "po": "Aiman",
+   "po": "noora",
    "source": "hub",
    "note": "Cost TO = Pak Jamal CR 4D3N (Luxury Hotel + Transport): 2 pax RM545 · 3 RM490 · 4–7 RM460 · 8–10 RM415 · 11–15 RM385; 16–20 = 11–15 rate (PO 13 Oct 2026). Jeep Timang, entrance and L&D are separate (CR = hotel + transport only). Costing 2–20 pax.",
    "fx": [
@@ -18353,7 +18353,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 0,
-   "po": "Aiman",
+   "po": "noora",
    "source": "hub",
    "note": "",
    "fx": [
@@ -19037,7 +19037,7 @@
    "country": "Indonesia",
    "duration": "4D3N",
    "nights": 3,
-   "po": "Aiman",
+   "po": "noora",
    "source": "hub",
    "note": "Cost = Pak Jamal CR 2026 (TO Contract Rate): 'PAKEJ SURABAYA' 4D3N hotel 3★ + transport RM830 / 780 / 730 / 650 (2 / 3 / 4–5 / 6–10 pax) + Jeep Bromo IDR1,000,000 per jeep (max 5) + entrance IDR (Bromo 250k, Santerra 75k, apple 35k, Coban Rondo 75k), IDR × live FX. Bromo 11–15 pax held at the 6–10 rate (no CR, flag). Surabaya–Malang has no CR: same package rate as a proxy + Santerra / apple / Coban / Museum Angkut (CR) + Jatim Park 2 IDR140k (R&D asal). Tipping RM0 (CR: driver fee included; = Jogja). Costing: Bromo 2–15, Surabaya–Malang 2–10 (= catalogs). Child CWB 100 % / CNB − RM150 kept (no CR child rate).",
    "fx": [
