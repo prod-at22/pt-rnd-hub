@@ -39088,6 +39088,561 @@
     "arba": {},
     "items": []
    }
+  },
+  {
+   "addons": [
+    {
+     "category": "Hotel",
+     "cost": 535.28,
+     "id": "tfu-a01",
+     "label": "Single Supplement — Default (RMB880)",
+     "notes": "5 malam bilik single",
+     "per": "pax",
+     "selling": 670
+    },
+    {
+     "category": "Hotel",
+     "cost": 413.63,
+     "id": "tfu-a02",
+     "label": "Single Supplement — Winter 2–9 pax (RMB680)",
+     "notes": "5 malam bilik single",
+     "per": "pax",
+     "selling": 520
+    },
+    {
+     "category": "Hotel",
+     "cost": 352.8,
+     "id": "tfu-a03",
+     "label": "Single Supplement — Winter 10+ pax (RMB580)",
+     "notes": "5 malam bilik single",
+     "per": "pax",
+     "selling": 450
+    },
+    {
+     "category": "Wifi",
+     "cost": 45,
+     "id": "tfu-a04",
+     "label": "Pocket Wifi 3GB (4G)",
+     "notes": "RoamingMan",
+     "per": "trip",
+     "selling": 80
+    },
+    {
+     "category": "Wifi",
+     "cost": 90,
+     "id": "tfu-a05",
+     "label": "Pocket Wifi 10GB (4G)",
+     "notes": "RoamingMan",
+     "per": "trip",
+     "selling": 150
+    },
+    {
+     "category": "Takaful",
+     "cost": 58.87,
+     "id": "tfu-a06",
+     "label": "TripCare 360 Individual (6-10 days)",
+     "notes": "Etiqa Area 2",
+     "per": "pax",
+     "selling": 88.5
+    },
+    {
+     "category": "Takaful",
+     "cost": 122.87,
+     "id": "tfu-a07",
+     "label": "TripCare 360 Couple (6-10 days)",
+     "notes": null,
+     "per": "pair",
+     "selling": 160.5
+    },
+    {
+     "category": "Takaful",
+     "cost": 153.62,
+     "id": "tfu-a08",
+     "label": "TripCare 360 Family (6-10 days)",
+     "notes": null,
+     "per": "family",
+     "selling": 201.5
+    },
+    {
+     "category": "Takaful",
+     "cost": 201.62,
+     "id": "tfu-a09",
+     "label": "TripCare 360 Senior (6-10 days)",
+     "notes": null,
+     "per": "pax",
+     "selling": 265.5
+    },
+    {
+     "category": "Luggage Tracker",
+     "cost": 14.5,
+     "id": "tfu-a10",
+     "label": "Blue Ribbon Silver",
+     "notes": null,
+     "per": "pcs",
+     "selling": 20
+    },
+    {
+     "category": "Luggage Tracker",
+     "cost": 29,
+     "id": "tfu-a11",
+     "label": "Blue Ribbon Gold",
+     "notes": null,
+     "per": "pcs",
+     "selling": 40
+    },
+    {
+     "category": "Luggage Tracker",
+     "cost": 44,
+     "id": "tfu-a12",
+     "label": "Blue Ribbon Platinum",
+     "notes": null,
+     "per": "pcs",
+     "selling": 55
+    },
+    {
+     "category": "Luggage Tracker",
+     "cost": 58,
+     "id": "tfu-a13",
+     "label": "Blue Ribbon Diamond",
+     "notes": null,
+     "per": "pcs",
+     "selling": 70
+    }
+   ],
+   "catalogs": [],
+   "code": "TFU",
+   "competitors": {
+    "arba": {},
+    "items": [],
+    "pax": [
+     2,
+     4,
+     6,
+     8
+    ]
+   },
+   "contracts": [],
+   "country": "China",
+   "duration": "6D5N",
+   "fx": [
+    {
+     "id": "MYR",
+     "label": "MYR",
+     "locked": true,
+     "value": 1
+    },
+    {
+     "id": "RMB",
+     "label": "RMB → MYR",
+     "live": "CNY",
+     "locked": true,
+     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-11-10)",
+     "value": 0.608273
+    }
+   ],
+   "hotels": [
+    {
+     "city": "Chengdu",
+     "id": "tfu-h01",
+     "name": "Holiday Inn Express / Hampton by Hilton",
+     "similar": true,
+     "stars": 4,
+     "variant": "Default"
+    },
+    {
+     "city": "Jiuzhaigou",
+     "id": "tfu-h02",
+     "name": "JinLong Hotel",
+     "similar": true,
+     "stars": 4,
+     "variant": "Default"
+    },
+    {
+     "city": "Dujiangyan",
+     "id": "tfu-h03",
+     "name": "MingZhiShangChun Hotel",
+     "similar": true,
+     "stars": 4,
+     "variant": "Default"
+    },
+    {
+     "city": "Chengdu",
+     "id": "tfu-h04",
+     "name": "Hampton by Hilton WaiShuangNan",
+     "similar": true,
+     "stars": 4,
+     "variant": "Winter"
+    },
+    {
+     "city": "Jiuzhaigou",
+     "id": "tfu-h05",
+     "name": "YiShang Plus Hotel",
+     "similar": true,
+     "stars": 4,
+     "variant": "Winter"
+    }
+   ],
+   "name": "Chengdu",
+   "nights": 5,
+   "note": "2 itinerari ikut GT Chengdu 3 Bandar. DEFAULT (Mac – pertengahan Dis): Chengdu–Huanglong–Jiuzhaigou–Songpan–Dujiangyan; Hari 6 Mac–Apr = Manhua Manor + Glass Bridge, Mei–Dis = Face-changing show + Gaiwan tea @ Kuanzhai Alley. WINTER (hujung Dis – Feb): Chengdu–Songpan–Jiuzhaigou–Xiling Snow Mountain–Panda Base. Harga Default dipukul rata atas fare base Sep supaya margin ≥20% atau RM400 (selepas diskaun RM200) pada setiap tarikh. Default cap 9 pax (10+ = quote manual). Flight: AirAsia D7 326/327 atau Batik sahaja. PROVISIONAL: CR Default hanya hingga Mac 2027, Winter Dis 2026–Feb 2027 — harga Apr–Dis 2027 tunggu CR 2027 Tourdechina.",
+   "packages": [
+    {
+     "assign": [
+      {
+       "from": 2,
+       "to": 9,
+       "variant": "TDC-DEFAULT"
+      }
+     ],
+     "catalog": null,
+     "id": "tdc-default",
+     "label": "Chengdu Default 6D5N (Mac – pertengahan Dis)",
+     "pricing": {
+      "adult": {
+       "2": 6497,
+       "3": 6497,
+       "4": 4697,
+       "5": 4697,
+       "6": 3997,
+       "7": 3997,
+       "8": 3997,
+       "9": 3997
+      },
+      "cnb": {
+       "2": 5297,
+       "3": 5297,
+       "4": 3897,
+       "5": 3897,
+       "6": 3297,
+       "7": 3297,
+       "8": 3297,
+       "9": 3297
+      },
+      "cwb": {
+       "2": 6497,
+       "3": 6497,
+       "4": 4697,
+       "5": 4697,
+       "6": 3997,
+       "7": 3997,
+       "8": 3997,
+       "9": 3997
+      },
+      "infant": 0
+     },
+     "rules": {
+      "cnbCost": {
+       "on": [
+        "fare"
+       ],
+       "type": "pct",
+       "value": 0.8
+      },
+      "cwbCost": {
+       "type": "pct",
+       "value": 1
+      },
+      "discountTier2": 200,
+      "infantCost": {
+       "type": "flat",
+       "value": 0
+      },
+      "tierUpgrade": 0
+     }
+    },
+    {
+     "assign": [
+      {
+       "from": 2,
+       "to": 30,
+       "variant": "TDC-WINTER"
+      }
+     ],
+     "catalog": null,
+     "id": "tdc-winter",
+     "label": "Chengdu Winter Xiling Snow Mountain 6D5N (hujung Dis – Feb)",
+     "pricing": {
+      "adult": {
+       "10": 2997,
+       "11": 2997,
+       "12": 2997,
+       "13": 2997,
+       "14": 2997,
+       "15": 2697,
+       "16": 2697,
+       "17": 2697,
+       "18": 2697,
+       "19": 2697,
+       "2": 5697,
+       "20": 2497,
+       "21": 2497,
+       "22": 2497,
+       "23": 2497,
+       "24": 2497,
+       "25": 2497,
+       "26": 2497,
+       "27": 2497,
+       "28": 2497,
+       "29": 2497,
+       "3": 5697,
+       "30": 2497,
+       "4": 4197,
+       "5": 4197,
+       "6": 3697,
+       "7": 3697,
+       "8": 3697,
+       "9": 3697
+      },
+      "cnb": {
+       "10": 2497,
+       "11": 2497,
+       "12": 2497,
+       "13": 2497,
+       "14": 2497,
+       "15": 2197,
+       "16": 2197,
+       "17": 2197,
+       "18": 2197,
+       "19": 2197,
+       "2": 4597,
+       "20": 2097,
+       "21": 2097,
+       "22": 2097,
+       "23": 2097,
+       "24": 2097,
+       "25": 2097,
+       "26": 2097,
+       "27": 2097,
+       "28": 2097,
+       "29": 2097,
+       "3": 4597,
+       "30": 2097,
+       "4": 3397,
+       "5": 3397,
+       "6": 2997,
+       "7": 2997,
+       "8": 2997,
+       "9": 2997
+      },
+      "cwb": {
+       "10": 2997,
+       "11": 2997,
+       "12": 2997,
+       "13": 2997,
+       "14": 2997,
+       "15": 2697,
+       "16": 2697,
+       "17": 2697,
+       "18": 2697,
+       "19": 2697,
+       "2": 5697,
+       "20": 2497,
+       "21": 2497,
+       "22": 2497,
+       "23": 2497,
+       "24": 2497,
+       "25": 2497,
+       "26": 2497,
+       "27": 2497,
+       "28": 2497,
+       "29": 2497,
+       "3": 5697,
+       "30": 2497,
+       "4": 4197,
+       "5": 4197,
+       "6": 3697,
+       "7": 3697,
+       "8": 3697,
+       "9": 3697
+      },
+      "infant": 0
+     },
+     "rules": {
+      "cnbCost": {
+       "on": [
+        "fare"
+       ],
+       "type": "pct",
+       "value": 0.8
+      },
+      "cwbCost": {
+       "type": "pct",
+       "value": 1
+      },
+      "discountTier2": 200,
+      "infantCost": {
+       "type": "flat",
+       "value": 0
+      },
+      "tierUpgrade": 0
+     }
+    }
+   ],
+   "po": "Fyka",
+   "rates": [
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Default (Sep 2026 – Mar 2027)",
+     "id": "d2",
+     "label": "Default tour fare 2–3 pax (base Sep)",
+     "unit": "RMB/pax",
+     "value": 8000
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Default (Sep 2026 – Mar 2027)",
+     "id": "d4",
+     "label": "Default tour fare 4–5 pax (base Sep)",
+     "unit": "RMB/pax",
+     "value": 5700
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Default (Sep 2026 – Mar 2027)",
+     "id": "d6",
+     "label": "Default tour fare 6–9 pax (base Sep)",
+     "unit": "RMB/pax",
+     "value": 4800
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Default (Sep 2026 – Mar 2027)",
+     "id": "dss",
+     "label": "Default single supplement",
+     "unit": "RMB/pax",
+     "value": 880
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w2",
+     "label": "Winter tour fare 2–3 pax",
+     "unit": "RMB/pax",
+     "value": 7000
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w4",
+     "label": "Winter tour fare 4–5 pax",
+     "unit": "RMB/pax",
+     "value": 5000
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w6",
+     "label": "Winter tour fare 6–9 pax",
+     "unit": "RMB/pax",
+     "value": 4300
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w10",
+     "label": "Winter tour fare 10–14 pax (10+1 FOC)",
+     "unit": "RMB/pax",
+     "value": 3420
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w15",
+     "label": "Winter tour fare 15–19 pax (15+1 FOC)",
+     "unit": "RMB/pax",
+     "value": 3000
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w20",
+     "label": "Winter tour fare 20–24 pax (20+1 FOC)",
+     "unit": "RMB/pax",
+     "value": 2840
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "w25",
+     "label": "Winter tour fare 25–30 pax (25+1 FOC)",
+     "unit": "RMB/pax",
+     "value": 2730
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "wss",
+     "label": "Winter single supplement 2–9 pax",
+     "unit": "RMB/pax",
+     "value": 680
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina CR Winter Xiling (Dec 2026 – Feb 2027)",
+     "id": "wss10",
+     "label": "Winter single supplement 10+ pax",
+     "unit": "RMB/pax",
+     "value": 580
+    },
+    {
+     "fx": "RMB",
+     "group": "Tipping",
+     "id": "tip",
+     "label": "Tipping, tidak termasuk dalam tour fare (Tourdechina)",
+     "unit": "RMB/pax/hari",
+     "value": 30
+    }
+   ],
+   "source": "hub",
+   "tables": [],
+   "variants": [
+    {
+     "components": [
+      {
+       "expr": "band(pax,[3,R.d2],[5,R.d4],[999,R.d6])*pax",
+       "key": "fare",
+       "label": "Tour fare (CR Tourdechina, base Sep)",
+       "per": "group"
+      },
+      {
+       "expr": "R.tip*6*pax",
+       "key": "tipping",
+       "label": "Tipping × 6 hari",
+       "per": "group"
+      }
+     ],
+     "hotel": "4-Star — Holiday Inn Express / Hampton by Hilton (Chengdu), JinLong (Jiuzhaigou), MingZhiShangChun (Dujiangyan) or similar",
+     "id": "TDC-DEFAULT",
+     "label": "Tourdechina Default",
+     "notes": "Kos = tour fare BASE Sep 2026 (CR Tourdechina, contracts/tfu) + tipping RMB30/pax/hari × 6. Pelarasan CR (TIDAK diguna — harga dipukul rata atas base supaya margin ≥20%/RM400 setiap tarikh): Okt +RMB100, 1–15 Nov −RMB200, 16 Nov–3 Mac 2027 −RMB400. Termasuk: 10 halal meals (bajet 2–3 pax RMB100, 4–5 RMB80, 6–9 RMB60/pax/meal), 5 malam hotel 4★ + breakfast, first entrance fee (Huanglong + cable car + battery car, Jiuzhaigou + shuttle, Dujiangyan Panda Valley + electric cart), English-speaking guide, air-cond bus, bullet train kelas 2 pergi-balik Chengdu–Songpan/Jiuzhai, air mineral 500ml/pax/hari. No shopping, no option tour. Masjid: Huanglong, Songpan, Dujiangyan, Imperial City (Huangcheng). CWB 100%, CNB 80% tour fare. Cap 9 pax (CR tiada band 10+).",
+     "paxMax": 9,
+     "paxMin": 2,
+     "supplier": "TO TOURDECHINA — 6D Chengdu Jiuzhaigou Huanglong Dujiangyan Muslim Tour (CR Sep 2026 – Mar 2027, excl. Chinese holidays)"
+    },
+    {
+     "components": [
+      {
+       "expr": "band(pax,[3,R.w2],[5,R.w4],[9,R.w6],[14,R.w10],[19,R.w15],[24,R.w20],[999,R.w25])*pax",
+       "key": "fare",
+       "label": "Tour fare (CR Tourdechina Winter)",
+       "per": "group"
+      },
+      {
+       "expr": "R.tip*6*pax",
+       "key": "tipping",
+       "label": "Tipping × 6 hari",
+       "per": "group"
+      }
+     ],
+     "hotel": "4-Star — Hampton by Hilton WaiShuangNan (Chengdu), YiShang Plus (Jiuzhaigou) or similar",
+     "id": "TDC-WINTER",
+     "label": "Tourdechina Winter (Xiling)",
+     "notes": "Kos = tour fare CR Tourdechina Winter + tipping RMB30/pax/hari × 6. FOC 10+1 tidak diguna untuk kurangkan kos. Termasuk: 10 halal meals (bajet RMB60/pax/meal + 1 lunch Jiuzhaigou RMB80; lunch box halal di Xiling), 5 malam hotel 4★ + breakfast, first entrance fee (Jiuzhaigou + sightseeing bus, Xiling RiYuePing cable car + sightseeing bus, Chengdu Panda Base + battery car, Kuanzhai Alley face-changing show + Gaiwan tea), English-speaking guide, air-cond bus, bullet train kelas 2 pergi-balik Chengdu–Songpan, air mineral 500ml/pax/hari. No shopping, no option tour. Masjid: Songpan, Imperial City (Huangcheng). Aktiviti salji Xiling bayar sendiri; bergantung cuaca. CWB 100%, CNB 80% tour fare.",
+     "paxMax": 30,
+     "paxMin": 2,
+     "supplier": "TO TOURDECHINA — New 6D Chengdu Jiuzhaigou Xiling Snow Mountain Muslim Tour (CR Dec 2026 – Feb 2027, excl. CNY 15–23 Feb)"
+    }
+   ]
   }
  ]
 }
