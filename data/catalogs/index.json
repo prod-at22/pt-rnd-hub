@@ -592,5 +592,21 @@
   "version": "v3",
   "updated": "2026-10-23",
   "url": "https://prod-at22.github.io/catalog-pt-public/ho-chi-minh-standard.html"
+ },
+ "chengdu": {
+  "code": "TFU",
+  "duration": "6D5N",
+  "package": "tdc-default",
+  "title": "PRIVATE TOUR CHENGDU - JIUZHAIGOU - DUJIANGYAN",
+  "updated": "2026-11-10",
+  "version": "v1"
+ },
+ "chengdu-winter": {
+  "code": "TFU",
+  "duration": "6D5N",
+  "package": "tdc-winter",
+  "title": "PRIVATE TOUR CHENGDU WINTER - XILING SNOW MOUNTAIN",
+  "updated": "2026-11-10",
+  "version": "v1"
  }
 }

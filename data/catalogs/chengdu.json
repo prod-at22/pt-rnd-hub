@@ -1,0 +1,275 @@
+{
+ "addon_groups": [],
+ "basis": "Ground & Tipping",
+ "code": "TFU",
+ "country": "China",
+ "deposit": [
+  {
+   "figure": "RM 500",
+   "text": "deposit per person"
+  },
+  {
+   "figure": "45 days",
+   "text": "prior to arrival for full payment"
+  }
+ ],
+ "destination": "Chengdu",
+ "duration": "6D5N",
+ "expect": [
+  {
+   "body": "Huanglong and Jiuzhaigou are high altitude areas and may cause altitude sickness. Walk slowly and stay hydrated.",
+   "icon": "altitude",
+   "title": "High Altitude Areas"
+  },
+  {
+   "body": "Expect plenty of walking, especially at Huanglong and Jiuzhaigou. Comfortable shoes recommended.",
+   "icon": "footprints",
+   "title": "Required Walking"
+  },
+  {
+   "body": "Guests will stay in hotels in Chengdu, Jiuzhaigou and Dujiangyan. Keep your bags packed and organised.",
+   "icon": "hotel",
+   "title": "Multiple Hotels"
+  },
+  {
+   "body": "Intercity transfers via bullet train and private transport.",
+   "icon": "train",
+   "title": "Intercity Transfer"
+  },
+  {
+   "body": "Download WeChat and set up E-wallet (Alipay) as some places may prefer cashless payments.",
+   "icon": "payment",
+   "title": "Communication & Payment"
+  },
+  {
+   "body": "The drop-off point may not be directly at the entrance & may require walking.",
+   "icon": "map-pin",
+   "title": "Distant Drop Off & Pickup Point"
+  }
+ ],
+ "highlights": [
+  {
+   "icon": "hotel",
+   "label": "Accommodation"
+  },
+  {
+   "icon": "bus",
+   "label": "Private Transport"
+  },
+  {
+   "icon": "guide",
+   "label": "Tour Guide"
+  }
+ ],
+ "itinerary": [
+  {
+   "activities": [
+    "(Suggested Flight: AirAsia X D7 326 18:05 - 22:40)",
+    "Arrive in Chengdu Tianfu Intl' Airport (TFU)",
+    "Airport Pickup",
+    "Transfer to hotel and check in",
+    "Rest for the day"
+   ],
+   "day": 1,
+   "hotel": "4-Star Hotel (Chengdu)",
+   "meals": "-",
+   "title": "Kuala Lumpur - Chengdu",
+   "transport": "Private Airport Transfer"
+  },
+  {
+   "activities": [
+    "After breakfast, check out from hotel",
+    "Transfer to Huanglong by bullet train",
+    "Lunch and prayer at Local Mosque",
+    "Huanglong Scenic Area (Include cable car & battery car) (Stunning terraced pools formed by calcite deposits)",
+    "Transfer to Jiuzhaigou",
+    "Dinner and check in hotel in Jiuzhaigou"
+   ],
+   "day": 2,
+   "hotel": "4-Star Hotel (Jiuzhaigou)",
+   "meals": "International Breakfast, Lunch, Dinner",
+   "title": "Chengdu - Huanglong - Jiuzhaigou [Bullet Train]",
+   "transport": "Private Transport, Bullet Train"
+  },
+  {
+   "activities": [
+    "Full day at Jiuzhaigou National Park (Include shuttle bus) (A nature fairyland with emerald crystal lakes, colourful waterfalls and lush forests)",
+    "Rize Valley: Arrow Bamboo Lake, Five Flower Lake & Pearl Shoal Waterfall",
+    "Dinner and back to hotel"
+   ],
+   "day": 3,
+   "hotel": "4-Star Hotel (Jiuzhaigou)",
+   "meals": "International Breakfast, Lunch, Dinner",
+   "title": "Full Day Jiuzhaigou",
+   "transport": "Private Transport, Park Shuttle Bus"
+  },
+  {
+   "activities": [
+    "After breakfast, check out from hotel",
+    "Source of Minjiang River (Gonggangling)",
+    "Songpan Ancient Town (A historic military garrison and trade hub)",
+    "Songpan Mosque",
+    "Bullet train back to Chengdu",
+    "Night tour at SKP Bamboo Tower (Iconic landmark of 6 giant bamboo-shaped towers)",
+    "Dinner and check in hotel in Chengdu"
+   ],
+   "day": 4,
+   "hotel": "4-Star Hotel (Chengdu)",
+   "meals": "International Breakfast, Lunch, Dinner",
+   "title": "Jiuzhaigou - Songpan - Chengdu [Bullet Train]",
+   "transport": "Private Transport, Bullet Train"
+  },
+  {
+   "activities": [
+    "After breakfast, check out from hotel",
+    "Transfer to Dujiangyan",
+    "Dujiangyan Panda Base (Include electric cart) (See Giant Panda and Red Panda)",
+    "Yangtianwo Selfie Square",
+    "Local Mosque",
+    "Zhongshuge Bookstore (Two-storey bookstore with unique architecture)",
+    "Night tour at Dujiangyan \"Blue Tears\" (Neon-blue illumination of the Minjiang River)",
+    "Dinner and check in hotel in Dujiangyan"
+   ],
+   "day": 5,
+   "hotel": "4-Star Hotel (Dujiangyan)",
+   "meals": "International Breakfast, Lunch, Dinner",
+   "title": "Chengdu - Dujiangyan",
+   "transport": "Private Transport"
+  },
+  {
+   "activities": [
+    "After breakfast, check out from hotel",
+    "Transfer back to Chengdu",
+    {
+     "sub": [
+      "Mar - Apr (Spring): Manhua Manor + Glass Bridge (Breathtaking flower park)",
+      "May - Dec (Summer / Autumn): Face-changing show + Gaiwan tea @ Kuanzhai Alley (Historic cultural district)"
+     ],
+     "text": "Seasonal activity:"
+    },
+    "Imperial City Mosque (Huangcheng Mosque, the largest mosque in Sichuan)",
+    "Chunxi Road, IFS & Taikoo Li (Shopping district with the iconic climbing panda)",
+    "After dinner, transfer to airport",
+    {
+     "sub": [
+      "Return flight AirAsia X D7 327 departs 23:55 (Day 6) and arrives in KLIA 04:50 (+1).",
+      "Kindly book the correct timing or consult with our travel consultant."
+     ],
+     "text": "Note:"
+    }
+   ],
+   "day": 6,
+   "hotel": "-",
+   "meals": "International Breakfast, Lunch, Dinner",
+   "title": "Dujiangyan - Chengdu + Airport Transfer",
+   "transport": "Private Transport, Airport Transfer"
+  }
+ ],
+ "kb_url": "",
+ "notes": [
+  {
+   "entries": [
+    "All prices are valid for 24 hours after quotation submission.",
+    "The price is for 2 to 3 persons per room.",
+    "Single supplement: additional RM670/person.",
+    "Fare is not applicable during Chinese public holidays; please refer to the blackout dates.",
+    "Late booking surcharge of RM50/booking will apply for bookings made less than 45 days before the departure date.",
+    "This package is valid until the 31st March 2027 travel period.",
+    "Private transportation & tour guide is based on 10 hours basis. Additional fees will be charged for every extra hour usage. Payment must be paid in cash.",
+    "Quotation, itinerary and price are subject to change accordingly.",
+    "Final itinerary and hotel arrangements will be confirmed at least 15 days before the trip.",
+    "Please check with our staff on the trip validity before booking any connecting domestic flights.",
+    "Default arrangement might change without prior notice depending on the current weather & traffic condition."
+   ],
+   "title": ""
+  }
+ ],
+ "ops": "",
+ "po": "Fyka",
+ "price_blocks": [
+  {
+   "excludes": [
+    "Private Driver & Guide is based on 10 hours basis. Additional fees will be charged for every extra hour usage",
+    "Return Flight Tickets",
+    "Luggage, In Flight Meal & Airport Tax",
+    "Additional Fees or Optional Tour",
+    "Personal Expenses",
+    "Travel Insurance"
+   ],
+   "includes": [
+    "5 Nights Accommodation with International Breakfast on sharing basis (Local 4Star Hotel)",
+    "Halal Meals as specified in itinerary",
+    "Private Transportation (10 Hour Basis)",
+    "Bullet Train Second Class Seat (Chengdu - Huanglong / Songpan - Chengdu)",
+    "Entrance Fees as specified in itinerary",
+    "Cable Car & Battery Car at Huanglong",
+    "Shuttle Bus at Jiuzhaigou National Park",
+    "Electric Cart at Dujiangyan Panda Base",
+    "Daily Mineral Water (500ml/pax)",
+    "Tipping Fee, Parking Fee",
+    "Airport Transfer",
+    "English Speaking Tour Guide"
+   ]
+  }
+ ],
+ "prices": {
+  "columns": [
+   {
+    "age": "12 years above",
+    "label": "Adult"
+   },
+   {
+    "age": "6-11 years old",
+    "label": "Child With Bed"
+   },
+   {
+    "age": "2-5 years old",
+    "label": "Child No Bed"
+   }
+  ],
+  "infant": "FOC",
+  "rows": [
+   {
+    "pax": "2 - 3"
+   },
+   {
+    "pax": "4 - 5"
+   },
+   {
+    "pax": "6 - 9"
+   }
+  ]
+ },
+ "route": "Chengdu - Huanglong - Jiuzhaigou - Songpan - Dujiangyan",
+ "slug": "chengdu",
+ "source_pdf": "",
+ "surcharge": {
+  "notes": [
+   "Package fare is not applicable during Chinese public holidays. Please check with our staff for availability."
+  ],
+  "seasons": [
+   {
+    "label": "China Golden Week",
+    "period": "1 Oct - 8 Oct",
+    "rate": "Blackout date"
+   },
+   {
+    "label": "Chinese New Year",
+    "period": "CNY holiday period",
+    "rate": "Blackout date"
+   },
+   {
+    "label": "Labor Day",
+    "period": "1 May - 5 May",
+    "rate": "Blackout date"
+   }
+  ],
+  "title": "Blackout Dates"
+ },
+ "tier": "Standard",
+ "tier_code": "STD",
+ "title": "PRIVATE TOUR CHENGDU - JIUZHAIGOU - DUJIANGYAN",
+ "updated": "2026-11-10",
+ "valid_until": "31 March 2027",
+ "version": "v1"
+}

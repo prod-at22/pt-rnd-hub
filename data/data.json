@@ -39209,7 +39209,10 @@
      "selling": 70
     }
    ],
-   "catalogs": [],
+   "catalogs": [
+    "PT CHENGDU STD 6D5N 2026-2027",
+    "PT CHENGDU WINTER 6D5N 2026-2027"
+   ],
    "code": "TFU",
    "competitors": {
     "arba": {},
@@ -39270,7 +39273,12 @@
      "name": "Holiday Inn Express / Hampton by Hilton",
      "similar": true,
      "stars": 4,
-     "variant": "Default"
+     "variant": "Default",
+     "catalogs": {
+      "chengdu": {
+       "acc": 1
+      }
+     }
     },
     {
      "city": "Jiuzhaigou",
@@ -39278,7 +39286,12 @@
      "name": "JinLong Hotel",
      "similar": true,
      "stars": 4,
-     "variant": "Default"
+     "variant": "Default",
+     "catalogs": {
+      "chengdu": {
+       "acc": 1
+      }
+     }
     },
     {
      "city": "Dujiangyan",
@@ -39286,7 +39299,12 @@
      "name": "MingZhiShangChun Hotel",
      "similar": true,
      "stars": 4,
-     "variant": "Default"
+     "variant": "Default",
+     "catalogs": {
+      "chengdu": {
+       "acc": 1
+      }
+     }
     },
     {
      "city": "Chengdu",
@@ -39294,7 +39312,12 @@
      "name": "Hampton by Hilton WaiShuangNan",
      "similar": true,
      "stars": 4,
-     "variant": "Winter"
+     "variant": "Winter",
+     "catalogs": {
+      "chengdu-winter": {
+       "acc": 1
+      }
+     }
     },
     {
      "city": "Jiuzhaigou",
@@ -39302,7 +39325,12 @@
      "name": "YiShang Plus Hotel",
      "similar": true,
      "stars": 4,
-     "variant": "Winter"
+     "variant": "Winter",
+     "catalogs": {
+      "chengdu-winter": {
+       "acc": 1
+      }
+     }
     }
    ],
    "name": "Chengdu",
