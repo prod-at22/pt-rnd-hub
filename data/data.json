@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 134,
- "updatedAt": "2026-11-06T02:10:02.884Z",
+ "version": 135,
+ "updatedAt": "2026-11-10T07:22:39.274Z",
  "updatedBy": "amirul",
  "settings": {
   "marginWarnPct": 0.15,
@@ -39221,7 +39221,30 @@
      8
     ]
    },
-   "contracts": [],
+   "contracts": [
+    {
+     "at": "2026-11-10T07:22:23Z",
+     "by": "product",
+     "drive": "1affL299oY-QYDI26lth0E3a7nn7IWvfd",
+     "file": null,
+     "id": "1affL299oY-QYDI26lth0E3a7nn7IWvfd",
+     "name": "PT TFU TOURDECHINA Chengdu Default 6D5N (Sep 2026 - Mar 2027).doc",
+     "note": "From Drive · Production Team · Default Huanglong-Jiuzhaigou-Dujiangyan, 2–9 pax, valid Sep 2026 – Mar 2027 excl. Chinese holidays",
+     "size": 210432,
+     "to": "Tourdechina"
+    },
+    {
+     "at": "2026-11-10T07:22:26Z",
+     "by": "product",
+     "drive": "1WhQEhjzXgou6UCOd8DaE0AOXn-7BUdBv",
+     "file": null,
+     "id": "1WhQEhjzXgou6UCOd8DaE0AOXn-7BUdBv",
+     "name": "PT TFU TOURDECHINA Chengdu Winter Xiling Snow Mountain 6D5N (Dec 2026 - Feb 2027).doc",
+     "note": "From Drive · Production Team · Winter Xiling Snow Mountain, 2–30 pax, valid Dec 2026 – Feb 2027 excl. CNY 15–23 Feb",
+     "size": 214528,
+     "to": "Tourdechina"
+    }
+   ],
    "country": "China",
    "duration": "6D5N",
    "fx": [

@@ -171077,6 +171077,27 @@
      "label": "Jakarta - Bandung › PO"
     }
    ]
+  },
+  {
+   "v": 135,
+   "at": "2026-11-10T07:22:39.274Z",
+   "by": "amirul",
+   "note": "Chengdu (TFU) opened: Default + Winter packages",
+   "summary": [
+    "Chengdu (TFU) added: 2 packages (Default, Winter Xiling), Tourdechina rate card in RMB, pricing, add-ons, hotels, 2 contracts"
+   ],
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "TFU",
+      "duration"
+     ],
+     "from": "6D5N",
+     "to": "6D5N",
+     "label": "Chengdu › added to PT hub"
+    }
+   ]
   }
  ]
 }
