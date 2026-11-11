@@ -161,7 +161,7 @@
    "entries": [
     "All prices are valid for 24 hours after quotation submission.",
     "The price is for 2 to 3 persons per room.",
-    "Single supplement: additional RM520/person (2-9 pax) or RM450/person (10 pax & above).",
+    "Single supplement: additional RM520/person.",
     "Fare is not applicable during Chinese public holidays; please refer to the blackout dates.",
     "Late booking surcharge of RM50/booking will apply for bookings made less than 45 days before the departure date.",
     "This package is valid until the 28th February 2027 travel period.",
@@ -228,19 +228,7 @@
     "pax": "4 - 5"
    },
    {
-    "pax": "6 - 9"
-   },
-   {
-    "pax": "10 - 14"
-   },
-   {
-    "pax": "15 - 19"
-   },
-   {
-    "pax": "20 - 24"
-   },
-   {
-    "pax": "25 - 30"
+    "pax": "6 - 10"
    }
   ]
  },
@@ -263,7 +251,7 @@
  "tier": "Winter",
  "tier_code": "WTR",
  "title": "PRIVATE TOUR CHENGDU WINTER - XILING SNOW MOUNTAIN",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "valid_until": "28 February 2027",
- "version": "v1"
+ "version": "v2"
 }
