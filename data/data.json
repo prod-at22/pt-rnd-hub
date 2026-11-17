@@ -39209,10 +39209,7 @@
      "selling": 70
     }
    ],
-   "catalogs": [
-    "PT CHENGDU STD 6D5N 2026-2027",
-    "PT CHENGDU WINTER 6D5N 2026-2027"
-   ],
+   "catalogs": [],
    "code": "TFU",
    "competitors": {
     "arba": {},
