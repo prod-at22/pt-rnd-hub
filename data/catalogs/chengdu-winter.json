@@ -229,6 +229,9 @@
    },
    {
     "pax": "6 - 10"
+   },
+   {
+    "pax": "11 - 15"
    }
   ]
  },
@@ -251,7 +254,7 @@
  "tier": "Winter",
  "tier_code": "WTR",
  "title": "PRIVATE TOUR CHENGDU WINTER - XILING SNOW MOUNTAIN",
- "updated": "2026-11-17",
+ "updated": "2026-11-23",
  "valid_until": "28 February 2027",
- "version": "v3"
+ "version": "v4"
 }

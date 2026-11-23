@@ -39402,7 +39402,7 @@
      "assign": [
       {
        "from": 2,
-       "to": 10,
+       "to": 15,
        "variant": "TDC-WINTER"
       }
      ],
@@ -39419,7 +39419,12 @@
        "6": 3697,
        "7": 3697,
        "8": 3697,
-       "9": 3697
+       "9": 3697,
+       "11": 3197,
+       "12": 3197,
+       "13": 3197,
+       "14": 3197,
+       "15": 3197
       },
       "cnb": {
        "10": 2997,
@@ -39430,7 +39435,12 @@
        "6": 2997,
        "7": 2997,
        "8": 2997,
-       "9": 2997
+       "9": 2997,
+       "11": 2497,
+       "12": 2497,
+       "13": 2497,
+       "14": 2497,
+       "15": 2497
       },
       "cwb": {
        "10": 3697,
@@ -39441,7 +39451,12 @@
        "6": 3697,
        "7": 3697,
        "8": 3697,
-       "9": 3697
+       "9": 3697,
+       "11": 3197,
+       "12": 3197,
+       "13": 3197,
+       "14": 3197,
+       "15": 3197
       },
       "infant": 0
      },
@@ -39626,7 +39641,7 @@
      "id": "TDC-WINTER",
      "label": "Tourdechina Winter (Xiling)",
      "notes": "Kos = tour fare CR Tourdechina Winter + tipping RMB30/pax/hari × 6. FOC 10+1 tidak diguna untuk kurangkan kos. Termasuk: 10 halal meals (bajet RMB60/pax/meal + 1 lunch Jiuzhaigou RMB80; lunch box halal di Xiling), 5 malam hotel 4★ + breakfast, first entrance fee (Jiuzhaigou + sightseeing bus, Xiling RiYuePing cable car + sightseeing bus, Chengdu Panda Base + battery car, Kuanzhai Alley face-changing show + Gaiwan tea), English-speaking guide, air-cond bus, bullet train kelas 2 pergi-balik Chengdu–Songpan, air mineral 500ml/pax/hari. No shopping, no option tour. Masjid: Songpan, Imperial City (Huangcheng). Aktiviti salji Xiling bayar sendiri; bergantung cuaca. CWB 100%, CNB 80% tour fare.",
-     "paxMax": 10,
+     "paxMax": 15,
      "paxMin": 2,
      "supplier": "TO TOURDECHINA — New 6D Chengdu Jiuzhaigou Xiling Snow Mountain Muslim Tour (CR Dec 2026 – Feb 2027, excl. CNY 15–23 Feb)"
     }
