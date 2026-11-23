@@ -11,7 +11,7 @@
   "basis": "Ground & Tipping",
   "valid_until": "31 December 2026",
   "version": "v3",
-  "updated": "2025-12-03",
+  "updated": "2026-11-23",
   "kb_url": "https://prod-at22.github.io/arba-maldives-kb/",
   "po": "Acap",
   "ops": "CIK IWAN",
@@ -266,5 +266,5 @@
       ]
     }
   ],
-  "hub_version": 54
+  "hub_version": 136
 }
