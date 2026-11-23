@@ -171139,6 +171139,32 @@
    "kb": [
     "KB maldives: 1 change"
    ]
+  },
+  {
+   "v": 137,
+   "at": "2026-11-23T03:21:47.497Z",
+   "by": "acap",
+   "note": "Published 1 change",
+   "changes": [
+    {
+     "path": [
+      "destinations",
+      "MLE",
+      "addons",
+      "mle-k009",
+      "selling"
+     ],
+     "from": 500,
+     "to": 560,
+     "label": "Maldives › addons › mle-k009 › selling"
+    }
+   ],
+   "catalogs": [
+    "Catalog maldives-basic: add-ons from v137",
+    "Catalog maldives-combo: add-ons from v137",
+    "Catalog maldives-standard: add-ons from v137",
+    "Catalog maldives-water-villa: add-ons from v137"
+   ]
   }
  ]
 }

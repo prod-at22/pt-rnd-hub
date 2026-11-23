@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 136,
- "updatedAt": "2026-11-23T03:17:21.771Z",
+ "version": 137,
+ "updatedAt": "2026-11-23T03:21:47.497Z",
  "updatedBy": "acap",
  "settings": {
   "marginWarnPct": 0.15,
@@ -28629,7 +28629,7 @@
      "label": "Whale Shark Trip (shared tour)",
      "per": "pax",
      "cost": 531.05,
-     "selling": 500,
+     "selling": 560,
      "notes": "Kaani excursion menu 2026: Whale Shark $130",
      "includes": "Snorkelling & Swimming, Whale Shark Point, Manta Rays Point",
      "price_lines": [
