@@ -39332,13 +39332,13 @@
    ],
    "name": "Chengdu",
    "nights": 5,
-   "note": "2 itinerari ikut GT Chengdu 3 Bandar. DEFAULT (Mac – pertengahan Dis): Chengdu–Huanglong–Jiuzhaigou–Songpan–Dujiangyan; Hari 6 Mac–Apr = Manhua Manor + Glass Bridge, Mei–Dis = Face-changing show + Gaiwan tea @ Kuanzhai Alley. WINTER (hujung Dis – Feb): Chengdu–Songpan–Jiuzhaigou–Xiling Snow Mountain–Panda Base. Harga Default dipukul rata atas fare base Sep supaya margin ≥20% atau RM400 (selepas diskaun RM200) pada setiap tarikh. Default cap 9 pax (10+ = quote manual). Flight: AirAsia D7 326/327 atau Batik sahaja. PROVISIONAL: CR Default hanya hingga Mac 2027, Winter Dis 2026–Feb 2027 — harga Apr–Dis 2027 tunggu CR 2027 Tourdechina.",
+   "note": "2 itinerari ikut GT Chengdu 3 Bandar. DEFAULT (Mac – pertengahan Dis): Chengdu–Huanglong–Jiuzhaigou–Songpan–Dujiangyan; Hari 6 Mac–Apr = Manhua Manor + Glass Bridge, Mei–Dis = Face-changing show + Gaiwan tea @ Kuanzhai Alley. WINTER (hujung Dis – Feb): Chengdu–Songpan–Jiuzhaigou–Xiling Snow Mountain–Panda Base. Harga Default 2–9 pax dipukul rata atas fare base Sep; 10–15 pax ikut kadar GT CDU (bulan puncak Okt, PROVISIONAL). Kedua-dua pakej cap 15 pax. CWB = Adult −RM200, CNB = Adult −RM400. Flight: AirAsia D7 326/327 atau Batik sahaja. PROVISIONAL: CR Default hanya hingga Mac 2027, Winter Dis 2026–Feb 2027 — harga Apr–Dis 2027 tunggu CR 2027 Tourdechina.",
    "packages": [
     {
      "assign": [
       {
        "from": 2,
-       "to": 9,
+       "to": 15,
        "variant": "TDC-DEFAULT"
       }
      ],
@@ -39347,6 +39347,12 @@
      "label": "Chengdu Default 6D5N (Mac – pertengahan Dis)",
      "pricing": {
       "adult": {
+       "10": 3697,
+       "11": 3697,
+       "12": 3697,
+       "13": 3697,
+       "14": 3697,
+       "15": 3697,
        "2": 6047,
        "3": 6047,
        "4": 4647,
@@ -39357,24 +39363,36 @@
        "9": 3947
       },
       "cnb": {
-       "2": 5097,
-       "3": 5097,
-       "4": 3897,
-       "5": 3897,
-       "6": 3297,
-       "7": 3297,
-       "8": 3297,
-       "9": 3297
+       "10": 3297,
+       "11": 3297,
+       "12": 3297,
+       "13": 3297,
+       "14": 3297,
+       "15": 3297,
+       "2": 5647,
+       "3": 5647,
+       "4": 4247,
+       "5": 4247,
+       "6": 3547,
+       "7": 3547,
+       "8": 3547,
+       "9": 3547
       },
       "cwb": {
-       "2": 6047,
-       "3": 6047,
-       "4": 4647,
-       "5": 4647,
-       "6": 3947,
-       "7": 3947,
-       "8": 3947,
-       "9": 3947
+       "10": 3497,
+       "11": 3497,
+       "12": 3497,
+       "13": 3497,
+       "14": 3497,
+       "15": 3497,
+       "2": 5847,
+       "3": 5847,
+       "4": 4447,
+       "5": 4447,
+       "6": 3747,
+       "7": 3747,
+       "8": 3747,
+       "9": 3747
       },
       "infant": 0
      },
@@ -39412,6 +39430,11 @@
      "pricing": {
       "adult": {
        "10": 3697,
+       "11": 3197,
+       "12": 3197,
+       "13": 3197,
+       "14": 3197,
+       "15": 3197,
        "2": 5497,
        "3": 5497,
        "4": 4197,
@@ -39419,44 +39442,39 @@
        "6": 3697,
        "7": 3697,
        "8": 3697,
-       "9": 3697,
-       "11": 3197,
-       "12": 3197,
-       "13": 3197,
-       "14": 3197,
-       "15": 3197
+       "9": 3697
       },
       "cnb": {
-       "10": 2997,
-       "2": 4597,
-       "3": 4597,
-       "4": 3397,
-       "5": 3397,
-       "6": 2997,
-       "7": 2997,
-       "8": 2997,
-       "9": 2997,
-       "11": 2497,
-       "12": 2497,
-       "13": 2497,
-       "14": 2497,
-       "15": 2497
+       "10": 3297,
+       "11": 2797,
+       "12": 2797,
+       "13": 2797,
+       "14": 2797,
+       "15": 2797,
+       "2": 5097,
+       "3": 5097,
+       "4": 3797,
+       "5": 3797,
+       "6": 3297,
+       "7": 3297,
+       "8": 3297,
+       "9": 3297
       },
       "cwb": {
-       "10": 3697,
-       "2": 5497,
-       "3": 5497,
-       "4": 4197,
-       "5": 4197,
-       "6": 3697,
-       "7": 3697,
-       "8": 3697,
-       "9": 3697,
-       "11": 3197,
-       "12": 3197,
-       "13": 3197,
-       "14": 3197,
-       "15": 3197
+       "10": 3497,
+       "11": 2997,
+       "12": 2997,
+       "13": 2997,
+       "14": 2997,
+       "15": 2997,
+       "2": 5297,
+       "3": 5297,
+       "4": 3997,
+       "5": 3997,
+       "6": 3497,
+       "7": 3497,
+       "8": 3497,
+       "9": 3497
       },
       "infant": 0
      },
@@ -39594,6 +39612,22 @@
      "label": "Tipping, tidak termasuk dalam tour fare (Tourdechina)",
      "unit": "RMB/pax/hari",
      "value": 30
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina GT CDU 3 Bandar (Apr–Dec 2026) — PROVISIONAL",
+     "id": "d10",
+     "label": "Default tour fare 10–14 pax (GT rate, Oct peak RMB3,400+650)",
+     "unit": "RMB/pax",
+     "value": 4050
+    },
+    {
+     "fx": "RMB",
+     "group": "Tourdechina GT CDU 3 Bandar (Apr–Dec 2026) — PROVISIONAL",
+     "id": "d15",
+     "label": "Default tour fare 15–19 pax (GT rate, Oct peak RMB3,100+650)",
+     "unit": "RMB/pax",
+     "value": 3750
     }
    ],
    "source": "hub",
@@ -39602,7 +39636,7 @@
     {
      "components": [
       {
-       "expr": "band(pax,[3,R.d2],[5,R.d4],[999,R.d6])*pax",
+       "expr": "band(pax,[3,R.d2],[5,R.d4],[9,R.d6],[14,R.d10],[999,R.d15])*pax",
        "key": "fare",
        "label": "Tour fare (CR Tourdechina, base Sep)",
        "per": "group"
@@ -39617,8 +39651,8 @@
      "hotel": "4-Star — Holiday Inn Express / Hampton by Hilton (Chengdu), JinLong (Jiuzhaigou), MingZhiShangChun (Dujiangyan) or similar",
      "id": "TDC-DEFAULT",
      "label": "Tourdechina Default",
-     "notes": "Kos = tour fare BASE Sep 2026 (CR Tourdechina, contracts/tfu) + tipping RMB30/pax/hari × 6. Pelarasan CR (TIDAK diguna — harga dipukul rata atas base supaya margin ≥20%/RM400 setiap tarikh): Okt +RMB100, 1–15 Nov −RMB200, 16 Nov–3 Mac 2027 −RMB400. Termasuk: 10 halal meals (bajet 2–3 pax RMB100, 4–5 RMB80, 6–9 RMB60/pax/meal), 5 malam hotel 4★ + breakfast, first entrance fee (Huanglong + cable car + battery car, Jiuzhaigou + shuttle, Dujiangyan Panda Valley + electric cart), English-speaking guide, air-cond bus, bullet train kelas 2 pergi-balik Chengdu–Songpan/Jiuzhai, air mineral 500ml/pax/hari. No shopping, no option tour. Masjid: Huanglong, Songpan, Dujiangyan, Imperial City (Huangcheng). CWB 100%, CNB 80% tour fare. Cap 9 pax (CR tiada band 10+).",
-     "paxMax": 9,
+     "notes": "Kos 2–9 pax = tour fare BASE Sep 2026 (CR Tourdechina, contracts/tfu) + tipping RMB30/pax/hari × 6. Pelarasan CR (TIDAK diguna — harga dipukul rata atas base supaya margin ≥20%/RM400 setiap tarikh): Okt +RMB100, 1–15 Nov −RMB200, 16 Nov–3 Mac 2027 −RMB400. Kos 10–15 pax = kadar GT CDU 3 Bandar Tourdechina (Apr–Dis 2026, PROVISIONAL sehingga CR 2027) pada bulan puncak Okt (10–14 RMB3,400+650, 15–19 RMB3,100+650) + tipping; FOC 10+1 tidak diguna. Tiket Hari 6 (Kuanzhai show / Manhua Manor) RMB60/pax — sahkan sama ada termasuk. Single supplement 10+ pax: quote on request (GT RMB650–1,000). Termasuk: 10 halal meals, 5 malam hotel 4★ + breakfast, first entrance fee (Huanglong + cable car + battery car, Jiuzhaigou + shuttle, Dujiangyan Panda Valley + electric cart), English-speaking guide, air-cond bus, bullet train kelas 2 pergi-balik Chengdu–Songpan/Jiuzhai, air mineral 500ml/pax/hari. No shopping, no option tour. Masjid: Huanglong, Songpan, Dujiangyan, Imperial City (Huangcheng). Harga jualan: CWB = Adult −RM200, CNB = Adult −RM400. Cap 15 pax.",
+     "paxMax": 15,
      "paxMin": 2,
      "supplier": "TO TOURDECHINA — 6D Chengdu Jiuzhaigou Huanglong Dujiangyan Muslim Tour (CR Sep 2026 – Mar 2027, excl. Chinese holidays)"
     },

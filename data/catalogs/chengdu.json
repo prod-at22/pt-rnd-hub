@@ -237,6 +237,9 @@
    },
    {
     "pax": "6 - 9"
+   },
+   {
+    "pax": "10 - 15"
    }
   ]
  },
@@ -269,7 +272,7 @@
  "tier": "Standard",
  "tier_code": "STD",
  "title": "PRIVATE TOUR CHENGDU - JIUZHAIGOU - DUJIANGYAN",
- "updated": "2026-11-20",
+ "updated": "2026-11-23",
  "valid_until": "31 March 2027",
  "version": "v4"
 }
