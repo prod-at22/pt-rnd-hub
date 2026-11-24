@@ -1,325 +1,321 @@
 {
-  "slug": "tokyo-osaka-standard",
-  "destination": "Tokyo-Osaka",
-  "country": "Japan",
-  "code": "KIX",
-  "tier": "Standard",
-  "tier_code": "STD",
-  "title": "PRIVATE TOUR TOKYO - OSAKA STANDARD",
-  "duration": "7D6N",
-  "route": "Shibuya - Mount Fuji - Odaiba - Osaka - Nara - Kyoto",
-  "basis": "Ground & Tipping",
-  "valid_until": "31 December 2026",
-  "version": "v1",
-  "updated": "2026-03-09",
-  "kb_url": "https://prod-at22.github.io/japan-kb/",
-  "po": "Ezie",
-  "ops": "ATIQAH",
-  "source_pdf": "Jepun/Tokyo-Osaka/Catalog/PT Tokyo-Osaka Standard 7D6N 2026 v1.pdf",
-  "highlights": [
-    {
-      "icon": "hotel",
-      "label": "Hotel / Apartment"
-    },
-    {
-      "icon": "bus",
-      "label": "Private Transport"
-    },
-    {
-      "icon": "guide",
-      "label": "Tour Guide"
-    }
-  ],
-  "prices": {
-    "columns": [
-      {
-        "label": "Adult",
-        "age": "12 years above"
-      },
-      {
-        "label": "Child With Bed",
-        "age": "6-11 years old"
-      },
-      {
-        "label": "Child No Bed",
-        "age": "2-5 years old"
-      }
-    ],
-    "rows": [
-      {
-        "pax": "2"
-      },
-      {
-        "pax": "3"
-      },
-      {
-        "pax": "4"
-      },
-      {
-        "pax": "5"
-      },
-      {
-        "pax": "6"
-      },
-      {
-        "pax": "7"
-      },
-      {
-        "pax": "8"
-      },
-      {
-        "pax": "9"
-      },
-      {
-        "pax": "10"
-      },
-      {
-        "pax": "11"
-      },
-      {
-        "pax": "12"
-      }
-    ],
-    "infant": "{price}"
+ "slug": "tokyo-osaka-standard",
+ "destination": "Tokyo-Osaka",
+ "country": "Japan",
+ "code": "KIX",
+ "tier": "Standard",
+ "tier_code": "STD",
+ "title": "PRIVATE TOUR TOKYO - OSAKA STANDARD",
+ "duration": "7D6N",
+ "route": "Shibuya - Mount Fuji - Odaiba - Osaka - Nara - Kyoto",
+ "basis": "Ground & Tipping",
+ "valid_until": "31 December 2026",
+ "version": "v1",
+ "updated": "2026-03-09",
+ "kb_url": "https://prod-at22.github.io/japan-kb/",
+ "po": "Ezie",
+ "ops": "ATIQAH",
+ "source_pdf": "Jepun/Tokyo-Osaka/Catalog/PT Tokyo-Osaka Standard 7D6N 2026 v1.pdf",
+ "highlights": [
+  {
+   "icon": "hotel",
+   "label": "Hotel / Apartment"
   },
-  "price_blocks": [
-    {
-      "includes": [
-        "Accommodation (Apartment / Hotel)",
-        "Private Airport Transfer (D1, D7)",
-        "Private Transport (D2, D3, D4, D5, D6) (10 hours basis)",
-        "Driver cum Guide (Malay / English Speaking) (D1 airport transfer only, D2-D6) (10 hours basis)",
-        "Shinkansen Tokyo to Osaka",
-        {
-          "text": "Entrance Fees",
-          "sub": [
-            "Iyashi no Sato Nemba"
-          ]
-        },
-        "Tipping Fee"
-      ],
-      "excludes": [
-        "Extra Hours Transport & Tour Guide: 5,000 - 10,000 yen per hour",
-        "Compulsory Car Seat for Infant",
-        "Return flight ticket",
-        "Personal Expenses",
-        "Optional activity",
-        "Travel Insurance",
-        "In-Flight Meal"
-      ]
-    }
-  ],
-  "surcharge": {
-    "title": "Peak Season Dates & Surcharge · Last Minute Surcharge",
-    "seasons": [
-      {
-        "label": "Peak Season",
-        "period": "28 March - 15 April 2026 · 29 April - 6 May 2026 · 13 - 16 August 2026 · 19 - 23 September 2026 · 30 December - 3 January 2027",
-        "rate": "Additional 10% per pax"
-      },
-      {
-        "label": "Last Minute Surcharge",
-        "period": "Booking 3 weeks before departure date",
-        "rate": "2 pax: Additional RM500 per pax · 3 pax & Above: Additional RM400 per pax"
-      }
-    ]
+  {
+   "icon": "bus",
+   "label": "Private Transport"
   },
-  "itinerary": [
-    {
-      "day": 1,
-      "title": "KUL - HND",
-      "activities": [
-        "Arrive at Tokyo Haneda Airport",
-        "Transfer to accommodation",
-        "Check in"
-      ],
-      "transport": "Private Airport Transfer",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Tokyo)"
-    },
-    {
-      "day": 2,
-      "title": "Fuji",
-      "activities": [
-        "Depart to Fuji",
-        "Iyashi no Sato Nemba (open-air old Japanese village museum)",
-        "Oishi Park (Fuji view photo spot)",
-        "Kawaguchiko Mosque",
-        "Back to Tokyo"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Tokyo)"
-    },
-    {
-      "day": 3,
-      "title": "Tokyo City",
-      "activities": [
-        "Asakusa (Kaminarimon Gate, Sensoji Temple, Nakamise shopping street)",
-        "Ueno (Ueno Park, Ameyoko shopping street)",
-        "Shibuya Crossing Street"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Tokyo)"
-    },
-    {
-      "day": 4,
-      "title": "Tokyo City / Disney",
-      "activities": [
-        "Odaiba (Fuji TV, AquaCity, Decks Tokyo Beach, Diversity Tokyo City)",
-        "OR Disneyland / DisneySea (add on RM300/pax)"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Tokyo)"
-    },
-    {
-      "day": 5,
-      "title": "Tokyo - Osaka",
-      "activities": [
-        "Check out",
-        "Shinkansen Tokyo to Osaka",
-        "Transfer to accommodation",
-        "Drop luggage at apartment",
-        "Osaka Castle Park (second largest park, historical site)",
-        "Namba (vibrant, bustling and historic southern downtown, known for shopping and entertainment)",
-        "Check in"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Osaka)"
-    },
-    {
-      "day": 6,
-      "title": "Kyoto",
-      "activities": [
-        "Arashiyama Bamboo Forest (natural bamboo forest)",
-        "Togetsukyo Bridge (wooden bridge)",
-        "Katsura River",
-        "Fushimi Inari (thousands of vibrant orange, donor-funded torii gates forming tunnels)"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "Apartment / Hotel (Osaka)"
-    },
-    {
-      "day": 7,
-      "title": "Osaka - KUL",
-      "activities": [
-        "Check out",
-        "Airport transfer"
-      ],
-      "transport": "Private Airport Transfer",
-      "meals": "-",
-      "hotel": "-"
-    }
+  {
+   "icon": "guide",
+   "label": "Tour Guide"
+  }
+ ],
+ "prices": {
+  "columns": [
+   {
+    "label": "Adult",
+    "age": "12 years above"
+   },
+   {
+    "label": "Child With Bed",
+    "age": "6-11 years old"
+   },
+   {
+    "label": "Child No Bed",
+    "age": "2-5 years old"
+   }
   ],
-  "expect": [
-    {
-      "icon": "luggage",
-      "title": "Airport Transfer",
-      "body": "Please bring max 1 luggage per person as it will affect car capacity."
-    },
-    {
-      "icon": "hotel",
-      "title": "Apartment",
-      "body": "Number of rooms and bathrooms in one house will depend on the number of participants."
-    },
-    {
-      "icon": "bed",
-      "title": "Hotel",
-      "body": "Rooms are small typically 12-16sqf (Japan standard). Triple rooms offer even less space."
-    },
-    {
-      "icon": "altitude",
-      "title": "Stairs",
-      "body": "Some apartments may have stairs inside."
-    },
-    {
-      "icon": "utensils",
-      "title": "Meal",
-      "body": "Exclude lunch and dinner. Guide will bring to Halal or Muslim Friendly restaurant."
-    },
-    {
-      "icon": "utensils",
-      "title": "Breakfast",
-      "body": "Breakfast is only provided if you stay at a hotel."
-    },
-    {
-      "icon": "payment",
-      "title": "Not Mentioned in the Itinerary",
-      "body": "Things not mentioned in the itinerary must be paid by customers. Eg: Entrance Fee, Shopping etc."
-    },
-    {
-      "icon": "bus",
-      "title": "Transport",
-      "body": "10 hours basis. 5000-10000 yen will be charged for each extra hour."
-    },
-    {
-      "icon": "guide",
-      "title": "Tour Guide",
-      "body": "10 hours basis. 5000-10000 yen will be charged for each extra hour."
-    },
-    {
-      "icon": "train",
-      "title": "Shinkansen",
-      "body": "Guests are required to carry their own luggage when boarding the Shinkansen."
-    }
+  "rows": [
+   {
+    "pax": "2"
+   },
+   {
+    "pax": "3"
+   },
+   {
+    "pax": "4"
+   },
+   {
+    "pax": "5"
+   },
+   {
+    "pax": "6"
+   },
+   {
+    "pax": "7"
+   },
+   {
+    "pax": "8"
+   },
+   {
+    "pax": "9"
+   },
+   {
+    "pax": "10"
+   },
+   {
+    "pax": "11"
+   },
+   {
+    "pax": "12"
+   }
   ],
-  "notes": [
+  "infant": "{price}"
+ },
+ "price_blocks": [
+  {
+   "includes": [
+    "Accommodation (Apartment / Hotel)",
+    "Private Airport Transfer (D1, D7)",
+    "Private Transport (D2, D3, D4, D5, D6) (10 hours basis)",
+    "Driver cum Guide (Malay / English Speaking) (D1 airport transfer only, D2-D6) (10 hours basis)",
+    "Shinkansen Tokyo to Osaka",
     {
-      "title": "",
-      "entries": [
-        "All prices are valid for 24 hours after quotation submission.",
-        "The price is for 2 to 3 persons per room.",
-        "Single Supplement: Additional RM1,400/person.",
-        "Itinerary, price and flight are subject to change accordingly.",
-        "Late Booking Surcharge of RM50/booking will be charged if booking made less than 45 days of departure.",
-        "Last Minute Surcharge will be charged if booking made less than 3 weeks of departure (refer to the Last Minute Surcharge table).",
-        "This package is valid until 31st December 2026 travel period.",
-        "Private Driver & Guide is based on 10 hours basis. 5000 - 10000 Yen will be charged for every extra hour usage. Payment must be paid in cash.",
-        "Customers are recommended to take AirAsia X flight to Haneda Airport and fly back from Kansai Airport to match the default itinerary.",
-        "Please check with our staff on the trip validity or before booking any connecting domestic flights.",
-        "Any free activities is non exchangeable with other activities, voucher or cash if the client not joining or due to availability & weather condition.",
-        "Final itinerary and hotel location will be confirmed at least 14-21 days before departure."
-      ]
-    }
-  ],
-  "deposit": [
-    {
-      "figure": "RM 500",
-      "text": "deposit per person"
+     "text": "Entrance Fees",
+     "sub": [
+      "Iyashi no Sato Nemba"
+     ]
     },
-    {
-      "figure": "45 days",
-      "text": "prior to arrival for full payment"
-    }
-  ],
-  "addon_groups": [
-    {
-      "title": "Add On Accommodation"
-    },
-    {
-      "title": "Add On Tokyo — Private Transport",
-      "notes": [
-        "Price per trip.",
-        "*Can arrange to go to halal Restaurant in Tokyo."
-      ]
-    },
-    {
-      "title": "Add On Tokyo — Public Transport"
-    },
-    {
-      "title": "Add On Osaka — Public Transport"
-    },
-    {
-      "title": "Add On Osaka — Private Transport",
-      "notes": [
-        "Price per trip.",
-        "*Can arrange to go to halal Restaurant."
-      ]
-    }
-  ],
-  "hub_version": 30
+    "Tipping Fee"
+   ],
+   "excludes": [
+    "Extra Hours Transport & Tour Guide: 5,000 - 10,000 yen per hour",
+    "Compulsory Car Seat for Infant",
+    "Return flight ticket",
+    "Personal Expenses",
+    "Optional activity",
+    "Travel Insurance",
+    "In-Flight Meal",
+    "Meals (Breakfast, Lunch, Dinner)"
+   ]
+  }
+ ],
+ "surcharge": {
+  "title": "Peak Season Dates & Surcharge · Last Minute Surcharge",
+  "seasons": [
+   {
+    "label": "Peak Season",
+    "period": "28 March - 15 April 2026 · 29 April - 6 May 2026 · 13 - 16 August 2026 · 19 - 23 September 2026 · 30 December - 3 January 2027",
+    "rate": "Additional 10% per pax"
+   },
+   {
+    "label": "Last Minute Surcharge",
+    "period": "Booking 3 weeks before departure date",
+    "rate": "2 pax: Additional RM500 per pax · 3 pax & Above: Additional RM400 per pax"
+   }
+  ]
+ },
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "KUL - HND",
+   "activities": [
+    "Arrive at Tokyo Haneda Airport",
+    "Transfer to accommodation",
+    "Check in"
+   ],
+   "transport": "Private Airport Transfer",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Tokyo)"
+  },
+  {
+   "day": 2,
+   "title": "Fuji",
+   "activities": [
+    "Depart to Fuji",
+    "Iyashi no Sato Nemba (open-air old Japanese village museum)",
+    "Oishi Park (Fuji view photo spot)",
+    "Kawaguchiko Mosque",
+    "Back to Tokyo"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Tokyo)"
+  },
+  {
+   "day": 3,
+   "title": "Tokyo City",
+   "activities": [
+    "Asakusa (Kaminarimon Gate, Sensoji Temple, Nakamise shopping street)",
+    "Ueno (Ueno Park, Ameyoko shopping street)",
+    "Shibuya Crossing Street"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Tokyo)"
+  },
+  {
+   "day": 4,
+   "title": "Tokyo City / Disney",
+   "activities": [
+    "Odaiba (Fuji TV, AquaCity, Decks Tokyo Beach, Diversity Tokyo City)",
+    "OR Disneyland / DisneySea (add on RM300/pax)"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Tokyo)"
+  },
+  {
+   "day": 5,
+   "title": "Tokyo - Osaka",
+   "activities": [
+    "Check out",
+    "Shinkansen Tokyo to Osaka",
+    "Transfer to accommodation",
+    "Drop luggage at apartment",
+    "Osaka Castle Park (second largest park, historical site)",
+    "Namba (vibrant, bustling and historic southern downtown, known for shopping and entertainment)",
+    "Check in"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Osaka)"
+  },
+  {
+   "day": 6,
+   "title": "Kyoto",
+   "activities": [
+    "Arashiyama Bamboo Forest (natural bamboo forest)",
+    "Togetsukyo Bridge (wooden bridge)",
+    "Katsura River",
+    "Fushimi Inari (thousands of vibrant orange, donor-funded torii gates forming tunnels)"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "Apartment / Hotel (Osaka)"
+  },
+  {
+   "day": 7,
+   "title": "Osaka - KUL",
+   "activities": [
+    "Check out",
+    "Airport transfer"
+   ],
+   "transport": "Private Airport Transfer",
+   "meals": "-",
+   "hotel": "-"
+  }
+ ],
+ "expect": [
+  {
+   "icon": "luggage",
+   "title": "Airport Transfer",
+   "body": "Please bring max 1 luggage per person as it will affect car capacity."
+  },
+  {
+   "icon": "hotel",
+   "title": "Apartment",
+   "body": "Number of rooms and bathrooms in one house will depend on the number of participants."
+  },
+  {
+   "icon": "bed",
+   "title": "Hotel",
+   "body": "Rooms are small typically 12-16sqf (Japan standard). Triple rooms offer even less space."
+  },
+  {
+   "icon": "altitude",
+   "title": "Stairs",
+   "body": "Some apartments may have stairs inside."
+  },
+  {
+   "icon": "utensils",
+   "title": "Meal",
+   "body": "Exclude lunch and dinner. Guide will bring to Halal or Muslim Friendly restaurant."
+  },
+  {
+   "icon": "payment",
+   "title": "Not Mentioned in the Itinerary",
+   "body": "Things not mentioned in the itinerary must be paid by customers. Eg: Entrance Fee, Shopping etc."
+  },
+  {
+   "icon": "bus",
+   "title": "Transport",
+   "body": "10 hours basis. 5000-10000 yen will be charged for each extra hour."
+  },
+  {
+   "icon": "guide",
+   "title": "Tour Guide",
+   "body": "10 hours basis. 5000-10000 yen will be charged for each extra hour."
+  },
+  {
+   "icon": "train",
+   "title": "Shinkansen",
+   "body": "Guests are required to carry their own luggage when boarding the Shinkansen."
+  }
+ ],
+ "notes": [
+  {
+   "title": "",
+   "entries": [
+    "All prices are valid for 24 hours after quotation submission.",
+    "The price is for 2 to 3 persons per room.",
+    "Single Supplement: Additional RM1,400/person.",
+    "Itinerary, price and flight are subject to change accordingly.",
+    "Late Booking Surcharge of RM50/booking will be charged if booking made less than 45 days of departure.",
+    "Last Minute Surcharge will be charged if booking made less than 3 weeks of departure (refer to the Last Minute Surcharge table).",
+    "This package is valid until 31st December 2026 travel period.",
+    "Private Driver & Guide is based on 10 hours basis. 5000 - 10000 Yen will be charged for every extra hour usage. Payment must be paid in cash.",
+    "Customers are recommended to take AirAsia X flight to Haneda Airport and fly back from Kansai Airport to match the default itinerary.",
+    "Please check with our staff on the trip validity or before booking any connecting domestic flights.",
+    "Any free activities is non exchangeable with other activities, voucher or cash if the client not joining or due to availability & weather condition.",
+    "Final itinerary and hotel location will be confirmed at least 14-21 days before departure."
+   ]
+  }
+ ],
+ "deposit": [
+  {
+   "figure": "RM 500",
+   "text": "deposit per person"
+  },
+  {
+   "figure": "45 days",
+   "text": "prior to arrival for full payment"
+  }
+ ],
+ "addon_groups": [
+  {
+   "title": "Add On Accommodation"
+  },
+  {
+   "title": "Add On Tokyo — Private Transport",
+   "notes": [
+    "Price per trip.",
+    "*Can arrange to go to halal Restaurant in Tokyo."
+   ]
+  },
+  {
+   "title": "Add On Tokyo — Public Transport"
+  },
+  {
+   "title": "Add On Osaka — Public Transport"
+  },
+  {
+   "title": "Add On Osaka — Private Transport",
+   "notes": [
+    "Price per trip.",
+    "*Can arrange to go to halal Restaurant."
+   ]
+  }
+ ],
+ "hub_version": 30
 }
