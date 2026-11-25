@@ -883,7 +883,7 @@
      "category": "Activity",
      "label": "Snowyland (Vivaldi entrance)",
      "cost": 105,
-     "selling": 150,
+     "selling": 180,
      "per": "pax",
      "notes": "ProdReq §8.4 · cost 35,000 KRW"
     },
@@ -1281,7 +1281,7 @@
      "excludes": "Fast Lane, Meals, Extra Activities",
      "price_lines": [
       "Adult & Child:",
-      "RM150/person"
+      "RM180/person"
      ],
      "catalogs": {
       "seoul-basic": 8,
