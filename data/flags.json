@@ -1011,6 +1011,46 @@
    "detail": "Catalog single supplement RM1,000/person; the MyTrip CR has no single rate. (noted by ezie, 2026-10-14)",
    "fix": "Ask MyTrip for the single supplement.",
    "id": 101
+  },
+  {
+   "area": "Peak",
+   "code": "SEL",
+   "detail": "ATK (25 Nov 2026): 3–8 Aug 2027 World Youth Day Seoul (Pope's visit) — hotels closing normal rooms or charging very high prices (e.g. Migliore Myeongdong: only windowless rooms 2–8 Aug), vehicles and guides hard to get. ATK advises not selling Seoul ~1–9 Aug. Other 2027 peak: 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge amounts not given yet. (noted by PO, 2026-11-25)",
+   "fix": "Do not quote Seoul for 1–9 Aug 2027; if the customer insists, check with ATK first. For other peak dates, ask ATK for the surcharge before quoting.",
+   "id": 102,
+   "package": null,
+   "severity": "high",
+   "title": "Seoul 2027: DO NOT SELL ~1–9 Aug (World Youth Day) + 2027 peak dates"
+  },
+  {
+   "area": "Peak",
+   "code": "SELJJU",
+   "detail": "ATK (25 Nov 2026): avoid the Seoul leg ~1–9 Aug 2027 (World Youth Day 3–8 Aug: hotels, vehicles, guides). Other 2027 peak: 5–14 Feb · 29 Apr–5 May · 1–11 Oct · 21–31 Dec. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
+   "fix": "Do not quote 1–9 Aug 2027 without ATK's confirmation; ask ATK for peak surcharges before quoting peak dates.",
+   "id": 103,
+   "package": null,
+   "severity": "high",
+   "title": "Seoul-Jeju 2027: Seoul leg not sold ~1–9 Aug (World Youth Day) + 2027 peak dates"
+  },
+  {
+   "area": "Peak",
+   "code": "JJU",
+   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
+   "fix": "Ask ATK for the peak surcharge before quoting these dates.",
+   "id": 104,
+   "package": null,
+   "severity": "medium",
+   "title": "Jeju 2027 peak dates (ATK)"
+  },
+  {
+   "area": "Peak",
+   "code": "JJUO",
+   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
+   "fix": "Ask ATK for the peak surcharge before quoting these dates.",
+   "id": 105,
+   "package": null,
+   "severity": "medium",
+   "title": "Jeju-Udo 2027 peak dates (ATK)"
   }
  ],
  "verified": [

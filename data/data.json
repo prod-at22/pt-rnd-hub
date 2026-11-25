@@ -17,7 +17,7 @@
    "nights": 4,
    "po": "Aiman",
    "source": "ATK CR 2026 Korea (KRW × 0.0032 locked, 25 Nov 2026) + K-ETA RM27 · add-ons: ProdReq Korea · Self Tour: hub",
-   "note": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.003 (locked, PO; rows 'PT 5D4N -BSC' / 'PT 5D4N Seoul Standard' = ATK-OPS Package-Rate) + K-ETA RM27 (catalog inclusion). Child: CWB 100 % (CR child rate only under 7; catalog CWB 6–11) / CNB 50 %, K-ETA free for children (exempt <18). Costing 2–15 (= catalogs). Self Tour kept with its hub calculation (no hub catalog; costs 2–12). Not applied (flag): CR seasonal Jan / Feb −RM200, 21–31 Dec +RM200.",
+   "note": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.0032 (locked, PO 25 Nov 2026; rows 'PT 5D4N -BSC' / 'PT 5D4N Seoul Standard' = ATK-OPS Package-Rate) + K-ETA RM27 (catalog inclusion). Child: CWB 100 % (CR child rate only under 7; catalog CWB 6–11) / CNB 50 %, K-ETA free for children (exempt <18). Costing 2–15 (= catalogs). Self Tour kept with its hub calculation (no hub catalog; costs 2–12). Not applied (flag): CR seasonal Jan / Feb −RM200, 21–31 Dec +RM200. PEAK 2027 (ATK, 25 Nov 2026): 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 3–8 Aug World Youth Day Seoul (Pope) · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge not given yet: check ATK. DO NOT SELL Seoul ~1–9 Aug 2027 (WYD: hotels closing normal rooms / very high prices, vehicles & guides scarce); if a customer insists, check with ATK before quoting.",
    "fx": [
     {
      "id": "MYR",
@@ -1650,7 +1650,7 @@
    "nights": 5,
    "po": "Aiman",
    "source": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27",
-   "note": "Cost = ATK CR 2026 'PT 6D5N Seoul-Jeju Standard' per pax in KRW × 0.003 (locked, PO; incl. domestic flights, tipping) + K-ETA RM27 (catalog inclusion). Child CWB 100 % / CNB 50 % (K-ETA free). Costing 2–15 (= catalog). Not applied (flag): CR Jeju+Seoul seasonal row (labelled FXP) Jan / Feb −150, Jun–Aug −100, 21–31 Dec +250 / +300.",
+   "note": "Cost = ATK CR 2026 'PT 6D5N Seoul-Jeju Standard' per pax in KRW × 0.0032 (locked, PO 25 Nov 2026; incl. domestic flights, tipping) + K-ETA RM27 (catalog inclusion). Child CWB 100 % / CNB 50 % (K-ETA free). Costing 2–15 (= catalog). Not applied (flag): CR Jeju+Seoul seasonal row (labelled FXP) Jan / Feb −150, Jun–Aug −100, 21–31 Dec +250 / +300. PEAK 2027 (ATK, 25 Nov 2026): 5–14 Feb · 29 Apr–5 May · 3–8 Aug (World Youth Day Seoul) · 1–11 Oct · 21–31 Dec. Peak surcharge not given yet: check ATK. DO NOT SELL the Seoul leg ~1–9 Aug 2027 (WYD); if a customer insists, check with ATK before quoting.",
    "fx": [
     {
      "id": "MYR",
@@ -2327,7 +2327,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "ATK CR 2026 Korea · Self Tour: ATK CR 2026 Korea · Self Tour: JEJU/PT_JJU_RD_reformatted.xlsx",
-   "note": "Package cost = ATK CR 2026 per pax in KRW × live FX. Costing 2–25 pax (= CR, PO 13 Oct 2026); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here.",
+   "note": "Package cost = ATK CR 2026 per pax in KRW × 0.0032 (locked, PO 25 Nov 2026). Costing 2–25 pax (= CR, PO 13 Oct 2026); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here. PEAK 2027 (ATK, 25 Nov 2026): 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year (3–8 Aug World Youth Day is Seoul). Peak surcharge not given yet: check ATK.",
    "fx": [
     {
      "id": "MYR",
@@ -2923,7 +2923,7 @@
    "nights": 0,
    "po": "Aiman",
    "source": "ATK CR 2026 Korea",
-   "note": "Package cost = ATK CR 2026 per pax in KRW × live FX (row 'JEJU UDO 5D4N Full board'; catalog is breakfast only — kept, PO 13 Oct 2026). Costing 2–25 pax (= CR); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here.",
+   "note": "Package cost = ATK CR 2026 per pax in KRW × 0.0032 (locked, PO 25 Nov 2026) (row 'JEJU UDO 5D4N Full board'; catalog is breakfast only — kept, PO 13 Oct 2026). Costing 2–25 pax (= CR); 26+ pax = quote manual. CR seasonal discount/upcharge is not applied here. PEAK 2027 (ATK, 25 Nov 2026): 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year (3–8 Aug World Youth Day is Seoul). Peak surcharge not given yet: check ATK.",
    "fx": [
     {
      "id": "MYR",
