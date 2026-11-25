@@ -16,7 +16,7 @@
    "duration": "5D4N",
    "nights": 4,
    "po": "Aiman",
-   "source": "ATK CR 2026 Korea (KRW × 0.003 locked) + K-ETA RM27 · add-ons: ProdReq Korea · Self Tour: hub",
+   "source": "ATK CR 2026 Korea (KRW × 0.0032 locked, 25 Nov 2026) + K-ETA RM27 · add-ons: ProdReq Korea · Self Tour: hub",
    "note": "Basic / Standard cost = ATK CR 2026 per pax in KRW × 0.003 (locked, PO; rows 'PT 5D4N -BSC' / 'PT 5D4N Seoul Standard' = ATK-OPS Package-Rate) + K-ETA RM27 (catalog inclusion). Child: CWB 100 % (CR child rate only under 7; catalog CWB 6–11) / CNB 50 %, K-ETA free for children (exempt <18). Costing 2–15 (= catalogs). Self Tour kept with its hub calculation (no hub catalog; costs 2–12). Not applied (flag): CR seasonal Jan / Feb −RM200, 21–31 Dec +RM200.",
    "fx": [
     {
@@ -28,9 +28,9 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.003,
      "locked": true,
-     "source": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)"
+     "source": "Tetap 0.0032 (PO 25 Nov 2026, ATK CR KRW). Flag PO jika kadar live > 0.0032 atau < 0.003. Dulu 0.003 (15 Oct 2026).",
+     "value": 0.0032
     }
    ],
    "rates": [
@@ -1661,9 +1661,9 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.003,
      "locked": true,
-     "source": "Tetap 0.003 (PO 15 Oct 2026: KRW × 0.003, bukan live); dulu live (sandaran 0.00304516)"
+     "source": "Tetap 0.0032 (PO 25 Nov 2026, ATK CR KRW). Flag PO jika kadar live > 0.0032 atau < 0.003. Dulu 0.003 (15 Oct 2026).",
+     "value": 0.0032
     }
    ],
    "rates": [
@@ -2338,10 +2338,9 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.00304516,
      "locked": true,
-     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
-     "live": "KRW"
+     "source": "Tetap 0.0032 (PO 25 Nov 2026, ATK CR KRW). Flag PO jika kadar live > 0.0032 atau < 0.003. Dulu live (sandaran 0.00304516).",
+     "value": 0.0032
     }
    ],
    "rates": [],
@@ -2935,10 +2934,9 @@
     {
      "id": "KRW",
      "label": "KRW → MYR",
-     "value": 0.00304516,
      "locked": true,
-     "source": "Live: kadar pasaran harian (ECB via frankfurter.dev); nilai ini sandaran (ECB 2026-10-09); dulu 0.003 (PO, ATK CR)",
-     "live": "KRW"
+     "source": "Tetap 0.0032 (PO 25 Nov 2026, ATK CR KRW). Flag PO jika kadar live > 0.0032 atau < 0.003. Dulu live (sandaran 0.00304516).",
+     "value": 0.0032
     }
    ],
    "rates": [],
