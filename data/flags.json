@@ -1015,8 +1015,8 @@
   {
    "area": "Peak",
    "code": "SEL",
-   "detail": "ATK (25 Nov 2026): 3–8 Aug 2027 World Youth Day Seoul (Pope's visit) — hotels closing normal rooms or charging very high prices (e.g. Migliore Myeongdong: only windowless rooms 2–8 Aug), vehicles and guides hard to get. ATK advises not selling Seoul ~1–9 Aug. Other 2027 peak: 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge amounts not given yet. (noted by PO, 2026-11-25)",
-   "fix": "Do not quote Seoul for 1–9 Aug 2027; if the customer insists, check with ATK first. For other peak dates, ask ATK for the surcharge before quoting.",
+   "detail": "ATK (25 Nov 2026): 3–8 Aug 2027 World Youth Day Seoul (Pope's visit) — hotels closing normal rooms or charging very high prices (e.g. Migliore Myeongdong: only windowless rooms 2–8 Aug), vehicles and guides hard to get. ATK advises not selling Seoul ~1–9 Aug. Other 2027 peak: 5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge ASSUMED KRW62,500/pax per trip (RM200 at 0.0032) until ATK confirms — add-on 'ATK peak surcharge 2027'. (noted by PO, 2026-11-25 / 26)",
+   "fix": "Do not quote Seoul for 1–9 Aug 2027; if the customer insists, check with ATK first. For other peak dates, add the assumed RM200/pax ATK peak add-on and confirm the real surcharge with ATK.",
    "id": 102,
    "package": null,
    "severity": "high",
@@ -1025,8 +1025,8 @@
   {
    "area": "Peak",
    "code": "SELJJU",
-   "detail": "ATK (25 Nov 2026): avoid the Seoul leg ~1–9 Aug 2027 (World Youth Day 3–8 Aug: hotels, vehicles, guides). Other 2027 peak: 5–14 Feb · 29 Apr–5 May · 1–11 Oct · 21–31 Dec. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
-   "fix": "Do not quote 1–9 Aug 2027 without ATK's confirmation; ask ATK for peak surcharges before quoting peak dates.",
+   "detail": "ATK (25 Nov 2026): avoid the Seoul leg ~1–9 Aug 2027 (World Youth Day 3–8 Aug: hotels, vehicles, guides). Other 2027 peak: 5–14 Feb · 29 Apr–5 May · 1–11 Oct · 21–31 Dec. Peak surcharge ASSUMED KRW62,500/pax per trip (RM200 at 0.0032) until ATK confirms. (noted by PO, 2026-11-25 / 26)",
+   "fix": "Do not quote 1–9 Aug 2027 without ATK's confirmation; for peak dates add the assumed RM200/pax ATK peak add-on and confirm with ATK.",
    "id": 103,
    "package": null,
    "severity": "high",
@@ -1035,8 +1035,8 @@
   {
    "area": "Peak",
    "code": "JJU",
-   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
-   "fix": "Ask ATK for the peak surcharge before quoting these dates.",
+   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge ASSUMED KRW62,500/pax per trip (RM200 at 0.0032) until ATK confirms. (noted by PO, 2026-11-25 / 26)",
+   "fix": "Add the assumed RM200/pax ATK peak add-on for these dates and confirm the real surcharge with ATK.",
    "id": 104,
    "package": null,
    "severity": "medium",
@@ -1045,8 +1045,8 @@
   {
    "area": "Peak",
    "code": "JJUO",
-   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Surcharge amounts not given yet. (noted by PO, 2026-11-25)",
-   "fix": "Ask ATK for the peak surcharge before quoting these dates.",
+   "detail": "5–14 Feb CNY/Seollal · 29 Apr–5 May Golden Week/Labour Day · 1–11 Oct China National Day · 21–31 Dec Christmas/New Year. Peak surcharge ASSUMED KRW62,500/pax per trip (RM200 at 0.0032) until ATK confirms. (noted by PO, 2026-11-25 / 26)",
+   "fix": "Add the assumed RM200/pax ATK peak add-on for these dates and confirm the real surcharge with ATK.",
    "id": 105,
    "package": null,
    "severity": "medium",
