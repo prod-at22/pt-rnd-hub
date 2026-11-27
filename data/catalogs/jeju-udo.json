@@ -1,274 +1,275 @@
 {
-  "slug": "jeju-udo",
-  "destination": "Jeju-Udo",
-  "country": "Korea",
-  "code": "JJUO",
-  "tier": "Standard",
-  "tier_code": "STD",
-  "title": "PRIVATE TOUR JEJU - UDO STANDARD",
-  "duration": "5D4N",
-  "route": "Jeju Island - Udo Island",
-  "basis": "Ground & Tipping",
-  "valid_until": "31 December 2026",
-  "version": "v1",
-  "updated": "2026-10-13",
-  "kb_url": "https://prod-at22.github.io/korea-kb/",
-  "po": "Ezie",
-  "ops": "ATIQAH",
-  "source_pdf": "Korea/Jeju-Udo/Catalog/PT JEJU - UDO 5D4N v1.pdf",
-  "highlights": [
-    {
-      "icon": "hotel",
-      "label": "3-Star Hotel"
-    },
-    {
-      "icon": "bus",
-      "label": "Private Transport"
-    },
-    {
-      "icon": "guide",
-      "label": "Driving Guide"
-    }
-  ],
-  "prices": {
-    "basis": "Price Per Person",
-    "columns": [
-      {
-        "label": "Adult",
-        "age": "12 years above"
-      },
-      {
-        "label": "Child With Bed",
-        "age": "6-11 years old"
-      },
-      {
-        "label": "Child Without Bed",
-        "age": "2-5 years old"
-      }
-    ],
-    "rows": [
-      {
-        "pax": "2"
-      },
-      {
-        "pax": "3"
-      },
-      {
-        "pax": "4"
-      },
-      {
-        "pax": "5"
-      },
-      {
-        "pax": "6"
-      },
-      {
-        "pax": "7"
-      },
-      {
-        "pax": "8"
-      },
-      {
-        "pax": "9 - 10"
-      }
-    ],
-    "infant": "{price}"
+ "slug": "jeju-udo",
+ "destination": "Jeju-Udo",
+ "country": "Korea",
+ "code": "JJUO",
+ "tier": "Standard",
+ "tier_code": "STD",
+ "title": "PRIVATE TOUR JEJU - UDO STANDARD",
+ "duration": "5D4N",
+ "route": "Jeju Island - Udo Island",
+ "basis": "Ground & Tipping",
+ "valid_until": "31 December 2027",
+ "version": "v1",
+ "updated": "2026-10-13",
+ "kb_url": "https://prod-at22.github.io/korea-kb/",
+ "po": "Ezie",
+ "ops": "ATIQAH",
+ "source_pdf": "Korea/Jeju-Udo/Catalog/PT JEJU - UDO 5D4N v1.pdf",
+ "highlights": [
+  {
+   "icon": "hotel",
+   "label": "3-Star Hotel"
   },
-  "price_blocks": [
-    {
-      "includes": [
-        "3 Star Hotel with International Breakfast",
-        "Private Airport Transfer",
-        "Private Transportation (10 Hours Basis)",
-        "Professional Licensed Driving Guide (English Speaking) (10 Hours Basis)",
-        {
-          "text": "Entrance Fees",
-          "sub": [
-            "Yongmeori Coast Beach",
-            "Cheonjeyeon Waterfall",
-            "Seongsan Ilchulbong",
-            "Seasonal Tour"
-          ]
-        },
-        "Return Ferry Ticket to Udo",
-        "Tipping Fee",
-        "K-ETA Application - Complimentary For Malaysian (1 time)"
-      ],
-      "excludes": [
-        "Lunch, Dinner",
-        "Private Driver & Guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
-        "International Flight",
-        "Domestic Flight",
-        "Personal Expenses",
-        "Optional Activity",
-        "Travel Insurance",
-        "K-ETA Re-Application (RM70)"
-      ]
-    }
-  ],
-  "surcharge": {
-    "columns": [
-      {
-        "label": "Add On"
-      },
-      {
-        "label": "Peak Season Surcharge",
-        "period": "1-30 April · 1-31 May · 1-31 October"
-      },
-      {
-        "label": "Super Peak Season Surcharge",
-        "period": "16 December - 1 January"
-      }
-    ]
+  {
+   "icon": "bus",
+   "label": "Private Transport"
   },
-  "itinerary": [
-    {
-      "day": 1,
-      "title": "Arrival - Jeju City Tour",
-      "activities": [
-        "Suggested arrival: morning arrival",
-        "Airport Pickup at Jeju Airport",
-        "Yongduam Rock (oceanfront volcanic rock formation in the shape of a dragon's head)",
-        "Yongyeon Pond (where water from Hallasan Mountain meets the sea, reflecting its stunning vistas & clear water)",
-        "Saryeoni Forest Trail (beautiful forest with easy walking trails)",
-        "Iho Tewoo Horse Lighthouse (lighthouse built in the shape of the Jeju's pony)",
-        "Dongmun Traditional Market (Jeju's largest & oldest market)",
-        "Check-in"
-      ],
-      "transport": "Private Transport",
-      "meals": "-",
-      "hotel": "3-Star Jeju"
-    },
-    {
-      "day": 2,
-      "title": "Jeju West & South Tour",
-      "activities": [
-        "Saebyeol Oreum (beautiful in fall with silver grass)",
-        "Osulloc Green Tea Farm and Innisfree Jeju House (a tea farm owned by a premium Korean tea brand + Innisfree signature store)",
-        "Yongmeori Coast Beach (a hydrovolcano rocky shore formed by volcanic debris)",
-        "Cheonjeyeon Waterfalls (famous three-tiered waterfall)"
-      ],
-      "transport": "Private Transport",
-      "meals": "International Breakfast",
-      "hotel": "3-Star Jeju"
-    },
-    {
-      "day": 3,
-      "title": "Jeju East Tour",
-      "activities": [
-        "Songeup Folk Village (Korean traditional village)",
-        "Seopjikoji (famous lighthouse at a cliff)",
-        "Gimnyeong Beach",
-        "Seongsan Ilchulbong (sunrise peak, a crater, one of UNESCO World Heritage Site)",
-        {
-          "text": "Seasonal Tour (entrance fee included):",
-          "sub": [
-            "Autumn: Sangumburi Park - Silver Grass, Pink Muhly",
-            "Winter: Hallabong Farm - Tangerine Fruit picking",
-            "Spring: Canola Field / Cherry Blossom",
-            "Summer: Sunflower Park / Hydrangea Flowers"
-          ]
-        }
-      ],
-      "transport": "Private Transport",
-      "meals": "International Breakfast",
-      "hotel": "3-Star Jeju"
-    },
-    {
-      "day": 4,
-      "title": "Udo - Free & Easy",
-      "activities": [
-        "Ferry to Udo Island (approx. 4 hours, ferry ticket included)",
-        "Free & Easy at own expense — the driving guide will drop you at the departure port"
-      ],
-      "transport": "Private Transport",
-      "meals": "International Breakfast",
-      "hotel": "3-Star Jeju"
-    },
-    {
-      "day": 5,
-      "title": "Departure Day",
-      "activities": [
-        "Check-out",
-        "Airport Transfer"
-      ],
-      "transport": "Private Airport Transfer",
-      "meals": "International Breakfast",
-      "hotel": "-"
-    }
+  {
+   "icon": "guide",
+   "label": "Driving Guide"
+  }
+ ],
+ "prices": {
+  "basis": "Price Per Person",
+  "columns": [
+   {
+    "label": "Adult",
+    "age": "12 years above"
+   },
+   {
+    "label": "Child With Bed",
+    "age": "6-11 years old"
+   },
+   {
+    "label": "Child Without Bed",
+    "age": "2-5 years old"
+   }
   ],
-  "expect": [
-    {
-      "icon": "footprints",
-      "title": "Lots of Walking",
-      "body": "Please wear comfortable shoes."
-    },
-    {
-      "icon": "utensils",
-      "title": "Lunch & Dinner Excluded",
-      "body": "No lunch and dinner, and no breakfast if you choose the apartment. The guide will bring you to a halal-friendly restaurant or convenience store."
-    },
-    {
-      "icon": "luggage",
-      "title": "Airport Transfer",
-      "body": "Please bring a maximum of 1 luggage per pax, as it affects car capacity."
-    },
-    {
-      "icon": "guide",
-      "title": "Driving Guide",
-      "body": "Korean English-speaking driving guide."
-    },
-    {
-      "icon": "bus",
-      "title": "Driving Guide & Transport",
-      "body": "10 hours basis. 30,000 - 60,000 KRW will be charged for each extra hour."
-    },
-    {
-      "icon": "bed",
-      "title": "Accommodation",
-      "body": "Rooms are small, typically 15-20 sqf (Korean standard). Triple rooms offer even less space."
-    },
-    {
-      "icon": "info",
-      "title": "Free & Easy at Udo",
-      "body": "Recommended to explore Udo on your own. The island offers a variety of cafes and restaurants, and bike rentals are available for convenience."
-    }
+  "rows": [
+   {
+    "pax": "2"
+   },
+   {
+    "pax": "3"
+   },
+   {
+    "pax": "4"
+   },
+   {
+    "pax": "5"
+   },
+   {
+    "pax": "6"
+   },
+   {
+    "pax": "7"
+   },
+   {
+    "pax": "8"
+   },
+   {
+    "pax": "9 - 10"
+   }
   ],
-  "notes": [
+  "infant": "{price}"
+ },
+ "price_blocks": [
+  {
+   "includes": [
+    "3 Star Hotel with International Breakfast",
+    "Private Airport Transfer",
+    "Private Transportation (10 Hours Basis)",
+    "Professional Licensed Driving Guide (English Speaking) (10 Hours Basis)",
     {
-      "title": "",
-      "entries": [
-        "All prices are valid for 24 hours after quotation submission.",
-        "The price is for 2 to 3 persons per room.",
-        "Single supplement: additional RM1,000/person.",
-        "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
-        "This package is valid until the 31st December 2026 travel period.",
-        "Private transportation & driving guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
-        "A driving guide will be provided for groups of 2 to 8 pax.",
-        "A private driver and a professional tour guide will be provided for groups of 9 pax and above.",
-        "Itinerary, price and flight are subject to change accordingly.",
-        "Final itinerary and hotel arrangements 14 days before the trip.",
-        "Please check with our staff on the trip validity before booking any connecting domestic flights."
-      ]
-    }
-  ],
-  "deposit": [
-    {
-      "figure": "RM 500",
-      "text": "deposit per person"
+     "text": "Entrance Fees",
+     "sub": [
+      "Yongmeori Coast Beach",
+      "Cheonjeyeon Waterfall",
+      "Seongsan Ilchulbong",
+      "Seasonal Tour"
+     ]
     },
+    "Return Ferry Ticket to Udo",
+    "Tipping Fee",
+    "K-ETA Application - Complimentary For Malaysian (1 time)"
+   ],
+   "excludes": [
+    "Lunch, Dinner",
+    "Private Driver & Guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
+    "International Flight",
+    "Domestic Flight",
+    "Personal Expenses",
+    "Optional Activity",
+    "Travel Insurance",
+    "K-ETA Re-Application (RM70)"
+   ]
+  }
+ ],
+ "surcharge": {
+  "columns": [
+   {
+    "label": "Add On"
+   },
+   {
+    "label": "Peak Season Surcharge",
+    "period": "1-30 April · 1-31 May · 1-31 October"
+   },
+   {
+    "label": "Super Peak Season Surcharge",
+    "period": "16 December - 1 January"
+   }
+  ]
+ },
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Arrival - Jeju City Tour",
+   "activities": [
+    "Suggested arrival: morning arrival",
+    "Airport Pickup at Jeju Airport",
+    "Yongduam Rock (oceanfront volcanic rock formation in the shape of a dragon's head)",
+    "Yongyeon Pond (where water from Hallasan Mountain meets the sea, reflecting its stunning vistas & clear water)",
+    "Saryeoni Forest Trail (beautiful forest with easy walking trails)",
+    "Iho Tewoo Horse Lighthouse (lighthouse built in the shape of the Jeju's pony)",
+    "Dongmun Traditional Market (Jeju's largest & oldest market)",
+    "Check-in"
+   ],
+   "transport": "Private Transport",
+   "meals": "-",
+   "hotel": "3-Star Jeju"
+  },
+  {
+   "day": 2,
+   "title": "Jeju West & South Tour",
+   "activities": [
+    "Saebyeol Oreum (beautiful in fall with silver grass)",
+    "Osulloc Green Tea Farm and Innisfree Jeju House (a tea farm owned by a premium Korean tea brand + Innisfree signature store)",
+    "Yongmeori Coast Beach (a hydrovolcano rocky shore formed by volcanic debris)",
+    "Cheonjeyeon Waterfalls (famous three-tiered waterfall)"
+   ],
+   "transport": "Private Transport",
+   "meals": "International Breakfast",
+   "hotel": "3-Star Jeju"
+  },
+  {
+   "day": 3,
+   "title": "Jeju East Tour",
+   "activities": [
+    "Songeup Folk Village (Korean traditional village)",
+    "Seopjikoji (famous lighthouse at a cliff)",
+    "Gimnyeong Beach",
+    "Seongsan Ilchulbong (sunrise peak, a crater, one of UNESCO World Heritage Site)",
     {
-      "figure": "45 days",
-      "text": "prior to arrival for full payment"
+     "text": "Seasonal Tour (entrance fee included):",
+     "sub": [
+      "Autumn: Sangumburi Park - Silver Grass, Pink Muhly",
+      "Winter: Hallabong Farm - Tangerine Fruit picking",
+      "Spring: Canola Field / Cherry Blossom",
+      "Summer: Sunflower Park / Hydrangea Flowers"
+     ]
     }
-  ],
-  "addon_groups": [
-    {
-      "title": "Add-on Private Transport"
-    },
-    {
-      "title": "Additional Activities"
-    }
-  ],
-  "hub_version": 81
+   ],
+   "transport": "Private Transport",
+   "meals": "International Breakfast",
+   "hotel": "3-Star Jeju"
+  },
+  {
+   "day": 4,
+   "title": "Udo - Free & Easy",
+   "activities": [
+    "Ferry to Udo Island (approx. 4 hours, ferry ticket included)",
+    "Free & Easy at own expense — the driving guide will drop you at the departure port"
+   ],
+   "transport": "Private Transport",
+   "meals": "International Breakfast",
+   "hotel": "3-Star Jeju"
+  },
+  {
+   "day": 5,
+   "title": "Departure Day",
+   "activities": [
+    "Check-out",
+    "Airport Transfer"
+   ],
+   "transport": "Private Airport Transfer",
+   "meals": "International Breakfast",
+   "hotel": "-"
+  }
+ ],
+ "expect": [
+  {
+   "icon": "footprints",
+   "title": "Lots of Walking",
+   "body": "Please wear comfortable shoes."
+  },
+  {
+   "icon": "utensils",
+   "title": "Lunch & Dinner Excluded",
+   "body": "No lunch and dinner, and no breakfast if you choose the apartment. The guide will bring you to a halal-friendly restaurant or convenience store."
+  },
+  {
+   "icon": "luggage",
+   "title": "Airport Transfer",
+   "body": "Please bring a maximum of 1 luggage per pax, as it affects car capacity."
+  },
+  {
+   "icon": "guide",
+   "title": "Driving Guide",
+   "body": "Korean English-speaking driving guide."
+  },
+  {
+   "icon": "bus",
+   "title": "Driving Guide & Transport",
+   "body": "10 hours basis. 30,000 - 60,000 KRW will be charged for each extra hour."
+  },
+  {
+   "icon": "bed",
+   "title": "Accommodation",
+   "body": "Rooms are small, typically 15-20 sqf (Korean standard). Triple rooms offer even less space."
+  },
+  {
+   "icon": "info",
+   "title": "Free & Easy at Udo",
+   "body": "Recommended to explore Udo on your own. The island offers a variety of cafes and restaurants, and bike rentals are available for convenience."
+  }
+ ],
+ "notes": [
+  {
+   "title": "",
+   "entries": [
+    "All prices are valid for 24 hours after quotation submission.",
+    "The price is for 2 to 3 persons per room.",
+    "Single supplement: additional RM1,000/person.",
+    "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
+    "This package is valid until the 31st December 2027 travel period.",
+    "Peak travel dates 2027: 5–14 Feb, 29 Apr–5 May, 1–11 Oct and 21–31 Dec. An additional peak surcharge applies; please check with our staff before booking.",
+    "Private transportation & driving guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
+    "A driving guide will be provided for groups of 2 to 8 pax.",
+    "A private driver and a professional tour guide will be provided for groups of 9 pax and above.",
+    "Itinerary, price and flight are subject to change accordingly.",
+    "Final itinerary and hotel arrangements 14 days before the trip.",
+    "Please check with our staff on the trip validity before booking any connecting domestic flights."
+   ]
+  }
+ ],
+ "deposit": [
+  {
+   "figure": "RM 500",
+   "text": "deposit per person"
+  },
+  {
+   "figure": "45 days",
+   "text": "prior to arrival for full payment"
+  }
+ ],
+ "addon_groups": [
+  {
+   "title": "Add-on Private Transport"
+  },
+  {
+   "title": "Additional Activities"
+  }
+ ],
+ "hub_version": 81
 }
