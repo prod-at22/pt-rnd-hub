@@ -104,17 +104,38 @@
  "surcharge": {
   "columns": [
    {
-    "label": "Upgrade Surcharge (Additional)"
+    "label": "Upgrade"
    },
    {
-    "label": "Peak Season Surcharge",
-    "period": "1-30 April · 1-31 May · 1-31 October"
+    "label": "Peak Season"
    },
    {
-    "label": "Super Peak Season Surcharge",
-    "period": "20 December - 1 January"
+    "label": "Super Peak Season"
    }
-  ]
+  ],
+  "seasons": [
+   {
+    "label": "Peak Season 2026",
+    "period": "1–30 Apr  |  1–31 May  |  1–31 Oct"
+   },
+   {
+    "label": "Peak Season 2027",
+    "period": "5–14 Feb  |  29 Apr–5 May  |  1–11 Oct"
+   },
+   {
+    "label": "Super Peak Season 2026",
+    "period": "20 Dec – 1 Jan 2027"
+   },
+   {
+    "label": "Super Peak Season 2027",
+    "period": "21–31 Dec"
+   },
+   {
+    "label": "Blockout (Not available for travel)",
+    "period": "1–9 Aug 2027 (World Youth Day Seoul)"
+   }
+  ],
+  "title": "Surcharge — Accommodation Upgrade & Peak Season (per night per pax)"
  },
  "itinerary": [
   {
@@ -216,7 +237,6 @@
     "Single supplement: additional RM1,000/person.",
     "Late booking surcharge of RM50/booking will be charged if the booking is made less than 45 days before departure.",
     "This package is valid until the 31st December 2027 travel period.",
-    "Peak travel dates 2027: 5–14 Feb, 29 Apr–5 May, 3–8 Aug, 1–11 Oct and 21–31 Dec. An additional peak surcharge applies; please check with our staff before booking.",
     "This package is not available for travel from 1–9 August 2027 (World Youth Day Seoul).",
     "Private transportation & driving guide is based on 10 hours basis. 30,000 - 60,000 KRW will be charged for every extra hour usage. Payment must be made in cash.",
     "A driving guide will be provided for groups of 2 to 9 pax.",

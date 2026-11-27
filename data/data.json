@@ -1379,16 +1379,16 @@
        "sur": 1,
        "amounts": [
         "-",
-        "RM70/night/pax",
-        "RM70/night/pax"
+        "RM70",
+        "RM70"
        ]
       },
       "seoul-standard": {
        "sur": 1,
        "amounts": [
         "-",
-        "RM70/night/pax",
-        "RM70/night/pax"
+        "RM70",
+        "RM70"
        ]
       }
      }
@@ -1403,8 +1403,8 @@
        "sur": 2,
        "amounts": [
         "-",
-        "RM50/night/pax",
-        "RM90/night/pax"
+        "RM50",
+        "RM90"
        ]
       }
      }
@@ -1418,17 +1418,17 @@
       "seoul-basic": {
        "sur": 3,
        "amounts": [
-        "RM100/night/pax",
-        "RM130/night/pax",
-        "RM170/night/pax"
+        "RM100",
+        "RM130",
+        "RM170"
        ]
       },
       "seoul-standard": {
        "sur": 3,
        "amounts": [
-        "RM60/night/pax",
-        "RM130/night/pax",
-        "RM170/night/pax"
+        "RM60",
+        "RM130",
+        "RM170"
        ]
       }
      }
@@ -1443,8 +1443,8 @@
        "sur": 2,
        "amounts": [
         "-",
-        "RM90/night/pax",
-        "RM140/night/pax"
+        "RM90",
+        "RM140"
        ]
       }
      }
@@ -2194,8 +2194,8 @@
        "sur": 1,
        "amounts": [
         "-",
-        "RM70/night/pax",
-        "RM70/night/pax"
+        "RM70",
+        "RM70"
        ]
       }
      }
@@ -2210,8 +2210,8 @@
        "sur": 2,
        "amounts": [
         "-",
-        "RM90/night/pax",
-        "RM140/night/pax"
+        "RM90",
+        "RM140"
        ]
       }
      }
@@ -2225,9 +2225,9 @@
       "seoul-jeju": {
        "sur": 3,
        "amounts": [
-        "RM60/night/pax",
-        "RM130/night/pax",
-        "RM170/night/pax"
+        "RM60",
+        "RM130",
+        "RM170"
        ]
       }
      }
@@ -2799,8 +2799,8 @@
        "sur": 1,
        "amounts": [
         "-",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM50",
+        "RM100"
        ]
       }
      }
@@ -2815,8 +2815,8 @@
        "sur": 2,
        "amounts": [
         "-",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM50",
+        "RM100"
        ]
       }
      }
@@ -2830,9 +2830,9 @@
       "jeju": {
        "sur": 3,
        "amounts": [
-        "RM60/night/pax",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM60",
+        "RM50",
+        "RM100"
        ]
       }
      }
@@ -3421,8 +3421,8 @@
        "sur": 1,
        "amounts": [
         "-",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM50",
+        "RM100"
        ]
       }
      }
@@ -3437,8 +3437,8 @@
        "sur": 2,
        "amounts": [
         "-",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM50",
+        "RM100"
        ]
       }
      }
@@ -3452,9 +3452,9 @@
       "jeju-udo": {
        "sur": 3,
        "amounts": [
-        "RM60/night/pax",
-        "RM50/night/pax",
-        "RM100/night/pax"
+        "RM60",
+        "RM50",
+        "RM100"
        ]
       }
      }
